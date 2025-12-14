@@ -182,15 +182,24 @@
             padding: 20px 30px;
             background: white;
             border-bottom: 1px solid #e0e0e0;
+        }
+
+        .filter-row {
             display: flex;
             flex-wrap: wrap;
             gap: 15px;
             align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .filter-row:last-child {
+            margin-bottom: 0;
         }
 
         .filters label {
             font-weight: 600;
             color: #555;
+            margin-right: 5px;
         }
 
         .filters input, .filters select {
@@ -203,6 +212,42 @@
         .filters input:focus, .filters select:focus {
             outline: none;
             border-color: #2d5a27;
+        }
+
+        .pill-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .pill {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            cursor: pointer;
+            border: 2px solid #ddd;
+            background: white;
+            color: #666;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .pill:hover {
+            border-color: #2d5a27;
+            background: #f8f9fa;
+        }
+
+        .pill.active {
+            background: #2d5a27;
+            color: white;
+            border-color: #2d5a27;
+        }
+
+        .pill.active:hover {
+            background: #1a472a;
+            border-color: #1a472a;
         }
 
         .sort-info {
@@ -451,13 +496,22 @@
                 justify-content: center;
             }
 
-            .filters {
+            .filter-row {
                 flex-direction: column;
                 align-items: stretch;
             }
 
-            .filters input, .filters select {
+            .filters input {
                 width: 100%;
+            }
+
+            .pill-container {
+                width: 100%;
+            }
+
+            .pill {
+                font-size: 0.85em;
+                padding: 6px 12px;
             }
 
             .sort-info {
@@ -543,20 +597,21 @@
         </div>
 
         <div class="filters">
-            <label for="searchInput">Haku:</label>
-            <input type="text" id="searchInput" placeholder="Paikkakunta, tyyppi tai taso...">
+            <div class="filter-row">
+                <label for="searchInput">Haku:</label>
+                <input type="text" id="searchInput" placeholder="Paikkakunta, tyyppi tai taso...">
+                <span class="sort-info" id="sortInfo">Järjestetty: etäisyys ↑</span>
+            </div>
 
-            <label for="typeFilter">Tyyppi:</label>
-            <select id="typeFilter">
-                <option value="">Kaikki</option>
-            </select>
+            <div class="filter-row">
+                <label>Laji:</label>
+                <div class="pill-container" id="typePills"></div>
+            </div>
 
-            <label for="levelFilter">Taso:</label>
-            <select id="levelFilter">
-                <option value="">Kaikki</option>
-            </select>
-
-            <span class="sort-info" id="sortInfo">Järjestetty: etäisyys ↑</span>
+            <div class="filter-row">
+                <label>Taso:</label>
+                <div class="pill-container" id="levelPills"></div>
+            </div>
         </div>
 
         <div class="table-container">
@@ -692,6 +747,8 @@
         let filteredKokeet = [];
         let userLocation = { lat: 62.8924, lng: 27.6782, name: 'Kuopio' }; // Oletus: Kuopio
         let currentSort = { column: 'distance', ascending: true };
+        let activeTypes = new Set(); // Aktiiviset lajit (kaikki oletuksena)
+        let activeLevels = new Set(); // Aktiiviset tasot (kaikki oletuksena)
 
         // Haversine-kaava etäisyyden laskemiseen
         function haversineDistance(lat1, lon1, lat2, lon2) {
@@ -898,41 +955,74 @@
         // Populoi suodattimet
         function populateFilters() {
             const types = new Set();
-            const levels = new Set();
+            const levels = new Set(['ALO', 'AVO', 'VOI']); // Vain nämä tasot
 
             kokeet.forEach(koe => {
                 types.add(koe.type);
-                if (koe.levels && koe.levels !== 'N/A') {
-                    // Poimi pelkät tasot ilman päivätietoja
-                    koe.levels.split(', ').forEach(level => {
-                        const cleanLevel = level.split(' (')[0].trim();
-                        levels.add(cleanLevel);
-                    });
-                }
             });
 
-            const typeFilter = document.getElementById('typeFilter');
-            Array.from(types).sort().forEach(type => {
-                const option = document.createElement('option');
-                option.value = type;
-                option.textContent = type;
-                typeFilter.appendChild(option);
+            // Luo lajipillerit
+            const typePillsContainer = document.getElementById('typePills');
+            const sortedTypes = Array.from(types).sort();
+
+            sortedTypes.forEach(type => {
+                const pill = document.createElement('div');
+                pill.className = 'pill active';
+                pill.textContent = type;
+                pill.dataset.type = type;
+                pill.onclick = () => toggleTypePill(type);
+                typePillsContainer.appendChild(pill);
+                activeTypes.add(type); // Kaikki aktiivisia alussa
             });
 
-            const levelFilter = document.getElementById('levelFilter');
-            Array.from(levels).sort().forEach(level => {
-                const option = document.createElement('option');
-                option.value = level;
-                option.textContent = level;
-                levelFilter.appendChild(option);
+            // Luo tasopillerit (vain ALO, AVO, VOI)
+            const levelPillsContainer = document.getElementById('levelPills');
+            const sortedLevels = Array.from(levels).sort();
+
+            sortedLevels.forEach(level => {
+                const pill = document.createElement('div');
+                pill.className = 'pill active';
+                pill.textContent = level;
+                pill.dataset.level = level;
+                pill.onclick = () => toggleLevelPill(level);
+                levelPillsContainer.appendChild(pill);
+                activeLevels.add(level); // Kaikki aktiivisia alussa
             });
+        }
+
+        // Vaihda lajipillerin tilaa
+        function toggleTypePill(type) {
+            const pill = document.querySelector(`#typePills .pill[data-type="${type}"]`);
+
+            if (activeTypes.has(type)) {
+                activeTypes.delete(type);
+                pill.classList.remove('active');
+            } else {
+                activeTypes.add(type);
+                pill.classList.add('active');
+            }
+
+            sortAndRender();
+        }
+
+        // Vaihda tasopillerin tilaa
+        function toggleLevelPill(level) {
+            const pill = document.querySelector(`#levelPills .pill[data-level="${level}"]`);
+
+            if (activeLevels.has(level)) {
+                activeLevels.delete(level);
+                pill.classList.remove('active');
+            } else {
+                activeLevels.add(level);
+                pill.classList.add('active');
+            }
+
+            sortAndRender();
         }
 
         // Suodata ja järjestä
         function sortAndRender() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            const typeFilter = document.getElementById('typeFilter').value;
-            const levelFilter = document.getElementById('levelFilter').value;
 
             filteredKokeet = kokeet.filter(koe => {
                 const matchesSearch = !searchTerm ||
@@ -941,8 +1031,19 @@
                     koe.levels.toLowerCase().includes(searchTerm) ||
                     (koe.name && koe.name.toLowerCase().includes(searchTerm));
 
-                const matchesType = !typeFilter || koe.type === typeFilter;
-                const matchesLevel = !levelFilter || koe.levels.includes(levelFilter);
+                // Tarkista onko laji aktiivinen
+                const matchesType = activeTypes.size === 0 || activeTypes.has(koe.type);
+
+                // Tarkista onko joku aktiivisista tasoista kokeessa
+                let matchesLevel = activeLevels.size === 0;
+                if (!matchesLevel) {
+                    for (const level of activeLevels) {
+                        if (koe.levels.includes(level)) {
+                            matchesLevel = true;
+                            break;
+                        }
+                    }
+                }
 
                 return matchesSearch && matchesType && matchesLevel;
             });
@@ -1299,8 +1400,6 @@
 
         // Event listenerit
         document.getElementById('searchInput').addEventListener('input', sortAndRender);
-        document.getElementById('typeFilter').addEventListener('change', sortAndRender);
-        document.getElementById('levelFilter').addEventListener('change', sortAndRender);
 
         // Alustus
         loadData();
