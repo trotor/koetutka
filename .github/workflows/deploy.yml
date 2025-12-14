@@ -1,22 +1,25 @@
-name: Update data and deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
-  # Scheduled: every day at 6:00 UTC (8:00 Finnish time)
+  # Scheduled: every day at 6:00 UTC (8:00 Finnish time) - fetch new data
   schedule:
     - cron: '0 6 * * *'
 
-  # Manual trigger
+  # Manual trigger - fetch new data
   workflow_dispatch:
 
-  # On push to main branch
+  # On push to main branch - deploy HTML changes
   push:
     branches:
       - master
       - main
+    # Also trigger on update_data tag - fetch new data
+    tags:
+      - 'update_data*'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -42,10 +45,12 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/update_data')
         run: |
           pip install requests geopy
 
       - name: Download coordinates cache
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/update_data')
         uses: actions/cache@v4
         with:
           path: coordinates_cache.json
@@ -54,24 +59,37 @@ jobs:
             coordinates-cache-
 
       - name: Fetch event data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/update_data')
         run: |
-          # Get current and next year
-          CURRENT_YEAR=$(date +%Y)
-          NEXT_YEAR=$((CURRENT_YEAR + 1))
+          echo "Fetching data for 2026..."
+          python snj_kokeet.py --year 2026
 
-          echo "Fetching data for $CURRENT_YEAR and $NEXT_YEAR..."
-
-          python snj_kokeet.py --year $CURRENT_YEAR
-          python snj_kokeet.py --year $NEXT_YEAR
+      - name: Commit updated data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/update_data')
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add koetutka_*.json coordinates_cache.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update trial data for 2026"
+          git push
 
       - name: Prepare deployment directory
         run: |
           mkdir -p _site
           cp index.html _site/
-          cp koetutka_*.json _site/
+          # Check if data files exist (should be committed to repo)
+          if ls koetutka_*.json 1> /dev/null 2>&1; then
+            cp koetutka_*.json _site/
+            echo "Data files found and copied"
+          else
+            echo "Warning: No data files found. Make sure to run with update_data tag to generate them."
+            exit 1
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -5,13 +5,13 @@ venv/
 .venv/
 
 # Generated output files (created by CI or locally)
-koetutka_*.json
+# Note: koetutka_*.json is committed to repo for deployment
 snj_kokeet_*.html
 snj_kokeet_*.json
 snj_kokeet_*.csv
 
-# Cache (restored in CI from cache action)
-coordinates_cache.json
+# Cache (committed to repo to reduce API calls)
+# Note: coordinates_cache.json is now committed
 
 # Build output
 _site/
