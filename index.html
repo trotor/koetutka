@@ -222,9 +222,9 @@
         }
 
         .pill {
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 0.8em;
             font-weight: 600;
             cursor: pointer;
             border: 2px solid #ddd;
@@ -510,8 +510,8 @@
             }
 
             .pill {
-                font-size: 0.85em;
-                padding: 6px 12px;
+                font-size: 0.75em;
+                padding: 5px 10px;
             }
 
             .sort-info {
@@ -967,12 +967,11 @@
 
             sortedTypes.forEach(type => {
                 const pill = document.createElement('div');
-                pill.className = 'pill active';
+                pill.className = 'pill'; // Ei aktiivisia oletuksena
                 pill.textContent = type;
                 pill.dataset.type = type;
                 pill.onclick = () => toggleTypePill(type);
                 typePillsContainer.appendChild(pill);
-                activeTypes.add(type); // Kaikki aktiivisia alussa
             });
 
             // Luo tasopillerit (vain ALO, AVO, VOI)
@@ -981,12 +980,11 @@
 
             sortedLevels.forEach(level => {
                 const pill = document.createElement('div');
-                pill.className = 'pill active';
+                pill.className = 'pill'; // Ei aktiivisia oletuksena
                 pill.textContent = level;
                 pill.dataset.level = level;
                 pill.onclick = () => toggleLevelPill(level);
                 levelPillsContainer.appendChild(pill);
-                activeLevels.add(level); // Kaikki aktiivisia alussa
             });
         }
 
