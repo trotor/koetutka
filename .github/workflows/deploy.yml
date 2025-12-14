@@ -1,0 +1,83 @@
+name: Update data and deploy to GitHub Pages
+
+on:
+  # Scheduled: every day at 6:00 UTC (8:00 Finnish time)
+  schedule:
+    - cron: '0 6 * * *'
+
+  # Manual trigger
+  workflow_dispatch:
+
+  # On push to main branch
+  push:
+    branches:
+      - master
+      - main
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install requests geopy
+
+      - name: Download coordinates cache
+        uses: actions/cache@v4
+        with:
+          path: coordinates_cache.json
+          key: coordinates-cache-${{ github.run_id }}
+          restore-keys: |
+            coordinates-cache-
+
+      - name: Fetch event data
+        run: |
+          # Get current and next year
+          CURRENT_YEAR=$(date +%Y)
+          NEXT_YEAR=$((CURRENT_YEAR + 1))
+
+          echo "Fetching data for $CURRENT_YEAR and $NEXT_YEAR..."
+
+          python snj_kokeet.py --year $CURRENT_YEAR
+          python snj_kokeet.py --year $NEXT_YEAR
+
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp koetutka_*.json _site/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koetutka - Noutajakokeet lähellä sinua</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #2d5a27 0%, #1a472a 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a472a 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .location-selector {
+            padding: 25px 30px;
+            background: #f8f9fa;
+            border-bottom: 3px solid #2d5a27;
+        }
+
+        .location-selector h2 {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .location-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .location-input-wrapper {
+            position: relative;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .location-input-wrapper input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+
+        .location-input-wrapper input:focus {
+            outline: none;
+            border-color: #2d5a27;
+        }
+
+        .suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+        }
+
+        .suggestions.active {
+            display: block;
+        }
+
+        .suggestion-item {
+            padding: 10px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+        }
+
+        .suggestion-item:hover {
+            background: #f0f0f0;
+        }
+
+        .btn-gps {
+            padding: 12px 20px;
+            background: #2d5a27;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+
+        .btn-gps:hover {
+            background: #1a472a;
+        }
+
+        .btn-gps:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .current-location {
+            padding: 10px 15px;
+            background: #e8f5e9;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .current-location .location-name {
+            font-weight: 600;
+            color: #2d5a27;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px 30px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-card h3 {
+            font-size: 1.8em;
+            color: #2d5a27;
+            margin-bottom: 5px;
+        }
+
+        .stat-card p {
+            color: #666;
+            font-size: 0.85em;
+        }
+
+        .filters {
+            padding: 20px 30px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .filters label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        .filters input, .filters select {
+            padding: 8px 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .filters input:focus, .filters select:focus {
+            outline: none;
+            border-color: #2d5a27;
+        }
+
+        .sort-info {
+            margin-left: auto;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .table-container {
+            padding: 30px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        thead {
+            background: #2d5a27;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        thead th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        thead th:hover {
+            background: #1a472a;
+        }
+
+        thead th.sortable::after {
+            content: ' ⇅';
+            opacity: 0.5;
+        }
+
+        thead th.sorted-asc::after {
+            content: ' ↑';
+            opacity: 1;
+        }
+
+        thead th.sorted-desc::after {
+            content: ' ↓';
+            opacity: 1;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.2s;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        tbody td {
+            padding: 12px 15px;
+        }
+
+        .type-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .type-NOME-B { background: #e3f2fd; color: #1565c0; }
+        .type-NOWT { background: #f3e5f5; color: #6a1b9a; }
+        .type-NOU { background: #e8f5e9; color: #2e7d32; }
+
+        .distance {
+            font-weight: 600;
+            color: #2d5a27;
+        }
+
+        .distance-unknown {
+            color: #999;
+            font-style: italic;
+        }
+
+        .date {
+            font-weight: 600;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-size: 1.2em;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 4px 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75em;
+            font-weight: 600;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+
+        .btn-calendar {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-calendar:hover {
+            background: #45a049;
+        }
+
+        .btn-info {
+            background: #2196F3;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background: #0b7dda;
+        }
+
+        .btn-icon {
+            font-size: 1.1em;
+        }
+
+        .btn-text {
+            margin-left: 3px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 20px;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .info-section {
+            margin: 15px 0;
+        }
+
+        .info-section h3 {
+            color: #2d5a27;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .info-section p {
+            margin: 5px 0;
+            line-height: 1.8;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1s infinite;
+        }
+
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .location-controls {
+                flex-direction: column;
+            }
+
+            .location-input-wrapper {
+                width: 100%;
+            }
+
+            .btn-gps {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .filters {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filters input, .filters select {
+                width: 100%;
+            }
+
+            .sort-info {
+                margin-left: 0;
+                text-align: center;
+            }
+
+            .table-container {
+                padding: 10px;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            thead th, tbody td {
+                padding: 6px 4px;
+            }
+
+            .btn {
+                padding: 3px 6px;
+                font-size: 0.7em;
+            }
+
+            .btn-text {
+                display: none;
+            }
+
+            .action-buttons {
+                gap: 2px;
+                flex-direction: column;
+            }
+
+            .type-badge {
+                font-size: 0.75em;
+                padding: 3px 8px;
+            }
+
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+                padding: 20px;
+                max-height: 85vh;
+            }
+
+            /* Piilota vähemmän tärkeät sarakkeet mobiilissa */
+            thead th:nth-child(7),
+            tbody td:nth-child(7) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Koetutka</h1>
+            <p>Noutajakokeet lähellä sinua</p>
+        </header>
+
+        <div class="location-selector">
+            <h2>Valitse sijaintisi</h2>
+            <div class="location-controls">
+                <div class="location-input-wrapper">
+                    <input type="text" id="locationInput" placeholder="Kirjoita paikkakunta..." autocomplete="off">
+                    <div id="suggestions" class="suggestions"></div>
+                </div>
+                <button class="btn-gps" id="gpsButton" onclick="useGPS()">
+                    <span>📍</span> Käytä sijaintiani
+                </button>
+                <div class="current-location" id="currentLocation" style="display: none;">
+                    <span>📍</span>
+                    <span class="location-name" id="locationName">Kuopio</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <h3 id="totalCount">-</h3>
+                <p>Koetta yhteensä</p>
+            </div>
+        </div>
+
+        <div class="filters">
+            <label for="searchInput">Haku:</label>
+            <input type="text" id="searchInput" placeholder="Paikkakunta, tyyppi tai taso...">
+
+            <label for="typeFilter">Tyyppi:</label>
+            <select id="typeFilter">
+                <option value="">Kaikki</option>
+            </select>
+
+            <label for="levelFilter">Taso:</label>
+            <select id="levelFilter">
+                <option value="">Kaikki</option>
+            </select>
+
+            <span class="sort-info" id="sortInfo">Järjestetty: etäisyys ↑</span>
+        </div>
+
+        <div class="table-container">
+            <div id="loadingIndicator" class="loading">Ladataan kokeita</div>
+            <table id="kokeTable" style="display: none;">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-sort="distance" data-type="number">Etäisyys</th>
+                        <th class="sortable" data-sort="date" data-type="date">Päivä</th>
+                        <th class="sortable" data-sort="location" data-type="string">Paikkakunta</th>
+                        <th></th>
+                        <th class="sortable" data-sort="type" data-type="string">Tyyppi</th>
+                        <th class="sortable" data-sort="levels" data-type="string">Taso</th>
+                        <th class="sortable" data-sort="entry_date" data-type="string">Ilmoittautuminen</th>
+                        <th>📅</th>
+                    </tr>
+                </thead>
+                <tbody id="kokeTableBody">
+                </tbody>
+            </table>
+            <div id="noResults" class="no-results" style="display: none;">
+                Ei tuloksia haulle
+            </div>
+        </div>
+
+        <!-- Info Modal -->
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Data: SNJ koekalenteri | <span id="updateDate"></span></p>
+        </footer>
+    </div>
+
+    <script>
+        // Suomen kaupunkien koordinaatit (yleisimmät)
+        const finnishCities = {
+            'kuopio': { lat: 62.8924, lng: 27.6782 },
+            'helsinki': { lat: 60.1699, lng: 24.9384 },
+            'espoo': { lat: 60.2055, lng: 24.6559 },
+            'tampere': { lat: 61.4978, lng: 23.7610 },
+            'vantaa': { lat: 60.2934, lng: 25.0378 },
+            'oulu': { lat: 65.0121, lng: 25.4651 },
+            'turku': { lat: 60.4518, lng: 22.2666 },
+            'jyväskylä': { lat: 62.2426, lng: 25.7473 },
+            'lahti': { lat: 60.9827, lng: 25.6612 },
+            'pori': { lat: 61.4851, lng: 21.7974 },
+            'kouvola': { lat: 60.8679, lng: 26.7042 },
+            'joensuu': { lat: 62.6010, lng: 29.7636 },
+            'lappeenranta': { lat: 61.0587, lng: 28.1887 },
+            'hämeenlinna': { lat: 60.9959, lng: 24.4644 },
+            'vaasa': { lat: 63.0960, lng: 21.6158 },
+            'seinäjoki': { lat: 62.7876, lng: 22.8402 },
+            'rovaniemi': { lat: 66.5039, lng: 25.7294 },
+            'mikkeli': { lat: 61.6886, lng: 27.2723 },
+            'kotka': { lat: 60.4664, lng: 26.9458 },
+            'salo': { lat: 60.3833, lng: 23.1333 },
+            'porvoo': { lat: 60.3929, lng: 25.6641 },
+            'kokkola': { lat: 63.8376, lng: 23.1305 },
+            'lohja': { lat: 60.2500, lng: 24.0667 },
+            'hyvinkää': { lat: 60.6306, lng: 24.8597 },
+            'nurmijärvi': { lat: 60.4722, lng: 24.8083 },
+            'järvenpää': { lat: 60.4739, lng: 25.0892 },
+            'rauma': { lat: 61.1275, lng: 21.5111 },
+            'kajaani': { lat: 64.2270, lng: 27.7285 },
+            'kerava': { lat: 60.4028, lng: 25.1053 },
+            'savonlinna': { lat: 61.8687, lng: 28.8789 },
+            'nokia': { lat: 61.4775, lng: 23.5080 },
+            'ylöjärvi': { lat: 61.5548, lng: 23.5847 },
+            'kaarina': { lat: 60.4067, lng: 22.3667 },
+            'kangasala': { lat: 61.4639, lng: 24.0764 },
+            'varkaus': { lat: 62.3150, lng: 27.8728 },
+            'imatra': { lat: 61.1931, lng: 28.7764 },
+            'riihimäki': { lat: 60.7386, lng: 24.7722 },
+            'raasepori': { lat: 59.9728, lng: 23.4364 },
+            'hollola': { lat: 60.9872, lng: 25.5128 },
+            'lempäälä': { lat: 61.3139, lng: 23.7522 },
+            'tornio': { lat: 65.8492, lng: 24.1467 },
+            'siilinjärvi': { lat: 63.0833, lng: 27.6667 },
+            'valkeakoski': { lat: 61.2639, lng: 24.0292 },
+            'iisalmi': { lat: 63.5583, lng: 27.1917 },
+            'pietarsaari': { lat: 63.6750, lng: 22.7028 },
+            'kemi': { lat: 65.7364, lng: 24.5636 },
+            'forssa': { lat: 60.8164, lng: 23.6236 },
+            'heinola': { lat: 61.2067, lng: 26.0333 },
+            'pieksämäki': { lat: 62.3000, lng: 27.1583 },
+            'ylivieska': { lat: 64.0722, lng: 24.5375 },
+            'hamina': { lat: 60.5697, lng: 27.1983 },
+            'naantali': { lat: 60.4681, lng: 22.0264 },
+            'raahe': { lat: 64.6847, lng: 24.4792 },
+            'laukaa': { lat: 62.4139, lng: 25.9500 },
+            'kuusamo': { lat: 65.9667, lng: 29.1833 },
+            'jämsä': { lat: 61.8639, lng: 25.1903 },
+            'äänekoski': { lat: 62.6028, lng: 25.7264 },
+            'loviisa': { lat: 60.4569, lng: 26.2250 },
+            'raisio': { lat: 60.4861, lng: 22.1694 },
+            'uusikaupunki': { lat: 60.8000, lng: 21.4083 },
+            'lapua': { lat: 62.9708, lng: 23.0056 },
+            'vihti': { lat: 60.4167, lng: 24.3333 },
+            'lieksa': { lat: 63.3167, lng: 30.0167 },
+            'kurikka': { lat: 62.6194, lng: 22.4083 },
+            'kitee': { lat: 62.1000, lng: 30.1333 },
+            'nurmes': { lat: 63.5417, lng: 29.1333 },
+            'kontiolahti': { lat: 62.7667, lng: 29.8500 },
+            'liperi': { lat: 62.5333, lng: 29.3833 },
+            'outokumpu': { lat: 62.7250, lng: 29.0167 },
+            'kankaanpää': { lat: 61.8042, lng: 22.3917 },
+            'paimio': { lat: 60.4569, lng: 22.6861 },
+            'eurajoki': { lat: 61.2000, lng: 21.7333 },
+            'huittinen': { lat: 61.1764, lng: 22.6972 },
+            'harjavalta': { lat: 61.3139, lng: 22.1417 },
+            'ulvila': { lat: 61.4292, lng: 21.8750 },
+            'kokemäki': { lat: 61.2556, lng: 22.3528 },
+            'laitila': { lat: 60.8764, lng: 21.6972 },
+            'eura': { lat: 61.1292, lng: 22.1333 },
+            'säkylä': { lat: 61.0500, lng: 22.3333 },
+            'nakkila': { lat: 61.3667, lng: 22.0000 },
+            'lieto': { lat: 60.5000, lng: 22.4500 },
+            'parainen': { lat: 60.3000, lng: 22.3000 },
+            'masku': { lat: 60.5708, lng: 22.1000 },
+            'mynämäki': { lat: 60.6833, lng: 21.9833 },
+            'nousiainen': { lat: 60.6000, lng: 22.0833 },
+            'aura': { lat: 60.6500, lng: 22.5833 },
+            'pöytyä': { lat: 60.7167, lng: 22.6167 },
+            'somero': { lat: 60.6333, lng: 23.5167 },
+        };
+
+        let kokeet = [];
+        let filteredKokeet = [];
+        let userLocation = { lat: 62.8924, lng: 27.6782, name: 'Kuopio' }; // Oletus: Kuopio
+        let currentSort = { column: 'distance', ascending: true };
+
+        // Haversine-kaava etäisyyden laskemiseen
+        function haversineDistance(lat1, lon1, lat2, lon2) {
+            const R = 6371; // Maapallon säde km
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
+        // Laske etäisyydet kaikille kokeille
+        function calculateDistances() {
+            kokeet.forEach(koe => {
+                if (koe.coordinates && koe.coordinates.length === 2) {
+                    koe.distance = Math.round(haversineDistance(
+                        userLocation.lat, userLocation.lng,
+                        koe.coordinates[0], koe.coordinates[1]
+                    ));
+                } else {
+                    koe.distance = null;
+                }
+            });
+        }
+
+        // GPS-paikannus
+        function useGPS() {
+            const button = document.getElementById('gpsButton');
+            button.disabled = true;
+            button.innerHTML = '<span>⏳</span> Haetaan sijaintia...';
+
+            if (!navigator.geolocation) {
+                alert('Selaimesi ei tue paikannusta');
+                button.disabled = false;
+                button.innerHTML = '<span>📍</span> Käytä sijaintiani';
+                return;
+            }
+
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    userLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                        name: 'Nykyinen sijainti'
+                    };
+                    updateLocationDisplay();
+                    calculateDistances();
+                    sortAndRender();
+                    button.disabled = false;
+                    button.innerHTML = '<span>📍</span> Käytä sijaintiani';
+                },
+                (error) => {
+                    let message = 'Paikannusvirhe';
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            message = 'Sijainnin käyttö estetty';
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            message = 'Sijaintitietoa ei saatavilla';
+                            break;
+                        case error.TIMEOUT:
+                            message = 'Paikannuspyyntö aikakatkaistiin';
+                            break;
+                    }
+                    alert(message);
+                    button.disabled = false;
+                    button.innerHTML = '<span>📍</span> Käytä sijaintiani';
+                },
+                { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+            );
+        }
+
+        // Päivitä sijaintinäyttö
+        function updateLocationDisplay() {
+            const locationDisplay = document.getElementById('currentLocation');
+            const locationName = document.getElementById('locationName');
+            locationDisplay.style.display = 'flex';
+            locationName.textContent = userLocation.name;
+        }
+
+        // Tekstihaku paikkakunnalle
+        let searchTimeout;
+        document.getElementById('locationInput').addEventListener('input', function(e) {
+            clearTimeout(searchTimeout);
+            const query = e.target.value.toLowerCase().trim();
+            const suggestionsEl = document.getElementById('suggestions');
+
+            if (query.length < 2) {
+                suggestionsEl.classList.remove('active');
+                return;
+            }
+
+            // Etsi ensin paikallisesta listasta
+            const localMatches = Object.keys(finnishCities)
+                .filter(city => city.includes(query))
+                .slice(0, 5);
+
+            if (localMatches.length > 0) {
+                showSuggestions(localMatches.map(city => ({
+                    name: city.charAt(0).toUpperCase() + city.slice(1),
+                    lat: finnishCities[city].lat,
+                    lng: finnishCities[city].lng
+                })));
+            } else {
+                // Jos ei löydy paikallisesti, hae Nominatimista
+                searchTimeout = setTimeout(() => searchNominatim(query), 500);
+            }
+        });
+
+        async function searchNominatim(query) {
+            try {
+                const response = await fetch(
+                    `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)},Finland&limit=5&accept-language=fi`
+                );
+                const results = await response.json();
+
+                if (results.length > 0) {
+                    showSuggestions(results.map(r => ({
+                        name: r.display_name.split(',')[0],
+                        lat: parseFloat(r.lat),
+                        lng: parseFloat(r.lon)
+                    })));
+                } else {
+                    document.getElementById('suggestions').classList.remove('active');
+                }
+            } catch (error) {
+                console.error('Nominatim-haku epäonnistui:', error);
+            }
+        }
+
+        function showSuggestions(suggestions) {
+            const suggestionsEl = document.getElementById('suggestions');
+            suggestionsEl.innerHTML = suggestions.map(s =>
+                `<div class="suggestion-item" onclick="selectLocation('${s.name}', ${s.lat}, ${s.lng})">${s.name}</div>`
+            ).join('');
+            suggestionsEl.classList.add('active');
+        }
+
+        function selectLocation(name, lat, lng) {
+            userLocation = { lat, lng, name };
+            document.getElementById('locationInput').value = '';
+            document.getElementById('suggestions').classList.remove('active');
+            updateLocationDisplay();
+            calculateDistances();
+            sortAndRender();
+        }
+
+        // Sulje suggestions kun klikataan muualle
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.location-input-wrapper')) {
+                document.getElementById('suggestions').classList.remove('active');
+            }
+        });
+
+        // Lataa data
+        async function loadData() {
+            try {
+                // Yritä ladata JSON-tiedosto
+                const currentYear = new Date().getFullYear();
+                const nextYear = currentYear + 1;
+
+                // Kokeile ensin seuraavaa vuotta, sitten nykyistä
+                let response;
+                let dataYear;
+
+                try {
+                    response = await fetch(`koetutka_${nextYear}.json`);
+                    if (response.ok) {
+                        dataYear = nextYear;
+                    }
+                } catch (e) {}
+
+                if (!response || !response.ok) {
+                    response = await fetch(`koetutka_${currentYear}.json`);
+                    dataYear = currentYear;
+                }
+
+                if (!response.ok) {
+                    throw new Error('Dataa ei voitu ladata');
+                }
+
+                kokeet = await response.json();
+                document.getElementById('updateDate').textContent = `Vuosi ${dataYear}`;
+
+                calculateDistances();
+                populateFilters();
+                sortAndRender();
+
+                document.getElementById('loadingIndicator').style.display = 'none';
+                document.getElementById('kokeTable').style.display = 'table';
+
+                // Aseta oletus sijainti
+                updateLocationDisplay();
+
+            } catch (error) {
+                console.error('Virhe datan latauksessa:', error);
+                document.getElementById('loadingIndicator').innerHTML =
+                    'Virhe datan latauksessa. Tarkista että JSON-tiedosto on saatavilla.';
+            }
+        }
+
+        // Populoi suodattimet
+        function populateFilters() {
+            const types = new Set();
+            const levels = new Set();
+
+            kokeet.forEach(koe => {
+                types.add(koe.type);
+                if (koe.levels && koe.levels !== 'N/A') {
+                    // Poimi pelkät tasot ilman päivätietoja
+                    koe.levels.split(', ').forEach(level => {
+                        const cleanLevel = level.split(' (')[0].trim();
+                        levels.add(cleanLevel);
+                    });
+                }
+            });
+
+            const typeFilter = document.getElementById('typeFilter');
+            Array.from(types).sort().forEach(type => {
+                const option = document.createElement('option');
+                option.value = type;
+                option.textContent = type;
+                typeFilter.appendChild(option);
+            });
+
+            const levelFilter = document.getElementById('levelFilter');
+            Array.from(levels).sort().forEach(level => {
+                const option = document.createElement('option');
+                option.value = level;
+                option.textContent = level;
+                levelFilter.appendChild(option);
+            });
+        }
+
+        // Suodata ja järjestä
+        function sortAndRender() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const typeFilter = document.getElementById('typeFilter').value;
+            const levelFilter = document.getElementById('levelFilter').value;
+
+            filteredKokeet = kokeet.filter(koe => {
+                const matchesSearch = !searchTerm ||
+                    koe.location.toLowerCase().includes(searchTerm) ||
+                    koe.type.toLowerCase().includes(searchTerm) ||
+                    koe.levels.toLowerCase().includes(searchTerm) ||
+                    (koe.name && koe.name.toLowerCase().includes(searchTerm));
+
+                const matchesType = !typeFilter || koe.type === typeFilter;
+                const matchesLevel = !levelFilter || koe.levels.includes(levelFilter);
+
+                return matchesSearch && matchesType && matchesLevel;
+            });
+
+            // Järjestä
+            filteredKokeet.sort((a, b) => {
+                let valA, valB;
+
+                switch (currentSort.column) {
+                    case 'distance':
+                        valA = a.distance !== null ? a.distance : 99999;
+                        valB = b.distance !== null ? b.distance : 99999;
+                        break;
+                    case 'date':
+                        valA = a.date_sort || '';
+                        valB = b.date_sort || '';
+                        break;
+                    default:
+                        valA = a[currentSort.column] || '';
+                        valB = b[currentSort.column] || '';
+                }
+
+                if (valA < valB) return currentSort.ascending ? -1 : 1;
+                if (valA > valB) return currentSort.ascending ? 1 : -1;
+                return 0;
+            });
+
+            renderTable();
+            updateStats();
+        }
+
+        // Päivitä tilastot
+        function updateStats() {
+            document.getElementById('totalCount').textContent = filteredKokeet.length;
+
+            // Laske tyypit
+            const typeCounts = {};
+            filteredKokeet.forEach(koe => {
+                typeCounts[koe.type] = (typeCounts[koe.type] || 0) + 1;
+            });
+
+            const statsEl = document.getElementById('stats');
+            statsEl.innerHTML = `
+                <div class="stat-card">
+                    <h3>${filteredKokeet.length}</h3>
+                    <p>Koetta yhteensä</p>
+                </div>
+            `;
+
+            Object.entries(typeCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 4)
+                .forEach(([type, count]) => {
+                    statsEl.innerHTML += `
+                        <div class="stat-card">
+                            <h3>${count}</h3>
+                            <p>${type}</p>
+                        </div>
+                    `;
+                });
+        }
+
+        // Renderöi taulukko
+        function renderTable() {
+            const tbody = document.getElementById('kokeTableBody');
+            const noResults = document.getElementById('noResults');
+
+            if (filteredKokeet.length === 0) {
+                tbody.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            tbody.innerHTML = filteredKokeet.map((koe, index) => {
+                const typeClass = 'type-' + koe.type.replace(/[^a-zA-Z0-9-]/g, '-');
+                const distanceStr = koe.distance !== null
+                    ? `<span class="distance">${koe.distance} km</span>`
+                    : `<span class="distance-unknown">-</span>`;
+
+                return `
+                    <tr>
+                        <td>${distanceStr}</td>
+                        <td class="date">${koe.date}</td>
+                        <td>${koe.location}</td>
+                        <td style="text-align: center; width: 40px;">
+                            <button class="btn btn-info" onclick="showInfo(${index})" title="Näytä lisätiedot">
+                                <span class="btn-icon">ℹ️</span><span class="btn-text">Info</span>
+                            </button>
+                        </td>
+                        <td><span class="type-badge ${typeClass}">${koe.type}</span></td>
+                        <td>${koe.levels}</td>
+                        <td>${koe.entry_date}</td>
+                        <td style="text-align: center; width: 40px;">
+                            <button class="btn btn-calendar" onclick="downloadICS(${index})" title="Lisää kalenteriin">
+                                <span class="btn-icon">📅</span><span class="btn-text">Kalenteri</span>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Sarakkeen klikkaus järjestämiseen
+        document.querySelectorAll('thead th.sortable').forEach(th => {
+            th.addEventListener('click', function() {
+                const column = this.dataset.sort;
+                const isAscending = currentSort.column === column ? !currentSort.ascending : true;
+                currentSort = { column, ascending: isAscending };
+
+                // Päivitä visuaalinen merkintä
+                document.querySelectorAll('thead th').forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+                this.classList.add(isAscending ? 'sorted-asc' : 'sorted-desc');
+
+                // Päivitä järjestysinfo
+                const columnNames = {
+                    'distance': 'etäisyys',
+                    'date': 'päivämäärä',
+                    'location': 'paikkakunta',
+                    'type': 'tyyppi',
+                    'levels': 'taso',
+                    'entry_date': 'ilmoittautuminen'
+                };
+                document.getElementById('sortInfo').textContent =
+                    `Järjestetty: ${columnNames[column]} ${isAscending ? '↑' : '↓'}`;
+
+                sortAndRender();
+            });
+        });
+
+        // Näytä info-modal
+        function showInfo(index) {
+            const koe = filteredKokeet[index];
+            const modal = document.getElementById('infoModal');
+            const modalBody = document.getElementById('modalBody');
+
+            let html = `<h2>${koe.name || koe.type + ' ' + koe.location}</h2>`;
+
+            html += `<div class="info-section">
+                <h3>Perustiedot</h3>
+                <p><span class="info-label">Päivämäärä:</span> ${koe.date}</p>
+                <p><span class="info-label">Paikkakunta:</span> ${koe.location}</p>
+                <p><span class="info-label">Tyyppi:</span> ${koe.type}</p>
+                <p><span class="info-label">Tasot:</span> ${koe.levels}</p>
+                <p><span class="info-label">Ilmoittautuminen päättyy:</span> ${koe.entry_date}</p>
+            </div>`;
+
+            if (koe.distance !== null) {
+                html += `<div class="info-section">
+                    <h3>Etäisyys sijainnistasi</h3>
+                    <p><span class="info-label">Linnuntie:</span> ${koe.distance} km</p>
+                </div>`;
+            }
+
+            if (koe.organizer) {
+                html += `<div class="info-section">
+                    <h3>Järjestäjä</h3>
+                    <p>${koe.organizer}</p>
+                </div>`;
+            }
+
+            if (koe.judges && koe.judges.length > 0) {
+                html += `<div class="info-section">
+                    <h3>Tuomarit</h3>
+                    <p>${koe.judges.join(', ')}</p>
+                </div>`;
+            }
+
+            if (koe.official && koe.official.name) {
+                html += `<div class="info-section">
+                    <h3>Virallinen yhteyshenkilö</h3>
+                    <p><span class="info-label">Nimi:</span> ${koe.official.name}</p>
+                    ${koe.official.phone ? `<p><span class="info-label">Puhelin:</span> ${koe.official.phone}</p>` : ''}
+                    ${koe.official.email ? `<p><span class="info-label">Sähköposti:</span> <a href="mailto:${koe.official.email}">${koe.official.email}</a></p>` : ''}
+                </div>`;
+            }
+
+            if (koe.secretary && koe.secretary.name) {
+                html += `<div class="info-section">
+                    <h3>Sihteeri</h3>
+                    <p><span class="info-label">Nimi:</span> ${koe.secretary.name}</p>
+                    ${koe.secretary.phone ? `<p><span class="info-label">Puhelin:</span> ${koe.secretary.phone}</p>` : ''}
+                    ${koe.secretary.email ? `<p><span class="info-label">Sähköposti:</span> <a href="mailto:${koe.secretary.email}">${koe.secretary.email}</a></p>` : ''}
+                </div>`;
+            }
+
+            if (koe.cost || koe.cost_member) {
+                html += `<div class="info-section">
+                    <h3>Osallistumismaksut</h3>
+                    ${koe.cost ? `<p><span class="info-label">Maksu:</span> ${koe.cost} €</p>` : ''}
+                    ${koe.cost_member ? `<p><span class="info-label">Jäsenmaksu:</span> ${koe.cost_member} €</p>` : ''}
+                </div>`;
+            }
+
+            if (koe.description) {
+                html += `<div class="info-section">
+                    <h3>Lisätiedot</h3>
+                    <p>${koe.description.replace(/\n/g, '<br>')}</p>
+                </div>`;
+            }
+
+            modalBody.innerHTML = html;
+            modal.style.display = 'block';
+        }
+
+        // Sulje modal
+        function closeModal() {
+            document.getElementById('infoModal').style.display = 'none';
+        }
+
+        // Sulje modal kun klikataan modaalin ulkopuolella
+        window.onclick = function(event) {
+            const modal = document.getElementById('infoModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Lataa ICS kalenteritiedosto
+        function downloadICS(index) {
+            const koe = filteredKokeet[index];
+
+            const dateStr = koe.date_sort;
+            const date = new Date(dateStr);
+
+            const formatDateOnly = (d) => {
+                const pad = (n) => n.toString().padStart(2, '0');
+                return d.getFullYear() +
+                    pad(d.getMonth() + 1) +
+                    pad(d.getDate());
+            };
+
+            const formatICSTimestamp = (d) => {
+                const pad = (n) => n.toString().padStart(2, '0');
+                return d.getUTCFullYear() +
+                    pad(d.getUTCMonth() + 1) +
+                    pad(d.getUTCDate()) + 'T' +
+                    pad(d.getUTCHours()) +
+                    pad(d.getUTCMinutes()) +
+                    pad(d.getUTCSeconds()) + 'Z';
+            };
+
+            const dtstart = formatDateOnly(date);
+
+            let endDate;
+            if (koe.end_date_sort) {
+                endDate = new Date(koe.end_date_sort);
+                endDate.setDate(endDate.getDate() + 1);
+            } else {
+                endDate = new Date(date);
+                endDate.setDate(endDate.getDate() + 1);
+            }
+            const dtend = formatDateOnly(endDate);
+
+            let description = '';
+
+            if (koe.description) {
+                description += koe.description;
+                description += `\\n\\n--- Perustiedot ---\\n`;
+            }
+
+            description += `Tyyppi: ${koe.type}\\n`;
+
+            if (koe.classes && koe.classes.length > 0) {
+                description += `\\nLuokat ja päivät:\\n`;
+
+                const classesByDate = {};
+                const weekdays = ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'];
+
+                koe.classes.forEach(cls => {
+                    if (cls.class && cls.date) {
+                        const clsDate = new Date(cls.date);
+                        const dateKey = formatDateOnly(clsDate);
+                        const dayName = weekdays[clsDate.getDay()];
+                        const dateStr = clsDate.getDate() + '.' + (clsDate.getMonth() + 1) + '.';
+
+                        if (!classesByDate[dateKey]) {
+                            classesByDate[dateKey] = {
+                                dateStr: dateStr,
+                                dayName: dayName,
+                                classes: []
+                            };
+                        }
+                        classesByDate[dateKey].classes.push(cls.class);
+                    }
+                });
+
+                Object.keys(classesByDate).sort().forEach(dateKey => {
+                    const info = classesByDate[dateKey];
+                    description += `  ${info.dayName} ${info.dateStr}: ${info.classes.join(', ')}\\n`;
+                });
+            } else {
+                description += `Tasot: ${koe.levels}\\n`;
+            }
+            if (koe.organizer) description += `\\n\\nJärjestäjä: ${koe.organizer}`;
+            if (koe.judges && koe.judges.length > 0) description += `\\n\\nTuomarit: ${koe.judges.join(', ')}`;
+
+            if (koe.secretary && koe.secretary.name) {
+                description += `\\n\\nSihteeri: ${koe.secretary.name}`;
+                if (koe.secretary.phone) description += `, puh. ${koe.secretary.phone}`;
+                if (koe.secretary.email) description += `, ${koe.secretary.email}`;
+            }
+            if (koe.official && koe.official.name) {
+                description += `\\n\\nYhteyshenkilö: ${koe.official.name}`;
+                if (koe.official.phone) description += `, puh. ${koe.official.phone}`;
+                if (koe.official.email) description += `, ${koe.official.email}`;
+            }
+
+            if (koe.distance !== null) {
+                description += `\\n\\n--- Etäisyys (${userLocation.name}) ---`;
+                description += `\\nLinnuntie: ${koe.distance} km`;
+            }
+
+            description += `\\n\\nIlmoittautuminen päättyy: ${koe.entry_date}`;
+
+            if (koe.cost || koe.cost_member) {
+                description += `\\n\\n--- Osallistumismaksut ---`;
+                if (koe.cost) description += `\\nMaksu: ${koe.cost} €`;
+                if (koe.cost_member) description += `\\nJäsenmaksu: ${koe.cost_member} €`;
+            }
+
+            const title = `${koe.location} - ${koe.type} - ${koe.levels}`;
+            const location = koe.location + (koe.coordinates ? ` (${koe.coordinates[0]}, ${koe.coordinates[1]})` : '');
+
+            const icsContent = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//Koetutka//FI',
+                'CALSCALE:GREGORIAN',
+                'METHOD:PUBLISH',
+                'BEGIN:VEVENT',
+                `DTSTART;VALUE=DATE:${dtstart}`,
+                `DTEND;VALUE=DATE:${dtend}`,
+                `DTSTAMP:${formatICSTimestamp(new Date())}`,
+                `UID:${koe.date_sort}-${index}@koetutka.fi`,
+                `SUMMARY:${title}`,
+                `DESCRIPTION:${description}`,
+                `LOCATION:${location}`,
+                'STATUS:CONFIRMED',
+                'END:VEVENT',
+                'END:VCALENDAR'
+            ].join('\r\n');
+
+            const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = `koetutka-${koe.location}-${koe.date.replace(/\./g, '-')}.ics`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Event listenerit
+        document.getElementById('searchInput').addEventListener('input', sortAndRender);
+        document.getElementById('typeFilter').addEventListener('change', sortAndRender);
+        document.getElementById('levelFilter').addEventListener('change', sortAndRender);
+
+        // Alustus
+        loadData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Generated output files (created by CI or locally)
+koetutka_*.json
+snj_kokeet_*.html
+snj_kokeet_*.json
+snj_kokeet_*.csv
+
+# Cache (restored in CI from cache action)
+coordinates_cache.json
+
+# Build output
+_site/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
