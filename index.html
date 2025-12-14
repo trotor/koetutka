@@ -458,6 +458,22 @@
             background: #f8f9fa;
             color: #666;
             font-size: 0.9em;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: #2d5a27;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-separator {
+            margin: 0 8px;
+            color: #ccc;
         }
 
         .loading {
@@ -562,6 +578,19 @@
             tbody td:nth-child(7) {
                 display: none;
             }
+
+            footer {
+                font-size: 0.8em;
+                padding: 15px;
+            }
+
+            .footer-separator {
+                display: none;
+            }
+
+            footer p {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
@@ -646,7 +675,16 @@
         </div>
 
         <footer>
-            <p>Data: SNJ koekalenteri | <span id="updateDate"></span></p>
+            <p>
+                Data: SNJ koekalenteri | <span id="updateDate"></span>
+            </p>
+            <p>
+                Tekijä: <a href="https://github.com/trotor" target="_blank" rel="noopener">Tero Rönkkö</a>
+                <span class="footer-separator">|</span>
+                <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
+                <span class="footer-separator">|</span>
+                <span id="version">v1.0.0</span>
+            </p>
         </footer>
     </div>
 
