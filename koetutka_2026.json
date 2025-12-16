@@ -2722,6 +2722,38 @@
   {
     "type": "NOU",
     "levels": "N/A",
+    "date": "16.06.2026",
+    "date_sort": "2026-06-16T00:00:00+03:00",
+    "end_date_sort": "2026-06-16T00:00:00+03:00",
+    "entry_date": "05.05.-26.05.",
+    "location": "Sotkamo",
+    "coordinates": [
+      64.1318262,
+      28.3878316
+    ],
+    "name": "Noutajien Taipumuskoe",
+    "organizer": "KAINUUN NOUTAJAT RY",
+    "official": {
+      "name": "Laura Kähkönen",
+      "phone": "0401526791",
+      "email": "lauhou84@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": "koesihteeri@kainuunnoutajat.fi"
+    },
+    "judges": [
+      "Rönty Sanna-Maija"
+    ],
+    "description": "Koe on iltakoe, alkaa klo 15.00",
+    "cost": 50,
+    "cost_member": 45,
+    "classes": []
+  },
+  {
+    "type": "NOU",
+    "levels": "N/A",
     "date": "26.-28.06.2026",
     "date_sort": "2026-06-26T21:00:00+00:00",
     "end_date_sort": "2026-06-28T20:59:59.999000+00:00",
@@ -2798,17 +2830,17 @@
   },
   {
     "type": "NOWT SM",
-    "levels": "VOI (La)",
+    "levels": "N/A",
     "date": "27.06.2026",
     "date_sort": "2026-06-27T00:00:00+03:00",
     "end_date_sort": "2026-06-27T00:00:00+03:00",
-    "entry_date": "23.05.-12.06.",
+    "entry_date": "16.05.-12.06.",
     "location": "Jyväskylä",
     "coordinates": [
       62.241672,
       25.7495806
     ],
-    "name": "",
+    "name": "NOWT SM 2026",
     "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
     "official": {
       "name": "Timo Halme",
@@ -2826,22 +2858,10 @@
       "Sarkkinen Tomi",
       "Torila Mika"
     ],
-    "description": "Ilmoittautumismaksu sisältää keittolounaan. Saman om. toinen koira 50e.",
+    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman om. toinen koira 50e.",
     "cost": 60,
     "cost_member": "",
-    "classes": [
-      {
-        "date": "2026-06-26T21:00:00.000Z",
-        "class": "VOI",
-        "judge": [
-          {
-            "name": "Tenhunen Matti",
-            "official": true,
-            "id": 881593
-          }
-        ]
-      }
-    ]
+    "classes": []
   },
   {
     "type": "NOU",
@@ -3365,7 +3385,7 @@
     },
     "secretary": {
       "name": "Minna Aalto-Vainio",
-      "phone": "",
+      "phone": "0505031386",
       "email": "pikkunita@gmail.com"
     },
     "judges": [
@@ -3767,6 +3787,69 @@
   },
   {
     "type": "NOME-B",
+    "levels": "AVO (La), VOI (La)",
+    "date": "18.07.2026",
+    "date_sort": "2026-07-18T00:00:00+03:00",
+    "end_date_sort": "2026-07-18T00:00:00+03:00",
+    "entry_date": "06.06.-27.06.",
+    "location": "Kajaani",
+    "coordinates": [
+      64.2247169,
+      27.7337773
+    ],
+    "name": "",
+    "organizer": "KAINUUN NOUTAJAT RY",
+    "official": {
+      "name": "Saana Ylönen",
+      "phone": "0503818495",
+      "email": "ylonensaana@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": "koesihteeri@kainuunnoutajat.fi"
+    },
+    "judges": [
+      "Lappalainen Mika"
+    ],
+    "description": "",
+    "cost": 50,
+    "cost_member": 45,
+    "classes": [
+      {
+        "date": "2026-07-17T21:00:00.000Z",
+        "groups": [
+          "ap"
+        ],
+        "places": 8,
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "official": true,
+            "id": 882887
+          }
+        ],
+        "class": "AVO"
+      },
+      {
+        "date": "2026-07-17T21:00:00.000Z",
+        "groups": [
+          "ip"
+        ],
+        "places": 6,
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "official": true,
+            "id": 882887
+          }
+        ],
+        "class": "VOI"
+      }
+    ]
+  },
+  {
+    "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "18.-19.07.2026",
     "date_sort": "2026-07-18T00:00:00+03:00",
@@ -3901,6 +3984,51 @@
           }
         ],
         "class": "VOI"
+      }
+    ]
+  },
+  {
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "19.07.2026",
+    "date_sort": "2026-07-19T00:00:00+03:00",
+    "end_date_sort": "2026-07-19T00:00:00+03:00",
+    "entry_date": "07.06.-28.06.",
+    "location": "Kajaani",
+    "coordinates": [
+      64.2247169,
+      27.7337773
+    ],
+    "name": "",
+    "organizer": "KAINUUN NOUTAJAT RY",
+    "official": {
+      "name": "Sanna-Maija Rönty",
+      "phone": "044 53 26 354",
+      "email": "ronty.sanna@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": "koesihteeri@kainuunnoutajat.fi"
+    },
+    "judges": [
+      "Lappalainen Mika"
+    ],
+    "description": "",
+    "cost": 50,
+    "cost_member": 45,
+    "classes": [
+      {
+        "date": "2026-07-18T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "official": true,
+            "id": 882887
+          }
+        ],
+        "class": "ALO"
       }
     ]
   },
@@ -4498,7 +4626,8 @@
       "email": ""
     },
     "judges": [
-      ""
+      "Toskala Mika",
+      "Tenhunen Matti"
     ],
     "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu.",
     "cost": 50,
@@ -4511,6 +4640,13 @@
           "ip"
         ],
         "places": 16,
+        "judge": [
+          {
+            "name": "Tenhunen Matti",
+            "official": true,
+            "id": 881593
+          }
+        ],
         "class": "ALO"
       },
       {
@@ -4520,17 +4656,38 @@
           "ip"
         ],
         "places": 12,
+        "judge": [
+          {
+            "name": "Toskala Mika",
+            "official": true,
+            "id": 697689
+          }
+        ],
         "class": "VOI"
       },
       {
         "date": "2026-08-08T21:00:00.000Z",
-        "class": "AVO",
-        "places": 16
+        "places": 16,
+        "judge": [
+          {
+            "name": "Tenhunen Matti",
+            "official": true,
+            "id": 881593
+          }
+        ],
+        "class": "AVO"
       },
       {
         "date": "2026-08-08T21:00:00.000Z",
-        "class": "VOI",
-        "places": 12
+        "places": 12,
+        "judge": [
+          {
+            "name": "Toskala Mika",
+            "official": true,
+            "id": 697689
+          }
+        ],
+        "class": "VOI"
       }
     ]
   },
@@ -5618,6 +5775,38 @@
         "judge": []
       }
     ]
+  },
+  {
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "05.09.2026",
+    "date_sort": "2026-09-05T00:00:00+03:00",
+    "end_date_sort": "2026-09-05T00:00:00+03:00",
+    "entry_date": "17.08.-30.08.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Heli Eriksson",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Jaana Koiranen",
+      "phone": "",
+      "email": "jaanakoiranen@gmail.com"
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (Koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": []
   },
   {
     "type": "NOU",
