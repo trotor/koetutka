@@ -1439,8 +1439,8 @@
       "Montonen Mikael"
     ],
     "description": "Jäsenyyden on oltava voimassa ennen ilmoittautumisen alkua, jotta pääsee etusijalle.",
-    "cost": 45,
-    "cost_member": 40,
+    "cost": 50,
+    "cost_member": 45,
     "classes": []
   },
   {
@@ -1515,8 +1515,8 @@
       "Tenhunen Juha"
     ],
     "description": "Jäsenyyden on oltava voimassa ennen ilmoittautumisen alkua, jotta pääsee etusijalle.",
-    "cost": 45,
-    "cost_member": 40,
+    "cost": 50,
+    "cost_member": 45,
     "classes": [
       {
         "date": "2026-05-23T21:00:00.000Z",
@@ -6190,14 +6190,14 @@
     "name": "Tollerinome",
     "organizer": "NOVASCOTIANNOUTAJAT RY",
     "official": {
-      "name": "Maija Mäkinen",
+      "name": "Päivi Jokinen",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Malla Keränen",
       "phone": "",
-      "email": ""
+      "email": "koetolleri@gmail.com"
     },
     "judges": [
       "Lappalainen Mika"
@@ -6285,9 +6285,9 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Malla Keränen",
       "phone": "",
-      "email": ""
+      "email": "koetolleri@gmail.com"
     },
     "judges": [
       "Lappalainen Mika"
