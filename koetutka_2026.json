@@ -81,7 +81,7 @@
       60.9063816,
       24.6186447
     ],
-    "name": "KV-koe",
+    "name": "KV-koe, ILMOITTAUTUMINEN SÄHKÖPOSTILLA",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "Petri Kuosmanen",
@@ -89,9 +89,9 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Ulla Alhava",
       "phone": "",
-      "email": ""
+      "email": "ulla.alhava@gmail.com"
     },
     "judges": [
       "Sipola Miso",
@@ -116,7 +116,7 @@
       60.9063816,
       24.6186447
     ],
-    "name": "KV-koe",
+    "name": "KV-koe, ILMOITTAUTUMINEN SÄHKÖPOSTILLA",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "Petri Kuosmanen",
@@ -124,9 +124,9 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Ulla Alhava",
       "phone": "",
-      "email": ""
+      "email": "ulla.alhava@gmail.com"
     },
     "judges": [
       "Sipola Miso",
@@ -1060,22 +1060,22 @@
     "date_sort": "2026-05-16T00:00:00+03:00",
     "end_date_sort": "2026-05-17T23:59:59.999000+03:00",
     "entry_date": "04.04.-25.04.",
-    "location": "Uusimaa",
+    "location": "Uusimaa/ Inkoo",
     "coordinates": [
-      60.2246684,
-      25.1272631
+      60.0428902,
+      24.0034283
     ],
     "name": "Metsästysnoutajat ry mestaruus",
     "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
     "official": {
-      "name": "",
+      "name": "Noora Lavonen",
       "phone": "",
-      "email": ""
+      "email": "noora.lavonen@gmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Maija Grönlund",
       "phone": "",
-      "email": ""
+      "email": "maijagronlund@gmail.com"
     },
     "judges": [
       "Ronkainen Reima",
@@ -1083,24 +1083,27 @@
       "Schön Esa",
       "Torila Mika"
     ],
-    "description": "Mestaruuskoe",
-    "cost": "",
-    "cost_member": "",
+    "description": "Mestaruuskoe voittajaluokassa.",
+    "cost": 45,
+    "cost_member": 35,
     "classes": [
       {
         "date": "2026-05-15T21:00:00.000Z",
-        "class": "ALO",
-        "judge": []
+        "places": 30,
+        "judge": [],
+        "class": "ALO"
       },
       {
         "date": "2026-05-15T21:00:00.000Z",
-        "class": "AVO",
-        "judge": []
+        "places": 30,
+        "judge": [],
+        "class": "AVO"
       },
       {
         "date": "2026-05-16T21:00:00.000Z",
-        "class": "VOI",
-        "judge": []
+        "places": 60,
+        "judge": [],
+        "class": "VOI"
       }
     ]
   },
@@ -1540,21 +1543,21 @@
     "name": "",
     "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
     "official": {
-      "name": "",
+      "name": "Seija Sipola",
       "phone": "",
-      "email": ""
+      "email": "seija.sipola@hotmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Sirpa Lastunen-Turppa",
       "phone": "",
-      "email": ""
+      "email": "sirpa.lastunen-turppa@kopteri.net"
     },
     "judges": [
-      ""
+      "Jumisko Riitta"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": 45,
+    "cost_member": 35,
     "classes": []
   },
   {
@@ -1595,7 +1598,7 @@
     "date": "31.05.2026",
     "date_sort": "2026-05-31T00:00:00+03:00",
     "end_date_sort": "2026-05-31T00:00:00+03:00",
-    "entry_date": "19.04.-10.05.",
+    "entry_date": "19.04.-11.05.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -1609,21 +1612,28 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Ida Tallqvist",
       "phone": "",
-      "email": ""
+      "email": "olevinaanlabradorit@hotmail.com"
     },
     "judges": [
       "Uusimäki Pekka"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
+    "cost": 48,
+    "cost_member": 42,
     "classes": [
       {
         "date": "2026-05-30T21:00:00.000Z",
-        "class": "ALO",
-        "judge": []
+        "places": 15,
+        "judge": [
+          {
+            "name": "Uusimäki Pekka",
+            "official": true,
+            "id": 653323
+          }
+        ],
+        "class": "ALO"
       }
     ]
   },
@@ -1665,7 +1675,7 @@
     "date": "31.05.2026",
     "date_sort": "2026-05-31T00:00:00+03:00",
     "end_date_sort": "2026-05-31T00:00:00+03:00",
-    "entry_date": "19.04.-10.05.",
+    "entry_date": "19.04.-11.05.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -1674,21 +1684,21 @@
     "name": "",
     "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
     "official": {
-      "name": "",
+      "name": "Katja Virtanen",
       "phone": "",
-      "email": ""
+      "email": "k_suojanen@hotmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Ida Tallqvist",
       "phone": "",
-      "email": ""
+      "email": "olevinaanlabradorit@hotmail.com"
     },
     "judges": [
       "Martikainen Maarit"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
+    "cost": 48,
+    "cost_member": 42,
     "classes": []
   },
   {
@@ -2980,45 +2990,6 @@
   },
   {
     "type": "NOME-B",
-    "levels": "VOI (La)",
-    "date": "04.-05.07.2026",
-    "date_sort": "2026-07-04T00:00:00+03:00",
-    "end_date_sort": "2026-07-05T23:59:59.999000+03:00",
-    "entry_date": "23.05.-13.06.",
-    "location": "Heinola",
-    "coordinates": [
-      61.2027188,
-      26.031371
-    ],
-    "name": "Metsästysnoutajat ry mestaruus",
-    "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Puttonen Pasi-Petteri",
-      "Hiltunen Niko"
-    ],
-    "description": "Mestaruuskoe",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "date": "2026-07-03T21:00:00.000Z",
-        "class": "VOI",
-        "judge": []
-      }
-    ]
-  },
-  {
-    "type": "NOME-B",
     "levels": "ALO (La), AVO (La)",
     "date": "04.07.2026",
     "date_sort": "2026-07-04T00:00:00+03:00",
@@ -3069,6 +3040,53 @@
             "id": 835312
           }
         ]
+      }
+    ]
+  },
+  {
+    "type": "NOME-B",
+    "levels": "VOI (La, Su)",
+    "date": "04.-05.07.2026",
+    "date_sort": "2026-07-04T00:00:00+03:00",
+    "end_date_sort": "2026-07-05T00:00:00+03:00",
+    "entry_date": "23.05.-13.06.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "Metsästysnoutajat ry mestaruus",
+    "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
+    "official": {
+      "name": "Tuula Vestala",
+      "phone": "",
+      "email": "tuunummenpaa@gmail.com"
+    },
+    "secretary": {
+      "name": "Iina Rinne",
+      "phone": "",
+      "email": "iina.rinne@gmail.com"
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri",
+      "Hiltunen Niko"
+    ],
+    "description": "Mestaruuskoe ",
+    "cost": 45,
+    "cost_member": 35,
+    "classes": [
+      {
+        "date": "2026-07-04T00:00:00.000+03:00",
+        "entries": 0,
+        "places": 24,
+        "judge": [],
+        "class": "VOI",
+        "members": 0
+      },
+      {
+        "date": "2026-07-05T00:00:00.000+03:00",
+        "class": "VOI",
+        "places": 24
       }
     ]
   },
@@ -4697,7 +4715,7 @@
     "date": "08.08.2026",
     "date_sort": "2026-08-08T00:00:00+03:00",
     "end_date_sort": "2026-08-08T00:00:00+03:00",
-    "entry_date": "27.06.-18.07.",
+    "entry_date": "27.06.-20.07.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -4706,21 +4724,21 @@
     "name": "",
     "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
     "official": {
-      "name": "",
+      "name": "Mikko Ahti",
       "phone": "",
-      "email": ""
+      "email": "mikko.ahti@kolumbus.fi"
     },
     "secretary": {
-      "name": "",
+      "name": "Ida Tallqvist",
       "phone": "",
-      "email": ""
+      "email": "olevinaanlabradorit@hotmail.com"
     },
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
+    "cost": 48,
+    "cost_member": 42,
     "classes": []
   },
   {
@@ -4772,7 +4790,7 @@
     "date": "08.08.2026",
     "date_sort": "2026-08-08T00:00:00+03:00",
     "end_date_sort": "2026-08-08T00:00:00+03:00",
-    "entry_date": "27.06.-18.07.",
+    "entry_date": "27.06.-20.07.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -4781,26 +4799,33 @@
     "name": "",
     "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
     "official": {
-      "name": "",
+      "name": "Virpi Eroma",
       "phone": "",
-      "email": ""
+      "email": "virpi@virpieroma.fi"
     },
     "secretary": {
-      "name": "",
+      "name": "Ida Tallqvist",
       "phone": "",
-      "email": ""
+      "email": "olevinaanlabradorit@hotmail.com"
     },
     "judges": [
       "Tenhunen Juha"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
+    "cost": 48,
+    "cost_member": 42,
     "classes": [
       {
         "date": "2026-08-07T21:00:00.000Z",
-        "class": "AVO",
-        "judge": []
+        "places": 15,
+        "judge": [
+          {
+            "name": "Tenhunen Juha",
+            "official": true,
+            "id": 999999
+          }
+        ],
+        "class": "AVO"
       }
     ]
   },
@@ -4977,7 +5002,7 @@
     "date": "09.08.2026",
     "date_sort": "2026-08-09T00:00:00+03:00",
     "end_date_sort": "2026-08-09T00:00:00+03:00",
-    "entry_date": "28.06.-19.07.",
+    "entry_date": "27.06.-20.07.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -4991,21 +5016,28 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Ida Tallqvist",
       "phone": "",
-      "email": ""
+      "email": "olevinaanlabradorit@hotmail.com"
     },
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
+    "cost": 48,
+    "cost_member": 42,
     "classes": [
       {
         "date": "2026-08-08T21:00:00.000Z",
-        "class": "ALO",
-        "judge": []
+        "places": 15,
+        "judge": [
+          {
+            "name": "Fontell Ari-Pekka",
+            "official": true,
+            "id": 842408
+          }
+        ],
+        "class": "ALO"
       }
     ]
   },
@@ -5015,35 +5047,42 @@
     "date": "09.08.2026",
     "date_sort": "2026-08-09T00:00:00+03:00",
     "end_date_sort": "2026-08-09T00:00:00+03:00",
-    "entry_date": "28.06.-19.07.",
+    "entry_date": "27.06.-20.07.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
       23.1248694
     ],
-    "name": "",
+    "name": "Varsinais-Suomen kennelpiirin piirinmestaruuskoe",
     "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
     "official": {
-      "name": "",
+      "name": "Virpi Eroma",
       "phone": "",
-      "email": ""
+      "email": "virpi@virpieroma.fi"
     },
     "secretary": {
-      "name": "",
+      "name": "Ida Tallqvist",
       "phone": "",
-      "email": ""
+      "email": "olevinaanlabradorit@hotmail.com"
     },
     "judges": [
       "Tenhunen Juha"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/\n\nETUSIJA\nVarsinais-Suomen kennelpiirin mestaruuteen osallistuvat koirat, osallistumisoikeuden perusteella. \nSen jälkeen järjestävän yhdistyksen jäsenet+kutsutut. \n\nOSALLISTUMISOIKEUS (Hyväksytty Kennelliitossa 20.11.2025. Voimassa 1.1.2026 alkaen)\nPiirinmestaruudesta kilpailevan omistajan on oltava Kennelliiton tai kennelpiirin jäsenyhdistyksen jäsen. Piirinmestaruudesta saa kilpailla jokainen ilmoittautumishetkellä piirin alueella vakinaisesti asuva koiran omistaja tai piirin alueella vakinaisesti asuva sijoituksen vastaanottaja riippumatta hänen edustamansa yhdistyksen kotipaikasta.\nKoiran omistajaksi tai sijoituksen vastaanottajaksi katsotaan henkilö, jonka omistuksessa tai hallinnassa koira on ollut vähintään koetta edeltävän 6 kk:n ajan.\nUseamman omistajan koira kilpailee sen kennelpiirin mestaruudesta, jonne se on pääasiassa sijoitettu. Koira voi kilpailla vuosittain vain yhden kennelpiirin mestaruudesta.",
+    "cost": 48,
+    "cost_member": 42,
     "classes": [
       {
         "date": "2026-08-08T21:00:00.000Z",
-        "class": "VOI",
-        "judge": []
+        "places": 12,
+        "judge": [
+          {
+            "name": "Tenhunen Juha",
+            "official": true,
+            "id": 999999
+          }
+        ],
+        "class": "VOI"
       }
     ]
   },
