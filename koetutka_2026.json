@@ -1535,10 +1535,10 @@
     "date_sort": "2026-05-24T00:00:00+03:00",
     "end_date_sort": "2026-05-24T00:00:00+03:00",
     "entry_date": "12.04.-03.05.",
-    "location": "Tampere",
+    "location": "Kokemäki",
     "coordinates": [
-      61.4977929,
-      23.7616372
+      61.2513342,
+      22.3492421
     ],
     "name": "",
     "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
@@ -2336,8 +2336,8 @@
       "Kestilä-Kekkonen Elina"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": 50,
+    "cost_member": 45,
     "classes": []
   },
   {
@@ -2868,7 +2868,7 @@
       "Sarkkinen Tomi",
       "Torila Mika"
     ],
-    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman om. toinen koira 50e.",
+    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e.",
     "cost": 60,
     "cost_member": "",
     "classes": []
@@ -2920,14 +2920,14 @@
     "name": "",
     "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
     "official": {
-      "name": "",
+      "name": "Niina Parviainen",
       "phone": "",
       "email": ""
     },
     "secretary": {
       "name": "Maija Lappalainen",
       "phone": "",
-      "email": ""
+      "email": "maijalappalainen@kolumbus.fi"
     },
     "judges": [
       "Fontell Ari-Pekka",
@@ -2935,9 +2935,9 @@
       "Tenhunen Matti",
       "Torila Mika"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Koemaksu sisältää keittolounaan. Saman ohjaajan toinen koira 10e halvempi, eli 40e jäsen/45e ei-jäsen.",
+    "cost": 55,
+    "cost_member": 50,
     "classes": [
       {
         "date": "2026-06-27T21:00:00.000Z",
@@ -3065,7 +3065,7 @@
     "secretary": {
       "name": "Iina Rinne",
       "phone": "",
-      "email": "iina.rinne@gmail.com"
+      "email": "iina.rinne2025@gmail.com"
     },
     "judges": [
       "Puttonen Pasi-Petteri",
@@ -4119,9 +4119,9 @@
       "Hiltunen Taru",
       "Hiltunen Niko"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": " Keski-Suomen Kennelpiirin alueella asuminen tai järjestävän yhdistyksen jäsenyys ei oikeuta halvempaan ilmoittautumismaksuun.",
+    "cost": 50,
+    "cost_member": 50,
     "classes": [
       {
         "date": "2026-07-24T21:00:00.000Z",
@@ -4218,8 +4218,8 @@
       "Hiltunen Niko"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": 50,
+    "cost_member": 45,
     "classes": [
       {
         "date": "2026-07-26T00:00:00.000+03:00",
@@ -4317,8 +4317,8 @@
       "Hiltunen Taru"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": 50,
+    "cost_member": 45,
     "classes": [
       {
         "date": "2026-07-25T21:00:00.000Z",
@@ -6488,11 +6488,11 @@
       "email": "maijalappalainen@kolumbus.fi"
     },
     "judges": [
-      ""
+      "Purtola Susanna"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": 50,
+    "cost_member": 45,
     "classes": []
   },
   {
