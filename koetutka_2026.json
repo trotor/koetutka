@@ -721,21 +721,22 @@
     "name": "",
     "organizer": "AURAN NUUSKUT RY",
     "official": {
-      "name": "",
+      "name": "Outi Pensikkala",
       "phone": "",
-      "email": ""
+      "email": "outiannika@hotmail.fi"
     },
     "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
+      "name": "Veera Lempiäinen",
+      "phone": "0407419053",
+      "email": "veeralempiainen@icloud.com"
     },
     "judges": [
-      "Schön Esa"
+      "Schön Esa",
+      "Hirvonen Petteri"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "VOI-luokassa kisataan samalla historian ensimmäinen Varsinais-Suomen WT-piirinmestaruus! \n\nJäsenetuudet edellyttävät, että jäsenyyden oltava voimassa ilmoittautumisajan alkaessa. Kokeeseen etusijalla piirinmestaruudesta kisaavat (Kennelliiton pm-säännön mukaisesti), sekä AN jäsenet tai muut kokeeseen kutsuttavat. ",
+    "cost": 50,
+    "cost_member": 45,
     "classes": [
       {
         "date": "2026-05-02T00:00:00.000+03:00",
@@ -1036,21 +1037,21 @@
     "name": "",
     "organizer": "AURAN NUUSKUT RY",
     "official": {
-      "name": "",
+      "name": "Outi Pensikkala",
       "phone": "",
-      "email": ""
+      "email": "outiannika@hotmail.fi"
     },
     "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
+      "name": "Liisa Ewart",
+      "phone": "0400 592 150",
+      "email": "liisa.ewart@gmail.com"
     },
     "judges": [
       "Montonen Mikael"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
+    "cost": 50,
+    "cost_member": 45,
     "classes": []
   },
   {
@@ -2203,7 +2204,7 @@
   },
   {
     "type": "NOME-B",
-    "levels": "ALO (La, Su), AVO (Su)",
+    "levels": "ALO (La), AVO (Su)",
     "date": "13.-14.06.2026",
     "date_sort": "2026-06-13T00:00:00+03:00",
     "end_date_sort": "2026-06-14T23:59:59.999000+03:00",
@@ -2216,24 +2217,28 @@
     "name": "",
     "organizer": "AURAN NUUSKUT RY",
     "official": {
-      "name": "",
+      "name": "Julia Gustafsson",
       "phone": "",
-      "email": ""
+      "email": "lottajulia.gustafsson@gmail.com"
     },
     "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
+      "name": "Eeva Saario",
+      "phone": "040 757 1234",
+      "email": "eeva.saario@outlook.com"
     },
     "judges": [
       "Majuri Pasi"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
+    "cost": 50,
+    "cost_member": 45,
     "classes": [
       {
         "date": "2026-06-12T21:00:00.000Z",
+        "groups": [
+          "ap",
+          "ip"
+        ],
         "places": 15,
         "judge": [
           {
@@ -2246,18 +2251,10 @@
       },
       {
         "date": "2026-06-13T21:00:00.000Z",
-        "places": 7,
-        "judge": [
-          {
-            "name": "Majuri Pasi",
-            "official": true,
-            "id": 850900
-          }
+        "groups": [
+          "ap",
+          "ip"
         ],
-        "class": "ALO"
-      },
-      {
-        "date": "2026-06-13T21:00:00.000Z",
         "places": 8,
         "judge": [
           {
@@ -4469,21 +4466,21 @@
     "name": "",
     "organizer": "AURAN NUUSKUT RY",
     "official": {
-      "name": "",
+      "name": "Minna Latva",
       "phone": "",
-      "email": ""
+      "email": "majakkasaaren@gmail.com"
     },
     "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
+      "name": "Minna Latva",
+      "phone": "0400 842 998",
+      "email": "majakkasaaren@gmail.com"
     },
     "judges": [
       ""
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
+    "cost": 50,
+    "cost_member": 45,
     "classes": []
   },
   {
@@ -6507,7 +6504,7 @@
       60.1650696,
       22.7269885
     ],
-    "name": "Varsinais-Suomen pm-koe",
+    "name": "",
     "organizer": "AURAN NUUSKUT RY",
     "official": {
       "name": "",
@@ -6522,7 +6519,7 @@
     "judges": [
       "Uusimäki Pekka"
     ],
-    "description": "Varsinais-Suomen piirinmestaruuskoe. Etusijalla V-S Kennelpiirin alueella asuvat koirakot. ",
+    "description": "",
     "cost": "",
     "cost_member": "",
     "classes": [
