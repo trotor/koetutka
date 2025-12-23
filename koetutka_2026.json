@@ -2042,7 +2042,7 @@
     "date": "07.06.2026",
     "date_sort": "2026-06-07T00:00:00+03:00",
     "end_date_sort": "2026-06-07T00:00:00+03:00",
-    "entry_date": "26.04.-17.05.",
+    "entry_date": "26.04.-18.05.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -2056,16 +2056,16 @@
       "email": "k_suojanen@hotmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Taru Kanerva",
       "phone": "",
-      "email": ""
+      "email": "taru.kanerva@gmail.com"
     },
     "judges": [
-      ""
+      "Montonen Mikael"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Etusija Suomen sileäkarvaiset noutajat ry jäsenillä, sileäkarvaisilla noutajilla sekä edellämainitun yhdistyksen kokeissa talkoilleilla.",
+    "cost": 45,
+    "cost_member": 40,
     "classes": []
   },
   {
