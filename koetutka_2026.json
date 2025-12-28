@@ -2158,9 +2158,9 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Noora Mikkonen",
       "phone": "",
-      "email": ""
+      "email": "koesihteeri.lpny@gmail.com"
     },
     "judges": [
       "Vaarala Jarmo"
@@ -2987,27 +2987,27 @@
   },
   {
     "type": "NOME-B",
-    "levels": "ALO (La), AVO (La)",
+    "levels": "VOI (La)",
     "date": "04.07.2026",
     "date_sort": "2026-07-04T00:00:00+03:00",
     "end_date_sort": "2026-07-04T00:00:00+03:00",
     "entry_date": "23.05.-13.06.",
-    "location": "Meri-Lappi",
+    "location": "Tornio",
     "coordinates": [
-      65.7992109,
-      24.5045251
+      65.8457589,
+      24.1464
     ],
-    "name": "",
+    "name": "Lapin kennelpiirin nome-b piirinmestaruus",
     "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
     "official": {
-      "name": "Jussi Remes",
-      "phone": "0400 690 222",
+      "name": "Nelli Mikkonen",
+      "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
+      "name": "Jonna Alamommo",
+      "phone": "0405924880",
+      "email": "koesihteeri.lpny@gmail.com"
     },
     "judges": [
       "Salonen Susanna"
@@ -3017,19 +3017,8 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-07-03T21:00:00.000Z",
-        "class": "ALO",
-        "judge": [
-          {
-            "name": "Salonen Susanna",
-            "official": true,
-            "id": 835312
-          }
-        ]
-      },
-      {
-        "date": "2026-07-03T21:00:00.000Z",
-        "class": "AVO",
+        "date": "2026-07-04T00:00:00.000+03:00",
+        "class": "VOI",
         "judge": [
           {
             "name": "Salonen Susanna",
@@ -3140,27 +3129,27 @@
   },
   {
     "type": "NOME-B",
-    "levels": "VOI (Su)",
+    "levels": "ALO (Su), AVO (Su)",
     "date": "05.07.2026",
     "date_sort": "2026-07-05T00:00:00+03:00",
     "end_date_sort": "2026-07-05T00:00:00+03:00",
     "entry_date": "24.05.-14.06.",
-    "location": "Meri-Lappi",
+    "location": "Tornio",
     "coordinates": [
-      65.7992109,
-      24.5045251
+      65.8457589,
+      24.1464
     ],
-    "name": "Lapin kennelpiirin nome-b piirinmestaruus",
+    "name": "",
     "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
     "official": {
-      "name": "",
-      "phone": "",
+      "name": "Mikko Alamommo",
+      "phone": "0505767155",
       "email": ""
     },
     "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
+      "name": "Jonna Alamommo",
+      "phone": "0405924880",
+      "email": "koesihteeri.lpny@gmail.com"
     },
     "judges": [
       "Salonen Susanna"
@@ -3171,14 +3160,33 @@
     "classes": [
       {
         "date": "2026-07-04T21:00:00.000Z",
-        "class": "VOI",
+        "groups": [
+          "ap"
+        ],
+        "places": 0,
         "judge": [
           {
             "name": "Salonen Susanna",
             "official": true,
             "id": 835312
           }
-        ]
+        ],
+        "class": "ALO"
+      },
+      {
+        "date": "2026-07-04T21:00:00.000Z",
+        "groups": [
+          "ip"
+        ],
+        "places": 0,
+        "judge": [
+          {
+            "name": "Salonen Susanna",
+            "official": true,
+            "id": 835312
+          }
+        ],
+        "class": "AVO"
       }
     ]
   },
