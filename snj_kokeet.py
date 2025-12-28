@@ -234,6 +234,7 @@ def process_events(events, target_year):
         judges_list = [j.get('name', '') for j in judges if isinstance(j, dict)]
 
         results.append({
+            'id': event.get('id', ''),
             'type': event_type,
             'levels': levels_str,
             'date': date_str,

@@ -78,6 +78,9 @@ MIT
 
 ## Versiohistoria
 
+### v1.2.0 (2025-12-28)
+- Lisätty linkki SNJ:n koekalenteriin tapahtuman infoikkunaan
+
 ### v1.1.0 (2025-12-28)
 - Lisätty banneri-kuva headeriin
 - Lisätty yhteystiedot footeriin

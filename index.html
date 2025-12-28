@@ -377,6 +377,22 @@
             background: #45a049;
         }
 
+        .btn-snj {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #2d5a27;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-snj:hover {
+            background: #1a472a;
+            color: white;
+        }
+
         .btn-info {
             background: #2196F3;
             color: white;
@@ -683,7 +699,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.1.0</span>
+                <span id="version">v1.2.0</span>
             </p>
         </footer>
     </div>
@@ -1282,6 +1298,12 @@
                     <p>${koe.description.replace(/\n/g, '<br>')}</p>
                 </div>`;
             }
+
+            html += `<div class="info-section" style="text-align: center; margin-top: 20px;">
+                <a href="https://koekalenteri.snj.fi/" target="_blank" rel="noopener" class="btn btn-snj">
+                    Avaa SNJ:n koekalenteri
+                </a>
+            </div>`;
 
             modalBody.innerHTML = html;
             modal.style.display = 'block';
