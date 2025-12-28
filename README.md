@@ -76,6 +76,22 @@ Data haetaan SNJ:n virallisesta koekalenterista. Etäisyydet lasketaan linnuntie
 
 MIT
 
+## Versiohistoria
+
+### v1.1.0 (2025-12-28)
+- Lisätty banneri-kuva headeriin
+- Lisätty yhteystiedot footeriin
+- Siivottu projektirakenne
+
+### v1.0.0 (2025-12-14)
+- Ensimmäinen julkaisu
+- Sijaintipohjainen kokeiden haku
+- Pill-suodattimet lajeille ja tasoille
+- Kalenteriin vienti (.ics)
+- Automaattinen datapäivitys GitHub Actionsilla
+
 ## Tekijä
 
-Tero Ronkko
+Tero Rönkkö
+- Email: tero@savonnuuskut.com
+- GitHub: [@trotor](https://github.com/trotor)

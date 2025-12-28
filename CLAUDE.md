@@ -81,3 +81,21 @@ scp index.html banner.jpg koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/k
 **Development files:**
 - `snj_kokeet.py` - Data fetcher script
 - `coordinates_cache.json` - Geocoding cache
+
+## Versioning
+
+When making changes to the application, **always update the version number**:
+
+1. Update `index.html` - Change the version in footer (`<span id="version">vX.X.X</span>`)
+2. Update `README.md` - Add entry to the Version History section
+
+Use semantic versioning:
+- **Major (X.0.0)** - Breaking changes or major new features
+- **Minor (0.X.0)** - New features, significant improvements
+- **Patch (0.0.X)** - Bug fixes, small tweaks
+
+## Contact
+
+- **Author:** Tero Rönkkö
+- **Email:** tero@savonnuuskut.com
+- **GitHub:** https://github.com/trotor/koetutka
