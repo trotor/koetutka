@@ -58,13 +58,26 @@ scp index.html koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 
 ## Deployment
 
+### GitHub Pages (Primary)
+Live at: **https://teron.github.io/koetutka/**
+
+Push to `master` branch triggers automatic deployment via GitHub Pages.
+
+### Alternative: muikea.fi
 Target: `www.muikea.fi/koetutka/`
 
-Files to deploy:
+```bash
+scp index.html banner.jpg koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
+```
+
+## Files
+
+**Core files (deployed):**
 - `index.html` - Main page
+- `banner.jpg` - Header banner image
 - `koetutka_2025.json` - Current year data
 - `koetutka_2026.json` - Next year data
 
-```bash
-scp index.html koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
-```
+**Development files:**
+- `snj_kokeet.py` - Data fetcher script
+- `coordinates_cache.json` - Geocoding cache

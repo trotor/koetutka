@@ -22,3 +22,12 @@ _site/
 # IDE
 .idea/
 .vscode/
+
+# Development/debug scripts
+check_*.py
+show_*.py
+simple_check.py
+generate_html.py
+
+# Original banner source
+resources/
