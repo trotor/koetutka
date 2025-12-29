@@ -1,5 +1,40 @@
 [
   {
+    "id": "TYhHtp0Yh-",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "24.01.2026",
+    "date_sort": "2026-01-24T00:00:00+02:00",
+    "end_date_sort": "2026-01-24T00:00:00+02:00",
+    "entry_date": "01.01.-14.01.",
+    "location": "Janakkala",
+    "coordinates": [
+      60.9063816,
+      24.6186447
+    ],
+    "name": "ILMOITTAUTUMINEN SÄHKÖPOSTILLA",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Ulla Alhava",
+      "phone": "",
+      "email": "ulla.alhava@gmail.com"
+    },
+    "judges": [
+      "Ahola Pauliina",
+      "Luomanen Timo"
+    ],
+    "description": "Ilmoittautumiset sähköpostitse ulla.alhava@gmail.com. Maksu koepaikan varmistuttua.",
+    "cost": 0,
+    "cost_member": "",
+    "classes": []
+  },
+  {
+    "id": "Vp7rHJqV99",
     "type": "NOME-A SM",
     "levels": "N/A",
     "date": "14.02.2026",
@@ -35,6 +70,7 @@
     "classes": []
   },
   {
+    "id": "7GasRJbaPM",
     "type": "NOME-A",
     "levels": "N/A",
     "date": "15.02.2026",
@@ -70,6 +106,7 @@
     "classes": []
   },
   {
+    "id": "MIOINM1SPo",
     "type": "NOME-A",
     "levels": "N/A",
     "date": "23.02.2026",
@@ -105,6 +142,7 @@
     "classes": []
   },
   {
+    "id": "_tV7PO0mhm",
     "type": "NOME-A",
     "levels": "N/A",
     "date": "24.02.2026",
@@ -140,6 +178,7 @@
     "classes": []
   },
   {
+    "id": "dJkbTEG949",
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (La)",
     "date": "14.03.2026",
@@ -176,6 +215,7 @@
     ]
   },
   {
+    "id": "YZlaUzrXnf",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "21.03.2026",
@@ -208,6 +248,7 @@
     "classes": []
   },
   {
+    "id": "XgGcS-KOPY",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "21.03.2026",
@@ -240,6 +281,7 @@
     "classes": []
   },
   {
+    "id": "tk-r-xik3l",
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (Su)",
     "date": "22.03.2026",
@@ -280,6 +322,7 @@
     ]
   },
   {
+    "id": "IB9wwxoheD",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "28.03.2026",
@@ -312,6 +355,7 @@
     "classes": []
   },
   {
+    "id": "U1-iVA9wkQ",
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (Pe), AVO (Pe)",
     "date": "03.04.2026",
@@ -397,6 +441,7 @@
     ]
   },
   {
+    "id": "Pp3C-y-Vik",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "18.04.2026",
@@ -448,6 +493,7 @@
     ]
   },
   {
+    "id": "SXH9kesxN_",
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "19.04.2026",
@@ -499,6 +545,7 @@
     ]
   },
   {
+    "id": "bkpL41Jyde",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "25.04.2026",
@@ -549,6 +596,7 @@
     ]
   },
   {
+    "id": "ATZHfV0C0O",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "25.04.2026",
@@ -601,6 +649,7 @@
     ]
   },
   {
+    "id": "NddOmq0ozi",
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "26.04.2026",
@@ -659,6 +708,7 @@
     ]
   },
   {
+    "id": "HZhwmMJpCm",
     "type": "NOWT",
     "levels": "AVO (Pe), VOI (Pe)",
     "date": "01.05.2026",
@@ -707,6 +757,7 @@
     ]
   },
   {
+    "id": "U4g68_OLbT",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "02.05.2026",
@@ -756,6 +807,7 @@
     ]
   },
   {
+    "id": "vti7eDjv0H",
     "type": "NOWT",
     "levels": "AVO (Su), VOI (Su)",
     "date": "03.05.2026",
@@ -799,6 +851,7 @@
     ]
   },
   {
+    "id": "1907V2MHSY",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "09.05.2026",
@@ -848,6 +901,7 @@
     ]
   },
   {
+    "id": "0ecIQ_ZnTb",
     "type": "NOU",
     "levels": "N/A",
     "date": "09.05.2026",
@@ -880,6 +934,7 @@
     "classes": []
   },
   {
+    "id": "_oW8DAi2h2",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "09.05.2026",
@@ -913,6 +968,7 @@
     "classes": []
   },
   {
+    "id": "enqA1YUQs9",
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "10.05.2026",
@@ -959,6 +1015,7 @@
     ]
   },
   {
+    "id": "2GkNt_zYt7",
     "type": "NOU",
     "levels": "N/A",
     "date": "13.05.2026",
@@ -991,6 +1048,7 @@
     "classes": []
   },
   {
+    "id": "q4ZXOOLG84",
     "type": "NOU",
     "levels": "N/A",
     "date": "14.05.2026",
@@ -1023,6 +1081,7 @@
     "classes": []
   },
   {
+    "id": "gDp-T4iQeR",
     "type": "NOU",
     "levels": "N/A",
     "date": "14.05.2026",
@@ -1055,6 +1114,7 @@
     "classes": []
   },
   {
+    "id": "x7xmxPDf2S",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (Su)",
     "date": "16.-17.05.2026",
@@ -1109,6 +1169,7 @@
     ]
   },
   {
+    "id": "uCwt8nR9lf",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "16.05.2026",
@@ -1155,6 +1216,7 @@
     ]
   },
   {
+    "id": "RejQXHSIRV",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "16.05.2026",
@@ -1200,6 +1262,7 @@
     ]
   },
   {
+    "id": "KWG97H7W9K",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "16.05.2026",
@@ -1245,6 +1308,7 @@
     ]
   },
   {
+    "id": "S9eApVyOX_",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "17.05.2026",
@@ -1290,6 +1354,7 @@
     ]
   },
   {
+    "id": "KXSM-pJcCP",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "17.05.2026",
@@ -1322,6 +1387,7 @@
     "classes": []
   },
   {
+    "id": "rkvT5zvskr",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "17.05.2026",
@@ -1367,6 +1433,7 @@
     ]
   },
   {
+    "id": "hEs3ASMLMr",
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "17.05.2026",
@@ -1416,6 +1483,7 @@
     ]
   },
   {
+    "id": "RVxnscvb6K",
     "type": "NOU",
     "levels": "N/A",
     "date": "23.05.2026",
@@ -1448,6 +1516,7 @@
     "classes": []
   },
   {
+    "id": "movUaPHtsc",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "23.05.2026",
@@ -1492,6 +1561,7 @@
     ]
   },
   {
+    "id": "UK0QkdcRqd",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "24.05.2026",
@@ -1530,6 +1600,7 @@
     ]
   },
   {
+    "id": "z-JFSxIImS",
     "type": "NOU",
     "levels": "N/A",
     "date": "24.05.2026",
@@ -1562,6 +1633,7 @@
     "classes": []
   },
   {
+    "id": "I6AElg_ka3",
     "type": "NOU",
     "levels": "N/A",
     "date": "24.05.2026",
@@ -1594,6 +1666,7 @@
     "classes": []
   },
   {
+    "id": "lXiXNlXido",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "31.05.2026",
@@ -1639,6 +1712,7 @@
     ]
   },
   {
+    "id": "4ihrmTZLYL",
     "type": "NOU",
     "levels": "N/A",
     "date": "31.05.2026",
@@ -1671,6 +1745,7 @@
     "classes": []
   },
   {
+    "id": "sGFaCKVf17",
     "type": "NOU",
     "levels": "N/A",
     "date": "31.05.2026",
@@ -1703,6 +1778,7 @@
     "classes": []
   },
   {
+    "id": "L6y02rN3ni",
     "type": "NOU",
     "levels": "N/A",
     "date": "31.05.2026",
@@ -1732,6 +1808,7 @@
     "classes": []
   },
   {
+    "id": "gfcK5iN1gg",
     "type": "NOU",
     "levels": "N/A",
     "date": "02.06.2026",
@@ -1764,6 +1841,7 @@
     "classes": []
   },
   {
+    "id": "f05XxSTOjh",
     "type": "NOME-B",
     "levels": "ALO (La, Su)",
     "date": "06.-07.06.2026",
@@ -1821,6 +1899,7 @@
     ]
   },
   {
+    "id": "xCKkbWvzGs",
     "type": "NOU",
     "levels": "N/A",
     "date": "06.-07.06.2026",
@@ -1853,6 +1932,7 @@
     "classes": []
   },
   {
+    "id": "tmyJdZju1_",
     "type": "NOU",
     "levels": "N/A",
     "date": "06.06.2026",
@@ -1885,6 +1965,7 @@
     "classes": []
   },
   {
+    "id": "DS4hbLeTX9",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "06.06.2026",
@@ -1937,6 +2018,7 @@
     ]
   },
   {
+    "id": "xp1GOLLh2i",
     "type": "NOME-B",
     "levels": "ALO (La), AVO (Su)",
     "date": "06.-07.06.2026",
@@ -1992,6 +2074,7 @@
     ]
   },
   {
+    "id": "XNnIwzbuwm",
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "06.06.2026",
@@ -2037,6 +2120,7 @@
     ]
   },
   {
+    "id": "z-cc5mFj77",
     "type": "NOU",
     "levels": "N/A",
     "date": "07.06.2026",
@@ -2069,6 +2153,7 @@
     "classes": []
   },
   {
+    "id": "jHSQCM8RsZ",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "07.06.2026",
@@ -2107,6 +2192,7 @@
     ]
   },
   {
+    "id": "bn8pKxXLNN",
     "type": "NOU",
     "levels": "N/A",
     "date": "07.06.2026",
@@ -2139,6 +2225,7 @@
     "classes": []
   },
   {
+    "id": "VuUQ5bn4Hy",
     "type": "NOU",
     "levels": "N/A",
     "date": "12.06.2026",
@@ -2171,6 +2258,7 @@
     "classes": []
   },
   {
+    "id": "wYYRxz56HK",
     "type": "NOU",
     "levels": "N/A",
     "date": "13.06.2026",
@@ -2203,6 +2291,7 @@
     "classes": []
   },
   {
+    "id": "G3Rx_dTePc",
     "type": "NOME-B",
     "levels": "ALO (La), AVO (Su)",
     "date": "13.-14.06.2026",
@@ -2268,6 +2357,7 @@
     ]
   },
   {
+    "id": "8-18OiQaz_",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "13.06.2026",
@@ -2306,6 +2396,7 @@
     ]
   },
   {
+    "id": "SKlngAsDXt",
     "type": "NOU",
     "levels": "N/A",
     "date": "13.06.2026",
@@ -2338,6 +2429,7 @@
     "classes": []
   },
   {
+    "id": "oKw1W6TX5s",
     "type": "NOU",
     "levels": "N/A",
     "date": "13.06.2026",
@@ -2370,6 +2462,7 @@
     "classes": []
   },
   {
+    "id": "Q1BRHmQDsB",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "13.06.2026",
@@ -2381,7 +2474,7 @@
       62.0962173,
       26.0804935
     ],
-    "name": "NOME-B alokasluokka",
+    "name": "ALO-luokka",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "",
@@ -2389,31 +2482,33 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Maija Lappalainen",
       "phone": "",
-      "email": ""
+      "email": "nome.maija@gmail.com"
     },
     "judges": [
       "Puttonen Pasi-Petteri"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Ilmoittautumismaksu 50 €, labradorinnoutajat 45 €.",
+    "cost": 50,
+    "cost_member": 45,
     "classes": [
       {
-        "date": "2026-06-13T00:00:00.000+03:00",
-        "class": "ALO",
+        "date": "2026-06-12T21:00:00.000Z",
+        "places": 15,
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
             "official": true,
             "id": 4053791
           }
-        ]
+        ],
+        "class": "ALO"
       }
     ]
   },
   {
+    "id": "v-PPfTVDDX",
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "13.-14.06.2026",
@@ -2471,6 +2566,7 @@
     ]
   },
   {
+    "id": "agWgijs8UL",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "13.06.2026",
@@ -2509,6 +2605,7 @@
     ]
   },
   {
+    "id": "GTURqOc5EI",
     "type": "NOME-B",
     "levels": "N/A",
     "date": "13.06.2026",
@@ -2542,6 +2639,7 @@
     "classes": []
   },
   {
+    "id": "bmdwwNGlWI",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "14.06.2026",
@@ -2580,6 +2678,7 @@
     ]
   },
   {
+    "id": "7IwGELM6kM",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "14.06.2026",
@@ -2591,7 +2690,7 @@
       62.0962173,
       26.0804935
     ],
-    "name": "NOME-B alokasluokka",
+    "name": "ALO-luokka",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "",
@@ -2599,31 +2698,33 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Maija Lappalainen",
       "phone": "",
-      "email": ""
+      "email": "nome.maija@gmail.com"
     },
     "judges": [
       "Puttonen Pasi-Petteri"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Ilmoittautumismaksu 50 €, labradorinnoutajat 45 €.",
+    "cost": 50,
+    "cost_member": 45,
     "classes": [
       {
-        "date": "2026-06-14T00:00:00.000+03:00",
-        "class": "ALO",
+        "date": "2026-06-13T21:00:00.000Z",
+        "places": 15,
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
             "official": true,
             "id": 4053791
           }
-        ]
+        ],
+        "class": "ALO"
       }
     ]
   },
   {
+    "id": "iOzlvFKnzR",
     "type": "NOU",
     "levels": "N/A",
     "date": "14.06.2026",
@@ -2656,6 +2757,7 @@
     "classes": []
   },
   {
+    "id": "ivJRF7Go_0",
     "type": "NOME-B",
     "levels": "N/A",
     "date": "14.06.2026",
@@ -2689,6 +2791,7 @@
     "classes": []
   },
   {
+    "id": "am-ikJ2jjA",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "14.06.2026",
@@ -2727,6 +2830,7 @@
     ]
   },
   {
+    "id": "fyity5e_c6",
     "type": "NOU",
     "levels": "N/A",
     "date": "16.06.2026",
@@ -2759,6 +2863,7 @@
     "classes": []
   },
   {
+    "id": "Fp8LJjclXU",
     "type": "NOU",
     "levels": "N/A",
     "date": "26.-28.06.2026",
@@ -2791,6 +2896,7 @@
     "classes": []
   },
   {
+    "id": "XCsNEQYPD1",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "27.06.2026",
@@ -2836,6 +2942,7 @@
     ]
   },
   {
+    "id": "UWcCAxfpIi",
     "type": "NOWT SM",
     "levels": "N/A",
     "date": "27.06.2026",
@@ -2871,6 +2978,7 @@
     "classes": []
   },
   {
+    "id": "rSu9qoA_Aj",
     "type": "NOU",
     "levels": "N/A",
     "date": "28.06.2026",
@@ -2903,6 +3011,7 @@
     "classes": []
   },
   {
+    "id": "54UJN0RSx1",
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "28.06.2026",
@@ -2954,6 +3063,7 @@
     ]
   },
   {
+    "id": "gRWvi5ISGU",
     "type": "NOU",
     "levels": "N/A",
     "date": "03.07.2026",
@@ -2986,6 +3096,7 @@
     "classes": []
   },
   {
+    "id": "t2Q9aDg2TG",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "04.07.2026",
@@ -3030,6 +3141,7 @@
     ]
   },
   {
+    "id": "VGikLPPJuA",
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "04.-05.07.2026",
@@ -3077,6 +3189,7 @@
     ]
   },
   {
+    "id": "ALwd0AtZRm",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "04.07.2026",
@@ -3128,6 +3241,7 @@
     ]
   },
   {
+    "id": "5XogaQ28xp",
     "type": "NOME-B",
     "levels": "ALO (Su), AVO (Su)",
     "date": "05.07.2026",
@@ -3191,6 +3305,7 @@
     ]
   },
   {
+    "id": "5K3QDCrt-z",
     "type": "NOWT",
     "levels": "ALO (Ti), AVO (Ti)",
     "date": "07.07.2026",
@@ -3234,6 +3349,7 @@
     ]
   },
   {
+    "id": "wPA1TyGCgR",
     "type": "NOWT",
     "levels": "VOI (Ti)",
     "date": "07.07.2026",
@@ -3272,6 +3388,7 @@
     ]
   },
   {
+    "id": "hJ3Gm7I7cQ",
     "type": "NOU",
     "levels": "N/A",
     "date": "11.07.2026",
@@ -3304,6 +3421,7 @@
     "classes": []
   },
   {
+    "id": "WOhqjnQ57j",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "11.07.2026",
@@ -3349,6 +3467,7 @@
     ]
   },
   {
+    "id": "UPhbEoSz3s",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "11.07.2026",
@@ -3388,6 +3507,7 @@
     ]
   },
   {
+    "id": "1-g4w1AdKo",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "11.07.2026",
@@ -3433,6 +3553,7 @@
     ]
   },
   {
+    "id": "vPc-8wwq4q",
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "11.07.2026",
@@ -3477,6 +3598,7 @@
     ]
   },
   {
+    "id": "0GZ7HbLgdv",
     "type": "NOME-B",
     "levels": "ALO (La, Su)",
     "date": "11.-12.07.2026",
@@ -3534,6 +3656,7 @@
     ]
   },
   {
+    "id": "bKwiJCyQ3S",
     "type": "NOU",
     "levels": "N/A",
     "date": "11.07.2026",
@@ -3566,6 +3689,7 @@
     "classes": []
   },
   {
+    "id": "oOxIQk9h4C",
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "12.07.2026",
@@ -3611,6 +3735,7 @@
     ]
   },
   {
+    "id": "5pXkywjXME",
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "12.07.2026",
@@ -3655,6 +3780,7 @@
     ]
   },
   {
+    "id": "0Kzg6gCRqz",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "12.07.2026",
@@ -3700,6 +3826,7 @@
     ]
   },
   {
+    "id": "mrqpTI_iiI",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "12.07.2026",
@@ -3745,6 +3872,7 @@
     ]
   },
   {
+    "id": "3-mjEJipXW",
     "type": "NOU",
     "levels": "N/A",
     "date": "14.07.2026",
@@ -3777,6 +3905,7 @@
     "classes": []
   },
   {
+    "id": "9fx9pfp4qe",
     "type": "NOU",
     "levels": "N/A",
     "date": "18.-19.07.2026",
@@ -3809,6 +3938,7 @@
     "classes": []
   },
   {
+    "id": "zQfGEhNvl5",
     "type": "NOME-B",
     "levels": "AVO (La), VOI (La)",
     "date": "18.07.2026",
@@ -3872,6 +4002,7 @@
     ]
   },
   {
+    "id": "IsWo1GqRdb",
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "18.-19.07.2026",
@@ -3929,6 +4060,7 @@
     ]
   },
   {
+    "id": "bCgHsFJAc_",
     "type": "NOME-B",
     "levels": "ALO (La, Su), AVO (La), VOI (Su)",
     "date": "18.-19.07.2026",
@@ -4011,6 +4143,7 @@
     ]
   },
   {
+    "id": "kqiUEs2D6o",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "19.07.2026",
@@ -4056,6 +4189,7 @@
     ]
   },
   {
+    "id": "77Tvpl6Z1f",
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "25.-26.07.2026",
@@ -4097,6 +4231,7 @@
     ]
   },
   {
+    "id": "lY2N3TS1rn",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "25.07.2026",
@@ -4152,6 +4287,7 @@
     ]
   },
   {
+    "id": "nAznMMDhLI",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "25.07.2026",
@@ -4196,6 +4332,7 @@
     ]
   },
   {
+    "id": "4Rs17_Q95P",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "26.07.2026",
@@ -4240,6 +4377,7 @@
     ]
   },
   {
+    "id": "Kd8QOHcIXy",
     "type": "NOME-B",
     "levels": "ALO (Su), AVO (Su)",
     "date": "26.07.2026",
@@ -4295,6 +4433,7 @@
     ]
   },
   {
+    "id": "wkCuCx6BtX",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "26.07.2026",
@@ -4339,6 +4478,7 @@
     ]
   },
   {
+    "id": "wxKtVCdAy7",
     "type": "NOME-B",
     "levels": "ALO (La, Pe), AVO (La, Pe), VOI (La, Pe)",
     "date": "31.-02.08.2026",
@@ -4396,6 +4536,7 @@
     ]
   },
   {
+    "id": "xoAuKA02nU",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "31.-02.08.2026",
@@ -4428,6 +4569,7 @@
     "classes": []
   },
   {
+    "id": "2CpNLLyaZP",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "31.-01.08.2026",
@@ -4460,6 +4602,7 @@
     "classes": []
   },
   {
+    "id": "0Ght7pj4fa",
     "type": "NOU",
     "levels": "N/A",
     "date": "01.08.2026",
@@ -4492,6 +4635,7 @@
     "classes": []
   },
   {
+    "id": "cK3GBpruwX",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "01.08.2026",
@@ -4524,6 +4668,7 @@
     "classes": []
   },
   {
+    "id": "_t1MXHUzne",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "01.08.2026",
@@ -4561,6 +4706,7 @@
     ]
   },
   {
+    "id": "o48FcYsAdq",
     "type": "NOU",
     "levels": "N/A",
     "date": "05.08.2026",
@@ -4593,6 +4739,7 @@
     "classes": []
   },
   {
+    "id": "1oJd5d8pD1",
     "type": "NOU",
     "levels": "N/A",
     "date": "05.08.2026",
@@ -4625,6 +4772,7 @@
     "classes": []
   },
   {
+    "id": "h-cY_US-jO",
     "type": "NOME-B",
     "levels": "ALO (La), AVO (Su), VOI (La, Su)",
     "date": "07.-09.08.2026",
@@ -4715,6 +4863,7 @@
     ]
   },
   {
+    "id": "IZIi3JY0rF",
     "type": "NOU",
     "levels": "N/A",
     "date": "08.08.2026",
@@ -4747,6 +4896,7 @@
     "classes": []
   },
   {
+    "id": "_bakND2s8Q",
     "type": "NOME-B",
     "levels": "ALO (La), AVO (Su)",
     "date": "08.-09.08.2026",
@@ -4790,6 +4940,7 @@
     ]
   },
   {
+    "id": "lxLz9LeWi_",
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "08.08.2026",
@@ -4835,6 +4986,7 @@
     ]
   },
   {
+    "id": "rNjxHmwzjT",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "08.08.2026",
@@ -4873,6 +5025,7 @@
     ]
   },
   {
+    "id": "lyfQxX4S4G",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "08.08.2026",
@@ -4917,6 +5070,7 @@
     ]
   },
   {
+    "id": "TAst7Qrymb",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "08.08.2026",
@@ -4961,6 +5115,7 @@
     ]
   },
   {
+    "id": "IpUw_k3241",
     "type": "NOME-B",
     "levels": "AVO (Su), VOI (Su)",
     "date": "09.08.2026",
@@ -5002,6 +5157,7 @@
     ]
   },
   {
+    "id": "7lkf4Zi7tJ",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "09.08.2026",
@@ -5047,6 +5203,7 @@
     ]
   },
   {
+    "id": "kGBXKrKrE8",
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "09.08.2026",
@@ -5092,6 +5249,7 @@
     ]
   },
   {
+    "id": "n5pRme6nRj",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "09.08.2026",
@@ -5136,6 +5294,7 @@
     ]
   },
   {
+    "id": "dk158RLxJU",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "15.08.2026",
@@ -5181,6 +5340,7 @@
     ]
   },
   {
+    "id": "rfjwYfMugE",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La)",
     "date": "15.08.2026",
@@ -5225,6 +5385,7 @@
     ]
   },
   {
+    "id": "Yvi-med09k",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "15.08.2026",
@@ -5270,6 +5431,7 @@
     ]
   },
   {
+    "id": "kE-jd4AB9y",
     "type": "NOU",
     "levels": "N/A",
     "date": "15.08.2026",
@@ -5302,6 +5464,7 @@
     "classes": []
   },
   {
+    "id": "bA4Q4ti6b1",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "15.08.2026",
@@ -5343,6 +5506,7 @@
     ]
   },
   {
+    "id": "5SWy9ZSXe7",
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "15.-16.08.2026",
@@ -5393,6 +5557,7 @@
     ]
   },
   {
+    "id": "8YV5JwN5_-",
     "type": "NOU",
     "levels": "N/A",
     "date": "16.08.2026",
@@ -5425,6 +5590,7 @@
     "classes": []
   },
   {
+    "id": "5kWqqC1o2N",
     "type": "NOU",
     "levels": "N/A",
     "date": "16.08.2026",
@@ -5457,6 +5623,7 @@
     "classes": []
   },
   {
+    "id": "e-1PcwEiqv",
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "16.08.2026",
@@ -5502,6 +5669,7 @@
     ]
   },
   {
+    "id": "SZKtBO5RU2",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "16.08.2026",
@@ -5547,6 +5715,7 @@
     ]
   },
   {
+    "id": "omsNS0gK2y",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "16.08.2026",
@@ -5592,6 +5761,7 @@
     ]
   },
   {
+    "id": "pwcvKWfwR2",
     "type": "NOU",
     "levels": "N/A",
     "date": "16.08.2026",
@@ -5624,6 +5794,7 @@
     "classes": []
   },
   {
+    "id": "97wxdX0TA8",
     "type": "NOME-B",
     "levels": "ALO (La), AVO (La)",
     "date": "29.08.2026",
@@ -5685,6 +5856,7 @@
     ]
   },
   {
+    "id": "7UmM8hKYof",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "29.-30.08.2026",
@@ -5733,6 +5905,7 @@
     ]
   },
   {
+    "id": "7F4FOTz0XI",
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "30.08.2026",
@@ -5777,6 +5950,7 @@
     ]
   },
   {
+    "id": "_yM9-IwU7B",
     "type": "NOME-B SM",
     "levels": "VOI (La, Pe)",
     "date": "04.-05.09.2026",
@@ -5821,6 +5995,7 @@
     ]
   },
   {
+    "id": "v9BG8fXoRF",
     "type": "NOU",
     "levels": "N/A",
     "date": "05.09.2026",
@@ -5853,6 +6028,7 @@
     "classes": []
   },
   {
+    "id": "Jcmg4QClcN",
     "type": "NOU",
     "levels": "N/A",
     "date": "05.09.2026",
@@ -5885,6 +6061,7 @@
     "classes": []
   },
   {
+    "id": "V5Pq8nhEa-",
     "type": "NOU",
     "levels": "N/A",
     "date": "06.09.2026",
@@ -5917,6 +6094,7 @@
     "classes": []
   },
   {
+    "id": "f0H2RHLesH",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "12.09.2026",
@@ -5965,6 +6143,7 @@
     ]
   },
   {
+    "id": "pSGSr3ChkO",
     "type": "NOU",
     "levels": "N/A",
     "date": "12.09.2026",
@@ -5997,6 +6176,7 @@
     "classes": []
   },
   {
+    "id": "d4lO-oRp8e",
     "type": "NOU",
     "levels": "N/A",
     "date": "12.-13.09.2026",
@@ -6029,6 +6209,7 @@
     "classes": []
   },
   {
+    "id": "dvwmMNTuus",
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "13.09.2026",
@@ -6077,6 +6258,7 @@
     ]
   },
   {
+    "id": "ayp8ZrnlMU",
     "type": "NOU",
     "levels": "N/A",
     "date": "18.-20.09.2026",
@@ -6109,6 +6291,7 @@
     "classes": []
   },
   {
+    "id": "sgEgvCN7nZ",
     "type": "NOME-A",
     "levels": "N/A",
     "date": "19.09.2026",
@@ -6142,6 +6325,7 @@
     "classes": []
   },
   {
+    "id": "9LuxiWMOY0",
     "type": "NOWT",
     "levels": "AVO (La), VOI (La)",
     "date": "19.09.2026",
@@ -6188,6 +6372,7 @@
     ]
   },
   {
+    "id": "Mq_SHxLuIR",
     "type": "NOU",
     "levels": "N/A",
     "date": "19.09.2026",
@@ -6220,6 +6405,7 @@
     "classes": []
   },
   {
+    "id": "bikzngY96n",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "19.09.2026",
@@ -6265,6 +6451,7 @@
     ]
   },
   {
+    "id": "l7II9ZIowI",
     "type": "NOWT",
     "levels": "AVO (Su), VOI (Su)",
     "date": "20.09.2026",
@@ -6310,6 +6497,7 @@
     ]
   },
   {
+    "id": "Ts80lu7S31",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "20.09.2026",
@@ -6354,6 +6542,7 @@
     ]
   },
   {
+    "id": "LrTMU442O1",
     "type": "NOU",
     "levels": "N/A",
     "date": "26.-27.09.2026",
@@ -6386,6 +6575,7 @@
     "classes": []
   },
   {
+    "id": "SxFikIUEfq",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "26.09.2026",
@@ -6430,6 +6620,7 @@
     ]
   },
   {
+    "id": "GVzUre9exB",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "26.09.2026",
@@ -6469,6 +6660,7 @@
     ]
   },
   {
+    "id": "FJpsJK89sU",
     "type": "NOU",
     "levels": "N/A",
     "date": "26.-27.09.2026",
@@ -6501,6 +6693,7 @@
     "classes": []
   },
   {
+    "id": "AQem2RQsgG",
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "26.09.2026",
@@ -6545,6 +6738,7 @@
     ]
   },
   {
+    "id": "bn7tXxN3KD",
     "type": "NOU",
     "levels": "N/A",
     "date": "26.-27.09.2026",
@@ -6577,6 +6771,7 @@
     "classes": []
   },
   {
+    "id": "Hm1id2h1F7",
     "type": "NOME-B",
     "levels": "ALO (Su), AVO (Su)",
     "date": "27.09.2026",
@@ -6623,6 +6818,7 @@
     ]
   },
   {
+    "id": "0OrMAOqaqA",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "27.09.2026",
@@ -6667,6 +6863,7 @@
     ]
   },
   {
+    "id": "Sc6lW4685x",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "03.10.2026",
@@ -6716,6 +6913,7 @@
     ]
   },
   {
+    "id": "iN8UZX6Um_",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "17.10.2026",
@@ -6766,6 +6964,7 @@
     ]
   },
   {
+    "id": "6p2tAdYq9O",
     "type": "NOWT",
     "levels": "AVO (Su), VOI (Su)",
     "date": "25.10.2026",
@@ -6810,6 +7009,7 @@
     ]
   },
   {
+    "id": "4FYeaiEMRz",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "31.10.2026",
@@ -6865,6 +7065,7 @@
     ]
   },
   {
+    "id": "BkA7mzBtzM",
     "type": "NOWT",
     "levels": "AVO (Su), VOI (Su)",
     "date": "01.11.2026",
@@ -6908,6 +7109,7 @@
     ]
   },
   {
+    "id": "F5iXiF5Oto",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "14.11.2026",
@@ -6941,6 +7143,7 @@
     "classes": []
   },
   {
+    "id": "X8vGHq_sSF",
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (Su), AVO (Su)",
     "date": "15.11.2026",
