@@ -78,6 +78,14 @@ MIT
 
 ## Versiohistoria
 
+### v1.3.1 (2025-12-30)
+- Parannettu korttien erottuvuutta: lisätty varjo, pyöristetyt kulmat ja isompi väli korttien välillä
+- Parannettu hover-efekti korteille
+
+### v1.3.0 (2025-12-29)
+- Mobiiliystävällinen korttipohjainennäkymä
+- Parannettu käyttökokemus pienillä näytöillä
+
 ### v1.2.0 (2025-12-28)
 - Lisätty linkki SNJ:n koekalenteriin tapahtuman infoikkunaan
 
