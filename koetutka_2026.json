@@ -1,39 +1,5 @@
 [
   {
-    "id": "TYhHtp0Yh-",
-    "type": "NOME-A",
-    "levels": "N/A",
-    "date": "24.01.2026",
-    "date_sort": "2026-01-24T00:00:00+02:00",
-    "end_date_sort": "2026-01-24T00:00:00+02:00",
-    "entry_date": "01.01.-14.01.",
-    "location": "Janakkala",
-    "coordinates": [
-      60.9063816,
-      24.6186447
-    ],
-    "name": "ILMOITTAUTUMINEN SÄHKÖPOSTILLA",
-    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Ulla Alhava",
-      "phone": "",
-      "email": "ulla.alhava@gmail.com"
-    },
-    "judges": [
-      "Ahola Pauliina",
-      "Luomanen Timo"
-    ],
-    "description": "Ilmoittautumiset sähköpostitse ulla.alhava@gmail.com. Maksu koepaikan varmistuttua.",
-    "cost": 0,
-    "cost_member": "",
-    "classes": []
-  },
-  {
     "id": "Vp7rHJqV99",
     "type": "NOME-A SM",
     "levels": "N/A",
@@ -76,7 +42,7 @@
     "date": "15.02.2026",
     "date_sort": "2026-02-15T00:00:00+02:00",
     "end_date_sort": "2026-02-15T00:00:00+02:00",
-    "entry_date": "03.01.-31.01.",
+    "entry_date": "03.01.-24.01.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -243,7 +209,7 @@
       ""
     ],
     "description": "Osallistumisoikeus on rekisteröidyillä noutajilla, joita ei ole palkittu noutajien metsästyskokeissa, kuitenkin niin, että etuoikeus on nuorilla koirilla (NOU1-tulos on sallittu). Osallistumisoikeus on koirilla, jotka ovat maksimissaan 2 vuotta (alaikäraja 9 kk). Ilmoittautumalla kokeeseen hyväksyn, että kokeen järjestämisen vastuuhenkilöt voivat käsitellä ilmoittamiani henkilötietoja ja julkaista niitä tarpeen mukaisesti ja soveltuvin osin kokeen osallistuja- ja tulosluettelossa koepaikalla ja kokeeseen liittyvissä julkaisuissa internetissä tai muissa yhdistyksen medioissa. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
-    "cost": 40,
+    "cost": 35,
     "cost_member": 30,
     "classes": []
   },
@@ -309,7 +275,7 @@
       ""
     ],
     "description": "UMN:n järjestämä epävirallinen WT-koe kaikille yli 9kk ikäisille rekisteröidyille noutajille. Kokeessa olevia ALO luokan taso on hieman helpotetumpi verrattuna virallisen koeluokan vastaavaan tasoon. Alokasluokassa koira saa olla heittojen ajan taluttimessa, mutta suorituksesta vähennetään tällöin muutama piste. Kokeessa on neljä rastimuotoista tehtävää. Ei taipumuskoevaatimusta! Alokasluokkaan osallistuvalla koiralla ei saa olla avoimeen luokkaan oikeuttavaa tulosta. Kokeessa noudatetaan Kennelliiton rokotusmääräyksiä sekä antidopingsääntöjä. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
-    "cost": 40,
+    "cost": 35,
     "cost_member": 30,
     "classes": [
       {
@@ -880,7 +846,7 @@
       "Väisänen Riitta"
     ],
     "description": "",
-    "cost": 50,
+    "cost": 45,
     "cost_member": 40,
     "classes": [
       {
@@ -997,7 +963,7 @@
       "Schön Esa"
     ],
     "description": "",
-    "cost": 50,
+    "cost": 45,
     "cost_member": 40,
     "classes": [
       {
@@ -1544,8 +1510,8 @@
       "Särkänlahti Jari"
     ],
     "description": "",
-    "cost": 55,
-    "cost_member": 45,
+    "cost": 45,
+    "cost_member": 40,
     "classes": [
       {
         "date": "2026-05-23T00:00:00.000+03:00",
@@ -1661,7 +1627,7 @@
       "Kestilä-Kekkonen Elina"
     ],
     "description": "Maariistana on haussa fasaani",
-    "cost": 50,
+    "cost": 45,
     "cost_member": 40,
     "classes": []
   },
@@ -1869,8 +1835,8 @@
       "Toskala Mika"
     ],
     "description": "",
-    "cost": 55,
-    "cost_member": 45,
+    "cost": 45,
+    "cost_member": 40,
     "classes": [
       {
         "date": "2026-06-05T21:00:00.000Z",
@@ -2474,7 +2440,7 @@
       62.0962173,
       26.0804935
     ],
-    "name": "ALO-luokka",
+    "name": "NOME-B alokasluokka",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "",
@@ -2482,28 +2448,27 @@
       "email": ""
     },
     "secretary": {
-      "name": "Maija Lappalainen",
+      "name": "",
       "phone": "",
-      "email": "nome.maija@gmail.com"
+      "email": ""
     },
     "judges": [
       "Puttonen Pasi-Petteri"
     ],
-    "description": "Ilmoittautumismaksu 50 €, labradorinnoutajat 45 €.",
-    "cost": 50,
-    "cost_member": 45,
+    "description": "",
+    "cost": "",
+    "cost_member": "",
     "classes": [
       {
-        "date": "2026-06-12T21:00:00.000Z",
-        "places": 15,
+        "date": "2026-06-13T00:00:00.000+03:00",
+        "class": "ALO",
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
             "official": true,
             "id": 4053791
           }
-        ],
-        "class": "ALO"
+        ]
       }
     ]
   },
@@ -2690,7 +2655,7 @@
       62.0962173,
       26.0804935
     ],
-    "name": "ALO-luokka",
+    "name": "NOME-B alokasluokka",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "",
@@ -2698,28 +2663,27 @@
       "email": ""
     },
     "secretary": {
-      "name": "Maija Lappalainen",
+      "name": "",
       "phone": "",
-      "email": "nome.maija@gmail.com"
+      "email": ""
     },
     "judges": [
       "Puttonen Pasi-Petteri"
     ],
-    "description": "Ilmoittautumismaksu 50 €, labradorinnoutajat 45 €.",
-    "cost": 50,
-    "cost_member": 45,
+    "description": "",
+    "cost": "",
+    "cost_member": "",
     "classes": [
       {
-        "date": "2026-06-13T21:00:00.000Z",
-        "places": 15,
+        "date": "2026-06-14T00:00:00.000+03:00",
+        "class": "ALO",
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
             "official": true,
             "id": 4053791
           }
-        ],
-        "class": "ALO"
+        ]
       }
     ]
   },
@@ -5098,8 +5062,8 @@
       "Puttonen Pasi-Petteri"
     ],
     "description": "",
-    "cost": 60,
-    "cost_member": 60,
+    "cost": 50,
+    "cost_member": 50,
     "classes": [
       {
         "date": "2026-08-08T00:00:00.000+03:00",
@@ -5277,8 +5241,8 @@
       "Puttonen Pasi-Petteri"
     ],
     "description": "",
-    "cost": 55,
-    "cost_member": 45,
+    "cost": 45,
+    "cost_member": 40,
     "classes": [
       {
         "date": "2026-08-09T00:00:00.000+03:00",
@@ -6204,7 +6168,7 @@
       "Kestilä-Kekkonen Elina"
     ],
     "description": "",
-    "cost": 50,
+    "cost": 45,
     "cost_member": 40,
     "classes": []
   },

@@ -35,6 +35,7 @@
             height: 0;
             padding-bottom: 17.58%; /* 270/1536 = 17.58% aspect ratio */
             position: relative;
+            border-bottom: 3px solid #2d5a27;
         }
 
         header h1,
@@ -176,6 +177,59 @@
             font-size: 0.85em;
         }
 
+        /* Mobile stats - compact horizontal */
+        .stats-mobile {
+            display: none;
+            padding: 12px 15px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .stats-mobile-inner {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .stat-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 6px 12px;
+            background: #e3f2fd;
+            border-radius: 16px;
+            font-size: 0.85em;
+            white-space: nowrap;
+            border: 1px solid #bbdefb;
+        }
+
+        .stat-pill-total {
+            background: #1565c0;
+            color: white;
+            font-weight: 600;
+            border-color: #1565c0;
+        }
+
+        .stat-pill-count {
+            font-weight: 700;
+            color: #1565c0;
+        }
+
+        .stat-pill-total .stat-pill-count {
+            color: white;
+        }
+
+        .stat-pill-label {
+            color: #1976d2;
+        }
+
+        .stat-pill-total .stat-pill-label {
+            color: rgba(255,255,255,0.9);
+        }
+
         .filters {
             padding: 20px 30px;
             background: white;
@@ -246,6 +300,31 @@
         .pill.active:hover {
             background: #1a472a;
             border-color: #1a472a;
+        }
+
+        .pill-count {
+            font-size: 0.85em;
+            opacity: 0.7;
+        }
+
+        .pill.active .pill-count {
+            opacity: 0.9;
+        }
+
+        .help-btn {
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-left: auto;
+        }
+
+        .help-btn:hover {
+            background: #e0e0e0;
         }
 
         .sort-info {
@@ -508,6 +587,116 @@
             60%, 100% { content: '...'; }
         }
 
+        /* Card layout - full width, no side margins */
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            padding: 12px 0;
+            gap: 1px;
+            background: #e0e0e0;
+        }
+
+        /* Hide table, use cards instead */
+        #kokeTable {
+            display: none !important;
+        }
+
+        .event-card {
+            background: white;
+            padding: 14px 24px;
+            border-left: 4px solid #2d5a27;
+            cursor: pointer;
+            transition: background 0.15s;
+            /* Desktop: horizontal layout */
+            display: grid;
+            grid-template-columns: 70px 1fr auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .event-card:hover {
+            background: #f8faf8;
+        }
+
+        .card-distance {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #2d5a27;
+            text-align: center;
+        }
+
+        .card-distance-label {
+            font-size: 0.75em;
+            color: #666;
+            font-weight: 400;
+        }
+
+        .card-main-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 0;
+        }
+
+        .card-title {
+            font-weight: 600;
+            font-size: 1em;
+            color: #333;
+            line-height: 1.3;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-subtitle {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .card-subtitle-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-date {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .card-calendar-link {
+            color: #1565c0;
+            cursor: pointer;
+            text-decoration: none;
+            border-bottom: 1px dashed #1565c0;
+            transition: color 0.15s;
+        }
+
+        .card-calendar-link:hover {
+            color: #0d47a1;
+            border-bottom-style: solid;
+        }
+
+        .card-badges {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        /* Desktop: show organizer inline */
+        .card-organizer {
+            display: inline;
+        }
+
+        /* Hide mobile-only elements on desktop */
+        .card-meta-mobile {
+            display: none;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8em;
@@ -553,31 +742,71 @@
                 padding: 10px;
             }
 
-            table {
+            /* Mobile card layout - stacked */
+            .cards-container {
+                padding: 8px 0;
+                gap: 1px;
+            }
+
+            .event-card {
+                display: block;
+                padding: 12px 16px;
+            }
+
+            .card-distance {
+                float: right;
+                margin-left: 12px;
+                text-align: right;
+            }
+
+            .card-main-info {
+                margin-bottom: 8px;
+            }
+
+            .card-title {
+                white-space: normal;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                margin-bottom: 6px;
+            }
+
+            .card-subtitle {
+                font-size: 0.85em;
+            }
+
+            .card-badges {
+                margin: 8px 0;
+                clear: both;
+            }
+
+            .card-meta-mobile {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px 12px;
                 font-size: 0.8em;
+                color: #666;
+                padding-top: 8px;
+                border-top: 1px solid #eee;
             }
 
-            thead th, tbody td {
-                padding: 6px 4px;
+            .card-meta-item {
+                display: flex;
+                align-items: center;
+                gap: 4px;
             }
 
-            .btn {
-                padding: 3px 6px;
-                font-size: 0.7em;
-            }
-
-            .btn-text {
+            .card-organizer {
                 display: none;
             }
 
-            .action-buttons {
-                gap: 2px;
-                flex-direction: column;
+            /* Hide desktop stats, show mobile stats */
+            .stats {
+                display: none !important;
             }
 
-            .type-badge {
-                font-size: 0.75em;
-                padding: 3px 8px;
+            .stats-mobile {
+                display: block;
             }
 
             .modal-content {
@@ -585,12 +814,6 @@
                 margin: 10% auto;
                 padding: 20px;
                 max-height: 85vh;
-            }
-
-            /* Piilota vähemmän tärkeät sarakkeet mobiilissa */
-            thead th:nth-child(7),
-            tbody td:nth-child(7) {
-                display: none;
             }
 
             footer {
@@ -638,12 +861,27 @@
                 <p>Koetta yhteensä</p>
             </div>
         </div>
+        <div class="stats-mobile" id="statsMobile">
+            <div class="stats-mobile-inner" id="statsMobileInner"></div>
+        </div>
 
         <div class="filters">
             <div class="filter-row">
                 <label for="searchInput">Haku:</label>
                 <input type="text" id="searchInput" placeholder="Paikkakunta, tyyppi tai taso...">
-                <span class="sort-info" id="sortInfo">Järjestetty: etäisyys ↑</span>
+            </div>
+
+            <div class="filter-row">
+                <label>Järjestys:</label>
+                <div class="pill-container">
+                    <div class="pill active" data-sort="distance" onclick="setSortOrder('distance')">
+                        <span class="pill-label">📍 Etäisyys</span>
+                    </div>
+                    <div class="pill" data-sort="date" onclick="setSortOrder('date')">
+                        <span class="pill-label">📅 Ajankohta</span>
+                    </div>
+                </div>
+                <button class="help-btn" onclick="showHelp()" title="Ohjeet">❓</button>
             </div>
 
             <div class="filter-row">
@@ -675,6 +913,7 @@
                 <tbody id="kokeTableBody">
                 </tbody>
             </table>
+            <div id="cardsContainer" class="cards-container"></div>
             <div id="noResults" class="no-results" style="display: none;">
                 Ei tuloksia haulle
             </div>
@@ -699,7 +938,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.2.0</span>
+                <span id="version">v1.3.0</span>
             </p>
         </footer>
     </div>
@@ -1021,9 +1260,9 @@
 
             sortedTypes.forEach(type => {
                 const pill = document.createElement('div');
-                pill.className = 'pill'; // Ei aktiivisia oletuksena
-                pill.textContent = type;
+                pill.className = 'pill';
                 pill.dataset.type = type;
+                pill.innerHTML = `<span class="pill-label">${type}</span> <span class="pill-count"></span>`;
                 pill.onclick = () => toggleTypePill(type);
                 typePillsContainer.appendChild(pill);
             });
@@ -1034,11 +1273,71 @@
 
             sortedLevels.forEach(level => {
                 const pill = document.createElement('div');
-                pill.className = 'pill'; // Ei aktiivisia oletuksena
-                pill.textContent = level;
+                pill.className = 'pill';
                 pill.dataset.level = level;
+                pill.innerHTML = `<span class="pill-label">${level}</span> <span class="pill-count"></span>`;
                 pill.onclick = () => toggleLevelPill(level);
                 levelPillsContainer.appendChild(pill);
+            });
+        }
+
+        // Päivitä pillien lukumäärät
+        function updatePillCounts() {
+            // Laske tyyppimäärät (huomioi vain tasosuodatus)
+            const typeCounts = {};
+            const levelCounts = { 'ALO': 0, 'AVO': 0, 'VOI': 0 };
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+            kokeet.forEach(koe => {
+                const matchesSearch = !searchTerm ||
+                    koe.location.toLowerCase().includes(searchTerm) ||
+                    koe.type.toLowerCase().includes(searchTerm) ||
+                    koe.levels.toLowerCase().includes(searchTerm) ||
+                    (koe.name && koe.name.toLowerCase().includes(searchTerm));
+
+                if (!matchesSearch) return;
+
+                // Tyyppimäärät (suodatettu tasoilla)
+                let matchesLevel = activeLevels.size === 0;
+                if (!matchesLevel) {
+                    for (const level of activeLevels) {
+                        if (koe.levels.includes(level)) {
+                            matchesLevel = true;
+                            break;
+                        }
+                    }
+                }
+                if (matchesLevel) {
+                    typeCounts[koe.type] = (typeCounts[koe.type] || 0) + 1;
+                }
+
+                // Tasomäärät (suodatettu tyypeillä)
+                const matchesType = activeTypes.size === 0 || activeTypes.has(koe.type);
+                if (matchesType) {
+                    ['ALO', 'AVO', 'VOI'].forEach(level => {
+                        if (koe.levels.includes(level)) {
+                            levelCounts[level]++;
+                        }
+                    });
+                }
+            });
+
+            // Päivitä tyyppipillit
+            document.querySelectorAll('#typePills .pill').forEach(pill => {
+                const type = pill.dataset.type;
+                const count = typeCounts[type] || 0;
+                const countEl = pill.querySelector('.pill-count');
+                countEl.textContent = count > 0 ? `(${count})` : '(0)';
+                countEl.style.opacity = count > 0 ? '1' : '0.5';
+            });
+
+            // Päivitä tasopillit
+            document.querySelectorAll('#levelPills .pill').forEach(pill => {
+                const level = pill.dataset.level;
+                const count = levelCounts[level] || 0;
+                const countEl = pill.querySelector('.pill-count');
+                countEl.textContent = count > 0 ? `(${count})` : '(0)';
+                countEl.style.opacity = count > 0 ? '1' : '0.5';
             });
         }
 
@@ -1070,6 +1369,54 @@
             }
 
             sortAndRender();
+        }
+
+        // Aseta järjestys
+        function setSortOrder(column) {
+            // Päivitä pillit
+            document.querySelectorAll('.pill[data-sort]').forEach(p => {
+                p.classList.remove('active');
+            });
+            document.querySelector(`.pill[data-sort="${column}"]`).classList.add('active');
+
+            // Aseta järjestys
+            currentSort = { column, ascending: true };
+            sortAndRender();
+        }
+
+        // Näytä ohjeet
+        function showHelp() {
+            const modal = document.getElementById('infoModal');
+            const modalBody = document.getElementById('modalBody');
+
+            modalBody.innerHTML = `
+                <h2>Ohjeet</h2>
+
+                <div class="info-section">
+                    <h3>📅 Lisää kalenteriin</h3>
+                    <p>Klikkaa kokeen <strong style="color: #1565c0; border-bottom: 1px dashed #1565c0;">päivämäärää</strong> tai <strong style="color: #1565c0; border-bottom: 1px dashed #1565c0;">ilmoittautumispäivää</strong> lisätäksesi tapahtuman kalenteriisi.</p>
+                    <p style="margin-top: 8px; color: #666; font-size: 0.9em;">Kalenteritiedosto (.ics) toimii useimmissa kalenterisovelluksissa: Apple Calendar, Google Calendar, Outlook jne.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>🔍 Haku ja suodatus</h3>
+                    <p><strong>Haku:</strong> Kirjoita hakukenttään paikkakunta, koelaji tai taso.</p>
+                    <p><strong>Laji/Taso:</strong> Klikkaa pilleriä suodattaaksesi. Voit valita useita.</p>
+                    <p><strong>Järjestys:</strong> Valitse etäisyys tai ajankohta.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>📍 Sijainti</h3>
+                    <p>Anna sijaintisi nähdäksesi kokeiden etäisyydet. Voit kirjoittaa paikkakunnan tai käyttää GPS-paikannusta.</p>
+                </div>
+
+                <div class="info-section">
+                    <h3>ℹ️ Lisätiedot</h3>
+                    <p>Klikkaa koetta nähdäksesi lisätiedot: järjestäjä, tuomarit, yhteystiedot ja hinnat.</p>
+                </div>
+            `;
+
+            modal.style.display = 'block';
         }
 
         // Suodata ja järjestä
@@ -1125,18 +1472,18 @@
 
             renderTable();
             updateStats();
+            updatePillCounts();
         }
 
         // Päivitä tilastot
         function updateStats() {
-            document.getElementById('totalCount').textContent = filteredKokeet.length;
-
             // Laske tyypit
             const typeCounts = {};
             filteredKokeet.forEach(koe => {
                 typeCounts[koe.type] = (typeCounts[koe.type] || 0) + 1;
             });
 
+            // Desktop-tilastot
             const statsEl = document.getElementById('stats');
             statsEl.innerHTML = `
                 <div class="stat-card">
@@ -1145,31 +1492,45 @@
                 </div>
             `;
 
-            Object.entries(typeCounts)
+            const sortedTypes = Object.entries(typeCounts)
                 .sort((a, b) => b[1] - a[1])
-                .slice(0, 4)
-                .forEach(([type, count]) => {
-                    statsEl.innerHTML += `
-                        <div class="stat-card">
-                            <h3>${count}</h3>
-                            <p>${type}</p>
-                        </div>
-                    `;
-                });
+                .slice(0, 4);
+
+            sortedTypes.forEach(([type, count]) => {
+                statsEl.innerHTML += `
+                    <div class="stat-card">
+                        <h3>${count}</h3>
+                        <p>${type}</p>
+                    </div>
+                `;
+            });
+
+            // Mobiili-tilastot (vain kokonaismäärä, tyyppimäärät näkyvät filtteripilleissä)
+            const statsMobileInner = document.getElementById('statsMobileInner');
+            statsMobileInner.innerHTML = `
+                <div class="stat-pill stat-pill-total">
+                    <span class="stat-pill-count">${filteredKokeet.length}</span>
+                    <span class="stat-pill-label">koetta näytetään</span>
+                </div>
+            `;
         }
 
-        // Renderöi taulukko
+        // Renderöi taulukko ja kortit
         function renderTable() {
             const tbody = document.getElementById('kokeTableBody');
+            const cardsContainer = document.getElementById('cardsContainer');
             const noResults = document.getElementById('noResults');
 
             if (filteredKokeet.length === 0) {
                 tbody.innerHTML = '';
+                cardsContainer.innerHTML = '';
                 noResults.style.display = 'block';
                 return;
             }
 
             noResults.style.display = 'none';
+
+            // Renderöi taulukko (desktop)
             tbody.innerHTML = filteredKokeet.map((koe, index) => {
                 const typeClass = 'type-' + koe.type.replace(/[^a-zA-Z0-9-]/g, '-');
                 const distanceStr = koe.distance !== null
@@ -1195,6 +1556,47 @@
                             </button>
                         </td>
                     </tr>
+                `;
+            }).join('');
+
+            // Renderöi kortit (desktop + mobiili, eri layout CSS:llä)
+            cardsContainer.innerHTML = filteredKokeet.map((koe, index) => {
+                const typeClass = 'type-' + koe.type.replace(/[^a-zA-Z0-9-]/g, '-');
+                const distanceStr = koe.distance !== null
+                    ? `${koe.distance} km`
+                    : '-';
+                const title = koe.name || `${koe.type} ${koe.location}`;
+
+                return `
+                    <div class="event-card" onclick="showInfo(${index})">
+                        <div class="card-distance">
+                            ${distanceStr}
+                            <div class="card-distance-label">etäisyys</div>
+                        </div>
+                        <div class="card-main-info">
+                            <div class="card-title" title="${title}">${title}</div>
+                            <div class="card-subtitle">
+                                <span class="card-subtitle-item card-date" onclick="event.stopPropagation(); downloadICS(${index})" title="Lisää koe kalenteriin">
+                                    <span class="card-calendar-link">📅 ${koe.date}</span>
+                                </span>
+                                <span class="card-subtitle-item">📍 ${koe.location}</span>
+                                <span class="card-subtitle-item" onclick="event.stopPropagation(); downloadICS(${index})" title="Lisää ilmoittautumismuistutus kalenteriin">
+                                    <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>
+                                </span>
+                                ${koe.organizer ? `<span class="card-subtitle-item card-organizer">🏢 ${koe.organizer}</span>` : ''}
+                            </div>
+                        </div>
+                        <div class="card-badges">
+                            <span class="type-badge ${typeClass}">${koe.type}</span>
+                            <span class="type-badge" style="background: #f5f5f5; color: #333;">${koe.levels}</span>
+                        </div>
+                        <div class="card-meta-mobile">
+                            <div class="card-meta-item" onclick="event.stopPropagation(); downloadICS(${index})" title="Lisää ilmoittautumismuistutus kalenteriin">
+                                <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>
+                            </div>
+                            ${koe.organizer ? `<div class="card-meta-item">🏢 ${koe.organizer}</div>` : ''}
+                        </div>
+                    </div>
                 `;
             }).join('');
         }
@@ -1242,7 +1644,13 @@
                 <p><span class="info-label">Paikkakunta:</span> ${koe.location}</p>
                 <p><span class="info-label">Tyyppi:</span> ${koe.type}</p>
                 <p><span class="info-label">Tasot:</span> ${koe.levels}</p>
-                <p><span class="info-label">Ilmoittautuminen päättyy:</span> ${koe.entry_date}</p>
+                <p style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <span><span class="info-label">Ilmoittautuminen päättyy:</span> ${koe.entry_date}</span>
+                    <button class="btn btn-calendar" style="padding: 6px 12px;" onclick="downloadICS(${index}); closeModal();" title="Lisää muistutus kalenteriin">
+                        <span class="btn-icon">📅</span>
+                        <span class="btn-text">Muistutus kalenteriin</span>
+                    </button>
+                </p>
             </div>`;
 
             if (koe.distance !== null) {
@@ -1301,7 +1709,7 @@
 
             html += `<div class="info-section" style="text-align: center; margin-top: 20px;">
                 <a href="https://koekalenteri.snj.fi/" target="_blank" rel="noopener" class="btn btn-snj">
-                    Avaa SNJ:n koekalenteri
+                    Ilmoittaudu SNJ:n koekalenterissa
                 </a>
             </div>`;
 
@@ -1321,6 +1729,13 @@
                 modal.style.display = 'none';
             }
         }
+
+        // Sulje modal ESC-näppäimellä
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
 
         // Lataa ICS kalenteritiedosto
         function downloadICS(index) {
