@@ -78,6 +78,11 @@ MIT
 
 ## Versiohistoria
 
+### v1.3.2 (2025-12-30)
+- Korjattu ilmoittautumismuistutuksen päivämäärä: käyttää nyt ensimmäistä ilmoittautumispäivää kokeen päivän sijaan
+- Muutettu tekstit "Ilmoittautuminen päättyy" -> "Ilmoittautumisaika"
+- Erotettu kalenteritapahtumat: kokeen tapahtuma vs. ilmoittautumismuistutus
+
 ### v1.3.1 (2025-12-30)
 - Parannettu korttien erottuvuutta: lisätty varjo, pyöristetyt kulmat ja isompi väli korttien välillä
 - Parannettu hover-efekti korteille

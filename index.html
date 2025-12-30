@@ -910,7 +910,7 @@
                         <th></th>
                         <th class="sortable" data-sort="type" data-type="string">Tyyppi</th>
                         <th class="sortable" data-sort="levels" data-type="string">Taso</th>
-                        <th class="sortable" data-sort="entry_date" data-type="string">Ilmoittautuminen</th>
+                        <th class="sortable" data-sort="entry_date" data-type="string">Ilmoittautumisaika</th>
                         <th>📅</th>
                     </tr>
                 </thead>
@@ -942,7 +942,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.3.1</span>
+                <span id="version">v1.3.2</span>
             </p>
         </footer>
     </div>
@@ -1555,7 +1555,7 @@
                         <td>${koe.levels}</td>
                         <td>${koe.entry_date}</td>
                         <td style="text-align: center; width: 40px;">
-                            <button class="btn btn-calendar" onclick="downloadICS(${index})" title="Lisää kalenteriin">
+                            <button class="btn btn-calendar" onclick="downloadICS(${index}, 'event')" title="Lisää kalenteriin">
                                 <span class="btn-icon">📅</span><span class="btn-text">Kalenteri</span>
                             </button>
                         </td>
@@ -1580,11 +1580,11 @@
                         <div class="card-main-info">
                             <div class="card-title" title="${title}">${title}</div>
                             <div class="card-subtitle">
-                                <span class="card-subtitle-item card-date" onclick="event.stopPropagation(); downloadICS(${index})" title="Lisää koe kalenteriin">
+                                <span class="card-subtitle-item card-date" onclick="event.stopPropagation(); downloadICS(${index}, 'event')" title="Lisää koe kalenteriin">
                                     <span class="card-calendar-link">📅 ${koe.date}</span>
                                 </span>
                                 <span class="card-subtitle-item">📍 ${koe.location}</span>
-                                <span class="card-subtitle-item" onclick="event.stopPropagation(); downloadICS(${index})" title="Lisää ilmoittautumismuistutus kalenteriin">
+                                <span class="card-subtitle-item" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
                                     <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>
                                 </span>
                                 ${koe.organizer ? `<span class="card-subtitle-item card-organizer">🏢 ${koe.organizer}</span>` : ''}
@@ -1595,7 +1595,7 @@
                             <span class="type-badge" style="background: #f5f5f5; color: #333;">${koe.levels}</span>
                         </div>
                         <div class="card-meta-mobile">
-                            <div class="card-meta-item" onclick="event.stopPropagation(); downloadICS(${index})" title="Lisää ilmoittautumismuistutus kalenteriin">
+                            <div class="card-meta-item" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
                                 <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>
                             </div>
                             ${koe.organizer ? `<div class="card-meta-item">🏢 ${koe.organizer}</div>` : ''}
@@ -1649,8 +1649,8 @@
                 <p><span class="info-label">Tyyppi:</span> ${koe.type}</p>
                 <p><span class="info-label">Tasot:</span> ${koe.levels}</p>
                 <p style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                    <span><span class="info-label">Ilmoittautuminen päättyy:</span> ${koe.entry_date}</span>
-                    <button class="btn btn-calendar" style="padding: 6px 12px;" onclick="downloadICS(${index}); closeModal();" title="Lisää muistutus kalenteriin">
+                    <span><span class="info-label">Ilmoittautumisaika:</span> ${koe.entry_date}</span>
+                    <button class="btn btn-calendar" style="padding: 6px 12px;" onclick="downloadICS(${index}, 'registration'); closeModal();" title="Lisää muistutus kalenteriin">
                         <span class="btn-icon">📅</span>
                         <span class="btn-text">Muistutus kalenteriin</span>
                     </button>
@@ -1742,11 +1742,28 @@
         });
 
         // Lataa ICS kalenteritiedosto
-        function downloadICS(index) {
+        function downloadICS(index, eventType = 'event') {
             const koe = filteredKokeet[index];
 
-            const dateStr = koe.date_sort;
-            const date = new Date(dateStr);
+            let dateStr, date;
+
+            if (eventType === 'registration') {
+                // Parse first date from entry_date (e.g., "03.01.-31.01." -> "03.01.")
+                const entryDateMatch = koe.entry_date.match(/(\d{1,2}\.\d{1,2}\.)/);
+                if (entryDateMatch) {
+                    const dayMonth = entryDateMatch[1]; // e.g., "03.01."
+                    const year = new Date(koe.date_sort).getFullYear();
+                    const [day, month] = dayMonth.split('.').filter(Boolean);
+                    date = new Date(year, parseInt(month) - 1, parseInt(day));
+                } else {
+                    // Fallback to event date if parsing fails
+                    dateStr = koe.date_sort;
+                    date = new Date(dateStr);
+                }
+            } else {
+                dateStr = koe.date_sort;
+                date = new Date(dateStr);
+            }
 
             const formatDateOnly = (d) => {
                 const pad = (n) => n.toString().padStart(2, '0');
@@ -1768,7 +1785,11 @@
             const dtstart = formatDateOnly(date);
 
             let endDate;
-            if (koe.end_date_sort) {
+            if (eventType === 'registration') {
+                // Registration reminder is a single day event
+                endDate = new Date(date);
+                endDate.setDate(endDate.getDate() + 1);
+            } else if (koe.end_date_sort) {
                 endDate = new Date(koe.end_date_sort);
                 endDate.setDate(endDate.getDate() + 1);
             } else {
@@ -1777,74 +1798,95 @@
             }
             const dtend = formatDateOnly(endDate);
 
-            let description = '';
+            let title, description = '';
 
-            if (koe.description) {
-                description += koe.description;
-                description += `\\n\\n--- Perustiedot ---\\n`;
-            }
-
-            description += `Tyyppi: ${koe.type}\\n`;
-
-            if (koe.classes && koe.classes.length > 0) {
-                description += `\\nLuokat ja päivät:\\n`;
-
-                const classesByDate = {};
-                const weekdays = ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'];
-
-                koe.classes.forEach(cls => {
-                    if (cls.class && cls.date) {
-                        const clsDate = new Date(cls.date);
-                        const dateKey = formatDateOnly(clsDate);
-                        const dayName = weekdays[clsDate.getDay()];
-                        const dateStr = clsDate.getDate() + '.' + (clsDate.getMonth() + 1) + '.';
-
-                        if (!classesByDate[dateKey]) {
-                            classesByDate[dateKey] = {
-                                dateStr: dateStr,
-                                dayName: dayName,
-                                classes: []
-                            };
-                        }
-                        classesByDate[dateKey].classes.push(cls.class);
-                    }
-                });
-
-                Object.keys(classesByDate).sort().forEach(dateKey => {
-                    const info = classesByDate[dateKey];
-                    description += `  ${info.dayName} ${info.dateStr}: ${info.classes.join(', ')}\\n`;
-                });
-            } else {
+            if (eventType === 'registration') {
+                title = `Ilmoittautuminen: ${koe.location} - ${koe.type}`;
+                description = `MUISTUTUS: Ilmoittautuminen kokeeseen alkaa\\n\\n`;
+                description += `Koe: ${koe.date}\\n`;
+                description += `Paikkakunta: ${koe.location}\\n`;
+                description += `Tyyppi: ${koe.type}\\n`;
                 description += `Tasot: ${koe.levels}\\n`;
-            }
-            if (koe.organizer) description += `\\n\\nJärjestäjä: ${koe.organizer}`;
-            if (koe.judges && koe.judges.length > 0) description += `\\n\\nTuomarit: ${koe.judges.join(', ')}`;
+                description += `Ilmoittautumisaika: ${koe.entry_date}\\n`;
+            } else {
+                title = `${koe.location} - ${koe.type} - ${koe.levels}`;
 
-            if (koe.secretary && koe.secretary.name) {
-                description += `\\n\\nSihteeri: ${koe.secretary.name}`;
-                if (koe.secretary.phone) description += `, puh. ${koe.secretary.phone}`;
-                if (koe.secretary.email) description += `, ${koe.secretary.email}`;
-            }
-            if (koe.official && koe.official.name) {
-                description += `\\n\\nYhteyshenkilö: ${koe.official.name}`;
-                if (koe.official.phone) description += `, puh. ${koe.official.phone}`;
-                if (koe.official.email) description += `, ${koe.official.email}`;
+                if (koe.description) {
+                    description += koe.description;
+                    description += `\\n\\n--- Perustiedot ---\\n`;
+                }
+
+                description += `Tyyppi: ${koe.type}\\n`;
             }
 
-            if (koe.distance !== null) {
-                description += `\\n\\n--- Etäisyys (${userLocation.name}) ---`;
-                description += `\\nLinnuntie: ${koe.distance} km`;
+            if (eventType !== 'registration') {
+                if (koe.classes && koe.classes.length > 0) {
+                    description += `\\nLuokat ja päivät:\\n`;
+
+                    const classesByDate = {};
+                    const weekdays = ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'];
+
+                    koe.classes.forEach(cls => {
+                        if (cls.class && cls.date) {
+                            const clsDate = new Date(cls.date);
+                            const dateKey = formatDateOnly(clsDate);
+                            const dayName = weekdays[clsDate.getDay()];
+                            const dateStr = clsDate.getDate() + '.' + (clsDate.getMonth() + 1) + '.';
+
+                            if (!classesByDate[dateKey]) {
+                                classesByDate[dateKey] = {
+                                    dateStr: dateStr,
+                                    dayName: dayName,
+                                    classes: []
+                                };
+                            }
+                            classesByDate[dateKey].classes.push(cls.class);
+                        }
+                    });
+
+                    Object.keys(classesByDate).sort().forEach(dateKey => {
+                        const info = classesByDate[dateKey];
+                        description += `  ${info.dayName} ${info.dateStr}: ${info.classes.join(', ')}\\n`;
+                    });
+                } else {
+                    description += `Tasot: ${koe.levels}\\n`;
+                }
+                if (koe.organizer) description += `\\n\\nJärjestäjä: ${koe.organizer}`;
+                if (koe.judges && koe.judges.length > 0) description += `\\n\\nTuomarit: ${koe.judges.join(', ')}`;
+
+                if (koe.secretary && koe.secretary.name) {
+                    description += `\\n\\nSihteeri: ${koe.secretary.name}`;
+                    if (koe.secretary.phone) description += `, puh. ${koe.secretary.phone}`;
+                    if (koe.secretary.email) description += `, ${koe.secretary.email}`;
+                }
+                if (koe.official && koe.official.name) {
+                    description += `\\n\\nYhteyshenkilö: ${koe.official.name}`;
+                    if (koe.official.phone) description += `, puh. ${koe.official.phone}`;
+                    if (koe.official.email) description += `, ${koe.official.email}`;
+                }
+
+                if (koe.distance !== null) {
+                    description += `\\n\\n--- Etäisyys (${userLocation.name}) ---`;
+                    description += `\\nLinnuntie: ${koe.distance} km`;
+                }
+
+                description += `\\n\\nIlmoittautumisaika: ${koe.entry_date}`;
+
+                if (koe.cost || koe.cost_member) {
+                    description += `\\n\\n--- Osallistumismaksut ---`;
+                    if (koe.cost) description += `\\nMaksu: ${koe.cost} €`;
+                    if (koe.cost_member) description += `\\nJäsenmaksu: ${koe.cost_member} €`;
+                }
+            } else {
+                // For registration reminder, add contact info
+                if (koe.official && koe.official.name) {
+                    description += `\\n\\nYhteyshenkilö: ${koe.official.name}`;
+                    if (koe.official.phone) description += `, puh. ${koe.official.phone}`;
+                    if (koe.official.email) description += `, ${koe.official.email}`;
+                }
+                if (koe.organizer) description += `\\n\\nJärjestäjä: ${koe.organizer}`;
             }
 
-            description += `\\n\\nIlmoittautuminen päättyy: ${koe.entry_date}`;
-
-            if (koe.cost || koe.cost_member) {
-                description += `\\n\\n--- Osallistumismaksut ---`;
-                if (koe.cost) description += `\\nMaksu: ${koe.cost} €`;
-                if (koe.cost_member) description += `\\nJäsenmaksu: ${koe.cost_member} €`;
-            }
-
-            const title = `${koe.location} - ${koe.type} - ${koe.levels}`;
             const location = koe.location + (koe.coordinates ? ` (${koe.coordinates[0]}, ${koe.coordinates[1]})` : '');
 
             const icsContent = [
@@ -1869,7 +1911,8 @@
             const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = `koetutka-${koe.location}-${koe.date.replace(/\./g, '-')}.ics`;
+            const filePrefix = eventType === 'registration' ? 'ilmoittautuminen' : 'koe';
+            link.download = `koetutka-${filePrefix}-${koe.location}-${koe.date.replace(/\./g, '-')}.ics`;
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
