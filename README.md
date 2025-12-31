@@ -78,6 +78,13 @@ MIT
 
 ## Versiohistoria
 
+### v1.4.0 (2025-12-31)
+- Lisätty jakamistoiminto kortteihin (share-painike)
+  - Mobiililla: avaa natiivi jako (WhatsApp, Messenger, SMS jne.)
+  - Desktopilla: kopioi linkki leikepöydälle
+- Hash-pohjainen routing: jaetun linkin kautta pääsee suoraan tiettyyn kokeeseen
+- Linkin avaus scrollaa kortille ja avaa info-modaalin
+
 ### v1.3.2 (2025-12-30)
 - Korjattu ilmoittautumismuistutuksen päivämäärä: käyttää nyt ensimmäistä ilmoittautumispäivää kokeen päivän sijaan
 - Muutettu tekstit "Ilmoittautuminen päättyy" -> "Ilmoittautumisaika"

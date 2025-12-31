@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koetutka - Noutajakokeet lähellä sinua</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <style>
         * {
             margin: 0;
@@ -497,34 +500,220 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.5);
+            background-color: rgba(0,0,0,0.6);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
         }
 
         .modal-content {
             background-color: white;
-            margin: 5% auto;
-            padding: 30px;
-            border-radius: 10px;
+            margin: 3% auto;
+            padding: 0;
+            border-radius: 16px;
             width: 90%;
-            max-width: 600px;
-            max-height: 80vh;
-            overflow-y: auto;
+            max-width: 560px;
+            max-height: 90vh;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: modalSlideIn 0.3s ease-out;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #2d5a27 0%, #1a472a 100%);
+            color: white;
+            padding: 24px 28px;
             position: relative;
         }
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
+        .modal-header h2 {
+            margin: 0;
+            font-size: 1.4em;
+            font-weight: 600;
+            line-height: 1.3;
+            padding-right: 80px;
+        }
+
+        .modal-header-actions {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .modal-header-btn {
+            background: rgba(255,255,255,0.15);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
             cursor: pointer;
-            line-height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
         }
 
-        .close:hover {
-            color: #000;
+        .modal-header-btn:hover {
+            background: rgba(255,255,255,0.25);
         }
 
+        .modal-header-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .modal-body {
+            padding: 24px 28px;
+            overflow-y: auto;
+            max-height: calc(90vh - 100px);
+        }
+
+        .modal-badges {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .modal-badge {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .info-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #f8faf8;
+            border-radius: 12px;
+            padding: 16px 20px;
+            border-left: 3px solid #2d5a27;
+        }
+
+        .info-card-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            color: #2d5a27;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-card-header svg {
+            width: 18px;
+            height: 18px;
+            opacity: 0.8;
+        }
+
+        .info-card-content {
+            color: #333;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .info-row:first-child {
+            padding-top: 0;
+        }
+
+        .info-row-label {
+            color: #666;
+            font-size: 0.9em;
+            flex-shrink: 0;
+        }
+
+        .info-row-value {
+            text-align: right;
+            font-weight: 500;
+            color: #333;
+            margin-left: 16px;
+        }
+
+        .info-row-value a {
+            color: #1565c0;
+            text-decoration: none;
+        }
+
+        .info-row-value a:hover {
+            text-decoration: underline;
+        }
+
+        .info-text {
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .info-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .info-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 0.85em;
+            color: #333;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .info-action-btn:hover {
+            background: #f5f5f5;
+            border-color: #2d5a27;
+            color: #2d5a27;
+        }
+
+        .modal-footer {
+            padding: 20px 28px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+
+        .close {
+            display: none;
+        }
+
+        /* Legacy support */
         .info-section {
             margin: 15px 0;
         }
@@ -532,7 +721,7 @@
         .info-section h3 {
             color: #2d5a27;
             margin-bottom: 10px;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
         .info-section p {
@@ -611,9 +800,110 @@
             transition: all 0.2s;
             /* Desktop: horizontal layout */
             display: grid;
-            grid-template-columns: 70px 1fr auto;
+            grid-template-columns: 70px 1fr auto auto;
             gap: 20px;
             align-items: center;
+            position: relative;
+        }
+
+        .event-card.highlighted {
+            animation: highlight-pulse 2s ease-out;
+            box-shadow: 0 0 0 3px #2d5a27;
+        }
+
+        @keyframes highlight-pulse {
+            0% { box-shadow: 0 0 0 6px rgba(45, 90, 39, 0.6); }
+            100% { box-shadow: 0 0 0 3px #2d5a27; }
+        }
+
+        .card-share-btn {
+            background: none;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            color: #888;
+            font-size: 1.2em;
+            border-radius: 50%;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-share-btn:hover {
+            background: #f0f0f0;
+            color: #2d5a27;
+        }
+
+        .card-share-btn.copied {
+            color: #2d5a27;
+        }
+
+        .share-tooltip {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            background: #333;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+
+        .share-tooltip.show {
+            opacity: 1;
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: #2d5a27;
+            color: white;
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-size: 0.95em;
+            font-weight: 500;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            z-index: 2000;
+            opacity: 0;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .toast svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Check icon animation for share button */
+        .card-share-btn.copied svg,
+        .modal-header-btn.copied svg {
+            display: none;
+        }
+
+        .card-share-btn.copied::before,
+        .modal-header-btn.copied::before {
+            content: '✓';
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .modal-header-btn.copied {
+            background: rgba(255,255,255,0.3);
         }
 
         .event-card:hover {
@@ -804,6 +1094,19 @@
                 display: none;
             }
 
+            .card-share-btn {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                padding: 6px;
+                font-size: 1em;
+            }
+
+            .share-tooltip {
+                top: -26px;
+                right: 8px;
+            }
+
             /* Hide desktop stats, show mobile stats */
             .stats {
                 display: none !important;
@@ -814,10 +1117,55 @@
             }
 
             .modal-content {
-                width: 95%;
-                margin: 10% auto;
+                width: 100%;
+                margin: 0;
+                border-radius: 20px 20px 0 0;
+                max-height: 92vh;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                animation: modalSlideUp 0.3s ease-out;
+            }
+
+            @keyframes modalSlideUp {
+                from {
+                    transform: translateY(100%);
+                }
+                to {
+                    transform: translateY(0);
+                }
+            }
+
+            .modal-header {
                 padding: 20px;
-                max-height: 85vh;
+            }
+
+            .modal-header h2 {
+                font-size: 1.2em;
+            }
+
+            .modal-body {
+                padding: 20px;
+                max-height: calc(92vh - 80px);
+            }
+
+            .info-card {
+                padding: 14px 16px;
+            }
+
+            .info-row {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .info-row-value {
+                text-align: left;
+                margin-left: 0;
+            }
+
+            .modal-footer {
+                padding: 16px 20px;
             }
 
             footer {
@@ -931,6 +1279,14 @@
             </div>
         </div>
 
+        <!-- Toast notification -->
+        <div id="toast" class="toast">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span id="toastMessage">Linkki kopioitu!</span>
+        </div>
+
         <footer>
             <p>
                 Data: SNJ koekalenteri | <span id="updateDate"></span>
@@ -942,7 +1298,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.3.2</span>
+                <span id="version">v1.4.0</span>
             </p>
         </footer>
     </div>
@@ -1202,6 +1558,40 @@
             }
         });
 
+        // Hash-navigointi: scrollaa kortille ja avaa modal
+        function handleHashNavigation() {
+            const hash = window.location.hash.slice(1);
+            if (!hash) return;
+
+            // Odota että DOM on päivittynyt
+            setTimeout(() => {
+                // Etsi kortti ID:n perusteella
+                const card = document.querySelector(`.event-card[data-id="${hash}"]`);
+                if (!card) {
+                    console.log('Tapahtumaa ei löytynyt:', hash);
+                    return;
+                }
+
+                // Scrollaa kortille
+                card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                // Korosta kortti
+                card.classList.add('highlighted');
+
+                // Etsi kokeen index filteredKokeet-listasta ja avaa modal
+                const koeIndex = filteredKokeet.findIndex(k => k.id === hash);
+                if (koeIndex !== -1) {
+                    // Pieni viive scrollauksen jälkeen ennen modalin avausta
+                    setTimeout(() => {
+                        showInfo(koeIndex);
+                    }, 500);
+                }
+            }, 100);
+        }
+
+        // Kuuntele hash-muutoksia
+        window.addEventListener('hashchange', handleHashNavigation);
+
         // Lataa data
         async function loadData() {
             try {
@@ -1241,6 +1631,9 @@
 
                 // Aseta oletus sijainti
                 updateLocationDisplay();
+
+                // Tarkista hash-navigointi
+                handleHashNavigation();
 
             } catch (error) {
                 console.error('Virhe datan latauksessa:', error);
@@ -1572,7 +1965,7 @@
                 const title = koe.name || `${koe.type} ${koe.location}`;
 
                 return `
-                    <div class="event-card" onclick="showInfo(${index})">
+                    <div class="event-card" data-id="${koe.id}" onclick="showInfo(${index})">
                         <div class="card-distance">
                             ${distanceStr}
                             <div class="card-distance-label">etäisyys</div>
@@ -1594,6 +1987,16 @@
                             <span class="type-badge ${typeClass}">${koe.type}</span>
                             <span class="type-badge" style="background: #f5f5f5; color: #333;">${koe.levels}</span>
                         </div>
+                        <button class="card-share-btn" onclick="event.stopPropagation(); shareEvent('${koe.id}', this)" title="Jaa linkki">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="18" cy="5" r="3"></circle>
+                                <circle cx="6" cy="12" r="3"></circle>
+                                <circle cx="18" cy="19" r="3"></circle>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                            </svg>
+                            <span class="share-tooltip">Kopioitu!</span>
+                        </button>
                         <div class="card-meta-mobile">
                             <div class="card-meta-item" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
                                 <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>
@@ -1634,91 +2037,290 @@
             });
         });
 
+        // Toast-ilmoitus
+        function showToast(message = 'Linkki kopioitu!') {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toastMessage');
+            toastMessage.textContent = message;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        // Jaa-painikkeen toiminto
+        async function shareEvent(eventId, buttonEl) {
+            // Muodosta siisti URL: origin + pathname + hash
+            const shareUrl = window.location.origin + window.location.pathname + '#' + eventId;
+
+            // Etsi tapahtuman tiedot
+            const koe = kokeet.find(k => k.id === eventId);
+            const title = koe ? (koe.name || `${koe.type} ${koe.location}`) : 'Noutajakoe';
+            const text = koe ? `${title} - ${koe.date}, ${koe.location}` : 'Katso tämä noutajakoe!';
+
+            // Web Share API vain mobiililla (tarkista kosketusnäyttö)
+            const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            if (isMobile && navigator.share) {
+                try {
+                    await navigator.share({ title, text, url: shareUrl });
+                    return;
+                } catch (err) {
+                    if (err.name === 'AbortError') return;
+                }
+            }
+
+            // Desktop: kopioi leikepöydälle
+            try {
+                await navigator.clipboard.writeText(shareUrl);
+
+                // Vaihda ikoni checkmarkiksi
+                buttonEl.classList.add('copied');
+                setTimeout(() => buttonEl.classList.remove('copied'), 2000);
+
+                // Näytä toast
+                showToast('Linkki kopioitu leikepöydälle!');
+            } catch (err) {
+                prompt('Kopioi linkki:', shareUrl);
+            }
+        }
+
         // Näytä info-modal
         function showInfo(index) {
             const koe = filteredKokeet[index];
             const modal = document.getElementById('infoModal');
             const modalBody = document.getElementById('modalBody');
+            const title = koe.name || `${koe.type} ${koe.location}`;
 
-            let html = `<h2>${koe.name || koe.type + ' ' + koe.location}</h2>`;
+            // SVG ikonit
+            const icons = {
+                calendar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>',
+                location: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>',
+                users: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>',
+                user: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>',
+                euro: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="10" x2="16" y2="10"></line><line x1="4" y1="14" x2="14" y2="14"></line><path d="M17 6a6 6 0 0 0-6 6c0 3.3 2.7 6 6 6"></path></svg>',
+                info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>',
+                building: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-4"></path><path d="M9 9v.01"></path><path d="M9 12v.01"></path><path d="M9 15v.01"></path><path d="M9 18v.01"></path></svg>',
+                share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>',
+                close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>'
+            };
 
-            html += `<div class="info-section">
-                <h3>Perustiedot</h3>
-                <p><span class="info-label">Päivämäärä:</span> ${koe.date}</p>
-                <p><span class="info-label">Paikkakunta:</span> ${koe.location}</p>
-                <p><span class="info-label">Tyyppi:</span> ${koe.type}</p>
-                <p><span class="info-label">Tasot:</span> ${koe.levels}</p>
-                <p style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                    <span><span class="info-label">Ilmoittautumisaika:</span> ${koe.entry_date}</span>
-                    <button class="btn btn-calendar" style="padding: 6px 12px;" onclick="downloadICS(${index}, 'registration'); closeModal();" title="Lisää muistutus kalenteriin">
-                        <span class="btn-icon">📅</span>
-                        <span class="btn-text">Muistutus kalenteriin</span>
-                    </button>
-                </p>
-            </div>`;
-
-            if (koe.distance !== null) {
-                html += `<div class="info-section">
-                    <h3>Etäisyys sijainnistasi</h3>
-                    <p><span class="info-label">Linnuntie:</span> ${koe.distance} km</p>
-                </div>`;
-            }
+            let html = `
+                <div class="modal-header">
+                    <h2>${title}</h2>
+                    <div class="modal-badges">
+                        <span class="modal-badge">${koe.type}</span>
+                        <span class="modal-badge">${koe.levels}</span>
+                        ${koe.distance !== null ? `<span class="modal-badge">${koe.distance} km</span>` : ''}
+                    </div>
+                    <div class="modal-header-actions">
+                        <button class="modal-header-btn" onclick="shareEventFromModal('${koe.id}', this)" title="Jaa">
+                            ${icons.share}
+                        </button>
+                        <button class="modal-header-btn" onclick="closeModal()" title="Sulje">
+                            ${icons.close}
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                ${icons.calendar}
+                                <span>Ajankohta</span>
+                            </div>
+                            <div class="info-card-content">
+                                <div class="info-row">
+                                    <span class="info-row-label">Päivämäärä</span>
+                                    <span class="info-row-value">${koe.date}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-row-label">Paikkakunta</span>
+                                    <span class="info-row-value">${koe.location}</span>
+                                </div>
+                                <div class="info-row">
+                                    <span class="info-row-label">Ilmoittautumisaika</span>
+                                    <span class="info-row-value">${koe.entry_date}</span>
+                                </div>
+                                <div class="info-actions">
+                                    <button class="info-action-btn" onclick="downloadICS(${index}, 'event')">
+                                        📅 Koe kalenteriin
+                                    </button>
+                                    <button class="info-action-btn" onclick="downloadICS(${index}, 'registration')">
+                                        ✏️ Ilmoittautumismuistutus
+                                    </button>
+                                </div>
+                            </div>
+                        </div>`;
 
             if (koe.organizer) {
-                html += `<div class="info-section">
-                    <h3>Järjestäjä</h3>
-                    <p>${koe.organizer}</p>
-                </div>`;
+                html += `
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                ${icons.building}
+                                <span>Järjestäjä</span>
+                            </div>
+                            <div class="info-card-content">
+                                <p class="info-text">${koe.organizer}</p>
+                            </div>
+                        </div>`;
             }
 
             if (koe.judges && koe.judges.length > 0) {
-                html += `<div class="info-section">
-                    <h3>Tuomarit</h3>
-                    <p>${koe.judges.join(', ')}</p>
-                </div>`;
+                html += `
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                ${icons.users}
+                                <span>Tuomarit</span>
+                            </div>
+                            <div class="info-card-content">
+                                <p class="info-text">${koe.judges.join(', ')}</p>
+                            </div>
+                        </div>`;
             }
 
-            if (koe.official && koe.official.name) {
-                html += `<div class="info-section">
-                    <h3>Virallinen yhteyshenkilö</h3>
-                    <p><span class="info-label">Nimi:</span> ${koe.official.name}</p>
-                    ${koe.official.phone ? `<p><span class="info-label">Puhelin:</span> ${koe.official.phone}</p>` : ''}
-                    ${koe.official.email ? `<p><span class="info-label">Sähköposti:</span> <a href="mailto:${koe.official.email}">${koe.official.email}</a></p>` : ''}
-                </div>`;
-            }
+            // Yhteystiedot
+            const hasContacts = (koe.official && koe.official.name) || (koe.secretary && koe.secretary.name);
+            if (hasContacts) {
+                html += `
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                ${icons.user}
+                                <span>Yhteystiedot</span>
+                            </div>
+                            <div class="info-card-content">`;
 
-            if (koe.secretary && koe.secretary.name) {
-                html += `<div class="info-section">
-                    <h3>Sihteeri</h3>
-                    <p><span class="info-label">Nimi:</span> ${koe.secretary.name}</p>
-                    ${koe.secretary.phone ? `<p><span class="info-label">Puhelin:</span> ${koe.secretary.phone}</p>` : ''}
-                    ${koe.secretary.email ? `<p><span class="info-label">Sähköposti:</span> <a href="mailto:${koe.secretary.email}">${koe.secretary.email}</a></p>` : ''}
-                </div>`;
+                if (koe.official && koe.official.name) {
+                    html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Yhteyshenkilö</span>
+                                    <span class="info-row-value">${koe.official.name}</span>
+                                </div>`;
+                    if (koe.official.phone) {
+                        html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Puhelin</span>
+                                    <span class="info-row-value"><a href="tel:${koe.official.phone}">${koe.official.phone}</a></span>
+                                </div>`;
+                    }
+                    if (koe.official.email) {
+                        html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Sähköposti</span>
+                                    <span class="info-row-value"><a href="mailto:${koe.official.email}">${koe.official.email}</a></span>
+                                </div>`;
+                    }
+                }
+
+                if (koe.secretary && koe.secretary.name) {
+                    html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Sihteeri</span>
+                                    <span class="info-row-value">${koe.secretary.name}</span>
+                                </div>`;
+                    if (koe.secretary.phone) {
+                        html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Puhelin</span>
+                                    <span class="info-row-value"><a href="tel:${koe.secretary.phone}">${koe.secretary.phone}</a></span>
+                                </div>`;
+                    }
+                    if (koe.secretary.email) {
+                        html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Sähköposti</span>
+                                    <span class="info-row-value"><a href="mailto:${koe.secretary.email}">${koe.secretary.email}</a></span>
+                                </div>`;
+                    }
+                }
+                html += `
+                            </div>
+                        </div>`;
             }
 
             if (koe.cost || koe.cost_member) {
-                html += `<div class="info-section">
-                    <h3>Osallistumismaksut</h3>
-                    ${koe.cost ? `<p><span class="info-label">Maksu:</span> ${koe.cost} €</p>` : ''}
-                    ${koe.cost_member ? `<p><span class="info-label">Jäsenmaksu:</span> ${koe.cost_member} €</p>` : ''}
-                </div>`;
+                html += `
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                ${icons.euro}
+                                <span>Maksut</span>
+                            </div>
+                            <div class="info-card-content">`;
+                if (koe.cost) {
+                    html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Osallistumismaksu</span>
+                                    <span class="info-row-value">${koe.cost} €</span>
+                                </div>`;
+                }
+                if (koe.cost_member) {
+                    html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">Jäsenhinta</span>
+                                    <span class="info-row-value">${koe.cost_member} €</span>
+                                </div>`;
+                }
+                html += `
+                            </div>
+                        </div>`;
             }
 
             if (koe.description) {
-                html += `<div class="info-section">
-                    <h3>Lisätiedot</h3>
-                    <p>${koe.description.replace(/\n/g, '<br>')}</p>
-                </div>`;
+                html += `
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                ${icons.info}
+                                <span>Lisätiedot</span>
+                            </div>
+                            <div class="info-card-content">
+                                <p class="info-text">${koe.description.replace(/\n/g, '<br>')}</p>
+                            </div>
+                        </div>`;
             }
 
-            html += `<div class="info-section" style="text-align: center; margin-top: 20px;">
-                <a href="https://koekalenteri.snj.fi/" target="_blank" rel="noopener" class="btn btn-snj">
-                    Ilmoittaudu SNJ:n koekalenterissa
-                </a>
-            </div>`;
+            html += `
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://koekalenteri.snj.fi/" target="_blank" rel="noopener" class="btn btn-snj">
+                        Ilmoittaudu SNJ:n koekalenterissa
+                    </a>
+                </div>`;
 
             modalBody.innerHTML = html;
             modal.style.display = 'block';
+        }
+
+        // Jaa modalista
+        async function shareEventFromModal(eventId, buttonEl) {
+            // Muodosta siisti URL: origin + pathname + hash
+            const shareUrl = window.location.origin + window.location.pathname + '#' + eventId;
+
+            const koe = kokeet.find(k => k.id === eventId);
+            const title = koe ? (koe.name || `${koe.type} ${koe.location}`) : 'Noutajakoe';
+            const text = koe ? `${title} - ${koe.date}, ${koe.location}` : 'Katso tämä noutajakoe!';
+
+            // Web Share API vain mobiililla (tarkista kosketusnäyttö)
+            const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+            if (isMobile && navigator.share) {
+                try {
+                    await navigator.share({ title, text, url: shareUrl });
+                    return;
+                } catch (err) {
+                    if (err.name === 'AbortError') return;
+                }
+            }
+
+            // Desktop: kopioi leikepöydälle
+            try {
+                await navigator.clipboard.writeText(shareUrl);
+
+                // Vaihda ikoni checkmarkiksi
+                buttonEl.classList.add('copied');
+                setTimeout(() => buttonEl.classList.remove('copied'), 2000);
+
+                // Näytä toast
+                showToast('Linkki kopioitu leikepöydälle!');
+            } catch (err) {
+                prompt('Kopioi linkki:', shareUrl);
+            }
         }
 
         // Sulje modal
