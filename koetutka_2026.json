@@ -1906,10 +1906,10 @@
     "date_sort": "2026-06-06T00:00:00+03:00",
     "end_date_sort": "2026-06-07T00:00:00+03:00",
     "entry_date": "25.04.-16.05.",
-    "location": "Kuopio",
+    "location": "Suonenjoki",
     "coordinates": [
-      62.8924641,
-      27.6783597
+      62.6241926,
+      27.1245609
     ],
     "name": "Noutajien taipumuskoe",
     "organizer": "SAVON NUUSKUT RY",
@@ -4220,13 +4220,26 @@
       {
         "date": "2026-07-24T21:00:00.000Z",
         "places": 12,
-        "judge": [],
+        "judge": [
+          {
+            "name": "Tenhunen Juha",
+            "official": true,
+            "id": 999999
+          }
+        ],
         "class": "VOI"
       },
       {
         "date": "2026-07-25T21:00:00.000Z",
-        "class": "VOI",
-        "places": 12
+        "places": 12,
+        "judge": [
+          {
+            "name": "Tenhunen Juha",
+            "official": true,
+            "id": 999999
+          }
+        ],
+        "class": "VOI"
       }
     ]
   },
@@ -4929,13 +4942,27 @@
     "classes": [
       {
         "date": "2026-08-08T21:00:00.000Z",
-        "class": "AVO",
-        "places": 15
+        "places": 15,
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "official": true,
+            "id": 882887
+          }
+        ],
+        "class": "AVO"
       },
       {
         "date": "2026-08-07T21:00:00.000Z",
-        "class": "ALO",
-        "places": 15
+        "places": 15,
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "official": true,
+            "id": 882887
+          }
+        ],
+        "class": "ALO"
       }
     ]
   },
