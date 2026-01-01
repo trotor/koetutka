@@ -79,11 +79,14 @@ MIT
 ## Versiohistoria
 
 ### v1.4.0 (2025-12-31)
-- Lisätty jakamistoiminto kortteihin (share-painike)
+- Lisätty jakamistoiminto kortteihin ja info-popuppiin (share-painike)
   - Mobiililla: avaa natiivi jako (WhatsApp, Messenger, SMS jne.)
-  - Desktopilla: kopioi linkki leikepöydälle
+  - Desktopilla: kopioi linkki leikepöydälle + toast-ilmoitus
 - Hash-pohjainen routing: jaetun linkin kautta pääsee suoraan tiettyyn kokeeseen
 - Linkin avaus scrollaa kortille ja avaa info-modaalin
+- Modernisoitu info-modal: korttipohjainen layout, ikonit, animaatiot
+- Mobiililla bottom sheet -tyylinen modal
+- Lisätty favicon ja apple-touch-icon
 
 ### v1.3.2 (2025-12-30)
 - Korjattu ilmoittautumismuistutuksen päivämäärä: käyttää nyt ensimmäistä ilmoittautumispäivää kokeen päivän sijaan

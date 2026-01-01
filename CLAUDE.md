@@ -59,7 +59,7 @@ scp index.html koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ## Deployment
 
 ### GitHub Pages (Primary)
-Live at: **https://teron.github.io/koetutka/**
+Live at: **https://trotor.github.io/koetutka/**
 
 Push to `master` branch triggers automatic deployment via GitHub Pages.
 
@@ -75,6 +75,9 @@ scp index.html banner.jpg koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/k
 **Core files (deployed):**
 - `index.html` - Main page
 - `banner.jpg` - Header banner image
+- `favicon.ico` - Favicon (multi-size)
+- `favicon-192.png` - Android/PWA icon
+- `apple-touch-icon.png` - iOS home screen icon
 - `koetutka_2025.json` - Current year data
 - `koetutka_2026.json` - Next year data
 
