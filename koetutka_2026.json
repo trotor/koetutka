@@ -64,7 +64,7 @@
       "Kevin Doughty",
       "Paul Wheeler"
     ],
-    "description": "",
+    "description": "Osallistumismaksu sisältää aamiaisen, välipalan ja ruokailun koepäivän päätteeksi. Ilmoita mahdolliset erityisruokavaliot koesihteerille.",
     "cost": 125,
     "cost_member": "",
     "classes": []
@@ -100,9 +100,31 @@
       "Kevin Doughty",
       "Paul Wheeler"
     ],
-    "description": "",
-    "cost": 120,
-    "cost_member": "",
+    "description": "Osallistumismaksu sisältää aamiaisen ja välipalan. \nMahdollisuus ostaa lisäpalveluna ruokailu (lohikeitto) koepäivän päätteeksi. \nIlmoita mahdolliset erityisruokavaliot koesihteerille.",
+    "cost": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "Meal after the trial",
+            "fi": "Ruokailu (lohikeitto) koepäivän päätteeksi"
+          },
+          "cost": 8
+        }
+      ],
+      "normal": 120
+    },
+    "cost_member": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "Meal after the trial",
+            "fi": "Ruokailu (lohikeitto) koepäivän päätteeksi"
+          },
+          "cost": 0
+        }
+      ],
+      "normal": 0
+    },
     "classes": []
   },
   {
