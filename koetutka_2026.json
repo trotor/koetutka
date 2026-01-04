@@ -225,9 +225,27 @@
       "email": ""
     },
     "judges": [],
-    "description": "Talkoolaisille edullisempi osallistumismaksu (jäsenhinta)! \nJos talkoilet ja olet oikeutettu halvempaan osallistumismaksuun, niin klikkaa itsesi jäseneksi, jolloin halvempi maksu aktivoituu! Talkoilu sovittava  ENNEN halvemman maksun käyttöä!\n\nOsallistumisoikeus alokasluokkaan niillä koirilla, joilla ei virallisissa kokeissa ole osallistumisoikeutta avoimeen luokkaan. Taipumuskoevaatimusta ei ole. \n\nTalvinome on ensisijaisesti yksilökilpailu, joukkuekilpailun joukkueiden koirakot valitaan yksilökilpailuun mukaan mahtuneista koirakoista ja ilmoitetaan kisapaikalla ensimmäisenä vuorossa olevan koirakon toimesta, kokeen toimistossa.\n",
-    "cost": 45,
-    "cost_member": 35,
+    "description": "Talkoolaisille edullisempi osallistumismaksu! Talkoilu sovittava  ENNEN halvemman maksun käyttöä! Osallistumismaksuun sisältyy lounas.\n\nOsallistumisoikeus alokasluokkaan niillä koirilla, joilla ei virallisissa kokeissa ole osallistumisoikeutta avoimeen luokkaan. Taipumuskoevaatimusta ei ole. \n\nTalvinome on ensisijaisesti yksilökilpailu, joukkuekilpailun joukkueiden koirakot valitaan yksilökilpailuun mukaan mahtuneista koirakoista ja ilmoitetaan kisapaikalla ensimmäisenä vuorossa olevan koirakon toimesta, kokeen toimistossa.\n\nTuomarit: Jenni Jarkko, Niina Parviainen, Tarja Tuhola, Riitta Koivisto.\n",
+    "cost": {
+      "normal": 45,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Talkoolaisen osallistusmismaksu "
+        },
+        "cost": 35
+      }
+    },
+    "cost_member": {
+      "normal": 0,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Talkoolaisen osallistusmismaksu "
+        },
+        "cost": 0
+      }
+    },
     "classes": [
       {
         "date": "2026-03-14T00:00:00.000+02:00",
@@ -6729,9 +6747,9 @@
       "email": ""
     },
     "secretary": {
-      "name": "Maija Lappalainen",
+      "name": "Anu Pesonen",
       "phone": "",
-      "email": "maijalappalainen@kolumbus.fi"
+      "email": "anu-pesonen@hotmail.com"
     },
     "judges": [
       "Purtola Susanna"
