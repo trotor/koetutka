@@ -140,7 +140,7 @@
       60.9063816,
       24.6186447
     ],
-    "name": "KV-koe, ILMOITTAUTUMINEN SÄHKÖPOSTILLA",
+    "name": "KV-koe",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "Petri Kuosmanen",
@@ -159,8 +159,18 @@
       "Andy Mutimer"
     ],
     "description": "Karsinta KV-sääntöjen mukaisesti, maksu paikan varmistuttua.\nQualification according to international rules, payment after confirmation of place. ",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 120,
+      "breed": {
+        "122": 100
+      }
+    },
+    "cost_member": {
+      "normal": 120,
+      "breed": {
+        "122": 100
+      }
+    },
     "classes": []
   },
   {
@@ -176,7 +186,7 @@
       60.9063816,
       24.6186447
     ],
-    "name": "KV-koe, ILMOITTAUTUMINEN SÄHKÖPOSTILLA",
+    "name": "KV-koe",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
       "name": "Petri Kuosmanen",
@@ -195,8 +205,18 @@
       "Andy Mutimer"
     ],
     "description": "Karsinta KV-sääntöjen mukaisesti, maksu paikan varmistuttua.\nQualification according to international rules, payment after confirmation of place. ",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 120,
+      "breed": {
+        "122": 100
+      }
+    },
+    "cost_member": {
+      "normal": 120,
+      "breed": {
+        "122": 100
+      }
+    },
     "classes": []
   },
   {
@@ -511,7 +531,7 @@
       "Ahola Pauliina",
       "Lähteenaro Janne"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä ja novascotiannoutajilla sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä ja novascotiannoutajilla sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 45,
     "cost_member": 40,
     "classes": [
@@ -563,7 +583,7 @@
       "Ahola Pauliina",
       "Lähteenaro Janne"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 45,
     "cost_member": 40,
     "classes": [
@@ -819,7 +839,7 @@
     "secretary": {
       "name": "Veera Lempiäinen",
       "phone": "0407419053",
-      "email": "veeralempiainen@icloud.com"
+      "email": "veera.lempiainen@outlook.com"
     },
     "judges": [
       "Schön Esa",
@@ -1103,9 +1123,9 @@
     "name": "",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
-      "name": "",
+      "name": "Lotta Vuorinen",
       "phone": "",
-      "email": ""
+      "email": "lotta@mouldhills.com"
     },
     "secretary": {
       "name": "Ulla Alhava",
@@ -1116,8 +1136,18 @@
       "Puttonen Pasi"
     ],
     "description": "",
-    "cost": 45,
-    "cost_member": 40,
+    "cost": {
+      "normal": 45,
+      "breed": {
+        "122": 40
+      }
+    },
+    "cost_member": {
+      "normal": 45,
+      "breed": {
+        "122": 40
+      }
+    },
     "classes": []
   },
   {
@@ -2325,7 +2355,7 @@
     "judges": [
       "Hiltunen Taru"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (Koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
@@ -2530,8 +2560,18 @@
       "Puttonen Pasi-Petteri"
     ],
     "description": "Ilmoittautumismaksu 50 €, labradorinnoutajat 45 €.",
-    "cost": 50,
-    "cost_member": 45,
+    "cost": {
+      "normal": 50,
+      "breed": {
+        "122": 45
+      }
+    },
+    "cost_member": {
+      "normal": 50,
+      "breed": {
+        "122": 45
+      }
+    },
     "classes": [
       {
         "date": "2026-06-12T21:00:00.000Z",
@@ -2633,7 +2673,7 @@
     "judges": [
       "Hiltunen Niko"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (Koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
@@ -2706,7 +2746,7 @@
     "judges": [
       "Hiltunen Niko"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (Koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
@@ -2724,7 +2764,7 @@
     "date": "14.06.2026",
     "date_sort": "2026-06-14T00:00:00+03:00",
     "end_date_sort": "2026-06-14T00:00:00+03:00",
-    "entry_date": "03.05.-24.05.",
+    "entry_date": "02.05.-23.05.",
     "location": "Toivakka",
     "coordinates": [
       62.0962173,
@@ -2746,8 +2786,18 @@
       "Puttonen Pasi-Petteri"
     ],
     "description": "Ilmoittautumismaksu 50 €, labradorinnoutajat 45 €.",
-    "cost": 50,
-    "cost_member": 45,
+    "cost": {
+      "normal": 50,
+      "breed": {
+        "122": 45
+      }
+    },
+    "cost_member": {
+      "normal": 50,
+      "breed": {
+        "122": 45
+      }
+    },
     "classes": [
       {
         "date": "2026-06-13T21:00:00.000Z",
@@ -2858,7 +2908,7 @@
     "judges": [
       "Hiltunen Taru"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (Koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
@@ -5119,7 +5169,7 @@
     "judges": [
       "Hukkanen Tuija"
     ],
-    "description": "Etusija piirin alueella asuvilla.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
@@ -5435,7 +5485,7 @@
       "Väisänen Riitta",
       "Särkänlahti Jari"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 45,
     "cost_member": 40,
     "classes": [
@@ -5651,7 +5701,7 @@
     "judges": [
       "Martikainen Maarit"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (Koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
@@ -6089,7 +6139,7 @@
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (Koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
@@ -7009,7 +7059,7 @@
       "Montonen Mikael",
       "Fontell Ari-Pekka"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä sekä edellämainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 45,
     "cost_member": 40,
     "classes": [
