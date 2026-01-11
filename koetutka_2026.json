@@ -3063,8 +3063,30 @@
       "Torila Mika"
     ],
     "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e.",
-    "cost": 60,
-    "cost_member": "",
+    "cost": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Ilmoittautumismaksu sis. keittolounaan"
+          },
+          "cost": 0
+        }
+      ],
+      "normal": 60
+    },
+    "cost_member": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Ilmoittautumismaksu sis. keittolounaan"
+          },
+          "cost": 0
+        }
+      ],
+      "normal": 0
+    },
     "classes": []
   },
   {
