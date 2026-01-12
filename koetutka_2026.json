@@ -819,11 +819,11 @@
   {
     "id": "U4g68_OLbT",
     "type": "NOWT",
-    "levels": "ALO (La), AVO (La), VOI (La)",
-    "date": "02.05.2026",
-    "date_sort": "2026-05-02T00:00:00+03:00",
-    "end_date_sort": "2026-05-02T00:00:00+03:00",
-    "entry_date": "21.03.-11.04.",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "03.05.2026",
+    "date_sort": "2026-05-03T00:00:00+03:00",
+    "end_date_sort": "2026-05-03T00:00:00+03:00",
+    "entry_date": "22.03.-12.04.",
     "location": "Masku",
     "coordinates": [
       60.566667,
@@ -850,17 +850,17 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-05-02T00:00:00.000+03:00",
+        "date": "2026-05-03T00:00:00.000+03:00",
         "class": "ALO",
         "judge": []
       },
       {
-        "date": "2026-05-02T00:00:00.000+03:00",
+        "date": "2026-05-03T00:00:00.000+03:00",
         "class": "AVO",
         "judge": []
       },
       {
-        "date": "2026-05-02T00:00:00.000+03:00",
+        "date": "2026-05-03T00:00:00.000+03:00",
         "class": "VOI",
         "judge": []
       }
@@ -3049,7 +3049,7 @@
     "official": {
       "name": "Timo Halme",
       "phone": "",
-      "email": ""
+      "email": "timomikko.halme@gmail.com"
     },
     "secretary": {
       "name": "Maija Lappalainen",
@@ -3062,7 +3062,7 @@
       "Sarkkinen Tomi",
       "Torila Mika"
     ],
-    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e.",
+    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e.\n\nHuom!! Seuraavana päivänä normi kolmen luokan WT samassa paikassa!  Jos et starttaa kokeessa, mutta haluaisit nähdä aitiopaikalta mitä kokeessa tapahtuu,\non talkoileminen hyvä vaihtoehto. Ota vastaavaan koetoimitsijaan yhteyttä, ja varaa paikkasi hyvässä seurassa. Talkoiluun ei tarvitse olla jäjestävän yhdistyksen jäsen.",
     "cost": {
       "optionalAdditionalCosts": [
         {
@@ -4752,7 +4752,7 @@
       "email": "majakkasaaren@gmail.com"
     },
     "judges": [
-      ""
+      "Montonen Mikael"
     ],
     "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
     "cost": 50,
@@ -4818,15 +4818,16 @@
       "email": ""
     },
     "judges": [
-      ""
+      "Nyman Tobina"
     ],
     "description": "",
     "cost": "",
     "cost_member": "",
     "classes": [
       {
-        "date": "2026-08-01T00:00:00.000+03:00",
-        "class": "ALO"
+        "date": "2026-07-31T21:00:00.000Z",
+        "class": "ALO",
+        "judge": []
       }
     ]
   },
