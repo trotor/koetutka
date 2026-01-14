@@ -6234,55 +6234,6 @@
     "classes": []
   },
   {
-    "id": "f0H2RHLesH",
-    "type": "NOWT",
-    "levels": "ALO (La), AVO (La), VOI (La)",
-    "date": "12.09.2026",
-    "date_sort": "2026-09-12T00:00:00+03:00",
-    "end_date_sort": "2026-09-12T00:00:00+03:00",
-    "entry_date": "01.08.-22.08.",
-    "location": "Rovaniemi ymp",
-    "coordinates": [
-      66.5025657,
-      25.73122
-    ],
-    "name": "",
-    "organizer": "KULTAINEN RENGAS - GOLDEN RING GR RY",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Tanja Tenhonen",
-      "phone": "",
-      "email": "tanja.tenhonen@kolumbus.fi"
-    },
-    "judges": [
-      "Uusimäki Pekka"
-    ],
-    "description": "Koe järjestetään yhteistyössä Lapin Nuuskujen kanssa, ja etusijalla sekä Lapin Nuuskujen että Kultainen Rengas - Golden Ring GR ry:n jäsenet",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "date": "2026-09-12T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": []
-      },
-      {
-        "date": "2026-09-12T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
-      },
-      {
-        "date": "2026-09-12T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": []
-      }
-    ]
-  },
-  {
     "id": "pSGSr3ChkO",
     "type": "NOU",
     "levels": "N/A",
@@ -6347,55 +6298,6 @@
     "cost": 50,
     "cost_member": 40,
     "classes": []
-  },
-  {
-    "id": "dvwmMNTuus",
-    "type": "NOWT",
-    "levels": "ALO (Su), AVO (Su), VOI (Su)",
-    "date": "13.09.2026",
-    "date_sort": "2026-09-13T00:00:00+03:00",
-    "end_date_sort": "2026-09-13T00:00:00+03:00",
-    "entry_date": "02.08.-23.08.",
-    "location": "Rovaniemi ymp",
-    "coordinates": [
-      66.5025657,
-      25.73122
-    ],
-    "name": "Kultaistennoutajien WT-mestaruus",
-    "organizer": "KULTAINEN RENGAS - GOLDEN RING GR RY",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Tanja Tenhonen",
-      "phone": "",
-      "email": "tanja.tenhonen@kolumbus.fi"
-    },
-    "judges": [
-      "Uusimäki Pekka"
-    ],
-    "description": "Koe on kultaistennoutajien WT- rotumestaruus. Etusija järjestävän yhdistyksen jäsenillä kultaisellanoutajalla",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "date": "2026-09-13T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": []
-      },
-      {
-        "date": "2026-09-13T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
-      },
-      {
-        "date": "2026-09-13T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": []
-      }
-    ]
   },
   {
     "id": "ayp8ZrnlMU",
