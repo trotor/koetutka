@@ -824,10 +824,10 @@
     "date_sort": "2026-05-03T00:00:00+03:00",
     "end_date_sort": "2026-05-03T00:00:00+03:00",
     "entry_date": "22.03.-12.04.",
-    "location": "Masku",
+    "location": "Naantali",
     "coordinates": [
-      60.566667,
-      22.1
+      60.4688687,
+      22.0291149
     ],
     "name": "",
     "organizer": "AURAN NUUSKUT RY",
@@ -843,7 +843,8 @@
     },
     "judges": [
       "Schön Esa",
-      "Hirvonen Petteri"
+      "Hirvonen Petteri",
+      "Uusimäki Pekka"
     ],
     "description": "VOI-luokassa kisataan samalla historian ensimmäinen Varsinais-Suomen WT-piirinmestaruus! \n\nJäsenetuudet edellyttävät, että jäsenyyden oltava voimassa ilmoittautumisajan alkaessa. Kokeeseen etusijalla piirinmestaruudesta kisaavat (Kennelliiton pm-säännön mukaisesti), sekä AN jäsenet tai muut kokeeseen kutsuttavat. ",
     "cost": 50,
@@ -851,18 +852,18 @@
     "classes": [
       {
         "date": "2026-05-03T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": []
+        "judge": [],
+        "class": "ALO"
       },
       {
         "date": "2026-05-03T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
+        "judge": [],
+        "class": "AVO"
       },
       {
-        "date": "2026-05-03T00:00:00.000+03:00",
         "class": "VOI",
-        "judge": []
+        "judge": [],
+        "date": "2026-05-03T00:00:00.000+03:00"
       }
     ]
   },
