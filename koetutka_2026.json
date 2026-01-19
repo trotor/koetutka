@@ -2735,7 +2735,7 @@
     "name": "",
     "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
     "official": {
-      "name": "",
+      "name": "Kai Kytö",
       "phone": "",
       "email": ""
     },
@@ -3088,39 +3088,6 @@
       ],
       "normal": 0
     },
-    "classes": []
-  },
-  {
-    "id": "rSu9qoA_Aj",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "28.06.2026",
-    "date_sort": "2026-06-28T00:00:00+03:00",
-    "end_date_sort": "2026-06-28T00:00:00+03:00",
-    "entry_date": "17.05.-07.06.",
-    "location": "Rovaniemi ",
-    "coordinates": [
-      66.5025657,
-      25.73122
-    ],
-    "name": "",
-    "organizer": "LAPIN NUUSKUT R.Y.",
-    "official": {
-      "name": "Minna Pakkanen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Eeva Ervasti",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Vaarala Jarmo"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
     "classes": []
   },
   {
@@ -5501,9 +5468,9 @@
       "email": ""
     },
     "secretary": {
-      "name": "Minna Helenius",
+      "name": "Saara Seppänen",
       "phone": "",
-      "email": "minna.m.helenius@gmail.com"
+      "email": "saara_seppanen@hotmail.com"
     },
     "judges": [
       "Väisänen Riitta",
