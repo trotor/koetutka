@@ -3035,7 +3035,7 @@
   {
     "id": "UWcCAxfpIi",
     "type": "NOWT SM",
-    "levels": "N/A",
+    "levels": "VOI (La)",
     "date": "27.06.2026",
     "date_sort": "2026-06-27T00:00:00+03:00",
     "end_date_sort": "2026-06-27T00:00:00+03:00",
@@ -3063,7 +3063,7 @@
       "Sarkkinen Tomi",
       "Torila Mika"
     ],
-    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e.\n\nHuom!! Seuraavana päivänä normi kolmen luokan WT samassa paikassa!  Jos et starttaa kokeessa, mutta haluaisit nähdä aitiopaikalta mitä kokeessa tapahtuu,\non talkoileminen hyvä vaihtoehto. Ota vastaavaan koetoimitsijaan yhteyttä, ja varaa paikkasi hyvässä seurassa. Talkoiluun ei tarvitse olla jäjestävän yhdistyksen jäsen.",
+    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e.\n\nHuom!! Seuraavana päivänä normi kolmen luokan WT samassa paikassa!  Jos et starttaa kokeessa, mutta haluaisit nähdä aitiopaikalta mitä kokeessa tapahtuu,\non talkoileminen hyvä vaihtoehto. Ota vastaavaan koetoimitsijaan yhteyttä, ja varaa paikkasi hyvässä seurassa. Talkoiluun ei tarvitse olla jäjestävän yhdistyksen jäsen.\n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
     "cost": {
       "optionalAdditionalCosts": [
         {
@@ -3074,7 +3074,14 @@
           "cost": 0
         }
       ],
-      "normal": 60
+      "normal": 60,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Saman ohjaajan 2.koira"
+        },
+        "cost": 50
+      }
     },
     "cost_member": {
       "optionalAdditionalCosts": [
@@ -3086,9 +3093,21 @@
           "cost": 0
         }
       ],
-      "normal": 0
+      "normal": 0,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Saman ohjaajan 2.koira"
+        },
+        "cost": 0
+      }
     },
-    "classes": []
+    "classes": [
+      {
+        "date": "2026-06-26T21:00:00.000Z",
+        "class": "VOI"
+      }
+    ]
   },
   {
     "id": "54UJN0RSx1",
@@ -3108,7 +3127,7 @@
     "official": {
       "name": "Niina Parviainen",
       "phone": "",
-      "email": ""
+      "email": "parviainen_niina@outlook.com"
     },
     "secretary": {
       "name": "Maija Lappalainen",
@@ -3121,24 +3140,63 @@
       "Tenhunen Matti",
       "Torila Mika"
     ],
-    "description": "Koemaksu sisältää keittolounaan. Saman ohjaajan toinen koira 10e halvempi, eli 40e jäsen/45e ei-jäsen.",
-    "cost": 55,
-    "cost_member": 50,
+    "description": "Koemaksu sisältää keittolounaan. Saman ohjaajan toinen koira 40e jäsen/45e ei-jäsen.\n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
+    "cost": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Osallistumismaksu sis. keittolounaan"
+          },
+          "cost": 0
+        }
+      ],
+      "normal": 55,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Saman ohjaajan 2.koira 45e, jäsenille 40e"
+        },
+        "cost": 45
+      }
+    },
+    "cost_member": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Osallistumismaksu sis. keittolounaan"
+          },
+          "cost": 0
+        }
+      ],
+      "normal": 50,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Saman ohjaajan 2.koira 45e, jäsenille 40e"
+        },
+        "cost": 40
+      }
+    },
     "classes": [
       {
         "date": "2026-06-27T21:00:00.000Z",
-        "class": "ALO",
-        "judge": []
+        "places": 0,
+        "judge": [],
+        "class": "ALO"
       },
       {
         "date": "2026-06-27T21:00:00.000Z",
-        "class": "AVO",
-        "judge": []
+        "places": 0,
+        "judge": [],
+        "class": "AVO"
       },
       {
         "date": "2026-06-27T21:00:00.000Z",
-        "class": "VOI",
-        "judge": []
+        "places": 0,
+        "judge": [],
+        "class": "VOI"
       }
     ]
   },
