@@ -3794,6 +3794,44 @@
     ]
   },
   {
+    "id": "Vn4jYHR6z-",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La)",
+    "date": "11.07.2026",
+    "date_sort": "2026-07-11T00:00:00+03:00",
+    "end_date_sort": "2026-07-11T00:00:00+03:00",
+    "entry_date": "30.05.-20.06.",
+    "location": "Mänttä-Vilppula",
+    "coordinates": [
+      62.0826146,
+      24.4504322
+    ],
+    "name": "Mölli NOME-B",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Ensisijaisesti jäsenille",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2026-07-11T00:00:00.000+03:00",
+        "class": "ALO"
+      }
+    ]
+  },
+  {
     "id": "bKwiJCyQ3S",
     "type": "NOU",
     "levels": "N/A",
@@ -6326,6 +6364,52 @@
     "classes": []
   },
   {
+    "id": "l7II9ZIowI",
+    "type": "NOWT",
+    "levels": "AVO (Su), VOI (Su)",
+    "date": "13.09.2026",
+    "date_sort": "2026-09-13T00:00:00+03:00",
+    "end_date_sort": "2026-09-13T00:00:00+03:00",
+    "entry_date": "02.08.-23.08.",
+    "location": "Hamina",
+    "coordinates": [
+      60.5683467,
+      27.1925862
+    ],
+    "name": "Mock Trial",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Jukka Simpura",
+      "phone": "",
+      "email": "jukkasimpura1@gmail.com"
+    },
+    "secretary": {
+      "name": "Riina Laiho",
+      "phone": "",
+      "email": "riina.laiho@hotmail.com"
+    },
+    "judges": [
+      "Schön Esa"
+    ],
+    "description": "",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": [
+      {
+        "date": "2026-09-13T00:00:00.000+03:00",
+        "places": 14,
+        "judge": [],
+        "class": "AVO"
+      },
+      {
+        "date": "2026-09-13T00:00:00.000+03:00",
+        "places": 14,
+        "judge": [],
+        "class": "VOI"
+      }
+    ]
+  },
+  {
     "id": "ayp8ZrnlMU",
     "type": "NOU",
     "levels": "N/A",
@@ -6515,52 +6599,6 @@
           }
         ],
         "class": "ALO"
-      }
-    ]
-  },
-  {
-    "id": "l7II9ZIowI",
-    "type": "NOWT",
-    "levels": "AVO (Su), VOI (Su)",
-    "date": "20.09.2026",
-    "date_sort": "2026-09-20T00:00:00+03:00",
-    "end_date_sort": "2026-09-20T00:00:00+03:00",
-    "entry_date": "09.08.-30.08.",
-    "location": "Hamina",
-    "coordinates": [
-      60.5683467,
-      27.1925862
-    ],
-    "name": "Mock Trial",
-    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "Jukka Simpura",
-      "phone": "",
-      "email": "jukkasimpura1@gmail.com"
-    },
-    "secretary": {
-      "name": "Riina Laiho",
-      "phone": "",
-      "email": "riina.laiho@hotmail.com"
-    },
-    "judges": [
-      "Schön Esa"
-    ],
-    "description": "",
-    "cost": 55,
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-09-19T21:00:00.000Z",
-        "places": 14,
-        "judge": [],
-        "class": "AVO"
-      },
-      {
-        "date": "2026-09-19T21:00:00.000Z",
-        "places": 14,
-        "judge": [],
-        "class": "VOI"
       }
     ]
   },
@@ -6759,6 +6797,45 @@
     "cost": 50,
     "cost_member": 45,
     "classes": []
+  },
+  {
+    "id": "wni2Z9SrG8",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La), AVO (La)",
+    "date": "26.09.2026",
+    "date_sort": "2026-09-26T00:00:00+03:00",
+    "end_date_sort": "2026-09-26T00:00:00+03:00",
+    "entry_date": "15.08.-05.09.",
+    "location": "Mänttä-Jämsä ympäristö",
+    "coordinates": null,
+    "name": "Mölli-WT",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Mölli-WT, järjestää Mäntän Seudun Nuuskut Ry ja Metsästysnoutajat Ry",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2026-09-26T00:00:00.000+03:00",
+        "class": "ALO"
+      },
+      {
+        "date": "2026-09-26T00:00:00.000+03:00",
+        "class": "AVO"
+      }
+    ]
   },
   {
     "id": "AQem2RQsgG",
