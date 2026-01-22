@@ -671,9 +671,9 @@
     "name": "Peräseinäjoen WT",
     "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "Jari Hietaranta",
+      "name": "Jussi Mäntysalo",
       "phone": "",
-      "email": "jari.hietaranta@gmail.com"
+      "email": "jussi.mantysalo@gmail.com"
     },
     "secretary": {
       "name": "Heidi Silen",
@@ -724,9 +724,9 @@
     "name": "Peräseinäjoen WT",
     "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "Jari Hietaranta",
+      "name": "Marianne Aho",
       "phone": "",
-      "email": "jari.hietaranta@gmail.com"
+      "email": "marianne.a.aho@gmail.com"
     },
     "secretary": {
       "name": "Heidi Silen",
@@ -6298,6 +6298,57 @@
     "classes": []
   },
   {
+    "id": "9LuxiWMOY0",
+    "type": "NOWT",
+    "levels": "AVO (La), VOI (La)",
+    "date": "12.09.2026",
+    "date_sort": "2026-09-12T00:00:00+03:00",
+    "end_date_sort": "2026-09-12T00:00:00+03:00",
+    "entry_date": "28.08.-09.09.",
+    "location": "Mikkeli",
+    "coordinates": [
+      61.6877823,
+      27.2731918
+    ],
+    "name": "Mock Trial",
+    "organizer": "SAIMAAN NOUTAJAT RY",
+    "official": {
+      "name": "Tiina Marttinen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tiina Marttinen",
+      "phone": "",
+      "email": "saimaannoutajat.koesihteeri@gmail.com"
+    },
+    "judges": [
+      "Saarinen Maarit",
+      "Fraser Forbes"
+    ],
+    "description": "Ulkomainen tuomari Fraser Forbes, Scotland. \nJääviyssääntö poistuu, ja Middle River's koirat voivat osallistua kokeeseen. ",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2026-09-12T00:00:00.000+03:00",
+        "entries": 0,
+        "judge": [],
+        "class": "VOI",
+        "members": 0
+      },
+      {
+        "date": "2026-09-12T00:00:00.000+03:00",
+        "class": "AVO",
+        "judge": []
+      }
+    ]
+  },
+  {
     "id": "pSGSr3ChkO",
     "type": "NOU",
     "levels": "N/A",
@@ -6434,9 +6485,7 @@
       "phone": "",
       "email": ""
     },
-    "judges": [
-      "Kestilä-Kekkonen Elina"
-    ],
+    "judges": [],
     "description": ".",
     "cost": "",
     "cost_member": "",
@@ -6475,53 +6524,6 @@
     "cost": "",
     "cost_member": "",
     "classes": []
-  },
-  {
-    "id": "9LuxiWMOY0",
-    "type": "NOWT",
-    "levels": "AVO (La), VOI (La)",
-    "date": "19.09.2026",
-    "date_sort": "2026-09-19T00:00:00+03:00",
-    "end_date_sort": "2026-09-19T00:00:00+03:00",
-    "entry_date": "28.08.-09.09.",
-    "location": "Mikkeli",
-    "coordinates": [
-      61.6877823,
-      27.2731918
-    ],
-    "name": "Mock Trial",
-    "organizer": "SAIMAAN NOUTAJAT RY",
-    "official": {
-      "name": "Tiina Marttinen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Tiina Marttinen",
-      "phone": "",
-      "email": "saimaannoutajat.koesihteeri@gmail.com"
-    },
-    "judges": [
-      "Saarinen Maarit",
-      "Fraser Forbes"
-    ],
-    "description": "Ulkomainen tuomari Fraser Forbes, Scotland. \nJääviyssääntö poistuu, ja Middle River's koirat voivat osallistua kokeeseen. ",
-    "cost": 45,
-    "cost_member": 40,
-    "classes": [
-      {
-        "date": "2026-09-19T00:00:00.000+03:00",
-        "entries": 0,
-        "judge": [],
-        "class": "VOI",
-        "members": 0
-      },
-      {
-        "date": "2026-09-19T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
-      }
-    ]
   },
   {
     "id": "Mq_SHxLuIR",
