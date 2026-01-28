@@ -275,6 +275,91 @@
     ]
   },
   {
+    "id": "XgGcS-KOPY",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "20.03.2026",
+    "date_sort": "2026-03-20T22:00:00+00:00",
+    "end_date_sort": "2026-03-20T22:00:00+00:00",
+    "entry_date": "06.02.-27.02.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "Hankinome",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Khrystyna Vuokila",
+      "phone": "",
+      "email": "khrystyna.vuokila@gmail.com"
+    },
+    "judges": [
+      "Hatunen Jarmo",
+      "Henna Mikkonen",
+      "Oona Mönttinen"
+    ],
+    "description": "Epävirallinen dameilla suoritettava rastityyppinen koe. Koiralla ei tarvitse olla luokkaan oikeuttavia tuloksia virallisissa rodunomaisissa kokeissa. \nHUOM! Kokeessa myös luokka ''veteraanit'', alaikäraja 10 vuotta. Ilmoittautuessa veteraaniluokkaan, ilmoittaudutaan ALO-luokkaan ja kirjataan lisätietoja kohtaan maininta ''osallistuu veteraaniluokkaan''.\nTapahtumassa järjestetään myös joukkuekilpailu: 3 koiraa/joukkue, koirat voivat olla eri luokista. Joukkuekilpailuun ilmoittaudutaan kirjaamalla lisätietoihin joukkueen nimi.\nMuutokset (tuomarit, arvosteluluokat) ovat mahdollisia.\nMaksunpalautuksista pidätetään 5 € käsittelykulu, jos ohjaaja peruu ilmoittautumisen. ",
+    "cost": {
+      "normal": 30
+    },
+    "cost_member": {
+      "normal": 25
+    },
+    "classes": [
+      {
+        "date": "2026-03-20T22:00:00.000Z",
+        "groups": [
+          "ip"
+        ],
+        "places": 0,
+        "judge": [
+          {
+            "name": "Oona Mönttinen",
+            "official": false,
+            "id": -3
+          }
+        ],
+        "class": "ALO"
+      },
+      {
+        "date": "2026-03-20T22:00:00.000Z",
+        "groups": [
+          "ap"
+        ],
+        "places": 0,
+        "judge": [
+          {
+            "name": "Henna Mikkonen",
+            "official": false,
+            "id": -2
+          }
+        ],
+        "class": "AVO"
+      },
+      {
+        "date": "2026-03-20T22:00:00.000Z",
+        "groups": [
+          "ap"
+        ],
+        "places": 0,
+        "judge": [
+          {
+            "name": "Hatunen Jarmo",
+            "official": false,
+            "id": -1
+          }
+        ],
+        "class": "VOI"
+      }
+    ]
+  },
+  {
     "id": "YZlaUzrXnf",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
@@ -305,39 +390,6 @@
     "description": "Osallistumisoikeus on rekisteröidyillä noutajilla, joita ei ole palkittu noutajien metsästyskokeissa, kuitenkin niin, että etuoikeus on nuorilla koirilla (NOU1-tulos on sallittu). Osallistumisoikeus on koirilla, jotka ovat maksimissaan 2 vuotta (alaikäraja 9 kk). Ilmoittautumalla kokeeseen hyväksyn, että kokeen järjestämisen vastuuhenkilöt voivat käsitellä ilmoittamiani henkilötietoja ja julkaista niitä tarpeen mukaisesti ja soveltuvin osin kokeen osallistuja- ja tulosluettelossa koepaikalla ja kokeeseen liittyvissä julkaisuissa internetissä tai muissa yhdistyksen medioissa. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
     "cost": 40,
     "cost_member": 30,
-    "classes": []
-  },
-  {
-    "id": "XgGcS-KOPY",
-    "type": "EPÄVIRALLINEN",
-    "levels": "N/A",
-    "date": "21.03.2026",
-    "date_sort": "2026-03-21T00:00:00+02:00",
-    "end_date_sort": "2026-03-21T00:00:00+02:00",
-    "entry_date": "07.02.-28.02.",
-    "location": "Oulun ymp",
-    "coordinates": [
-      65.0593277,
-      25.4673577
-    ],
-    "name": "Hankinome",
-    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Khrystyna Vuokila",
-      "phone": "",
-      "email": "khrystyna.vuokila@gmail.com"
-    },
-    "judges": [
-      ""
-    ],
-    "description": "Epävirallinen dameilla suoritettava rastityyppinen koe. Koiralla ei tarvitse olla luokkaan oikeuttavia tuloksia virallisissa rodunomaisissa kokeissa. ",
-    "cost": "",
-    "cost_member": "",
     "classes": []
   },
   {
@@ -1743,7 +1795,7 @@
     "date": "31.05.2026",
     "date_sort": "2026-05-31T00:00:00+03:00",
     "end_date_sort": "2026-05-31T00:00:00+03:00",
-    "entry_date": "19.04.-11.05.",
+    "entry_date": "19.04.-15.05.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -1822,7 +1874,7 @@
     "date": "31.05.2026",
     "date_sort": "2026-05-31T00:00:00+03:00",
     "end_date_sort": "2026-05-31T00:00:00+03:00",
-    "entry_date": "19.04.-11.05.",
+    "entry_date": "19.04.-15.05.",
     "location": "Salo",
     "coordinates": [
       60.3879158,
@@ -5210,7 +5262,7 @@
       "email": ""
     },
     "secretary": {
-      "name": "Minna Pakkanen",
+      "name": "Eeva Ervasti",
       "phone": "",
       "email": ""
     },
@@ -5339,7 +5391,7 @@
       "email": ""
     },
     "secretary": {
-      "name": "Minna Pakkanen",
+      "name": "Eeva Ervasti",
       "phone": "",
       "email": ""
     },
@@ -7181,7 +7233,9 @@
       "email": "tiinaruuskanen@gmail.com"
     },
     "judges": [
-      "Saarinen Maarit"
+      "Saarinen Maarit",
+      "Ahola Pauliina",
+      "Väisänen Riitta"
     ],
     "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. \nNarttukoiran juoksun alkaessa koemaksu palautetaan. ",
     "cost": 40,
@@ -7237,7 +7291,8 @@
       "email": "tiinaruuskanen@gmail.com"
     },
     "judges": [
-      "Saarinen Maarit"
+      "Saarinen Maarit",
+      "Ahola Pauliina"
     ],
     "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. \nNarttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": 40,
