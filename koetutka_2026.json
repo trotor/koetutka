@@ -773,7 +773,7 @@
       62.5621248,
       23.0632748
     ],
-    "name": "Peräseinäjoen WT",
+    "name": "Peräseinäjoen WT-koe - Kultaistennoutajien WT-mestaruus",
     "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
       "name": "Marianne Aho",
@@ -1076,8 +1076,12 @@
       "Siitari Heli"
     ],
     "description": "Savonnnuuskujen Mölli-WT Villilässä! Etusijalla jäsenet. Muutokset mahdollisia, seuraa ilmoitetelua ja tapahtuman päivityksiä.",
-    "cost": 50,
-    "cost_member": 40,
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
     "classes": []
   },
   {
@@ -1505,7 +1509,9 @@
       "xx"
     ],
     "description": "Möllitaipparit suonenjoella. ",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": []
   },
@@ -2050,7 +2056,9 @@
       "Hiltunen Niko"
     ],
     "description": "",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": []
   },
@@ -2225,7 +2233,9 @@
       "Hiltunen Taru"
     ],
     "description": "",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": [
       {
@@ -3067,7 +3077,9 @@
       "Puttonen Pasi-Petteri"
     ],
     "description": "",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": [
       {
@@ -3606,7 +3618,9 @@
       "Rönty Sanna-Maija"
     ],
     "description": "",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": []
   },
@@ -4161,7 +4175,9 @@
       "Salonen Tommy"
     ],
     "description": "",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": []
   },
@@ -4258,7 +4274,9 @@
       "Puttonen Pasi-Petteri"
     ],
     "description": "Koe on Savon Nuuskujen yhdistyksen mestaruuskoe.",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": [
       {
@@ -4317,7 +4335,9 @@
       "Salonen Susanna"
     ],
     "description": "Avoimen ja voittajaluokan koe järjestetään DAMIkokeena.\n\nKokeen luokkavastaavat:\nALO Reetta Innilä\nAVO xx xx\nVOI Tuija Hukkanen",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": [
       {
@@ -4442,7 +4462,9 @@
       "Tenhunen Juha"
     ],
     "description": "",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": [
       {
@@ -5166,7 +5188,9 @@
       "Lappalainen Mika"
     ],
     "description": "",
-    "cost": 50,
+    "cost": {
+      "normal": 55
+    },
     "cost_member": 45,
     "classes": [
       {
