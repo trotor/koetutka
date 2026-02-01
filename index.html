@@ -753,9 +753,61 @@
             text-decoration: underline;
         }
 
+        .footer-description {
+            max-width: 600px;
+            margin: 0 auto 15px auto;
+            font-size: 0.8em;
+            color: #888;
+            line-height: 1.6;
+        }
+
         .footer-separator {
             margin: 0 8px;
             color: #ccc;
+        }
+
+        .promo-banner {
+            background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .promo-banner a {
+            color: rgba(255,255,255,0.95);
+            text-decoration: none;
+            font-size: 0.9em;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+
+        .promo-banner a:hover {
+            color: white;
+        }
+
+        .promo-banner .promo-text {
+            opacity: 0.85;
+        }
+
+        .promo-banner .promo-site {
+            font-weight: 600;
+            opacity: 1;
+            border-bottom: 1px dashed rgba(255,255,255,0.5);
+        }
+
+        .promo-banner a:hover .promo-site {
+            border-bottom-style: solid;
+        }
+
+        @media (max-width: 768px) {
+            .promo-banner {
+                padding: 8px 15px;
+            }
+            .promo-banner a {
+                font-size: 0.8em;
+            }
         }
 
         .loading {
@@ -1190,6 +1242,14 @@
             <p>Noutajakokeet lähellä sinua</p>
         </header>
 
+        <div class="promo-banner">
+            <a href="https://noutajalista.fi" target="_blank" rel="noopener">
+                <span>🐕</span>
+                <span class="promo-text">Noutajaharrastajan tietopankki</span>
+                <span class="promo-site">Noutajalista.fi →</span>
+            </a>
+        </div>
+
         <div class="location-selector">
             <h2>Valitse sijaintisi</h2>
             <div class="location-controls">
@@ -1288,6 +1348,10 @@
         </div>
 
         <footer>
+            <p class="footer-description">
+                Koetutka näyttää noutajien rodunomaiset kokeet (NOME-B, NOU, NOWT) järjestettynä etäisyyden mukaan valitsemastasi sijainnista.
+                Selaa tulevia kokeita, suodata lajin ja tason mukaan, ja lisää ne suoraan kalenteriisi.
+            </p>
             <p>
                 Data: SNJ koekalenteri | <span id="updateDate"></span>
             </p>
@@ -1298,7 +1362,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.4.0</span>
+                <span id="version">v1.5.0</span>
             </p>
         </footer>
     </div>
@@ -1402,6 +1466,22 @@
         let currentSort = { column: 'distance', ascending: true };
         let activeTypes = new Set(); // Aktiiviset lajit (kaikki oletuksena)
         let activeLevels = new Set(); // Aktiiviset tasot (kaikki oletuksena)
+
+        // Apufunktio maksun arvon hakemiseen (voi olla numero tai objekti)
+        function getCostValue(cost) {
+            if (cost === null || cost === undefined || cost === '') return null;
+            if (typeof cost === 'number') return cost;
+            if (typeof cost === 'object' && cost.normal !== undefined) return cost.normal;
+            return null;
+        }
+
+        // Apufunktio lisämaksujen hakemiseen
+        function getOptionalCosts(cost) {
+            if (typeof cost === 'object' && cost.optionalAdditionalCosts) {
+                return cost.optionalAdditionalCosts;
+            }
+            return [];
+        }
 
         // Haversine-kaava etäisyyden laskemiseen
         function haversineDistance(lat1, lon1, lat2, lon2) {
@@ -2235,7 +2315,11 @@
                         </div>`;
             }
 
-            if (koe.cost || koe.cost_member) {
+            const costValue = getCostValue(koe.cost);
+            const costMemberValue = getCostValue(koe.cost_member);
+            const optionalCosts = getOptionalCosts(koe.cost);
+
+            if (costValue !== null || costMemberValue !== null) {
                 html += `
                         <div class="info-card">
                             <div class="info-card-header">
@@ -2243,19 +2327,29 @@
                                 <span>Maksut</span>
                             </div>
                             <div class="info-card-content">`;
-                if (koe.cost) {
+                if (costValue !== null) {
                     html += `
                                 <div class="info-row">
                                     <span class="info-row-label">Osallistumismaksu</span>
-                                    <span class="info-row-value">${koe.cost} €</span>
+                                    <span class="info-row-value">${costValue} €</span>
                                 </div>`;
                 }
-                if (koe.cost_member) {
+                if (costMemberValue !== null) {
                     html += `
                                 <div class="info-row">
                                     <span class="info-row-label">Jäsenhinta</span>
-                                    <span class="info-row-value">${koe.cost_member} €</span>
+                                    <span class="info-row-value">${costMemberValue} €</span>
                                 </div>`;
+                }
+                if (optionalCosts.length > 0) {
+                    optionalCosts.forEach(opt => {
+                        const desc = opt.description?.fi || opt.description?.en || opt.description || '';
+                        html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">${desc}</span>
+                                    <span class="info-row-value">+${opt.cost} €</span>
+                                </div>`;
+                    });
                 }
                 html += `
                             </div>
@@ -2474,10 +2568,12 @@
 
                 description += `\\n\\nIlmoittautumisaika: ${koe.entry_date}`;
 
-                if (koe.cost || koe.cost_member) {
+                const icsCost = getCostValue(koe.cost);
+                const icsCostMember = getCostValue(koe.cost_member);
+                if (icsCost !== null || icsCostMember !== null) {
                     description += `\\n\\n--- Osallistumismaksut ---`;
-                    if (koe.cost) description += `\\nMaksu: ${koe.cost} €`;
-                    if (koe.cost_member) description += `\\nJäsenmaksu: ${koe.cost_member} €`;
+                    if (icsCost !== null) description += `\\nMaksu: ${icsCost} €`;
+                    if (icsCostMember !== null) description += `\\nJäsenmaksu: ${icsCostMember} €`;
                 }
             } else {
                 // For registration reminder, add contact info

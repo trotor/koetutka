@@ -78,6 +78,11 @@ MIT
 
 ## Versiohistoria
 
+### v1.5.0 (2026-02-01)
+- Lisätty Noutajalista.fi-mainospalkki bannerin alle
+- Korjattu maksutietojen näyttö: tuki uudelle API-muodolle jossa hinta voi olla objekti
+- Lisätty valinnaiset lisämaksut näkyviin info-modaaliin (esim. ruokailu)
+
 ### v1.4.0 (2025-12-31)
 - Lisätty jakamistoiminto kortteihin ja info-popuppiin (share-painike)
   - Mobiililla: avaa natiivi jako (WhatsApp, Messenger, SMS jne.)
