@@ -226,7 +226,7 @@
     "date": "14.03.2026",
     "date_sort": "2026-03-14T00:00:00+02:00",
     "end_date_sort": "2026-03-14T00:00:00+02:00",
-    "entry_date": "01.02.-02.03.",
+    "entry_date": "03.02.-02.03.",
     "location": "Korpilahti",
     "coordinates": [
       62.0431892,
@@ -240,11 +240,16 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Henna Andelin",
       "phone": "",
-      "email": ""
+      "email": "talvinome@gmail.com "
     },
-    "judges": [],
+    "judges": [
+      "Jenni Jarkko ",
+      "Niina Parviainen ",
+      "Tarja Tuhola ",
+      "Riitta Koivisto "
+    ],
     "description": "Talkoolaisille edullisempi osallistumismaksu! Talkoilu sovittava  ENNEN halvemman maksun käyttöä! Osallistumismaksuun sisältyy lounas.\n\nOsallistumisoikeus alokasluokkaan niillä koirilla, joilla ei virallisissa kokeissa ole osallistumisoikeutta avoimeen luokkaan. Taipumuskoevaatimusta ei ole. \n\nTalvinome on ensisijaisesti yksilökilpailu, joukkuekilpailun joukkueiden koirakot valitaan yksilökilpailuun mukaan mahtuneista koirakoista ja ilmoitetaan kisapaikalla ensimmäisenä vuorossa olevan koirakon toimesta, kokeen toimistossa.\n\nTuomarit: Jenni Jarkko, Niina Parviainen, Tarja Tuhola, Riitta Koivisto.\n",
     "cost": {
       "normal": 45,
@@ -257,7 +262,7 @@
       }
     },
     "cost_member": {
-      "normal": 0,
+      "normal": 45,
       "custom": {
         "description": {
           "en": "",
@@ -268,9 +273,30 @@
     },
     "classes": [
       {
-        "date": "2026-03-14T00:00:00.000+02:00",
+        "date": "2026-03-13T22:00:00.000Z",
         "class": "ALO",
-        "judge": []
+        "judge": [
+          {
+            "name": "Jenni Jarkko ",
+            "official": false,
+            "id": -1
+          },
+          {
+            "name": "Niina Parviainen ",
+            "official": false,
+            "id": -2
+          },
+          {
+            "name": "Tarja Tuhola ",
+            "official": false,
+            "id": -3
+          },
+          {
+            "name": "Riitta Koivisto ",
+            "official": false,
+            "id": -4
+          }
+        ]
       }
     ]
   },
@@ -673,20 +699,20 @@
     "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
       "name": "Heidi Savander",
-      "phone": "+358500860637",
+      "phone": "",
       "email": "heidi.savander@gmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Anu Sinkkonen",
       "phone": "",
-      "email": ""
+      "email": "anu.sinkkonen@gmail.com"
     },
     "judges": [
       "Torila Mika",
       "Salo Mervi",
       "Vitikka Minja"
     ],
-    "description": "Suosittelemme ruokailua koepaikalla. Varaa lounas ilmoittautumisen lisätiedoissa. Ruokalista ja hinta tarkentuu lähempänä koetta.",
+    "description": "Ilmoittautumisen yhteydessä voit varata lounaan, suosittelemme! Koepaikkana uusi Hausjärven Niklandia tarjoaa mökkimajoitusta sekä koepäivänä kahvilapalveluja sekä lounastarjoilun. Käy tutustumassa ja varaa majoitus ajoissa: https://www.niklandia.fi/ ",
     "cost": 45,
     "cost_member": 38,
     "classes": [
