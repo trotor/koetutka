@@ -226,7 +226,7 @@
     "date": "14.03.2026",
     "date_sort": "2026-03-14T00:00:00+02:00",
     "end_date_sort": "2026-03-14T00:00:00+02:00",
-    "entry_date": "03.02.-02.03.",
+    "entry_date": "02.02.-02.03.",
     "location": "Korpilahti",
     "coordinates": [
       62.0431892,
@@ -268,13 +268,13 @@
           "en": "",
           "fi": "Talkoolaisen osallistusmismaksu "
         },
-        "cost": 0
+        "cost": 35
       }
     },
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "class": "ALO",
+        "entries": 9,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -296,7 +296,9 @@
             "official": false,
             "id": -4
           }
-        ]
+        ],
+        "class": "ALO",
+        "members": 2
       }
     ]
   },
