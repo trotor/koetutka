@@ -154,9 +154,9 @@
     },
     "judges": [
       "Sipola Miso",
-      "Hirvonen Petteri",
       "Terry Prentice",
-      "Andy Mutimer"
+      "Andy Mutimer",
+      "Lydia Goossens"
     ],
     "description": "Karsinta KV-sääntöjen mukaisesti, maksu paikan varmistuttua.\nQualification according to international rules, payment after confirmation of place. ",
     "cost": {
@@ -200,9 +200,9 @@
     },
     "judges": [
       "Sipola Miso",
-      "Hirvonen Petteri",
       "Terry Prentice",
-      "Andy Mutimer"
+      "Andy Mutimer",
+      "Lydia Goossens"
     ],
     "description": "Karsinta KV-sääntöjen mukaisesti, maksu paikan varmistuttua.\nQualification according to international rules, payment after confirmation of place. ",
     "cost": {
@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 9,
+        "entries": 21,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -298,7 +298,7 @@
           }
         ],
         "class": "ALO",
-        "members": 2
+        "members": 3
       }
     ]
   },
@@ -6402,6 +6402,54 @@
     "classes": []
   },
   {
+    "id": "aUBoQnJYUs",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "12.09.2026",
+    "date_sort": "2026-09-12T00:00:00+03:00",
+    "end_date_sort": "2026-09-12T00:00:00+03:00",
+    "entry_date": "01.08.-22.08.",
+    "location": "Sotkamon ymp.",
+    "coordinates": [
+      64.1315068,
+      28.4056214
+    ],
+    "name": "Kiharakisälli",
+    "organizer": "KIHARAKERHO-CURLYKLUBBEN R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": [
+      {
+        "date": "2026-09-12T00:00:00.000+03:00",
+        "places": 15,
+        "entries": 0,
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "class": "ALO",
+        "members": 0
+      }
+    ]
+  },
+  {
     "id": "9LuxiWMOY0",
     "type": "NOWT",
     "levels": "AVO (La), VOI (La)",
@@ -6560,6 +6608,74 @@
         "date": "2026-09-13T00:00:00.000+03:00",
         "places": 14,
         "judge": [],
+        "class": "VOI"
+      }
+    ]
+  },
+  {
+    "id": "X-V45rJLU2",
+    "type": "NOME-B",
+    "levels": "AVO (Su), VOI (Su)",
+    "date": "13.09.2026",
+    "date_sort": "2026-09-13T00:00:00+03:00",
+    "end_date_sort": "2026-09-13T00:00:00+03:00",
+    "entry_date": "02.08.-23.08.",
+    "location": "Sotkamon ymp.",
+    "coordinates": [
+      64.1315068,
+      28.4056214
+    ],
+    "name": "Kiharamestaruus",
+    "organizer": "KIHARAKERHO-CURLYKLUBBEN R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": [
+      {
+        "date": "2026-09-13T00:00:00.000+03:00",
+        "places": 8,
+        "entries": 0,
+        "members": 0,
+        "groups": [
+          "ap"
+        ],
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "class": "AVO"
+      },
+      {
+        "date": "2026-09-13T00:00:00.000+03:00",
+        "places": 4,
+        "entries": 0,
+        "members": 0,
+        "groups": [
+          "ip"
+        ],
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
         "class": "VOI"
       }
     ]
