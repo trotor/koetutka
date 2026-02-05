@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 21,
+        "entries": 22,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -4781,7 +4781,7 @@
       63.9007773,
       23.9170363
     ],
-    "name": "Flattimestaruus",
+    "name": "Flattimestaruus ja Kisälli",
     "organizer": "SUOMEN SILEÄKARVAISET NOUTAJAT RY",
     "official": {
       "name": "",
@@ -4794,34 +4794,84 @@
       "email": ""
     },
     "judges": [
-      ""
+      "Oikarinen Jyrki",
+      "Puttonen Pasi-Petteri",
+      "Hietikko Vesa"
     ],
-    "description": "",
+    "description": "Sileäkarvaisten noutajien osallistumismaksu sisältää näyttelyosuuden lauantaiaamuna.\nFinaali järjestetään sunnuntaina 2.8.",
     "cost": "",
     "cost_member": "",
     "classes": [
       {
-        "date": "2026-07-31T00:00:00.000+03:00",
+        "date": "2026-07-30T21:00:00.000Z",
+        "places": 0,
+        "judge": [
+          {
+            "name": "Hietikko Vesa",
+            "official": true,
+            "id": 584168
+          }
+        ],
         "class": "ALO"
       },
       {
-        "date": "2026-07-31T00:00:00.000+03:00",
+        "date": "2026-07-30T21:00:00.000Z",
+        "places": 0,
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
         "class": "AVO"
       },
       {
-        "date": "2026-07-31T00:00:00.000+03:00",
+        "date": "2026-07-30T21:00:00.000Z",
+        "places": 0,
+        "judge": [
+          {
+            "name": "Oikarinen Jyrki",
+            "official": true,
+            "id": 4042184
+          }
+        ],
         "class": "VOI"
       },
       {
-        "date": "2026-08-01T00:00:00.000+03:00",
+        "date": "2026-07-31T21:00:00.000Z",
+        "places": 0,
+        "judge": [
+          {
+            "name": "Hietikko Vesa",
+            "official": true,
+            "id": 584168
+          }
+        ],
         "class": "ALO"
       },
       {
-        "date": "2026-08-01T00:00:00.000+03:00",
+        "date": "2026-07-31T21:00:00.000Z",
+        "places": 0,
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
         "class": "AVO"
       },
       {
-        "date": "2026-08-01T00:00:00.000+03:00",
+        "date": "2026-07-31T21:00:00.000Z",
+        "places": 0,
+        "judge": [
+          {
+            "name": "Oikarinen Jyrki",
+            "official": true,
+            "id": 4042184
+          }
+        ],
         "class": "VOI"
       }
     ]
@@ -4852,7 +4902,7 @@
       "email": ""
     },
     "judges": [
-      ""
+      "Vaarala Jarmo"
     ],
     "description": "",
     "cost": "",
