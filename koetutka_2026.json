@@ -60,7 +60,7 @@
     },
     "judges": [
       "Ronkainen Reima",
-      "Uusimäki Pekka",
+      "Ahola Pauliina",
       "Kevin Doughty",
       "Paul Wheeler"
     ],
@@ -96,7 +96,7 @@
     },
     "judges": [
       "Ronkainen Reima",
-      "Uusimäki Pekka",
+      "Ahola Pauliina",
       "Kevin Doughty",
       "Paul Wheeler"
     ],
@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 24,
+        "entries": 25,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -342,10 +342,12 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
+        "places": 0,
+        "entries": 2,
+        "members": 0,
         "groups": [
           "ip"
         ],
-        "places": 0,
         "judge": [
           {
             "name": "Oona Mönttinen",
@@ -357,10 +359,12 @@
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
+        "places": 0,
+        "entries": 0,
+        "members": 0,
         "groups": [
           "ap"
         ],
-        "places": 0,
         "judge": [
           {
             "name": "Henna Mikkonen",
@@ -372,10 +376,12 @@
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
+        "places": 0,
+        "entries": 0,
+        "members": 0,
         "groups": [
           "ap"
         ],
-        "places": 0,
         "judge": [
           {
             "name": "Hatunen Jarmo",
@@ -394,7 +400,7 @@
     "date": "21.03.2026",
     "date_sort": "2026-03-21T00:00:00+02:00",
     "end_date_sort": "2026-03-21T00:00:00+02:00",
-    "entry_date": "07.02.-28.02.",
+    "entry_date": "08.02.-28.02.",
     "location": "Loppi",
     "coordinates": [
       60.7173615,
@@ -410,7 +416,7 @@
     "secretary": {
       "name": "Emmi Merta",
       "phone": "",
-      "email": "nome.umn@umn.fi"
+      "email": "emmi.merta@umn.fi"
     },
     "judges": [
       ""
@@ -443,21 +449,46 @@
     "secretary": {
       "name": "Emmi Merta",
       "phone": "",
-      "email": "nome.umn@umn.fi"
+      "email": "emmi.merta@umn.fi"
     },
     "judges": [
-      ""
+      "Matti Rusi",
+      "Hans Kämpe",
+      "Sari Tiusanen",
+      "Kari Husso"
     ],
-    "description": "UMN:n järjestämä epävirallinen WT-koe kaikille yli 9kk ikäisille rekisteröidyille noutajille. Kokeessa olevia ALO luokan taso on hieman helpotetumpi verrattuna virallisen koeluokan vastaavaan tasoon. Alokasluokassa koira saa olla heittojen ajan taluttimessa, mutta suorituksesta vähennetään tällöin muutama piste. Kokeessa on neljä rastimuotoista tehtävää. Ei taipumuskoevaatimusta! Alokasluokkaan osallistuvalla koiralla ei saa olla avoimeen luokkaan oikeuttavaa tulosta. Kokeessa noudatetaan Kennelliiton rokotusmääräyksiä sekä antidopingsääntöjä. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
+    "description": "UMN:n järjestämä epävirallinen WT-koe kaikille yli 9kk ikäisille rekisteröidyille noutajille. Kokeessa ALO luokan taso on hieman helpotetumpi verrattuna virallisen koeluokan vastaavaan tasoon. Alokasluokassa koira saa olla heittojen ajan taluttimessa, mutta suorituksesta vähennetään tällöin muutama piste. Kokeessa on neljä rastimuotoista tehtävää. Ei taipumuskoevaatimusta! Alokasluokkaan osallistuvalla koiralla ei saa olla avoimeen luokkaan oikeuttavaa tulosta. Kokeessa noudatetaan Kennelliiton rokotusmääräyksiä sekä antidopingsääntöjä. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/\nTuomarit: Matti Rusi, Hans Kämpe, Sari Tiusanen, Kari Husso",
     "cost": 40,
     "cost_member": 30,
     "classes": [
       {
         "date": "2026-03-21T22:00:00.000Z",
-        "class": "ALO",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": [
+          {
+            "name": "Matti Rusi",
+            "official": false,
+            "id": -1
+          },
+          {
+            "name": "Hans Kämpe",
+            "official": false,
+            "id": -2
+          },
+          {
+            "name": "Sari Tiusanen",
+            "official": false,
+            "id": -3
+          },
+          {
+            "name": "Kari Husso",
+            "official": false,
+            "id": -4
+          }
+        ],
+        "class": "ALO"
       }
     ]
   },
@@ -1326,7 +1357,7 @@
   {
     "id": "uCwt8nR9lf",
     "type": "NOWT",
-    "levels": "ALO (La), AVO (La), VOI (La)",
+    "levels": "ALO (La), AVO (La)",
     "date": "16.05.2026",
     "date_sort": "2026-05-16T00:00:00+03:00",
     "end_date_sort": "2026-05-16T00:00:00+03:00",
@@ -1336,7 +1367,7 @@
       64.3119466,
       26.0790042
     ],
-    "name": "Pohjois-Pohjanmaan WT-Piirinmestaruus (voi-luokka)",
+    "name": "",
     "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
     "official": {
       "name": "",
@@ -1352,7 +1383,7 @@
       "Tenhunen Matti",
       "Pöppönen Pasi"
     ],
-    "description": "Voittajaluokan koe on Pohjois-Pohjanmaan kennelpiirin mestaruuskoe, johon on etusija Pohjois-Pohjanmaan kennelpiirin alueella asuvilla ja järjestävän yhdistyksen jäsenillä.",
+    "description": "",
     "cost": 47,
     "cost_member": 42,
     "classes": [
@@ -1363,10 +1394,6 @@
       {
         "date": "2026-05-15T21:00:00.000Z",
         "class": "AVO"
-      },
-      {
-        "date": "2026-05-15T21:00:00.000Z",
-        "class": "VOI"
       }
     ]
   },
@@ -1413,6 +1440,50 @@
           }
         ],
         "class": "ALO"
+      }
+    ]
+  },
+  {
+    "id": "ETUKXs-pU-",
+    "type": "NOWT",
+    "levels": "VOI (La)",
+    "date": "16.05.2026",
+    "date_sort": "2026-05-16T00:00:00+03:00",
+    "end_date_sort": "2026-05-16T00:00:00+03:00",
+    "entry_date": "04.04.-25.04.",
+    "location": "Siikalatva",
+    "coordinates": [
+      64.3119466,
+      26.0790042
+    ],
+    "name": "Pohjois-Pohjanmaan WT-Piirinmestaruus",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Marika Riekki",
+      "phone": "",
+      "email": "marika.riekki@outlook.com"
+    },
+    "judges": [
+      "Tenhunen Matti",
+      "Pöppönen Pasi"
+    ],
+    "description": "Voittajaluokan koe on Pohjois-Pohjanmaan kennelpiirin mestaruuskoe, johon on etusija Pohjois-Pohjanmaan kennelpiirin alueella asuvilla ja järjestävän yhdistyksen jäsenillä.",
+    "cost": {
+      "normal": 47
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [
+      {
+        "date": "2026-05-16T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": []
       }
     ]
   },
@@ -1971,7 +2042,7 @@
     "date": "02.06.2026",
     "date_sort": "2026-06-02T00:00:00+03:00",
     "end_date_sort": "2026-06-02T00:00:00+03:00",
-    "entry_date": "21.04.-12.05.",
+    "entry_date": "28.04.-19.05.",
     "location": "Oulun ymp",
     "coordinates": [
       65.0593277,
@@ -2782,7 +2853,7 @@
     "date": "13.06.2026",
     "date_sort": "2026-06-13T00:00:00+03:00",
     "end_date_sort": "2026-06-13T00:00:00+03:00",
-    "entry_date": "02.05.-23.05.",
+    "entry_date": "09.05.-30.05.",
     "location": "Pudasjärvi",
     "coordinates": [
       65.360401,
@@ -2944,7 +3015,7 @@
     "date": "14.06.2026",
     "date_sort": "2026-06-14T00:00:00+03:00",
     "end_date_sort": "2026-06-14T00:00:00+03:00",
-    "entry_date": "03.05.-24.05.",
+    "entry_date": "09.05.-30.05.",
     "location": "Pudasjärvi",
     "coordinates": [
       65.360401,
