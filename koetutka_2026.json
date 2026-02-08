@@ -343,7 +343,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 2,
+        "entries": 5,
         "members": 0,
         "groups": [
           "ip"
@@ -400,7 +400,7 @@
     "date": "21.03.2026",
     "date_sort": "2026-03-21T00:00:00+02:00",
     "end_date_sort": "2026-03-21T00:00:00+02:00",
-    "entry_date": "08.02.-28.02.",
+    "entry_date": "08.02.-01.03.",
     "location": "Loppi",
     "coordinates": [
       60.7173615,
@@ -419,7 +419,8 @@
       "email": "emmi.merta@umn.fi"
     },
     "judges": [
-      ""
+      "Marko Bergholm",
+      "Noora Lavonen"
     ],
     "description": "Osallistumisoikeus on rekisteröidyillä noutajilla, joita ei ole palkittu noutajien metsästyskokeissa, kuitenkin niin, että etuoikeus on nuorilla koirilla (NOU1-tulos on sallittu). Osallistumisoikeus on koirilla, jotka ovat maksimissaan 2 vuotta (alaikäraja 9 kk). Ilmoittautumalla kokeeseen hyväksyn, että kokeen järjestämisen vastuuhenkilöt voivat käsitellä ilmoittamiani henkilötietoja ja julkaista niitä tarpeen mukaisesti ja soveltuvin osin kokeen osallistuja- ja tulosluettelossa koepaikalla ja kokeeseen liittyvissä julkaisuissa internetissä tai muissa yhdistyksen medioissa. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
     "cost": 40,
@@ -466,6 +467,7 @@
         "groups": [
           "kp"
         ],
+        "entries": 1,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -488,7 +490,8 @@
             "id": -4
           }
         ],
-        "class": "ALO"
+        "class": "ALO",
+        "members": 1
       }
     ]
   },
