@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 25,
+        "entries": 27,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -298,7 +298,7 @@
           }
         ],
         "class": "ALO",
-        "members": 3
+        "members": 4
       }
     ]
   },
@@ -467,7 +467,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 1,
+        "entries": 8,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -491,7 +491,7 @@
           }
         ],
         "class": "ALO",
-        "members": 1
+        "members": 7
       }
     ]
   },
@@ -1670,7 +1670,7 @@
     "date": "17.05.2026",
     "date_sort": "2026-05-17T00:00:00+03:00",
     "end_date_sort": "2026-05-17T00:00:00+03:00",
-    "entry_date": "05.04.-26.04.",
+    "entry_date": "04.04.-25.04.",
     "location": "Siikalatva",
     "coordinates": [
       64.3119466,
@@ -1693,8 +1693,12 @@
       "Tenhunen Matti"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 47
+    },
+    "cost_member": {
+      "normal": 42
+    },
     "classes": [
       {
         "date": "2026-05-16T21:00:00.000Z",
@@ -6248,7 +6252,7 @@
     "secretary": {
       "name": "Jonna Alamommo",
       "phone": "040-5924880",
-      "email": ""
+      "email": "koesihteeri.lpny@gmail.com"
     },
     "judges": [
       "Fontell Ari-Pekka"
@@ -6359,7 +6363,7 @@
     "secretary": {
       "name": "Jonna Alamommo",
       "phone": "040-5924880",
-      "email": ""
+      "email": "koesihteeri.lpny@gmail.com"
     },
     "judges": [
       "Fontell Ari-Pekka"
