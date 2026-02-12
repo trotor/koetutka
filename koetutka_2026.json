@@ -343,7 +343,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 8,
+        "entries": 9,
         "members": 0,
         "groups": [
           "ip"
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 13,
+        "entries": 14,
         "judge": [
           {
             "name": "Matti Rusi",
