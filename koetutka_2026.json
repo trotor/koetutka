@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 14,
+        "entries": 17,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +492,7 @@
           }
         ],
         "class": "ALO",
-        "members": 10
+        "members": 11
       }
     ]
   },
