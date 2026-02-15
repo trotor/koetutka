@@ -1066,6 +1066,10 @@
                 align-items: stretch;
             }
 
+            .filter-separator {
+                display: none;
+            }
+
             .filters input {
                 width: 100%;
             }
@@ -1293,6 +1297,10 @@
                         <span class="pill-label">📅 Ajankohta</span>
                     </div>
                 </div>
+                <span class="filter-separator" style="border-left: 2px solid #ddd; height: 24px; margin: 0 4px;"></span>
+                <div class="pill active" id="hidePastPill" onclick="toggleHidePast()">
+                    <span class="pill-label">Piilota menneet</span>
+                </div>
                 <button class="help-btn" onclick="showHelp()" title="Ohjeet">❓</button>
             </div>
 
@@ -1362,7 +1370,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.5.0</span>
+                <span id="version">v1.6.0</span>
             </p>
         </footer>
     </div>
@@ -1466,6 +1474,7 @@
         let currentSort = { column: 'distance', ascending: true };
         let activeTypes = new Set(); // Aktiiviset lajit (kaikki oletuksena)
         let activeLevels = new Set(); // Aktiiviset tasot (kaikki oletuksena)
+        let hidePastEvents = true; // Piilota menneet tapahtumat oletuksena
 
         // Apufunktio maksun arvon hakemiseen (voi olla numero tai objekti)
         function getCostValue(cost) {
@@ -1765,7 +1774,15 @@
             const levelCounts = { 'ALO': 0, 'AVO': 0, 'VOI': 0 };
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
+            const today = new Date().toISOString().split('T')[0];
+
             kokeet.forEach(koe => {
+                // Piilota menneet tapahtumat
+                if (hidePastEvents && koe.date_sort) {
+                    const koeDate = koe.end_date_sort || koe.date_sort;
+                    if (koeDate.split('T')[0] < today) return;
+                }
+
                 const matchesSearch = !searchTerm ||
                     koe.location.toLowerCase().includes(searchTerm) ||
                     koe.type.toLowerCase().includes(searchTerm) ||
@@ -1848,6 +1865,13 @@
             sortAndRender();
         }
 
+        // Piilota/näytä menneet tapahtumat
+        function toggleHidePast() {
+            hidePastEvents = !hidePastEvents;
+            document.getElementById('hidePastPill').classList.toggle('active', hidePastEvents);
+            sortAndRender();
+        }
+
         // Aseta järjestys
         function setSortOrder(column) {
             // Päivitä pillit
@@ -1900,7 +1924,15 @@
         function sortAndRender() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
+            const today = new Date().toISOString().split('T')[0];
+
             filteredKokeet = kokeet.filter(koe => {
+                // Piilota menneet tapahtumat
+                if (hidePastEvents && koe.date_sort) {
+                    const koeDate = koe.end_date_sort || koe.date_sort;
+                    if (koeDate.split('T')[0] < today) return false;
+                }
+
                 const matchesSearch = !searchTerm ||
                     koe.location.toLowerCase().includes(searchTerm) ||
                     koe.type.toLowerCase().includes(searchTerm) ||

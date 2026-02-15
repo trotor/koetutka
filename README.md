@@ -78,6 +78,10 @@ MIT
 
 ## Versiohistoria
 
+### v1.6.0 (2026-02-15)
+- Lisätty suodatin menneille kokeille: menneet kokeet piilotetaan oletuksena
+- Pill-tyylinen toggle järjestysvalintojen vieressä
+
 ### v1.5.0 (2026-02-01)
 - Lisätty Noutajalista.fi-mainospalkki bannerin alle
 - Korjattu maksutietojen näyttö: tuki uudelle API-muodolle jossa hinta voi olla objekti
