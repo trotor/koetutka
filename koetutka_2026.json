@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 40,
+        "entries": 44,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -298,7 +298,7 @@
           }
         ],
         "class": "ALO",
-        "members": 5
+        "members": 7
       }
     ]
   },
@@ -343,7 +343,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 25,
+        "entries": 30,
         "members": 0,
         "groups": [
           "ip"
@@ -360,7 +360,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 5,
+        "entries": 7,
         "members": 0,
         "groups": [
           "ap"
@@ -377,7 +377,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 2,
+        "entries": 4,
         "members": 0,
         "groups": [
           "ap"
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 21,
+        "entries": 23,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +492,7 @@
           }
         ],
         "class": "ALO",
-        "members": 13
+        "members": 15
       }
     ]
   },
