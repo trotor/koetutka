@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 44,
+        "entries": 46,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -343,7 +343,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 30,
+        "entries": 34,
         "members": 0,
         "groups": [
           "ip"
@@ -360,7 +360,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 7,
+        "entries": 8,
         "members": 0,
         "groups": [
           "ap"
@@ -522,9 +522,14 @@
       "email": ""
     },
     "judges": [
-      "Maarit Martikainen"
+      "Maarit Martikainen",
+      "Jouni Vimpeli",
+      "Janne Paananen",
+      "Sirpa Lastunen-Turppa",
+      "Jussi Palomäki",
+      "Nina Flink"
     ],
-    "description": "Kaikkiin sarjoihin ilmoittaudutaan Pirkanmaan Noutajakoirayhdistyksen nettisivulla olevalla lomakkeella (lomake avautuu 14.2.). Maksu tapahtuu yhdistyksen tilille FI42 5620 0920 7360 62 käyttäen viitenumeroa 10032, pirkandamit @ pirkannuusku.net -sähköpostista voi kysyä tapahtumasta lisää.\n\nSarjat:\n- Yksilökilpailu 38€, osallistuva koira ei saa olla osallistunut rodunomaisten kokeiden (Nome-b, wt) avoimeen luokkaan, ikärajaa ei ole.\n- Kenneljoukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Yhdistysjoukkueet tai muut joukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Koira & lapsi 20€ (lapsi alle 12v.)\n- Veteraanit 8-9v. ja 10v täyttäneet 38€",
+    "description": "Kaikkiin sarjoihin ilmoittaudutaan Pirkanmaan Noutajakoirayhdistyksen nettisivulla olevalla lomakkeella https://www.pirkannuusku.net/nome/pirkan-damit/pirkan-damit-2026/ \n\nMaksu tapahtuu yhdistyksen tilille FI42 5620 0920 7360 62 käyttäen viitenumeroa 10032, pirkandamit @ pirkannuusku.net -sähköpostista voi kysyä tapahtumasta lisää.\n\nSarjat:\n- Yksilökilpailu 38€, osallistuva koira ei saa olla osallistunut rodunomaisten kokeiden (Nome-b, wt) avoimeen luokkaan, ikärajaa ei ole.\n- Kenneljoukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Yhdistysjoukkueet tai muut joukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Koira & lapsi 20€ (lapsi alle 12v.)\n- Veteraanit 8-9v. ja 10v täyttäneet 38€",
     "cost": 38,
     "cost_member": "",
     "classes": []
@@ -3643,7 +3648,10 @@
       "email": "riina.laiho@hotmail.com"
     },
     "judges": [
-      "Torila Mika"
+      "Torila Mika",
+      "Hirvonen Petteri",
+      "Keld Jörgensen",
+      "Sean Kearney"
     ],
     "description": "",
     "cost": 45,
@@ -3687,9 +3695,12 @@
       "email": "riina.laiho@hotmail.com"
     },
     "judges": [
-      "Torila Mika"
+      "Torila Mika",
+      "Hirvonen Petteri",
+      "Keld Jörgensen",
+      "Sean Kearney"
     ],
-    "description": "Etusijalla ovat ilmoittautumishetkellä Kymenläänin kennelpiirin alueella asuvat koirat. Koe on kymenläänin kennelpiirin WT-piirinmestaruuskoe. kaakon Noutajakoirayhdistyksen jäsenyys ei oikeuta etusijaan eikä halvempaan ilmoittautumismaksuun.",
+    "description": "Etusijalla ovat ilmoittautumishetkellä Kymenläänin kennelpiirin alueella asuvat koirat. Koe on kymenläänin kennelpiirin WT-piirinmestaruuskoe. Kaakon Noutajakoirayhdistyksen jäsenyys ei oikeuta etusijaan eikä halvempaan ilmoittautumismaksuun.",
     "cost": 45,
     "cost_member": 45,
     "classes": [
