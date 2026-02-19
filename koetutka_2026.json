@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 46,
+        "entries": 48,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 23,
+        "entries": 24,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +492,7 @@
           }
         ],
         "class": "ALO",
-        "members": 15
+        "members": 16
       }
     ]
   },
