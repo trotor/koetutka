@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 48,
+        "entries": 53,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -298,7 +298,7 @@
           }
         ],
         "class": "ALO",
-        "members": 7
+        "members": 8
       }
     ]
   },
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 24,
+        "entries": 26,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +492,7 @@
           }
         ],
         "class": "ALO",
-        "members": 16
+        "members": 18
       }
     ]
   },
@@ -3653,7 +3653,7 @@
       "Keld Jörgensen",
       "Sean Kearney"
     ],
-    "description": "",
+    "description": "HUOM ! Koe alkaa klo 12.00 \n",
     "cost": 45,
     "cost_member": 35,
     "classes": [
@@ -3700,7 +3700,7 @@
       "Keld Jörgensen",
       "Sean Kearney"
     ],
-    "description": "Etusijalla ovat ilmoittautumishetkellä Kymenläänin kennelpiirin alueella asuvat koirat. Koe on kymenläänin kennelpiirin WT-piirinmestaruuskoe. Kaakon Noutajakoirayhdistyksen jäsenyys ei oikeuta etusijaan eikä halvempaan ilmoittautumismaksuun.",
+    "description": "HUOM ! Koe alkaa klo 12.00 \nEtusijalla ovat ilmoittautumishetkellä Kymenläänin kennelpiirin alueella asuvat koirat. Koe on kymenläänin kennelpiirin WT-piirinmestaruuskoe. Kaakon Noutajakoirayhdistyksen jäsenyys ei oikeuta etusijaan eikä halvempaan ilmoittautumismaksuun.",
     "cost": 45,
     "cost_member": 45,
     "classes": [
