@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 53,
+        "entries": 54,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -310,10 +310,10 @@
     "date_sort": "2026-03-20T22:00:00+00:00",
     "end_date_sort": "2026-03-20T22:00:00+00:00",
     "entry_date": "06.02.-27.02.",
-    "location": "Oulun ymp",
+    "location": "Oulunsalo",
     "coordinates": [
-      65.0593277,
-      25.4673577
+      64.9333388,
+      25.4166674
     ],
     "name": "Hankinome",
     "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
@@ -342,54 +342,54 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "places": 0,
-        "entries": 34,
-        "members": 0,
-        "groups": [
-          "ip"
-        ],
         "judge": [
           {
-            "name": "Oona Mönttinen",
             "official": false,
+            "name": "Oona Mönttinen",
             "id": -3
           }
         ],
-        "class": "ALO"
+        "groups": [
+          "ip"
+        ],
+        "class": "ALO",
+        "entries": 34,
+        "places": 0,
+        "members": 0
       },
       {
-        "date": "2026-03-20T22:00:00.000Z",
+        "members": 0,
         "places": 0,
         "entries": 8,
-        "members": 0,
+        "date": "2026-03-20T22:00:00.000Z",
         "groups": [
           "ap"
         ],
+        "class": "AVO",
         "judge": [
           {
             "name": "Henna Mikkonen",
             "official": false,
             "id": -2
           }
-        ],
-        "class": "AVO"
+        ]
       },
       {
-        "date": "2026-03-20T22:00:00.000Z",
+        "judge": [
+          {
+            "id": -1,
+            "official": false,
+            "name": "Hatunen Jarmo"
+          }
+        ],
         "places": 0,
-        "entries": 4,
         "members": 0,
         "groups": [
           "ap"
         ],
-        "judge": [
-          {
-            "name": "Hatunen Jarmo",
-            "official": false,
-            "id": -1
-          }
-        ],
-        "class": "VOI"
+        "date": "2026-03-20T22:00:00.000Z",
+        "class": "VOI",
+        "entries": 4
       }
     ]
   },
