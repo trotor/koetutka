@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 54,
+        "entries": 56,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -342,54 +342,54 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "judge": [
-          {
-            "official": false,
-            "name": "Oona Mönttinen",
-            "id": -3
-          }
-        ],
+        "members": 0,
+        "class": "ALO",
+        "entries": 35,
+        "places": 0,
         "groups": [
           "ip"
         ],
-        "class": "ALO",
-        "entries": 34,
-        "places": 0,
-        "members": 0
+        "judge": [
+          {
+            "name": "Oona Mönttinen",
+            "id": -3,
+            "official": false
+          }
+        ]
       },
       {
-        "members": 0,
-        "places": 0,
-        "entries": 8,
-        "date": "2026-03-20T22:00:00.000Z",
         "groups": [
           "ap"
         ],
-        "class": "AVO",
         "judge": [
           {
+            "id": -2,
             "name": "Henna Mikkonen",
-            "official": false,
-            "id": -2
+            "official": false
           }
-        ]
+        ],
+        "class": "AVO",
+        "date": "2026-03-20T22:00:00.000Z",
+        "members": 0,
+        "places": 0,
+        "entries": 8
       },
       {
         "judge": [
           {
             "id": -1,
-            "official": false,
-            "name": "Hatunen Jarmo"
+            "name": "Hatunen Jarmo",
+            "official": false
           }
         ],
+        "class": "VOI",
+        "entries": 4,
+        "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
         "members": 0,
         "groups": [
           "ap"
-        ],
-        "date": "2026-03-20T22:00:00.000Z",
-        "class": "VOI",
-        "entries": 4
+        ]
       }
     ]
   },
