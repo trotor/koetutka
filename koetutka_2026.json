@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 56,
+        "entries": 60,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -342,54 +342,54 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "members": 0,
-        "class": "ALO",
-        "entries": 35,
+        "entries": 37,
         "places": 0,
+        "members": 0,
         "groups": [
           "ip"
         ],
         "judge": [
           {
             "name": "Oona Mönttinen",
-            "id": -3,
-            "official": false
+            "official": false,
+            "id": -3
           }
-        ]
+        ],
+        "class": "ALO"
       },
       {
+        "date": "2026-03-20T22:00:00.000Z",
+        "places": 0,
+        "entries": 10,
+        "members": 0,
         "groups": [
           "ap"
         ],
         "judge": [
           {
-            "id": -2,
             "name": "Henna Mikkonen",
-            "official": false
+            "official": false,
+            "id": -2
           }
         ],
-        "class": "AVO",
-        "date": "2026-03-20T22:00:00.000Z",
-        "members": 0,
-        "places": 0,
-        "entries": 8
+        "class": "AVO"
       },
       {
-        "judge": [
-          {
-            "id": -1,
-            "name": "Hatunen Jarmo",
-            "official": false
-          }
-        ],
-        "class": "VOI",
-        "entries": 4,
         "date": "2026-03-20T22:00:00.000Z",
+        "entries": 5,
         "places": 0,
         "members": 0,
         "groups": [
           "ap"
-        ]
+        ],
+        "judge": [
+          {
+            "name": "Hatunen Jarmo",
+            "official": false,
+            "id": -1
+          }
+        ],
+        "class": "VOI"
       }
     ]
   },
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 26,
+        "entries": 29,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +492,7 @@
           }
         ],
         "class": "ALO",
-        "members": 18
+        "members": 19
       }
     ]
   },
@@ -532,6 +532,170 @@
     "description": "Kaikkiin sarjoihin ilmoittaudutaan Pirkanmaan Noutajakoirayhdistyksen nettisivulla olevalla lomakkeella https://www.pirkannuusku.net/nome/pirkan-damit/pirkan-damit-2026/ \n\nMaksu tapahtuu yhdistyksen tilille FI42 5620 0920 7360 62 käyttäen viitenumeroa 10032, pirkandamit @ pirkannuusku.net -sähköpostista voi kysyä tapahtumasta lisää.\n\nSarjat:\n- Yksilökilpailu 38€, osallistuva koira ei saa olla osallistunut rodunomaisten kokeiden (Nome-b, wt) avoimeen luokkaan, ikärajaa ei ole.\n- Kenneljoukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Yhdistysjoukkueet tai muut joukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Koira & lapsi 20€ (lapsi alle 12v.)\n- Veteraanit 8-9v. ja 10v täyttäneet 38€",
     "cost": 38,
     "cost_member": "",
+    "classes": []
+  },
+  {
+    "id": "ZoEzlsFXdN",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "03.04.2026",
+    "date_sort": "2026-04-03T00:00:00+03:00",
+    "end_date_sort": "2026-04-03T23:59:59.999000+03:00",
+    "entry_date": "01.03.-27.03.",
+    "location": "Internet",
+    "coordinates": [
+      61.4269926,
+      24.6997491
+    ],
+    "name": "Wirtuaali-WT 2026 LAPSI & KOIRA",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Eeva Saario",
+      "phone": "",
+      "email": "eeva.saario@outlook.com"
+    },
+    "judges": [
+      "Liisa Ewart",
+      "Antero Niittymäki",
+      "Mari Koivisto",
+      "Minna Aalto-Vainio",
+      "Julia Gustafsson"
+    ],
+    "description": "Wirtuaali-WT on leikkimielinen, epävirallinen tapahtuma, joka alkaa 3.4.2026 ja päättyy 9.5.2026. Joka viikko julkaistaan yksi WT-tyyppinen tehtävä, joka koirakon tulee videoida ja palauttaa järjestäjille Facebookin kautta. Jos sinulla ei ole omaa fb-tiliä, voit sopia palautuksen myös ns. kaverin kautta. Tehtäviä suoritetaan yhteensä viisi. Lisätietoa tapahtumasta ja eri luokista löydät Auran Nuuskujen nettisivuilta, https://www.aurannuuskut.org/nou-nome-wt/kokeet/jasentenvalinen-epavirallinen-no/",
+    "cost": {
+      "normal": 11
+    },
+    "cost_member": {
+      "normal": 11
+    },
+    "classes": []
+  },
+  {
+    "id": "2hHHLi087d",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "03.04.2026",
+    "date_sort": "2026-04-03T00:00:00+03:00",
+    "end_date_sort": "2026-04-03T00:00:00+03:00",
+    "entry_date": "01.03.-27.03.",
+    "location": "Internet",
+    "coordinates": [
+      61.4269926,
+      24.6997491
+    ],
+    "name": "Wirtuaali-WT 2026 ALOKKAAT",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Eeva Saario",
+      "phone": "",
+      "email": "eeva.saario@outlook.com"
+    },
+    "judges": [
+      "Liisa Ewart",
+      "Antero Niittymäki",
+      "Mari Koivisto",
+      "Minna Aalto-Vainio",
+      "Julia Gustafsson"
+    ],
+    "description": "Wirtuaali-WT on leikkimielinen, epävirallinen tapahtuma, joka alkaa 3.4.2026 ja päättyy 9.5.2026. Joka viikko julkaistaan yksi WT-tyyppinen tehtävä, joka koirakon tulee videoida ja palauttaa järjestäjille Facebookin kautta. Jos sinulla ei ole omaa fb-tiliä, voit sopia palautuksen myös \"kaverin kautta\". Tehtäviä suoritetaan yhteensä viisi. Lisätietoja tapahtumasta ja eri luokista löydät Auran Nuuskujen nettisivuilta https://www.aurannuuskut.org/nou-nome-wt/kokeet/jasentenvalinen-epavirallinen-no/",
+    "cost": {
+      "normal": 11
+    },
+    "cost_member": {
+      "normal": 11
+    },
+    "classes": []
+  },
+  {
+    "id": "FbsDBcoJtd",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "03.04.2026",
+    "date_sort": "2026-04-03T00:00:00+03:00",
+    "end_date_sort": "2026-04-03T00:00:00+03:00",
+    "entry_date": "01.03.-27.03.",
+    "location": "Internet",
+    "coordinates": [
+      61.4269926,
+      24.6997491
+    ],
+    "name": "Wirtuaali-WT 2026 NOUSUKKAAT",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Eeva Saario",
+      "phone": "",
+      "email": "eeva.saario@outlook.com"
+    },
+    "judges": [
+      "Liisa Ewart",
+      "Antero Niittymäki",
+      "Mari Koivisto",
+      "Minna Aalto-Vainio",
+      "Julia Gustafsson"
+    ],
+    "description": "Wirtuaali-WT on leikkimielinen, epävirallinen tapahtuma, joka alkaa 3.4.2026 ja päättyy 9.5.2026. Joka viikko julkaistaan yksi WT-tyyppinen tehtävä, joka koirakon tulee videoida ja palauttaa järjestäjille Facebookin kautta. Jos sinulla ei ole omaa fb-tiliä, voit sopia palautuksen myös \"kaverin kautta\". Tehtäviä suoritetaan yhteensä viisi. Lisätietoja tapahtumasta ja eri luokista löydät Auran Nuuskujen nettisivuilta https://www.aurannuuskut.org/nou-nome-wt/kokeet/jasentenvalinen-epavirallinen-no/",
+    "cost": {
+      "normal": 11
+    },
+    "cost_member": {
+      "normal": 11
+    },
+    "classes": []
+  },
+  {
+    "id": "D7e_feZI8u",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "03.04.2026",
+    "date_sort": "2026-04-03T00:00:00+03:00",
+    "end_date_sort": "2026-04-03T00:00:00+03:00",
+    "entry_date": "01.03.-27.03.",
+    "location": "Internet",
+    "coordinates": [
+      61.4269926,
+      24.6997491
+    ],
+    "name": "Wirtuaali-WT 2026 PENNUT",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Eeva Saario",
+      "phone": "",
+      "email": "eeva.saario@outlook.com"
+    },
+    "judges": [
+      "Liisa Ewart",
+      "Antero Niittymäki",
+      "Mari Koivisto",
+      "Minna Aalto-Vainio",
+      "Julia Gustafsson"
+    ],
+    "description": "Wirtuaali-WT on leikkimielinen, epävirallinen tapahtuma, joka alkaa 3.4.2026 ja päättyy 9.5.2026. Joka viikko julkaistaan yksi WT-tyyppinen tehtävä, joka koirakon tulee videoida ja palauttaa järjestäjille Facebookin kautta. Jos sinulla ei ole omaa fb-tiliä, voit sopia palautuksen myös \"kaverin kautta\". Tehtäviä suoritetaan yhteensä viisi. Lisätietoja tapahtumasta ja eri luokista löydät Auran Nuuskujen nettisivuilta https://www.aurannuuskut.org/nou-nome-wt/kokeet/jasentenvalinen-epavirallinen-no/",
+    "cost": {
+      "normal": 11
+    },
+    "cost_member": {
+      "normal": 11
+    },
     "classes": []
   },
   {
@@ -619,6 +783,88 @@
         "class": "AVO"
       }
     ]
+  },
+  {
+    "id": "Us3GOKBjVH",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "03.04.2026",
+    "date_sort": "2026-04-03T00:00:00+03:00",
+    "end_date_sort": "2026-04-03T00:00:00+03:00",
+    "entry_date": "01.03.-27.03.",
+    "location": "Internet",
+    "coordinates": [
+      61.4269926,
+      24.6997491
+    ],
+    "name": "Wirtuaali-WT 2026 TULOKKAAT",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Eeva Saario",
+      "phone": "",
+      "email": "eeva.saario@outlook.com"
+    },
+    "judges": [
+      "Liisa Ewart",
+      "Antero Niittymäki",
+      "Mari Koivisto",
+      "Minna Aalto-Vainio",
+      "Julia Gustafsson"
+    ],
+    "description": "Wirtuaali-WT on leikkimielinen, epävirallinen tapahtuma, joka alkaa 3.4.2026 ja päättyy 9.5.2026. Joka viikko julkaistaan yksi WT-tyyppinen tehtävä, joka koirakon tulee videoida ja palauttaa järjestäjille Facebookin kautta. Jos sinulla ei ole omaa fb-tiliä, voit sopia palautuksen myös \"kaverin kautta\". Tehtäviä suoritetaan yhteensä viisi. Lisätietoja tapahtumasta ja eri luokista löydät Auran Nuuskujen nettisivuilta https://www.aurannuuskut.org/nou-nome-wt/kokeet/jasentenvalinen-epavirallinen-no/",
+    "cost": {
+      "normal": 11
+    },
+    "cost_member": {
+      "normal": 11
+    },
+    "classes": []
+  },
+  {
+    "id": "Tmymw9iBHe",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "03.04.2026",
+    "date_sort": "2026-04-03T00:00:00+03:00",
+    "end_date_sort": "2026-04-03T00:00:00+03:00",
+    "entry_date": "01.03.-27.03.",
+    "location": "Internet",
+    "coordinates": [
+      61.4269926,
+      24.6997491
+    ],
+    "name": "Wirtuaali-WT 2026 KONKARIT",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Eeva Saario",
+      "phone": "",
+      "email": "eeva.saario@outlook.com"
+    },
+    "judges": [
+      "Liisa Ewart",
+      "Antero Niittymäki",
+      "Mari Koivisto",
+      "Minna Aalto-Vainio",
+      "Julia Gustafsson"
+    ],
+    "description": "Wirtuaali-WT on leikkimielinen, epävirallinen tapahtuma, joka alkaa 3.4.2026 ja päättyy 9.5.2026. Joka viikko julkaistaan yksi WT-tyyppinen tehtävä, joka koirakon tulee videoida ja palauttaa järjestäjille Facebookin kautta. Jos sinulla ei ole omaa fb-tiliä, voit sopia palautuksen myös \"kaverin kautta\". Tehtäviä suoritetaan yhteensä viisi. Lisätietoja tapahtumasta ja eri luokista löydät Auran Nuuskujen nettisivuilta https://www.aurannuuskut.org/nou-nome-wt/kokeet/jasentenvalinen-epavirallinen-no/",
+    "cost": {
+      "normal": 11
+    },
+    "cost_member": {
+      "normal": 11
+    },
+    "classes": []
   },
   {
     "id": "Pp3C-y-Vik",
@@ -2626,7 +2872,7 @@
       "email": "kirsi.launomaa@gmail.com"
     },
     "secretary": {
-      "name": "Mari Lindstén",
+      "name": "Mari Vesterinen",
       "phone": "",
       "email": "lindstenmari@gmail.com"
     },
