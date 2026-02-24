@@ -342,7 +342,7 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 37,
+        "entries": 38,
         "places": 0,
         "members": 0,
         "groups": [
@@ -360,7 +360,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 10,
+        "entries": 12,
         "members": 0,
         "groups": [
           "ap"
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 29,
+        "entries": 31,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +492,7 @@
           }
         ],
         "class": "ALO",
-        "members": 19
+        "members": 20
       }
     ]
   },
@@ -5990,6 +5990,40 @@
         ]
       }
     ]
+  },
+  {
+    "id": "rfQoKtA7Y2",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "11.08.2026",
+    "date_sort": "2026-08-11T00:00:00+03:00",
+    "end_date_sort": "2026-08-11T00:00:00+03:00",
+    "entry_date": "30.06.-21.07.",
+    "location": "Ruuhijärvi",
+    "coordinates": [
+      66.8612212,
+      24.6418118
+    ],
+    "name": "",
+    "organizer": "KULTAINEN RENGAS - GOLDEN RING GR RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Satu Ihalainen",
+      "phone": "",
+      "email": "ihasatu@gmail.com"
+    },
+    "judges": [
+      "Siitari Heli",
+      "Luomanen Timo"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": []
   },
   {
     "id": "dk158RLxJU",
