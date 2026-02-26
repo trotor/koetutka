@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 62,
+        "entries": 63,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -342,8 +342,8 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 41,
         "places": 0,
+        "entries": 45,
         "members": 0,
         "groups": [
           "ip"
@@ -359,8 +359,8 @@
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
+        "entries": 14,
         "places": 0,
-        "entries": 13,
         "members": 0,
         "groups": [
           "ap"
@@ -376,7 +376,7 @@
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 7,
+        "entries": 9,
         "places": 0,
         "members": 0,
         "groups": [
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 31,
+        "entries": 34,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +492,7 @@
           }
         ],
         "class": "ALO",
-        "members": 20
+        "members": 22
       }
     ]
   },
@@ -874,10 +874,10 @@
     "date_sort": "2026-04-10T21:00:00+00:00",
     "end_date_sort": "2026-04-10T21:00:00+00:00",
     "entry_date": "28.02.-22.03.",
-    "location": "Nurmijärvi",
+    "location": "Hyvinkää",
     "coordinates": [
-      60.4628627,
-      24.8051725
+      60.6311481,
+      24.8603615
     ],
     "name": "Epävirallinen joukkue-WT (UMN:n 50v juhlatapahtuma)",
     "organizer": "UUDENMAAN NOUTAJAKOIRAYHDISTYS",
@@ -903,21 +903,17 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2026-04-10T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ],
         "places": 0,
         "judge": [
           {
-            "name": "Ville Venell",
             "official": false,
+            "name": "Ville Venell",
             "id": -1
           },
           {
-            "name": "Mikko Tani",
+            "id": -2,
             "official": false,
-            "id": -2
+            "name": "Mikko Tani"
           },
           {
             "name": "Mika Laine",
@@ -925,49 +921,48 @@
             "id": -3
           }
         ],
+        "groups": [
+          "kp"
+        ],
+        "date": "2026-04-10T21:00:00.000Z",
         "class": "ALO"
       },
       {
-        "date": "2026-04-10T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ],
         "places": 0,
+        "class": "AVO",
         "judge": [
           {
-            "name": "Ville Venell",
             "official": false,
+            "name": "Ville Venell",
             "id": -1
           },
           {
-            "name": "Mikko Tani",
             "official": false,
-            "id": -2
+            "id": -2,
+            "name": "Mikko Tani"
           },
           {
-            "name": "Mika Laine",
             "official": false,
+            "name": "Mika Laine",
             "id": -3
           }
         ],
-        "class": "AVO"
+        "date": "2026-04-10T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ]
       },
       {
-        "date": "2026-04-10T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ],
-        "places": 0,
         "judge": [
           {
-            "name": "Ville Venell",
             "official": false,
-            "id": -1
+            "id": -1,
+            "name": "Ville Venell"
           },
           {
             "name": "Mikko Tani",
-            "official": false,
-            "id": -2
+            "id": -2,
+            "official": false
           },
           {
             "name": "Mika Laine",
@@ -975,6 +970,11 @@
             "id": -3
           }
         ],
+        "date": "2026-04-10T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "places": 0,
         "class": "VOI"
       }
     ]
@@ -1090,7 +1090,7 @@
     "date": "25.04.2026",
     "date_sort": "2026-04-25T00:00:00+03:00",
     "end_date_sort": "2026-04-25T00:00:00+03:00",
-    "entry_date": "14.03.-04.04.",
+    "entry_date": "28.03.-12.04.",
     "location": "Hausjärvi",
     "coordinates": [
       60.7788065,
@@ -1118,19 +1118,31 @@
     "cost_member": 38,
     "classes": [
       {
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": []
+        "date": "2026-04-24T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "places": 0,
+        "judge": [],
+        "class": "ALO"
       },
       {
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
+        "date": "2026-04-24T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "places": 0,
+        "judge": [],
+        "class": "AVO"
       },
       {
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": []
+        "date": "2026-04-24T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "places": 0,
+        "judge": [],
+        "class": "VOI"
       }
     ]
   },
