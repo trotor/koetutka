@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 63,
+        "entries": 64,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -341,30 +341,30 @@
     },
     "classes": [
       {
-        "date": "2026-03-20T22:00:00.000Z",
         "places": 0,
-        "entries": 45,
+        "judge": [
+          {
+            "official": false,
+            "id": -3,
+            "name": "Oona Mönttinen"
+          }
+        ],
         "members": 0,
+        "class": "ALO",
+        "date": "2026-03-20T22:00:00.000Z",
         "groups": [
           "ip"
         ],
-        "judge": [
-          {
-            "name": "Oona Mönttinen",
-            "official": false,
-            "id": -3
-          }
-        ],
-        "class": "ALO"
+        "entries": 48
       },
       {
-        "date": "2026-03-20T22:00:00.000Z",
-        "entries": 14,
-        "places": 0,
         "members": 0,
         "groups": [
           "ap"
         ],
+        "entries": 15,
+        "class": "AVO",
+        "places": 0,
         "judge": [
           {
             "name": "Henna Mikkonen",
@@ -372,16 +372,9 @@
             "id": -2
           }
         ],
-        "class": "AVO"
+        "date": "2026-03-20T22:00:00.000Z"
       },
       {
-        "date": "2026-03-20T22:00:00.000Z",
-        "entries": 9,
-        "places": 0,
-        "members": 0,
-        "groups": [
-          "ap"
-        ],
         "judge": [
           {
             "name": "Hatunen Jarmo",
@@ -389,7 +382,14 @@
             "id": -1
           }
         ],
-        "class": "VOI"
+        "places": 0,
+        "date": "2026-03-20T22:00:00.000Z",
+        "entries": 11,
+        "class": "VOI",
+        "groups": [
+          "ap"
+        ],
+        "members": 0
       }
     ]
   },
@@ -468,7 +468,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 34,
+        "entries": 37,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -903,66 +903,21 @@
     "cost_member": "",
     "classes": [
       {
-        "places": 0,
-        "judge": [
-          {
-            "official": false,
-            "name": "Ville Venell",
-            "id": -1
-          },
-          {
-            "id": -2,
-            "official": false,
-            "name": "Mikko Tani"
-          },
-          {
-            "name": "Mika Laine",
-            "official": false,
-            "id": -3
-          }
-        ],
-        "groups": [
-          "kp"
-        ],
-        "date": "2026-04-10T21:00:00.000Z",
-        "class": "ALO"
-      },
-      {
-        "places": 0,
-        "class": "AVO",
-        "judge": [
-          {
-            "official": false,
-            "name": "Ville Venell",
-            "id": -1
-          },
-          {
-            "official": false,
-            "id": -2,
-            "name": "Mikko Tani"
-          },
-          {
-            "official": false,
-            "name": "Mika Laine",
-            "id": -3
-          }
-        ],
         "date": "2026-04-10T21:00:00.000Z",
         "groups": [
           "kp"
-        ]
-      },
-      {
+        ],
+        "places": 0,
         "judge": [
           {
+            "name": "Ville Venell",
             "official": false,
-            "id": -1,
-            "name": "Ville Venell"
+            "id": -1
           },
           {
             "name": "Mikko Tani",
-            "id": -2,
-            "official": false
+            "official": false,
+            "id": -2
           },
           {
             "name": "Mika Laine",
@@ -970,11 +925,56 @@
             "id": -3
           }
         ],
+        "class": "ALO"
+      },
+      {
         "date": "2026-04-10T21:00:00.000Z",
         "groups": [
           "kp"
         ],
         "places": 0,
+        "judge": [
+          {
+            "name": "Ville Venell",
+            "official": false,
+            "id": -1
+          },
+          {
+            "name": "Mikko Tani",
+            "official": false,
+            "id": -2
+          },
+          {
+            "name": "Mika Laine",
+            "official": false,
+            "id": -3
+          }
+        ],
+        "class": "AVO"
+      },
+      {
+        "date": "2026-04-10T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "places": 0,
+        "judge": [
+          {
+            "name": "Ville Venell",
+            "official": false,
+            "id": -1
+          },
+          {
+            "name": "Mikko Tani",
+            "official": false,
+            "id": -2
+          },
+          {
+            "name": "Mika Laine",
+            "official": false,
+            "id": -3
+          }
+        ],
         "class": "VOI"
       }
     ]
