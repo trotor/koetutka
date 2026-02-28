@@ -328,7 +328,10 @@
       "email": "khrystyna.vuokila@gmail.com"
     },
     "judges": [
-      "Hatunen Jarmo",
+      "Jarmo Hatunen",
+      "Leena Leinonen",
+      "Tiina Pikkuaho",
+      "Heikki Peltoniemi",
       "Henna Mikkonen",
       "Oona Mönttinen"
     ],
@@ -341,55 +344,70 @@
     },
     "classes": [
       {
-        "places": 0,
-        "judge": [
-          {
-            "official": false,
-            "id": -3,
-            "name": "Oona Mönttinen"
-          }
-        ],
-        "members": 0,
-        "class": "ALO",
         "date": "2026-03-20T22:00:00.000Z",
+        "entries": 53,
+        "places": 60,
+        "members": 0,
         "groups": [
           "ip"
         ],
-        "entries": 48
+        "judge": [
+          {
+            "name": "Heikki Peltoniemi",
+            "official": false,
+            "id": -4
+          },
+          {
+            "name": "Henna Mikkonen",
+            "official": false,
+            "id": -5
+          },
+          {
+            "name": "Oona Mönttinen",
+            "official": false,
+            "id": -6
+          }
+        ],
+        "class": "ALO"
       },
       {
+        "date": "2026-03-20T22:00:00.000Z",
+        "places": 25,
+        "entries": 15,
         "members": 0,
         "groups": [
           "ap"
         ],
-        "entries": 15,
-        "class": "AVO",
-        "places": 0,
         "judge": [
           {
-            "name": "Henna Mikkonen",
+            "name": "Leena Leinonen",
             "official": false,
             "id": -2
+          },
+          {
+            "name": "Tiina Pikkuaho",
+            "official": false,
+            "id": -3
           }
         ],
-        "date": "2026-03-20T22:00:00.000Z"
+        "class": "AVO"
       },
       {
+        "date": "2026-03-20T22:00:00.000Z",
+        "entries": 11,
+        "places": 15,
+        "members": 0,
+        "groups": [
+          "ap"
+        ],
         "judge": [
           {
-            "name": "Hatunen Jarmo",
+            "name": "Jarmo Hatunen",
             "official": false,
             "id": -1
           }
         ],
-        "places": 0,
-        "date": "2026-03-20T22:00:00.000Z",
-        "entries": 11,
-        "class": "VOI",
-        "groups": [
-          "ap"
-        ],
-        "members": 0
+        "class": "VOI"
       }
     ]
   },
@@ -468,7 +486,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 37,
+        "entries": 41,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -492,7 +510,7 @@
           }
         ],
         "class": "ALO",
-        "members": 22
+        "members": 24
       }
     ]
   },
@@ -4009,7 +4027,7 @@
     "name": "",
     "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "Johanna Laaksonen",
+      "name": "Johanna Jonsson",
       "phone": "",
       "email": "johanna.jonsson106@gmail.com"
     },
@@ -4056,7 +4074,7 @@
     "name": "Kymenläänin kennelpiirin WT piiriinmestaruuskoe",
     "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "Johanna Laaksonen",
+      "name": "Johanna Jonsson",
       "phone": "",
       "email": "johanna.jonsson106@gmail.com"
     },
