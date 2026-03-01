@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 64,
+        "entries": 65,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -298,7 +298,7 @@
           }
         ],
         "class": "ALO",
-        "members": 8
+        "members": 9
       }
     ]
   },
@@ -345,7 +345,7 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 53,
+        "entries": 58,
         "places": 60,
         "members": 0,
         "groups": [
@@ -373,7 +373,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 25,
-        "entries": 15,
+        "entries": 22,
         "members": 0,
         "groups": [
           "ap"
@@ -394,7 +394,7 @@
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 11,
+        "entries": 12,
         "places": 15,
         "members": 0,
         "groups": [
@@ -486,7 +486,6 @@
         "groups": [
           "kp"
         ],
-        "entries": 41,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -494,9 +493,9 @@
             "id": -1
           },
           {
+            "id": -2,
             "name": "Hans Kämpe",
-            "official": false,
-            "id": -2
+            "official": false
           },
           {
             "name": "Sari Tiusanen",
@@ -504,13 +503,14 @@
             "id": -3
           },
           {
+            "id": -4,
             "name": "Kari Husso",
-            "official": false,
-            "id": -4
+            "official": false
           }
         ],
-        "class": "ALO",
-        "members": 24
+        "members": 25,
+        "entries": 44,
+        "class": "ALO"
       }
     ]
   },
@@ -5571,10 +5571,10 @@
     "date_sort": "2026-08-05T00:00:00+03:00",
     "end_date_sort": "2026-08-05T00:00:00+03:00",
     "entry_date": "24.06.-15.07.",
-    "location": "Oulun ymp",
+    "location": "Oulainen",
     "coordinates": [
-      65.0593277,
-      25.4673577
+      64.2667732,
+      24.8000331
     ],
     "name": "",
     "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
@@ -5591,7 +5591,7 @@
     "judges": [
       "Hatunen Jarmo"
     ],
-    "description": "",
+    "description": "Iltakoe, joka alkaa iltapäivällä.\n\nMaksunpalautuksista pidätetään 5 € käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Mikäli yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
     "cost": 47,
     "cost_member": 42,
     "classes": []
