@@ -273,32 +273,32 @@
     },
     "classes": [
       {
+        "members": 10,
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 65,
         "judge": [
           {
-            "name": "Jenni Jarkko ",
             "official": false,
-            "id": -1
+            "id": -1,
+            "name": "Jenni Jarkko "
           },
           {
-            "name": "Niina Parviainen ",
+            "id": -2,
             "official": false,
-            "id": -2
+            "name": "Niina Parviainen "
           },
           {
+            "id": -3,
             "name": "Tarja Tuhola ",
-            "official": false,
-            "id": -3
+            "official": false
           },
           {
-            "name": "Riitta Koivisto ",
             "official": false,
-            "id": -4
+            "id": -4,
+            "name": "Riitta Koivisto "
           }
         ],
-        "class": "ALO",
-        "members": 9
+        "entries": 66,
+        "class": "ALO"
       }
     ]
   },
@@ -333,7 +333,8 @@
       "Tiina Pikkuaho",
       "Heikki Peltoniemi",
       "Henna Mikkonen",
-      "Oona Mönttinen"
+      "Oona Mönttinen",
+      "Ville Vilmunen"
     ],
     "description": "Epävirallinen dameilla suoritettava rastityyppinen koe. Koiralla ei tarvitse olla luokkaan oikeuttavia tuloksia virallisissa rodunomaisissa kokeissa. \nHUOM! Kokeessa myös luokka ''veteraanit'', alaikäraja 10 vuotta. Ilmoittautuessa veteraaniluokkaan, ilmoittaudutaan ALO-luokkaan ja kirjataan lisätietoja kohtaan maininta ''osallistuu veteraaniluokkaan''.\nTapahtumassa järjestetään myös joukkuekilpailu: 3 koiraa/joukkue, koirat voivat olla eri luokista. Joukkuekilpailuun ilmoittaudutaan kirjaamalla lisätietoihin joukkueen nimi.\nMuutokset (tuomarit, arvosteluluokat) ovat mahdollisia.\nMaksunpalautuksista pidätetään 5 € käsittelykulu, jos ohjaaja peruu ilmoittautumisen. ",
     "cost": {
@@ -345,8 +346,8 @@
     "classes": [
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 58,
         "places": 60,
+        "entries": 58,
         "members": 0,
         "groups": [
           "ip"
@@ -368,6 +369,7 @@
             "id": -6
           }
         ],
+        "state": "picked",
         "class": "ALO"
       },
       {
@@ -390,11 +392,12 @@
             "id": -3
           }
         ],
+        "state": "picked",
         "class": "AVO"
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 12,
+        "entries": 13,
         "places": 15,
         "members": 0,
         "groups": [
@@ -405,8 +408,14 @@
             "name": "Jarmo Hatunen",
             "official": false,
             "id": -1
+          },
+          {
+            "name": "Ville Vilmunen",
+            "official": false,
+            "id": -7
           }
         ],
+        "state": "picked",
         "class": "VOI"
       }
     ]
@@ -486,6 +495,7 @@
         "groups": [
           "kp"
         ],
+        "entries": 50,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -493,9 +503,9 @@
             "id": -1
           },
           {
-            "id": -2,
             "name": "Hans Kämpe",
-            "official": false
+            "official": false,
+            "id": -2
           },
           {
             "name": "Sari Tiusanen",
@@ -503,14 +513,13 @@
             "id": -3
           },
           {
-            "id": -4,
             "name": "Kari Husso",
-            "official": false
+            "official": false,
+            "id": -4
           }
         ],
-        "members": 25,
-        "entries": 44,
-        "class": "ALO"
+        "class": "ALO",
+        "members": 31
       }
     ]
   },
@@ -922,10 +931,12 @@
     "classes": [
       {
         "date": "2026-04-10T21:00:00.000Z",
+        "places": 0,
+        "entries": 0,
+        "members": 0,
         "groups": [
           "kp"
         ],
-        "places": 0,
         "judge": [
           {
             "name": "Ville Venell",
@@ -947,10 +958,12 @@
       },
       {
         "date": "2026-04-10T21:00:00.000Z",
+        "places": 0,
+        "entries": 1,
+        "members": 0,
         "groups": [
           "kp"
         ],
-        "places": 0,
         "judge": [
           {
             "name": "Ville Venell",
@@ -972,10 +985,12 @@
       },
       {
         "date": "2026-04-10T21:00:00.000Z",
+        "places": 0,
+        "entries": 0,
+        "members": 0,
         "groups": [
           "kp"
         ],
-        "places": 0,
         "judge": [
           {
             "name": "Ville Venell",
@@ -1302,12 +1317,11 @@
       "email": "reedrunners@gmail.com"
     },
     "judges": [
-      "Ahola Pauliina",
+      "Ronkainen Reima",
       "Lydia Goossens",
-      "Zsolt Böszörményi",
-      ""
+      "Zsolt Böszörményi"
     ],
-    "description": "Koe järjestetään yhteistyössä Ihamaan metsästysyhdistys ry:n kanssa. Neljäs tuomari ilmoitetaan myöhemmin.",
+    "description": "Koe järjestetään yhteistyössä Ihamaan metsästysyhdistys ry:n kanssa.",
     "cost": "",
     "cost_member": "",
     "classes": [
@@ -1319,7 +1333,7 @@
       },
       {
         "date": "2026-04-30T21:00:00.000Z",
-        "places": 24,
+        "places": 16,
         "judge": [],
         "class": "VOI"
       }
@@ -2708,6 +2722,57 @@
         ]
       }
     ]
+  },
+  {
+    "id": "LATfZTOHkV",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "06.06.2026",
+    "date_sort": "2026-06-06T00:00:00+03:00",
+    "end_date_sort": "2026-06-06T00:00:00+03:00",
+    "entry_date": "25.04.-16.05.",
+    "location": "Kemi",
+    "coordinates": [
+      65.7333404,
+      24.5666495
+    ],
+    "name": "Mölli NOU",
+    "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Timo Pennanen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Jonna Alamommo",
+      "phone": "",
+      "email": "koesihteeri.lpny@gmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Etusijalla taipumuskoekurssille osallistuva jäsen. Tämän jälkeen jäsen ja lopuksi ei-jäsenet.",
+    "cost": {
+      "normal": 45,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Taipumuskoekurssille osallistuva"
+        },
+        "cost": 30
+      }
+    },
+    "cost_member": {
+      "normal": 40,
+      "custom": {
+        "description": {
+          "en": "",
+          "fi": "Taipumuskoekurssille osallistuva"
+        },
+        "cost": 0
+      }
+    },
+    "classes": []
   },
   {
     "id": "XNnIwzbuwm",
@@ -7543,14 +7608,30 @@
       "Tenhunen Juha",
       "Puttonen Pasi-Petteri"
     ],
-    "description": "Voittajaluokan koe on Pohjois-Pohjanmaan kennelpiirin mestaruuskoe, johon on etusija Pohjois-Pohjanmaan kennelpiirin alueella asuvilla ja järjestävän yhdistyksen jäsenillä.",
-    "cost": "",
-    "cost_member": "",
+    "description": "Voittajaluokan koe on Pohjois-Pohjanmaan kennelpiirin mestaruuskoe, johon on etusija Pohjois-Pohjanmaan kennelpiirin alueella asuvilla ja järjestävän yhdistyksen jäsenillä.\n\nMaksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä. \n",
+    "cost": {
+      "normal": 47
+    },
+    "cost_member": {
+      "normal": 42
+    },
     "classes": [
       {
-        "date": "2026-09-26T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": []
+        "date": "2026-09-25T21:00:00.000Z",
+        "places": 24,
+        "judge": [
+          {
+            "name": "Tenhunen Juha",
+            "official": true,
+            "id": 999999
+          },
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "class": "VOI"
       }
     ]
   },
@@ -7733,20 +7814,36 @@
       "Puttonen Pasi-Petteri",
       "Tenhunen Juha"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Maksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä. ",
+    "cost": {
+      "normal": 47
+    },
+    "cost_member": {
+      "normal": 42
+    },
     "classes": [
       {
         "date": "2026-09-26T21:00:00.000Z",
         "places": 16,
-        "judge": [],
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
         "class": "AVO"
       },
       {
         "date": "2026-09-26T21:00:00.000Z",
         "places": 15,
-        "judge": [],
+        "judge": [
+          {
+            "name": "Tenhunen Juha",
+            "official": true,
+            "id": 999999
+          }
+        ],
         "class": "ALO"
       }
     ]
