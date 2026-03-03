@@ -273,32 +273,32 @@
     },
     "classes": [
       {
-        "members": 10,
         "date": "2026-03-13T22:00:00.000Z",
+        "entries": 67,
         "judge": [
           {
+            "name": "Jenni Jarkko ",
             "official": false,
-            "id": -1,
-            "name": "Jenni Jarkko "
+            "id": -1
           },
           {
-            "id": -2,
+            "name": "Niina Parviainen ",
             "official": false,
-            "name": "Niina Parviainen "
+            "id": -2
           },
           {
-            "id": -3,
             "name": "Tarja Tuhola ",
-            "official": false
+            "official": false,
+            "id": -3
           },
           {
+            "name": "Riitta Koivisto ",
             "official": false,
-            "id": -4,
-            "name": "Riitta Koivisto "
+            "id": -4
           }
         ],
-        "entries": 66,
-        "class": "ALO"
+        "class": "ALO",
+        "members": 10
       }
     ]
   },
@@ -2310,6 +2310,43 @@
     "classes": []
   },
   {
+    "id": "Bue5qvauL6",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "26.05.2026",
+    "date_sort": "2026-05-26T00:00:00+03:00",
+    "end_date_sort": "2026-05-26T00:00:00+03:00",
+    "entry_date": "04.05.-17.05.",
+    "location": "Hämeenkoski",
+    "coordinates": [
+      61.0221269,
+      25.1575102
+    ],
+    "name": "Kokeen omainen taipparitreeni, iltakoe",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Minna Helenius",
+      "phone": "",
+      "email": "minna.m.helenius@gmail.com"
+    },
+    "judges": [
+      "Minna Helenius"
+    ],
+    "description": "Järjestämme kokeen omaisen taipparitreenin riistoilla (varis, sorsa ja kani). Kokeessa saa suullisen arvostelun ja on mahdollista suorittaa kaikki tehtävät vaikka jokin osa-alue ei menisi hyväksytysti. Kokeen aloitus aikaisintaan klo 16. Kokeeseen voivat osallistua yli 9kk ikäiset koirat. Rokotukset oltava kunnossa ja ne tarkistetaan paikan päällä. Jäsenten osallistumismaksu 40 eur.",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": []
+  },
+  {
     "id": "lXiXNlXido",
     "type": "NOME-B",
     "levels": "ALO (Su)",
@@ -2988,7 +3025,7 @@
     "judges": [
       "Hiltunen Taru"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
@@ -6524,7 +6561,7 @@
     "judges": [
       "Martikainen Maarit"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
@@ -6962,7 +6999,7 @@
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
