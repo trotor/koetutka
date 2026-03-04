@@ -495,7 +495,7 @@
         "groups": [
           "kp"
         ],
-        "entries": 50,
+        "entries": 49,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -519,7 +519,7 @@
           }
         ],
         "class": "ALO",
-        "members": 31
+        "members": 30
       }
     ]
   },
@@ -7378,6 +7378,43 @@
     "description": ".",
     "cost": "",
     "cost_member": "",
+    "classes": []
+  },
+  {
+    "id": "NSkd6Qvhcb",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "19.-20.09.2026",
+    "date_sort": "2026-09-19T00:00:00+03:00",
+    "end_date_sort": "2026-09-20T23:59:59.999000+03:00",
+    "entry_date": "08.08.-29.08.",
+    "location": "Hamina",
+    "coordinates": [
+      60.5683467,
+      27.1925862
+    ],
+    "name": "",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Villikka Katja"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 35
+    },
     "classes": []
   },
   {
