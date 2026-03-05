@@ -297,6 +297,7 @@
             "id": -4
           }
         ],
+        "state": "picked",
         "class": "ALO",
         "members": 10
       }
