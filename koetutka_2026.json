@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 67,
+        "entries": 66,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -297,7 +297,7 @@
             "id": -4
           }
         ],
-        "state": "picked",
+        "state": "invited",
         "class": "ALO",
         "members": 10
       }
