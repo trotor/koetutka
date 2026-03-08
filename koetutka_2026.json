@@ -2527,6 +2527,43 @@
     "classes": []
   },
   {
+    "id": "ApBoGfm9Yo",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "04.06.2026",
+    "date_sort": "2026-06-04T21:00:00+00:00",
+    "end_date_sort": "2026-06-04T21:00:00+00:00",
+    "entry_date": "23.04.-14.05.",
+    "location": "Rauma",
+    "coordinates": [
+      61.1289148,
+      21.5039401
+    ],
+    "name": "Taipumuskoe",
+    "organizer": "SATAKUNNAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Kati Salonen",
+      "phone": "",
+      "email": "ksalonen1@gmail.com"
+    },
+    "secretary": {
+      "name": "Outi Lammila",
+      "phone": "0503381120",
+      "email": "outi.lammila@gmail.com"
+    },
+    "judges": [
+      "Huttunen Ari"
+    ],
+    "description": "Jäsenyyden tulee olla voimassa ilmoittautumisajan alkaessa.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": []
+  },
+  {
     "id": "f05XxSTOjh",
     "type": "NOME-B",
     "levels": "ALO (La, Su)",
