@@ -762,10 +762,12 @@
     "classes": [
       {
         "date": "2026-04-02T21:00:00.000Z",
+        "places": 20,
+        "entries": 5,
+        "members": 2,
         "groups": [
           "kp"
         ],
-        "places": 20,
         "judge": [
           {
             "name": "Kerolain Filiminova",
@@ -787,10 +789,12 @@
       },
       {
         "date": "2026-04-02T21:00:00.000Z",
+        "places": 20,
+        "entries": 0,
+        "members": 0,
         "groups": [
           "kp"
         ],
-        "places": 20,
         "judge": [
           {
             "name": "Kerolain Filiminova",
@@ -933,7 +937,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 0,
+        "entries": 1,
         "members": 0,
         "groups": [
           "kp"
@@ -960,7 +964,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 1,
+        "entries": 2,
         "members": 0,
         "groups": [
           "kp"
