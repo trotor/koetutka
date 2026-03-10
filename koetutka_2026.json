@@ -274,7 +274,7 @@
     "classes": [
       {
         "date": "2026-03-13T22:00:00.000Z",
-        "entries": 66,
+        "entries": 64,
         "judge": [
           {
             "name": "Jenni Jarkko ",
@@ -763,8 +763,8 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 5,
-        "members": 2,
+        "entries": 21,
+        "members": 9,
         "groups": [
           "kp"
         ],
@@ -790,7 +790,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 0,
+        "entries": 4,
         "members": 0,
         "groups": [
           "kp"
@@ -937,7 +937,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 1,
+        "entries": 2,
         "members": 0,
         "groups": [
           "kp"
@@ -964,7 +964,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 2,
+        "entries": 3,
         "members": 0,
         "groups": [
           "kp"
@@ -3171,9 +3171,16 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-06-13T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": []
+        "date": "2026-06-12T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Tuominen Petri",
+            "official": true,
+            "id": 875766
+          }
+        ],
+        "class": "ALO"
       }
     ]
   },
@@ -5544,10 +5551,10 @@
     "date_sort": "2026-07-31T21:00:00+00:00",
     "end_date_sort": "2026-08-01T23:59:59.999000+03:00",
     "entry_date": "19.06.-10.07.",
-    "location": "Etelä-Suomi",
+    "location": "Kouvola",
     "coordinates": [
-      60.7373759,
-      25.8143982
+      60.8679237,
+      26.7041116
     ],
     "name": "Labradori Derby",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
@@ -5610,10 +5617,10 @@
     "date_sort": "2026-08-01T00:00:00+03:00",
     "end_date_sort": "2026-08-01T00:00:00+03:00",
     "entry_date": "20.06.-11.07.",
-    "location": "Etelä-Suomi",
+    "location": "Kouvola",
     "coordinates": [
-      60.7373759,
-      25.8143982
+      60.8679237,
+      26.7041116
     ],
     "name": "Labradorimestaruus",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
@@ -7303,7 +7310,8 @@
       "email": "riina.laiho@hotmail.com"
     },
     "judges": [
-      "Schön Esa"
+      "Schön Esa",
+      "Fraser Forbes"
     ],
     "description": "",
     "cost": 55,
@@ -7430,22 +7438,22 @@
     "date_sort": "2026-09-19T00:00:00+03:00",
     "end_date_sort": "2026-09-20T23:59:59.999000+03:00",
     "entry_date": "08.08.-29.08.",
-    "location": "Hamina",
+    "location": "Kouvola",
     "coordinates": [
-      60.5683467,
-      27.1925862
+      60.8679237,
+      26.7041116
     ],
     "name": "",
     "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "Nina Torri",
+      "name": "Satu Kärki",
       "phone": "",
-      "email": "ninatorri@msn.com"
+      "email": "satukarjen@gmail.com"
     },
     "secretary": {
-      "name": "Nina Torri",
+      "name": "maiksteri1",
       "phone": "",
-      "email": "ninatorri@msn.com"
+      "email": "marianneirmeli@gmail.com"
     },
     "judges": [
       "Villikka Katja"
