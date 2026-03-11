@@ -763,7 +763,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 21,
+        "entries": 22,
         "members": 9,
         "groups": [
           "kp"
@@ -790,7 +790,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 4,
+        "entries": 5,
         "members": 0,
         "groups": [
           "kp"
@@ -991,7 +991,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 0,
+        "entries": 1,
         "members": 0,
         "groups": [
           "kp"
