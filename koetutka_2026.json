@@ -376,7 +376,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 25,
-        "entries": 22,
+        "entries": 21,
         "members": 0,
         "groups": [
           "ap"
@@ -493,10 +493,11 @@
     "classes": [
       {
         "date": "2026-03-21T22:00:00.000Z",
+        "entries": 47,
+        "members": 29,
         "groups": [
           "kp"
         ],
-        "entries": 49,
         "judge": [
           {
             "name": "Matti Rusi",
@@ -519,8 +520,8 @@
             "id": -4
           }
         ],
-        "class": "ALO",
-        "members": 30
+        "state": "invited",
+        "class": "ALO"
       }
     ]
   },
@@ -763,7 +764,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 22,
+        "entries": 23,
         "members": 9,
         "groups": [
           "kp"
@@ -790,7 +791,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 5,
+        "entries": 6,
         "members": 0,
         "groups": [
           "kp"
@@ -3791,7 +3792,7 @@
             "en": "",
             "fi": "Ilmoittautumismaksu sis. keittolounaan"
           },
-          "cost": 0
+          "cost": 12
         }
       ],
       "normal": 60,
@@ -3810,7 +3811,7 @@
             "en": "",
             "fi": "Ilmoittautumismaksu sis. keittolounaan"
           },
-          "cost": 0
+          "cost": 12
         }
       ],
       "normal": 0,
@@ -3868,7 +3869,7 @@
             "en": "",
             "fi": "Osallistumismaksu sis. keittolounaan"
           },
-          "cost": 0
+          "cost": 12
         }
       ],
       "normal": 55,
@@ -3887,7 +3888,7 @@
             "en": "",
             "fi": "Osallistumismaksu sis. keittolounaan"
           },
-          "cost": 0
+          "cost": 12
         }
       ],
       "normal": 50,
@@ -7403,9 +7404,9 @@
     "id": "ayp8ZrnlMU",
     "type": "NOU",
     "levels": "N/A",
-    "date": "18.-20.09.2026",
+    "date": "18.-19.09.2026",
     "date_sort": "2026-09-18T21:00:00+00:00",
-    "end_date_sort": "2026-09-20T20:59:59.999000+00:00",
+    "end_date_sort": "2026-09-19T23:59:59.999000+03:00",
     "entry_date": "07.08.-28.08.",
     "location": "Mikkeli",
     "coordinates": [
@@ -7415,19 +7416,23 @@
     "name": "",
     "organizer": "SAIMAAN NOUTAJAT RY",
     "official": {
-      "name": "",
+      "name": "Maarit Saarinen ",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Tiina Marttinen",
       "phone": "",
       "email": ""
     },
     "judges": [],
     "description": ".",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
     "classes": []
   },
   {
@@ -7620,6 +7625,51 @@
             "name": "Lappalainen Mika",
             "official": true,
             "id": 882887
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "I-1VjpAPtN",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "26.09.2026",
+    "date_sort": "2026-09-26T00:00:00+03:00",
+    "end_date_sort": "2026-09-26T00:00:00+03:00",
+    "entry_date": "15.08.-05.09.",
+    "location": "Mustasaari",
+    "coordinates": [
+      63.1247621,
+      21.6941345
+    ],
+    "name": "",
+    "organizer": "MERENKURKUN NOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Henriikka Kontturi",
+      "phone": "",
+      "email": "henriikka.kontturi@gmail.com"
+    },
+    "judges": [
+      "Majuri Pasi"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2026-09-26T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": [
+          {
+            "name": "Majuri Pasi",
+            "official": true,
+            "id": 850900
           }
         ]
       }
@@ -8148,8 +8198,30 @@
       "Luomanen Timo"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Osallistumismaksu sisältää keittolounaan"
+          },
+          "cost": 18
+        }
+      ],
+      "normal": 63
+    },
+    "cost_member": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Osallistumismaksu sisältää keittolounaan"
+          },
+          "cost": 18
+        }
+      ],
+      "normal": 58
+    },
     "classes": [
       {
         "date": "2026-10-24T21:00:00.000Z",
