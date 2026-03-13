@@ -398,7 +398,7 @@
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 13,
+        "entries": 12,
         "places": 15,
         "members": 0,
         "groups": [
@@ -493,8 +493,8 @@
     "classes": [
       {
         "date": "2026-03-21T22:00:00.000Z",
-        "entries": 47,
-        "members": 29,
+        "entries": 46,
+        "members": 28,
         "groups": [
           "kp"
         ],
