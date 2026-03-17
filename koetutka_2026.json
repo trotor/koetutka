@@ -376,7 +376,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 25,
-        "entries": 21,
+        "entries": 20,
         "members": 0,
         "groups": [
           "ap"
@@ -1221,10 +1221,10 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 1,
+        "entries": 3,
         "judge": [],
         "class": "ALO",
-        "members": 1
+        "members": 2
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
@@ -1237,10 +1237,10 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 1,
+        "entries": 3,
         "judge": [],
         "class": "VOI",
-        "members": 0
+        "members": 2
       }
     ]
   },
@@ -1280,10 +1280,10 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 1,
+        "entries": 2,
         "judge": [],
         "class": "ALO",
-        "members": 1
+        "members": 2
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
@@ -1296,10 +1296,10 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 1,
+        "entries": 3,
         "judge": [],
         "class": "VOI",
-        "members": 1
+        "members": 3
       }
     ]
   },
@@ -6069,6 +6069,44 @@
     ]
   },
   {
+    "id": "BIVSB_I4Vj",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "08.08.2026",
+    "date_sort": "2026-08-08T00:00:00+03:00",
+    "end_date_sort": "2026-08-08T00:00:00+03:00",
+    "entry_date": "27.06.-18.07.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "Goldenmestaruus",
+    "organizer": "KULTAINEN RENGAS - GOLDEN RING GR RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Saila Avaz",
+      "phone": "",
+      "email": "saila.avaz@gmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Koe on kultaistennoutajien rotumestaruus",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2026-08-08T00:00:00.000+03:00",
+        "class": "VOI"
+      }
+    ]
+  },
+  {
     "id": "TAst7Qrymb",
     "type": "NOME-B",
     "levels": "VOI (La)",
@@ -6198,6 +6236,50 @@
           }
         ],
         "class": "ALO"
+      }
+    ]
+  },
+  {
+    "id": "ZqWv6O62Pu",
+    "type": "NOME-B",
+    "levels": "ALO (Su), AVO (Su)",
+    "date": "09.08.2026",
+    "date_sort": "2026-08-09T00:00:00+03:00",
+    "end_date_sort": "2026-08-09T00:00:00+03:00",
+    "entry_date": "28.06.-19.07.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "Goldenmestaruus, ALO- ja AVO-luokat",
+    "organizer": "KULTAINEN RENGAS - GOLDEN RING GR RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Saila Avaz",
+      "phone": "",
+      "email": "saila.avaz@gmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2026-08-08T21:00:00.000Z",
+        "class": "ALO",
+        "places": 15
+      },
+      {
+        "date": "2026-08-08T21:00:00.000Z",
+        "class": "AVO",
+        "places": 16
       }
     ]
   },
