@@ -493,8 +493,8 @@
     "classes": [
       {
         "date": "2026-03-21T22:00:00.000Z",
-        "entries": 45,
-        "members": 27,
+        "entries": 43,
+        "members": 26,
         "groups": [
           "kp"
         ],
@@ -764,7 +764,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 27,
+        "entries": 28,
         "members": 10,
         "groups": [
           "kp"
@@ -938,7 +938,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 6,
+        "entries": 7,
         "members": 0,
         "groups": [
           "kp"
@@ -1221,10 +1221,10 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 3,
+        "entries": 4,
         "judge": [],
         "class": "ALO",
-        "members": 2
+        "members": 3
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
@@ -1237,7 +1237,7 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 3,
+        "entries": 4,
         "judge": [],
         "class": "VOI",
         "members": 2
@@ -1296,7 +1296,7 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 3,
+        "entries": 4,
         "judge": [],
         "class": "VOI",
         "members": 3
@@ -3219,7 +3219,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "",
+    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": []
@@ -3790,7 +3790,7 @@
       "Sarkkinen Tomi",
       "Torila Mika"
     ],
-    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e.\n\nHuom!! Seuraavana päivänä normi kolmen luokan WT samassa paikassa!  Jos et starttaa kokeessa, mutta haluaisit nähdä aitiopaikalta mitä kokeessa tapahtuu,\non talkoileminen hyvä vaihtoehto. Ota vastaavaan koetoimitsijaan yhteyttä, ja varaa paikkasi hyvässä seurassa. Talkoiluun ei tarvitse olla jäjestävän yhdistyksen jäsen.\n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
+    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e. Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.\n\nHuom!! Seuraavana päivänä normi kolmen luokan WT samassa paikassa!  Jos et starttaa kokeessa, mutta haluaisit nähdä aitiopaikalta mitä kokeessa tapahtuu,\non talkoileminen hyvä vaihtoehto. Ota vastaavaan koetoimitsijaan yhteyttä, ja varaa paikkasi hyvässä seurassa. Talkoiluun ei tarvitse olla jäjestävän yhdistyksen jäsen.\n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
     "cost": {
       "optionalAdditionalCosts": [
         {
@@ -3867,7 +3867,7 @@
       "Tenhunen Matti",
       "Torila Mika"
     ],
-    "description": "Koemaksu sisältää keittolounaan. Saman ohjaajan toinen koira 40e jäsen/45e ei-jäsen.\n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
+    "description": "Koemaksu sisältää keittolounaan. Saman ohjaajan toinen koira 40e jäsen/45e ei-jäsen.Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu. \n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
     "cost": {
       "optionalAdditionalCosts": [
         {
@@ -5191,7 +5191,7 @@
       "Hiltunen Taru",
       "Hiltunen Niko"
     ],
-    "description": " Keski-Suomen Kennelpiirin alueella asuminen tai järjestävän yhdistyksen jäsenyys ei oikeuta halvempaan ilmoittautumismaksuun.",
+    "description": " Keski-Suomen Kennelpiirin alueella asuminen tai järjestävän yhdistyksen jäsenyys ei oikeuta halvempaan ilmoittautumismaksuun. Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 50,
     "classes": [
@@ -5279,7 +5279,7 @@
     "name": "ALO-lk",
     "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
     "official": {
-      "name": "",
+      "name": "Anssi Honkanen",
       "phone": "",
       "email": ""
     },
@@ -5291,7 +5291,7 @@
     "judges": [
       "Hiltunen Niko"
     ],
-    "description": "",
+    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": [
@@ -5392,7 +5392,7 @@
     "judges": [
       "Hiltunen Taru"
     ],
-    "description": "",
+    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": [
@@ -7925,7 +7925,7 @@
     "judges": [
       "Purtola Susanna"
     ],
-    "description": "",
+    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": []
@@ -8286,7 +8286,7 @@
       "Siitari Heli",
       "Luomanen Timo"
     ],
-    "description": "",
+    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": {
       "optionalAdditionalCosts": [
         {
