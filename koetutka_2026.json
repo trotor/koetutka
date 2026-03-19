@@ -348,7 +348,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 60,
-        "entries": 59,
+        "entries": 58,
         "members": 0,
         "groups": [
           "ip"
@@ -398,7 +398,7 @@
       },
       {
         "date": "2026-03-20T22:00:00.000Z",
-        "entries": 12,
+        "entries": 11,
         "places": 15,
         "members": 0,
         "groups": [
@@ -764,8 +764,8 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 28,
-        "members": 10,
+        "entries": 31,
+        "members": 11,
         "groups": [
           "kp"
         ],
@@ -965,7 +965,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 5,
+        "entries": 6,
         "members": 0,
         "groups": [
           "kp"
@@ -1221,18 +1221,18 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 4,
+        "entries": 5,
         "judge": [],
         "class": "ALO",
-        "members": 3
+        "members": 4
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 1,
+        "entries": 4,
         "judge": [],
         "class": "AVO",
-        "members": 0
+        "members": 2
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
@@ -1280,18 +1280,18 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 2,
+        "entries": 4,
         "judge": [],
         "class": "ALO",
-        "members": 2
+        "members": 4
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 0,
+        "entries": 2,
         "judge": [],
         "class": "AVO",
-        "members": 0
+        "members": 1
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
@@ -1390,50 +1390,6 @@
         "class": "ALO",
         "judge": []
       },
-      {
-        "date": "2026-05-03T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
-      },
-      {
-        "date": "2026-05-03T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": []
-      }
-    ]
-  },
-  {
-    "id": "vti7eDjv0H",
-    "type": "NOWT",
-    "levels": "AVO (Su), VOI (Su)",
-    "date": "03.05.2026",
-    "date_sort": "2026-05-03T00:00:00+03:00",
-    "end_date_sort": "2026-05-03T00:00:00+03:00",
-    "entry_date": "22.03.-12.04.",
-    "location": "Masku",
-    "coordinates": [
-      60.566667,
-      22.1
-    ],
-    "name": "Mock Trial",
-    "organizer": "AURAN NUUSKUT RY",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Schön Esa"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
       {
         "date": "2026-05-03T00:00:00.000+03:00",
         "class": "AVO",
@@ -7372,6 +7328,56 @@
     "cost": 50,
     "cost_member": 40,
     "classes": []
+  },
+  {
+    "id": "j6JbaXnyx3",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "12.09.2026",
+    "date_sort": "2026-09-12T00:00:00+03:00",
+    "end_date_sort": "2026-09-12T00:00:00+03:00",
+    "entry_date": "01.08.-22.08.",
+    "location": "Hausjärvi",
+    "coordinates": [
+      60.7788065,
+      24.9735698
+    ],
+    "name": "Etelä-Hämeen piirinmestaruuskoe",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Tanja Porttikallio",
+      "phone": "0440660664",
+      "email": "tanja.porttikallio@gmail.com"
+    },
+    "secretary": {
+      "name": "Tanja Porttikallio",
+      "phone": "0440660664",
+      "email": "tanja.porttikallio@gmail.com"
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "Etusija järjestävän yhdistyksen jäsenillä ja Etelä-Hämeen Kennelpiirin mestaruuskokeeseen osallistuvilla koirilla huomioiden piirinmestaruuden osallistumisoikeus, kts. lisätiedot. HUOM! Ilmoita ilmoittautumislomakkeen lisätiedoissa, jos osallistut piirinmestaruuskokeeseen. Lisätiedot: Etelä-Hämeen kennelpiirin mestaruuskoe Piirinmestaruuskokeen säännöt: https://www.etelahameenkennelpiiri.fi/yhdistys/piirinmestaruuskilpailuiden-saannot/ OSALLISTUMISOIKEUS PIIRINMESTARUUTEEN Osallistujan on oltava Kennelliiton tai kennelpiirin jäsenyhdistyksen jäsen. Piirinmestaruudesta saa kilpailla jokainen ilmoittautumishetkellä (viimeinen ilmoittautumispäivä) piirin alueella vakinaisesti asuva koiran omistaja tai piirin alueella vakinaisesti asuva sijoituksen vastaanottaja riippumatta hänen edustamansa yhdistyksen kotipaikasta. Useamman omistajan koira kilpailee sen kennelpiirin mestaruudesta, jonne se on pääasiassa sijoitettu. Koira voi kilpailla vuosittain vain yhden kennelpiirin mestaruudesta. Huom! Osallistujalista ei ole starttilista aamupäivän osalta, piirinmestaruuteen osallistuvien koirien starttijärjestys arvotaan paikan päällä.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2026-09-11T21:00:00.000Z",
+        "places": 12,
+        "judge": [
+          {
+            "name": "Fontell Ari-Pekka",
+            "official": true,
+            "id": 842408
+          }
+        ],
+        "class": "VOI"
+      }
+    ]
   },
   {
     "id": "l7II9ZIowI",
