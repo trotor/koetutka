@@ -348,7 +348,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 60,
-        "entries": 58,
+        "entries": 57,
         "members": 0,
         "groups": [
           "ip"
@@ -493,8 +493,8 @@
     "classes": [
       {
         "date": "2026-03-21T22:00:00.000Z",
-        "entries": 43,
-        "members": 26,
+        "entries": 44,
+        "members": 27,
         "groups": [
           "kp"
         ],
@@ -938,7 +938,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 7,
+        "entries": 12,
         "members": 0,
         "groups": [
           "kp"
@@ -965,7 +965,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 6,
+        "entries": 10,
         "members": 0,
         "groups": [
           "kp"
@@ -992,7 +992,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 1,
+        "entries": 5,
         "members": 0,
         "groups": [
           "kp"
@@ -1221,10 +1221,10 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 5,
+        "entries": 6,
         "judge": [],
         "class": "ALO",
-        "members": 4
+        "members": 5
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
