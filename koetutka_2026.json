@@ -348,7 +348,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 60,
-        "entries": 57,
+        "entries": 56,
         "members": 0,
         "groups": [
           "ip"
@@ -376,7 +376,7 @@
       {
         "date": "2026-03-20T22:00:00.000Z",
         "places": 25,
-        "entries": 20,
+        "entries": 19,
         "members": 0,
         "groups": [
           "ap"
@@ -764,7 +764,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 31,
+        "entries": 32,
         "members": 11,
         "groups": [
           "kp"
@@ -791,7 +791,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 7,
+        "entries": 8,
         "members": 0,
         "groups": [
           "kp"
@@ -938,7 +938,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 12,
+        "entries": 13,
         "members": 0,
         "groups": [
           "kp"
@@ -965,7 +965,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 10,
+        "entries": 12,
         "members": 0,
         "groups": [
           "kp"
@@ -992,7 +992,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 5,
+        "entries": 9,
         "members": 0,
         "groups": [
           "kp"
@@ -1221,10 +1221,10 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 6,
+        "entries": 8,
         "judge": [],
         "class": "ALO",
-        "members": 5
+        "members": 6
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
@@ -3369,7 +3369,7 @@
   {
     "id": "GTURqOc5EI",
     "type": "NOME-B",
-    "levels": "N/A",
+    "levels": "ALO (La), VOI (La)",
     "date": "13.06.2026",
     "date_sort": "2026-06-13T00:00:00+03:00",
     "end_date_sort": "2026-06-13T00:00:00+03:00",
@@ -3395,10 +3395,41 @@
       "Turunen Vesa",
       "Gustafsson Anders"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": []
+    "description": "Maksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
+    "cost": {
+      "normal": 47
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [
+      {
+        "date": "2026-06-12T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Turunen Vesa",
+            "official": true,
+            "id": 678190
+          }
+        ],
+        "class": "ALO"
+      },
+      {
+        "date": "2026-06-12T21:00:00.000Z",
+        "places": 12,
+        "judge": [
+          {
+            "name": "Gustafsson Anders",
+            "official": false,
+            "country": "SE",
+            "id": -1,
+            "foreing": true
+          }
+        ],
+        "class": "VOI"
+      }
+    ]
   },
   {
     "id": "bmdwwNGlWI",
@@ -3531,7 +3562,7 @@
   {
     "id": "ivJRF7Go_0",
     "type": "NOME-B",
-    "levels": "N/A",
+    "levels": "ALO (Su), AVO (Su)",
     "date": "14.06.2026",
     "date_sort": "2026-06-14T00:00:00+03:00",
     "end_date_sort": "2026-06-14T00:00:00+03:00",
@@ -3557,10 +3588,41 @@
       "Turunen Vesa",
       "Gustafsson Anders"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": []
+    "description": "Maksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
+    "cost": {
+      "normal": 47
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [
+      {
+        "date": "2026-06-13T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Turunen Vesa",
+            "official": true,
+            "id": 678190
+          }
+        ],
+        "class": "ALO"
+      },
+      {
+        "date": "2026-06-13T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Gustafsson Anders",
+            "official": false,
+            "country": "SE",
+            "id": -1,
+            "foreing": true
+          }
+        ],
+        "class": "AVO"
+      }
+    ]
   },
   {
     "id": "am-ikJ2jjA",
