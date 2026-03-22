@@ -78,6 +78,9 @@ MIT
 
 ## Versiohistoria
 
+### v1.7.0 (2026-03-22)
+- Lisätty max etäisyys -suodatin: vapaa tekstikenttä ja valmiit 100/200 km pikavalinnat
+
 ### v1.6.0 (2026-02-15)
 - Lisätty suodatin menneille kokeille: menneet kokeet piilotetaan oletuksena
 - Pill-tyylinen toggle järjestysvalintojen vieressä

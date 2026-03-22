@@ -1305,6 +1305,22 @@
             </div>
 
             <div class="filter-row">
+                <label for="maxDistanceInput">Max etäisyys:</label>
+                <input type="number" id="maxDistanceInput" placeholder="km" style="width: 80px;" oninput="sortAndRender()">
+                <div class="pill-container">
+                    <div class="pill" data-distance="100" onclick="setMaxDistance(100)">
+                        <span class="pill-label">100 km</span>
+                    </div>
+                    <div class="pill" data-distance="200" onclick="setMaxDistance(200)">
+                        <span class="pill-label">200 km</span>
+                    </div>
+                    <div class="pill" id="clearDistancePill" style="display:none;" onclick="setMaxDistance(null)">
+                        <span class="pill-label">Ei rajaa</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-row">
                 <label>Laji:</label>
                 <div class="pill-container" id="typePills"></div>
             </div>
@@ -1370,7 +1386,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.6.0</span>
+                <span id="version">v1.7.0</span>
             </p>
         </footer>
     </div>
@@ -1872,6 +1888,26 @@
             sortAndRender();
         }
 
+        // Aseta max etäisyys
+        function setMaxDistance(km) {
+            const input = document.getElementById('maxDistanceInput');
+            const pills = document.querySelectorAll('.pill[data-distance]');
+            const clearPill = document.getElementById('clearDistancePill');
+
+            if (km === null) {
+                input.value = '';
+                pills.forEach(p => p.classList.remove('active'));
+                clearPill.style.display = 'none';
+            } else {
+                input.value = km;
+                pills.forEach(p => {
+                    p.classList.toggle('active', parseInt(p.dataset.distance) === km);
+                });
+                clearPill.style.display = '';
+            }
+            sortAndRender();
+        }
+
         // Aseta järjestys
         function setSortOrder(column) {
             // Päivitä pillit
@@ -1923,6 +1959,20 @@
         // Suodata ja järjestä
         function sortAndRender() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const maxDistanceVal = document.getElementById('maxDistanceInput').value;
+            const maxDistance = maxDistanceVal ? parseFloat(maxDistanceVal) : null;
+
+            // Synkronoi pill-tila kun käyttäjä kirjoittaa käsin
+            if (maxDistance !== null) {
+                const pills = document.querySelectorAll('.pill[data-distance]');
+                pills.forEach(p => {
+                    p.classList.toggle('active', parseInt(p.dataset.distance) === maxDistance);
+                });
+                document.getElementById('clearDistancePill').style.display = '';
+            } else {
+                document.querySelectorAll('.pill[data-distance]').forEach(p => p.classList.remove('active'));
+                document.getElementById('clearDistancePill').style.display = 'none';
+            }
 
             const today = new Date().toISOString().split('T')[0];
 
@@ -1931,6 +1981,11 @@
                 if (hidePastEvents && koe.date_sort) {
                     const koeDate = koe.end_date_sort || koe.date_sort;
                     if (koeDate.split('T')[0] < today) return false;
+                }
+
+                // Max etäisyys -suodatin
+                if (maxDistance !== null && koe.distance !== null && koe.distance > maxDistance) {
+                    return false;
                 }
 
                 const matchesSearch = !searchTerm ||
