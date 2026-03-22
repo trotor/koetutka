@@ -764,8 +764,8 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 32,
-        "members": 11,
+        "entries": 33,
+        "members": 12,
         "groups": [
           "kp"
         ],
@@ -938,7 +938,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 17,
+        "entries": 18,
         "members": 0,
         "groups": [
           "kp"
@@ -965,7 +965,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 14,
+        "entries": 15,
         "members": 0,
         "groups": [
           "kp"
@@ -992,7 +992,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 10,
+        "entries": 11,
         "members": 0,
         "groups": [
           "kp"
