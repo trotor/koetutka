@@ -493,8 +493,8 @@
     "classes": [
       {
         "date": "2026-03-21T22:00:00.000Z",
-        "entries": 44,
-        "members": 27,
+        "entries": 41,
+        "members": 24,
         "groups": [
           "kp"
         ],
@@ -764,8 +764,8 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 33,
-        "members": 12,
+        "entries": 36,
+        "members": 14,
         "groups": [
           "kp"
         ],
@@ -938,7 +938,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 18,
+        "entries": 22,
         "members": 0,
         "groups": [
           "kp"
@@ -965,7 +965,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 15,
+        "entries": 19,
         "members": 0,
         "groups": [
           "kp"
@@ -992,7 +992,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 11,
+        "entries": 17,
         "members": 0,
         "groups": [
           "kp"
@@ -1229,7 +1229,7 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 4,
+        "entries": 5,
         "judge": [],
         "class": "AVO",
         "members": 2
@@ -1237,7 +1237,7 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 4,
+        "entries": 5,
         "judge": [],
         "class": "VOI",
         "members": 2
@@ -1280,15 +1280,15 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 5,
+        "entries": 6,
         "judge": [],
         "class": "ALO",
-        "members": 5
+        "members": 6
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 2,
+        "entries": 3,
         "judge": [],
         "class": "AVO",
         "members": 1
@@ -1296,7 +1296,7 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 4,
+        "entries": 5,
         "judge": [],
         "class": "VOI",
         "members": 3
@@ -1387,18 +1387,24 @@
     "classes": [
       {
         "date": "2026-05-03T00:00:00.000+03:00",
+        "entries": 1,
+        "judge": [],
         "class": "ALO",
-        "judge": []
+        "members": 1
       },
       {
         "date": "2026-05-03T00:00:00.000+03:00",
+        "entries": 0,
+        "judge": [],
         "class": "AVO",
-        "judge": []
+        "members": 0
       },
       {
         "date": "2026-05-03T00:00:00.000+03:00",
+        "entries": 0,
+        "judge": [],
         "class": "VOI",
-        "judge": []
+        "members": 0
       }
     ]
   },
@@ -6420,6 +6426,39 @@
     "judges": [
       "Siitari Heli",
       "Luomanen Timo"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": []
+  },
+  {
+    "id": "gUtNIHnvjt",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "15.08.2026",
+    "date_sort": "2026-08-15T00:00:00+03:00",
+    "end_date_sort": "2026-08-15T00:00:00+03:00",
+    "entry_date": "04.07.-25.07.",
+    "location": "Rovaniemi",
+    "coordinates": [
+      66.5025657,
+      25.73122
+    ],
+    "name": "Lapin Nuuskut NOU-koe",
+    "organizer": "LAPIN NUUSKUT R.Y.",
+    "official": {
+      "name": "Päivi Huovinen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Saara Iija",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Hatunen Jarmo"
     ],
     "description": "",
     "cost": "",
