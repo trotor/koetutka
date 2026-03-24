@@ -764,8 +764,8 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 36,
-        "members": 14,
+        "entries": 37,
+        "members": 15,
         "groups": [
           "kp"
         ],
@@ -791,7 +791,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 8,
+        "entries": 9,
         "members": 0,
         "groups": [
           "kp"
@@ -906,7 +906,7 @@
     "date": "10.04.2026",
     "date_sort": "2026-04-10T21:00:00+00:00",
     "end_date_sort": "2026-04-10T21:00:00+00:00",
-    "entry_date": "28.02.-22.03.",
+    "entry_date": "28.02.-29.03.",
     "location": "Hyvinkää",
     "coordinates": [
       60.6311481,
@@ -938,7 +938,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 22,
+        "entries": 20,
         "members": 0,
         "groups": [
           "kp"
@@ -992,7 +992,7 @@
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 17,
+        "entries": 20,
         "members": 0,
         "groups": [
           "kp"
@@ -1221,23 +1221,23 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 10,
+        "entries": 12,
         "judge": [],
         "class": "ALO",
-        "members": 8
+        "members": 9
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 5,
+        "entries": 6,
         "judge": [],
         "class": "AVO",
-        "members": 2
+        "members": 3
       },
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 5,
+        "entries": 6,
         "judge": [],
         "class": "VOI",
         "members": 2
@@ -1280,7 +1280,7 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 6,
+        "entries": 7,
         "judge": [],
         "class": "ALO",
         "members": 6
@@ -1296,7 +1296,7 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 5,
+        "entries": 6,
         "judge": [],
         "class": "VOI",
         "members": 3
@@ -1387,10 +1387,10 @@
     "classes": [
       {
         "date": "2026-05-03T00:00:00.000+03:00",
-        "entries": 1,
+        "entries": 2,
         "judge": [],
         "class": "ALO",
-        "members": 1
+        "members": 2
       },
       {
         "date": "2026-05-03T00:00:00.000+03:00",
@@ -2243,7 +2243,7 @@
       "email": "sirpa.lastunen-turppa@kopteri.net"
     },
     "judges": [
-      "Jumisko Riitta"
+      "Montonen Mikael"
     ],
     "description": "",
     "cost": 45,
@@ -2537,6 +2537,93 @@
     "classes": []
   },
   {
+    "id": "xCKkbWvzGs",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "05.-06.06.2026",
+    "date_sort": "2026-06-05T21:00:00+00:00",
+    "end_date_sort": "2026-06-06T21:00:00+00:00",
+    "entry_date": "24.04.-15.05.",
+    "location": "Suonenjoki",
+    "coordinates": [
+      62.6241926,
+      27.1245609
+    ],
+    "name": "Noutajien taipumuskoe",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Elina Halonen",
+      "phone": "0443631749",
+      "email": "elina.halonen1@gmail.com"
+    },
+    "secretary": {
+      "name": "Elina Halonen",
+      "phone": "0443631749",
+      "email": "elina.halonen1@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": []
+  },
+  {
+    "id": "XNnIwzbuwm",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "05.06.2026",
+    "date_sort": "2026-06-05T21:00:00+00:00",
+    "end_date_sort": "2026-06-05T21:00:00+00:00",
+    "entry_date": "24.04.-15.05.",
+    "location": "Tuusniemi",
+    "coordinates": [
+      62.8129715,
+      28.473989
+    ],
+    "name": "",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Kirsi-Marja Ovaskainen",
+      "phone": "040 518 0207",
+      "email": "ovaskainen.kirsi@gmail.com"
+    },
+    "secretary": {
+      "name": "Kirsi-Marja Ovaskainen",
+      "phone": "040 518 0207",
+      "email": "ovaskainen.kirsi@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2026-06-05T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Hiltunen Taru",
+            "official": true,
+            "id": 736508
+          }
+        ],
+        "class": "AVO"
+      }
+    ]
+  },
+  {
     "id": "f05XxSTOjh",
     "type": "NOME-B",
     "levels": "ALO (La, Su)",
@@ -2593,41 +2680,6 @@
         "class": "ALO"
       }
     ]
-  },
-  {
-    "id": "xCKkbWvzGs",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "06.-07.06.2026",
-    "date_sort": "2026-06-06T00:00:00+03:00",
-    "end_date_sort": "2026-06-07T00:00:00+03:00",
-    "entry_date": "25.04.-16.05.",
-    "location": "Suonenjoki",
-    "coordinates": [
-      62.6241926,
-      27.1245609
-    ],
-    "name": "Noutajien taipumuskoe",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Elina Halonen",
-      "phone": "0443631749",
-      "email": "elina.halonen1@gmail.com"
-    },
-    "secretary": {
-      "name": "Elina Halonen",
-      "phone": "0443631749",
-      "email": "elina.halonen1@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Niko"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": 45,
-    "classes": []
   },
   {
     "id": "tmyJdZju1_",
@@ -2821,54 +2873,6 @@
       }
     },
     "classes": []
-  },
-  {
-    "id": "XNnIwzbuwm",
-    "type": "NOME-B",
-    "levels": "AVO (La)",
-    "date": "06.06.2026",
-    "date_sort": "2026-06-06T00:00:00+03:00",
-    "end_date_sort": "2026-06-06T00:00:00+03:00",
-    "entry_date": "25.04.-16.05.",
-    "location": "Tuusniemi",
-    "coordinates": [
-      62.8129715,
-      28.473989
-    ],
-    "name": "",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Kirsi-Marja Ovaskainen",
-      "phone": "040 518 0207",
-      "email": "ovaskainen.kirsi@gmail.com"
-    },
-    "secretary": {
-      "name": "Kirsi-Marja Ovaskainen",
-      "phone": "040 518 0207",
-      "email": "ovaskainen.kirsi@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Taru"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-06-05T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
-          }
-        ],
-        "class": "AVO"
-      }
-    ]
   },
   {
     "id": "z-cc5mFj77",
@@ -3703,6 +3707,56 @@
     "classes": []
   },
   {
+    "id": "XCsNEQYPD1",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "26.06.2026",
+    "date_sort": "2026-06-26T21:00:00+00:00",
+    "end_date_sort": "2026-06-26T21:00:00+00:00",
+    "entry_date": "15.05.-05.06.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Jonna Mykkänen",
+      "phone": "0442973607",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "secretary": {
+      "name": "Jonna Mykkänen",
+      "phone": "0442973607",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2026-06-26T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "class": "ALO"
+      }
+    ]
+  },
+  {
     "id": "Fp8LJjclXU",
     "type": "NOU",
     "levels": "N/A",
@@ -3734,54 +3788,6 @@
     "cost": 45,
     "cost_member": 40,
     "classes": []
-  },
-  {
-    "id": "XCsNEQYPD1",
-    "type": "NOME-B",
-    "levels": "ALO (La)",
-    "date": "27.06.2026",
-    "date_sort": "2026-06-27T00:00:00+03:00",
-    "end_date_sort": "2026-06-27T00:00:00+03:00",
-    "entry_date": "16.05.-06.06.",
-    "location": "Kuopio",
-    "coordinates": [
-      62.8924641,
-      27.6783597
-    ],
-    "name": "",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Jonna Mykkänen",
-      "phone": "0442973607",
-      "email": "mykkanenjonna84@gmail.com"
-    },
-    "secretary": {
-      "name": "Jonna Mykkänen",
-      "phone": "0442973607",
-      "email": "mykkanenjonna84@gmail.com"
-    },
-    "judges": [
-      "Puttonen Pasi-Petteri"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-06-26T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
-          }
-        ],
-        "class": "ALO"
-      }
-    ]
   },
   {
     "id": "UWcCAxfpIi",
@@ -4286,10 +4292,10 @@
     "id": "hJ3Gm7I7cQ",
     "type": "NOU",
     "levels": "N/A",
-    "date": "11.07.2026",
-    "date_sort": "2026-07-11T00:00:00+03:00",
-    "end_date_sort": "2026-07-11T23:59:59.999000+03:00",
-    "entry_date": "30.05.-20.06.",
+    "date": "10.-11.07.2026",
+    "date_sort": "2026-07-10T21:00:00+00:00",
+    "end_date_sort": "2026-07-11T20:59:59.999000+00:00",
+    "entry_date": "29.05.-19.06.",
     "location": "Vieremä",
     "coordinates": [
       63.75,
@@ -4314,7 +4320,9 @@
     "cost": {
       "normal": 55
     },
-    "cost_member": 45,
+    "cost_member": {
+      "normal": 45
+    },
     "classes": []
   },
   {
@@ -4843,10 +4851,10 @@
     "id": "9fx9pfp4qe",
     "type": "NOU",
     "levels": "N/A",
-    "date": "18.-19.07.2026",
-    "date_sort": "2026-07-18T00:00:00+03:00",
-    "end_date_sort": "2026-07-19T23:59:59.999000+03:00",
-    "entry_date": "06.06.-27.06.",
+    "date": "17.-19.07.2026",
+    "date_sort": "2026-07-17T21:00:00+00:00",
+    "end_date_sort": "2026-07-19T20:59:59.999000+00:00",
+    "entry_date": "05.06.-26.06.",
     "location": "Pieksämäki",
     "coordinates": [
       62.3016121,
@@ -4871,8 +4879,159 @@
     "cost": {
       "normal": 55
     },
-    "cost_member": 45,
+    "cost_member": {
+      "normal": 45
+    },
     "classes": []
+  },
+  {
+    "id": "IsWo1GqRdb",
+    "type": "NOME-B",
+    "levels": "VOI (La, Su)",
+    "date": "17.-19.07.2026",
+    "date_sort": "2026-07-17T21:00:00+00:00",
+    "end_date_sort": "2026-07-19T20:59:59.999000+00:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Pieksämäki",
+    "coordinates": [
+      62.3016121,
+      27.1634769
+    ],
+    "name": "Yhdistyksen mestaruuskoe",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Tuija Hukkanen",
+      "phone": "040 511 8383",
+      "email": "tuija.hukkanen@outlook.com"
+    },
+    "secretary": {
+      "name": "Minna-Reetta Innilä",
+      "phone": "044-7197565",
+      "email": "reetta.tiilikainen@gmail.com"
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "Koe on Savon Nuuskujen yhdistyksen mestaruuskoe.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2026-07-17T21:00:00.000Z",
+        "places": 12,
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "class": "VOI"
+      },
+      {
+        "date": "2026-07-18T21:00:00.000Z",
+        "places": 12,
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "class": "VOI"
+      }
+    ]
+  },
+  {
+    "id": "bCgHsFJAc_",
+    "type": "NOME-B",
+    "levels": "ALO (La, Su), AVO (La), VOI (Su)",
+    "date": "17.-19.07.2026",
+    "date_sort": "2026-07-17T21:00:00+00:00",
+    "end_date_sort": "2026-07-19T20:59:59.999000+00:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Pieksämäki",
+    "coordinates": [
+      62.3016121,
+      27.1634769
+    ],
+    "name": "",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Tuija Hukkanen",
+      "phone": "040 511 8383",
+      "email": "tuija.hukkanen@outlook.com"
+    },
+    "secretary": {
+      "name": "Minna-Reetta Innilä",
+      "phone": "044-7197565",
+      "email": "reetta.tiilikainen@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru",
+      "Salonen Susanna"
+    ],
+    "description": "Avoimen ja voittajaluokan koe järjestetään DAMIkokeena.\n\nKokeen luokkavastaavat:\nALO Reetta Innilä\nAVO xx xx\nVOI Tuija Hukkanen",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2026-07-17T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Hiltunen Taru",
+            "official": true,
+            "id": 736508
+          }
+        ],
+        "class": "ALO"
+      },
+      {
+        "date": "2026-07-17T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Salonen Susanna",
+            "official": true,
+            "id": 835312
+          }
+        ],
+        "class": "AVO"
+      },
+      {
+        "date": "2026-07-18T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Hiltunen Taru",
+            "official": true,
+            "id": 736508
+          }
+        ],
+        "class": "ALO"
+      },
+      {
+        "date": "2026-07-18T21:00:00.000Z",
+        "places": 12,
+        "judge": [
+          {
+            "name": "Salonen Susanna",
+            "official": true,
+            "id": 835312
+          }
+        ],
+        "class": "VOI"
+      }
+    ]
   },
   {
     "id": "zQfGEhNvl5",
@@ -4939,151 +5098,6 @@
     ]
   },
   {
-    "id": "IsWo1GqRdb",
-    "type": "NOME-B",
-    "levels": "VOI (La, Su)",
-    "date": "18.-19.07.2026",
-    "date_sort": "2026-07-18T00:00:00+03:00",
-    "end_date_sort": "2026-07-19T23:59:59.999000+03:00",
-    "entry_date": "06.06.-27.06.",
-    "location": "Pieksämäki",
-    "coordinates": [
-      62.3016121,
-      27.1634769
-    ],
-    "name": "Yhdistyksen mestaruuskoe",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Tuija Hukkanen",
-      "phone": "040 511 8383",
-      "email": "tuija.hukkanen@outlook.com"
-    },
-    "secretary": {
-      "name": "Minna-Reetta Innilä",
-      "phone": "044-7197565",
-      "email": "reetta.tiilikainen@gmail.com"
-    },
-    "judges": [
-      "Puttonen Pasi-Petteri"
-    ],
-    "description": "Koe on Savon Nuuskujen yhdistyksen mestaruuskoe.",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-07-17T21:00:00.000Z",
-        "places": 12,
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
-          }
-        ],
-        "class": "VOI"
-      },
-      {
-        "date": "2026-07-18T21:00:00.000Z",
-        "places": 12,
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
-          }
-        ],
-        "class": "VOI"
-      }
-    ]
-  },
-  {
-    "id": "bCgHsFJAc_",
-    "type": "NOME-B",
-    "levels": "ALO (La, Su), AVO (La), VOI (Su)",
-    "date": "18.-19.07.2026",
-    "date_sort": "2026-07-18T00:00:00+03:00",
-    "end_date_sort": "2026-07-19T23:59:59.999000+03:00",
-    "entry_date": "06.06.-27.06.",
-    "location": "Pieksämäki",
-    "coordinates": [
-      62.3016121,
-      27.1634769
-    ],
-    "name": "",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Tuija Hukkanen",
-      "phone": "040 511 8383",
-      "email": "tuija.hukkanen@outlook.com"
-    },
-    "secretary": {
-      "name": "Minna-Reetta Innilä",
-      "phone": "044-7197565",
-      "email": "reetta.tiilikainen@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Taru",
-      "Salonen Susanna"
-    ],
-    "description": "Avoimen ja voittajaluokan koe järjestetään DAMIkokeena.\n\nKokeen luokkavastaavat:\nALO Reetta Innilä\nAVO xx xx\nVOI Tuija Hukkanen",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-07-17T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
-          }
-        ],
-        "class": "ALO"
-      },
-      {
-        "date": "2026-07-17T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "name": "Salonen Susanna",
-            "official": true,
-            "id": 835312
-          }
-        ],
-        "class": "AVO"
-      },
-      {
-        "date": "2026-07-18T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
-          }
-        ],
-        "class": "ALO"
-      },
-      {
-        "date": "2026-07-18T21:00:00.000Z",
-        "places": 12,
-        "judge": [
-          {
-            "name": "Salonen Susanna",
-            "official": true,
-            "id": 835312
-          }
-        ],
-        "class": "VOI"
-      }
-    ]
-  },
-  {
     "id": "kqiUEs2D6o",
     "type": "NOME-B",
     "levels": "ALO (Su)",
@@ -5133,10 +5147,10 @@
     "id": "77Tvpl6Z1f",
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
-    "date": "25.-26.07.2026",
-    "date_sort": "2026-07-25T00:00:00+03:00",
-    "end_date_sort": "2026-07-26T23:59:59.999000+03:00",
-    "entry_date": "13.06.-04.07.",
+    "date": "24.-26.07.2026",
+    "date_sort": "2026-07-24T21:00:00+00:00",
+    "end_date_sort": "2026-07-26T20:59:59.999000+00:00",
+    "entry_date": "12.06.-03.07.",
     "location": "Nilsiä/Rautavaara",
     "coordinates": null,
     "name": "Piirinmestaruus",
@@ -5158,7 +5172,9 @@
     "cost": {
       "normal": 55
     },
-    "cost_member": 45,
+    "cost_member": {
+      "normal": 45
+    },
     "classes": [
       {
         "date": "2026-07-24T21:00:00.000Z",
@@ -5870,6 +5886,68 @@
     ]
   },
   {
+    "id": "_bakND2s8Q",
+    "type": "NOME-B",
+    "levels": "ALO (La), AVO (Su)",
+    "date": "07.-08.08.2026",
+    "date_sort": "2026-08-07T21:00:00+00:00",
+    "end_date_sort": "2026-08-08T21:00:00+00:00",
+    "entry_date": "26.06.-17.07.",
+    "location": "Leppävirta",
+    "coordinates": [
+      62.4917201,
+      27.7880572
+    ],
+    "name": "",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Tuija Löppönen",
+      "phone": "0400 994 310",
+      "email": "lopponentuija@gmail.com"
+    },
+    "secretary": {
+      "name": "Tuija Löppönen",
+      "phone": "0400 994 310",
+      "email": "lopponentuija@gmail.com"
+    },
+    "judges": [
+      "Lappalainen Mika"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2026-08-08T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "official": true,
+            "id": 882887
+          }
+        ],
+        "class": "AVO"
+      },
+      {
+        "date": "2026-08-07T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "official": true,
+            "id": 882887
+          }
+        ],
+        "class": "ALO"
+      }
+    ]
+  },
+  {
     "id": "IZIi3JY0rF",
     "type": "NOU",
     "levels": "N/A",
@@ -5901,66 +5979,6 @@
     "cost": 48,
     "cost_member": 42,
     "classes": []
-  },
-  {
-    "id": "_bakND2s8Q",
-    "type": "NOME-B",
-    "levels": "ALO (La), AVO (Su)",
-    "date": "08.-09.08.2026",
-    "date_sort": "2026-08-08T00:00:00+03:00",
-    "end_date_sort": "2026-08-09T00:00:00+03:00",
-    "entry_date": "27.06.-18.07.",
-    "location": "Leppävirta",
-    "coordinates": [
-      62.4917201,
-      27.7880572
-    ],
-    "name": "",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Tuija Löppönen",
-      "phone": "0400 994 310",
-      "email": "lopponentuija@gmail.com"
-    },
-    "secretary": {
-      "name": "Tuija Löppönen",
-      "phone": "0400 994 310",
-      "email": "lopponentuija@gmail.com"
-    },
-    "judges": [
-      "Lappalainen Mika"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-08-08T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "name": "Lappalainen Mika",
-            "official": true,
-            "id": 882887
-          }
-        ],
-        "class": "AVO"
-      },
-      {
-        "date": "2026-08-07T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "name": "Lappalainen Mika",
-            "official": true,
-            "id": 882887
-          }
-        ],
-        "class": "ALO"
-      }
-    ]
   },
   {
     "id": "lxLz9LeWi_",
@@ -7030,7 +7048,7 @@
   {
     "id": "7UmM8hKYof",
     "type": "NOWT",
-    "levels": "ALO (La), AVO (La), VOI (La)",
+    "levels": "ALO (La), AVO (La), VOI (Su)",
     "date": "29.-30.08.2026",
     "date_sort": "2026-08-29T00:00:00+03:00",
     "end_date_sort": "2026-08-30T23:59:59.999000+03:00",
@@ -7048,31 +7066,40 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Maija Grönlund",
       "phone": "",
-      "email": ""
+      "email": "maijagronlund@gmail.com"
     },
     "judges": [
-      "Väisänen Riitta"
+      "Väisänen Riitta",
+      "Sipola Miso"
     ],
     "description": "",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 35
+    },
     "classes": [
       {
-        "date": "2026-08-29T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": []
+        "date": "2026-08-28T21:00:00.000Z",
+        "groups": [],
+        "places": 20,
+        "judge": [],
+        "class": "ALO"
       },
       {
-        "date": "2026-08-29T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
+        "date": "2026-08-28T21:00:00.000Z",
+        "groups": [],
+        "places": 20,
+        "judge": [],
+        "class": "AVO"
       },
       {
-        "date": "2026-08-29T00:00:00.000+03:00",
+        "date": "2026-08-29T21:00:00.000Z",
         "class": "VOI",
-        "judge": []
+        "places": 40
       }
     ]
   },
