@@ -764,8 +764,8 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 37,
-        "members": 15,
+        "entries": 39,
+        "members": 16,
         "groups": [
           "kp"
         ],
@@ -791,7 +791,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 20,
-        "entries": 9,
+        "entries": 12,
         "members": 0,
         "groups": [
           "kp"
@@ -1229,7 +1229,7 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 6,
+        "entries": 7,
         "judge": [],
         "class": "AVO",
         "members": 3
@@ -1237,7 +1237,7 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 6,
+        "entries": 8,
         "judge": [],
         "class": "VOI",
         "members": 2
@@ -1280,15 +1280,15 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 7,
+        "entries": 8,
         "judge": [],
         "class": "ALO",
-        "members": 6
+        "members": 7
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 3,
+        "entries": 4,
         "judge": [],
         "class": "AVO",
         "members": 1
@@ -1296,7 +1296,7 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 6,
+        "entries": 8,
         "judge": [],
         "class": "VOI",
         "members": 3
