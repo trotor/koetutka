@@ -763,7 +763,7 @@
     "classes": [
       {
         "date": "2026-04-02T21:00:00.000Z",
-        "places": 20,
+        "places": 30,
         "entries": 39,
         "members": 16,
         "groups": [
@@ -786,11 +786,12 @@
             "id": -3
           }
         ],
+        "state": "picked",
         "class": "ALO"
       },
       {
         "date": "2026-04-02T21:00:00.000Z",
-        "places": 20,
+        "places": 12,
         "entries": 12,
         "members": 0,
         "groups": [
@@ -813,6 +814,7 @@
             "id": -3
           }
         ],
+        "state": "picked",
         "class": "AVO"
       }
     ]
@@ -1153,8 +1155,30 @@
       "Vitikka Minja"
     ],
     "description": "Ilmoittautumisen yhteydessä voit varata lounaan, suosittelemme! Koepaikkana uusi Hausjärven Niklandia tarjoaa mökkimajoitusta sekä koepäivänä kahvilapalveluja sekä lounastarjoilun. Käy tutustumassa ja varaa majoitus ajoissa: https://www.niklandia.fi/ ",
-    "cost": 45,
-    "cost_member": 38,
+    "cost": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Lounas koepaikalla"
+          },
+          "cost": 0
+        }
+      ],
+      "normal": 45
+    },
+    "cost_member": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Lounas koepaikalla"
+          },
+          "cost": 0
+        }
+      ],
+      "normal": 38
+    },
     "classes": [
       {
         "date": "2026-04-24T21:00:00.000Z",
@@ -1237,7 +1261,7 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 8,
+        "entries": 9,
         "judge": [],
         "class": "VOI",
         "members": 2
@@ -1280,10 +1304,10 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 8,
+        "entries": 9,
         "judge": [],
         "class": "ALO",
-        "members": 7
+        "members": 8
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
@@ -1296,7 +1320,7 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 8,
+        "entries": 9,
         "judge": [],
         "class": "VOI",
         "members": 3
