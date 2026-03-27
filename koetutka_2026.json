@@ -764,7 +764,7 @@
       {
         "date": "2026-04-02T21:00:00.000Z",
         "places": 30,
-        "entries": 39,
+        "entries": 37,
         "members": 16,
         "groups": [
           "kp"
@@ -1261,10 +1261,10 @@
       {
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 9,
+        "entries": 12,
         "judge": [],
         "class": "VOI",
-        "members": 2
+        "members": 3
       }
     ]
   },
@@ -1320,10 +1320,10 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 9,
+        "entries": 12,
         "judge": [],
         "class": "VOI",
-        "members": 3
+        "members": 4
       }
     ]
   },
@@ -1334,7 +1334,7 @@
     "date": "01.05.2026",
     "date_sort": "2026-05-01T00:00:00+03:00",
     "end_date_sort": "2026-05-01T00:00:00+03:00",
-    "entry_date": "01.04.-24.04.",
+    "entry_date": "30.03.-20.04.",
     "location": "Hamina",
     "coordinates": [
       60.5683467,
@@ -1358,8 +1358,12 @@
       "Zsolt Böszörményi"
     ],
     "description": "Koe järjestetään yhteistyössä Ihamaan metsästysyhdistys ry:n kanssa.",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
     "classes": [
       {
         "date": "2026-04-30T21:00:00.000Z",
@@ -1425,10 +1429,10 @@
       },
       {
         "date": "2026-05-03T00:00:00.000+03:00",
-        "entries": 0,
+        "entries": 1,
         "judge": [],
         "class": "VOI",
-        "members": 0
+        "members": 1
       }
     ]
   },
