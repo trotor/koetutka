@@ -763,7 +763,7 @@
     "classes": [
       {
         "date": "2026-04-02T21:00:00.000Z",
-        "places": 30,
+        "places": 31,
         "entries": 37,
         "members": 16,
         "groups": [
@@ -791,8 +791,8 @@
       },
       {
         "date": "2026-04-02T21:00:00.000Z",
-        "places": 12,
-        "entries": 12,
+        "places": 11,
+        "entries": 11,
         "members": 0,
         "groups": [
           "kp"
@@ -1131,7 +1131,7 @@
     "date": "25.04.2026",
     "date_sort": "2026-04-25T00:00:00+03:00",
     "end_date_sort": "2026-04-25T00:00:00+03:00",
-    "entry_date": "28.03.-12.04.",
+    "entry_date": "30.03.-12.04.",
     "location": "Hausjärvi",
     "coordinates": [
       60.7788065,
@@ -1154,58 +1154,58 @@
       "Salo Mervi",
       "Vitikka Minja"
     ],
-    "description": "Ilmoittautumisen yhteydessä voit varata lounaan, suosittelemme! Koepaikkana uusi Hausjärven Niklandia tarjoaa mökkimajoitusta sekä koepäivänä kahvilapalveluja sekä lounastarjoilun. Käy tutustumassa ja varaa majoitus ajoissa: https://www.niklandia.fi/ ",
+    "description": "Koepaikkana uusi Hausjärven Niklandia tarjoaa mökkimajoitusta sekä koepäivänä kahvilapalveluja ja lounastarjoilun. Käy tutustumassa: https://www.niklandia.fi/ . Lounas 10 e: Kermainen lohikeitto/ kasvissosekeitto, leipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. ",
     "cost": {
+      "normal": 45,
       "optionalAdditionalCosts": [
         {
           "description": {
-            "en": "",
-            "fi": "Lounas koepaikalla"
+            "fi": "Lounas koepaikalla",
+            "en": ""
           },
           "cost": 0
         }
-      ],
-      "normal": 45
+      ]
     },
     "cost_member": {
+      "normal": 38,
       "optionalAdditionalCosts": [
         {
+          "cost": 0,
           "description": {
-            "en": "",
-            "fi": "Lounas koepaikalla"
-          },
-          "cost": 0
+            "fi": "Lounas koepaikalla",
+            "en": ""
+          }
         }
-      ],
-      "normal": 38
+      ]
     },
     "classes": [
       {
-        "date": "2026-04-24T21:00:00.000Z",
+        "places": 0,
         "groups": [
           "kp"
         ],
-        "places": 0,
         "judge": [],
+        "date": "2026-04-24T21:00:00.000Z",
         "class": "ALO"
       },
       {
         "date": "2026-04-24T21:00:00.000Z",
+        "judge": [],
         "groups": [
           "kp"
         ],
         "places": 0,
-        "judge": [],
         "class": "AVO"
       },
       {
-        "date": "2026-04-24T21:00:00.000Z",
+        "places": 0,
         "groups": [
           "kp"
         ],
-        "places": 0,
         "judge": [],
-        "class": "VOI"
+        "class": "VOI",
+        "date": "2026-04-24T21:00:00.000Z"
       }
     ]
   },
@@ -1243,28 +1243,28 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "places": 0,
-        "entries": 12,
         "judge": [],
+        "date": "2026-04-25T00:00:00.000+03:00",
         "class": "ALO",
-        "members": 9
+        "places": 0,
+        "members": 9,
+        "entries": 12
       },
       {
-        "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
-        "entries": 7,
-        "judge": [],
+        "date": "2026-04-25T00:00:00.000+03:00",
         "class": "AVO",
-        "members": 3
+        "members": 3,
+        "entries": 8,
+        "judge": []
       },
       {
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "places": 0,
-        "entries": 12,
-        "judge": [],
         "class": "VOI",
-        "members": 3
+        "entries": 12,
+        "date": "2026-04-25T00:00:00.000+03:00",
+        "members": 3,
+        "judge": [],
+        "places": 0
       }
     ]
   },
@@ -1304,15 +1304,15 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 9,
+        "entries": 10,
         "judge": [],
         "class": "ALO",
-        "members": 8
+        "members": 9
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 4,
+        "entries": 5,
         "judge": [],
         "class": "AVO",
         "members": 1
@@ -2952,7 +2952,7 @@
     "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
       "name": "Heidi Savander",
-      "phone": "+358500860637",
+      "phone": "",
       "email": "heidi.savander@gmail.com"
     },
     "secretary": {
@@ -2968,8 +2968,8 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-06-06T21:00:00.000Z",
         "class": "AVO",
+        "date": "2026-06-06T21:00:00.000Z",
         "judge": []
       }
     ]
