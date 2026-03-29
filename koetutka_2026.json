@@ -938,10 +938,6 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2026-04-10T21:00:00.000Z",
-        "places": 0,
-        "entries": 20,
-        "members": 0,
         "groups": [
           "kp"
         ],
@@ -962,21 +958,25 @@
             "id": -3
           }
         ],
-        "class": "ALO"
+        "members": 0,
+        "class": "ALO",
+        "date": "2026-04-10T21:00:00.000Z",
+        "entries": 20,
+        "places": 0
       },
       {
         "date": "2026-04-10T21:00:00.000Z",
         "places": 0,
-        "entries": 19,
+        "entries": 20,
         "members": 0,
         "groups": [
           "kp"
         ],
         "judge": [
           {
-            "name": "Ville Venell",
+            "id": -1,
             "official": false,
-            "id": -1
+            "name": "Ville Venell"
           },
           {
             "name": "Mikko Tani",
@@ -984,25 +984,19 @@
             "id": -2
           },
           {
-            "name": "Mika Laine",
+            "id": -3,
             "official": false,
-            "id": -3
+            "name": "Mika Laine"
           }
         ],
         "class": "AVO"
       },
       {
         "date": "2026-04-10T21:00:00.000Z",
-        "places": 0,
-        "entries": 20,
-        "members": 0,
-        "groups": [
-          "kp"
-        ],
         "judge": [
           {
-            "name": "Ville Venell",
             "official": false,
+            "name": "Ville Venell",
             "id": -1
           },
           {
@@ -1011,12 +1005,18 @@
             "id": -2
           },
           {
+            "id": -3,
             "name": "Mika Laine",
-            "official": false,
-            "id": -3
+            "official": false
           }
         ],
-        "class": "VOI"
+        "class": "VOI",
+        "places": 0,
+        "entries": 20,
+        "members": 0,
+        "groups": [
+          "kp"
+        ]
       }
     ]
   },
@@ -1304,7 +1304,7 @@
       {
         "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
-        "entries": 10,
+        "entries": 11,
         "judge": [],
         "class": "ALO",
         "members": 9
@@ -1326,6 +1326,40 @@
         "members": 4
       }
     ]
+  },
+  {
+    "id": "GLehAc7Klz",
+    "type": "KOULUTUS",
+    "levels": "N/A",
+    "date": "29.04.2026",
+    "date_sort": "2026-04-29T00:00:00+03:00",
+    "end_date_sort": "2026-04-29T23:59:59.999000+03:00",
+    "entry_date": "06.04.-12.04.",
+    "location": "Joensuun ympäristö",
+    "coordinates": null,
+    "name": "Taipparikurssi",
+    "organizer": "POHJOIS-KARJALAN NOUTAJAKOIRAYHDIST",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Essi Partti",
+      "phone": "",
+      "email": "essi.pknoutajat@outlook.com"
+    },
+    "judges": [
+      "Nometoimikunta"
+    ],
+    "description": "Taipumuskoekurssi, ensikertalaiset sekä jäsenet etusijalla. Kurssi starttaa teoriaosuudella 29.4. Nuuskulassa (Parrutie 20, Joensuu) klo 18. \nMaastokerrat:\nMa 4.5. klo 18\nTo 7.5. klo 18\nMa 11.5. klo 18\nTo 14.5. klo 18",
+    "cost": {
+      "normal": 80
+    },
+    "cost_member": {
+      "normal": 70
+    },
+    "classes": []
   },
   {
     "id": "HZhwmMJpCm",
