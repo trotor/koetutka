@@ -753,7 +753,7 @@
       "email": "anu.sinkkonen@gmail.com"
     },
     "judges": [
-      "Kerolain Filiminova",
+      "Kerolain Filimonova",
       "Marjaana Kousa",
       "Konsta Niiranen"
     ],
@@ -763,15 +763,16 @@
     "classes": [
       {
         "date": "2026-04-02T21:00:00.000Z",
-        "places": 31,
-        "entries": 37,
+        "places": 38,
+        "entries": 36,
         "members": 16,
         "groups": [
           "kp"
         ],
+        "state": "invited",
         "judge": [
           {
-            "name": "Kerolain Filiminova",
+            "name": "Kerolain Filimonova",
             "official": false,
             "id": -1
           },
@@ -786,20 +787,19 @@
             "id": -3
           }
         ],
-        "state": "picked",
         "class": "ALO"
       },
       {
         "date": "2026-04-02T21:00:00.000Z",
-        "places": 11,
         "entries": 11,
+        "places": 11,
         "members": 0,
         "groups": [
           "kp"
         ],
         "judge": [
           {
-            "name": "Kerolain Filiminova",
+            "name": "Kerolain Filimonova",
             "official": false,
             "id": -1
           },
@@ -814,7 +814,7 @@
             "id": -3
           }
         ],
-        "state": "picked",
+        "state": "invited",
         "class": "AVO"
       }
     ]
@@ -938,50 +938,19 @@
     "cost_member": "",
     "classes": [
       {
-        "groups": [
-          "kp"
-        ],
+        "members": 0,
+        "entries": 21,
+        "class": "ALO",
         "judge": [
           {
-            "name": "Ville Venell",
             "official": false,
+            "name": "Ville Venell",
             "id": -1
           },
           {
-            "name": "Mikko Tani",
+            "id": -2,
             "official": false,
-            "id": -2
-          },
-          {
-            "name": "Mika Laine",
-            "official": false,
-            "id": -3
-          }
-        ],
-        "members": 0,
-        "class": "ALO",
-        "date": "2026-04-10T21:00:00.000Z",
-        "entries": 20,
-        "places": 0
-      },
-      {
-        "date": "2026-04-10T21:00:00.000Z",
-        "places": 0,
-        "entries": 20,
-        "members": 0,
-        "groups": [
-          "kp"
-        ],
-        "judge": [
-          {
-            "id": -1,
-            "official": false,
-            "name": "Ville Venell"
-          },
-          {
-            "name": "Mikko Tani",
-            "official": false,
-            "id": -2
+            "name": "Mikko Tani"
           },
           {
             "id": -3,
@@ -989,34 +958,65 @@
             "name": "Mika Laine"
           }
         ],
-        "class": "AVO"
+        "groups": [
+          "kp"
+        ],
+        "date": "2026-04-10T21:00:00.000Z",
+        "places": 0
       },
       {
-        "date": "2026-04-10T21:00:00.000Z",
         "judge": [
           {
-            "official": false,
             "name": "Ville Venell",
-            "id": -1
+            "id": -1,
+            "official": false
           },
           {
             "name": "Mikko Tani",
-            "official": false,
-            "id": -2
+            "id": -2,
+            "official": false
           },
           {
-            "id": -3,
+            "official": false,
             "name": "Mika Laine",
-            "official": false
+            "id": -3
           }
         ],
-        "class": "VOI",
+        "entries": 21,
+        "class": "AVO",
         "places": 0,
-        "entries": 20,
         "members": 0,
         "groups": [
           "kp"
-        ]
+        ],
+        "date": "2026-04-10T21:00:00.000Z"
+      },
+      {
+        "members": 0,
+        "groups": [
+          "kp"
+        ],
+        "date": "2026-04-10T21:00:00.000Z",
+        "judge": [
+          {
+            "name": "Ville Venell",
+            "id": -1,
+            "official": false
+          },
+          {
+            "official": false,
+            "id": -2,
+            "name": "Mikko Tani"
+          },
+          {
+            "official": false,
+            "name": "Mika Laine",
+            "id": -3
+          }
+        ],
+        "class": "VOI",
+        "entries": 22,
+        "places": 0
       }
     ]
   },
@@ -1056,19 +1056,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-04-17T21:00:00.000Z",
+        "members": 2,
+        "entries": 3,
         "class": "ALO",
+        "date": "2026-04-17T21:00:00.000Z",
         "judge": []
       },
       {
+        "members": 3,
+        "entries": 4,
+        "judge": [],
         "date": "2026-04-17T21:00:00.000Z",
-        "class": "AVO",
-        "judge": []
+        "class": "AVO"
       },
       {
+        "entries": 1,
+        "members": 0,
         "date": "2026-04-17T21:00:00.000Z",
-        "class": "VOI",
-        "judge": []
+        "judge": [],
+        "class": "VOI"
       }
     ]
   },
@@ -1108,19 +1114,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-04-18T21:00:00.000Z",
+        "entries": 3,
+        "members": 1,
+        "judge": [],
         "class": "ALO",
-        "judge": []
+        "date": "2026-04-18T21:00:00.000Z"
       },
       {
-        "date": "2026-04-18T21:00:00.000Z",
+        "entries": 1,
+        "judge": [],
         "class": "AVO",
-        "judge": []
+        "date": "2026-04-18T21:00:00.000Z",
+        "members": 1
       },
       {
+        "entries": 1,
         "date": "2026-04-18T21:00:00.000Z",
+        "judge": [],
         "class": "VOI",
-        "judge": []
+        "members": 0
       }
     ]
   },
@@ -1154,58 +1166,48 @@
       "Salo Mervi",
       "Vitikka Minja"
     ],
-    "description": "Koepaikkana uusi Hausjärven Niklandia tarjoaa mökkimajoitusta sekä koepäivänä kahvilapalveluja ja lounastarjoilun. Käy tutustumassa: https://www.niklandia.fi/ . Lounas 10 e: Kermainen lohikeitto/ kasvissosekeitto, leipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. ",
+    "description": "Koepaikkana uusi Hausjärven Niklandia tarjoaa mökkimajoitusta sekä koepäivänä kahvilapalveluja ja lounaan. Käy tutustumassa: https://www.niklandia.fi/.  Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Tervetuloa!",
     "cost": {
-      "normal": 45,
-      "optionalAdditionalCosts": [
-        {
-          "description": {
-            "fi": "Lounas koepaikalla",
-            "en": ""
-          },
-          "cost": 0
-        }
-      ]
+      "optionalAdditionalCosts": [],
+      "normal": 45
     },
     "cost_member": {
-      "normal": 38,
-      "optionalAdditionalCosts": [
-        {
-          "cost": 0,
-          "description": {
-            "fi": "Lounas koepaikalla",
-            "en": ""
-          }
-        }
-      ]
+      "optionalAdditionalCosts": [],
+      "normal": 38
     },
     "classes": [
       {
+        "date": "2026-04-24T21:00:00.000Z",
         "places": 0,
+        "entries": 0,
+        "members": 0,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "date": "2026-04-24T21:00:00.000Z",
         "class": "ALO"
       },
       {
-        "date": "2026-04-24T21:00:00.000Z",
-        "judge": [],
         "groups": [
           "kp"
         ],
+        "judge": [],
         "places": 0,
-        "class": "AVO"
+        "date": "2026-04-24T21:00:00.000Z",
+        "members": 1,
+        "class": "AVO",
+        "entries": 2
       },
       {
+        "entries": 1,
+        "members": 1,
+        "class": "VOI",
         "places": 0,
+        "judge": [],
+        "date": "2026-04-24T21:00:00.000Z",
         "groups": [
           "kp"
-        ],
-        "judge": [],
-        "class": "VOI",
-        "date": "2026-04-24T21:00:00.000Z"
+        ]
       }
     ]
   },
@@ -1243,28 +1245,102 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
+        "places": 0,
         "date": "2026-04-25T00:00:00.000+03:00",
+        "entries": 14,
+        "judge": [],
         "class": "ALO",
-        "places": 0,
-        "members": 9,
-        "entries": 12
+        "members": 11
       },
       {
-        "places": 0,
         "date": "2026-04-25T00:00:00.000+03:00",
-        "class": "AVO",
-        "members": 3,
-        "entries": 8,
-        "judge": []
-      },
-      {
-        "class": "VOI",
-        "entries": 12,
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "members": 3,
         "judge": [],
-        "places": 0
+        "entries": 9,
+        "places": 0,
+        "class": "AVO",
+        "members": 3
+      },
+      {
+        "entries": 13,
+        "judge": [],
+        "places": 0,
+        "class": "VOI",
+        "date": "2026-04-25T00:00:00.000+03:00",
+        "members": 3
+      }
+    ]
+  },
+  {
+    "id": "9D7hTGThMQ",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La), AVO (La)",
+    "date": "25.04.2026",
+    "date_sort": "2026-04-25T00:00:00+03:00",
+    "end_date_sort": "2026-04-25T00:00:00+03:00",
+    "entry_date": "13.04.-20.04.",
+    "location": "Joensuun ympäristö",
+    "coordinates": null,
+    "name": "KEVÄTHUMPPA Vain jäsenille!",
+    "organizer": "POHJOIS-KARJALAN NOUTAJAKOIRAYHDIST",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Essi Partti",
+      "phone": "",
+      "email": "essi.pknoutajat@outlook.com"
+    },
+    "judges": [
+      "Kari Muona",
+      "Teijo Kostian"
+    ],
+    "description": "Epävirallinen ja leikkimielinen Keväthumppa alo- ja avo -tasoisille koirille (taipumuskoe ei osallistumisvaatimuksena). Vain jäsenille! Hinta 30 €. Tuomareina Kari Muona ja Teijo Kostian.",
+    "cost": {
+      "normal": 30
+    },
+    "cost_member": {
+      "normal": 30
+    },
+    "classes": [
+      {
+        "date": "2026-04-24T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "class": "ALO",
+        "judge": [
+          {
+            "name": "Kari Muona",
+            "id": -1,
+            "official": false
+          },
+          {
+            "id": -2,
+            "official": false,
+            "name": "Teijo Kostian"
+          }
+        ]
+      },
+      {
+        "judge": [
+          {
+            "name": "Kari Muona",
+            "id": -1,
+            "official": false
+          },
+          {
+            "id": -2,
+            "name": "Teijo Kostian",
+            "official": false
+          }
+        ],
+        "class": "AVO",
+        "groups": [
+          "kp"
+        ],
+        "date": "2026-04-24T21:00:00.000Z"
       }
     ]
   },
@@ -1303,24 +1379,24 @@
     "classes": [
       {
         "date": "2026-04-26T00:00:00.000+03:00",
+        "entries": 12,
         "places": 0,
-        "entries": 11,
         "judge": [],
         "class": "ALO",
         "members": 9
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
+        "entries": 6,
         "places": 0,
-        "entries": 5,
         "judge": [],
         "class": "AVO",
         "members": 1
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
+        "entries": 15,
         "places": 0,
-        "entries": 12,
         "judge": [],
         "class": "VOI",
         "members": 4
@@ -8209,6 +8285,40 @@
         ]
       }
     ]
+  },
+  {
+    "id": "_b6yzTvk3L",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "26.09.2026",
+    "date_sort": "2026-09-26T00:00:00+03:00",
+    "end_date_sort": "2026-09-26T00:00:00+03:00",
+    "entry_date": "15.08.-05.09.",
+    "location": "Uudenkaarlepyyn ympäristö",
+    "coordinates": null,
+    "name": "",
+    "organizer": "JAKOBSTADSNEJDENS KENNELFÖRENING RF",
+    "official": {
+      "name": "Anna Björklund",
+      "phone": "0456506161",
+      "email": "noutajakoirajaosto@gmail.com"
+    },
+    "secretary": {
+      "name": "Anna Björklund",
+      "phone": "0456506161",
+      "email": "noutajakoirajaosto@gmail.com"
+    },
+    "judges": [
+      "Koskiahde Timo"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": []
   },
   {
     "id": "bn7tXxN3KD",
