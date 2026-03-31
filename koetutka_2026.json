@@ -762,13 +762,12 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2026-04-02T21:00:00.000Z",
-        "places": 38,
         "entries": 36,
-        "members": 16,
+        "places": 38,
         "groups": [
           "kp"
         ],
+        "class": "ALO",
         "state": "invited",
         "judge": [
           {
@@ -777,26 +776,29 @@
             "id": -1
           },
           {
+            "id": -2,
             "name": "Marjaana Kousa",
-            "official": false,
-            "id": -2
+            "official": false
           },
           {
+            "id": -3,
             "name": "Konsta Niiranen",
-            "official": false,
-            "id": -3
+            "official": false
           }
         ],
-        "class": "ALO"
+        "date": "2026-04-02T21:00:00.000Z",
+        "members": 16
       },
       {
-        "date": "2026-04-02T21:00:00.000Z",
         "entries": 11,
-        "places": 11,
+        "date": "2026-04-02T21:00:00.000Z",
         "members": 0,
+        "places": 11,
         "groups": [
           "kp"
         ],
+        "state": "invited",
+        "class": "AVO",
         "judge": [
           {
             "name": "Kerolain Filimonova",
@@ -804,18 +806,16 @@
             "id": -1
           },
           {
+            "id": -2,
             "name": "Marjaana Kousa",
-            "official": false,
-            "id": -2
+            "official": false
           },
           {
             "name": "Konsta Niiranen",
-            "official": false,
-            "id": -3
+            "id": -3,
+            "official": false
           }
-        ],
-        "state": "invited",
-        "class": "AVO"
+        ]
       }
     ]
   },
@@ -1051,30 +1051,30 @@
       "Lähteenaro Janne",
       "Väisänen Riitta"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä ja novascotiannoutajilla sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä ja novascotiannoutajilla sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 45,
     "cost_member": 40,
     "classes": [
       {
-        "members": 2,
-        "entries": 3,
         "class": "ALO",
-        "date": "2026-04-17T21:00:00.000Z",
-        "judge": []
+        "entries": 10,
+        "members": 7,
+        "judge": [],
+        "date": "2026-04-17T21:00:00.000Z"
       },
       {
-        "members": 3,
+        "members": 6,
+        "entries": 8,
+        "judge": [],
+        "class": "AVO",
+        "date": "2026-04-17T21:00:00.000Z"
+      },
+      {
+        "judge": [],
         "entries": 4,
-        "judge": [],
         "date": "2026-04-17T21:00:00.000Z",
-        "class": "AVO"
-      },
-      {
-        "entries": 1,
-        "members": 0,
-        "date": "2026-04-17T21:00:00.000Z",
-        "judge": [],
-        "class": "VOI"
+        "class": "VOI",
+        "members": 2
       }
     ]
   },
@@ -1109,30 +1109,30 @@
       "Lähteenaro Janne",
       "Väisänen Riitta"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä sekä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 45,
     "cost_member": 40,
     "classes": [
       {
-        "entries": 3,
-        "members": 1,
-        "judge": [],
+        "entries": 10,
+        "date": "2026-04-18T21:00:00.000Z",
         "class": "ALO",
-        "date": "2026-04-18T21:00:00.000Z"
+        "judge": [],
+        "members": 5
       },
       {
-        "entries": 1,
         "judge": [],
+        "date": "2026-04-18T21:00:00.000Z",
         "class": "AVO",
-        "date": "2026-04-18T21:00:00.000Z",
-        "members": 1
+        "members": 3,
+        "entries": 5
       },
       {
-        "entries": 1,
-        "date": "2026-04-18T21:00:00.000Z",
         "judge": [],
+        "entries": 6,
         "class": "VOI",
-        "members": 0
+        "members": 1,
+        "date": "2026-04-18T21:00:00.000Z"
       }
     ]
   },
@@ -1166,7 +1166,7 @@
       "Salo Mervi",
       "Vitikka Minja"
     ],
-    "description": "Koepaikkana uusi Hausjärven Niklandia tarjoaa mökkimajoitusta sekä koepäivänä kahvilapalveluja ja lounaan. Käy tutustumassa: https://www.niklandia.fi/.  Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Tervetuloa!",
+    "description": "Etusija järjestävän yhdistyksen jäsenillä ja kutsutuilla. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa!",
     "cost": {
       "optionalAdditionalCosts": [],
       "normal": 45
@@ -1177,37 +1177,37 @@
     },
     "classes": [
       {
-        "date": "2026-04-24T21:00:00.000Z",
-        "places": 0,
-        "entries": 0,
-        "members": 0,
         "groups": [
           "kp"
         ],
+        "class": "ALO",
         "judge": [],
-        "class": "ALO"
+        "places": 0,
+        "date": "2026-04-24T21:00:00.000Z",
+        "entries": 6,
+        "members": 3
       },
       {
+        "judge": [],
+        "members": 4,
+        "date": "2026-04-24T21:00:00.000Z",
         "groups": [
           "kp"
         ],
-        "judge": [],
         "places": 0,
-        "date": "2026-04-24T21:00:00.000Z",
-        "members": 1,
         "class": "AVO",
-        "entries": 2
+        "entries": 6
       },
       {
-        "entries": 1,
-        "members": 1,
-        "class": "VOI",
         "places": 0,
         "judge": [],
         "date": "2026-04-24T21:00:00.000Z",
+        "members": 2,
         "groups": [
           "kp"
-        ]
+        ],
+        "entries": 2,
+        "class": "VOI"
       }
     ]
   },
@@ -1246,27 +1246,27 @@
     "classes": [
       {
         "places": 0,
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "entries": 14,
         "judge": [],
+        "members": 12,
+        "date": "2026-04-25T00:00:00.000+03:00",
         "class": "ALO",
-        "members": 11
+        "entries": 16
       },
       {
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "judge": [],
         "entries": 9,
         "places": 0,
-        "class": "AVO",
-        "members": 3
+        "judge": [],
+        "members": 3,
+        "date": "2026-04-25T00:00:00.000+03:00",
+        "class": "AVO"
       },
       {
+        "class": "VOI",
+        "places": 0,
+        "members": 3,
         "entries": 13,
         "judge": [],
-        "places": 0,
-        "class": "VOI",
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "members": 3
+        "date": "2026-04-25T00:00:00.000+03:00"
       }
     ]
   },
@@ -1378,28 +1378,28 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-04-26T00:00:00.000+03:00",
-        "entries": 12,
-        "places": 0,
-        "judge": [],
         "class": "ALO",
-        "members": 9
+        "judge": [],
+        "places": 0,
+        "entries": 13,
+        "members": 9,
+        "date": "2026-04-26T00:00:00.000+03:00"
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
-        "entries": 6,
+        "members": 2,
+        "entries": 7,
         "places": 0,
         "judge": [],
-        "class": "AVO",
-        "members": 1
+        "class": "AVO"
       },
       {
-        "date": "2026-04-26T00:00:00.000+03:00",
-        "entries": 15,
-        "places": 0,
-        "judge": [],
         "class": "VOI",
-        "members": 4
+        "judge": [],
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "places": 0,
+        "members": 4,
+        "entries": 15
       }
     ]
   },
@@ -1524,24 +1524,24 @@
     "cost_member": 45,
     "classes": [
       {
+        "members": 2,
+        "entries": 3,
         "date": "2026-05-03T00:00:00.000+03:00",
-        "entries": 2,
         "judge": [],
-        "class": "ALO",
-        "members": 2
+        "class": "ALO"
       },
       {
-        "date": "2026-05-03T00:00:00.000+03:00",
-        "entries": 0,
         "judge": [],
         "class": "AVO",
-        "members": 0
+        "members": 0,
+        "entries": 0,
+        "date": "2026-05-03T00:00:00.000+03:00"
       },
       {
+        "class": "VOI",
         "date": "2026-05-03T00:00:00.000+03:00",
         "entries": 1,
         "judge": [],
-        "class": "VOI",
         "members": 1
       }
     ]
@@ -1581,18 +1581,24 @@
     "classes": [
       {
         "date": "2026-05-09T00:00:00.000+03:00",
+        "entries": 0,
+        "judge": [],
         "class": "ALO",
-        "judge": []
+        "members": 0
       },
       {
         "date": "2026-05-09T00:00:00.000+03:00",
+        "entries": 0,
+        "judge": [],
         "class": "AVO",
-        "judge": []
+        "members": 0
       },
       {
         "date": "2026-05-09T00:00:00.000+03:00",
+        "entries": 1,
+        "judge": [],
         "class": "VOI",
-        "judge": []
+        "members": 1
       }
     ]
   },
@@ -1632,7 +1638,7 @@
   {
     "id": "_oW8DAi2h2",
     "type": "EPÄVIRALLINEN",
-    "levels": "N/A",
+    "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "09.05.2026",
     "date_sort": "2026-05-09T00:00:00+03:00",
     "end_date_sort": "2026-05-09T00:00:00+03:00",
@@ -1665,7 +1671,56 @@
     "cost_member": {
       "normal": 45
     },
-    "classes": []
+    "classes": [
+      {
+        "judge": [
+          {
+            "official": true,
+            "id": 838709,
+            "name": "Luomanen Timo"
+          },
+          {
+            "name": "Siitari Heli",
+            "official": true,
+            "id": 355005
+          }
+        ],
+        "class": "ALO",
+        "date": "2026-05-08T21:00:00.000Z"
+      },
+      {
+        "date": "2026-05-08T21:00:00.000Z",
+        "class": "AVO",
+        "judge": [
+          {
+            "id": 838709,
+            "name": "Luomanen Timo",
+            "official": true
+          },
+          {
+            "name": "Siitari Heli",
+            "official": true,
+            "id": 355005
+          }
+        ]
+      },
+      {
+        "judge": [
+          {
+            "name": "Luomanen Timo",
+            "official": true,
+            "id": 838709
+          },
+          {
+            "id": 355005,
+            "name": "Siitari Heli",
+            "official": true
+          }
+        ],
+        "class": "VOI",
+        "date": "2026-05-08T21:00:00.000Z"
+      }
+    ]
   },
   {
     "id": "enqA1YUQs9",
@@ -1702,14 +1757,20 @@
     "classes": [
       {
         "date": "2026-05-09T21:00:00.000Z",
-        "class": "ALO"
+        "class": "ALO",
+        "members": 0,
+        "entries": 0
       },
       {
         "date": "2026-05-09T21:00:00.000Z",
+        "members": 0,
+        "entries": 0,
         "class": "AVO"
       },
       {
         "date": "2026-05-09T21:00:00.000Z",
+        "members": 0,
+        "entries": 0,
         "class": "VOI"
       }
     ]
@@ -2304,15 +2365,16 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-05-23T00:00:00.000+03:00",
-        "class": "ALO",
+        "date": "2026-05-22T21:00:00.000Z",
+        "places": 15,
         "judge": [
           {
             "name": "Särkänlahti Jari",
             "official": true,
             "id": 4055276
           }
-        ]
+        ],
+        "class": "ALO"
       }
     ]
   },
@@ -6319,15 +6381,16 @@
     "cost_member": 60,
     "classes": [
       {
-        "date": "2026-08-08T00:00:00.000+03:00",
-        "class": "VOI",
+        "date": "2026-08-07T21:00:00.000Z",
+        "places": 14,
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
             "official": true,
             "id": 4053791
           }
-        ]
+        ],
+        "class": "VOI"
       }
     ]
   },
@@ -6542,15 +6605,16 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-08-09T00:00:00.000+03:00",
-        "class": "AVO",
+        "date": "2026-08-08T21:00:00.000Z",
+        "places": 16,
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
             "official": true,
             "id": 4053791
           }
-        ]
+        ],
+        "class": "AVO"
       }
     ]
   },
@@ -6830,57 +6894,6 @@
             "id": 999999
           }
         ]
-      }
-    ]
-  },
-  {
-    "id": "5SWy9ZSXe7",
-    "type": "NOME-B",
-    "levels": "VOI (La, Su)",
-    "date": "15.-16.08.2026",
-    "date_sort": "2026-08-15T00:00:00+03:00",
-    "end_date_sort": "2026-08-16T23:59:59.999000+03:00",
-    "entry_date": "04.07.-26.07.",
-    "location": "Taipalsaari",
-    "coordinates": [
-      61.1599368,
-      28.0604215
-    ],
-    "name": "Kymenläänin kennelpiirin piirinmestaruus ja Karjala-Cup",
-    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "Taija Mäkelä",
-      "phone": "",
-      "email": "pamumakela74@gmail.com"
-    },
-    "secretary": {
-      "name": "Inka Tirkkonen",
-      "phone": "",
-      "email": "inka.tirkkonen@gmail.com"
-    },
-    "judges": [
-      "Silvennoinen Kari"
-    ],
-    "description": "Kokeessa etusijalla Kymenläänin kennelpiirin alueella ilmoittautumishetkellä asuvat koirat. Kaakon Noutajakoirayhdistyksen jäsenyys ei edellytä etusijaan eikä halvempaan osallistumismaksuun.",
-    "cost": 50,
-    "cost_member": 50,
-    "classes": [
-      {
-        "date": "2026-08-14T21:00:00.000Z",
-        "places": 12,
-        "judge": [
-          {
-            "name": "Silvennoinen Kari",
-            "official": true,
-            "id": 4100231
-          }
-        ],
-        "class": "VOI"
-      },
-      {
-        "date": "2026-08-15T21:00:00.000Z",
-        "class": "VOI",
-        "places": 12
       }
     ]
   },
@@ -7240,6 +7253,43 @@
         "places": 40
       }
     ]
+  },
+  {
+    "id": "U07WYqaCki",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "29.08.2026",
+    "date_sort": "2026-08-29T00:00:00+03:00",
+    "end_date_sort": "2026-08-29T00:00:00+03:00",
+    "entry_date": "18.07.-08.08.",
+    "location": "Soini",
+    "coordinates": [
+      62.8738088,
+      24.2076547
+    ],
+    "name": "Taipumuskoe Soinissa",
+    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Reija Lesonen",
+      "phone": "0400 986 838",
+      "email": "reija.lesonen@outlook.com"
+    },
+    "secretary": {
+      "name": "Reija Lesonen",
+      "phone": "0400 986 838",
+      "email": "reija.lesonen@outlook.com"
+    },
+    "judges": [
+      "Koskiahde Timo"
+    ],
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. \nJäsenten osallistumismaksu 40 €, ei jäsenten 45 €. \nKoemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": []
   },
   {
     "id": "7F4FOTz0XI",
