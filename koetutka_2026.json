@@ -938,19 +938,50 @@
     "cost_member": "",
     "classes": [
       {
-        "members": 0,
-        "entries": 21,
-        "class": "ALO",
+        "entries": 20,
         "judge": [
           {
             "official": false,
-            "name": "Ville Venell",
-            "id": -1
+            "id": -1,
+            "name": "Ville Venell"
           },
           {
             "id": -2,
             "official": false,
             "name": "Mikko Tani"
+          },
+          {
+            "name": "Mika Laine",
+            "id": -3,
+            "official": false
+          }
+        ],
+        "date": "2026-04-10T21:00:00.000Z",
+        "places": 0,
+        "class": "ALO",
+        "groups": [
+          "kp"
+        ],
+        "members": 0
+      },
+      {
+        "class": "AVO",
+        "groups": [
+          "kp"
+        ],
+        "entries": 21,
+        "places": 0,
+        "members": 0,
+        "judge": [
+          {
+            "id": -1,
+            "official": false,
+            "name": "Ville Venell"
+          },
+          {
+            "official": false,
+            "name": "Mikko Tani",
+            "id": -2
           },
           {
             "id": -3,
@@ -958,65 +989,34 @@
             "name": "Mika Laine"
           }
         ],
-        "groups": [
-          "kp"
-        ],
-        "date": "2026-04-10T21:00:00.000Z",
-        "places": 0
-      },
-      {
-        "judge": [
-          {
-            "name": "Ville Venell",
-            "id": -1,
-            "official": false
-          },
-          {
-            "name": "Mikko Tani",
-            "id": -2,
-            "official": false
-          },
-          {
-            "official": false,
-            "name": "Mika Laine",
-            "id": -3
-          }
-        ],
-        "entries": 21,
-        "class": "AVO",
-        "places": 0,
-        "members": 0,
-        "groups": [
-          "kp"
-        ],
         "date": "2026-04-10T21:00:00.000Z"
       },
       {
-        "members": 0,
+        "class": "VOI",
         "groups": [
           "kp"
         ],
         "date": "2026-04-10T21:00:00.000Z",
+        "places": 0,
         "judge": [
           {
-            "name": "Ville Venell",
             "id": -1,
-            "official": false
+            "official": false,
+            "name": "Ville Venell"
           },
           {
-            "official": false,
             "id": -2,
+            "official": false,
             "name": "Mikko Tani"
           },
           {
             "official": false,
-            "name": "Mika Laine",
-            "id": -3
+            "id": -3,
+            "name": "Mika Laine"
           }
         ],
-        "class": "VOI",
         "entries": 22,
-        "places": 0
+        "members": 0
       }
     ]
   },
@@ -1056,25 +1056,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-04-17T21:00:00.000Z",
-        "judge": [],
-        "members": 8,
         "entries": 11,
-        "class": "ALO"
+        "judge": [],
+        "class": "ALO",
+        "members": 8,
+        "date": "2026-04-17T21:00:00.000Z"
       },
       {
-        "members": 9,
-        "date": "2026-04-17T21:00:00.000Z",
-        "entries": 15,
         "class": "AVO",
-        "judge": []
+        "entries": 16,
+        "members": 9,
+        "judge": [],
+        "date": "2026-04-17T21:00:00.000Z"
       },
       {
-        "class": "VOI",
         "date": "2026-04-17T21:00:00.000Z",
-        "entries": 9,
-        "members": 3,
-        "judge": []
+        "class": "VOI",
+        "judge": [],
+        "members": 4,
+        "entries": 10
       }
     ]
   },
@@ -1114,24 +1114,24 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 10,
+        "entries": 11,
         "judge": [],
         "class": "ALO",
         "date": "2026-04-18T21:00:00.000Z",
         "members": 5
       },
       {
-        "date": "2026-04-18T21:00:00.000Z",
-        "members": 6,
-        "entries": 11,
         "class": "AVO",
-        "judge": []
+        "members": 6,
+        "judge": [],
+        "entries": 12,
+        "date": "2026-04-18T21:00:00.000Z"
       },
       {
-        "entries": 10,
         "members": 2,
-        "date": "2026-04-18T21:00:00.000Z",
         "judge": [],
+        "date": "2026-04-18T21:00:00.000Z",
+        "entries": 10,
         "class": "VOI"
       }
     ]
@@ -1166,7 +1166,7 @@
       "Salo Mervi",
       "Vitikka Minja"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä ja kutsutuilla. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa!",
+    "description": "Etusija järjestävän yhdistyksen jäsenillä, Etelä-Hämeen kennelpiirin alueen koirakot (VOI-luokka)  ja kutsutuilla. Koe on Etelä-Hämeen kennelpiirin piirinmestaruus ja Kanta-Hämeen noutajakoirayhdistyksen mestaruus voittajaluokassa. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa!",
     "cost": {
       "optionalAdditionalCosts": [],
       "normal": 45
@@ -1180,30 +1180,30 @@
         "groups": [
           "kp"
         ],
-        "places": 0,
-        "entries": 6,
-        "members": 3,
-        "class": "ALO",
         "date": "2026-04-24T21:00:00.000Z",
-        "judge": []
+        "class": "ALO",
+        "places": 0,
+        "judge": [],
+        "entries": 6,
+        "members": 3
       },
       {
-        "date": "2026-04-24T21:00:00.000Z",
-        "entries": 7,
-        "class": "AVO",
-        "judge": [],
         "members": 4,
-        "places": 0,
+        "judge": [],
         "groups": [
           "kp"
-        ]
+        ],
+        "entries": 7,
+        "date": "2026-04-24T21:00:00.000Z",
+        "places": 0,
+        "class": "AVO"
       },
       {
         "date": "2026-04-24T21:00:00.000Z",
-        "entries": 6,
-        "members": 4,
         "class": "VOI",
         "places": 0,
+        "members": 4,
+        "entries": 6,
         "groups": [
           "kp"
         ],
@@ -1246,27 +1246,27 @@
     "classes": [
       {
         "class": "ALO",
-        "places": 0,
         "members": 13,
-        "entries": 17,
         "judge": [],
+        "entries": 18,
+        "places": 0,
         "date": "2026-04-25T00:00:00.000+03:00"
       },
       {
-        "class": "AVO",
-        "entries": 10,
         "date": "2026-04-25T00:00:00.000+03:00",
         "places": 0,
+        "class": "AVO",
         "judge": [],
-        "members": 3
+        "members": 3,
+        "entries": 11
       },
       {
-        "members": 5,
-        "judge": [],
         "places": 0,
+        "entries": 16,
+        "judge": [],
+        "class": "VOI",
         "date": "2026-04-25T00:00:00.000+03:00",
-        "entries": 15,
-        "class": "VOI"
+        "members": 5
       }
     ]
   },
@@ -1378,28 +1378,28 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-04-26T00:00:00.000+03:00",
+        "places": 0,
         "entries": 14,
-        "members": 10,
         "class": "ALO",
-        "places": 0,
-        "judge": []
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "judge": [],
+        "members": 10
       },
       {
-        "judge": [],
+        "class": "AVO",
         "places": 0,
-        "entries": 8,
-        "date": "2026-04-26T00:00:00.000+03:00",
         "members": 2,
-        "class": "AVO"
+        "judge": [],
+        "entries": 10,
+        "date": "2026-04-26T00:00:00.000+03:00"
       },
       {
-        "date": "2026-04-26T00:00:00.000+03:00",
+        "members": 5,
+        "entries": 18,
         "judge": [],
-        "entries": 16,
-        "class": "VOI",
         "places": 0,
-        "members": 5
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "class": "VOI"
       }
     ]
   },
@@ -1528,25 +1528,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 2,
-        "entries": 3,
-        "date": "2026-05-03T00:00:00.000+03:00",
         "judge": [],
+        "members": 2,
+        "date": "2026-05-03T00:00:00.000+03:00",
+        "entries": 3,
         "class": "ALO"
       },
       {
-        "judge": [],
-        "class": "AVO",
-        "members": 0,
         "entries": 0,
+        "judge": [],
+        "members": 0,
+        "class": "AVO",
         "date": "2026-05-03T00:00:00.000+03:00"
       },
       {
-        "class": "VOI",
+        "members": 2,
+        "entries": 2,
         "date": "2026-05-03T00:00:00.000+03:00",
-        "entries": 1,
         "judge": [],
-        "members": 1
+        "class": "VOI"
       }
     ]
   },
@@ -1678,7 +1678,7 @@
     "classes": [
       {
         "date": "2026-05-08T21:00:00.000Z",
-        "entries": 0,
+        "entries": 6,
         "judge": [
           {
             "name": "Luomanen Timo",
@@ -1692,7 +1692,7 @@
           }
         ],
         "class": "ALO",
-        "members": 0
+        "members": 2
       },
       {
         "date": "2026-05-08T21:00:00.000Z",
@@ -1714,7 +1714,7 @@
       },
       {
         "date": "2026-05-08T21:00:00.000Z",
-        "entries": 1,
+        "entries": 2,
         "judge": [
           {
             "name": "Luomanen Timo",
@@ -1728,7 +1728,7 @@
           }
         ],
         "class": "VOI",
-        "members": 1
+        "members": 2
       }
     ]
   },
