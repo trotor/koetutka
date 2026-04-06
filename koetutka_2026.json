@@ -1056,25 +1056,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 13,
-        "judge": [],
+        "entries": 15,
         "date": "2026-04-17T21:00:00.000Z",
+        "judge": [],
         "class": "ALO",
         "members": 8
       },
       {
-        "entries": 19,
-        "date": "2026-04-17T21:00:00.000Z",
+        "entries": 20,
         "members": 10,
-        "class": "AVO",
-        "judge": []
+        "judge": [],
+        "date": "2026-04-17T21:00:00.000Z",
+        "class": "AVO"
       },
       {
-        "members": 5,
-        "judge": [],
-        "entries": 13,
         "class": "VOI",
-        "date": "2026-04-17T21:00:00.000Z"
+        "entries": 13,
+        "date": "2026-04-17T21:00:00.000Z",
+        "members": 5,
+        "judge": []
       }
     ]
   },
@@ -1114,18 +1114,18 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 13,
-        "date": "2026-04-18T21:00:00.000Z",
-        "members": 6,
         "judge": [],
-        "class": "ALO"
+        "entries": 16,
+        "class": "ALO",
+        "date": "2026-04-18T21:00:00.000Z",
+        "members": 7
       },
       {
-        "entries": 12,
         "judge": [],
-        "members": 6,
+        "date": "2026-04-18T21:00:00.000Z",
+        "entries": 12,
         "class": "AVO",
-        "date": "2026-04-18T21:00:00.000Z"
+        "members": 6
       },
       {
         "class": "VOI",
@@ -1177,37 +1177,37 @@
     },
     "classes": [
       {
-        "class": "ALO",
         "date": "2026-04-24T21:00:00.000Z",
         "entries": 10,
         "places": 0,
-        "judge": [],
         "members": 6,
         "groups": [
           "kp"
-        ]
-      },
-      {
-        "places": 0,
-        "members": 4,
-        "date": "2026-04-24T21:00:00.000Z",
+        ],
         "judge": [],
-        "entries": 7,
-        "class": "AVO",
-        "groups": [
-          "kp"
-        ]
+        "class": "ALO"
       },
       {
+        "date": "2026-04-24T21:00:00.000Z",
+        "places": 0,
+        "entries": 7,
+        "members": 4,
         "groups": [
           "kp"
         ],
-        "places": 0,
-        "entries": 12,
-        "date": "2026-04-24T21:00:00.000Z",
-        "class": "VOI",
         "judge": [],
-        "members": 8
+        "class": "AVO"
+      },
+      {
+        "date": "2026-04-24T21:00:00.000Z",
+        "places": 0,
+        "entries": 13,
+        "members": 9,
+        "groups": [
+          "kp"
+        ],
+        "judge": [],
+        "class": "VOI"
       }
     ]
   },
@@ -1378,28 +1378,28 @@
     "cost_member": 40,
     "classes": [
       {
+        "places": 0,
+        "members": 14,
         "class": "ALO",
-        "members": 13,
-        "judge": [],
-        "places": 0,
-        "entries": 21,
-        "date": "2026-04-26T00:00:00.000+03:00"
-      },
-      {
-        "places": 0,
-        "members": 6,
-        "entries": 14,
+        "entries": 22,
         "date": "2026-04-26T00:00:00.000+03:00",
-        "judge": [],
-        "class": "AVO"
+        "judge": []
       },
       {
-        "entries": 25,
-        "members": 8,
-        "class": "VOI",
+        "entries": 16,
+        "class": "AVO",
         "judge": [],
         "places": 0,
-        "date": "2026-04-26T00:00:00.000+03:00"
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "members": 6
+      },
+      {
+        "judge": [],
+        "members": 12,
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "places": 0,
+        "class": "VOI",
+        "entries": 30
       }
     ]
   },
@@ -1528,25 +1528,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 3,
-        "entries": 5,
-        "class": "ALO",
-        "judge": [],
-        "date": "2026-05-03T00:00:00.000+03:00"
-      },
-      {
         "date": "2026-05-03T00:00:00.000+03:00",
-        "class": "AVO",
-        "entries": 0,
+        "class": "ALO",
+        "entries": 5,
         "judge": [],
-        "members": 0
+        "members": 3
       },
       {
-        "entries": 6,
-        "class": "VOI",
-        "members": 2,
+        "entries": 0,
+        "class": "AVO",
         "judge": [],
+        "members": 0,
         "date": "2026-05-03T00:00:00.000+03:00"
+      },
+      {
+        "entries": 7,
+        "judge": [],
+        "date": "2026-05-03T00:00:00.000+03:00",
+        "members": 3,
+        "class": "VOI"
       }
     ]
   },
@@ -1677,9 +1677,28 @@
     },
     "classes": [
       {
-        "members": 3,
-        "entries": 7,
+        "entries": 10,
+        "judge": [
+          {
+            "name": "Luomanen Timo",
+            "official": true,
+            "id": 838709
+          },
+          {
+            "name": "Siitari Heli",
+            "official": true,
+            "id": 355005
+          }
+        ],
         "class": "ALO",
+        "members": 4,
+        "date": "2026-05-08T21:00:00.000Z"
+      },
+      {
+        "date": "2026-05-08T21:00:00.000Z",
+        "members": 1,
+        "class": "AVO",
+        "entries": 1,
         "judge": [
           {
             "id": 838709,
@@ -1687,33 +1706,13 @@
             "official": true
           },
           {
-            "name": "Siitari Heli",
-            "official": true,
-            "id": 355005
-          }
-        ],
-        "date": "2026-05-08T21:00:00.000Z"
-      },
-      {
-        "members": 1,
-        "date": "2026-05-08T21:00:00.000Z",
-        "judge": [
-          {
-            "official": true,
-            "name": "Luomanen Timo",
-            "id": 838709
-          },
-          {
             "id": 355005,
             "name": "Siitari Heli",
             "official": true
           }
-        ],
-        "entries": 1,
-        "class": "AVO"
+        ]
       },
       {
-        "date": "2026-05-08T21:00:00.000Z",
         "judge": [
           {
             "name": "Luomanen Timo",
@@ -1721,13 +1720,14 @@
             "id": 838709
           },
           {
-            "official": true,
             "name": "Siitari Heli",
-            "id": 355005
+            "id": 355005,
+            "official": true
           }
         ],
-        "entries": 3,
+        "date": "2026-05-08T21:00:00.000Z",
         "class": "VOI",
+        "entries": 3,
         "members": 3
       }
     ]
@@ -1930,28 +1930,28 @@
     "cost_member": 35,
     "classes": [
       {
+        "date": "2026-05-15T21:00:00.000Z",
         "members": 1,
         "entries": 1,
         "judge": [],
-        "class": "ALO",
         "places": 30,
-        "date": "2026-05-15T21:00:00.000Z"
+        "class": "ALO"
       },
       {
         "members": 0,
-        "entries": 0,
-        "places": 30,
-        "class": "AVO",
         "judge": [],
-        "date": "2026-05-15T21:00:00.000Z"
+        "class": "AVO",
+        "date": "2026-05-15T21:00:00.000Z",
+        "entries": 1,
+        "places": 30
       },
       {
         "class": "VOI",
-        "places": 60,
-        "date": "2026-05-16T21:00:00.000Z",
         "entries": 0,
-        "judge": [],
-        "members": 0
+        "places": 60,
+        "members": 0,
+        "date": "2026-05-16T21:00:00.000Z",
+        "judge": []
       }
     ]
   },
