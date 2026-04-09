@@ -1013,18 +1013,18 @@
         "judge": []
       },
       {
-        "date": "2026-04-17T21:00:00.000Z",
         "judge": [],
         "members": 11,
+        "date": "2026-04-17T21:00:00.000Z",
         "class": "AVO",
         "entries": 21
       },
       {
-        "class": "VOI",
-        "members": 5,
         "judge": [],
-        "entries": 16,
-        "date": "2026-04-17T21:00:00.000Z"
+        "entries": 17,
+        "date": "2026-04-17T21:00:00.000Z",
+        "class": "VOI",
+        "members": 5
       }
     ]
   },
@@ -1064,25 +1064,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "class": "ALO",
-        "members": 7,
-        "judge": [],
         "date": "2026-04-18T21:00:00.000Z",
-        "entries": 17
+        "entries": 18,
+        "judge": [],
+        "class": "ALO",
+        "members": 7
       },
       {
-        "judge": [],
-        "members": 7,
         "class": "AVO",
-        "entries": 14,
+        "entries": 15,
+        "members": 7,
+        "judge": [],
         "date": "2026-04-18T21:00:00.000Z"
       },
       {
-        "members": 6,
-        "entries": 19,
+        "entries": 21,
+        "class": "VOI",
         "judge": [],
-        "date": "2026-04-18T21:00:00.000Z",
-        "class": "VOI"
+        "members": 6,
+        "date": "2026-04-18T21:00:00.000Z"
       }
     ]
   },
@@ -1127,36 +1127,36 @@
     },
     "classes": [
       {
-        "date": "2026-04-24T21:00:00.000Z",
-        "places": 0,
-        "judge": [],
         "groups": [
           "kp"
         ],
-        "entries": 11,
+        "class": "ALO",
         "members": 6,
-        "class": "ALO"
-      },
-      {
-        "class": "AVO",
-        "groups": [
-          "kp"
-        ],
-        "date": "2026-04-24T21:00:00.000Z",
-        "members": 5,
+        "judge": [],
         "places": 0,
-        "judge": [],
-        "entries": 9
+        "entries": 11,
+        "date": "2026-04-24T21:00:00.000Z"
       },
       {
-        "judge": [],
         "date": "2026-04-24T21:00:00.000Z",
-        "class": "VOI",
-        "members": 9,
         "groups": [
           "kp"
         ],
-        "entries": 13,
+        "members": 6,
+        "class": "AVO",
+        "entries": 10,
+        "judge": [],
+        "places": 0
+      },
+      {
+        "date": "2026-04-24T21:00:00.000Z",
+        "entries": 15,
+        "class": "VOI",
+        "groups": [
+          "kp"
+        ],
+        "members": 11,
+        "judge": [],
         "places": 0
       }
     ]
@@ -1482,24 +1482,24 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-05-03T00:00:00.000+03:00",
-        "members": 5,
-        "entries": 8,
         "class": "ALO",
-        "judge": []
-      },
-      {
-        "class": "AVO",
         "date": "2026-05-03T00:00:00.000+03:00",
-        "entries": 1,
-        "members": 1,
-        "judge": []
+        "judge": [],
+        "members": 6,
+        "entries": 9
       },
       {
-        "entries": 8,
-        "members": 3,
+        "judge": [],
+        "class": "AVO",
+        "entries": 1,
+        "date": "2026-05-03T00:00:00.000+03:00",
+        "members": 1
+      },
+      {
         "class": "VOI",
         "date": "2026-05-03T00:00:00.000+03:00",
+        "members": 3,
+        "entries": 8,
         "judge": []
       }
     ]
@@ -1538,24 +1538,24 @@
     "cost_member": 40,
     "classes": [
       {
+        "members": 1,
+        "entries": 3,
         "class": "ALO",
-        "entries": 2,
         "date": "2026-05-09T00:00:00.000+03:00",
-        "judge": [],
-        "members": 1
+        "judge": []
       },
       {
-        "judge": [],
         "entries": 2,
+        "date": "2026-05-09T00:00:00.000+03:00",
         "class": "AVO",
-        "members": 2,
-        "date": "2026-05-09T00:00:00.000+03:00"
+        "judge": [],
+        "members": 2
       },
       {
         "judge": [],
         "date": "2026-05-09T00:00:00.000+03:00",
-        "class": "VOI",
         "entries": 4,
+        "class": "VOI",
         "members": 3
       }
     ]
@@ -1631,7 +1631,26 @@
     },
     "classes": [
       {
-        "entries": 10,
+        "date": "2026-05-08T21:00:00.000Z",
+        "judge": [
+          {
+            "official": true,
+            "name": "Luomanen Timo",
+            "id": 838709
+          },
+          {
+            "name": "Siitari Heli",
+            "id": 355005,
+            "official": true
+          }
+        ],
+        "entries": 11,
+        "class": "ALO",
+        "members": 4
+      },
+      {
+        "members": 1,
+        "date": "2026-05-08T21:00:00.000Z",
         "judge": [
           {
             "name": "Luomanen Timo",
@@ -1644,34 +1663,15 @@
             "id": 355005
           }
         ],
-        "class": "ALO",
-        "members": 4,
-        "date": "2026-05-08T21:00:00.000Z"
+        "class": "AVO",
+        "entries": 1
       },
       {
-        "date": "2026-05-08T21:00:00.000Z",
-        "members": 1,
-        "class": "AVO",
-        "entries": 1,
         "judge": [
           {
             "id": 838709,
-            "name": "Luomanen Timo",
-            "official": true
-          },
-          {
-            "id": 355005,
-            "name": "Siitari Heli",
-            "official": true
-          }
-        ]
-      },
-      {
-        "judge": [
-          {
-            "name": "Luomanen Timo",
             "official": true,
-            "id": 838709
+            "name": "Luomanen Timo"
           },
           {
             "name": "Siitari Heli",
@@ -2081,8 +2081,8 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 3,
-        "entries": 5,
+        "date": "2026-05-15T21:00:00.000Z",
+        "class": "ALO",
         "judge": [
           {
             "id": 4055276,
@@ -2090,9 +2090,9 @@
             "name": "Särkänlahti Jari"
           }
         ],
-        "places": 15,
-        "class": "ALO",
-        "date": "2026-05-15T21:00:00.000Z"
+        "members": 5,
+        "entries": 7,
+        "places": 15
       }
     ]
   },
@@ -2129,18 +2129,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "entries": 1,
-        "date": "2026-05-16T21:00:00.000Z",
-        "places": 15,
+        "class": "AVO",
+        "members": 2,
         "judge": [
           {
-            "name": "Särkänlahti Jari",
+            "official": true,
             "id": 4055276,
-            "official": true
+            "name": "Särkänlahti Jari"
           }
         ],
-        "members": 1,
-        "class": "AVO"
+        "entries": 2,
+        "date": "2026-05-16T21:00:00.000Z",
+        "places": 15
       }
     ]
   },
@@ -5356,62 +5356,6 @@
     ]
   },
   {
-    "id": "lY2N3TS1rn",
-    "type": "NOME-B",
-    "levels": "VOI (La)",
-    "date": "25.07.2026",
-    "date_sort": "2026-07-25T00:00:00+03:00",
-    "end_date_sort": "2026-07-25T00:00:00+03:00",
-    "entry_date": "13.06.-04.07.",
-    "location": "Saarijärvi",
-    "coordinates": [
-      62.7050975,
-      25.2582688
-    ],
-    "name": "Keski-Suomen Kennelpiirin Piirinmestaruuskoe (24 koiraa)",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Mari Paananen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Ulla Vahla",
-      "phone": "",
-      "email": "vahla.ulla@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Taru",
-      "Hiltunen Niko"
-    ],
-    "description": " Keski-Suomen Kennelpiirin alueella asuminen tai järjestävän yhdistyksen jäsenyys ei oikeuta halvempaan ilmoittautumismaksuun. Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
-    "cost": 50,
-    "cost_member": 50,
-    "classes": [
-      {
-        "date": "2026-07-24T21:00:00.000Z",
-        "class": "VOI",
-        "judge": [
-          {
-            "name": "Hukkanen Tuija",
-            "official": true,
-            "id": 554006
-          },
-          {
-            "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
-          },
-          {
-            "name": "Hiltunen Niko",
-            "official": true,
-            "id": 644029
-          }
-        ]
-      }
-    ]
-  },
-  {
     "id": "nAznMMDhLI",
     "type": "NOME-B",
     "levels": "VOI (La)",
@@ -5451,51 +5395,6 @@
             "name": "Tenhunen Matti",
             "official": true,
             "id": 881593
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "4Rs17_Q95P",
-    "type": "NOME-B",
-    "levels": "ALO (Su)",
-    "date": "26.07.2026",
-    "date_sort": "2026-07-26T00:00:00+03:00",
-    "end_date_sort": "2026-07-26T00:00:00+03:00",
-    "entry_date": "14.06.-05.07.",
-    "location": "Saarijärvi",
-    "coordinates": [
-      62.7050975,
-      25.2582688
-    ],
-    "name": "ALO-lk",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Anssi Honkanen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Ulla Vahla",
-      "phone": "",
-      "email": "vahla.ulla@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Niko"
-    ],
-    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
-    "cost": 50,
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-07-26T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": [
-          {
-            "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
           }
         ]
       }
@@ -5552,51 +5451,6 @@
             "name": "Tenhunen Matti",
             "official": true,
             "id": 881593
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "wkCuCx6BtX",
-    "type": "NOME-B",
-    "levels": "AVO (Su)",
-    "date": "26.07.2026",
-    "date_sort": "2026-07-26T00:00:00+03:00",
-    "end_date_sort": "2026-07-26T00:00:00+03:00",
-    "entry_date": "14.06.-05.07.",
-    "location": "Saarijärvi",
-    "coordinates": [
-      62.7050975,
-      25.2582688
-    ],
-    "name": "AVO-lk",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Mari Paananen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Ulla Vahla",
-      "phone": "",
-      "email": "vahla.ulla@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Taru"
-    ],
-    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
-    "cost": 50,
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-07-25T21:00:00.000Z",
-        "class": "AVO",
-        "judge": [
-          {
-            "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
           }
         ]
       }
@@ -6694,6 +6548,62 @@
     ]
   },
   {
+    "id": "lY2N3TS1rn",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "15.08.2026",
+    "date_sort": "2026-08-15T00:00:00+03:00",
+    "end_date_sort": "2026-08-15T00:00:00+03:00",
+    "entry_date": "04.07.-25.07.",
+    "location": "Saarijärvi",
+    "coordinates": [
+      62.7050975,
+      25.2582688
+    ],
+    "name": "Keski-Suomen Kennelpiirin Piirinmestaruuskoe (24 koiraa)",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Mari Paananen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Ulla Vahla",
+      "phone": "",
+      "email": "vahla.ulla@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru",
+      "Hiltunen Niko"
+    ],
+    "description": " Keski-Suomen Kennelpiirin alueella asuminen tai järjestävän yhdistyksen jäsenyys ei oikeuta halvempaan ilmoittautumismaksuun. Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "cost": 50,
+    "cost_member": 50,
+    "classes": [
+      {
+        "date": "2026-08-15T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": [
+          {
+            "official": true,
+            "id": 554006,
+            "name": "Hukkanen Tuija"
+          },
+          {
+            "id": 736508,
+            "official": true,
+            "name": "Hiltunen Taru"
+          },
+          {
+            "id": 644029,
+            "name": "Hiltunen Niko",
+            "official": true
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "gaiAMEEFBY",
     "type": "NOME-B",
     "levels": "AVO (La)",
@@ -6888,6 +6798,51 @@
     ]
   },
   {
+    "id": "4Rs17_Q95P",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "16.08.2026",
+    "date_sort": "2026-08-16T00:00:00+03:00",
+    "end_date_sort": "2026-08-16T00:00:00+03:00",
+    "entry_date": "05.07.-26.07.",
+    "location": "Saarijärvi",
+    "coordinates": [
+      62.7050975,
+      25.2582688
+    ],
+    "name": "ALO-lk",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Anssi Honkanen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Ulla Vahla",
+      "phone": "",
+      "email": "vahla.ulla@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "cost": 50,
+    "cost_member": 45,
+    "classes": [
+      {
+        "judge": [
+          {
+            "name": "Hiltunen Taru",
+            "official": true,
+            "id": 736508
+          }
+        ],
+        "class": "ALO",
+        "date": "2026-08-16T00:00:00.000+03:00"
+      }
+    ]
+  },
+  {
     "id": "SZKtBO5RU2",
     "type": "NOME-B",
     "levels": "AVO (Su)",
@@ -6976,6 +6931,51 @@
           }
         ],
         "class": "AVO"
+      }
+    ]
+  },
+  {
+    "id": "wkCuCx6BtX",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "16.08.2026",
+    "date_sort": "2026-08-16T00:00:00+03:00",
+    "end_date_sort": "2026-08-16T00:00:00+03:00",
+    "entry_date": "05.07.-26.07.",
+    "location": "Saarijärvi",
+    "coordinates": [
+      62.7050975,
+      25.2582688
+    ],
+    "name": "AVO-lk",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Mari Paananen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Ulla Vahla",
+      "phone": "",
+      "email": "vahla.ulla@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "cost": 50,
+    "cost_member": 45,
+    "classes": [
+      {
+        "class": "AVO",
+        "judge": [
+          {
+            "id": 736508,
+            "name": "Hiltunen Taru",
+            "official": true
+          }
+        ],
+        "date": "2026-08-16T00:00:00.000+03:00"
       }
     ]
   },
