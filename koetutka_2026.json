@@ -1006,25 +1006,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 8,
         "date": "2026-04-17T21:00:00.000Z",
-        "entries": 15,
+        "entries": 18,
+        "members": 10,
         "judge": [],
         "class": "ALO"
       },
       {
-        "entries": 21,
-        "members": 11,
-        "judge": [],
+        "entries": 25,
+        "class": "AVO",
         "date": "2026-04-17T21:00:00.000Z",
-        "class": "AVO"
+        "judge": [],
+        "members": 13
       },
       {
         "judge": [],
-        "members": 6,
+        "entries": 25,
         "class": "VOI",
-        "date": "2026-04-17T21:00:00.000Z",
-        "entries": 19
+        "members": 9,
+        "date": "2026-04-17T21:00:00.000Z"
       }
     ]
   },
@@ -1064,25 +1064,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 17,
-        "members": 6,
+        "date": "2026-04-18T21:00:00.000Z",
         "class": "ALO",
-        "date": "2026-04-18T21:00:00.000Z",
-        "judge": []
-      },
-      {
-        "entries": 15,
-        "class": "AVO",
-        "date": "2026-04-18T21:00:00.000Z",
         "judge": [],
+        "entries": 21,
         "members": 7
       },
       {
-        "members": 7,
         "judge": [],
-        "entries": 22,
+        "date": "2026-04-18T21:00:00.000Z",
+        "entries": 17,
+        "class": "AVO",
+        "members": 8
+      },
+      {
+        "date": "2026-04-18T21:00:00.000Z",
+        "members": 10,
+        "judge": [],
         "class": "VOI",
-        "date": "2026-04-18T21:00:00.000Z"
+        "entries": 27
       }
     ]
   },
@@ -1116,48 +1116,48 @@
       "Salo Mervi",
       "Vitikka Minja"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenilläja kutsutuilla. Koe on Kanta-Hämeen noutajakoirayhdistyksen WT-mestaruus voittajaluokassa. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa!",
+    "description": "Etusija järjestävän yhdistyksen jäsenillä ja kutsutuilla. Koe on Kanta-Hämeen noutajakoirayhdistyksen WT-mestaruus voittajaluokassa. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa! Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": {
-      "normal": 45,
-      "optionalAdditionalCosts": []
+      "optionalAdditionalCosts": [],
+      "normal": 45
     },
     "cost_member": {
-      "optionalAdditionalCosts": [],
-      "normal": 38
+      "normal": 38,
+      "optionalAdditionalCosts": []
     },
     "classes": [
       {
-        "places": 0,
-        "entries": 11,
-        "members": 6,
         "groups": [
           "kp"
         ],
         "class": "ALO",
+        "members": 6,
+        "entries": 13,
+        "places": 0,
+        "date": "2026-04-24T21:00:00.000Z",
+        "judge": []
+      },
+      {
+        "places": 0,
         "judge": [],
+        "class": "AVO",
+        "groups": [
+          "kp"
+        ],
+        "members": 8,
+        "entries": 13,
         "date": "2026-04-24T21:00:00.000Z"
       },
       {
-        "members": 7,
         "groups": [
           "kp"
         ],
+        "judge": [],
         "places": 0,
-        "date": "2026-04-24T21:00:00.000Z",
-        "judge": [],
-        "class": "AVO",
-        "entries": 11
-      },
-      {
-        "members": 12,
-        "groups": [
-          "kp"
-        ],
-        "judge": [],
-        "date": "2026-04-24T21:00:00.000Z",
-        "entries": 16,
+        "members": 14,
         "class": "VOI",
-        "places": 0
+        "date": "2026-04-24T21:00:00.000Z",
+        "entries": 19
       }
     ]
   },
@@ -1333,27 +1333,27 @@
     "classes": [
       {
         "date": "2026-04-26T00:00:00.000+03:00",
-        "entries": 23,
-        "class": "ALO",
-        "members": 14,
-        "places": 0,
-        "judge": []
-      },
-      {
+        "entries": 22,
         "judge": [],
-        "class": "AVO",
-        "entries": 16,
-        "members": 6,
-        "places": 0,
-        "date": "2026-04-26T00:00:00.000+03:00"
+        "class": "ALO",
+        "members": 13,
+        "places": 0
       },
       {
         "date": "2026-04-26T00:00:00.000+03:00",
-        "members": 13,
+        "members": 6,
+        "entries": 16,
+        "class": "AVO",
         "judge": [],
-        "entries": 31,
-        "class": "VOI",
         "places": 0
+      },
+      {
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "entries": 31,
+        "members": 13,
+        "class": "VOI",
+        "places": 0,
+        "judge": []
       }
     ]
   },
@@ -1482,25 +1482,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "class": "ALO",
         "date": "2026-05-03T00:00:00.000+03:00",
+        "members": 7,
         "judge": [],
-        "members": 6,
-        "entries": 9
+        "class": "ALO",
+        "entries": 10
       },
       {
+        "entries": 2,
+        "members": 2,
         "judge": [],
-        "class": "AVO",
-        "entries": 1,
         "date": "2026-05-03T00:00:00.000+03:00",
-        "members": 1
+        "class": "AVO"
       },
       {
         "class": "VOI",
-        "date": "2026-05-03T00:00:00.000+03:00",
-        "members": 3,
-        "entries": 8,
-        "judge": []
+        "members": 4,
+        "judge": [],
+        "entries": 9,
+        "date": "2026-05-03T00:00:00.000+03:00"
       }
     ]
   },
@@ -1538,24 +1538,24 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 1,
-        "entries": 3,
-        "class": "ALO",
         "date": "2026-05-09T00:00:00.000+03:00",
+        "class": "ALO",
+        "members": 2,
+        "entries": 4,
         "judge": []
       },
       {
-        "entries": 2,
-        "date": "2026-05-09T00:00:00.000+03:00",
-        "class": "AVO",
+        "entries": 3,
         "judge": [],
-        "members": 2
+        "class": "AVO",
+        "date": "2026-05-09T00:00:00.000+03:00",
+        "members": 3
       },
       {
-        "judge": [],
-        "date": "2026-05-09T00:00:00.000+03:00",
         "entries": 4,
         "class": "VOI",
+        "judge": [],
+        "date": "2026-05-09T00:00:00.000+03:00",
         "members": 3
       }
     ]
@@ -1767,7 +1767,7 @@
     "judges": [
       "Martikainen Maarit"
     ],
-    "description": "Arkikoe",
+    "description": "Arkikoe. Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
     "classes": []
@@ -2081,18 +2081,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "places": 15,
-        "entries": 8,
-        "members": 6,
-        "date": "2026-05-15T21:00:00.000Z",
-        "class": "ALO",
         "judge": [
           {
-            "official": true,
             "name": "Särkänlahti Jari",
+            "official": true,
             "id": 4055276
           }
-        ]
+        ],
+        "places": 15,
+        "members": 7,
+        "entries": 9,
+        "date": "2026-05-15T21:00:00.000Z",
+        "class": "ALO"
       }
     ]
   },
@@ -2263,18 +2263,18 @@
     },
     "classes": [
       {
-        "date": "2026-05-16T21:00:00.000Z",
         "entries": 1,
         "class": "ALO",
         "members": 1,
-        "judge": []
+        "judge": [],
+        "date": "2026-05-16T21:00:00.000Z"
       },
       {
-        "members": 3,
         "date": "2026-05-16T21:00:00.000Z",
+        "judge": [],
+        "entries": 6,
         "class": "AVO",
-        "entries": 5,
-        "judge": []
+        "members": 3
       },
       {
         "judge": [],
@@ -2501,7 +2501,7 @@
     "judges": [
       "Minna Helenius"
     ],
-    "description": "Järjestämme kokeen omaisen taipparitreenin riistoilla (varis, sorsa ja kani). Kokeessa saa suullisen arvostelun ja on mahdollista suorittaa kaikki tehtävät vaikka jokin osa-alue ei menisi hyväksytysti. Kokeen aloitus aikaisintaan klo 16. Kokeeseen voivat osallistua yli 9kk ikäiset koirat. Rokotukset oltava kunnossa ja ne tarkistetaan paikan päällä. Jäsenten osallistumismaksu 40 eur.",
+    "description": "Järjestämme kokeen omaisen taipparitreenin riistoilla (varis, sorsa ja kani). Kokeessa saa suullisen arvostelun ja on mahdollista suorittaa kaikki tehtävät vaikka jokin osa-alue ei menisi hyväksytysti. Kokeen aloitus aikaisintaan klo 16. Kokeeseen voivat osallistua yli 9kk ikäiset koirat. Rokotukset oltava kunnossa ja ne tarkistetaan paikan päällä. Jäsenten osallistumismaksu 40 eur. Etusijalla PHN kokeissa ja tapahtumissa talkoilleet jäsenet.",
     "cost": {
       "normal": 50
     },
@@ -3125,7 +3125,7 @@
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "",
+    "description": "Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
@@ -3329,20 +3329,20 @@
     "judges": [
       "Tuominen Petri"
     ],
-    "description": "",
+    "description": "Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-06-12T21:00:00.000Z",
-        "places": 15,
         "judge": [
           {
+            "id": 875766,
             "name": "Tuominen Petri",
-            "official": true,
-            "id": 875766
+            "official": true
           }
         ],
+        "places": 15,
+        "date": "2026-06-12T21:00:00.000Z",
         "class": "ALO"
       }
     ]
@@ -3754,7 +3754,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "",
+    "description": "Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
     "classes": []
@@ -5800,7 +5800,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "Arkikoe, alkaa iltapäivällä.",
+    "description": "Arkikoe, alkaa iltapäivällä. Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
     "classes": []
@@ -7044,7 +7044,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "",
+    "description": "Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
     "classes": []
@@ -7553,7 +7553,7 @@
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä ja Etelä-Hämeen Kennelpiirin mestaruuskokeeseen osallistuvilla koirilla huomioiden piirinmestaruuden osallistumisoikeus, kts. lisätiedot. HUOM! Ilmoita ilmoittautumislomakkeen lisätiedoissa, jos osallistut piirinmestaruuskokeeseen. Lisätiedot: Etelä-Hämeen kennelpiirin mestaruuskoe Piirinmestaruuskokeen säännöt: https://www.etelahameenkennelpiiri.fi/yhdistys/piirinmestaruuskilpailuiden-saannot/ OSALLISTUMISOIKEUS PIIRINMESTARUUTEEN Osallistujan on oltava Kennelliiton tai kennelpiirin jäsenyhdistyksen jäsen. Piirinmestaruudesta saa kilpailla jokainen ilmoittautumishetkellä (viimeinen ilmoittautumispäivä) piirin alueella vakinaisesti asuva koiran omistaja tai piirin alueella vakinaisesti asuva sijoituksen vastaanottaja riippumatta hänen edustamansa yhdistyksen kotipaikasta. Useamman omistajan koira kilpailee sen kennelpiirin mestaruudesta, jonne se on pääasiassa sijoitettu. Koira voi kilpailla vuosittain vain yhden kennelpiirin mestaruudesta. Huom! Osallistujalista ei ole starttilista aamupäivän osalta, piirinmestaruuteen osallistuvien koirien starttijärjestys arvotaan paikan päällä.",
+    "description": "Etusija järjestävän yhdistyksen jäsenillä ja Etelä-Hämeen Kennelpiirin mestaruuskokeeseen osallistuvilla koirilla huomioiden piirinmestaruuden osallistumisoikeus, kts. lisätiedot. HUOM! Ilmoita ilmoittautumislomakkeen lisätiedoissa, jos osallistut piirinmestaruuskokeeseen. Lisätiedot: Etelä-Hämeen kennelpiirin mestaruuskoe Piirinmestaruuskokeen säännöt: https://www.etelahameenkennelpiiri.fi/yhdistys/piirinmestaruuskilpailuiden-saannot/ OSALLISTUMISOIKEUS PIIRINMESTARUUTEEN Osallistujan on oltava Kennelliiton tai kennelpiirin jäsenyhdistyksen jäsen. Piirinmestaruudesta saa kilpailla jokainen ilmoittautumishetkellä (viimeinen ilmoittautumispäivä) piirin alueella vakinaisesti asuva koiran omistaja tai piirin alueella vakinaisesti asuva sijoituksen vastaanottaja riippumatta hänen edustamansa yhdistyksen kotipaikasta. Useamman omistajan koira kilpailee sen kennelpiirin mestaruudesta, jonne se on pääasiassa sijoitettu. Koira voi kilpailla vuosittain vain yhden kennelpiirin mestaruudesta. Huom! Osallistujalista ei ole starttilista aamupäivän osalta, piirinmestaruuteen osallistuvien koirien starttijärjestys arvotaan paikan päällä. Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": {
       "normal": 55
     },
@@ -7562,16 +7562,16 @@
     },
     "classes": [
       {
-        "date": "2026-09-11T21:00:00.000Z",
+        "class": "VOI",
         "places": 12,
         "judge": [
           {
+            "id": 842408,
             "name": "Fontell Ari-Pekka",
-            "official": true,
-            "id": 842408
+            "official": true
           }
         ],
-        "class": "VOI"
+        "date": "2026-09-11T21:00:00.000Z"
       }
     ]
   },
