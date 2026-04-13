@@ -1006,25 +1006,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 12,
-        "entries": 22,
-        "judge": [],
         "date": "2026-04-17T21:00:00.000Z",
+        "members": 15,
+        "judge": [],
+        "entries": 28,
         "class": "ALO"
       },
       {
-        "entries": 25,
+        "entries": 27,
         "judge": [],
         "class": "AVO",
         "date": "2026-04-17T21:00:00.000Z",
-        "members": 13
+        "members": 14
       },
       {
-        "judge": [],
-        "entries": 26,
-        "class": "VOI",
         "date": "2026-04-17T21:00:00.000Z",
-        "members": 10
+        "members": 11,
+        "judge": [],
+        "class": "VOI",
+        "entries": 33
       }
     ]
   },
@@ -1064,25 +1064,25 @@
     "cost_member": 40,
     "classes": [
       {
+        "entries": 36,
         "date": "2026-04-18T21:00:00.000Z",
-        "members": 10,
+        "members": 12,
         "class": "ALO",
-        "judge": [],
-        "entries": 29
+        "judge": []
       },
       {
-        "entries": 17,
-        "date": "2026-04-18T21:00:00.000Z",
-        "judge": [],
         "class": "AVO",
-        "members": 8
+        "entries": 20,
+        "members": 9,
+        "date": "2026-04-18T21:00:00.000Z",
+        "judge": []
       },
       {
         "class": "VOI",
-        "members": 11,
-        "entries": 31,
+        "judge": [],
         "date": "2026-04-18T21:00:00.000Z",
-        "judge": []
+        "entries": 34,
+        "members": 11
       }
     ]
   },
@@ -1093,7 +1093,7 @@
     "date": "25.04.2026",
     "date_sort": "2026-04-25T00:00:00+03:00",
     "end_date_sort": "2026-04-25T00:00:00+03:00",
-    "entry_date": "30.03.-12.04.",
+    "entry_date": "30.03.-13.04.",
     "location": "Hausjärvi",
     "coordinates": [
       60.7788065,
@@ -1114,12 +1114,13 @@
     "judges": [
       "Torila Mika",
       "Salo Mervi",
-      "Vitikka Minja"
+      "Vitikka Minja",
+      "Ronkainen Reima"
     ],
     "description": "Etusija järjestävän yhdistyksen jäsenillä ja kutsutuilla. Koe on Kanta-Hämeen noutajakoirayhdistyksen WT-mestaruus voittajaluokassa. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa! Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": {
-      "optionalAdditionalCosts": [],
-      "normal": 45
+      "normal": 45,
+      "optionalAdditionalCosts": []
     },
     "cost_member": {
       "normal": 38,
@@ -1127,37 +1128,37 @@
     },
     "classes": [
       {
+        "entries": 21,
+        "places": 0,
         "class": "ALO",
-        "entries": 17,
-        "members": 7,
+        "members": 10,
+        "date": "2026-04-24T21:00:00.000Z",
         "judge": [],
         "groups": [
           "kp"
-        ],
-        "places": 0,
-        "date": "2026-04-24T21:00:00.000Z"
+        ]
       },
       {
-        "entries": 14,
-        "places": 0,
         "date": "2026-04-24T21:00:00.000Z",
+        "class": "AVO",
+        "places": 0,
         "groups": [
           "kp"
         ],
-        "class": "AVO",
-        "members": 8,
+        "entries": 16,
+        "members": 9,
         "judge": []
       },
       {
-        "class": "VOI",
-        "members": 17,
-        "judge": [],
+        "members": 21,
         "groups": [
           "kp"
         ],
+        "class": "VOI",
+        "judge": [],
         "date": "2026-04-24T21:00:00.000Z",
-        "places": 0,
-        "entries": 23
+        "entries": 31,
+        "places": 0
       }
     ]
   },
@@ -1261,41 +1262,45 @@
     "classes": [
       {
         "date": "2026-04-24T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ],
-        "class": "ALO",
+        "members": 12,
         "judge": [
           {
-            "name": "Kari Muona",
+            "official": false,
             "id": -1,
-            "official": false
+            "name": "Kari Muona"
           },
           {
-            "id": -2,
+            "name": "Teijo Kostian",
             "official": false,
-            "name": "Teijo Kostian"
+            "id": -2
           }
+        ],
+        "class": "ALO",
+        "entries": 12,
+        "groups": [
+          "kp"
         ]
       },
       {
+        "date": "2026-04-24T21:00:00.000Z",
+        "class": "AVO",
+        "members": 0,
         "judge": [
           {
-            "name": "Kari Muona",
             "id": -1,
+            "name": "Kari Muona",
             "official": false
           },
           {
-            "id": -2,
             "name": "Teijo Kostian",
-            "official": false
+            "official": false,
+            "id": -2
           }
         ],
-        "class": "AVO",
+        "entries": 0,
         "groups": [
           "kp"
-        ],
-        "date": "2026-04-24T21:00:00.000Z"
+        ]
       }
     ]
   },
@@ -1489,24 +1494,24 @@
     "classes": [
       {
         "judge": [],
-        "class": "ALO",
-        "entries": 11,
+        "entries": 13,
+        "members": 9,
         "date": "2026-05-03T00:00:00.000+03:00",
-        "members": 7
+        "class": "ALO"
       },
       {
-        "entries": 2,
-        "judge": [],
+        "date": "2026-05-03T00:00:00.000+03:00",
         "class": "AVO",
-        "members": 2,
-        "date": "2026-05-03T00:00:00.000+03:00"
+        "entries": 5,
+        "members": 5,
+        "judge": []
       },
       {
         "class": "VOI",
-        "members": 6,
-        "entries": 11,
+        "members": 8,
+        "judge": [],
         "date": "2026-05-03T00:00:00.000+03:00",
-        "judge": []
+        "entries": 16
       }
     ]
   },
@@ -1544,25 +1549,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 2,
-        "entries": 4,
-        "class": "ALO",
-        "judge": [],
-        "date": "2026-05-09T00:00:00.000+03:00"
-      },
-      {
+        "entries": 5,
         "members": 3,
-        "class": "AVO",
-        "entries": 3,
-        "judge": [],
-        "date": "2026-05-09T00:00:00.000+03:00"
-      },
-      {
         "date": "2026-05-09T00:00:00.000+03:00",
         "judge": [],
-        "entries": 5,
+        "class": "ALO"
+      },
+      {
+        "judge": [],
+        "entries": 4,
+        "members": 4,
+        "date": "2026-05-09T00:00:00.000+03:00",
+        "class": "AVO"
+      },
+      {
+        "entries": 7,
+        "members": 5,
         "class": "VOI",
-        "members": 3
+        "judge": [],
+        "date": "2026-05-09T00:00:00.000+03:00"
       }
     ]
   },
@@ -1637,15 +1642,15 @@
     },
     "classes": [
       {
-        "class": "ALO",
         "date": "2026-05-08T21:00:00.000Z",
-        "entries": 13,
-        "members": 5,
+        "class": "ALO",
+        "entries": 14,
+        "members": 6,
         "judge": [
           {
-            "official": true,
+            "name": "Luomanen Timo",
             "id": 838709,
-            "name": "Luomanen Timo"
+            "official": true
           },
           {
             "official": true,
@@ -1655,31 +1660,30 @@
         ]
       },
       {
+        "members": 2,
         "judge": [
           {
-            "name": "Luomanen Timo",
             "official": true,
+            "name": "Luomanen Timo",
             "id": 838709
           },
           {
             "name": "Siitari Heli",
-            "official": true,
-            "id": 355005
+            "id": 355005,
+            "official": true
           }
         ],
-        "members": 2,
         "class": "AVO",
         "date": "2026-05-08T21:00:00.000Z",
         "entries": 2
       },
       {
-        "entries": 3,
-        "members": 3,
+        "date": "2026-05-08T21:00:00.000Z",
         "judge": [
           {
-            "name": "Luomanen Timo",
             "official": true,
-            "id": 838709
+            "id": 838709,
+            "name": "Luomanen Timo"
           },
           {
             "name": "Siitari Heli",
@@ -1687,8 +1691,9 @@
             "id": 355005
           }
         ],
-        "date": "2026-05-08T21:00:00.000Z",
-        "class": "VOI"
+        "entries": 3,
+        "class": "VOI",
+        "members": 3
       }
     ]
   },
@@ -1726,22 +1731,22 @@
     "cost_member": 40,
     "classes": [
       {
-        "class": "ALO",
+        "entries": 1,
         "date": "2026-05-09T21:00:00.000Z",
         "members": 0,
-        "entries": 1
+        "class": "ALO"
       },
       {
-        "members": 0,
-        "date": "2026-05-09T21:00:00.000Z",
         "entries": 0,
+        "date": "2026-05-09T21:00:00.000Z",
+        "members": 0,
         "class": "AVO"
       },
       {
-        "entries": 1,
-        "members": 0,
+        "entries": 2,
+        "date": "2026-05-09T21:00:00.000Z",
         "class": "VOI",
-        "date": "2026-05-09T21:00:00.000Z"
+        "members": 1
       }
     ]
   },
@@ -1951,13 +1956,13 @@
       {
         "members": 2,
         "class": "ALO",
-        "entries": 3,
-        "date": "2026-05-15T21:00:00.000Z"
+        "date": "2026-05-15T21:00:00.000Z",
+        "entries": 4
       },
       {
+        "members": 4,
         "entries": 7,
         "date": "2026-05-15T21:00:00.000Z",
-        "members": 4,
         "class": "AVO"
       }
     ]
@@ -2047,9 +2052,9 @@
     "classes": [
       {
         "date": "2026-05-16T00:00:00.000+03:00",
-        "entries": 3,
+        "entries": 4,
+        "members": 2,
         "class": "VOI",
-        "members": 1,
         "judge": []
       }
     ]
@@ -2087,18 +2092,18 @@
     "cost_member": 45,
     "classes": [
       {
+        "places": 15,
         "judge": [
           {
-            "name": "Särkänlahti Jari",
             "official": true,
-            "id": 4055276
+            "id": 4055276,
+            "name": "Särkänlahti Jari"
           }
         ],
-        "places": 15,
-        "members": 7,
-        "entries": 9,
         "date": "2026-05-15T21:00:00.000Z",
-        "class": "ALO"
+        "entries": 10,
+        "class": "ALO",
+        "members": 8
       }
     ]
   },
@@ -2270,24 +2275,24 @@
     "classes": [
       {
         "class": "ALO",
-        "entries": 1,
+        "entries": 2,
+        "date": "2026-05-16T21:00:00.000Z",
         "members": 1,
-        "judge": [],
-        "date": "2026-05-16T21:00:00.000Z"
+        "judge": []
       },
       {
         "judge": [],
-        "entries": 7,
+        "date": "2026-05-16T21:00:00.000Z",
         "class": "AVO",
-        "date": "2026-05-16T21:00:00.000Z",
-        "members": 4
+        "members": 4,
+        "entries": 7
       },
       {
         "judge": [],
-        "members": 1,
-        "entries": 3,
+        "class": "VOI",
         "date": "2026-05-16T21:00:00.000Z",
-        "class": "VOI"
+        "members": 2,
+        "entries": 4
       }
     ]
   },
@@ -2357,16 +2362,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-05-22T21:00:00.000Z",
+        "members": 1,
+        "class": "ALO",
         "places": 15,
+        "date": "2026-05-22T21:00:00.000Z",
         "judge": [
           {
+            "id": 4055276,
             "name": "Särkänlahti Jari",
-            "official": true,
-            "id": 4055276
+            "official": true
           }
         ],
-        "class": "ALO"
+        "entries": 1
       }
     ]
   },
