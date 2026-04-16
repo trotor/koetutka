@@ -1058,7 +1058,7 @@
     "date": "25.04.2026",
     "date_sort": "2026-04-25T00:00:00+03:00",
     "end_date_sort": "2026-04-25T00:00:00+03:00",
-    "entry_date": "30.03.-16.04.",
+    "entry_date": "30.03.-19.04.",
     "location": "Hausjärvi",
     "coordinates": [
       60.7788065,
@@ -1082,7 +1082,7 @@
       "Vitikka Minja",
       "Ronkainen Reima"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä ja kutsutuilla. Koe on Kanta-Hämeen noutajakoirayhdistyksen WT-mestaruus voittajaluokassa. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa! Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
+    "description": "HUOM!!! Ilmoittautumisaikaa jatkettu, koirakoita otetaan mukaan max 80, kaikki tähän mennessä ilmoittautuneet ovat kokeessa mukana. Etusija järjestävän yhdistyksen jäsenillä ja kutsutuilla. Koe on Kanta-Hämeen noutajakoirayhdistyksen WT-mestaruus voittajaluokassa. Koepaikkana uusi Hausjärven Niklandia tarjoaa koepäivänä runsaat kahvilapalvelut sekä lounastarjoilun. Koepäivänä maittava lounas hintaan 10 e: Kermainen lohikeitto/ kasvissosekeitto, saaristolaisleipä ja pataleipä, levite, juusto, kurkku, vesi/kotikalja, kahvi/tee ja keksi. Lisäksi myös mm täytettyjä leipiä sekä makkaraa. Käy tutustumassa: www.niklandia.fi. Tervetuloa! Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": {
       "normal": 45,
       "optionalAdditionalCosts": []
@@ -1093,37 +1093,40 @@
     },
     "classes": [
       {
+        "date": "2026-04-24T21:00:00.000Z",
         "groups": [
           "kp"
         ],
-        "date": "2026-04-24T21:00:00.000Z",
-        "places": 0,
-        "members": 9,
+        "state": "picked",
+        "judge": [],
         "class": "ALO",
+        "members": 9,
         "entries": 22,
-        "judge": []
+        "places": 0
       },
       {
-        "groups": [
-          "kp"
-        ],
+        "entries": 16,
+        "places": 0,
         "judge": [],
         "members": 9,
-        "places": 0,
-        "date": "2026-04-24T21:00:00.000Z",
         "class": "AVO",
-        "entries": 16
-      },
-      {
-        "entries": 32,
-        "judge": [],
-        "places": 0,
-        "members": 22,
-        "class": "VOI",
+        "state": "picked",
         "groups": [
           "kp"
         ],
         "date": "2026-04-24T21:00:00.000Z"
+      },
+      {
+        "date": "2026-04-24T21:00:00.000Z",
+        "members": 22,
+        "state": "picked",
+        "judge": [],
+        "places": 0,
+        "class": "VOI",
+        "groups": [
+          "kp"
+        ],
+        "entries": 32
       }
     ]
   },
@@ -1163,31 +1166,31 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 26,
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "state": "picked",
-        "judge": [],
         "class": "ALO",
+        "date": "2026-04-25T00:00:00.000+03:00",
+        "places": 0,
         "members": 16,
-        "places": 0
+        "state": "picked",
+        "entries": 26,
+        "judge": []
+      },
+      {
+        "state": "picked",
+        "members": 7,
+        "entries": 15,
+        "judge": [],
+        "date": "2026-04-25T00:00:00.000+03:00",
+        "places": 0,
+        "class": "AVO"
       },
       {
         "judge": [],
-        "places": 0,
-        "members": 7,
-        "state": "picked",
-        "entries": 15,
-        "class": "AVO",
-        "date": "2026-04-25T00:00:00.000+03:00"
-      },
-      {
-        "date": "2026-04-25T00:00:00.000+03:00",
-        "class": "VOI",
-        "members": 10,
         "entries": 28,
         "places": 0,
-        "state": "picked",
-        "judge": []
+        "members": 10,
+        "class": "VOI",
+        "date": "2026-04-25T00:00:00.000+03:00",
+        "state": "picked"
       }
     ]
   },
@@ -1226,33 +1229,11 @@
     },
     "classes": [
       {
-        "members": 17,
-        "entries": 17,
-        "date": "2026-04-24T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ],
-        "class": "ALO",
         "judge": [
           {
-            "name": "Kari Muona",
             "id": -1,
-            "official": false
-          },
-          {
-            "name": "Teijo Kostian",
-            "id": -2,
-            "official": false
-          }
-        ]
-      },
-      {
-        "members": 1,
-        "judge": [
-          {
-            "name": "Kari Muona",
             "official": false,
-            "id": -1
+            "name": "Kari Muona"
           },
           {
             "official": false,
@@ -1260,11 +1241,33 @@
             "name": "Teijo Kostian"
           }
         ],
-        "class": "AVO",
-        "entries": 1,
         "groups": [
           "kp"
         ],
+        "entries": 19,
+        "date": "2026-04-24T21:00:00.000Z",
+        "members": 19,
+        "class": "ALO"
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "entries": 2,
+        "judge": [
+          {
+            "name": "Kari Muona",
+            "id": -1,
+            "official": false
+          },
+          {
+            "official": false,
+            "id": -2,
+            "name": "Teijo Kostian"
+          }
+        ],
+        "members": 2,
+        "class": "AVO",
         "date": "2026-04-24T21:00:00.000Z"
       }
     ]
@@ -1305,31 +1308,31 @@
     "cost_member": 40,
     "classes": [
       {
-        "places": 0,
-        "state": "picked",
-        "entries": 23,
-        "members": 13,
-        "date": "2026-04-26T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": []
-      },
-      {
-        "date": "2026-04-26T00:00:00.000+03:00",
-        "members": 6,
-        "entries": 16,
-        "class": "AVO",
-        "places": 0,
-        "state": "picked",
-        "judge": []
-      },
-      {
-        "class": "VOI",
-        "places": 0,
-        "date": "2026-04-26T00:00:00.000+03:00",
         "judge": [],
+        "places": 0,
+        "entries": 23,
         "state": "picked",
-        "entries": 31,
-        "members": 11
+        "members": 13,
+        "class": "ALO",
+        "date": "2026-04-26T00:00:00.000+03:00"
+      },
+      {
+        "state": "picked",
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "places": 0,
+        "entries": 17,
+        "judge": [],
+        "members": 7,
+        "class": "AVO"
+      },
+      {
+        "places": 0,
+        "class": "VOI",
+        "judge": [],
+        "entries": 30,
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "state": "picked",
+        "members": 10
       }
     ]
   },
@@ -1458,28 +1461,28 @@
     "cost_member": 45,
     "classes": [
       {
+        "judge": [],
         "date": "2026-05-03T00:00:00.000+03:00",
         "members": 10,
-        "state": "picked",
-        "judge": [],
         "entries": 14,
+        "state": "picked",
         "class": "ALO"
       },
       {
+        "members": 5,
+        "date": "2026-05-03T00:00:00.000+03:00",
         "class": "AVO",
         "entries": 5,
         "judge": [],
-        "date": "2026-05-03T00:00:00.000+03:00",
-        "state": "picked",
-        "members": 5
+        "state": "picked"
       },
       {
-        "class": "VOI",
         "date": "2026-05-03T00:00:00.000+03:00",
-        "entries": 16,
-        "judge": [],
-        "members": 8,
-        "state": "picked"
+        "entries": 19,
+        "class": "VOI",
+        "state": "picked",
+        "members": 10,
+        "judge": []
       }
     ]
   },
@@ -1517,25 +1520,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 8,
+        "date": "2026-05-09T00:00:00.000+03:00",
         "judge": [],
         "members": 5,
         "class": "ALO",
+        "entries": 9
+      },
+      {
+        "class": "AVO",
+        "members": 7,
+        "entries": 7,
+        "judge": [],
         "date": "2026-05-09T00:00:00.000+03:00"
       },
       {
-        "date": "2026-05-09T00:00:00.000+03:00",
-        "entries": 7,
-        "members": 7,
-        "judge": [],
-        "class": "AVO"
-      },
-      {
         "members": 5,
-        "entries": 8,
+        "judge": [],
         "class": "VOI",
-        "date": "2026-05-09T00:00:00.000+03:00",
-        "judge": []
+        "entries": 11,
+        "date": "2026-05-09T00:00:00.000+03:00"
       }
     ]
   },
@@ -1700,21 +1703,21 @@
     "classes": [
       {
         "entries": 3,
-        "class": "ALO",
         "date": "2026-05-09T21:00:00.000Z",
-        "members": 2
+        "members": 2,
+        "class": "ALO"
       },
       {
         "class": "AVO",
-        "entries": 1,
         "members": 1,
+        "entries": 1,
         "date": "2026-05-09T21:00:00.000Z"
       },
       {
-        "entries": 2,
+        "entries": 3,
+        "class": "VOI",
         "members": 1,
-        "date": "2026-05-09T21:00:00.000Z",
-        "class": "VOI"
+        "date": "2026-05-09T21:00:00.000Z"
       }
     ]
   },
@@ -2019,13 +2022,52 @@
     },
     "classes": [
       {
-        "date": "2026-05-16T00:00:00.000+03:00",
-        "entries": 4,
-        "members": 2,
+        "members": 3,
         "class": "VOI",
+        "entries": 5,
+        "date": "2026-05-16T00:00:00.000+03:00",
         "judge": []
       }
     ]
+  },
+  {
+    "id": "UUu5hS1kLk",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "16.05.2026",
+    "date_sort": "2026-05-16T00:00:00+03:00",
+    "end_date_sort": "2026-05-16T00:00:00+03:00",
+    "entry_date": "16.04.-07.05.",
+    "location": "Raasepori",
+    "coordinates": [
+      59.9285263,
+      23.5219234
+    ],
+    "name": "Mölli NOU",
+    "organizer": "UUDENMAAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Bernadetta Stenström",
+      "phone": "0449756595",
+      "email": "bernadetta.stenstrom@gmail.com"
+    },
+    "secretary": {
+      "name": "Ville Venell",
+      "phone": "0407494556",
+      "email": "ville.venell@yahoo.com"
+    },
+    "judges": [
+      "Eeva Toivonen",
+      "Ville Venell",
+      "Bernadetta Stenström"
+    ],
+    "description": "Etusija UMN taipparikurssilaisillle. Koe suoritetaan kolmella rastilla: vesityö, haku ja jälki samanaikaisesti.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": []
   },
   {
     "id": "KWG97H7W9K",
@@ -2060,16 +2102,16 @@
     "cost_member": 45,
     "classes": [
       {
+        "date": "2026-05-15T21:00:00.000Z",
         "places": 15,
+        "entries": 12,
         "judge": [
           {
+            "name": "Särkänlahti Jari",
             "official": true,
-            "id": 4055276,
-            "name": "Särkänlahti Jari"
+            "id": 4055276
           }
         ],
-        "date": "2026-05-15T21:00:00.000Z",
-        "entries": 10,
         "class": "ALO",
         "members": 8
       }
@@ -2108,8 +2150,9 @@
     "cost_member": 45,
     "classes": [
       {
-        "class": "AVO",
         "members": 2,
+        "class": "AVO",
+        "places": 15,
         "judge": [
           {
             "official": true,
@@ -2117,9 +2160,8 @@
             "name": "Särkänlahti Jari"
           }
         ],
-        "entries": 2,
-        "date": "2026-05-16T21:00:00.000Z",
-        "places": 15
+        "entries": 3,
+        "date": "2026-05-16T21:00:00.000Z"
       }
     ]
   },
@@ -2242,25 +2284,25 @@
     },
     "classes": [
       {
-        "members": 1,
         "judge": [],
         "class": "ALO",
         "entries": 3,
+        "members": 1,
+        "date": "2026-05-16T21:00:00.000Z"
+      },
+      {
+        "entries": 9,
+        "class": "AVO",
+        "judge": [],
+        "members": 5,
         "date": "2026-05-16T21:00:00.000Z"
       },
       {
         "date": "2026-05-16T21:00:00.000Z",
-        "members": 5,
-        "entries": 9,
-        "class": "AVO",
-        "judge": []
-      },
-      {
-        "date": "2026-05-16T21:00:00.000Z",
-        "entries": 4,
-        "members": 2,
-        "class": "VOI",
-        "judge": []
+        "judge": [],
+        "members": 3,
+        "entries": 5,
+        "class": "VOI"
       }
     ]
   },
