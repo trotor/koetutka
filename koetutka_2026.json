@@ -1203,40 +1203,40 @@
     },
     "classes": [
       {
-        "date": "2026-04-24T21:00:00.000Z",
-        "places": 0,
-        "class": "ALO",
-        "state": "invited",
-        "members": 9,
         "judge": [],
         "groups": [
           "kp"
         ],
+        "date": "2026-04-24T21:00:00.000Z",
+        "state": "invited",
+        "class": "ALO",
+        "members": 10,
+        "places": 0,
         "entries": 21
       },
       {
-        "class": "AVO",
         "judge": [],
+        "class": "AVO",
+        "entries": 19,
+        "members": 8,
         "date": "2026-04-24T21:00:00.000Z",
         "groups": [
           "kp"
         ],
-        "entries": 19,
         "places": 0,
-        "members": 8,
         "state": "invited"
       },
       {
+        "class": "VOI",
+        "date": "2026-04-24T21:00:00.000Z",
+        "places": 0,
         "groups": [
           "kp"
         ],
-        "entries": 35,
-        "state": "invited",
-        "date": "2026-04-24T21:00:00.000Z",
-        "places": 0,
         "judge": [],
-        "class": "VOI",
-        "members": 23
+        "state": "invited",
+        "members": 23,
+        "entries": 35
       }
     ]
   },
@@ -1420,31 +1420,31 @@
     "cost_member": 40,
     "classes": [
       {
+        "entries": 22,
         "members": 13,
-        "judge": [],
         "places": 0,
         "class": "ALO",
+        "date": "2026-04-26T00:00:00.000+03:00",
         "state": "invited",
-        "entries": 23,
-        "date": "2026-04-26T00:00:00.000+03:00"
+        "judge": []
       },
       {
-        "judge": [],
         "state": "invited",
-        "date": "2026-04-26T00:00:00.000+03:00",
         "places": 0,
         "entries": 16,
         "class": "AVO",
-        "members": 8
+        "members": 8,
+        "date": "2026-04-26T00:00:00.000+03:00",
+        "judge": []
       },
       {
-        "places": 0,
-        "date": "2026-04-26T00:00:00.000+03:00",
-        "judge": [],
         "class": "VOI",
+        "date": "2026-04-26T00:00:00.000+03:00",
         "members": 7,
-        "entries": 29,
-        "state": "invited"
+        "state": "invited",
+        "judge": [],
+        "entries": 28,
+        "places": 0
       }
     ]
   },
@@ -1572,28 +1572,28 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 9,
         "date": "2026-05-03T00:00:00.000+03:00",
+        "entries": 14,
         "judge": [],
-        "entries": 13,
         "state": "picked",
-        "class": "ALO"
+        "class": "ALO",
+        "members": 10
       },
       {
-        "class": "AVO",
         "date": "2026-05-03T00:00:00.000+03:00",
-        "state": "picked",
-        "members": 6,
         "entries": 6,
-        "judge": []
+        "state": "picked",
+        "judge": [],
+        "class": "AVO",
+        "members": 6
       },
       {
-        "judge": [],
-        "state": "picked",
-        "members": 10,
         "date": "2026-05-03T00:00:00.000+03:00",
         "entries": 20,
-        "class": "VOI"
+        "judge": [],
+        "state": "picked",
+        "class": "VOI",
+        "members": 10
       }
     ]
   },
@@ -1768,42 +1768,42 @@
     },
     "classes": [
       {
-        "entries": 22,
-        "date": "2026-05-08T21:00:00.000Z",
-        "judge": [
-          {
-            "id": 838709,
-            "official": true,
-            "name": "Luomanen Timo"
-          },
-          {
-            "name": "Siitari Heli",
-            "official": true,
-            "id": 355005
-          }
-        ],
+        "entries": 23,
         "class": "ALO",
-        "members": 11
-      },
-      {
+        "members": 11,
         "date": "2026-05-08T21:00:00.000Z",
-        "members": 2,
-        "class": "AVO",
-        "entries": 3,
         "judge": [
           {
+            "official": true,
             "name": "Luomanen Timo",
-            "id": 838709,
-            "official": true
+            "id": 838709
           },
           {
+            "id": 355005,
             "name": "Siitari Heli",
-            "official": true,
-            "id": 355005
+            "official": true
           }
         ]
       },
       {
+        "class": "AVO",
+        "judge": [
+          {
+            "name": "Luomanen Timo",
+            "id": 838709,
+            "official": true
+          },
+          {
+            "official": true,
+            "name": "Siitari Heli",
+            "id": 355005
+          }
+        ],
+        "date": "2026-05-08T21:00:00.000Z",
+        "members": 2,
+        "entries": 3
+      },
+      {
         "judge": [
           {
             "name": "Luomanen Timo",
@@ -1812,13 +1812,13 @@
           },
           {
             "name": "Siitari Heli",
-            "official": true,
-            "id": 355005
+            "id": 355005,
+            "official": true
           }
         ],
+        "class": "VOI",
         "date": "2026-05-08T21:00:00.000Z",
         "entries": 6,
-        "class": "VOI",
         "members": 5
       }
     ]
@@ -2021,28 +2021,28 @@
     "cost_member": 35,
     "classes": [
       {
+        "members": 5,
         "date": "2026-05-15T21:00:00.000Z",
-        "entries": 4,
-        "places": 30,
         "judge": [],
         "class": "ALO",
-        "members": 4
-      },
-      {
-        "date": "2026-05-15T21:00:00.000Z",
-        "entries": 4,
         "places": 30,
-        "judge": [],
-        "class": "AVO",
-        "members": 1
+        "entries": 5
       },
       {
-        "date": "2026-05-16T21:00:00.000Z",
+        "class": "AVO",
+        "members": 1,
+        "date": "2026-05-15T21:00:00.000Z",
+        "judge": [],
         "entries": 4,
+        "places": 30
+      },
+      {
+        "members": 4,
+        "class": "VOI",
         "places": 60,
         "judge": [],
-        "class": "VOI",
-        "members": 4
+        "date": "2026-05-16T21:00:00.000Z",
+        "entries": 4
       }
     ]
   },
@@ -2080,15 +2080,15 @@
     "cost_member": 42,
     "classes": [
       {
-        "date": "2026-05-15T21:00:00.000Z",
-        "entries": 17,
+        "members": 10,
         "class": "ALO",
-        "members": 9
+        "date": "2026-05-15T21:00:00.000Z",
+        "entries": 18
       },
       {
-        "date": "2026-05-15T21:00:00.000Z",
         "class": "AVO",
         "members": 7,
+        "date": "2026-05-15T21:00:00.000Z",
         "entries": 15
       }
     ]
@@ -2127,14 +2127,14 @@
     "classes": [
       {
         "date": "2026-05-15T21:00:00.000Z",
-        "places": 15,
         "judge": [
           {
             "name": "Lappalainen Mika",
-            "official": true,
-            "id": 882887
+            "id": 882887,
+            "official": true
           }
         ],
+        "places": 15,
         "class": "ALO"
       }
     ]
@@ -2177,10 +2177,10 @@
     },
     "classes": [
       {
-        "entries": 8,
-        "members": 3,
-        "date": "2026-05-16T00:00:00.000+03:00",
         "class": "VOI",
+        "entries": 9,
+        "members": 4,
+        "date": "2026-05-16T00:00:00.000+03:00",
         "judge": []
       }
     ]
@@ -2257,7 +2257,7 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-05-15T21:00:00.000Z",
+        "places": 15,
         "judge": [
           {
             "name": "Särkänlahti Jari",
@@ -2265,10 +2265,10 @@
             "official": true
           }
         ],
-        "places": 15,
-        "members": 16,
-        "class": "ALO",
-        "entries": 22
+        "date": "2026-05-15T21:00:00.000Z",
+        "members": 17,
+        "entries": 24,
+        "class": "ALO"
       }
     ]
   },
@@ -2312,11 +2312,11 @@
             "official": true
           }
         ],
-        "places": 15,
+        "members": 3,
+        "entries": 6,
         "date": "2026-05-16T21:00:00.000Z",
-        "members": 2,
-        "entries": 5,
-        "class": "AVO"
+        "class": "AVO",
+        "places": 15
       }
     ]
   },
@@ -2439,25 +2439,25 @@
     },
     "classes": [
       {
-        "class": "ALO",
-        "entries": 11,
+        "members": 9,
+        "date": "2026-05-16T21:00:00.000Z",
         "judge": [],
-        "members": 8,
-        "date": "2026-05-16T21:00:00.000Z"
+        "class": "ALO",
+        "entries": 12
       },
       {
         "entries": 15,
-        "judge": [],
         "class": "AVO",
+        "judge": [],
         "date": "2026-05-16T21:00:00.000Z",
         "members": 6
       },
       {
-        "entries": 8,
         "class": "VOI",
-        "date": "2026-05-16T21:00:00.000Z",
+        "entries": 9,
         "judge": [],
-        "members": 3
+        "members": 4,
+        "date": "2026-05-16T21:00:00.000Z"
       }
     ]
   },
@@ -3570,7 +3570,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": []
@@ -4269,28 +4269,27 @@
       "Sarkkinen Tomi",
       "Torila Mika"
     ],
-    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e. Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.\n\nHuom!! Seuraavana päivänä normi kolmen luokan WT samassa paikassa!  Jos et starttaa kokeessa, mutta haluaisit nähdä aitiopaikalta mitä kokeessa tapahtuu,\non talkoileminen hyvä vaihtoehto. Ota vastaavaan koetoimitsijaan yhteyttä, ja varaa paikkasi hyvässä seurassa. Talkoiluun ei tarvitse olla järjestävän yhdistyksen jäsen.\n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset (aamupala 7e,-ja juhlaillallinen 25e) kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
+    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat\nsaavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen\nilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. \n\nIlmoittautumismaksu sisältää keittolounaan. Saman ohjaajan toinen koira 50e. Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.\n\nHuom!! Seuraavana päivänä normi kolmen luokan WT samassa paikassa!  Jos et starttaa kokeessa, mutta haluaisit nähdä aitiopaikalta mitä kokeessa tapahtuu,\non talkoileminen hyvä vaihtoehto. Ota vastaavaan koetoimitsijaan yhteyttä, ja varaa paikkasi hyvässä seurassa. Talkoiluun ei tarvitse olla järjestävän yhdistyksen jäsen.\n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset (aamupala 7e,-ja juhlaillallinen 25e) kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
     "cost": {
       "optionalAdditionalCosts": [
         {
-          "cost": 12,
           "description": {
             "fi": "Ilmoittautumismaksu sis. keittolounaan",
             "en": ""
-          }
+          },
+          "cost": 12
         }
       ],
-      "normal": 60,
       "custom": {
+        "cost": 50,
         "description": {
           "fi": "Saman ohjaajan 2.koira",
           "en": ""
-        },
-        "cost": 50
-      }
+        }
+      },
+      "normal": 60
     },
     "cost_member": {
-      "normal": 0,
       "optionalAdditionalCosts": [
         {
           "cost": 12,
@@ -4300,16 +4299,18 @@
           }
         }
       ],
+      "normal": 0,
       "custom": {
         "description": {
-          "en": "",
-          "fi": "Saman ohjaajan 2.koira"
+          "fi": "Saman ohjaajan 2.koira",
+          "en": ""
         },
         "cost": 0
       }
     },
     "classes": [
       {
+        "date": "2026-06-26T21:00:00.000Z",
         "class": "VOI",
         "judge": [
           {
@@ -4318,22 +4319,21 @@
             "id": 881593
           },
           {
-            "name": "Fontell Ari-Pekka",
             "official": true,
-            "id": 842408
+            "id": 842408,
+            "name": "Fontell Ari-Pekka"
           },
           {
             "name": "Torila Mika",
-            "id": 350200,
-            "official": true
+            "official": true,
+            "id": 350200
           },
           {
             "official": true,
             "name": "Sarkkinen Tomi",
             "id": 893896
           }
-        ],
-        "date": "2026-06-26T21:00:00.000Z"
+        ]
       }
     ]
   },
@@ -4368,27 +4368,15 @@
       "Tenhunen Matti",
       "Torila Mika"
     ],
-    "description": "Koemaksu sisältää keittolounaan. Saman ohjaajan toinen koira 40e jäsen/45e ei-jäsen.Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu. \n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset (aamupala 7e,-ja juhlaillallinen 25e) kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
+    "description": "Koemaksu sisältää keittolounaan. Saman ohjaajan toinen koira 40e jäsen/45e ei-jäsen. Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu. \n\nKilpailijoiden ja yleisön majoitus,-sekä ruokailuvaraukset (aamupala 7e,-ja juhlaillallinen 25e) kilpailijoiden lounasta lukuunottamatta suoraan Matkailutila Surkeejärveltä. \ntoimisto@matkailutilasurkeenjarvi.fi \np. 050 596 9999",
     "cost": {
-      "optionalAdditionalCosts": [
-        {
-          "cost": 12,
-          "description": {
-            "en": "",
-            "fi": "Osallistumismaksu sis. keittolounaan"
-          }
-        }
-      ],
-      "normal": 55,
       "custom": {
         "cost": 45,
         "description": {
           "en": "",
           "fi": "Saman ohjaajan 2.koira 45e, jäsenille 40e"
         }
-      }
-    },
-    "cost_member": {
+      },
       "optionalAdditionalCosts": [
         {
           "cost": 12,
@@ -4398,33 +4386,45 @@
           }
         }
       ],
-      "normal": 50,
+      "normal": 55
+    },
+    "cost_member": {
       "custom": {
         "cost": 40,
         "description": {
           "fi": "Saman ohjaajan 2.koira 45e, jäsenille 40e",
           "en": ""
         }
-      }
+      },
+      "optionalAdditionalCosts": [
+        {
+          "cost": 12,
+          "description": {
+            "fi": "Osallistumismaksu sis. keittolounaan",
+            "en": ""
+          }
+        }
+      ],
+      "normal": 50
     },
     "classes": [
       {
-        "judge": [],
+        "date": "2026-06-27T21:00:00.000Z",
         "class": "ALO",
         "places": 0,
-        "date": "2026-06-27T21:00:00.000Z"
+        "judge": []
       },
       {
-        "places": 0,
         "class": "AVO",
+        "places": 0,
         "judge": [],
         "date": "2026-06-27T21:00:00.000Z"
       },
       {
+        "date": "2026-06-27T21:00:00.000Z",
         "places": 0,
-        "judge": [],
         "class": "VOI",
-        "date": "2026-06-27T21:00:00.000Z"
+        "judge": []
       }
     ]
   },
@@ -6906,30 +6906,30 @@
       "Hiltunen Taru",
       "Hiltunen Niko"
     ],
-    "description": " Keski-Suomen Kennelpiirin alueella asuminen tai järjestävän yhdistyksen jäsenyys ei oikeuta halvempaan ilmoittautumismaksuun. Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "description": "Keski-Suomen Kennelpiirin alueella asuminen tai järjestävän yhdistyksen jäsenyys ei oikeuta halvempaan ilmoittautumismaksuun. Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu.Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 50,
     "classes": [
       {
-        "date": "2026-08-15T00:00:00.000+03:00",
-        "class": "VOI",
         "judge": [
           {
-            "official": true,
             "id": 554006,
-            "name": "Hukkanen Tuija"
-          },
-          {
-            "id": 736508,
-            "official": true,
-            "name": "Hiltunen Taru"
-          },
-          {
-            "id": 644029,
-            "name": "Hiltunen Niko",
+            "name": "Hukkanen Tuija",
             "official": true
+          },
+          {
+            "name": "Hiltunen Taru",
+            "official": true,
+            "id": 736508
+          },
+          {
+            "name": "Hiltunen Niko",
+            "official": true,
+            "id": 644029
           }
-        ]
+        ],
+        "date": "2026-08-15T00:00:00.000+03:00",
+        "class": "VOI"
       }
     ]
   },
@@ -7299,20 +7299,20 @@
     "judges": [
       "Hiltunen Niko"
     ],
-    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu.Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": [
       {
+        "class": "ALO",
+        "date": "2026-08-16T00:00:00.000+03:00",
         "judge": [
           {
             "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
+            "id": 736508,
+            "official": true
           }
-        ],
-        "class": "ALO",
-        "date": "2026-08-16T00:00:00.000+03:00"
+        ]
       }
     ]
   },
@@ -7436,19 +7436,19 @@
     "judges": [
       "Hiltunen Taru"
     ],
-    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": [
       {
-        "class": "AVO",
         "judge": [
           {
+            "official": true,
             "id": 736508,
-            "name": "Hiltunen Taru",
-            "official": true
+            "name": "Hiltunen Taru"
           }
         ],
+        "class": "AVO",
         "date": "2026-08-16T00:00:00.000+03:00"
       }
     ]
@@ -8647,7 +8647,7 @@
     "judges": [
       "Purtola Susanna"
     ],
-    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
     "classes": []
@@ -9042,13 +9042,13 @@
       "Siitari Heli",
       "Luomanen Timo"
     ],
-    "description": "Koemaksu palautetaan täysimääräisenä vain Kennelliiton määrämästä syystä. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu.Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": {
       "optionalAdditionalCosts": [
         {
           "description": {
-            "en": "",
-            "fi": "Osallistumismaksu sisältää keittolounaan"
+            "fi": "Osallistumismaksu sisältää keittolounaan",
+            "en": ""
           },
           "cost": 18
         }
@@ -9056,16 +9056,16 @@
       "normal": 63
     },
     "cost_member": {
+      "normal": 58,
       "optionalAdditionalCosts": [
         {
+          "cost": 18,
           "description": {
-            "en": "",
-            "fi": "Osallistumismaksu sisältää keittolounaan"
-          },
-          "cost": 18
+            "fi": "Osallistumismaksu sisältää keittolounaan",
+            "en": ""
+          }
         }
-      ],
-      "normal": 58
+      ]
     },
     "classes": [
       {
