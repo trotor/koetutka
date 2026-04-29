@@ -1773,6 +1773,25 @@
         "judge": [
           {
             "name": "Luomanen Timo",
+            "id": 838709,
+            "official": true
+          },
+          {
+            "name": "Siitari Heli",
+            "id": 355005,
+            "official": true
+          }
+        ],
+        "entries": 28,
+        "date": "2026-05-08T21:00:00.000Z",
+        "members": 12,
+        "class": "ALO"
+      },
+      {
+        "date": "2026-05-08T21:00:00.000Z",
+        "judge": [
+          {
+            "name": "Luomanen Timo",
             "official": true,
             "id": 838709
           },
@@ -1782,42 +1801,23 @@
             "id": 355005
           }
         ],
-        "date": "2026-05-08T21:00:00.000Z",
-        "class": "ALO",
-        "members": 11,
-        "entries": 27
-      },
-      {
-        "date": "2026-05-08T21:00:00.000Z",
-        "members": 2,
-        "judge": [
-          {
-            "official": true,
-            "id": 838709,
-            "name": "Luomanen Timo"
-          },
-          {
-            "name": "Siitari Heli",
-            "official": true,
-            "id": 355005
-          }
-        ],
         "class": "AVO",
+        "members": 2,
         "entries": 4
       },
       {
-        "entries": 7,
         "date": "2026-05-08T21:00:00.000Z",
+        "entries": 7,
         "judge": [
           {
-            "name": "Luomanen Timo",
             "id": 838709,
+            "name": "Luomanen Timo",
             "official": true
           },
           {
+            "id": 355005,
             "name": "Siitari Heli",
-            "official": true,
-            "id": 355005
+            "official": true
           }
         ],
         "class": "VOI",
@@ -2023,28 +2023,28 @@
     "cost_member": 35,
     "classes": [
       {
-        "places": 30,
-        "entries": 10,
+        "judge": [],
+        "class": "ALO",
+        "entries": 11,
         "date": "2026-05-15T21:00:00.000Z",
         "members": 8,
-        "judge": [],
-        "class": "ALO"
+        "places": 30
       },
       {
+        "entries": 5,
+        "judge": [],
         "class": "AVO",
         "date": "2026-05-15T21:00:00.000Z",
-        "members": 2,
         "places": 30,
-        "entries": 5,
-        "judge": []
+        "members": 2
       },
       {
+        "members": 9,
         "judge": [],
         "entries": 9,
-        "members": 9,
-        "places": 60,
         "date": "2026-05-16T21:00:00.000Z",
-        "class": "VOI"
+        "class": "VOI",
+        "places": 60
       }
     ]
   },
@@ -2128,17 +2128,17 @@
     "cost_member": 45,
     "classes": [
       {
-        "entries": 8,
         "date": "2026-05-15T21:00:00.000Z",
+        "members": 3,
+        "entries": 10,
         "judge": [
           {
-            "name": "Lappalainen Mika",
             "official": true,
+            "name": "Lappalainen Mika",
             "id": 882887
           }
         ],
         "class": "ALO",
-        "members": 1,
         "places": 15
       }
     ]
@@ -2995,18 +2995,18 @@
     },
     "classes": [
       {
-        "places": 15,
-        "date": "2026-06-05T21:00:00.000Z",
+        "members": 4,
         "judge": [
           {
-            "name": "Hiltunen Taru",
             "id": 736508,
-            "official": true
+            "official": true,
+            "name": "Hiltunen Taru"
           }
         ],
+        "places": 15,
         "class": "AVO",
-        "members": 2,
-        "entries": 2
+        "date": "2026-06-05T21:00:00.000Z",
+        "entries": 4
       }
     ]
   },
@@ -3360,7 +3360,7 @@
       60.8973271,
       24.2854098
     ],
-    "name": "",
+    "name": "AVO",
     "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
       "name": "Heidi Savander",
@@ -3382,14 +3382,14 @@
       {
         "places": 15,
         "date": "2026-06-06T21:00:00.000Z",
-        "class": "AVO",
         "judge": [
           {
+            "official": true,
             "name": "Fontell Ari-Pekka",
-            "id": 842408,
-            "official": true
+            "id": 842408
           }
-        ]
+        ],
+        "class": "AVO"
       }
     ]
   },
@@ -3463,6 +3463,12 @@
     },
     "classes": [
       {
+        "groups": [
+          "kp"
+        ],
+        "entries": 1,
+        "places": 7,
+        "date": "2026-06-06T21:00:00.000Z",
         "class": "ALO",
         "judge": [
           {
@@ -3471,11 +3477,7 @@
             "id": 450758
           }
         ],
-        "places": 7,
-        "groups": [
-          "kp"
-        ],
-        "date": "2026-06-06T21:00:00.000Z"
+        "members": 1
       }
     ]
   },
@@ -4512,17 +4514,14 @@
     "date_sort": "2026-07-03T00:00:00+03:00",
     "end_date_sort": "2026-07-03T00:00:00+03:00",
     "entry_date": "08.06.-24.06.",
-    "location": "Korpilahti",
-    "coordinates": [
-      62.0431892,
-      25.5801114
-    ],
+    "location": "Korpilahti, Surkeenjärvi",
+    "coordinates": null,
     "name": "Tolleritaipparit",
     "organizer": "NOVASCOTIANNOUTAJAT RY",
     "official": {
       "name": "Heidi Savander",
       "phone": "",
-      "email": ""
+      "email": "heidi.savander@gmail.com"
     },
     "secretary": {
       "name": "Maija Mäkinen",
@@ -4530,7 +4529,7 @@
       "email": "koetolleri@gmail.com"
     },
     "judges": [
-      "Toskala Mika"
+      "Jumisko Riitta"
     ],
     "description": "Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 5 € pankkikulu. Huom: kokeessa hakuruudussa riistana on naakka, vesityössä sorsa.",
     "cost": 55,
@@ -4676,9 +4675,9 @@
         "judge": []
       },
       {
+        "judge": [],
         "date": "2026-07-04T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": []
+        "class": "VOI"
       }
     ]
   },
@@ -6009,7 +6008,7 @@
     "date": "31.-01.08.2026",
     "date_sort": "2026-07-31T21:00:00+00:00",
     "end_date_sort": "2026-08-01T23:59:59.999000+03:00",
-    "entry_date": "19.06.-10.07.",
+    "entry_date": "19.06.-19.07.",
     "location": "Kouvola",
     "coordinates": [
       60.8679237,
@@ -6018,21 +6017,28 @@
     "name": "Labradori Derby",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
-      "name": "",
+      "name": "Timo Rantanen",
       "phone": "",
-      "email": ""
+      "email": "timo.rantanen81@gmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Lotta Vuorinen",
       "phone": "",
-      "email": ""
+      "email": "lotta@mouldhills.com"
     },
     "judges": [
-      ""
+      "Martina Gollner",
+      "Gernot Gollner",
+      "Irena Jurkowska",
+      "Grzegorz Duda"
     ],
-    "description": "Karsinnat lauantaina 1.8. ja finaali sunnuntaina 2.8. Ilmoittautumiset lauantain karsintaan. Derby on tarkoitettu alle 2-vuotiaille labradorinnoutajille, jotka eivät aiemmin ole osallistuneet Derbyyn. ",
-    "cost": "",
-    "cost_member": "",
+    "description": "Karsinnat lauantaina 1.8. ja finaali sunnuntaina 2.8. Ilmoittautumiset lauantain karsintaan. Derby on tarkoitettu alle 2-vuotiaille labradorinnoutajille, jotka eivät aiemmin ole osallistuneet Derbyyn. \n\nDerbyssä käydään joukkuekilpailu! Joukkue muodostuu kolmesta saman pentueen koirasta. Koirat osallistuvat normaalisti Derbyyn ja joukkueen pisteet lasketaan lauantain yksilötehtävien mukaisesti. Joukkueen koirat ilmoittautuvat normaalisti koekalenterin kautta ja laittavat koekalenterin lisätietoja-kohtaan joukkueen nimen, mihin osallistuvat.\n\nLISÄTIEDOT\nKoepaikkana toimii Nuorisokeskus Anjala Kouvolassa.\nKoepaikalta voi varata majoituksia (koirahuoneita rajoitetusti) info@ankkapurha.fi tai puh. 040 5400 049 \nMajoitusten hinta 50 €/ hlö/ yö, lemmikkimaksu 15 €/ huone. Aamupala 9,90 €/ hlö/ pvä.\n\nILLALLINEN\nJuhlaillallinen lauantai-iltana koepaikalla Ravintola Ankkapurhassa. Illallisvaraukset www.labradori.fi -sivulla olevalla lomakkeella 8.7. mennessä. Illallisen hinta 50 €/ hlö. HUOM! ILLALLINEN EI SISÄLLY OSALLISTUMISMAKSUUN!\n\nhttps://www.labradori.fi/tapahtumat/derby-mestaruus-2/",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 55
+    },
     "classes": []
   },
   {
@@ -6084,21 +6090,28 @@
     "name": "Labradorimestaruus",
     "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
     "official": {
-      "name": "",
+      "name": "Timo Rantanen",
       "phone": "",
-      "email": ""
+      "email": "timo.rantanen81@gmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Lotta Vuorinen",
       "phone": "",
-      "email": ""
+      "email": "lotta@mouldhills.com"
     },
     "judges": [
-      ""
+      "Martina Gollner",
+      "Gernot Gollner",
+      "Irena Jurkowska",
+      "Grzegorz Duda"
     ],
-    "description": "Karsinnat lauantaina 1.8. ja finaali sunnuntaina 2.8. Ilmoittautumiset lauantain karsintaan. Mestaruus on avoin kaikille labradorinnoutajille. ",
-    "cost": "",
-    "cost_member": "",
+    "description": "Karsinnat lauantaina 1.8. ja finaali sunnuntaina 2.8. Ilmoittautumiset lauantain karsintaan. Mestaruus on avoin kaikille labradorinnoutajille. \n\nLISÄTIEDOT\nKoepaikkana toimii Nuorisokeskus Anjala Kouvolassa.\nKoepaikalta voi varata majoituksia (koirahuoneita rajoitetusti) info@ankkapurha.fi tai puh. 040 5400 049 \nMajoitusten hinta 50 €/ hlö/ yö, lemmikkimaksu 15 €/ huone. Aamupala 9,90 €/ hlö/ pvä.\n\nILLALLINEN\nJuhlaillallinen lauantai-iltana koepaikalla Ravintola Ankkapurhassa. Illallisvaraukset www.labradori.fi -sivulle avautuvalla lomakkeella 8.7. mennessä. Illallisen hinta 50 €/ hlö. HUOM! ILLALLINEN EI SISÄLLY OSALLISTUMISMAKSUUN!\n\nhttps://www.labradori.fi/tapahtumat/derby-mestaruus-2/",
+    "cost": {
+      "normal": 65
+    },
+    "cost_member": {
+      "normal": 65
+    },
     "classes": []
   },
   {
