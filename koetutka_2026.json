@@ -2032,31 +2032,31 @@
     "cost_member": 35,
     "classes": [
       {
-        "members": 10,
         "judge": [],
         "date": "2026-05-15T21:00:00.000Z",
-        "entries": 15,
+        "class": "ALO",
+        "members": 10,
         "state": "invited",
         "places": 30,
-        "class": "ALO"
+        "entries": 15
       },
       {
+        "members": 4,
         "entries": 8,
-        "date": "2026-05-15T21:00:00.000Z",
+        "judge": [],
+        "places": 30,
         "class": "AVO",
         "state": "invited",
-        "places": 30,
-        "judge": [],
-        "members": 4
+        "date": "2026-05-15T21:00:00.000Z"
       },
       {
-        "class": "VOI",
+        "places": 60,
         "date": "2026-05-16T21:00:00.000Z",
         "judge": [],
-        "entries": 34,
-        "places": 60,
         "state": "invited",
-        "members": 30
+        "members": 31,
+        "entries": 36,
+        "class": "VOI"
       }
     ]
   },
@@ -2145,16 +2145,16 @@
         "members": 8,
         "judge": [
           {
-            "name": "Lappalainen Mika",
             "id": 882887,
-            "official": true
+            "official": true,
+            "name": "Lappalainen Mika"
           }
         ],
-        "entries": 23,
         "places": 15,
-        "state": "picked",
         "date": "2026-05-15T21:00:00.000Z",
-        "class": "ALO"
+        "state": "invited",
+        "class": "ALO",
+        "entries": 23
       }
     ]
   },
@@ -2277,19 +2277,19 @@
     "cost_member": 45,
     "classes": [
       {
+        "class": "ALO",
+        "places": 15,
+        "entries": 24,
         "judge": [
           {
+            "official": true,
             "id": 4055276,
-            "name": "Särkänlahti Jari",
-            "official": true
+            "name": "Särkänlahti Jari"
           }
         ],
-        "entries": 24,
-        "members": 17,
         "date": "2026-05-15T21:00:00.000Z",
-        "state": "picked",
-        "class": "ALO",
-        "places": 15
+        "state": "invited",
+        "members": 17
       }
     ]
   },
@@ -2326,19 +2326,19 @@
     "cost_member": 45,
     "classes": [
       {
+        "class": "AVO",
+        "entries": 15,
+        "state": "invited",
         "date": "2026-05-16T21:00:00.000Z",
+        "places": 15,
+        "members": 8,
         "judge": [
           {
             "id": 4055276,
             "name": "Särkänlahti Jari",
             "official": true
           }
-        ],
-        "members": 8,
-        "class": "AVO",
-        "places": 15,
-        "entries": 15,
-        "state": "picked"
+        ]
       }
     ]
   },
@@ -2411,6 +2411,10 @@
     "classes": [
       {
         "date": "2026-05-16T21:00:00.000Z",
+        "entries": 19,
+        "class": "ALO",
+        "places": 15,
+        "state": "picked",
         "judge": [
           {
             "name": "Lappalainen Mika",
@@ -2418,11 +2422,7 @@
             "id": 882887
           }
         ],
-        "entries": 20,
-        "members": 8,
-        "class": "ALO",
-        "places": 15,
-        "state": "picked"
+        "members": 8
       }
     ]
   },
@@ -2528,7 +2528,13 @@
     },
     "classes": [
       {
+        "groups": [
+          "ip"
+        ],
         "members": 0,
+        "date": "2026-05-20T21:00:00.000Z",
+        "entries": 17,
+        "class": "ALO",
         "judge": [
           {
             "official": false,
@@ -2536,39 +2542,31 @@
             "id": -1
           },
           {
-            "official": false,
             "id": -2,
+            "official": false,
             "name": "Mika Laine"
           },
           {
-            "name": "Erkki Peltonen",
             "official": false,
+            "name": "Erkki Peltonen",
             "id": -3
           }
-        ],
-        "date": "2026-05-20T21:00:00.000Z",
-        "groups": [
-          "ip"
-        ],
-        "entries": 16,
-        "class": "ALO"
+        ]
       },
       {
-        "members": 0,
         "groups": [
           "ip"
         ],
-        "entries": 5,
         "judge": [
           {
-            "id": -1,
             "name": "Pekka Lahti",
-            "official": false
+            "official": false,
+            "id": -1
           },
           {
-            "official": false,
             "id": -2,
-            "name": "Mika Laine"
+            "name": "Mika Laine",
+            "official": false
           },
           {
             "id": -3,
@@ -2576,11 +2574,12 @@
             "official": false
           }
         ],
+        "date": "2026-05-20T21:00:00.000Z",
+        "entries": 5,
         "class": "AVO",
-        "date": "2026-05-20T21:00:00.000Z"
+        "members": 0
       },
       {
-        "members": 0,
         "entries": 7,
         "judge": [
           {
@@ -2594,16 +2593,17 @@
             "official": false
           },
           {
-            "official": false,
             "id": -3,
-            "name": "Erkki Peltonen"
+            "name": "Erkki Peltonen",
+            "official": false
           }
         ],
         "date": "2026-05-20T21:00:00.000Z",
+        "class": "VOI",
         "groups": [
           "ip"
         ],
-        "class": "VOI"
+        "members": 0
       }
     ]
   },
@@ -2722,8 +2722,11 @@
     "cost_member": 45,
     "classes": [
       {
-        "places": 15,
+        "state": "picked",
         "members": 6,
+        "places": 15,
+        "entries": 21,
+        "date": "2026-05-23T21:00:00.000Z",
         "judge": [
           {
             "name": "Tenhunen Juha",
@@ -2731,8 +2734,6 @@
             "id": 999999
           }
         ],
-        "entries": 21,
-        "date": "2026-05-23T21:00:00.000Z",
         "class": "ALO"
       }
     ]
@@ -3014,7 +3015,8 @@
       "email": "miltsie@gmail.com"
     },
     "judges": [
-      "Sihvonen Tapio"
+      "Sihvonen Tapio",
+      "Tenhonen Tanja"
     ],
     "description": "",
     "cost": {
@@ -3184,32 +3186,32 @@
     "cost_member": 45,
     "classes": [
       {
-        "places": 15,
         "judge": [
           {
             "official": true,
-            "id": 697689,
-            "name": "Toskala Mika"
+            "name": "Toskala Mika",
+            "id": 697689
           }
         ],
         "class": "ALO",
         "date": "2026-06-05T21:00:00.000Z",
-        "members": 1,
-        "entries": 4
+        "entries": 5,
+        "places": 15,
+        "members": 1
       },
       {
-        "class": "ALO",
-        "entries": 4,
-        "members": 1,
-        "date": "2026-06-06T21:00:00.000Z",
+        "entries": 5,
         "judge": [
           {
             "official": true,
-            "id": 697689,
-            "name": "Toskala Mika"
+            "name": "Toskala Mika",
+            "id": 697689
           }
         ],
-        "places": 15
+        "date": "2026-06-06T21:00:00.000Z",
+        "places": 15,
+        "class": "ALO",
+        "members": 1
       }
     ]
   },
@@ -3319,28 +3321,28 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
+        "entries": 14,
         "places": 40,
-        "members": 5,
         "class": "ALO",
         "date": "2026-06-05T21:00:00.000Z",
-        "entries": 12
+        "members": 6,
+        "judge": []
       },
       {
-        "entries": 13,
-        "places": 20,
         "judge": [],
-        "date": "2026-06-05T21:00:00.000Z",
+        "places": 20,
         "class": "AVO",
-        "members": 5
+        "members": 6,
+        "date": "2026-06-05T21:00:00.000Z",
+        "entries": 14
       },
       {
         "places": 20,
-        "entries": 6,
-        "date": "2026-06-05T21:00:00.000Z",
+        "entries": 7,
+        "members": 2,
         "judge": [],
-        "class": "VOI",
-        "members": 2
+        "date": "2026-06-05T21:00:00.000Z",
+        "class": "VOI"
       }
     ]
   },
@@ -3692,7 +3694,7 @@
     "judges": [
       "Hiltunen Taru"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
@@ -3730,39 +3732,39 @@
     "cost_member": 45,
     "classes": [
       {
-        "places": 15,
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "entries": 3,
         "judge": [
           {
-            "name": "Majuri Pasi",
             "official": true,
+            "name": "Majuri Pasi",
             "id": 850900
           }
         ],
-        "class": "ALO",
-        "entries": 1,
-        "members": 1,
+        "members": 2,
+        "places": 15,
         "date": "2026-06-12T21:00:00.000Z",
-        "groups": [
-          "ap",
-          "ip"
-        ]
+        "class": "ALO"
       },
       {
-        "class": "AVO",
-        "members": 0,
-        "places": 8,
-        "judge": [
-          {
-            "official": true,
-            "id": 850900,
-            "name": "Majuri Pasi"
-          }
-        ],
         "date": "2026-06-13T21:00:00.000Z",
+        "members": 0,
+        "class": "AVO",
         "groups": [
           "ap",
           "ip"
         ],
+        "judge": [
+          {
+            "id": 850900,
+            "name": "Majuri Pasi",
+            "official": true
+          }
+        ],
+        "places": 8,
         "entries": 0
       }
     ]
@@ -3800,18 +3802,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 4,
-        "class": "ALO",
-        "places": 15,
-        "entries": 5,
-        "date": "2026-06-12T21:00:00.000Z",
         "judge": [
           {
-            "id": 875766,
             "official": true,
-            "name": "Tuominen Petri"
+            "name": "Tuominen Petri",
+            "id": 875766
           }
-        ]
+        ],
+        "entries": 6,
+        "class": "ALO",
+        "places": 15,
+        "members": 5,
+        "date": "2026-06-12T21:00:00.000Z"
       }
     ]
   },
@@ -3972,10 +3974,9 @@
     "cost_member": 45,
     "classes": [
       {
-        "entries": 9,
-        "places": 12,
         "members": 3,
-        "date": "2026-06-12T21:00:00.000Z",
+        "places": 12,
+        "entries": 10,
         "class": "VOI",
         "judge": [
           {
@@ -3983,14 +3984,15 @@
             "official": true,
             "name": "Salonen Susanna"
           }
-        ]
+        ],
+        "date": "2026-06-12T21:00:00.000Z"
       },
       {
         "class": "VOI",
-        "entries": 9,
+        "entries": 10,
+        "places": 12,
         "members": 3,
         "date": "2026-06-13T21:00:00.000Z",
-        "places": 12,
         "judge": [
           {
             "name": "Salonen Susanna",
@@ -4029,21 +4031,21 @@
     "judges": [
       "Hiltunen Niko"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
       {
         "class": "ALO",
-        "date": "2026-06-12T21:00:00.000Z",
         "judge": [
           {
-            "name": "Hiltunen Niko",
             "official": true,
-            "id": 644029
+            "id": 644029,
+            "name": "Hiltunen Niko"
           }
         ],
-        "places": 15
+        "places": 15,
+        "date": "2026-06-12T21:00:00.000Z"
       }
     ]
   },
@@ -4144,12 +4146,11 @@
     "judges": [
       "Hiltunen Niko"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
       {
-        "class": "AVO",
         "places": 15,
         "judge": [
           {
@@ -4158,7 +4159,8 @@
             "id": 644029
           }
         ],
-        "date": "2026-06-13T21:00:00.000Z"
+        "date": "2026-06-13T21:00:00.000Z",
+        "class": "AVO"
       }
     ]
   },
@@ -4281,7 +4283,7 @@
     "judges": [
       "Hiltunen Taru"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": {
       "normal": 55
     },
@@ -4295,9 +4297,9 @@
         "date": "2026-06-13T21:00:00.000Z",
         "judge": [
           {
+            "name": "Hiltunen Taru",
             "id": 736508,
-            "official": true,
-            "name": "Hiltunen Taru"
+            "official": true
           }
         ]
       }
@@ -4341,10 +4343,9 @@
     },
     "classes": [
       {
-        "members": 1,
-        "entries": 2,
-        "date": "2026-06-13T21:00:00.000Z",
+        "class": "ALO",
         "places": 15,
+        "entries": 2,
         "judge": [
           {
             "name": "Turunen Vesa",
@@ -4352,23 +4353,24 @@
             "official": true
           }
         ],
-        "class": "ALO"
+        "date": "2026-06-13T21:00:00.000Z",
+        "members": 1
       },
       {
-        "entries": 2,
         "date": "2026-06-13T21:00:00.000Z",
         "places": 15,
-        "members": 1,
-        "class": "AVO",
+        "entries": 4,
+        "members": 2,
         "judge": [
           {
             "name": "Gustafsson Anders",
-            "country": "SE",
-            "official": false,
             "foreing": true,
-            "id": -1
+            "id": -1,
+            "official": false,
+            "country": "SE"
           }
-        ]
+        ],
+        "class": "AVO"
       }
     ]
   },
@@ -4950,14 +4952,16 @@
     "cost_member": 35,
     "classes": [
       {
-        "date": "2026-07-07T00:00:00.000+03:00",
+        "judge": [],
         "class": "ALO",
-        "judge": []
+        "date": "2026-07-06T21:00:00.000Z",
+        "places": 25
       },
       {
-        "date": "2026-07-07T00:00:00.000+03:00",
+        "date": "2026-07-06T21:00:00.000Z",
         "class": "AVO",
-        "judge": []
+        "judge": [],
+        "places": 25
       }
     ]
   },
@@ -4997,9 +5001,9 @@
     "cost_member": 45,
     "classes": [
       {
+        "judge": [],
         "date": "2026-07-07T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": []
+        "class": "VOI"
       }
     ]
   },
@@ -5205,13 +5209,18 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-07-11T00:00:00.000+03:00",
         "class": "AVO",
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "places": 15,
+        "date": "2026-07-10T21:00:00.000Z",
         "judge": [
           {
-            "name": "Särkänlahti Jari",
             "official": true,
-            "id": 4055276
+            "id": 4055276,
+            "name": "Särkänlahti Jari"
           }
         ]
       }
@@ -5250,27 +5259,27 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-07-10T21:00:00.000Z",
+        "class": "ALO",
         "places": 15,
+        "date": "2026-07-10T21:00:00.000Z",
         "judge": [
           {
-            "name": "Lappalainen Mika",
+            "id": 882887,
             "official": true,
-            "id": 882887
+            "name": "Lappalainen Mika"
           }
-        ],
-        "class": "ALO"
+        ]
       },
       {
-        "date": "2026-07-11T21:00:00.000Z",
         "places": 15,
         "judge": [
           {
-            "name": "Lappalainen Mika",
+            "id": 882887,
             "official": true,
-            "id": 882887
+            "name": "Lappalainen Mika"
           }
         ],
+        "date": "2026-07-11T21:00:00.000Z",
         "class": "ALO"
       }
     ]
@@ -5425,13 +5434,14 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-07-12T00:00:00.000+03:00",
+        "date": "2026-07-11T21:00:00.000Z",
+        "places": 12,
         "class": "VOI",
         "judge": [
           {
-            "name": "Särkänlahti Jari",
+            "id": 4055276,
             "official": true,
-            "id": 4055276
+            "name": "Särkänlahti Jari"
           }
         ]
       }
@@ -6687,21 +6697,21 @@
     "judges": [
       "Hukkanen Tuija"
     ],
-    "description": "Piirinmestaruuskoe. Etusija Salpausselän kennelpiirin alueella asuvilla piirinmestaruudesta kilpailevilla koirakoilla.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "description": "Piirinmestaruuskoe. Etusija Salpausselän kennelpiirin alueella asuvilla piirinmestaruudesta kilpailevilla koirakoilla.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
     "cost": 55,
     "cost_member": 45,
     "classes": [
       {
         "places": 12,
+        "date": "2026-08-07T21:00:00.000Z",
         "class": "VOI",
         "judge": [
           {
-            "official": true,
+            "name": "Hukkanen Tuija",
             "id": 554006,
-            "name": "Hukkanen Tuija"
+            "official": true
           }
-        ],
-        "date": "2026-08-07T21:00:00.000Z"
+        ]
       }
     ]
   },
@@ -7443,7 +7453,7 @@
     "judges": [
       "Martikainen Maarit"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
@@ -7982,7 +7992,7 @@
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
     "classes": []
