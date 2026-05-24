@@ -61,8 +61,17 @@ jobs:
       - name: Fetch event data
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/update_data')
         run: |
-          echo "Fetching data for 2026..."
-          python snj_kokeet.py --year 2026
+          CURRENT_YEAR=$(date +%Y)
+          CURRENT_MONTH=$(date +%m)
+          echo "Fetching data for $CURRENT_YEAR..."
+          python snj_kokeet.py --year "$CURRENT_YEAR"
+          # Lokakuusta lähtien haetaan myös seuraavan vuoden data, sillä SNJ
+          # julkaisee seuraavan vuoden koekalenterin tyypillisesti syksyllä.
+          if [ "$CURRENT_MONTH" -ge 10 ]; then
+            NEXT_YEAR=$((CURRENT_YEAR + 1))
+            echo "Lokakuu tai myöhemmin — haetaan myös $NEXT_YEAR..."
+            python snj_kokeet.py --year "$NEXT_YEAR"
+          fi
 
       - name: Commit updated data
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/update_data')
@@ -70,7 +79,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add koetutka_*.json coordinates_cache.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update trial data for 2026"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update trial data"
           git push
 
       - name: Prepare deployment directory
