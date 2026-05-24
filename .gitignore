@@ -16,6 +16,9 @@ snj_kokeet_*.csv
 # Build output
 _site/
 
+# Brainstorming sessions
+.superpowers/
+
 # macOS
 .DS_Store
 
