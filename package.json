@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "description": "Koetutka workspace root",
   "scripts": {
-    "build": "pnpm --filter shared build",
-    "test": "pnpm --filter shared test",
-    "typecheck": "pnpm --filter shared typecheck"
+    "build": "pnpm --filter @koetutka/shared build",
+    "test": "pnpm --filter @koetutka/shared test",
+    "typecheck": "pnpm --filter @koetutka/shared typecheck"
   },
   "devDependencies": {
     "typescript": "^5.5.0"
