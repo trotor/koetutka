@@ -13,8 +13,12 @@ snj_kokeet_*.csv
 # Cache (committed to repo to reduce API calls)
 # Note: coordinates_cache.json is now committed
 
+# Node
+node_modules/
+
 # Build output
 _site/
+shared/dist/
 
 # Brainstorming sessions
 .superpowers/

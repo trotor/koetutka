@@ -1,0 +1,15 @@
+{
+  "name": "koetutka-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Koetutka workspace root",
+  "scripts": {
+    "build": "pnpm --filter shared build",
+    "test": "pnpm --filter shared test",
+    "typecheck": "pnpm --filter shared typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
