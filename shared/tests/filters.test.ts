@@ -95,4 +95,18 @@ describe('filterEvents', () => {
     });
     expect(result.map((e) => e.id)).toEqual(['a']);
   });
+
+  test('searchTerm matchaa myös nimeen ja organizeriin', () => {
+    const named = makeEvent({ id: 'd', name: 'Kevätkokeet', organizer: 'Pohjolan Noutajat ry', location: 'Kemi' });
+    // nimellä
+    expect(filterEvents([named], { searchTerm: 'kevät' }).map((e) => e.id)).toEqual(['d']);
+    // organizerilla
+    expect(filterEvents([named], { searchTerm: 'pohjolan' }).map((e) => e.id)).toEqual(['d']);
+  });
+
+  test('maxDistanceKm päästää läpi kokeet joilla ei ole etäisyyttä', () => {
+    const noDistance = makeEvent({ id: 'e', distance: undefined });
+    const result = filterEvents([noDistance], { maxDistanceKm: 10 });
+    expect(result.map((e) => e.id)).toEqual(['e']);
+  });
 });

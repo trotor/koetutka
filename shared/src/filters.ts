@@ -27,7 +27,7 @@ export function addDistances(
  * Suodattaa eventit annetuilla kriteereillä. Kaikki kriteerit ovat
  * valinnaisia; tyhjä optio-objekti palauttaa kaikki eventit.
  *
- * - searchTerm: case-insensitive match locationiin, typeen, levelsiin, organizeriin
+ * - searchTerm: case-insensitive match locationiin, typeen, levelsiin, nimeen, organizeriin
  * - activeTypes: jos asetettu, vain mainitut tyypit
  * - activeLevels: jos asetettu, levels-merkkijonon pitää sisältää joku tasoista
  * - maxDistanceKm: jos asetettu ja eventillä on distance, pitää olla ≤ tämä
@@ -53,6 +53,7 @@ export function filterEvents(
         event.location,
         event.type,
         event.levels,
+        event.name,
         event.organizer,
       ]
         .join(' ')
