@@ -1809,7 +1809,8 @@
                     koe.location.toLowerCase().includes(searchTerm) ||
                     koe.type.toLowerCase().includes(searchTerm) ||
                     koe.levels.toLowerCase().includes(searchTerm) ||
-                    (koe.name && koe.name.toLowerCase().includes(searchTerm));
+                    (koe.name && koe.name.toLowerCase().includes(searchTerm)) ||
+                    (koe.organizer && koe.organizer.toLowerCase().includes(searchTerm));
 
                 if (!matchesSearch) return;
 
@@ -1998,7 +1999,8 @@
                     koe.location.toLowerCase().includes(searchTerm) ||
                     koe.type.toLowerCase().includes(searchTerm) ||
                     koe.levels.toLowerCase().includes(searchTerm) ||
-                    (koe.name && koe.name.toLowerCase().includes(searchTerm));
+                    (koe.name && koe.name.toLowerCase().includes(searchTerm)) ||
+                    (koe.organizer && koe.organizer.toLowerCase().includes(searchTerm));
 
                 // Tarkista onko laji aktiivinen
                 const matchesType = activeTypes.size === 0 || activeTypes.has(koe.type);

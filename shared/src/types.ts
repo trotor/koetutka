@@ -35,7 +35,7 @@ export type Cost = number | string | CostObject | null | undefined;
 export interface OptionalCost {
   name?: string;
   description?: string;
-  amount?: number;
+  cost?: number;
   [key: string]: unknown;
 }
 

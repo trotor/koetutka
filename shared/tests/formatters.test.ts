@@ -27,7 +27,7 @@ describe('getCostValue', () => {
 
 describe('getOptionalCosts', () => {
   test('objektista palautetaan optionalAdditionalCosts', () => {
-    const costs = [{ name: 'Ruokailu', amount: 10 }];
+    const costs = [{ name: 'Ruokailu', cost: 10 }];
     expect(getOptionalCosts({ normal: 35, optionalAdditionalCosts: costs })).toEqual(costs);
   });
 
