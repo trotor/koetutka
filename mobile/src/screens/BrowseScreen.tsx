@@ -1,16 +1,34 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { Text, View, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
+import { addDistances, filterEvents } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
+import { EventCard } from '@/components/EventCard';
+import { FilterChips } from '@/components/FilterChips';
 
 export default function BrowseScreen() {
   const events = useStore((s) => s.events);
   const isLoading = useStore((s) => s.isLoading);
   const error = useStore((s) => s.error);
   const loadEvents = useStore((s) => s.loadEvents);
+  const userLocation = useStore((s) => s.userLocation);
+  const filters = useStore((s) => s.filters);
 
   useEffect(() => {
     loadEvents(new Date().getFullYear());
   }, [loadEvents]);
+
+  const visible = useMemo(() => {
+    const withDistance = userLocation ? addDistances(events, userLocation) : events;
+    const filtered = filterEvents(withDistance, filters);
+    return [...filtered].sort((a, b) => {
+      const aHas = a.distance !== undefined && a.distance !== null;
+      const bHas = b.distance !== undefined && b.distance !== null;
+      if (aHas && bHas) return (a.distance as number) - (b.distance as number);
+      if (aHas) return -1;
+      if (bHas) return 1;
+      return a.date_sort.localeCompare(b.date_sort);
+    });
+  }, [events, userLocation, filters]);
 
   if (isLoading && events.length === 0) {
     return (
@@ -24,32 +42,43 @@ export default function BrowseScreen() {
     return (
       <View style={styles.centered}>
         <Text style={styles.error}>Virhe: {error}</Text>
+        <Text style={styles.retryHint} onPress={() => loadEvents(new Date().getFullYear())}>
+          Yritä uudelleen
+        </Text>
       </View>
     );
   }
 
   return (
-    <FlatList
-      data={events}
-      keyExtractor={(item) => item.id}
-      contentContainerStyle={styles.list}
-      renderItem={({ item }) => (
-        <View style={styles.row}>
-          <Text style={styles.title}>{item.type} · {item.levels}</Text>
-          <Text style={styles.sub}>{item.location} — {item.date}</Text>
-        </View>
-      )}
-      ListEmptyComponent={<Text style={styles.empty}>Ei kokeita vielä.</Text>}
-    />
+    <View style={styles.wrap}>
+      <FilterChips />
+      <FlatList
+        data={visible}
+        keyExtractor={(item) => item.id}
+        contentContainerStyle={styles.list}
+        renderItem={({ item }) => <EventCard event={item} />}
+        ListEmptyComponent={
+          <View style={styles.emptyWrap}>
+            <Text style={styles.empty}>Ei kokeita näillä suodattimilla.</Text>
+            <Text style={styles.emptyHint}>Kokeile suuremman etäisyyden tai vähemmän rajauksia.</Text>
+          </View>
+        }
+        ListHeaderComponent={<Text style={styles.count}>{visible.length} koetta</Text>}
+        onRefresh={() => loadEvents(new Date().getFullYear())}
+        refreshing={isLoading}
+      />
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  wrap: { flex: 1, backgroundColor: '#f8f9fa' },
   centered: { flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#f8f9fa' },
-  list: { padding: 12, backgroundColor: '#f8f9fa' },
-  row: { backgroundColor: 'white', padding: 12, marginBottom: 8, borderRadius: 8, borderLeftWidth: 3, borderLeftColor: '#2d5a27' },
-  title: { fontSize: 15, fontWeight: '600', color: '#1a472a' },
-  sub: { fontSize: 13, color: '#666', marginTop: 2 },
+  list: { padding: 12 },
+  count: { fontSize: 12, color: '#888', marginBottom: 8, textAlign: 'center' },
+  emptyWrap: { padding: 24, alignItems: 'center' },
+  empty: { color: '#666', textAlign: 'center' },
+  emptyHint: { color: '#888', fontSize: 13, marginTop: 8, textAlign: 'center' },
   error: { color: '#b91c1c', fontSize: 14, padding: 24, textAlign: 'center' },
-  empty: { color: '#666', textAlign: 'center', padding: 24 },
+  retryHint: { color: '#2d5a27', fontSize: 14, marginTop: 12, textDecorationLine: 'underline' },
 });
