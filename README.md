@@ -78,6 +78,12 @@ MIT
 
 ## Versiohistoria
 
+### v1.7.1 (2026-05-29)
+- Refaktoroitu jaettu logiikka shared/ TypeScript-moduuliksi (haversine, ICS-generointi, suodattimet, hintaformatterit)
+- Pohjustaa tulevan mobiilisovelluksen koodinjaolle (pnpm workspace)
+- Haku kattaa nyt myös järjestäjän nimen
+- Ei muita käyttäjälle näkyviä muutoksia
+
 ### v1.7.0 (2026-03-22)
 - Lisätty max etäisyys -suodatin: vapaa tekstikenttä ja valmiit 100/200 km pikavalinnat
 

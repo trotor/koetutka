@@ -1386,10 +1386,36 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.7.0</span>
+                <span id="version">v1.7.1</span>
             </p>
         </footer>
     </div>
+
+    <script type="module">
+        import {
+            haversine,
+            addDistances,
+            filterEvents,
+            getCostValue,
+            getOptionalCosts,
+            generateICS,
+        } from './shared/dist/index.js';
+
+        // Expose shared logic to the classic script below (which can't use import).
+        window.koetutkaShared = {
+            haversine,
+            addDistances,
+            filterEvents,
+            getCostValue,
+            getOptionalCosts,
+            generateICS,
+        };
+
+        // Modules are deferred, so this runs after the classic script has defined
+        // loadData() and after window.koetutkaShared is set above. This replaces the
+        // loadData() call that was at the bottom of the classic script.
+        window.loadData();
+    </script>
 
     <script>
         // Suomen kaupunkien koordinaatit (yleisimmät)
@@ -1492,45 +1518,25 @@
         let activeLevels = new Set(); // Aktiiviset tasot (kaikki oletuksena)
         let hidePastEvents = true; // Piilota menneet tapahtumat oletuksena
 
-        // Apufunktio maksun arvon hakemiseen (voi olla numero tai objekti)
+        // getCostValue, getOptionalCosts siirretty shared/-moduuliin.
+        // Käytetään wrapper-funktioita (ei eager-viittausta), koska
+        // window.koetutkaShared asetetaan vasta deferred module-scriptissä
+        // tämän classic-scriptin suorituksen jälkeen.
         function getCostValue(cost) {
-            if (cost === null || cost === undefined || cost === '') return null;
-            if (typeof cost === 'number') return cost;
-            if (typeof cost === 'object' && cost.normal !== undefined) return cost.normal;
-            return null;
+            return window.koetutkaShared.getCostValue(cost);
         }
-
-        // Apufunktio lisämaksujen hakemiseen
         function getOptionalCosts(cost) {
-            if (typeof cost === 'object' && cost.optionalAdditionalCosts) {
-                return cost.optionalAdditionalCosts;
-            }
-            return [];
+            return window.koetutkaShared.getOptionalCosts(cost);
         }
 
-        // Haversine-kaava etäisyyden laskemiseen
-        function haversineDistance(lat1, lon1, lat2, lon2) {
-            const R = 6371; // Maapallon säde km
-            const dLat = (lat2 - lat1) * Math.PI / 180;
-            const dLon = (lon2 - lon1) * Math.PI / 180;
-            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-                      Math.sin(dLon/2) * Math.sin(dLon/2);
-            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-            return R * c;
-        }
+        // haversineDistance siirretty shared/-moduuliin (haversine).
 
         // Laske etäisyydet kaikille kokeille
         function calculateDistances() {
-            kokeet.forEach(koe => {
-                if (koe.coordinates && koe.coordinates.length === 2) {
-                    koe.distance = Math.round(haversineDistance(
-                        userLocation.lat, userLocation.lng,
-                        koe.coordinates[0], koe.coordinates[1]
-                    ));
-                } else {
-                    koe.distance = null;
-                }
+            if (!userLocation) return;
+            const enriched = window.koetutkaShared.addDistances(kokeet, userLocation);
+            kokeet.forEach((koe, i) => {
+                koe.distance = enriched[i].distance;
             });
         }
 
@@ -1803,7 +1809,8 @@
                     koe.location.toLowerCase().includes(searchTerm) ||
                     koe.type.toLowerCase().includes(searchTerm) ||
                     koe.levels.toLowerCase().includes(searchTerm) ||
-                    (koe.name && koe.name.toLowerCase().includes(searchTerm));
+                    (koe.name && koe.name.toLowerCase().includes(searchTerm)) ||
+                    (koe.organizer && koe.organizer.toLowerCase().includes(searchTerm));
 
                 if (!matchesSearch) return;
 
@@ -1992,7 +1999,8 @@
                     koe.location.toLowerCase().includes(searchTerm) ||
                     koe.type.toLowerCase().includes(searchTerm) ||
                     koe.levels.toLowerCase().includes(searchTerm) ||
-                    (koe.name && koe.name.toLowerCase().includes(searchTerm));
+                    (koe.name && koe.name.toLowerCase().includes(searchTerm)) ||
+                    (koe.organizer && koe.organizer.toLowerCase().includes(searchTerm));
 
                 // Tarkista onko laji aktiivinen
                 const matchesType = activeTypes.size === 0 || activeTypes.has(koe.type);
@@ -2527,171 +2535,11 @@
         // Lataa ICS kalenteritiedosto
         function downloadICS(index, eventType = 'event') {
             const koe = filteredKokeet[index];
-
-            let dateStr, date;
-
-            if (eventType === 'registration') {
-                // Parse first date from entry_date (e.g., "03.01.-31.01." -> "03.01.")
-                const entryDateMatch = koe.entry_date.match(/(\d{1,2}\.\d{1,2}\.)/);
-                if (entryDateMatch) {
-                    const dayMonth = entryDateMatch[1]; // e.g., "03.01."
-                    const year = new Date(koe.date_sort).getFullYear();
-                    const [day, month] = dayMonth.split('.').filter(Boolean);
-                    date = new Date(year, parseInt(month) - 1, parseInt(day));
-                } else {
-                    // Fallback to event date if parsing fails
-                    dateStr = koe.date_sort;
-                    date = new Date(dateStr);
-                }
-            } else {
-                dateStr = koe.date_sort;
-                date = new Date(dateStr);
-            }
-
-            const formatDateOnly = (d) => {
-                const pad = (n) => n.toString().padStart(2, '0');
-                return d.getFullYear() +
-                    pad(d.getMonth() + 1) +
-                    pad(d.getDate());
-            };
-
-            const formatICSTimestamp = (d) => {
-                const pad = (n) => n.toString().padStart(2, '0');
-                return d.getUTCFullYear() +
-                    pad(d.getUTCMonth() + 1) +
-                    pad(d.getUTCDate()) + 'T' +
-                    pad(d.getUTCHours()) +
-                    pad(d.getUTCMinutes()) +
-                    pad(d.getUTCSeconds()) + 'Z';
-            };
-
-            const dtstart = formatDateOnly(date);
-
-            let endDate;
-            if (eventType === 'registration') {
-                // Registration reminder is a single day event
-                endDate = new Date(date);
-                endDate.setDate(endDate.getDate() + 1);
-            } else if (koe.end_date_sort) {
-                endDate = new Date(koe.end_date_sort);
-                endDate.setDate(endDate.getDate() + 1);
-            } else {
-                endDate = new Date(date);
-                endDate.setDate(endDate.getDate() + 1);
-            }
-            const dtend = formatDateOnly(endDate);
-
-            let title, description = '';
-
-            if (eventType === 'registration') {
-                title = `Ilmoittautuminen: ${koe.location} - ${koe.type}`;
-                description = `MUISTUTUS: Ilmoittautuminen kokeeseen alkaa\\n\\n`;
-                description += `Koe: ${koe.date}\\n`;
-                description += `Paikkakunta: ${koe.location}\\n`;
-                description += `Tyyppi: ${koe.type}\\n`;
-                description += `Tasot: ${koe.levels}\\n`;
-                description += `Ilmoittautumisaika: ${koe.entry_date}\\n`;
-            } else {
-                title = `${koe.location} - ${koe.type} - ${koe.levels}`;
-
-                if (koe.description) {
-                    description += koe.description;
-                    description += `\\n\\n--- Perustiedot ---\\n`;
-                }
-
-                description += `Tyyppi: ${koe.type}\\n`;
-            }
-
-            if (eventType !== 'registration') {
-                if (koe.classes && koe.classes.length > 0) {
-                    description += `\\nLuokat ja päivät:\\n`;
-
-                    const classesByDate = {};
-                    const weekdays = ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'];
-
-                    koe.classes.forEach(cls => {
-                        if (cls.class && cls.date) {
-                            const clsDate = new Date(cls.date);
-                            const dateKey = formatDateOnly(clsDate);
-                            const dayName = weekdays[clsDate.getDay()];
-                            const dateStr = clsDate.getDate() + '.' + (clsDate.getMonth() + 1) + '.';
-
-                            if (!classesByDate[dateKey]) {
-                                classesByDate[dateKey] = {
-                                    dateStr: dateStr,
-                                    dayName: dayName,
-                                    classes: []
-                                };
-                            }
-                            classesByDate[dateKey].classes.push(cls.class);
-                        }
-                    });
-
-                    Object.keys(classesByDate).sort().forEach(dateKey => {
-                        const info = classesByDate[dateKey];
-                        description += `  ${info.dayName} ${info.dateStr}: ${info.classes.join(', ')}\\n`;
-                    });
-                } else {
-                    description += `Tasot: ${koe.levels}\\n`;
-                }
-                if (koe.organizer) description += `\\n\\nJärjestäjä: ${koe.organizer}`;
-                if (koe.judges && koe.judges.length > 0) description += `\\n\\nTuomarit: ${koe.judges.join(', ')}`;
-
-                if (koe.secretary && koe.secretary.name) {
-                    description += `\\n\\nSihteeri: ${koe.secretary.name}`;
-                    if (koe.secretary.phone) description += `, puh. ${koe.secretary.phone}`;
-                    if (koe.secretary.email) description += `, ${koe.secretary.email}`;
-                }
-                if (koe.official && koe.official.name) {
-                    description += `\\n\\nYhteyshenkilö: ${koe.official.name}`;
-                    if (koe.official.phone) description += `, puh. ${koe.official.phone}`;
-                    if (koe.official.email) description += `, ${koe.official.email}`;
-                }
-
-                if (koe.distance !== null) {
-                    description += `\\n\\n--- Etäisyys (${userLocation.name}) ---`;
-                    description += `\\nLinnuntie: ${koe.distance} km`;
-                }
-
-                description += `\\n\\nIlmoittautumisaika: ${koe.entry_date}`;
-
-                const icsCost = getCostValue(koe.cost);
-                const icsCostMember = getCostValue(koe.cost_member);
-                if (icsCost !== null || icsCostMember !== null) {
-                    description += `\\n\\n--- Osallistumismaksut ---`;
-                    if (icsCost !== null) description += `\\nMaksu: ${icsCost} €`;
-                    if (icsCostMember !== null) description += `\\nJäsenmaksu: ${icsCostMember} €`;
-                }
-            } else {
-                // For registration reminder, add contact info
-                if (koe.official && koe.official.name) {
-                    description += `\\n\\nYhteyshenkilö: ${koe.official.name}`;
-                    if (koe.official.phone) description += `, puh. ${koe.official.phone}`;
-                    if (koe.official.email) description += `, ${koe.official.email}`;
-                }
-                if (koe.organizer) description += `\\n\\nJärjestäjä: ${koe.organizer}`;
-            }
-
-            const location = koe.location + (koe.coordinates ? ` (${koe.coordinates[0]}, ${koe.coordinates[1]})` : '');
-
-            const icsContent = [
-                'BEGIN:VCALENDAR',
-                'VERSION:2.0',
-                'PRODID:-//Koetutka//FI',
-                'CALSCALE:GREGORIAN',
-                'METHOD:PUBLISH',
-                'BEGIN:VEVENT',
-                `DTSTART;VALUE=DATE:${dtstart}`,
-                `DTEND;VALUE=DATE:${dtend}`,
-                `DTSTAMP:${formatICSTimestamp(new Date())}`,
-                `UID:${koe.date_sort}-${index}@koetutka.fi`,
-                `SUMMARY:${title}`,
-                `DESCRIPTION:${description}`,
-                `LOCATION:${location}`,
-                'STATUS:CONFIRMED',
-                'END:VEVENT',
-                'END:VCALENDAR'
-            ].join('\r\n');
+            const icsContent = window.koetutkaShared.generateICS(koe, {
+                type: eventType,
+                userLocationName: userLocation?.name,
+                index,
+            });
 
             const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
             const link = document.createElement('a');
@@ -2706,8 +2554,7 @@
         // Event listenerit
         document.getElementById('searchInput').addEventListener('input', sortAndRender);
 
-        // Alustus
-        loadData();
+        // Alustus tapahtuu module-scriptissä (window.loadData()) shared-moduulin latauduttua.
     </script>
 </body>
 </html>
