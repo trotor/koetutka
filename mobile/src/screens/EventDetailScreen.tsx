@@ -1,8 +1,9 @@
 import { useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
-import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
 import { getCostValue, getOptionalCosts } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
+import { exportEventICS } from '@/lib/ics-export';
 import type { RootStackParamList } from '../navigation';
 
 type Route = RouteProp<RootStackParamList, 'EventDetail'>;
@@ -55,6 +56,21 @@ export default function EventDetailScreen() {
         />
       )}
       {event.description && <InfoRow label="Kuvaus" value={event.description} />}
+
+      <View style={styles.buttonRow}>
+        <Pressable
+          style={styles.button}
+          onPress={() => exportEventICS(event, 'event', useStore.getState().userLocation?.name)}
+        >
+          <Text style={styles.buttonText}>📅 Lisää kalenteriin</Text>
+        </Pressable>
+        <Pressable
+          style={[styles.button, styles.buttonSecondary]}
+          onPress={() => exportEventICS(event, 'registration', useStore.getState().userLocation?.name)}
+        >
+          <Text style={[styles.buttonText, styles.buttonTextSecondary]}>🔔 Ilmoittautumismuistutus</Text>
+        </Pressable>
+      </View>
     </ScrollView>
   );
 }
@@ -78,4 +94,9 @@ const styles = StyleSheet.create({
   row: { backgroundColor: 'white', padding: 12, marginBottom: 8, borderRadius: 6 },
   label: { fontSize: 12, color: '#888', marginBottom: 2 },
   value: { fontSize: 14, color: '#333' },
+  buttonRow: { marginTop: 12, gap: 8 },
+  button: { backgroundColor: '#2d5a27', padding: 14, borderRadius: 8, alignItems: 'center' },
+  buttonSecondary: { backgroundColor: 'white', borderWidth: 1, borderColor: '#2d5a27' },
+  buttonText: { color: 'white', fontWeight: '600', fontSize: 15 },
+  buttonTextSecondary: { color: '#2d5a27' },
 });
