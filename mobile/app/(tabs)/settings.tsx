@@ -1,16 +1,14 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
+import { LocationSection } from '@/components/LocationSection';
 
 export default function SettingsScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.heading}>Asetukset</Text>
-      <Text style={styles.body}>Sijainti ja suodattimet tulevat Task 5:ssä.</Text>
-    </View>
+    <ScrollView contentContainerStyle={styles.container}>
+      <LocationSection />
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 24, backgroundColor: '#f8f9fa' },
-  heading: { fontSize: 22, fontWeight: '700', color: '#1a472a', marginBottom: 8 },
-  body: { fontSize: 16, color: '#666' },
+  container: { padding: 12, backgroundColor: '#f8f9fa', flexGrow: 1 },
 });
