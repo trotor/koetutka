@@ -25,9 +25,11 @@ export default function BrowseScreen() {
     const withDistance = userLocation ? addDistances(events, userLocation) : events;
     const filtered = filterEvents(withDistance, filters);
     return [...filtered].sort((a, b) => {
-      if (a.distance !== undefined && a.distance !== null && b.distance !== undefined && b.distance !== null) {
-        return a.distance - b.distance;
-      }
+      const aHas = a.distance !== undefined && a.distance !== null;
+      const bHas = b.distance !== undefined && b.distance !== null;
+      if (aHas && bHas) return (a.distance as number) - (b.distance as number);
+      if (aHas) return -1;
+      if (bHas) return 1;
       return a.date_sort.localeCompare(b.date_sort);
     });
   }, [events, userLocation, filters]);

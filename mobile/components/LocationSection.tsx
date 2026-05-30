@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import {
   View,
   Text,
@@ -20,17 +20,22 @@ export function LocationSection() {
   const [results, setResults] = useState<LocationResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [isGpsLoading, setIsGpsLoading] = useState(false);
+  const searchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  async function handleSearch(text: string) {
+  function handleSearch(text: string) {
     setQuery(text);
+    if (searchTimer.current) clearTimeout(searchTimer.current);
     if (text.trim().length < 3) {
       setResults([]);
+      setIsSearching(false);
       return;
     }
     setIsSearching(true);
-    const found = await searchLocation(text);
-    setResults(found);
-    setIsSearching(false);
+    searchTimer.current = setTimeout(async () => {
+      const found = await searchLocation(text);
+      setResults(found);
+      setIsSearching(false);
+    }, 400);
   }
 
   function selectResult(loc: LocationResult) {

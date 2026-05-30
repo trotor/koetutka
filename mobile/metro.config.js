@@ -15,4 +15,8 @@ config.resolver.nodeModulesPaths = [
 
 config.resolver.disableHierarchicalLookup = true;
 
+// Enable package.json "exports" field resolution so the @koetutka/shared
+// import/types conditions are honored (Expo SDK 50+).
+config.resolver.unstable_enablePackageExports = true;
+
 module.exports = config;

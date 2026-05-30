@@ -57,4 +57,12 @@ describe('fetchEvents', () => {
       `${BASE_URL}/koetutka_2026.json`,
     ]);
   });
+
+  test('fallback ei käynnisty muista virheistä kuin 404', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn(async () => new Response('', { status: 500 })),
+    );
+    await expect(fetchEventsWithFallback(2027)).rejects.toThrow();
+  });
 });
