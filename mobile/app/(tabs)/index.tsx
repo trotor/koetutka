@@ -44,6 +44,9 @@ export default function BrowseScreen() {
     return (
       <View style={styles.centered}>
         <Text style={styles.error}>Virhe: {error}</Text>
+        <Text style={styles.retryHint} onPress={() => loadEvents(new Date().getFullYear())}>
+          Yritä uudelleen
+        </Text>
       </View>
     );
   }
@@ -59,7 +62,10 @@ export default function BrowseScreen() {
           contentContainerStyle={styles.list}
           renderItem={({ item }) => <EventCard event={item} />}
           ListEmptyComponent={
-            <Text style={styles.empty}>Ei kokeita näillä suodattimilla.</Text>
+            <View style={styles.emptyWrap}>
+              <Text style={styles.empty}>Ei kokeita näillä suodattimilla.</Text>
+              <Text style={styles.emptyHint}>Kokeile suuremman etäisyyden tai vähemmän rajauksia.</Text>
+            </View>
           }
           ListHeaderComponent={
             <Text style={styles.count}>{visible.length} koetta</Text>
@@ -81,4 +87,7 @@ const styles = StyleSheet.create({
   count: { fontSize: 12, color: '#888', marginBottom: 8, textAlign: 'center' },
   empty: { color: '#666', textAlign: 'center', padding: 24 },
   error: { color: '#b91c1c', fontSize: 14, padding: 24, textAlign: 'center' },
+  emptyWrap: { padding: 24, alignItems: 'center' },
+  emptyHint: { color: '#888', fontSize: 13, marginTop: 8, textAlign: 'center' },
+  retryHint: { color: '#2d5a27', fontSize: 14, marginTop: 12, textDecorationLine: 'underline' },
 });
