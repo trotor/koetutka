@@ -1,9 +1,11 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Text, View, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
 import { addDistances, filterEvents } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { EventCard } from '@/components/EventCard';
 import { FilterChips } from '@/components/FilterChips';
+import { ListMapToggle } from '@/components/ListMapToggle';
+import { MapPlaceholder } from '@/components/MapPlaceholder';
 
 export default function BrowseScreen() {
   const events = useStore((s) => s.events);
@@ -12,6 +14,8 @@ export default function BrowseScreen() {
   const loadEvents = useStore((s) => s.loadEvents);
   const userLocation = useStore((s) => s.userLocation);
   const filters = useStore((s) => s.filters);
+
+  const [view, setView] = useState<'list' | 'map'>('list');
 
   useEffect(() => {
     loadEvents(new Date().getFullYear());
@@ -46,21 +50,26 @@ export default function BrowseScreen() {
 
   return (
     <View style={styles.wrap}>
+      <ListMapToggle value={view} onChange={setView} />
       <FilterChips />
-      <FlatList
-        data={visible}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.list}
-        renderItem={({ item }) => <EventCard event={item} />}
-        ListEmptyComponent={
-          <Text style={styles.empty}>Ei kokeita näillä suodattimilla.</Text>
-        }
-        ListHeaderComponent={
-          <Text style={styles.count}>{visible.length} koetta</Text>
-        }
-        onRefresh={() => loadEvents(new Date().getFullYear())}
-        refreshing={isLoading}
-      />
+      {view === 'list' ? (
+        <FlatList
+          data={visible}
+          keyExtractor={(item) => item.id}
+          contentContainerStyle={styles.list}
+          renderItem={({ item }) => <EventCard event={item} />}
+          ListEmptyComponent={
+            <Text style={styles.empty}>Ei kokeita näillä suodattimilla.</Text>
+          }
+          ListHeaderComponent={
+            <Text style={styles.count}>{visible.length} koetta</Text>
+          }
+          onRefresh={() => loadEvents(new Date().getFullYear())}
+          refreshing={isLoading}
+        />
+      ) : (
+        <MapPlaceholder eventCount={visible.length} />
+      )}
     </View>
   );
 }
