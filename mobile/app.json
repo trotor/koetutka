@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Koetutka",
+    "slug": "koetutka",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "koetutka",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#2d5a27"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.savonnuuskut.koetutka"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#2d5a27"
+      },
+      "package": "com.savonnuuskut.koetutka"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Koetutka käyttää sijaintiasi kokeiden etäisyyden laskemiseen."
+        }
+      ]
+    ],
+    "experiments": { "typedRoutes": true }
+  }
+}
