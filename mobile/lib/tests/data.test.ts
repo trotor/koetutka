@@ -1,5 +1,5 @@
 import { describe, test, expect, vi, beforeEach } from 'vitest';
-import { fetchEvents, BASE_URL } from '../data';
+import { fetchEvents, fetchEventsWithFallback, BASE_URL } from '../data';
 
 beforeEach(() => {
   vi.restoreAllMocks();
@@ -50,7 +50,6 @@ describe('fetchEvents', () => {
       }),
     );
 
-    const { fetchEventsWithFallback } = await import('../data');
     const events = await fetchEventsWithFallback(2027);
     expect(events).toHaveLength(1);
     expect(calls).toEqual([
