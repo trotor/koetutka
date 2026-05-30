@@ -1,79 +1,75 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Koetutka Mobile
 
-# Getting Started
+Bare React Native CLI -mobiilisovellus, joka näyttää SNJ:n noutajakokeet käyttäjän sijainnista.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Esivaatimukset
 
-## Step 1: Start the Metro Server
+Mac:
+- Node.js 20+
+- pnpm 9+
+- Xcode (App Storesta) ja Xcode Command Line Tools
+- CocoaPods (`sudo gem install cocoapods`)
+- Android Studio (Android-kehitykseen)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
-
-To start Metro, run the following command from the _root_ of your React Native project:
-
-```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+## Asennus
 
 ```bash
-# using npm
-npm run android
+# repo-juuressa:
+pnpm install
 
-# OR using Yarn
-yarn android
+# rakenna jaettu paketti:
+pnpm --filter @koetutka/shared build
+
+# asenna iOS-natiiviriippuvuudet:
+pnpm --filter @koetutka/mobile pod-install
 ```
 
-### For iOS
+## Käynnistys
+
+**iOS-simulaattori:**
+```bash
+# käynnistä Metro:
+pnpm --filter @koetutka/mobile start
+# uudessa terminaalissa:
+pnpm --filter @koetutka/mobile ios
+```
+
+**Android-emulaattori:**
+```bash
+# vaatii että Android Studiosta on käynnistetty emulaattori tai laite on liitetty USB:llä
+pnpm --filter @koetutka/mobile start
+pnpm --filter @koetutka/mobile android
+```
+
+**Fyysinen iPhone (USB):**
+1. Avaa `mobile/ios/Koetutka.xcworkspace` Xcodessa
+2. Valitse oma kehittäjätili (Signing & Capabilities)
+3. Yhdistä iPhone USB:llä, valitse se kohteeksi
+4. Paina Run (▶)
+
+## Testit
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+pnpm --filter @koetutka/mobile test
+pnpm --filter @koetutka/mobile typecheck
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Rakenne
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+- `App.tsx` — juurikomponentti (navigaatio + persistointi)
+- `index.js` — RN-natiivi entry (AppRegistry)
+- `src/navigation/` — React Navigation (Stack + Tab)
+- `src/screens/` — näkymät (Browse, Favorites, Settings, EventDetail)
+- `src/components/` — uudelleenkäytettävät React-komponentit
+- `src/lib/` — puhdas TS (datan haku, store, ICS, sijainti, persistointi)
+- `src/lib/tests/` — vitest-testit puhtaalle logiikalle
+- `ios/` — natiivi Xcode-projekti
+- `android/` — natiivi Gradle-projekti
 
-## Step 3: Modifying your App
+Liiketoimintalogiikka (etäisyys, suodatus, ICS-generointi) tulee `@koetutka/shared`
+-paketista, joka on jaettu web-sovelluksen kanssa.
 
-Now that you have successfully run the app, let's modify it.
+## Production build (tulevaisuudessa, Vaihe 4)
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+iOS: Xcode Archive → App Store Connect.
+Android: `cd android && ./gradlew bundleRelease` → Play Console.
