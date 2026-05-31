@@ -5,7 +5,7 @@ import { useStore } from '@/lib/store';
 import { EventCard } from '@/components/EventCard';
 import { FilterChips } from '@/components/FilterChips';
 import { ListMapToggle } from '@/components/ListMapToggle';
-import { MapPlaceholder } from '@/components/MapPlaceholder';
+import { EventMap } from '@/components/EventMap';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
 import { SearchBar } from '@/components/SearchBar';
 
@@ -84,7 +84,7 @@ export default function BrowseScreen() {
           scrollEventThrottle={16}
         />
       ) : (
-        <MapPlaceholder eventCount={visible.length} />
+        <EventMap events={visible} />
       )}
     </View>
   );

@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "mcp__plugin_context7_context7__query-docs",
+      "mcp__plugin_context7_context7__resolve-library-id",
+      "Bash(pnpm:*)",
+      "Bash(npx react-native:*)",
+      "Bash(./gradlew:*)",
+      "Bash(pod:*)",
+      "Bash(rm -rf node_modules)",
+      "Bash(rm -rf mobile/node_modules)",
+      "Bash(rm -rf shared/node_modules)",
+      "Bash(rm -rf shared/dist)",
+      "Bash(rm -rf mobile/ios/Pods)",
+      "Bash(rm -rf mobile/ios/build)",
+      "Bash(rm -rf mobile/android/build)",
+      "Bash(rm -rf mobile/android/app/build)",
+      "Bash(rm -rf mobile/android/.gradle)",
+      "Bash(mkdir -p:*)",
+      "Bash(curl -s:*)",
+      "Bash(npm install -g pnpm*)"
+    ]
+  }
+}
