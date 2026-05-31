@@ -6,6 +6,7 @@ const KEY = 'koetutka:prefs:v1';
 export interface StoredPrefs {
   userLocation: UserLocation | null;
   filters: FilterOptions;
+  favorites: Set<string>;
 }
 
 const DEFAULTS: StoredPrefs = {
@@ -15,8 +16,9 @@ const DEFAULTS: StoredPrefs = {
     activeTypes: new Set(),
     activeLevels: new Set(),
     maxDistanceKm: null,
-    hidePast: true,
+    hidePast: false,
   },
+  favorites: new Set(),
 };
 
 interface JsonShape {
@@ -28,6 +30,7 @@ interface JsonShape {
     maxDistanceKm?: number | null;
     hidePast?: boolean;
   };
+  favorites?: string[];
 }
 
 export function serializePrefs(prefs: StoredPrefs): string {
@@ -40,6 +43,7 @@ export function serializePrefs(prefs: StoredPrefs): string {
       maxDistanceKm: prefs.filters.maxDistanceKm,
       hidePast: prefs.filters.hidePast,
     },
+    favorites: Array.from(prefs.favorites ?? []),
   };
   return JSON.stringify(json);
 }
@@ -55,8 +59,9 @@ export function deserializePrefs(text: string): StoredPrefs {
         activeTypes: new Set(parsed.filters?.activeTypes ?? []),
         activeLevels: new Set(parsed.filters?.activeLevels ?? []),
         maxDistanceKm: parsed.filters?.maxDistanceKm ?? null,
-        hidePast: parsed.filters?.hidePast ?? true,
+        hidePast: parsed.filters?.hidePast ?? false,
       },
+      favorites: new Set(parsed.favorites ?? []),
     };
   } catch {
     return DEFAULTS;

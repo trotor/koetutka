@@ -9,6 +9,7 @@ interface State {
   error: string | null;
   userLocation: UserLocation | null;
   filters: FilterOptions;
+  favorites: Set<string>;
   prefsLoaded: boolean;
 }
 
@@ -18,6 +19,7 @@ interface Actions {
   setUserLocation: (location: UserLocation | null) => void;
   setFilters: (filters: Partial<FilterOptions>) => void;
   resetFilters: () => void;
+  toggleFavorite: (id: string) => void;
 }
 
 const defaultFilters: FilterOptions = {
@@ -25,7 +27,7 @@ const defaultFilters: FilterOptions = {
   activeTypes: new Set(),
   activeLevels: new Set(),
   maxDistanceKm: null,
-  hidePast: true,
+  hidePast: false,
 };
 
 export const useStore = create<State & Actions>((set, get) => ({
@@ -34,6 +36,7 @@ export const useStore = create<State & Actions>((set, get) => ({
   error: null,
   userLocation: null,
   filters: defaultFilters,
+  favorites: new Set(),
   prefsLoaded: false,
 
   initFromStorage: async () => {
@@ -41,6 +44,7 @@ export const useStore = create<State & Actions>((set, get) => ({
     set({
       userLocation: prefs.userLocation,
       filters: prefs.filters,
+      favorites: prefs.favorites,
       prefsLoaded: true,
     });
   },
@@ -57,17 +61,33 @@ export const useStore = create<State & Actions>((set, get) => ({
 
   setUserLocation: (userLocation) => {
     set({ userLocation });
-    void savePrefs({ userLocation, filters: get().filters });
+    void savePrefs({ userLocation, filters: get().filters, favorites: get().favorites });
   },
 
   setFilters: (partial) => {
     const filters = { ...get().filters, ...partial };
     set({ filters });
-    void savePrefs({ userLocation: get().userLocation, filters });
+    void savePrefs({ userLocation: get().userLocation, filters, favorites: get().favorites });
   },
 
   resetFilters: () => {
     set({ filters: defaultFilters });
-    void savePrefs({ userLocation: get().userLocation, filters: defaultFilters });
+    void savePrefs({
+      userLocation: get().userLocation,
+      filters: defaultFilters,
+      favorites: get().favorites,
+    });
+  },
+
+  toggleFavorite: (id: string) => {
+    const favorites = new Set(get().favorites);
+    if (favorites.has(id)) favorites.delete(id);
+    else favorites.add(id);
+    set({ favorites });
+    void savePrefs({
+      userLocation: get().userLocation,
+      filters: get().filters,
+      favorites,
+    });
   },
 }));
