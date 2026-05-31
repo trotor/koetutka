@@ -24,6 +24,14 @@ pnpm --filter @koetutka/shared build
 pnpm --filter @koetutka/mobile pod-install
 ```
 
+### Pnpm + bare React Native -workspace
+
+Repo käyttää `node-linker=hoisted` -asetusta `/.npmrc`:ssä, mikä tekee `node_modules/`-rakenteesta litteän (kuten npm/yarn) eikä symlinkki-pohjaisen. Lisäksi `mobile/node_modules` on symlinkki workspace-juuren `node_modules/`:iin — tämä on välttämätöntä koska React Nativen Gradle- ja iOS-skriptit olettavat `mobile/node_modules/`:in olemassaolon. Symlinkki on committoitu repoon. Jos `pnpm install` jossain vaiheessa poistaa sen, luo se uudelleen:
+
+```bash
+cd mobile && rm -rf node_modules && ln -s ../node_modules node_modules
+```
+
 ## Käynnistys
 
 **iOS-simulaattori:**
