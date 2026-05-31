@@ -16,6 +16,9 @@ snj_kokeet_*.csv
 # Node
 node_modules/
 
+# Tool artifacts
+.playwright-mcp/
+
 # Build output
 _site/
 shared/dist/
