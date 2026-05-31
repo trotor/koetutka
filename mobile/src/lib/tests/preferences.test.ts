@@ -1,5 +1,6 @@
 import { describe, test, expect } from 'vitest';
 import { serializePrefs, deserializePrefs, type StoredPrefs } from '../preferences';
+import { DEFAULT_NOTIFICATION_SETTINGS } from '../notifications.types';
 
 describe('serializePrefs / deserializePrefs', () => {
   test('round-trippaa userLocation, filtterit ja suosikit', () => {
@@ -13,6 +14,7 @@ describe('serializePrefs / deserializePrefs', () => {
         hidePast: true,
       },
       favorites: new Set(['evt-a', 'evt-b']),
+      notifications: { enabled: true, daysBefore: 7, hourOfDay: 9 },
     };
     const json = serializePrefs(prefs);
     const back = deserializePrefs(json);
@@ -22,6 +24,17 @@ describe('serializePrefs / deserializePrefs', () => {
     expect(back.filters.maxDistanceKm).toBe(200);
     expect(back.filters.hidePast).toBe(true);
     expect(back.favorites).toEqual(new Set(['evt-a', 'evt-b']));
+    expect(back.notifications).toEqual({ enabled: true, daysBefore: 7, hourOfDay: 9 });
+  });
+
+  test('deserializePrefs antaa default-notifikaatiot vanhalle JSONille', () => {
+    const oldJson = JSON.stringify({
+      userLocation: null,
+      filters: { searchTerm: '', activeTypes: [], activeLevels: [], maxDistanceKm: null, hidePast: false },
+      favorites: [],
+    });
+    const back = deserializePrefs(oldJson);
+    expect(back.notifications).toEqual(DEFAULT_NOTIFICATION_SETTINGS);
   });
 
   test('deserializePrefs palauttaa defaultit jos JSON on viallinen', () => {

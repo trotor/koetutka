@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import { Animated, StyleSheet, View } from 'react-native';
 import { LocationSection } from '@/components/LocationSection';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
+import { NotificationsSection } from '@/components/NotificationsSection';
 
 export default function SettingsScreen() {
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -17,6 +18,7 @@ export default function SettingsScreen() {
         scrollEventThrottle={16}
       >
         <LocationSection />
+        <NotificationsSection />
       </Animated.ScrollView>
     </View>
   );

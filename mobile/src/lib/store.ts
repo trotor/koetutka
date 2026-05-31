@@ -2,6 +2,13 @@ import { create } from 'zustand';
 import type { Event, UserLocation, FilterOptions } from '@koetutka/shared';
 import { fetchEventsWithFallback } from './data';
 import { loadPrefs, savePrefs } from './preferences';
+import {
+  DEFAULT_NOTIFICATION_SETTINGS,
+  type NotificationSettings,
+  rescheduleAll,
+  requestPermission,
+  cancelAll,
+} from './notifications';
 
 interface State {
   events: Event[];
@@ -10,6 +17,7 @@ interface State {
   userLocation: UserLocation | null;
   filters: FilterOptions;
   favorites: Set<string>;
+  notifications: NotificationSettings;
   prefsLoaded: boolean;
 }
 
@@ -20,6 +28,8 @@ interface Actions {
   setFilters: (filters: Partial<FilterOptions>) => void;
   resetFilters: () => void;
   toggleFavorite: (id: string) => void;
+  setNotifications: (next: Partial<NotificationSettings>) => Promise<void>;
+  syncNotifications: () => Promise<void>;
 }
 
 const defaultFilters: FilterOptions = {
@@ -30,6 +40,15 @@ const defaultFilters: FilterOptions = {
   hidePast: false,
 };
 
+function persist(state: State) {
+  void savePrefs({
+    userLocation: state.userLocation,
+    filters: state.filters,
+    favorites: state.favorites,
+    notifications: state.notifications,
+  });
+}
+
 export const useStore = create<State & Actions>((set, get) => ({
   events: [],
   isLoading: false,
@@ -37,6 +56,7 @@ export const useStore = create<State & Actions>((set, get) => ({
   userLocation: null,
   filters: defaultFilters,
   favorites: new Set(),
+  notifications: DEFAULT_NOTIFICATION_SETTINGS,
   prefsLoaded: false,
 
   initFromStorage: async () => {
@@ -45,6 +65,7 @@ export const useStore = create<State & Actions>((set, get) => ({
       userLocation: prefs.userLocation,
       filters: prefs.filters,
       favorites: prefs.favorites,
+      notifications: prefs.notifications,
       prefsLoaded: true,
     });
   },
@@ -54,6 +75,7 @@ export const useStore = create<State & Actions>((set, get) => ({
     try {
       const events = await fetchEventsWithFallback(year);
       set({ events, isLoading: false });
+      void get().syncNotifications();
     } catch (e) {
       set({ error: e instanceof Error ? e.message : 'Tuntematon virhe', isLoading: false });
     }
@@ -61,22 +83,18 @@ export const useStore = create<State & Actions>((set, get) => ({
 
   setUserLocation: (userLocation) => {
     set({ userLocation });
-    void savePrefs({ userLocation, filters: get().filters, favorites: get().favorites });
+    persist(get());
   },
 
   setFilters: (partial) => {
     const filters = { ...get().filters, ...partial };
     set({ filters });
-    void savePrefs({ userLocation: get().userLocation, filters, favorites: get().favorites });
+    persist(get());
   },
 
   resetFilters: () => {
     set({ filters: defaultFilters });
-    void savePrefs({
-      userLocation: get().userLocation,
-      filters: defaultFilters,
-      favorites: get().favorites,
-    });
+    persist(get());
   },
 
   toggleFavorite: (id: string) => {
@@ -84,10 +102,32 @@ export const useStore = create<State & Actions>((set, get) => ({
     if (favorites.has(id)) favorites.delete(id);
     else favorites.add(id);
     set({ favorites });
-    void savePrefs({
-      userLocation: get().userLocation,
-      filters: get().filters,
-      favorites,
-    });
+    persist(get());
+    void get().syncNotifications();
+  },
+
+  setNotifications: async (partial) => {
+    const prev = get().notifications;
+    const next = { ...prev, ...partial };
+    if (next.enabled && !prev.enabled) {
+      const ok = await requestPermission();
+      if (!ok) {
+        return;
+      }
+    }
+    set({ notifications: next });
+    persist(get());
+    if (!next.enabled) {
+      await cancelAll();
+    } else {
+      await get().syncNotifications();
+    }
+  },
+
+  syncNotifications: async () => {
+    const state = get();
+    if (!state.notifications.enabled) return;
+    const favs = state.events.filter((e) => state.favorites.has(e.id));
+    await rescheduleAll(favs, state.notifications);
   },
 }));

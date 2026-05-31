@@ -1,5 +1,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { FilterOptions, UserLocation } from '@koetutka/shared';
+import {
+  DEFAULT_NOTIFICATION_SETTINGS,
+  type NotificationSettings,
+} from './notifications.types';
 
 const KEY = 'koetutka:prefs:v1';
 
@@ -7,6 +11,7 @@ export interface StoredPrefs {
   userLocation: UserLocation | null;
   filters: FilterOptions;
   favorites: Set<string>;
+  notifications: NotificationSettings;
 }
 
 const DEFAULTS: StoredPrefs = {
@@ -19,6 +24,7 @@ const DEFAULTS: StoredPrefs = {
     hidePast: false,
   },
   favorites: new Set(),
+  notifications: DEFAULT_NOTIFICATION_SETTINGS,
 };
 
 interface JsonShape {
@@ -31,6 +37,7 @@ interface JsonShape {
     hidePast?: boolean;
   };
   favorites?: string[];
+  notifications?: NotificationSettings;
 }
 
 export function serializePrefs(prefs: StoredPrefs): string {
@@ -44,6 +51,7 @@ export function serializePrefs(prefs: StoredPrefs): string {
       hidePast: prefs.filters.hidePast,
     },
     favorites: Array.from(prefs.favorites ?? []),
+    notifications: prefs.notifications,
   };
   return JSON.stringify(json);
 }
@@ -62,6 +70,10 @@ export function deserializePrefs(text: string): StoredPrefs {
         hidePast: parsed.filters?.hidePast ?? false,
       },
       favorites: new Set(parsed.favorites ?? []),
+      notifications: {
+        ...DEFAULT_NOTIFICATION_SETTINGS,
+        ...(parsed.notifications ?? {}),
+      },
     };
   } catch {
     return DEFAULTS;
