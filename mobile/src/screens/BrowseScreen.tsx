@@ -7,6 +7,7 @@ import { FilterChips } from '@/components/FilterChips';
 import { ListMapToggle } from '@/components/ListMapToggle';
 import { MapPlaceholder } from '@/components/MapPlaceholder';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
+import { SearchBar } from '@/components/SearchBar';
 
 export default function BrowseScreen() {
   const events = useStore((s) => s.events);
@@ -59,6 +60,7 @@ export default function BrowseScreen() {
     <View style={styles.wrap}>
       <CollapsibleBanner scrollY={scrollY} />
       <ListMapToggle value={view} onChange={setView} />
+      <SearchBar />
       <FilterChips />
       {view === 'list' ? (
         <Animated.FlatList
