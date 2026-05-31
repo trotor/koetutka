@@ -145,9 +145,12 @@ def process_events(events, target_year):
         entry_start_date = event.get('entryStartDate', '')
         entry_end_date = event.get('entryEndDate', '')
 
-        # Parsitaan päivämäärät
+        # Parsitaan päivämäärät — SNJ:n API antaa päivän UTC:ssä, mutta
+        # kokeet ovat Helsingin aikaa. Muunnetaan ennen formatointia jotta
+        # date_str ja date_sort ovat samassa, paikallisessa aikavyöhykkeessä.
+        helsinki = ZoneInfo('Europe/Helsinki')
         try:
-            date_obj = datetime.fromisoformat(start_date.replace('Z', '+00:00'))
+            date_obj = datetime.fromisoformat(start_date.replace('Z', '+00:00')).astimezone(helsinki)
             date_str = date_obj.strftime('%d.%m.%Y')
             date_sort = date_obj
         except:
@@ -158,20 +161,20 @@ def process_events(events, target_year):
         end_date_obj = None
         if end_date:
             try:
-                end_date_obj = datetime.fromisoformat(end_date.replace('Z', '+00:00'))
+                end_date_obj = datetime.fromisoformat(end_date.replace('Z', '+00:00')).astimezone(helsinki)
                 if end_date_obj.date() != date_obj.date():
                     date_str = f"{date_obj.strftime('%d.')}-{end_date_obj.strftime('%d.%m.%Y')}"
             except:
                 pass
 
         try:
-            entry_start_obj = datetime.fromisoformat(entry_start_date.replace('Z', '+00:00'))
+            entry_start_obj = datetime.fromisoformat(entry_start_date.replace('Z', '+00:00')).astimezone(helsinki)
             entry_start_str = entry_start_obj.strftime('%d.%m.')
         except:
             entry_start_str = ''
 
         try:
-            entry_end_obj = datetime.fromisoformat(entry_end_date.replace('Z', '+00:00'))
+            entry_end_obj = datetime.fromisoformat(entry_end_date.replace('Z', '+00:00')).astimezone(helsinki)
             entry_end_str = entry_end_obj.strftime('%d.%m.')
         except:
             entry_end_str = 'N/A'
