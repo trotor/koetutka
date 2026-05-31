@@ -6,7 +6,8 @@
   "scripts": {
     "build": "pnpm --filter @koetutka/shared build",
     "test": "pnpm --filter @koetutka/shared test",
-    "typecheck": "pnpm --filter @koetutka/shared typecheck"
+    "typecheck": "pnpm --filter @koetutka/shared typecheck",
+    "postinstall": "mkdir -p node_modules/@koetutka && ln -sfn ../../shared node_modules/@koetutka/shared"
   },
   "devDependencies": {
     "typescript": "^5.5.0"

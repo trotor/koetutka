@@ -1,19 +1,59 @@
 # Koetutka Mobile
 
-Expo + React Native -mobiilisovellus, joka näyttää SNJ:n noutajakokeet käyttäjän sijainnista.
+Bare React Native CLI -mobiilisovellus, joka näyttää SNJ:n noutajakokeet käyttäjän sijainnista.
 
-## Kehityskäyttö
+## Esivaatimukset
+
+Mac:
+- Node.js 20+
+- pnpm 9+
+- Xcode (App Storesta) ja Xcode Command Line Tools
+- CocoaPods (`sudo gem install cocoapods`)
+- Android Studio (Android-kehitykseen)
+
+## Asennus
 
 ```bash
 # repo-juuressa:
 pnpm install
 
-# käynnistä Metro-bundler:
-pnpm --filter @koetutka/mobile start
+# rakenna jaettu paketti:
+pnpm --filter @koetutka/shared build
 
-# Avaa Expo Go puhelimellasi ja skannaa QR-koodi.
-# Tai paina 'i' (iOS-simulaattori) / 'a' (Android-emulaattori).
+# asenna iOS-natiiviriippuvuudet:
+pnpm --filter @koetutka/mobile pod-install
 ```
+
+### Pnpm + bare React Native -workspace
+
+Repo käyttää `node-linker=hoisted` -asetusta `/.npmrc`:ssä, mikä tekee `node_modules/`-rakenteesta litteän (kuten npm/yarn) eikä symlinkki-pohjaisen. Lisäksi `mobile/node_modules` on symlinkki workspace-juuren `node_modules/`:iin — tämä on välttämätöntä koska React Nativen Gradle- ja iOS-skriptit olettavat `mobile/node_modules/`:in olemassaolon. Symlinkki on committoitu repoon. Jos `pnpm install` jossain vaiheessa poistaa sen, luo se uudelleen:
+
+```bash
+cd mobile && rm -rf node_modules && ln -s ../node_modules node_modules
+```
+
+## Käynnistys
+
+**iOS-simulaattori:**
+```bash
+# käynnistä Metro:
+pnpm --filter @koetutka/mobile start
+# uudessa terminaalissa:
+pnpm --filter @koetutka/mobile ios
+```
+
+**Android-emulaattori:**
+```bash
+# vaatii että Android Studiosta on käynnistetty emulaattori tai laite on liitetty USB:llä
+pnpm --filter @koetutka/mobile start
+pnpm --filter @koetutka/mobile android
+```
+
+**Fyysinen iPhone (USB):**
+1. Avaa `mobile/ios/Koetutka.xcworkspace` Xcodessa
+2. Valitse oma kehittäjätili (Signing & Capabilities)
+3. Yhdistä iPhone USB:llä, valitse se kohteeksi
+4. Paina Run (▶)
 
 ## Testit
 
@@ -22,17 +62,22 @@ pnpm --filter @koetutka/mobile test
 pnpm --filter @koetutka/mobile typecheck
 ```
 
-## Build (tulevaisuudessa, Vaihe 4)
-
-Tällä hetkellä appi pyörii vain Expo Go:ssa. Production-build (App Store, Play Store)
-asennetaan Vaiheessa 4 EAS Buildilla.
-
 ## Rakenne
 
-- `app/` — expo-router file-based routes (näytöt + layout)
-- `components/` — uudelleenkäytettävät React-komponentit
-- `lib/` — puhdas TypeScript (datan haku, store, ICS, sijainti, persistointi)
-- `lib/tests/` — vitest-testit puhtaalle logiikalle
+- `App.tsx` — juurikomponentti (navigaatio + persistointi)
+- `index.js` — RN-natiivi entry (AppRegistry)
+- `src/navigation/` — React Navigation (Stack + Tab)
+- `src/screens/` — näkymät (Browse, Favorites, Settings, EventDetail)
+- `src/components/` — uudelleenkäytettävät React-komponentit
+- `src/lib/` — puhdas TS (datan haku, store, ICS, sijainti, persistointi)
+- `src/lib/tests/` — vitest-testit puhtaalle logiikalle
+- `ios/` — natiivi Xcode-projekti
+- `android/` — natiivi Gradle-projekti
 
 Liiketoimintalogiikka (etäisyys, suodatus, ICS-generointi) tulee `@koetutka/shared`
 -paketista, joka on jaettu web-sovelluksen kanssa.
+
+## Production build (tulevaisuudessa, Vaihe 4)
+
+iOS: Xcode Archive → App Store Connect.
+Android: `cd android && ./gradlew bundleRelease` → Play Console.
