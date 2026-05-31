@@ -4,6 +4,7 @@ import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
 import { getCostValue, getOptionalCosts } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { exportEventICS } from '@/lib/ics-export';
+import { addEventToCalendar } from '@/lib/calendar-add';
 import type { RootStackParamList } from '../navigation';
 
 type Route = RouteProp<RootStackParamList, 'EventDetail'>;
@@ -60,15 +61,21 @@ export default function EventDetailScreen() {
       <View style={styles.buttonRow}>
         <Pressable
           style={styles.button}
-          onPress={() => exportEventICS(event, 'event', useStore.getState().userLocation?.name)}
+          onPress={() => addEventToCalendar(event, 'event', useStore.getState().userLocation?.name)}
         >
           <Text style={styles.buttonText}>📅 Lisää kalenteriin</Text>
         </Pressable>
         <Pressable
           style={[styles.button, styles.buttonSecondary]}
-          onPress={() => exportEventICS(event, 'registration', useStore.getState().userLocation?.name)}
+          onPress={() => addEventToCalendar(event, 'registration', useStore.getState().userLocation?.name)}
         >
           <Text style={[styles.buttonText, styles.buttonTextSecondary]}>🔔 Ilmoittautumismuistutus</Text>
+        </Pressable>
+        <Pressable
+          style={[styles.button, styles.buttonTertiary]}
+          onPress={() => exportEventICS(event, 'event', useStore.getState().userLocation?.name)}
+        >
+          <Text style={[styles.buttonText, styles.buttonTextSecondary]}>📤 Jaa ICS-tiedostona</Text>
         </Pressable>
       </View>
     </ScrollView>
@@ -97,6 +104,7 @@ const styles = StyleSheet.create({
   buttonRow: { marginTop: 12, gap: 8 },
   button: { backgroundColor: '#2d5a27', padding: 14, borderRadius: 8, alignItems: 'center' },
   buttonSecondary: { backgroundColor: 'white', borderWidth: 1, borderColor: '#2d5a27' },
+  buttonTertiary: { backgroundColor: 'white', borderWidth: 1, borderColor: '#888' },
   buttonText: { color: 'white', fontWeight: '600', fontSize: 15 },
   buttonTextSecondary: { color: '#2d5a27' },
 });

@@ -119,6 +119,49 @@ function buildRegistrationDescription(event: Event): string {
   return description;
 }
 
+export interface CalendarEventInput {
+  title: string;
+  startDate: Date;
+  /** Inclusive end date — for all-day events, the actual last day (not the +1 day exclusive end used in ICS). */
+  endDate: Date;
+  location: string;
+  description: string;
+  allDay: boolean;
+}
+
+/**
+ * Rakentaa natiiveille kalenteri-intenteille (Android `ACTION_INSERT`, iOS EventKit)
+ * sopivan event-datan. Vastaa sisällöltään generateICS:ää, mutta käyttää oikeita
+ * \n-merkkejä eikä ICS-escapeja.
+ */
+export function buildCalendarEventInput(
+  event: Event,
+  options: Pick<ICSOptions, 'type' | 'userLocationName'>,
+): CalendarEventInput {
+  const startDate =
+    options.type === 'registration'
+      ? parseRegistrationDate(event.entry_date, event.date_sort)
+      : new Date(event.date_sort);
+
+  const endDate = options.type === 'event' && event.end_date_sort
+    ? new Date(event.end_date_sort)
+    : new Date(startDate);
+
+  const title = options.type === 'registration'
+    ? `Ilmoittautuminen: ${event.location} - ${event.type}`
+    : `${event.location} - ${event.type} - ${event.levels}`;
+
+  const description = options.type === 'registration'
+    ? buildRegistrationDescription(event).replace(/\\n/g, '\n')
+    : buildEventDescription(event, options.userLocationName).replace(/\\n/g, '\n');
+
+  const location = event.coordinates
+    ? `${event.location} (${event.coordinates[0]}, ${event.coordinates[1]})`
+    : event.location;
+
+  return { title, startDate, endDate, location, description, allDay: true };
+}
+
 /**
  * Tuottaa ICS-tekstin annetulle kokeelle tai ilmoittautumismuistutukselle.
  * Tekstin voi tallentaa selaimessa Blobina tai mobiilissa tiedostona.

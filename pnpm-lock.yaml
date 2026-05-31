@@ -41,6 +41,9 @@ importers:
       react-native:
         specifier: 0.74.5
         version: 0.74.5(@babel/core@7.29.7)(@babel/preset-env@7.29.7(@babel/core@7.29.7))(@types/react@18.2.79)(react@18.2.0)
+      react-native-add-calendar-event:
+        specifier: ^5.0.0
+        version: 5.0.0
       react-native-fs:
         specifier: ^2.20.0
         version: 2.20.0(react-native@0.74.5(@babel/core@7.29.7)(@babel/preset-env@7.29.7(@babel/core@7.29.7))(@types/react@18.2.79)(react@18.2.0))
@@ -3645,6 +3648,15 @@ packages:
   react-is@18.3.1:
     resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
+  react-native-add-calendar-event@5.0.0:
+    resolution: {integrity: sha512-slkprraScOk7d8fm46a+P8FFKsQZRxABeRIYkVJjt4F7d9MYm52SzSYJ08BtOXK5vkn34gCq6VEOkcQ3i+wiAA==}
+    deprecated: Please use expo-calendar package instead. It provides the same features and some more.
+    peerDependencies:
+      expo: '>=47.0.0'
+    peerDependenciesMeta:
+      expo:
+        optional: true
+
   react-native-fs@2.20.0:
     resolution: {integrity: sha512-VkTBzs7fIDUiy/XajOSNk0XazFE9l+QlMAce7lGuebZcag5CnjszB+u4BdqzwaQOdcYb5wsJIsqq4kxInIRpJQ==}
     peerDependencies:
@@ -6073,7 +6085,9 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - '@babel/preset-env'
+      - bufferutil
       - supports-color
+      - utf-8-validate
 
   '@react-native/normalize-colors@0.74.87': {}
 
@@ -8909,6 +8923,8 @@ snapshots:
   react-is@17.0.2: {}
 
   react-is@18.3.1: {}
+
+  react-native-add-calendar-event@5.0.0: {}
 
   react-native-fs@2.20.0(react-native@0.74.5(@babel/core@7.29.7)(@babel/preset-env@7.29.7(@babel/core@7.29.7))(@types/react@18.2.79)(react@18.2.0)):
     dependencies:

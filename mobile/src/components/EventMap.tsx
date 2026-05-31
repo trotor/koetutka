@@ -27,10 +27,20 @@ function buildHtml(): string {
   .popup-title { font-weight: 600; color: #1a472a; margin-bottom: 4px; }
   .popup-meta { color: #666; font-size: 12px; margin-bottom: 6px; }
   .popup-btn { display: inline-block; background: #2d5a27; color: white; padding: 6px 10px; border-radius: 4px; text-decoration: none; font-size: 12px; font-weight: 600; }
+  .map-legend { position: absolute; bottom: 22px; left: 10px; z-index: 1000; background: rgba(255,255,255,0.95); border-radius: 6px; padding: 6px 8px; font: 11px system-ui, -apple-system, sans-serif; box-shadow: 0 1px 4px rgba(0,0,0,0.2); }
+  .legend-item { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+  .legend-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid white; box-shadow: 0 1px 2px rgba(0,0,0,.3); display: flex; align-items: center; justify-content: center; color: white; font: bold 8px system-ui; }
 </style>
 </head>
 <body>
 <div id="map"></div>
+<div class="map-legend">
+  <div class="legend-item"><span class="legend-dot" style="background:#1565c0">B</span><span>NOME-B</span></div>
+  <div class="legend-item"><span class="legend-dot" style="background:#2e7d32">U</span><span>NOU</span></div>
+  <div class="legend-item"><span class="legend-dot" style="background:#6a1b9a">W</span><span>NOWT</span></div>
+  <div class="legend-item"><span class="legend-dot" style="background:#ef6c00">A</span><span>NOME-A</span></div>
+  <div class="legend-item"><span class="legend-dot" style="background:#999">·</span><span>Mennyt</span></div>
+</div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
   function post(msg) {
@@ -46,18 +56,46 @@ function buildHtml(): string {
   var markersLayer = L.layerGroup().addTo(map);
   var userMarker = null;
 
+  var TYPE_STYLES = {
+    'NOME-B': { color: '#1565c0', letter: 'B' },
+    'NOME-A': { color: '#ef6c00', letter: 'A' },
+    'NOU':    { color: '#2e7d32', letter: 'U' },
+    'NOWT':   { color: '#6a1b9a', letter: 'W' }
+  };
+
+  function styleForType(type) {
+    return TYPE_STYLES[type] || { color: '#555', letter: '?' };
+  }
+
+  function buildIcon(type, isPast) {
+    var s = styleForType(type);
+    var bg = isPast ? '#999' : s.color;
+    var html = '<div style="display:flex;align-items:center;justify-content:center;background:' + bg + ';color:white;width:22px;height:22px;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.4);font:bold 11px system-ui;' + (isPast ? 'opacity:0.55;' : '') + '">' + s.letter + '</div>';
+    return L.divIcon({ html: html, iconSize: [26,26], iconAnchor: [13,13], className: '' });
+  }
+
+  function validCoord(c) {
+    if (!c || c.length !== 2) return false;
+    var lat = c[0], lng = c[1];
+    if (typeof lat !== 'number' || typeof lng !== 'number') return false;
+    if (!isFinite(lat) || !isFinite(lng)) return false;
+    if (lat === 0 && lng === 0) return false;
+    // Finland sanity check (roughly)
+    if (lat < 55 || lat > 75) return false;
+    if (lng < 15 || lng > 35) return false;
+    return true;
+  }
+
   window.renderEvents = function (events, user) {
     markersLayer.clearLayers();
     var bounds = [];
     var todayISO = new Date().toISOString().split('T')[0];
     events.forEach(function (e) {
-      if (!e.coordinates || e.coordinates.length !== 2) return;
+      if (!validCoord(e.coordinates)) return;
       var lat = e.coordinates[0];
       var lng = e.coordinates[1];
       var isPast = (e.end_date_sort || e.date_sort).split('T')[0] < todayISO;
-      var icon = isPast
-        ? L.divIcon({ className: 'past-marker', html: '<div style="background:#888;width:14px;height:14px;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>', iconSize: [18,18], iconAnchor: [9,9] })
-        : L.divIcon({ html: '<div style="background:#2d5a27;width:14px;height:14px;border-radius:50%;border:2px solid white;box-shadow:0 1px 3px rgba(0,0,0,.4)"></div>', iconSize: [18,18], iconAnchor: [9,9] });
+      var icon = buildIcon(e.type, isPast);
       var distance = (e.distance != null) ? '<div class="popup-meta">' + e.distance + ' km</div>' : '';
       var html = '<div class="popup-title">' + (e.name || e.location) + '</div>'
         + '<div class="popup-meta">' + e.date + ' · ' + e.type + ' ' + e.levels + '</div>'
@@ -67,7 +105,8 @@ function buildHtml(): string {
       markersLayer.addLayer(m);
       bounds.push([lat, lng]);
     });
-    if (user && typeof user.lat === 'number' && typeof user.lng === 'number') {
+    if (user && typeof user.lat === 'number' && typeof user.lng === 'number'
+        && isFinite(user.lat) && isFinite(user.lng)) {
       if (userMarker) map.removeLayer(userMarker);
       userMarker = L.circleMarker([user.lat, user.lng], {
         radius: 8, color: '#1976d2', weight: 3, fillColor: '#fff', fillOpacity: 1
@@ -76,6 +115,8 @@ function buildHtml(): string {
     }
     if (bounds.length > 0) {
       map.fitBounds(bounds, { padding: [30, 30], maxZoom: 11 });
+    } else {
+      map.setView([64.5, 26.0], 5);
     }
   };
 
