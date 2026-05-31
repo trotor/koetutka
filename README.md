@@ -78,6 +78,17 @@ MIT
 
 ## Versiohistoria
 
+### v1.8.0 (2026-05-31)
+- **Uusi Android-sovellus** koetutka rinnalla: natiivi React Native -mobiili
+  - Tab-pohjainen UI: Selaa, Suosikit, Asetukset
+  - Karttanäkymä (OpenStreetMap + Leaflet) eri värisymboleilla per koetyyppi
+  - Lokaalit muistutukset suosikkikokeista N päivää ennen
+  - Suora "Lisää kalenteriin" -intent (avaa kalenterisovelluksen täytetyllä lomakkeella)
+  - Suosikkien hallinta (tähti) + persistointi
+  - Menneet kokeet näkyvät harmaalla "Mennyt"-merkinnällä
+- **Aikavyöhykekorjaus** (web): SNJ:n päivämäärät muunnetaan Helsingin aikavyöhykkeeseen ennen muotoilua. Aiemmin esim. 6.6. saattoi näyttäytyä 5.6. UTC-muunnoksen takia.
+- Hakukenttä kattaa nyt myös koeluokat (vastaa mobiilin hakua)
+
 ### v1.7.1 (2026-05-29)
 - Refaktoroitu jaettu logiikka shared/ TypeScript-moduuliksi (haversine, ICS-generointi, suodattimet, hintaformatterit)
 - Pohjustaa tulevan mobiilisovelluksen koodinjaolle (pnpm workspace)
