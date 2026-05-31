@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import {
-  View, Text, TextInput, Pressable, StyleSheet, FlatList, Alert, Platform,
+  View, Text, TextInput, Pressable, StyleSheet, Alert, Platform,
 } from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 import {
@@ -98,16 +98,17 @@ export function LocationSection() {
       />
       {isSearching && <Text style={styles.hint}>Haetaan…</Text>}
       {results.length > 0 && (
-        <FlatList
-          data={results}
-          keyExtractor={(item, idx) => `${item.lat}-${item.lng}-${idx}`}
-          style={styles.suggestions}
-          renderItem={({ item }) => (
-            <Pressable onPress={() => selectResult(item)} style={styles.suggestion}>
+        <View style={styles.suggestions}>
+          {results.map((item, idx) => (
+            <Pressable
+              key={`${item.lat}-${item.lng}-${idx}`}
+              onPress={() => selectResult(item)}
+              style={styles.suggestion}
+            >
               <Text>{item.name}</Text>
             </Pressable>
-          )}
-        />
+          ))}
+        </View>
       )}
 
       <Pressable onPress={useGps} style={styles.gps} disabled={isGpsLoading}>
