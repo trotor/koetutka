@@ -1,11 +1,12 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Text, View, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { Animated, Text, View, StyleSheet, ActivityIndicator } from 'react-native';
 import { addDistances, filterEvents } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { EventCard } from '@/components/EventCard';
 import { FilterChips } from '@/components/FilterChips';
 import { ListMapToggle } from '@/components/ListMapToggle';
 import { MapPlaceholder } from '@/components/MapPlaceholder';
+import { CollapsibleBanner } from '@/components/CollapsibleBanner';
 
 export default function BrowseScreen() {
   const events = useStore((s) => s.events);
@@ -16,6 +17,7 @@ export default function BrowseScreen() {
   const filters = useStore((s) => s.filters);
 
   const [view, setView] = useState<'list' | 'map'>('list');
+  const scrollY = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     loadEvents(new Date().getFullYear());
@@ -55,10 +57,11 @@ export default function BrowseScreen() {
 
   return (
     <View style={styles.wrap}>
+      <CollapsibleBanner scrollY={scrollY} />
       <ListMapToggle value={view} onChange={setView} />
       <FilterChips />
       {view === 'list' ? (
-        <FlatList
+        <Animated.FlatList
           data={visible}
           keyExtractor={(item) => item.id}
           contentContainerStyle={styles.list}
@@ -72,6 +75,11 @@ export default function BrowseScreen() {
           ListHeaderComponent={<Text style={styles.count}>{visible.length} koetta</Text>}
           onRefresh={() => loadEvents(new Date().getFullYear())}
           refreshing={isLoading}
+          onScroll={Animated.event(
+            [{ nativeEvent: { contentOffset: { y: scrollY } } }],
+            { useNativeDriver: false },
+          )}
+          scrollEventThrottle={16}
         />
       ) : (
         <MapPlaceholder eventCount={visible.length} />
