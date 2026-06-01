@@ -101,6 +101,7 @@ jobs:
         run: |
           mkdir -p _site/shared/dist
           cp index.html _site/
+          cp privacy.html _site/
           cp banner.jpg _site/
           cp favicon.ico _site/
           cp favicon-192.png _site/

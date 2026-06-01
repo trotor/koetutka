@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tietosuojaseloste — Koetutka</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1a472a; line-height: 1.6; }
+  h1 { color: #1a472a; border-bottom: 2px solid #2d5a27; padding-bottom: 8px; }
+  h2 { color: #2d5a27; margin-top: 32px; }
+  a { color: #1565c0; }
+  .meta { color: #666; font-size: 0.9em; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; }
+</style>
+</head>
+<body>
+<h1>Tietosuojaseloste — Koetutka</h1>
+
+<p>Koetutka on noutajien rodunomaisten kokeiden seurantasovellus. Sovellus on saatavilla sekä Android-mobiilisovelluksena että web-sovelluksena osoitteessa <a href="https://trotor.github.io/koetutka">trotor.github.io/koetutka</a>.</p>
+
+<p><strong>Koetutka ei kerää eikä lähetä käyttäjätietoja kolmansille osapuolille.</strong></p>
+
+<h2>Tiedot joita sovellus käsittelee paikallisesti laitteella</h2>
+
+<ul>
+  <li>Käyttäjän valitsema sijainti (paikkakunta tai GPS-koordinaatit)</li>
+  <li>Suosikkikokeiden tunnisteet</li>
+  <li>Suodatinasetukset</li>
+  <li>Notifikaatioasetukset</li>
+</ul>
+
+<p>Nämä tiedot tallennetaan vain laitteen omaan tallennukseen (mobiilisovelluksessa AsyncStorage, webissä localStorage), eikä niitä lähetetä Koetutkan kehittäjälle tai muille tahoille.</p>
+
+<h2>Ulkoiset palvelut</h2>
+
+<ul>
+  <li><strong>Suomen Noutajakoirajärjestön (SNJ) koekalenteri-API:</strong> koetapahtumadatan haku.</li>
+  <li><strong>OpenStreetMap Nominatim:</strong> paikkakuntien geokoodaus tekstihaun yhteydessä.</li>
+  <li><strong>OpenStreetMap (tile-palvelin):</strong> karttatiilet karttanäkymässä (vain mobiili).</li>
+</ul>
+
+<p>Nämä palvelut näkevät ainoastaan IP-osoitteesi tavallisten verkkopyyntöjen yhteydessä. Koetutka ei välitä niille henkilötietoja.</p>
+
+<h2>Luvat (mobiilisovellus)</h2>
+
+<ul>
+  <li><strong>Sijainti</strong> — valinnainen, käytetään vain kun käyttäjä painaa "Käytä sijaintiani" -painiketta. Sijaintia ei lähetetä mihinkään.</li>
+  <li><strong>Notifikaatiot</strong> — valinnainen, käytetään vain suosikkikokeiden muistutuksiin. Notifikaatiot luodaan paikallisesti, eivätkä kulje ulkopuolisten palveluiden kautta.</li>
+  <li><strong>Internet</strong> — vaaditaan kokeiden datan, karttatiilien ja geokoodauspalvelun käyttöön.</li>
+</ul>
+
+<h2>Lasten yksityisyys</h2>
+
+<p>Sovellus ei kerää tietoja eikä ole suunnattu erityisesti alle 13-vuotiaille.</p>
+
+<h2>Muutokset</h2>
+
+<p>Tietosuojaselosteen muutokset julkaistaan tällä sivulla. Jos teemme olennaisia muutoksia, ilmoitamme niistä uudessa sovellusversiossa.</p>
+
+<h2>Yhteystiedot</h2>
+
+<p>Kysymyksiä? Ota yhteyttä:</p>
+
+<ul>
+  <li>Sähköposti: <a href="mailto:tero@savonnuuskut.com">tero@savonnuuskut.com</a></li>
+  <li>Github: <a href="https://github.com/trotor/koetutka">github.com/trotor/koetutka</a></li>
+</ul>
+
+<p class="meta">Päivitetty: 2026-06-01<br>Tekijä: Tero Rönkkö</p>
+</body>
+</html>
