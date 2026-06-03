@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { Animated, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 
 const banner = require('../../assets/banner.jpg');
@@ -6,27 +7,47 @@ const COLLAPSED_HEIGHT = 56;
 
 interface Props {
   scrollY: Animated.Value;
+  forceCollapsed?: boolean;
 }
 
-export function CollapsibleBanner({ scrollY }: Props) {
+export function CollapsibleBanner({ scrollY, forceCollapsed = false }: Props) {
   const { width } = useWindowDimensions();
   const fullHeight = Math.round(width / BANNER_ASPECT);
   const distance = fullHeight - COLLAPSED_HEIGHT;
 
-  const containerHeight = scrollY.interpolate({
+  const forced = useRef(new Animated.Value(forceCollapsed ? 1 : 0)).current;
+  useEffect(() => {
+    Animated.timing(forced, {
+      toValue: forceCollapsed ? 1 : 0,
+      duration: 220,
+      useNativeDriver: false,
+    }).start();
+  }, [forceCollapsed, forced]);
+
+  const scrollProgress = scrollY.interpolate({
     inputRange: [0, distance],
+    outputRange: [0, 1],
+    extrapolate: 'clamp',
+  });
+  const progress = Animated.add(
+    Animated.multiply(scrollProgress, Animated.subtract(1, forced)),
+    forced,
+  );
+
+  const containerHeight = progress.interpolate({
+    inputRange: [0, 1],
     outputRange: [fullHeight, COLLAPSED_HEIGHT],
     extrapolate: 'clamp',
   });
 
-  const imageOpacity = scrollY.interpolate({
-    inputRange: [0, distance * 0.6],
+  const imageOpacity = progress.interpolate({
+    inputRange: [0, 0.6],
     outputRange: [1, 0],
     extrapolate: 'clamp',
   });
 
-  const titleOpacity = scrollY.interpolate({
-    inputRange: [distance * 0.6, distance],
+  const titleOpacity = progress.interpolate({
+    inputRange: [0.6, 1],
     outputRange: [0, 1],
     extrapolate: 'clamp',
   });

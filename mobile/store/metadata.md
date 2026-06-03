@@ -7,6 +7,8 @@ Sovelluksen perustiedot ja kuvaukset Google Play Consoleen syöttämistä varten
 | Kenttä | Arvo |
 |---|---|
 | Sovelluksen nimi | Koetutka |
+| Julkaisija | Inetor Oy |
+| Tekijä | Tero Rönkkö |
 | Paketin nimi (applicationId) | `com.koetutka` |
 | Versio (versionName) | `1.0` |
 | Version koodi (versionCode) | `1` |
@@ -53,7 +55,7 @@ Koetutka ei kerää eikä lähetä mitään tietoja kolmansille osapuolille. Sij
 
 KEHITTÄJÄLTÄ
 
-Koetutka on harrastajan tekemä avoimen lähdekoodin työkalu (MIT-lisenssi). Lähdekoodi: github.com/trotor/koetutka.
+Koetutka on avoimen lähdekoodin työkalu (MIT-lisenssi). Tekijä: Tero Rönkkö. Julkaisija: Inetor Oy. Lähdekoodi: github.com/trotor/koetutka.
 
 Palautetta voi lähettää sähköpostilla osoitteeseen tero@savonnuuskut.com.
 ```

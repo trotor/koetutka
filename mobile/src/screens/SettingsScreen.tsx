@@ -3,6 +3,7 @@ import { Animated, StyleSheet, View } from 'react-native';
 import { LocationSection } from '@/components/LocationSection';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
 import { NotificationsSection } from '@/components/NotificationsSection';
+import { AboutSection } from '@/components/AboutSection';
 
 export default function SettingsScreen() {
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -19,6 +20,7 @@ export default function SettingsScreen() {
       >
         <LocationSection />
         <NotificationsSection />
+        <AboutSection />
       </Animated.ScrollView>
     </View>
   );

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { View, Text, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { useStore } from '@/lib/store';
 
@@ -14,6 +15,13 @@ export function FilterChips() {
   const filters = useStore((s) => s.filters);
   const setFilters = useStore((s) => s.setFilters);
   const userLocation = useStore((s) => s.userLocation);
+  const [expanded, setExpanded] = useState(false);
+
+  const activeCount =
+    (filters.activeTypes?.size ?? 0) +
+    (filters.activeLevels?.size ?? 0) +
+    (filters.maxDistanceKm != null ? 1 : 0) +
+    (filters.hidePast ? 1 : 0);
 
   function toggleType(type: string) {
     const next = new Set(filters.activeTypes);
@@ -29,72 +37,100 @@ export function FilterChips() {
 
   return (
     <View style={styles.wrap}>
-      <Text style={styles.label}>Laji</Text>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
-        {TYPES.map((t) => (
-          <Pressable
-            key={t}
-            onPress={() => toggleType(t)}
-            style={[styles.chip, filters.activeTypes?.has(t) && styles.chipActive]}
-          >
-            <Text style={[styles.chipText, filters.activeTypes?.has(t) && styles.chipTextActive]}>
-              {t}
-            </Text>
-          </Pressable>
-        ))}
-      </ScrollView>
+      <Pressable
+        onPress={() => setExpanded((v) => !v)}
+        style={styles.headerBtn}
+        hitSlop={4}
+      >
+        <Text style={styles.headerText}>
+          ⚙ Filtterit{activeCount > 0 ? ` (${activeCount})` : ''}
+        </Text>
+        <Text style={styles.chevron}>{expanded ? '⌃' : '⌄'}</Text>
+      </Pressable>
 
-      <Text style={styles.label}>Taso</Text>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
-        {LEVELS.map((l) => (
-          <Pressable
-            key={l}
-            onPress={() => toggleLevel(l)}
-            style={[styles.chip, filters.activeLevels?.has(l) && styles.chipActive]}
-          >
-            <Text style={[styles.chipText, filters.activeLevels?.has(l) && styles.chipTextActive]}>
-              {l}
-            </Text>
-          </Pressable>
-        ))}
-      </ScrollView>
-
-      {userLocation && (
-        <>
-          <Text style={styles.label}>Max etäisyys</Text>
+      {expanded && (
+        <View style={styles.panel}>
+          <Text style={styles.label}>Laji</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
-            {DISTANCES.map((d) => (
+            {TYPES.map((t) => (
               <Pressable
-                key={d.label}
-                onPress={() => setFilters({ maxDistanceKm: d.value })}
-                style={[styles.chip, filters.maxDistanceKm === d.value && styles.chipActive]}
+                key={t}
+                onPress={() => toggleType(t)}
+                style={[styles.chip, filters.activeTypes?.has(t) && styles.chipActive]}
               >
-                <Text style={[styles.chipText, filters.maxDistanceKm === d.value && styles.chipTextActive]}>
-                  {d.label}
+                <Text style={[styles.chipText, filters.activeTypes?.has(t) && styles.chipTextActive]}>
+                  {t}
                 </Text>
               </Pressable>
             ))}
           </ScrollView>
-        </>
-      )}
 
-      <View style={styles.toggleRow}>
-        <Text style={styles.label}>Piilota menneet</Text>
-        <Pressable
-          onPress={() => setFilters({ hidePast: !filters.hidePast })}
-          style={[styles.toggle, filters.hidePast && styles.toggleOn]}
-        >
-          <Text style={[styles.toggleText, filters.hidePast && styles.toggleTextOn]}>
-            {filters.hidePast ? 'Päällä' : 'Pois'}
-          </Text>
-        </Pressable>
-      </View>
+          <Text style={styles.label}>Taso</Text>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
+            {LEVELS.map((l) => (
+              <Pressable
+                key={l}
+                onPress={() => toggleLevel(l)}
+                style={[styles.chip, filters.activeLevels?.has(l) && styles.chipActive]}
+              >
+                <Text style={[styles.chipText, filters.activeLevels?.has(l) && styles.chipTextActive]}>
+                  {l}
+                </Text>
+              </Pressable>
+            ))}
+          </ScrollView>
+
+          {userLocation && (
+            <>
+              <Text style={styles.label}>Max etäisyys</Text>
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
+                {DISTANCES.map((d) => (
+                  <Pressable
+                    key={d.label}
+                    onPress={() => setFilters({ maxDistanceKm: d.value })}
+                    style={[styles.chip, filters.maxDistanceKm === d.value && styles.chipActive]}
+                  >
+                    <Text style={[styles.chipText, filters.maxDistanceKm === d.value && styles.chipTextActive]}>
+                      {d.label}
+                    </Text>
+                  </Pressable>
+                ))}
+              </ScrollView>
+            </>
+          )}
+
+          <View style={styles.toggleRow}>
+            <Text style={styles.label}>Piilota menneet</Text>
+            <Pressable
+              onPress={() => setFilters({ hidePast: !filters.hidePast })}
+              style={[styles.toggle, filters.hidePast && styles.toggleOn]}
+            >
+              <Text style={[styles.toggleText, filters.hidePast && styles.toggleTextOn]}>
+                {filters.hidePast ? 'Päällä' : 'Pois'}
+              </Text>
+            </Pressable>
+          </View>
+        </View>
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  wrap: { paddingHorizontal: 12, paddingVertical: 8, backgroundColor: 'white' },
+  wrap: { backgroundColor: 'white' },
+  headerBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderColor: '#e0e0e0',
+  },
+  headerText: { fontSize: 13, color: '#1a472a', fontWeight: '600' },
+  chevron: { fontSize: 14, color: '#888' },
+  panel: { paddingHorizontal: 12, paddingTop: 4, paddingBottom: 8 },
   label: { fontSize: 12, color: '#888', marginTop: 8, marginBottom: 4, fontWeight: '600' },
   row: { gap: 6, paddingBottom: 4 },
   chip: { paddingHorizontal: 10, paddingVertical: 5, borderRadius: 999, backgroundColor: '#e8f0e6' },

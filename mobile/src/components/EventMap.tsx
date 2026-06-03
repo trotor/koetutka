@@ -1,4 +1,4 @@
-import { useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { View, StyleSheet, ActivityIndicator } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { useNavigation } from '@react-navigation/native';
@@ -130,6 +130,7 @@ export function EventMap({ events }: Props) {
   const userLocation = useStore((s) => s.userLocation);
   const navigation = useNavigation<Nav>();
   const webRef = useRef<WebView>(null);
+  const [ready, setReady] = useState(false);
 
   const html = useMemo(buildHtml, []);
 
@@ -149,13 +150,18 @@ export function EventMap({ events }: Props) {
     return JSON.stringify({ events: slim, user: userLocation });
   }, [events, userLocation]);
 
+  useEffect(() => {
+    if (!ready) return;
+    webRef.current?.injectJavaScript(
+      `try { var p = ${payload}; window.renderEvents(p.events, p.user); } catch(e){} true;`,
+    );
+  }, [payload, ready]);
+
   function onMessage(event: { nativeEvent: { data: string } }) {
     try {
       const msg = JSON.parse(event.nativeEvent.data);
       if (msg.type === 'ready') {
-        webRef.current?.injectJavaScript(
-          `try { var p = ${payload}; window.renderEvents(p.events, p.user); } catch(e){} true;`,
-        );
+        setReady(true);
       } else if (msg.type === 'open' && typeof msg.id === 'string') {
         navigation.navigate('EventDetail', { id: msg.id });
       }
@@ -164,9 +170,6 @@ export function EventMap({ events }: Props) {
     }
   }
 
-  // Re-render on data change
-  const injectOnUpdate = `try { var p = ${payload}; window.renderEvents(p.events, p.user); } catch(e){} true;`;
-
   return (
     <View style={styles.wrap}>
       <WebView
@@ -174,7 +177,6 @@ export function EventMap({ events }: Props) {
         originWhitelist={['*']}
         source={{ html }}
         onMessage={onMessage}
-        injectedJavaScript={injectOnUpdate}
         javaScriptEnabled
         domStorageEnabled
         startInLoadingState

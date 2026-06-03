@@ -58,7 +58,7 @@ export default function BrowseScreen() {
 
   return (
     <View style={styles.wrap}>
-      <CollapsibleBanner scrollY={scrollY} />
+      <CollapsibleBanner scrollY={scrollY} forceCollapsed={view === 'map'} />
       <ListMapToggle value={view} onChange={setView} />
       <SearchBar />
       <FilterChips />
