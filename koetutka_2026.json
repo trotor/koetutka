@@ -3990,34 +3990,34 @@
     "cost_member": 45,
     "classes": [
       {
+        "places": 12,
         "class": "VOI",
-        "date": "2026-06-12T21:00:00.000Z",
+        "state": "picked",
         "judge": [
           {
-            "official": true,
             "name": "Salonen Susanna",
-            "id": 835312
+            "id": 835312,
+            "official": true
           }
         ],
         "members": 14,
-        "state": "picked",
-        "places": 12,
-        "entries": 29
+        "date": "2026-06-12T21:00:00.000Z",
+        "entries": 28
       },
       {
-        "members": 14,
+        "entries": 28,
         "class": "VOI",
-        "entries": 29,
-        "places": 12,
         "state": "picked",
         "date": "2026-06-13T21:00:00.000Z",
+        "members": 14,
         "judge": [
           {
             "id": 835312,
             "name": "Salonen Susanna",
             "official": true
           }
-        ]
+        ],
+        "places": 12
       }
     ]
   },
@@ -4665,28 +4665,28 @@
     },
     "classes": [
       {
-        "entries": 18,
         "date": "2026-06-27T21:00:00.000Z",
+        "entries": 20,
+        "members": 6,
         "judge": [],
-        "places": 0,
         "class": "ALO",
-        "members": 5
-      },
-      {
-        "members": 1,
-        "entries": 12,
-        "date": "2026-06-27T21:00:00.000Z",
-        "judge": [],
-        "class": "AVO",
         "places": 0
       },
       {
-        "judge": [],
         "date": "2026-06-27T21:00:00.000Z",
+        "members": 2,
+        "class": "AVO",
+        "entries": 15,
         "places": 0,
-        "class": "VOI",
+        "judge": []
+      },
+      {
+        "places": 0,
+        "date": "2026-06-27T21:00:00.000Z",
+        "judge": [],
+        "entries": 17,
         "members": 6,
-        "entries": 17
+        "class": "VOI"
       }
     ]
   },
@@ -5003,20 +5003,20 @@
     "cost_member": 35,
     "classes": [
       {
-        "judge": [],
         "members": 1,
         "date": "2026-07-06T21:00:00.000Z",
         "class": "ALO",
         "places": 25,
+        "judge": [],
         "entries": 2
       },
       {
-        "members": 2,
-        "entries": 3,
-        "date": "2026-07-06T21:00:00.000Z",
+        "places": 25,
         "class": "AVO",
+        "entries": 4,
+        "members": 3,
         "judge": [],
-        "places": 25
+        "date": "2026-07-06T21:00:00.000Z"
       }
     ]
   },
@@ -5424,7 +5424,7 @@
       "email": ""
     },
     "secretary": {
-      "name": "Minna Siren",
+      "name": "Minna Sirén",
       "phone": "",
       "email": "minnamaria25@gmail.com"
     },
