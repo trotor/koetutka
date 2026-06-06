@@ -3101,34 +3101,34 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-06-05T21:00:00.000Z",
         "class": "ALO",
+        "members": 17,
         "places": 16,
-        "members": 18,
-        "entries": 32,
+        "state": "invited",
+        "date": "2026-06-05T21:00:00.000Z",
+        "entries": 29,
         "judge": [
           {
             "name": "Toskala Mika",
-            "official": true,
-            "id": 697689
+            "id": 697689,
+            "official": true
           }
-        ],
-        "state": "invited"
+        ]
       },
       {
+        "class": "ALO",
         "judge": [
           {
-            "name": "Toskala Mika",
             "official": true,
-            "id": 697689
+            "id": 697689,
+            "name": "Toskala Mika"
           }
         ],
-        "entries": 32,
-        "class": "ALO",
-        "state": "invited",
+        "members": 17,
+        "entries": 29,
         "date": "2026-06-06T21:00:00.000Z",
         "places": 15,
-        "members": 18
+        "state": "invited"
       }
     ]
   },
@@ -3275,31 +3275,31 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 28,
         "state": "invited",
-        "places": 29,
         "date": "2026-06-05T21:00:00.000Z",
+        "entries": 28,
+        "places": 29,
+        "judge": [],
         "class": "ALO",
-        "members": 14,
-        "judge": []
+        "members": 14
       },
       {
         "class": "AVO",
-        "date": "2026-06-05T21:00:00.000Z",
-        "judge": [],
-        "state": "invited",
         "members": 11,
-        "places": 27,
-        "entries": 27
+        "state": "invited",
+        "places": 26,
+        "entries": 26,
+        "judge": [],
+        "date": "2026-06-05T21:00:00.000Z"
       },
       {
-        "state": "invited",
-        "places": 24,
         "date": "2026-06-05T21:00:00.000Z",
-        "class": "VOI",
-        "members": 4,
+        "state": "invited",
         "judge": [],
-        "entries": 24
+        "places": 25,
+        "entries": 24,
+        "class": "VOI",
+        "members": 4
       }
     ]
   },
@@ -3542,19 +3542,19 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-06-06T21:00:00.000Z",
         "judge": [
           {
-            "name": "Fontell Ari-Pekka",
             "official": true,
+            "name": "Fontell Ari-Pekka",
             "id": 842408
           }
         ],
-        "places": 15,
-        "members": 13,
-        "entries": 19,
         "class": "AVO",
-        "state": "invited"
+        "members": 13,
+        "state": "invited",
+        "entries": 18,
+        "date": "2026-06-06T21:00:00.000Z",
+        "places": 15
       }
     ]
   },
@@ -4326,12 +4326,12 @@
             "official": true
           }
         ],
+        "class": "ALO",
+        "members": 18,
+        "date": "2026-06-13T21:00:00.000Z",
         "places": 15,
         "state": "invited",
-        "entries": 27,
-        "date": "2026-06-13T21:00:00.000Z",
-        "class": "ALO",
-        "members": 18
+        "entries": 26
       }
     ]
   },
@@ -4702,27 +4702,27 @@
     },
     "classes": [
       {
+        "class": "ALO",
         "date": "2026-06-27T21:00:00.000Z",
+        "entries": 24,
         "judge": [],
-        "entries": 21,
         "members": 6,
-        "places": 0,
-        "class": "ALO"
+        "places": 0
       },
       {
-        "class": "AVO",
-        "date": "2026-06-27T21:00:00.000Z",
-        "places": 0,
-        "members": 3,
+        "entries": 16,
         "judge": [],
-        "entries": 16
+        "places": 0,
+        "date": "2026-06-27T21:00:00.000Z",
+        "members": 3,
+        "class": "AVO"
       },
       {
-        "places": 0,
-        "entries": 21,
-        "date": "2026-06-27T21:00:00.000Z",
-        "members": 7,
+        "entries": 23,
         "class": "VOI",
+        "members": 9,
+        "places": 0,
+        "date": "2026-06-27T21:00:00.000Z",
         "judge": []
       }
     ]
@@ -4839,42 +4839,42 @@
     "cost_member": 35,
     "classes": [
       {
-        "date": "2026-07-03T21:00:00.000Z",
-        "class": "VOI",
-        "places": 24,
-        "entries": 7,
-        "members": 6,
         "judge": [
+          {
+            "official": true,
+            "id": 4053791,
+            "name": "Puttonen Pasi-Petteri"
+          },
+          {
+            "id": 644029,
+            "name": "Hiltunen Niko",
+            "official": true
+          }
+        ],
+        "places": 24,
+        "date": "2026-07-03T21:00:00.000Z",
+        "entries": 9,
+        "members": 7,
+        "class": "VOI"
+      },
+      {
+        "judge": [
+          {
+            "name": "Hiltunen Niko",
+            "official": true,
+            "id": 644029
+          },
           {
             "name": "Puttonen Pasi-Petteri",
             "official": true,
             "id": 4053791
-          },
-          {
-            "official": true,
-            "id": 644029,
-            "name": "Hiltunen Niko"
           }
-        ]
-      },
-      {
-        "members": 6,
-        "class": "VOI",
-        "places": 24,
+        ],
         "date": "2026-07-04T21:00:00.000Z",
-        "entries": 7,
-        "judge": [
-          {
-            "id": 644029,
-            "official": true,
-            "name": "Hiltunen Niko"
-          },
-          {
-            "id": 4053791,
-            "name": "Puttonen Pasi-Petteri",
-            "official": true
-          }
-        ]
+        "members": 7,
+        "places": 24,
+        "class": "VOI",
+        "entries": 9
       }
     ]
   },
@@ -4914,25 +4914,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
-        "date": "2026-07-04T00:00:00.000+03:00",
-        "entries": 8,
         "members": 5,
-        "class": "ALO"
+        "entries": 8,
+        "class": "ALO",
+        "judge": [],
+        "date": "2026-07-04T00:00:00.000+03:00"
       },
       {
+        "members": 3,
         "date": "2026-07-04T00:00:00.000+03:00",
+        "entries": 4,
         "class": "AVO",
-        "members": 2,
-        "entries": 3,
         "judge": []
       },
       {
-        "judge": [],
-        "members": 3,
         "class": "VOI",
         "date": "2026-07-04T00:00:00.000+03:00",
-        "entries": 4
+        "members": 4,
+        "entries": 5,
+        "judge": []
       }
     ]
   },
@@ -5040,20 +5040,20 @@
     "cost_member": 35,
     "classes": [
       {
-        "members": 1,
         "date": "2026-07-06T21:00:00.000Z",
-        "class": "ALO",
+        "entries": 3,
         "places": 25,
-        "judge": [],
-        "entries": 2
+        "members": 1,
+        "class": "ALO",
+        "judge": []
       },
       {
-        "places": 25,
-        "class": "AVO",
-        "entries": 4,
         "members": 3,
+        "places": 25,
+        "entries": 4,
         "judge": [],
-        "date": "2026-07-06T21:00:00.000Z"
+        "date": "2026-07-06T21:00:00.000Z",
+        "class": "AVO"
       }
     ]
   },
@@ -5093,11 +5093,11 @@
     "cost_member": 45,
     "classes": [
       {
-        "entries": 3,
         "date": "2026-07-07T00:00:00.000+03:00",
         "class": "VOI",
-        "judge": [],
-        "members": 0
+        "entries": 5,
+        "members": 0,
+        "judge": []
       }
     ]
   },
@@ -5166,7 +5166,7 @@
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "Piirinmestaruuskoe. Etusija piirinmestaruutta tavoittelevilla koirakoilla, joille kokeen hinta 45 €. Tämän jälkeen etusijalla jäsenet, jotka eivät osallistu piirinmestaruuskilpaan (koemaksu 45 €). Ei jäsenten koemaksu 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. ",
+    "description": "Piirinmestaruuskoe. Etusija piirinmestaruutta tavoittelevilla koirakoilla, joille kokeen hinta 45 €. Tämän jälkeen etusijalla jäsenet, jotka eivät osallistu piirinmestaruuskilpaan (koemaksu 45 €). Ei jäsenten koemaksu 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. Maksu koepaikan varmistuttua!",
     "cost": 50,
     "cost_member": 45,
     "classes": [
@@ -5212,20 +5212,20 @@
     "judges": [
       "Majuri Pasi"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. ",
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. Maksu koepaikan varmistuttua!",
     "cost": 50,
     "cost_member": 45,
     "classes": [
       {
-        "judge": [
-          {
-            "name": "Majuri Pasi",
-            "official": true,
-            "id": 850900
-          }
-        ],
         "places": 15,
         "class": "ALO",
+        "judge": [
+          {
+            "id": 850900,
+            "name": "Majuri Pasi",
+            "official": true
+          }
+        ],
         "date": "2026-07-10T21:00:00.000Z"
       }
     ]
@@ -5359,32 +5359,32 @@
     "cost_member": 40,
     "classes": [
       {
-        "class": "ALO",
+        "entries": 4,
         "date": "2026-07-10T21:00:00.000Z",
+        "class": "ALO",
         "members": 2,
         "places": 15,
         "judge": [
           {
             "name": "Lappalainen Mika",
-            "id": 882887,
-            "official": true
+            "official": true,
+            "id": 882887
           }
-        ],
-        "entries": 3
+        ]
       },
       {
         "judge": [
           {
-            "name": "Lappalainen Mika",
             "id": 882887,
+            "name": "Lappalainen Mika",
             "official": true
           }
         ],
         "date": "2026-07-11T21:00:00.000Z",
-        "entries": 3,
         "class": "ALO",
+        "places": 15,
         "members": 2,
-        "places": 15
+        "entries": 4
       }
     ]
   },
@@ -5501,20 +5501,20 @@
     "judges": [
       "Majuri Pasi"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. ",
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. Maksu koepaikan varmistuttua!",
     "cost": 50,
     "cost_member": 45,
     "classes": [
       {
         "date": "2026-07-11T21:00:00.000Z",
+        "class": "VOI",
         "judge": [
           {
-            "name": "Majuri Pasi",
+            "official": true,
             "id": 850900,
-            "official": true
+            "name": "Majuri Pasi"
           }
         ],
-        "class": "VOI",
         "places": 12
       }
     ]
@@ -5552,10 +5552,9 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-07-11T21:00:00.000Z",
-        "class": "VOI",
         "members": 1,
-        "entries": 5,
+        "places": 12,
+        "class": "VOI",
         "judge": [
           {
             "name": "Särkänlahti Jari",
@@ -5563,7 +5562,8 @@
             "official": true
           }
         ],
-        "places": 12
+        "date": "2026-07-11T21:00:00.000Z",
+        "entries": 6
       }
     ]
   },
@@ -5595,7 +5595,7 @@
     "judges": [
       "Fontell Ari-Pekka"
     ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. ",
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. Maksu koepaikan varmistuttua!",
     "cost": 50,
     "cost_member": 45,
     "classes": [
@@ -5604,9 +5604,9 @@
         "places": 15,
         "judge": [
           {
-            "name": "Fontell Ari-Pekka",
             "id": 842408,
-            "official": true
+            "official": true,
+            "name": "Fontell Ari-Pekka"
           }
         ],
         "date": "2026-07-11T21:00:00.000Z"
@@ -5646,18 +5646,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 4,
-        "date": "2026-07-11T21:00:00.000Z",
         "places": 15,
-        "class": "ALO",
         "judge": [
           {
-            "id": 4053791,
             "name": "Puttonen Pasi-Petteri",
+            "id": 4053791,
             "official": true
           }
         ],
-        "entries": 4
+        "entries": 6,
+        "date": "2026-07-11T21:00:00.000Z",
+        "members": 6,
+        "class": "ALO"
       }
     ]
   },
