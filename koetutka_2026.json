@@ -3747,39 +3747,39 @@
       {
         "judge": [
           {
-            "id": 850900,
             "name": "Majuri Pasi",
-            "official": true
+            "official": true,
+            "id": 850900
           }
         ],
-        "places": 15,
-        "members": 12,
-        "date": "2026-06-12T21:00:00.000Z",
         "class": "ALO",
         "groups": [
           "ap",
           "ip"
         ],
-        "state": "picked",
+        "date": "2026-06-12T21:00:00.000Z",
+        "members": 12,
+        "state": "invited",
+        "places": 15,
         "entries": 15
       },
       {
+        "date": "2026-06-13T21:00:00.000Z",
         "judge": [
           {
             "official": true,
-            "name": "Majuri Pasi",
-            "id": 850900
+            "id": 850900,
+            "name": "Majuri Pasi"
           }
         ],
+        "places": 8,
         "class": "AVO",
-        "date": "2026-06-13T21:00:00.000Z",
         "groups": [
           "ap",
           "ip"
         ],
         "members": 0,
-        "entries": 0,
-        "places": 8
+        "entries": 0
       }
     ]
   },
@@ -4054,19 +4054,19 @@
     "cost_member": 45,
     "classes": [
       {
-        "class": "ALO",
-        "date": "2026-06-12T21:00:00.000Z",
-        "entries": 23,
-        "places": 15,
+        "members": 17,
         "state": "invited",
-        "members": 18,
+        "class": "ALO",
         "judge": [
           {
-            "id": 644029,
             "official": true,
-            "name": "Hiltunen Niko"
+            "name": "Hiltunen Niko",
+            "id": 644029
           }
-        ]
+        ],
+        "places": 15,
+        "entries": 22,
+        "date": "2026-06-12T21:00:00.000Z"
       }
     ]
   },
@@ -4108,34 +4108,34 @@
     },
     "classes": [
       {
-        "members": 10,
-        "places": 15,
-        "entries": 16,
         "date": "2026-06-12T21:00:00.000Z",
-        "state": "picked",
+        "class": "ALO",
+        "entries": 16,
+        "places": 15,
+        "members": 10,
         "judge": [
           {
-            "official": true,
             "id": 678190,
-            "name": "Turunen Vesa"
+            "name": "Turunen Vesa",
+            "official": true
           }
         ],
-        "class": "ALO"
+        "state": "invited"
       },
       {
-        "members": 15,
-        "date": "2026-06-12T21:00:00.000Z",
         "entries": 23,
-        "state": "picked",
+        "members": 15,
         "judge": [
           {
-            "name": "Gustafsson Anders",
-            "country": "SE",
             "official": false,
+            "country": "SE",
+            "name": "Gustafsson Anders",
             "foreing": true,
             "id": -1
           }
         ],
+        "date": "2026-06-12T21:00:00.000Z",
+        "state": "invited",
         "class": "VOI",
         "places": 12
       }
@@ -4233,19 +4233,19 @@
     },
     "classes": [
       {
-        "places": 15,
-        "entries": 16,
-        "members": 14,
-        "state": "invited",
+        "class": "ALO",
+        "date": "2026-06-13T21:00:00.000Z",
         "judge": [
           {
-            "id": 4053791,
+            "name": "Puttonen Pasi-Petteri",
             "official": true,
-            "name": "Puttonen Pasi-Petteri"
+            "id": 4053791
           }
         ],
-        "class": "ALO",
-        "date": "2026-06-13T21:00:00.000Z"
+        "state": "invited",
+        "entries": 17,
+        "places": 15,
+        "members": 15
       }
     ]
   },
@@ -4373,7 +4373,6 @@
     },
     "classes": [
       {
-        "entries": 16,
         "judge": [
           {
             "id": 678190,
@@ -4381,28 +4380,29 @@
             "name": "Turunen Vesa"
           }
         ],
+        "members": 12,
         "class": "ALO",
-        "date": "2026-06-13T21:00:00.000Z",
+        "entries": 16,
         "places": 15,
-        "state": "picked",
-        "members": 12
+        "date": "2026-06-13T21:00:00.000Z",
+        "state": "invited"
       },
       {
-        "date": "2026-06-13T21:00:00.000Z",
-        "places": 15,
         "class": "AVO",
-        "entries": 15,
+        "members": 9,
         "judge": [
           {
-            "official": false,
-            "name": "Gustafsson Anders",
             "country": "SE",
+            "official": false,
+            "foreing": true,
             "id": -1,
-            "foreing": true
+            "name": "Gustafsson Anders"
           }
         ],
-        "state": "picked",
-        "members": 9
+        "places": 15,
+        "state": "invited",
+        "entries": 15,
+        "date": "2026-06-13T21:00:00.000Z"
       }
     ]
   },
@@ -4617,7 +4617,8 @@
     },
     "classes": [
       {
-        "members": 0,
+        "class": "VOI",
+        "date": "2026-06-26T21:00:00.000Z",
         "judge": [
           {
             "name": "Tenhunen Matti",
@@ -4625,24 +4626,23 @@
             "official": true
           },
           {
-            "official": true,
+            "name": "Fontell Ari-Pekka",
             "id": 842408,
-            "name": "Fontell Ari-Pekka"
+            "official": true
           },
           {
             "name": "Torila Mika",
-            "official": true,
-            "id": 350200
+            "id": 350200,
+            "official": true
           },
           {
-            "official": true,
             "name": "Sarkkinen Tomi",
+            "official": true,
             "id": 893896
           }
         ],
-        "date": "2026-06-26T21:00:00.000Z",
-        "entries": 15,
-        "class": "VOI"
+        "entries": 20,
+        "members": 0
       }
     ]
   },
@@ -4702,28 +4702,28 @@
     },
     "classes": [
       {
-        "places": 0,
-        "date": "2026-06-27T21:00:00.000Z",
         "members": 8,
-        "entries": 29,
         "class": "ALO",
-        "judge": []
+        "places": 0,
+        "judge": [],
+        "date": "2026-06-27T21:00:00.000Z",
+        "entries": 33
       },
       {
-        "judge": [],
         "class": "AVO",
+        "judge": [],
+        "members": 4,
+        "entries": 22,
         "places": 0,
-        "entries": 18,
-        "members": 3,
         "date": "2026-06-27T21:00:00.000Z"
       },
       {
+        "entries": 41,
+        "judge": [],
+        "members": 11,
         "class": "VOI",
         "date": "2026-06-27T21:00:00.000Z",
-        "entries": 30,
-        "members": 9,
-        "places": 0,
-        "judge": []
+        "places": 0
       }
     ]
   },
@@ -4839,30 +4839,29 @@
     "cost_member": 35,
     "classes": [
       {
-        "places": 24,
-        "members": 9,
+        "class": "VOI",
+        "members": 11,
+        "entries": 14,
         "judge": [
           {
-            "official": true,
             "id": 4053791,
+            "official": true,
             "name": "Puttonen Pasi-Petteri"
           },
           {
+            "official": true,
             "name": "Hiltunen Niko",
-            "id": 644029,
-            "official": true
+            "id": 644029
           }
         ],
-        "entries": 12,
-        "date": "2026-07-03T21:00:00.000Z",
-        "class": "VOI"
+        "places": 24,
+        "date": "2026-07-03T21:00:00.000Z"
       },
       {
-        "class": "VOI",
         "date": "2026-07-04T21:00:00.000Z",
-        "entries": 12,
+        "entries": 14,
+        "class": "VOI",
         "places": 24,
-        "members": 9,
         "judge": [
           {
             "official": true,
@@ -4870,11 +4869,12 @@
             "id": 644029
           },
           {
-            "id": 4053791,
             "name": "Puttonen Pasi-Petteri",
-            "official": true
+            "official": true,
+            "id": 4053791
           }
-        ]
+        ],
+        "members": 11
       }
     ]
   },
@@ -4914,25 +4914,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-07-04T00:00:00.000+03:00",
         "judge": [],
         "class": "ALO",
-        "members": 7,
-        "entries": 10
+        "entries": 11,
+        "members": 8,
+        "date": "2026-07-04T00:00:00.000+03:00"
       },
       {
+        "entries": 5,
+        "members": 4,
         "date": "2026-07-04T00:00:00.000+03:00",
-        "class": "AVO",
-        "entries": 4,
         "judge": [],
-        "members": 3
+        "class": "AVO"
       },
       {
-        "date": "2026-07-04T00:00:00.000+03:00",
-        "entries": 7,
         "members": 6,
+        "entries": 7,
+        "class": "VOI",
         "judge": [],
-        "class": "VOI"
+        "date": "2026-07-04T00:00:00.000+03:00"
       }
     ]
   },
@@ -5040,20 +5040,20 @@
     "cost_member": 35,
     "classes": [
       {
-        "entries": 4,
-        "judge": [],
-        "date": "2026-07-06T21:00:00.000Z",
         "members": 1,
+        "class": "ALO",
+        "judge": [],
+        "entries": 4,
         "places": 25,
-        "class": "ALO"
+        "date": "2026-07-06T21:00:00.000Z"
       },
       {
-        "members": 3,
-        "entries": 4,
         "date": "2026-07-06T21:00:00.000Z",
-        "judge": [],
+        "members": 4,
+        "entries": 6,
         "class": "AVO",
-        "places": 25
+        "places": 25,
+        "judge": []
       }
     ]
   },
@@ -5094,10 +5094,10 @@
     "classes": [
       {
         "date": "2026-07-07T00:00:00.000+03:00",
-        "class": "VOI",
-        "entries": 5,
         "members": 0,
-        "judge": []
+        "class": "VOI",
+        "judge": [],
+        "entries": 6
       }
     ]
   },
@@ -5171,14 +5171,16 @@
     "cost_member": 45,
     "classes": [
       {
-        "class": "VOI",
-        "places": 12,
         "date": "2026-07-10T21:00:00.000Z",
+        "places": 12,
+        "entries": 1,
+        "members": 1,
+        "class": "VOI",
         "judge": [
           {
+            "name": "Fontell Ari-Pekka",
             "id": 842408,
-            "official": true,
-            "name": "Fontell Ari-Pekka"
+            "official": true
           }
         ]
       }
@@ -5217,16 +5219,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "places": 15,
-        "class": "ALO",
+        "date": "2026-07-10T21:00:00.000Z",
         "judge": [
           {
-            "id": 850900,
             "name": "Majuri Pasi",
+            "id": 850900,
             "official": true
           }
         ],
-        "date": "2026-07-10T21:00:00.000Z"
+        "entries": 4,
+        "class": "ALO",
+        "places": 15,
+        "members": 4
       }
     ]
   },
@@ -5361,18 +5365,18 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 4,
         "date": "2026-07-10T21:00:00.000Z",
-        "class": "ALO",
-        "members": 2,
         "places": 15,
+        "members": 4,
         "judge": [
           {
-            "name": "Lappalainen Mika",
             "official": true,
-            "id": 882887
+            "id": 882887,
+            "name": "Lappalainen Mika"
           }
-        ]
+        ],
+        "entries": 6,
+        "class": "ALO"
       },
       {
         "judge": [
@@ -5382,11 +5386,11 @@
             "official": true
           }
         ],
-        "date": "2026-07-11T21:00:00.000Z",
-        "class": "ALO",
         "places": 15,
-        "members": 2,
-        "entries": 4
+        "class": "ALO",
+        "entries": 6,
+        "members": 4,
+        "date": "2026-07-11T21:00:00.000Z"
       }
     ]
   },
@@ -5508,16 +5512,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-07-11T21:00:00.000Z",
+        "members": 1,
         "class": "VOI",
         "judge": [
           {
-            "official": true,
             "id": 850900,
-            "name": "Majuri Pasi"
+            "name": "Majuri Pasi",
+            "official": true
           }
         ],
-        "places": 12
+        "places": 12,
+        "date": "2026-07-11T21:00:00.000Z",
+        "entries": 1
       }
     ]
   },
@@ -5554,18 +5560,18 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 1,
+        "entries": 7,
+        "date": "2026-07-11T21:00:00.000Z",
+        "members": 2,
         "places": 12,
         "class": "VOI",
         "judge": [
           {
-            "name": "Särkänlahti Jari",
             "id": 4055276,
-            "official": true
+            "official": true,
+            "name": "Särkänlahti Jari"
           }
-        ],
-        "date": "2026-07-11T21:00:00.000Z",
-        "entries": 6
+        ]
       }
     ]
   },
@@ -5603,15 +5609,17 @@
     "classes": [
       {
         "class": "AVO",
+        "date": "2026-07-11T21:00:00.000Z",
         "places": 15,
+        "members": 1,
+        "entries": 1,
         "judge": [
           {
             "id": 842408,
-            "official": true,
-            "name": "Fontell Ari-Pekka"
+            "name": "Fontell Ari-Pekka",
+            "official": true
           }
-        ],
-        "date": "2026-07-11T21:00:00.000Z"
+        ]
       }
     ]
   },
@@ -5648,17 +5656,17 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 9,
         "date": "2026-07-11T21:00:00.000Z",
+        "entries": 13,
+        "places": 15,
+        "members": 13,
         "judge": [
           {
-            "id": 4053791,
             "official": true,
-            "name": "Puttonen Pasi-Petteri"
+            "name": "Puttonen Pasi-Petteri",
+            "id": 4053791
           }
         ],
-        "entries": 9,
-        "places": 15,
         "class": "ALO"
       }
     ]
@@ -5838,28 +5846,32 @@
     },
     "classes": [
       {
-        "date": "2026-07-17T21:00:00.000Z",
         "places": 12,
+        "entries": 2,
+        "date": "2026-07-17T21:00:00.000Z",
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
+            "id": 4053791,
+            "official": true
           }
         ],
+        "members": 2,
         "class": "VOI"
       },
       {
+        "entries": 2,
         "date": "2026-07-18T21:00:00.000Z",
-        "places": 12,
-        "class": "VOI",
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
+            "id": 4053791,
+            "official": true
           }
-        ]
+        ],
+        "members": 2,
+        "places": 12,
+        "class": "VOI"
       }
     ]
   },
@@ -5901,60 +5913,60 @@
     },
     "classes": [
       {
-        "members": 1,
-        "places": 15,
-        "entries": 2,
-        "date": "2026-07-17T21:00:00.000Z",
         "class": "ALO",
-        "judge": [
-          {
-            "name": "Hiltunen Taru",
-            "official": true,
-            "id": 736508
-          }
-        ]
-      },
-      {
-        "entries": 1,
         "date": "2026-07-17T21:00:00.000Z",
-        "members": 1,
         "judge": [
           {
+            "id": 736508,
             "official": true,
-            "id": 835312,
-            "name": "Salonen Susanna"
+            "name": "Hiltunen Taru"
           }
         ],
-        "places": 15,
-        "class": "AVO"
+        "entries": 4,
+        "members": 2,
+        "places": 15
       },
       {
-        "entries": 2,
-        "date": "2026-07-18T21:00:00.000Z",
+        "class": "AVO",
         "members": 1,
+        "date": "2026-07-17T21:00:00.000Z",
+        "entries": 3,
         "places": 15,
-        "class": "ALO",
         "judge": [
           {
-            "name": "Hiltunen Taru",
             "official": true,
-            "id": 736508
-          }
-        ]
-      },
-      {
-        "judge": [
-          {
             "name": "Salonen Susanna",
-            "id": 835312,
-            "official": true
+            "id": 835312
+          }
+        ]
+      },
+      {
+        "members": 2,
+        "judge": [
+          {
+            "official": true,
+            "name": "Hiltunen Taru",
+            "id": 736508
           }
         ],
-        "entries": 1,
-        "class": "VOI",
+        "class": "ALO",
+        "date": "2026-07-18T21:00:00.000Z",
+        "places": 15,
+        "entries": 4
+      },
+      {
+        "date": "2026-07-18T21:00:00.000Z",
         "members": 0,
+        "class": "VOI",
+        "entries": 1,
         "places": 12,
-        "date": "2026-07-18T21:00:00.000Z"
+        "judge": [
+          {
+            "official": true,
+            "name": "Salonen Susanna",
+            "id": 835312
+          }
+        ]
       }
     ]
   },
@@ -5991,18 +6003,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 0,
-        "entries": 1,
+        "date": "2026-07-18T21:00:00.000Z",
+        "members": 4,
         "judge": [
           {
-            "official": true,
+            "id": 882887,
             "name": "Lappalainen Mika",
-            "id": 882887
+            "official": true
           }
         ],
-        "places": 15,
         "class": "ALO",
-        "date": "2026-07-18T21:00:00.000Z"
+        "entries": 6,
+        "places": 15
       }
     ]
   },
@@ -6184,7 +6196,7 @@
     "date": "31.-02.08.2026",
     "date_sort": "2026-07-31T00:00:00+03:00",
     "end_date_sort": "2026-08-02T23:59:59.999000+03:00",
-    "entry_date": "19.06.-10.07.",
+    "entry_date": "21.06.-12.07.",
     "location": "Kannus",
     "coordinates": [
       63.9007773,
@@ -6200,20 +6212,58 @@
     "secretary": {
       "name": "Heli Pitkäjärvi",
       "phone": "",
-      "email": ""
+      "email": "pitkajarvi.heli@gmail.com"
     },
     "judges": [
       "Oikarinen Jyrki",
       "Puttonen Pasi-Petteri",
       "Hietikko Vesa"
     ],
-    "description": "Sileäkarvaisten noutajien osallistumismaksu sisältää näyttelyosuuden lauantaiaamuna.\nFinaali järjestetään sunnuntaina 2.8.",
-    "cost": "",
-    "cost_member": "",
+    "description": "Sileäkarvaisten noutajien osallistumismaksu sisältää näyttelyosuuden lauantaiaamuna. Näyttelyosuuden tuomarit: Kisälli Terese Sundqvist. Mestaruus Lena Sundqvist.\nFinaali järjestetään sunnuntaina 2.8. Finaalin tuomarit: Jyrki Oikarinen ja Vesa Hietikko.",
+    "cost": {
+      "normal": 54
+    },
+    "cost_member": {
+      "normal": 47
+    },
     "classes": [
       {
+        "judge": [
+          {
+            "id": 584168,
+            "name": "Hietikko Vesa",
+            "official": true
+          }
+        ],
         "date": "2026-07-30T21:00:00.000Z",
-        "places": 0,
+        "places": 15,
+        "class": "ALO"
+      },
+      {
+        "date": "2026-07-30T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 4053791,
+            "official": true,
+            "name": "Puttonen Pasi-Petteri"
+          }
+        ],
+        "class": "AVO",
+        "places": 15
+      },
+      {
+        "date": "2026-07-30T21:00:00.000Z",
+        "class": "VOI",
+        "places": 12,
+        "judge": [
+          {
+            "id": 4042184,
+            "name": "Oikarinen Jyrki",
+            "official": true
+          }
+        ]
+      },
+      {
         "judge": [
           {
             "name": "Hietikko Vesa",
@@ -6221,66 +6271,32 @@
             "id": 584168
           }
         ],
+        "places": 15,
+        "date": "2026-07-31T21:00:00.000Z",
         "class": "ALO"
       },
       {
-        "date": "2026-07-30T21:00:00.000Z",
-        "places": 0,
         "judge": [
           {
+            "id": 4053791,
             "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
+            "official": true
           }
         ],
-        "class": "AVO"
+        "class": "AVO",
+        "places": 15,
+        "date": "2026-07-31T21:00:00.000Z"
       },
       {
-        "date": "2026-07-30T21:00:00.000Z",
-        "places": 0,
+        "date": "2026-07-31T21:00:00.000Z",
         "judge": [
           {
-            "name": "Oikarinen Jyrki",
             "official": true,
+            "name": "Oikarinen Jyrki",
             "id": 4042184
           }
         ],
-        "class": "VOI"
-      },
-      {
-        "date": "2026-07-31T21:00:00.000Z",
-        "places": 0,
-        "judge": [
-          {
-            "name": "Hietikko Vesa",
-            "official": true,
-            "id": 584168
-          }
-        ],
-        "class": "ALO"
-      },
-      {
-        "date": "2026-07-31T21:00:00.000Z",
-        "places": 0,
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
-          }
-        ],
-        "class": "AVO"
-      },
-      {
-        "date": "2026-07-31T21:00:00.000Z",
-        "places": 0,
-        "judge": [
-          {
-            "name": "Oikarinen Jyrki",
-            "official": true,
-            "id": 4042184
-          }
-        ],
+        "places": 12,
         "class": "VOI"
       }
     ]
@@ -6292,7 +6308,7 @@
     "date": "31.-02.08.2026",
     "date_sort": "2026-07-31T00:00:00+03:00",
     "end_date_sort": "2026-08-02T23:59:59.999000+03:00",
-    "entry_date": "19.06.-10.07.",
+    "entry_date": "21.06.-12.07.",
     "location": "Kannus",
     "coordinates": [
       63.9007773,
@@ -6306,16 +6322,20 @@
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Heli Pitkäjärvi",
       "phone": "",
-      "email": ""
+      "email": "pitkajarvi.heli@gmail.com"
     },
     "judges": [
       "Vaarala Jarmo"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Juniorimestaruuden osallistumismaksuun kuuluu lauantaiaamun näyttelyosuus. Näyttelyosuuden tuomari Tomi Nieminen. ",
+    "cost": {
+      "normal": 54
+    },
+    "cost_member": {
+      "normal": 47
+    },
     "classes": []
   },
   {
