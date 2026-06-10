@@ -419,6 +419,7 @@
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-Koetutka-KoetutkaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TTND84D98U;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -435,8 +436,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				DEVELOPMENT_TEAM = TTND84D98U;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.koetutka.KoetutkaTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koetutka.KoetutkaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Koetutka.app/Koetutka";
 			};
@@ -448,6 +448,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = TTND84D98U;
 				INFOPLIST_FILE = KoetutkaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,8 +461,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				DEVELOPMENT_TEAM = TTND84D98U;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.koetutka.KoetutkaTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koetutka.KoetutkaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Koetutka.app/Koetutka";
 			};
@@ -473,7 +473,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTND84D98U;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Koetutka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,8 +488,6 @@
 					"-ObjC",
 					"-lc++",
 				);
-				DEVELOPMENT_TEAM = TTND84D98U;
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_BUNDLE_IDENTIFIER = com.koetutka;
 				PRODUCT_NAME = Koetutka;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -502,7 +502,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTND84D98U;
 				INFOPLIST_FILE = Koetutka/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -514,8 +516,6 @@
 					"-ObjC",
 					"-lc++",
 				);
-				DEVELOPMENT_TEAM = TTND84D98U;
-				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_BUNDLE_IDENTIFIER = com.koetutka;
 				PRODUCT_NAME = Koetutka;
 				SWIFT_VERSION = 5.0;
@@ -602,6 +602,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				USE_HERMES = true;
 			};
 			name = Debug;

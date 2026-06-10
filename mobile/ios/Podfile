@@ -42,5 +42,38 @@ target 'Koetutka' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    # fmt 11.0.2 (bundled with RN 0.77) hits a "consteval call is not a
+    # constant expression" error under the newer Apple clang in Xcode 16.3+/26.
+    # fmt redefines FMT_USE_CONSTEVAL unconditionally, so a -D override is
+    # ignored; instead neutralize the consteval keyword in the header directly.
+    # RN does not rely on fmt's compile-time format-string checking.
+    # react-native-share 10.2.1's podspec uses the legacy manual new-arch
+    # setup and does not call install_modules_dependencies, so it misses the
+    # ReactCodegen header path and can't find <RNShareSpec/RNShareSpec.h>
+    # under RN 0.77 + new architecture. Add the path back for its target.
+    installer.pods_project.targets.each do |target|
+      next unless target.name == 'RNShare'
+      target.build_configurations.each do |config|
+        paths = config.build_settings['HEADER_SEARCH_PATHS'] || ['$(inherited)']
+        paths = [paths] if paths.is_a?(String)
+        codegen_path = '"${PODS_ROOT}/Headers/Public/ReactCodegen"'
+        unless paths.include?(codegen_path)
+          paths << codegen_path
+          config.build_settings['HEADER_SEARCH_PATHS'] = paths
+        end
+      end
+    end
+
+    fmt_base = File.join(__dir__, 'Pods', 'fmt', 'include', 'fmt', 'base.h')
+    if File.exist?(fmt_base)
+      contents = File.read(fmt_base)
+      patched = contents.sub("#  define FMT_CONSTEVAL consteval\n", "#  define FMT_CONSTEVAL\n")
+      if patched != contents
+        File.chmod(0644, fmt_base)
+        File.write(fmt_base, patched)
+        Pod::UI.puts "[Koetutka] Patched fmt base.h to disable consteval (Xcode clang fix)".green
+      end
+    end
   end
 end
