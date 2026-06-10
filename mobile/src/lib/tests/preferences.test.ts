@@ -12,6 +12,7 @@ describe('serializePrefs / deserializePrefs', () => {
         activeLevels: new Set(['ALO', 'AVO']),
         maxDistanceKm: 200,
         hidePast: true,
+        onlyRegistrationOpen: true,
       },
       favorites: new Set(['evt-a', 'evt-b']),
       notifications: { enabled: true, daysBefore: 7, hourOfDay: 9 },
@@ -23,6 +24,7 @@ describe('serializePrefs / deserializePrefs', () => {
     expect(back.filters.activeLevels).toEqual(new Set(['ALO', 'AVO']));
     expect(back.filters.maxDistanceKm).toBe(200);
     expect(back.filters.hidePast).toBe(true);
+    expect(back.filters.onlyRegistrationOpen).toBe(true);
     expect(back.favorites).toEqual(new Set(['evt-a', 'evt-b']));
     expect(back.notifications).toEqual({ enabled: true, daysBefore: 7, hourOfDay: 9 });
   });

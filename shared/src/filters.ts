@@ -34,6 +34,45 @@ export function addDistances(
  * - hidePast: jos true, pudottaa eventit joiden end_date_sort (tai date_sort) on
  *   ennen `today`-päivää
  */
+/** Vie päivämäärän puhtaaksi keskipäivän aikaleimaksi (vältetään aikavyöhyke- ja DST-reunatapaukset vertailussa). */
+function dateOnly(year: number, month: number, day: number): number {
+  return new Date(year, month - 1, day, 12, 0, 0, 0).getTime();
+}
+
+/**
+ * Palauttaa true, jos kokeen ilmoittautuminen on `today`-päivänä auki.
+ *
+ * `entry_date` on muotoa "PP.KK.-PP.KK." (esim. "01.04.-14.04."). Vuosi
+ * päätellään kokeen `date_sort`-vuodesta. Jos väli menee vuodenvaihteen yli
+ * (loppu ennen alkua kalenterissa), alkupäivä tulkitaan edellisen vuoden
+ * puolelle. Väli on inklusiivinen molemmista päistä.
+ */
+export function isRegistrationOpen(event: Event, today: Date = new Date()): boolean {
+  const match = event.entry_date?.match(/(\d{1,2})\.(\d{1,2})\.-(\d{1,2})\.(\d{1,2})\./);
+  if (!match) return false;
+
+  const startDay = parseInt(match[1], 10);
+  const startMonth = parseInt(match[2], 10);
+  const endDay = parseInt(match[3], 10);
+  const endMonth = parseInt(match[4], 10);
+
+  const eventYear = new Date(event.date_sort).getFullYear();
+  const endTime = dateOnly(eventYear, endMonth, endDay);
+  // Jos alku on kalenterissa loppua myöhemmin, väli alkoi edellisenä vuonna.
+  const startsBeforeEnd =
+    startMonth < endMonth || (startMonth === endMonth && startDay <= endDay);
+  const startYear = startsBeforeEnd ? eventYear : eventYear - 1;
+  const startTime = dateOnly(startYear, startMonth, startDay);
+
+  const todayTime = dateOnly(
+    today.getFullYear(),
+    today.getMonth() + 1,
+    today.getDate(),
+  );
+
+  return todayTime >= startTime && todayTime <= endTime;
+}
+
 export function filterEvents(
   events: Event[],
   options: FilterOptions,
@@ -46,6 +85,10 @@ export function filterEvents(
     if (options.hidePast) {
       const eventDateISO = (event.end_date_sort || event.date_sort).split('T')[0];
       if (eventDateISO < todayISO) return false;
+    }
+
+    if (options.onlyRegistrationOpen) {
+      if (!isRegistrationOpen(event, today)) return false;
     }
 
     if (searchTerm) {

@@ -22,6 +22,7 @@ const DEFAULTS: StoredPrefs = {
     activeLevels: new Set(),
     maxDistanceKm: null,
     hidePast: false,
+    onlyRegistrationOpen: false,
   },
   favorites: new Set(),
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
@@ -35,6 +36,7 @@ interface JsonShape {
     activeLevels?: string[];
     maxDistanceKm?: number | null;
     hidePast?: boolean;
+    onlyRegistrationOpen?: boolean;
   };
   favorites?: string[];
   notifications?: NotificationSettings;
@@ -49,6 +51,7 @@ export function serializePrefs(prefs: StoredPrefs): string {
       activeLevels: Array.from(prefs.filters.activeLevels ?? []),
       maxDistanceKm: prefs.filters.maxDistanceKm,
       hidePast: prefs.filters.hidePast,
+      onlyRegistrationOpen: prefs.filters.onlyRegistrationOpen,
     },
     favorites: Array.from(prefs.favorites ?? []),
     notifications: prefs.notifications,
@@ -68,6 +71,7 @@ export function deserializePrefs(text: string): StoredPrefs {
         activeLevels: new Set(parsed.filters?.activeLevels ?? []),
         maxDistanceKm: parsed.filters?.maxDistanceKm ?? null,
         hidePast: parsed.filters?.hidePast ?? false,
+        onlyRegistrationOpen: parsed.filters?.onlyRegistrationOpen ?? false,
       },
       favorites: new Set(parsed.favorites ?? []),
       notifications: {

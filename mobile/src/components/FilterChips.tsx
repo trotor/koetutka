@@ -21,7 +21,8 @@ export function FilterChips() {
     (filters.activeTypes?.size ?? 0) +
     (filters.activeLevels?.size ?? 0) +
     (filters.maxDistanceKm != null ? 1 : 0) +
-    (filters.hidePast ? 1 : 0);
+    (filters.hidePast ? 1 : 0) +
+    (filters.onlyRegistrationOpen ? 1 : 0);
 
   function toggleType(type: string) {
     const next = new Set(filters.activeTypes);
@@ -107,6 +108,18 @@ export function FilterChips() {
             >
               <Text style={[styles.toggleText, filters.hidePast && styles.toggleTextOn]}>
                 {filters.hidePast ? 'Päällä' : 'Pois'}
+              </Text>
+            </Pressable>
+          </View>
+
+          <View style={styles.toggleRow}>
+            <Text style={styles.label}>Vain ilmoittautuminen auki</Text>
+            <Pressable
+              onPress={() => setFilters({ onlyRegistrationOpen: !filters.onlyRegistrationOpen })}
+              style={[styles.toggle, filters.onlyRegistrationOpen && styles.toggleOn]}
+            >
+              <Text style={[styles.toggleText, filters.onlyRegistrationOpen && styles.toggleTextOn]}>
+                {filters.onlyRegistrationOpen ? 'Päällä' : 'Pois'}
               </Text>
             </Pressable>
           </View>

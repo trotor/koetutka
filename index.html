@@ -1301,6 +1301,9 @@
                 <div class="pill active" id="hidePastPill" onclick="toggleHidePast()">
                     <span class="pill-label">Piilota menneet</span>
                 </div>
+                <div class="pill" id="onlyRegOpenPill" onclick="toggleOnlyRegistrationOpen()">
+                    <span class="pill-label">Vain ilmo. auki</span>
+                </div>
                 <button class="help-btn" onclick="showHelp()" title="Ohjeet">❓</button>
             </div>
 
@@ -1386,7 +1389,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.8.0</span>
+                <span id="version">v1.9.0</span>
             </p>
         </footer>
     </div>
@@ -1517,6 +1520,23 @@
         let activeTypes = new Set(); // Aktiiviset lajit (kaikki oletuksena)
         let activeLevels = new Set(); // Aktiiviset tasot (kaikki oletuksena)
         let hidePastEvents = true; // Piilota menneet tapahtumat oletuksena
+        let onlyRegistrationOpen = false; // Näytä vain ne joiden ilmoittautuminen on auki
+
+        // Palauttaa true, jos kokeen ilmoittautuminen on tänään auki.
+        // entry_date on muotoa "PP.KK.-PP.KK."; vuosi päätellään date_sortista.
+        // Vuodenvaihteen yli menevä väli: alku tulkitaan edellisen vuoden puolelle.
+        function isRegistrationOpen(koe, now = new Date()) {
+            const m = koe.entry_date && koe.entry_date.match(/(\d{1,2})\.(\d{1,2})\.-(\d{1,2})\.(\d{1,2})\./);
+            if (!m) return false;
+            const sd = +m[1], sm = +m[2], ed = +m[3], em = +m[4];
+            const eventYear = new Date(koe.date_sort).getFullYear();
+            const dateOnly = (y, mo, d) => new Date(y, mo - 1, d, 12, 0, 0, 0).getTime();
+            const endT = dateOnly(eventYear, em, ed);
+            const startsBeforeEnd = sm < em || (sm === em && sd <= ed);
+            const startT = dateOnly(startsBeforeEnd ? eventYear : eventYear - 1, sm, sd);
+            const todayT = dateOnly(now.getFullYear(), now.getMonth() + 1, now.getDate());
+            return todayT >= startT && todayT <= endT;
+        }
 
         // getCostValue, getOptionalCosts siirretty shared/-moduuliin.
         // Käytetään wrapper-funktioita (ei eager-viittausta), koska
@@ -1805,6 +1825,9 @@
                     if (koeDate.split('T')[0] < today) return;
                 }
 
+                // Vain ne joiden ilmoittautuminen on auki
+                if (onlyRegistrationOpen && !isRegistrationOpen(koe)) return;
+
                 const matchesSearch = !searchTerm ||
                     koe.location.toLowerCase().includes(searchTerm) ||
                     koe.type.toLowerCase().includes(searchTerm) ||
@@ -1892,6 +1915,13 @@
         function toggleHidePast() {
             hidePastEvents = !hidePastEvents;
             document.getElementById('hidePastPill').classList.toggle('active', hidePastEvents);
+            sortAndRender();
+        }
+
+        // Näytä vain kokeet joiden ilmoittautuminen on auki
+        function toggleOnlyRegistrationOpen() {
+            onlyRegistrationOpen = !onlyRegistrationOpen;
+            document.getElementById('onlyRegOpenPill').classList.toggle('active', onlyRegistrationOpen);
             sortAndRender();
         }
 
@@ -1989,6 +2019,9 @@
                     const koeDate = koe.end_date_sort || koe.date_sort;
                     if (koeDate.split('T')[0] < today) return false;
                 }
+
+                // Vain ne joiden ilmoittautuminen on auki
+                if (onlyRegistrationOpen && !isRegistrationOpen(koe)) return false;
 
                 // Max etäisyys -suodatin
                 if (maxDistance !== null && koe.distance !== null && koe.distance > maxDistance) {

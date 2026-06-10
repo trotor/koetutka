@@ -77,6 +77,8 @@ export interface FilterOptions {
   activeLevels?: Set<string>;
   maxDistanceKm?: number | null;
   hidePast?: boolean;
-  /** Päivämäärä jonka mukaan menneet määritellään (oletuksena tänään). */
+  /** Jos true, näytetään vain kokeet joiden ilmoittautuminen on parhaillaan auki. */
+  onlyRegistrationOpen?: boolean;
+  /** Päivämäärä jonka mukaan menneet ja ilmoittautumisaika määritellään (oletuksena tänään). */
   today?: Date;
 }

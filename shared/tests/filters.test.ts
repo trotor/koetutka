@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { addDistances, filterEvents } from '../src/filters.js';
+import { addDistances, filterEvents, isRegistrationOpen } from '../src/filters.js';
 import type { Event, UserLocation } from '../src/types.js';
 
 function makeEvent(overrides: Partial<Event> = {}): Event {
@@ -108,5 +108,49 @@ describe('filterEvents', () => {
     const noDistance = makeEvent({ id: 'e', distance: undefined });
     const result = filterEvents([noDistance], { maxDistanceKm: 10 });
     expect(result.map((e) => e.id)).toEqual(['e']);
+  });
+
+  test('onlyRegistrationOpen jättää vain ne joiden ilmoittautuminen on auki', () => {
+    // tapahtuma 2026, ilmoittautuminen 01.04.-14.04.2026
+    const open = makeEvent({ id: 'open', date_sort: '2026-05-24T00:00:00+03:00', entry_date: '01.04.-14.04.' });
+    const closed = makeEvent({ id: 'closed', date_sort: '2026-05-24T00:00:00+03:00', entry_date: '01.02.-14.02.' });
+    const result = filterEvents([open, closed], {
+      onlyRegistrationOpen: true,
+      today: new Date('2026-04-10'),
+    });
+    expect(result.map((e) => e.id)).toEqual(['open']);
+  });
+});
+
+describe('isRegistrationOpen', () => {
+  const ev = (entry_date: string, date_sort = '2026-05-24T00:00:00+03:00'): Event =>
+    makeEvent({ entry_date, date_sort });
+
+  test('auki kun tänään on ilmoittautumisvälin sisällä', () => {
+    expect(isRegistrationOpen(ev('01.04.-14.04.'), new Date('2026-04-07'))).toBe(true);
+  });
+
+  test('kiinni ennen alkupäivää', () => {
+    expect(isRegistrationOpen(ev('01.04.-14.04.'), new Date('2026-03-31'))).toBe(false);
+  });
+
+  test('kiinni loppupäivän jälkeen', () => {
+    expect(isRegistrationOpen(ev('01.04.-14.04.'), new Date('2026-04-15'))).toBe(false);
+  });
+
+  test('auki alkupäivänä (inklusiivinen)', () => {
+    expect(isRegistrationOpen(ev('01.04.-14.04.'), new Date('2026-04-01'))).toBe(true);
+  });
+
+  test('auki loppupäivänä (inklusiivinen)', () => {
+    expect(isRegistrationOpen(ev('01.04.-14.04.'), new Date('2026-04-14'))).toBe(true);
+  });
+
+  test('vuodenvaihteen yli menevä väli: auki joulukuussa', () => {
+    // tapahtuma alkuvuodesta 2026, ilmoittautuminen 15.12.2025-15.01.2026
+    const e = ev('15.12.-15.01.', '2026-01-20T00:00:00+02:00');
+    expect(isRegistrationOpen(e, new Date('2025-12-20'))).toBe(true);
+    expect(isRegistrationOpen(e, new Date('2026-01-10'))).toBe(true);
+    expect(isRegistrationOpen(e, new Date('2026-01-16'))).toBe(false);
   });
 });

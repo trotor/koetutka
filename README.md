@@ -78,6 +78,11 @@ MIT
 
 ## Versiohistoria
 
+### v1.9.0 (2026-06-10)
+- **Uusi suodatin: "Vain ilmoittautuminen auki"** (web + mobiili) — näyttää vain
+  kokeet joiden ilmoittautumisaika on parhaillaan käynnissä. Oletuksena pois.
+  Jaettu logiikka (`isRegistrationOpen`) `shared/`-paketissa, testattu.
+
 ### v1.8.0 (2026-05-31)
 - **Uusi Android-sovellus** koetutka rinnalla: natiivi React Native -mobiili
   - Tab-pohjainen UI: Selaa, Suosikit, Asetukset
