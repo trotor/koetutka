@@ -22,7 +22,7 @@ python3 -m http.server 8080
 # Then open: http://localhost:8080/
 
 # Deploy to server
-scp index.html koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
+scp index.html styles.css app.js koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ```
 
 ## Architecture
@@ -33,7 +33,9 @@ scp index.html koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 - Outputs JSON file with event data and coordinates
 - No distance filtering - all events included
 
-**Frontend (index.html):**
+**Frontend (index.html + styles.css + app.js):**
+- `index.html` is markup only; styles live in `styles.css` and logic in `app.js`
+  (a small inline `<script type="module">` imports `shared/dist` and bootstraps)
 - Loads JSON data via fetch
 - User selects location: text search (with autocomplete) OR GPS geolocation
 - Calculates distances using Haversine formula in JavaScript
@@ -53,7 +55,7 @@ scp index.html koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ## Yearly Update Process
 
 1. Run `python3 snj_kokeet.py --year YYYY` for each needed year
-2. Deploy `index.html` and `koetutka_YYYY.json` files to server
+2. Deploy `index.html`, `styles.css`, `app.js` and `koetutka_YYYY.json` files to server
 3. The frontend automatically tries to load next year's data first, then current year
 
 ## Deployment
@@ -67,13 +69,15 @@ Push to `master` branch triggers automatic deployment via GitHub Pages.
 Target: `www.muikea.fi/koetutka/`
 
 ```bash
-scp index.html banner.jpg koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
+scp index.html styles.css app.js banner.jpg koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ```
 
 ## Files
 
 **Core files (deployed):**
-- `index.html` - Main page
+- `index.html` - Main page (markup)
+- `styles.css` - Page styles
+- `app.js` - Page logic
 - `banner.jpg` - Header banner image
 - `favicon.ico` - Favicon (multi-size)
 - `favicon-192.png` - Android/PWA icon
