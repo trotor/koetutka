@@ -37,7 +37,7 @@ const defaultFilters: FilterOptions = {
   activeTypes: new Set(),
   activeLevels: new Set(),
   maxDistanceKm: null,
-  hidePast: false,
+  hidePast: true,
   onlyRegistrationOpen: false,
 };
 
