@@ -72,6 +72,49 @@ Target: `www.muikea.fi/koetutka/`
 scp index.html styles.css app.js banner.jpg koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ```
 
+## Mobile App (React Native)
+
+The `mobile/` workspace is a React Native app (RN 0.77, new architecture)
+sharing all domain logic with the web app via the `shared/` package. Same
+features on iOS and Android — the `src/` code is platform-agnostic apart from a
+couple of `Platform.OS` branches. Published by Inetor Oy.
+
+```bash
+# From repo root: install JS deps (pnpm workspace)
+pnpm install
+
+# iOS: install pods, then run on a simulator
+cd mobile/ios && pod install && cd ..
+cd mobile && npm run ios          # or: npx react-native run-ios
+
+# Android
+cd mobile && npm run android
+
+# Tests / typecheck (mobile + shared use vitest)
+cd mobile && npm test && npm run typecheck
+```
+
+**Identity & signing:**
+- Bundle id / applicationId: `com.koetutka` (same on both platforms)
+- iOS team: Inetor oy, Team ID `TTND84D98U` (automatic signing)
+- Android keystore: see `mobile/android/app/upload-keystore.jks` (gitignored)
+
+**iOS Podfile patches (in `mobile/ios/Podfile` post_install):**
+- `setup_permissions(['LocationWhenInUse'])` — compiles the iOS location handler
+- Patches bundled `fmt` 11.0.2 to drop `consteval` (Xcode 26 clang rejects it)
+- Adds the ReactCodegen header path to the `RNShare` target (react-native-share
+  10.2.1 misses it under the new architecture)
+- `AppDelegate.mm` sets `self.dependencyProvider = [RCTAppDependencyProvider new]`
+  (required since RN 0.77 to register third-party Fabric components)
+
+**iOS release (App Store, via Inetor Oy account):**
+1. Bump versions (see Versioning) — `MARKETING_VERSION` + `CURRENT_PROJECT_VERSION`
+2. In Xcode: Product → Archive (Release), then distribute to App Store Connect
+3. TestFlight for internal testing, then submit for review
+
+**iOS app icon:** regenerate from `mobile/store/icon-source.png` into
+`mobile/ios/Koetutka/Images.xcassets/AppIcon.appiconset/` (no alpha channel).
+
 ## Files
 
 **Core files (deployed):**
@@ -93,8 +136,15 @@ scp index.html styles.css app.js banner.jpg koetutka_*.json dino@ronkko.fi:publi
 
 When making changes to the application, **always update the version number**:
 
+**Web:**
 1. Update `index.html` - Change the version in footer (`<span id="version">vX.X.X</span>`)
 2. Update `README.md` - Add entry to the Version History section
+
+**Mobile** (when changing the app, e.g. shared logic or RN screens):
+1. `mobile/package.json` `version` - drives the in-app "Tietoja" footer (both platforms)
+2. iOS: `MARKETING_VERSION` (user-facing) + `CURRENT_PROJECT_VERSION` (build number,
+   increment for every App Store/TestFlight upload) in the Xcode project
+3. Android: `versionName` + `versionCode` (increment) in `mobile/android/app/build.gradle`
 
 Use semantic versioning:
 - **Major (X.0.0)** - Breaking changes or major new features

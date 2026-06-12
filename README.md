@@ -78,6 +78,14 @@ MIT
 
 ## Versiohistoria
 
+### Mobiili v1.1.0 (2026-06-12)
+- **iOS-sovellus** Androidin rinnalle: sama React Native -koodi, täysi
+  ominaisuuspariteetti (lista, kartta, suosikit, sijainti/GPS, etäisyydet,
+  suodattimet, kalenteri, ICS-jako, ilmoitukset). Julkaisija Inetor Oy.
+  - Natiivikorjaukset RN 0.77:lle: `RCTAppDependencyProvider` (Fabric-komponentit),
+    fmt-consteval-patch, react-native-share-headerpolku, sijaintilupakäsittelijä
+- **Uusi suodatin "Vain ilmoittautuminen auki"** myös mobiilissa
+
 ### v1.9.0 (2026-06-10)
 - **Uusi suodatin: "Vain ilmoittautuminen auki"** (web + mobiili) — näyttää vain
   kokeet joiden ilmoittautumisaika on parhaillaan käynnissä. Oletuksena pois.
