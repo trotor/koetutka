@@ -4,6 +4,8 @@ Interaktiivinen web-sovellus, joka näyttää SNJ:n (Suomen Noutajakoirajärjest
 
 **Live:** [trotor.github.io/koetutka](https://trotor.github.io/koetutka)
 
+**Android-sovellus:** [Google Play](https://play.google.com/store/apps/details?id=com.koetutka)
+
 ## Ominaisuudet
 
 - **Dynaaminen sijainti** - Valitse paikkakuntasi tekstihaulla tai käytä GPS-paikannusta
@@ -85,6 +87,9 @@ MIT
   - Natiivikorjaukset RN 0.77:lle: `RCTAppDependencyProvider` (Fabric-komponentit),
     fmt-consteval-patch, react-native-share-headerpolku, sijaintilupakäsittelijä
 - **Uusi suodatin "Vain ilmoittautuminen auki"** myös mobiilissa
+
+### v1.9.2 (2026-06-14)
+- Lisätty footeriin ja READMEen linkki Android-sovellukseen Google Playssa
 
 ### v1.9.1 (2026-06-14)
 - Korjattu rikkinäinen GitHub Pages -julkaisu: deploy-workflow ei kopioinut
