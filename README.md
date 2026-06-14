@@ -86,6 +86,12 @@ MIT
     fmt-consteval-patch, react-native-share-headerpolku, sijaintilupakäsittelijä
 - **Uusi suodatin "Vain ilmoittautuminen auki"** myös mobiilissa
 
+### v1.9.1 (2026-06-14)
+- Korjattu rikkinäinen GitHub Pages -julkaisu: deploy-workflow ei kopioinut
+  `app.js`- ja `styles.css`-tiedostoja `_site/`-hakemistoon commitin `74631fa`
+  (index.html:n jako) jälkeen, joten live-sivun tyylit ja logiikka eivät
+  latautuneet (404). (#14)
+
 ### v1.9.0 (2026-06-10)
 - **Uusi suodatin: "Vain ilmoittautuminen auki"** (web + mobiili) — näyttää vain
   kokeet joiden ilmoittautumisaika on parhaillaan käynnissä. Oletuksena pois.
