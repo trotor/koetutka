@@ -2,6 +2,13 @@ import { create } from 'zustand';
 import type { Event, UserLocation, FilterOptions, SortBy } from '@koetutka/shared';
 import { fetchEventsWithFallback } from './data';
 import { loadPrefs, savePrefs } from './preferences';
+import pkg from '../../package.json';
+import {
+  fetchWhatsNew,
+  resolveWhatsNew,
+  pickManualContent,
+  type WhatsNewContent,
+} from './whatsnew';
 import {
   DEFAULT_NOTIFICATION_SETTINGS,
   type NotificationSettings,
@@ -9,6 +16,8 @@ import {
   requestPermission,
   cancelAll,
 } from './notifications';
+
+const APP_VERSION = pkg.version;
 
 interface State {
   events: Event[];
@@ -20,6 +29,7 @@ interface State {
   notifications: NotificationSettings;
   sortBy: SortBy;
   whatsNewLastSeenVersion: string | null;
+  whatsNew: { visible: boolean; content: WhatsNewContent | null; manual: boolean };
   prefsLoaded: boolean;
 }
 
@@ -33,6 +43,9 @@ interface Actions {
   toggleFavorite: (id: string) => void;
   setNotifications: (next: Partial<NotificationSettings>) => Promise<void>;
   syncNotifications: () => Promise<void>;
+  checkWhatsNew: () => Promise<void>;
+  openWhatsNew: () => Promise<void>;
+  dismissWhatsNew: () => void;
 }
 
 const defaultFilters: FilterOptions = {
@@ -65,6 +78,7 @@ export const useStore = create<State & Actions>((set, get) => ({
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
   sortBy: 'distance',
   whatsNewLastSeenVersion: null,
+  whatsNew: { visible: false, content: null, manual: false },
   prefsLoaded: false,
 
   initFromStorage: async () => {
@@ -144,5 +158,32 @@ export const useStore = create<State & Actions>((set, get) => ({
     if (!state.notifications.enabled) return;
     const favs = state.events.filter((e) => state.favorites.has(e.id));
     await rescheduleAll(favs, state.notifications);
+  },
+
+  checkWhatsNew: async () => {
+    const data = await fetchWhatsNew();
+    const content = resolveWhatsNew({
+      current: APP_VERSION,
+      lastSeen: get().whatsNewLastSeenVersion,
+      data,
+    });
+    if (content) {
+      set({ whatsNew: { visible: true, content, manual: false } });
+    }
+  },
+
+  openWhatsNew: async () => {
+    const data = await fetchWhatsNew();
+    const content = pickManualContent(APP_VERSION, data);
+    set({ whatsNew: { visible: true, content, manual: true } });
+  },
+
+  dismissWhatsNew: () => {
+    const wasManual = get().whatsNew.manual;
+    set({ whatsNew: { visible: false, content: null, manual: false } });
+    if (!wasManual) {
+      set({ whatsNewLastSeenVersion: APP_VERSION });
+      persist(get());
+    }
   },
 }));
