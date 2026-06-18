@@ -16,6 +16,8 @@ describe('serializePrefs / deserializePrefs', () => {
       },
       favorites: new Set(['evt-a', 'evt-b']),
       notifications: { enabled: true, daysBefore: 7, hourOfDay: 9 },
+      sortBy: 'distance',
+      whatsNewLastSeenVersion: null,
     };
     const json = serializePrefs(prefs);
     const back = deserializePrefs(json);
@@ -61,5 +63,63 @@ describe('serializePrefs / deserializePrefs', () => {
     const back = deserializePrefs(oldJson);
     expect(back.favorites).toEqual(new Set());
     expect(back.filters.hidePast).toBe(true);
+  });
+
+  test('round-trippaa sortBy', () => {
+    const prefs: StoredPrefs = {
+      userLocation: null,
+      filters: {
+        searchTerm: '',
+        activeTypes: new Set(),
+        activeLevels: new Set(),
+        maxDistanceKm: null,
+        hidePast: true,
+        onlyRegistrationOpen: false,
+      },
+      favorites: new Set(),
+      notifications: DEFAULT_NOTIFICATION_SETTINGS,
+      sortBy: 'date',
+      whatsNewLastSeenVersion: null,
+    };
+    const back = deserializePrefs(serializePrefs(prefs));
+    expect(back.sortBy).toBe('date');
+  });
+
+  test('deserializePrefs antaa sortBy-defaultin (distance) vanhalle JSONille', () => {
+    const oldJson = JSON.stringify({
+      userLocation: null,
+      filters: { searchTerm: '', activeTypes: [], activeLevels: [] },
+      favorites: [],
+    });
+    expect(deserializePrefs(oldJson).sortBy).toBe('distance');
+  });
+
+  test('round-trippaa whatsNewLastSeenVersion', () => {
+    const prefs: StoredPrefs = {
+      userLocation: null,
+      filters: {
+        searchTerm: '',
+        activeTypes: new Set(),
+        activeLevels: new Set(),
+        maxDistanceKm: null,
+        hidePast: true,
+        onlyRegistrationOpen: false,
+      },
+      favorites: new Set(),
+      notifications: DEFAULT_NOTIFICATION_SETTINGS,
+      sortBy: 'distance',
+      whatsNewLastSeenVersion: '1.2.0',
+    };
+    const back = deserializePrefs(serializePrefs(prefs));
+    expect(back.whatsNewLastSeenVersion).toBe('1.2.0');
+  });
+
+  test('whatsNewLastSeenVersion default on null vanhalle JSONille', () => {
+    const oldJson = JSON.stringify({
+      userLocation: null,
+      filters: { searchTerm: '', activeTypes: [], activeLevels: [] },
+      favorites: [],
+    });
+    expect(deserializePrefs(oldJson).whatsNewLastSeenVersion).toBeNull();
   });
 });

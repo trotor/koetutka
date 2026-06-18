@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { FilterOptions, UserLocation } from '@koetutka/shared';
+import type { FilterOptions, UserLocation, SortBy } from '@koetutka/shared';
 import {
   DEFAULT_NOTIFICATION_SETTINGS,
   type NotificationSettings,
@@ -12,6 +12,8 @@ export interface StoredPrefs {
   filters: FilterOptions;
   favorites: Set<string>;
   notifications: NotificationSettings;
+  sortBy: SortBy;
+  whatsNewLastSeenVersion: string | null;
 }
 
 const DEFAULTS: StoredPrefs = {
@@ -26,6 +28,8 @@ const DEFAULTS: StoredPrefs = {
   },
   favorites: new Set(),
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
+  sortBy: 'distance',
+  whatsNewLastSeenVersion: null,
 };
 
 interface JsonShape {
@@ -40,6 +44,8 @@ interface JsonShape {
   };
   favorites?: string[];
   notifications?: NotificationSettings;
+  sortBy?: SortBy;
+  whatsNewLastSeenVersion?: string | null;
 }
 
 export function serializePrefs(prefs: StoredPrefs): string {
@@ -55,6 +61,8 @@ export function serializePrefs(prefs: StoredPrefs): string {
     },
     favorites: Array.from(prefs.favorites ?? []),
     notifications: prefs.notifications,
+    sortBy: prefs.sortBy,
+    whatsNewLastSeenVersion: prefs.whatsNewLastSeenVersion,
   };
   return JSON.stringify(json);
 }
@@ -78,6 +86,8 @@ export function deserializePrefs(text: string): StoredPrefs {
         ...DEFAULT_NOTIFICATION_SETTINGS,
         ...(parsed.notifications ?? {}),
       },
+      sortBy: parsed.sortBy ?? 'distance',
+      whatsNewLastSeenVersion: parsed.whatsNewLastSeenVersion ?? null,
     };
   } catch {
     return DEFAULTS;

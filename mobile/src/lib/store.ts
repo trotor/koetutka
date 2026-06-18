@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { Event, UserLocation, FilterOptions } from '@koetutka/shared';
+import type { Event, UserLocation, FilterOptions, SortBy } from '@koetutka/shared';
 import { fetchEventsWithFallback } from './data';
 import { loadPrefs, savePrefs } from './preferences';
 import {
@@ -18,6 +18,8 @@ interface State {
   filters: FilterOptions;
   favorites: Set<string>;
   notifications: NotificationSettings;
+  sortBy: SortBy;
+  whatsNewLastSeenVersion: string | null;
   prefsLoaded: boolean;
 }
 
@@ -27,6 +29,7 @@ interface Actions {
   setUserLocation: (location: UserLocation | null) => void;
   setFilters: (filters: Partial<FilterOptions>) => void;
   resetFilters: () => void;
+  setSortBy: (next: SortBy) => void;
   toggleFavorite: (id: string) => void;
   setNotifications: (next: Partial<NotificationSettings>) => Promise<void>;
   syncNotifications: () => Promise<void>;
@@ -47,6 +50,8 @@ function persist(state: State) {
     filters: state.filters,
     favorites: state.favorites,
     notifications: state.notifications,
+    sortBy: state.sortBy,
+    whatsNewLastSeenVersion: state.whatsNewLastSeenVersion,
   });
 }
 
@@ -58,6 +63,8 @@ export const useStore = create<State & Actions>((set, get) => ({
   filters: defaultFilters,
   favorites: new Set(),
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
+  sortBy: 'distance',
+  whatsNewLastSeenVersion: null,
   prefsLoaded: false,
 
   initFromStorage: async () => {
@@ -67,6 +74,8 @@ export const useStore = create<State & Actions>((set, get) => ({
       filters: prefs.filters,
       favorites: prefs.favorites,
       notifications: prefs.notifications,
+      sortBy: prefs.sortBy,
+      whatsNewLastSeenVersion: prefs.whatsNewLastSeenVersion,
       prefsLoaded: true,
     });
   },
@@ -95,6 +104,11 @@ export const useStore = create<State & Actions>((set, get) => ({
 
   resetFilters: () => {
     set({ filters: defaultFilters });
+    persist(get());
+  },
+
+  setSortBy: (sortBy) => {
+    set({ sortBy });
     persist(get());
   },
 
