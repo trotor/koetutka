@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Animated, Text, View, StyleSheet, ActivityIndicator } from 'react-native';
-import { addDistances, filterEvents } from '@koetutka/shared';
+import { addDistances, filterEvents, sortEvents } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { EventCard } from '@/components/EventCard';
 import { FilterChips } from '@/components/FilterChips';
+import { SortSelector } from '@/components/SortSelector';
 import { ListMapToggle } from '@/components/ListMapToggle';
 import { EventMap } from '@/components/EventMap';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
@@ -16,6 +17,7 @@ export default function BrowseScreen() {
   const loadEvents = useStore((s) => s.loadEvents);
   const userLocation = useStore((s) => s.userLocation);
   const filters = useStore((s) => s.filters);
+  const sortBy = useStore((s) => s.sortBy);
 
   const [view, setView] = useState<'list' | 'map'>('list');
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -27,15 +29,9 @@ export default function BrowseScreen() {
   const visible = useMemo(() => {
     const withDistance = userLocation ? addDistances(events, userLocation) : events;
     const filtered = filterEvents(withDistance, filters);
-    return [...filtered].sort((a, b) => {
-      const aHas = a.distance !== undefined && a.distance !== null;
-      const bHas = b.distance !== undefined && b.distance !== null;
-      if (aHas && bHas) return (a.distance as number) - (b.distance as number);
-      if (aHas) return -1;
-      if (bHas) return 1;
-      return a.date_sort.localeCompare(b.date_sort);
-    });
-  }, [events, userLocation, filters]);
+    const effectiveSort = sortBy === 'distance' && !userLocation ? 'date' : sortBy;
+    return sortEvents(filtered, effectiveSort);
+  }, [events, userLocation, filters, sortBy]);
 
   if (isLoading && events.length === 0) {
     return (
@@ -62,6 +58,7 @@ export default function BrowseScreen() {
       <ListMapToggle value={view} onChange={setView} />
       <SearchBar />
       <FilterChips />
+      <SortSelector />
       {view === 'list' ? (
         <Animated.FlatList
           data={visible}
