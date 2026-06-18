@@ -1,0 +1,17 @@
+{
+  "welcome": {
+    "title": "Tervetuloa Koetutkaan",
+    "body": "Koetutka näyttää noutajien metsästyskokeet kartalla ja listana, lähimmät ensin. Valitse sijaintisi, selaa tulevia kokeita, tallenna suosikkeja ja vie ne kalenteriin."
+  },
+  "releases": [
+    {
+      "version": "1.2.0",
+      "date": "2026-06-18",
+      "title": "Lajittelu ja Mitä uutta",
+      "items": [
+        "Listan voi nyt lajitella etäisyyden tai ajankohdan mukaan",
+        "Uusi Mitä uutta -näkymä, joka kertoo tuoreimmat päivitykset"
+      ]
+    }
+  ]
+}
