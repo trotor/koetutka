@@ -1,3 +1,8 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { BASE_URL } from './data';
+
+const CACHE_KEY = 'koetutka:whatsnew:v1';
+
 export interface WelcomeNote {
   title: string;
   body: string;
@@ -61,4 +66,22 @@ export function pickManualContent(current: string, data: WhatsNewData | null): W
     data?.releases?.find((r) => r.version === current) ?? data?.releases?.[0];
   if (release) return releaseContent(release);
   return welcomeContent(data?.welcome ?? FALLBACK_WELCOME);
+}
+
+/** Hakee whatsnew.json:n; välimuistittaa onnistuneen haun ja fallbackaa siihen. */
+export async function fetchWhatsNew(): Promise<WhatsNewData | null> {
+  try {
+    const res = await fetch(`${BASE_URL}/whatsnew.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = (await res.json()) as WhatsNewData;
+    await AsyncStorage.setItem(CACHE_KEY, JSON.stringify(data));
+    return data;
+  } catch {
+    try {
+      const cached = await AsyncStorage.getItem(CACHE_KEY);
+      return cached ? (JSON.parse(cached) as WhatsNewData) : null;
+    } catch {
+      return null;
+    }
+  }
 }
