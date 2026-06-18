@@ -1,7 +1,9 @@
 import { View, Text, StyleSheet, Linking, Pressable } from 'react-native';
 import pkg from '../../package.json';
+import { useStore } from '@/lib/store';
 
 export function AboutSection() {
+  const openWhatsNew = useStore((s) => s.openWhatsNew);
   return (
     <View style={styles.wrap}>
       <Text style={styles.heading}>Tietoja</Text>
@@ -21,6 +23,9 @@ export function AboutSection() {
         <Text style={styles.label}>Julkaisija</Text>
         <Text style={styles.value}>Inetor Oy</Text>
       </View>
+      <Pressable onPress={() => void openWhatsNew()} hitSlop={6}>
+        <Text style={styles.link}>Mitä uutta</Text>
+      </Pressable>
       <Pressable
         onPress={() => Linking.openURL('https://github.com/trotor/koetutka')}
         hitSlop={6}
