@@ -5,6 +5,7 @@ import { loadPrefs, savePrefs } from './preferences';
 import pkg from '../../package.json';
 import {
   fetchWhatsNew,
+  getCachedWhatsNew,
   resolveWhatsNew,
   pickManualContent,
   type WhatsNewContent,
@@ -173,9 +174,15 @@ export const useStore = create<State & Actions>((set, get) => ({
   },
 
   openWhatsNew: async () => {
-    const data = await fetchWhatsNew();
-    const content = pickManualContent(APP_VERSION, data);
-    set({ whatsNew: { visible: true, content, manual: true } });
+    // Näytä heti välimuistilla/varatekstillä, ettei avaus tunnu jähmeältä.
+    const cached = await getCachedWhatsNew();
+    set({ whatsNew: { visible: true, content: pickManualContent(APP_VERSION, cached), manual: true } });
+    // Päivitä taustalla tuoreella sisällöllä, jos modaali on yhä auki manuaalisena.
+    const fresh = await fetchWhatsNew();
+    const state = get().whatsNew;
+    if (fresh && state.visible && state.manual) {
+      set({ whatsNew: { visible: true, content: pickManualContent(APP_VERSION, fresh), manual: true } });
+    }
   },
 
   dismissWhatsNew: () => {

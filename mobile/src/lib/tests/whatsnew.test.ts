@@ -2,6 +2,7 @@ import { describe, test, expect } from 'vitest';
 import {
   resolveWhatsNew,
   pickManualContent,
+  formatWhatsNewDate,
   FALLBACK_WELCOME,
   type WhatsNewData,
 } from '../whatsnew';
@@ -60,5 +61,21 @@ describe('pickManualContent', () => {
   test('ilman releaseja palauttaa welcomen (varateksti jos remotea ei ole)', () => {
     const r = pickManualContent('1.2.0', null);
     expect(r).toEqual({ kind: 'welcome', title: FALLBACK_WELCOME.title, body: FALLBACK_WELCOME.body });
+  });
+});
+
+describe('formatWhatsNewDate', () => {
+  test('muotoilee ISO-päivän suomalaiseksi (dd.MM.yyyy)', () => {
+    expect(formatWhatsNewDate('2026-06-18')).toBe('18.06.2026');
+  });
+
+  test('hyväksyy myös aikaleiman ISO-päivän alusta', () => {
+    expect(formatWhatsNewDate('2026-12-01T00:00:00+02:00')).toBe('01.12.2026');
+  });
+
+  test('tyhjä tai virheellinen → tyhjä merkkijono', () => {
+    expect(formatWhatsNewDate(undefined)).toBe('');
+    expect(formatWhatsNewDate('')).toBe('');
+    expect(formatWhatsNewDate('roska')).toBe('');
   });
 });

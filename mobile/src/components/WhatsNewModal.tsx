@@ -1,5 +1,6 @@
 import { Modal, View, Text, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { useStore } from '@/lib/store';
+import { formatWhatsNewDate } from '@/lib/whatsnew';
 
 export function WhatsNewModal() {
   const whatsNew = useStore((s) => s.whatsNew);
@@ -10,10 +11,15 @@ export function WhatsNewModal() {
   return (
     <Modal visible={visible} transparent animationType="fade" onRequestClose={dismiss}>
       <View style={styles.backdrop}>
-        <View style={styles.card}>
-          <Text style={styles.title}>{content.title}</Text>
+        <View style={styles.card} accessibilityViewIsModal>
+          <Text style={styles.title} accessibilityRole="header">
+            {content.title}
+          </Text>
           {content.kind === 'release' && (
-            <Text style={styles.version}>Versio {content.version}</Text>
+            <Text style={styles.version}>
+              Versio {content.version}
+              {formatWhatsNewDate(content.date) ? ` · ${formatWhatsNewDate(content.date)}` : ''}
+            </Text>
           )}
           <ScrollView style={styles.scroll} contentContainerStyle={styles.scrollContent}>
             {content.kind === 'welcome' ? (
@@ -27,7 +33,12 @@ export function WhatsNewModal() {
               ))
             )}
           </ScrollView>
-          <Pressable style={styles.btn} onPress={dismiss}>
+          <Pressable
+            style={styles.btn}
+            onPress={dismiss}
+            accessibilityRole="button"
+            accessibilityLabel="Sulje"
+          >
             <Text style={styles.btnText}>Selvä</Text>
           </Pressable>
         </View>

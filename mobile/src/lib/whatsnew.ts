@@ -68,6 +68,25 @@ export function pickManualContent(current: string, data: WhatsNewData | null): W
   return welcomeContent(data?.welcome ?? FALLBACK_WELCOME);
 }
 
+/** Muotoilee ISO-päivän (esim. "2026-06-18") suomalaiseksi "18.06.2026". */
+export function formatWhatsNewDate(iso?: string): string {
+  if (!iso) return '';
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  if (!m) return '';
+  const [, year, month, day] = m;
+  return `${day}.${month}.${year}`;
+}
+
+/** Lukee vain välimuistin (ei verkkoa) — nopeaan ensimmäiseen renderöintiin. */
+export async function getCachedWhatsNew(): Promise<WhatsNewData | null> {
+  try {
+    const cached = await AsyncStorage.getItem(CACHE_KEY);
+    return cached ? (JSON.parse(cached) as WhatsNewData) : null;
+  } catch {
+    return null;
+  }
+}
+
 /** Hakee whatsnew.json:n; välimuistittaa onnistuneen haun ja fallbackaa siihen. */
 export async function fetchWhatsNew(): Promise<WhatsNewData | null> {
   try {
@@ -77,11 +96,6 @@ export async function fetchWhatsNew(): Promise<WhatsNewData | null> {
     await AsyncStorage.setItem(CACHE_KEY, JSON.stringify(data));
     return data;
   } catch {
-    try {
-      const cached = await AsyncStorage.getItem(CACHE_KEY);
-      return cached ? (JSON.parse(cached) as WhatsNewData) : null;
-    } catch {
-      return null;
-    }
+    return getCachedWhatsNew();
   }
 }
