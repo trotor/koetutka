@@ -1,23 +1,24 @@
 import { useMemo, useRef } from 'react';
 import { Animated, Text, View, StyleSheet } from 'react-native';
-import { addDistances } from '@koetutka/shared';
+import { addDistances, sortEvents } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { EventCard } from '@/components/EventCard';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
+import { SortSelector } from '@/components/SortSelector';
 
 export default function FavoritesScreen() {
   const events = useStore((s) => s.events);
   const favorites = useStore((s) => s.favorites);
   const userLocation = useStore((s) => s.userLocation);
+  const sortBy = useStore((s) => s.sortBy);
   const scrollY = useRef(new Animated.Value(0)).current;
 
   const items = useMemo(() => {
     const list = events.filter((e) => favorites.has(e.id));
     const withDistance = userLocation ? addDistances(list, userLocation) : list;
-    return [...withDistance].sort((a, b) =>
-      a.date_sort.localeCompare(b.date_sort),
-    );
-  }, [events, favorites, userLocation]);
+    const effectiveSort = sortBy === 'distance' && !userLocation ? 'date' : sortBy;
+    return sortEvents(withDistance, effectiveSort);
+  }, [events, favorites, userLocation, sortBy]);
 
   return (
     <View style={styles.wrap}>
@@ -30,6 +31,8 @@ export default function FavoritesScreen() {
           </Text>
         </View>
       ) : (
+        <>
+        <SortSelector />
         <Animated.FlatList
           data={items}
           keyExtractor={(item) => item.id}
@@ -42,6 +45,7 @@ export default function FavoritesScreen() {
           )}
           scrollEventThrottle={16}
         />
+        </>
       )}
     </View>
   );
