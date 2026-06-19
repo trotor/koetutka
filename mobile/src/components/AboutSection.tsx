@@ -23,7 +23,12 @@ export function AboutSection() {
         <Text style={styles.label}>Julkaisija</Text>
         <Text style={styles.value}>Inetor Oy</Text>
       </View>
-      <Pressable onPress={() => void openWhatsNew()} hitSlop={6}>
+      <Pressable
+        onPress={() => void openWhatsNew()}
+        hitSlop={6}
+        accessibilityRole="button"
+        accessibilityLabel="Mitä uutta"
+      >
         <Text style={styles.link}>Mitä uutta</Text>
       </Pressable>
       <Pressable

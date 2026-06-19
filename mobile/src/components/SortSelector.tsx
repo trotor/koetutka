@@ -17,6 +17,9 @@ export function SortSelector() {
         <Pressable
           onPress={() => setSortBy('distance')}
           disabled={distanceDisabled}
+          accessibilityRole="button"
+          accessibilityLabel="Lajittele etäisyyden mukaan"
+          accessibilityState={{ selected: distanceActive, disabled: distanceDisabled }}
           style={[
             styles.pill,
             distanceActive && styles.pillActive,
@@ -35,6 +38,9 @@ export function SortSelector() {
         </Pressable>
         <Pressable
           onPress={() => setSortBy('date')}
+          accessibilityRole="button"
+          accessibilityLabel="Lajittele ajankohdan mukaan"
+          accessibilityState={{ selected: dateActive }}
           style={[styles.pill, dateActive && styles.pillActive]}
         >
           <Text style={[styles.pillText, dateActive && styles.pillTextActive]}>
