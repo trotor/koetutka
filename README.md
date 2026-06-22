@@ -80,6 +80,20 @@ MIT
 
 ## Versiohistoria
 
+### Mobiili v1.3.0 (2026-06-22)
+- **Suosikkien kalenterinäkymä**: Suosikit-välilehdellä uusi Lista/Kalenteri-valinta.
+  Kalenteri näyttää suosikit kuukausittain aikajanalla ja nostaa niiden lomaan
+  sopivat, päällekkäisyydettömät kokeet ("täyte"). Ehdotukset noudattavat
+  Selaa-välilehden suodattimia.
+- **Päällekkäisyysmerkinnät Selaa-listassa**: kun suosikkeja on valittuna, jokainen
+  koe näyttää merkin "Sopii" (ei mene päällekkäin suosikin kanssa) tai "Päällekkäin".
+- **Selkeämpi päivämäärä korteissa**: kokeen tapahtumapäivä on lihavoitu ja
+  ilmoittautumisaika himmennetty, jotta päivä erottuu paremmin.
+
+### v1.9.3 (2026-06-22)
+- Tapahtumapäivä korostuu taulukossa selkeämmin (lihavoitu) ja ilmoittautumisaika
+  on himmennetty.
+
 ### Mobiili v1.1.0 (2026-06-12)
 - **iOS-sovellus** Androidin rinnalle: sama React Native -koodi, täysi
   ominaisuuspariteetti (lista, kartta, suosikit, sijainti/GPS, etäisyydet,
