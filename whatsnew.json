@@ -11,7 +11,9 @@
       "items": [
         "Suosikit-välilehdelle uusi Kalenteri-näkymä: suosikit aikajanalla ja niiden lomaan sopivat kokeet täytteeksi",
         "Selaa-listassa merkintä, sopiiko koe suosikkien sekaan vai meneekö päällekkäin",
-        "Kokeen tapahtumapäivä erottuu nyt selkeämmin ilmoittautumisajasta"
+        "Voit piilottaa kokeet jotka eivät kiinnosta (paina koekorttia pitkään); 'Näytä piilotetut' -suodatin tuo ne takaisin",
+        "Kokeen tapahtumapäivä erottuu nyt selkeämmin ilmoittautumisajasta",
+        "Asetuksista löytyy nyt merkintöjen selitykset"
       ]
     },
     {

@@ -3,6 +3,7 @@ import { Animated, StyleSheet, View } from 'react-native';
 import { LocationSection } from '@/components/LocationSection';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
 import { NotificationsSection } from '@/components/NotificationsSection';
+import { HelpSection } from '@/components/HelpSection';
 import { AboutSection } from '@/components/AboutSection';
 
 export default function SettingsScreen() {
@@ -20,6 +21,7 @@ export default function SettingsScreen() {
       >
         <LocationSection />
         <NotificationsSection />
+        <HelpSection />
         <AboutSection />
       </Animated.ScrollView>
     </View>

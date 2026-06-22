@@ -87,8 +87,15 @@ MIT
   Selaa-välilehden suodattimia.
 - **Päällekkäisyysmerkinnät Selaa-listassa**: kun suosikkeja on valittuna, jokainen
   koe näyttää merkin "Sopii" (ei mene päällekkäin suosikin kanssa) tai "Päällekkäin".
+- **Kokeiden piilotus**: piilota kokeet jotka eivät käy (pitkä painallus kortista tai
+  kokeen tiedoista → "Piilota koe"). "Näytä piilotetut" -suodatin palauttaa ne, eivätkä
+  piilotetut tule kalenterin täyte-ehdotuksiin.
+- **Merkintöjen selitykset** Asetukset-välilehdellä (tähti, Sopii, Päällekkäin,
+  Piilotettu, Mennyt).
 - **Selkeämpi päivämäärä korteissa**: kokeen tapahtumapäivä on lihavoitu ja
   ilmoittautumisaika himmennetty, jotta päivä erottuu paremmin.
+- **Lajittelu ilman sijaintia**: Etäisyys-valinta ei enää näytä rikkinäiseltä, vaan
+  kertoo että sijainti pitää valita ensin.
 
 ### v1.9.3 (2026-06-22)
 - Tapahtumapäivä korostuu taulukossa selkeämmin (lihavoitu) ja ilmoittautumisaika
