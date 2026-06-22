@@ -408,7 +408,12 @@
         }
 
         .date {
-            font-weight: 600;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .entry-date {
+            color: #888;
         }
 
         .no-results {

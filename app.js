@@ -731,7 +731,7 @@
                         </td>
                         <td><span class="type-badge ${typeClass}">${koe.type}</span></td>
                         <td>${koe.levels}</td>
-                        <td>${koe.entry_date}</td>
+                        <td class="entry-date">${koe.entry_date}</td>
                         <td style="text-align: center; width: 40px;">
                             <button class="btn btn-calendar" onclick="downloadICS(${index}, 'event')" title="Lisää kalenteriin">
                                 <span class="btn-icon">📅</span><span class="btn-text">Kalenteri</span>

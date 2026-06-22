@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Animated, Text, View, StyleSheet, ActivityIndicator } from 'react-native';
-import { addDistances, filterEvents, sortEvents } from '@koetutka/shared';
+import { addDistances, filterEvents, sortEvents, fitAgainstFavorites } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { EventCard } from '@/components/EventCard';
 import { FilterChips } from '@/components/FilterChips';
@@ -18,6 +18,7 @@ export default function BrowseScreen() {
   const userLocation = useStore((s) => s.userLocation);
   const filters = useStore((s) => s.filters);
   const sortBy = useStore((s) => s.sortBy);
+  const favorites = useStore((s) => s.favorites);
 
   const [view, setView] = useState<'list' | 'map'>('list');
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -32,6 +33,11 @@ export default function BrowseScreen() {
     const effectiveSort = sortBy === 'distance' && !userLocation ? 'date' : sortBy;
     return sortEvents(filtered, effectiveSort);
   }, [events, userLocation, filters, sortBy]);
+
+  const favoriteEvents = useMemo(
+    () => events.filter((e) => favorites.has(e.id)),
+    [events, favorites],
+  );
 
   if (isLoading && events.length === 0) {
     return (
@@ -64,7 +70,16 @@ export default function BrowseScreen() {
           data={visible}
           keyExtractor={(item) => item.id}
           contentContainerStyle={styles.list}
-          renderItem={({ item }) => <EventCard event={item} />}
+          renderItem={({ item }) => (
+            <EventCard
+              event={item}
+              fit={
+                favoriteEvents.length > 0 && !favorites.has(item.id)
+                  ? fitAgainstFavorites(item, favoriteEvents)
+                  : undefined
+              }
+            />
+          )}
           ListEmptyComponent={
             <View style={styles.emptyWrap}>
               <Text style={styles.empty}>Ei kokeita näillä suodattimilla.</Text>
