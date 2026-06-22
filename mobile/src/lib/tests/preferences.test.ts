@@ -15,6 +15,8 @@ describe('serializePrefs / deserializePrefs', () => {
         onlyRegistrationOpen: true,
       },
       favorites: new Set(['evt-a', 'evt-b']),
+      hidden: new Set(),
+      showHidden: false,
       notifications: { enabled: true, daysBefore: 7, hourOfDay: 9 },
       sortBy: 'distance',
       whatsNewLastSeenVersion: null,
@@ -77,6 +79,8 @@ describe('serializePrefs / deserializePrefs', () => {
         onlyRegistrationOpen: false,
       },
       favorites: new Set(),
+      hidden: new Set(),
+      showHidden: false,
       notifications: DEFAULT_NOTIFICATION_SETTINGS,
       sortBy: 'date',
       whatsNewLastSeenVersion: null,
@@ -106,6 +110,8 @@ describe('serializePrefs / deserializePrefs', () => {
         onlyRegistrationOpen: false,
       },
       favorites: new Set(),
+      hidden: new Set(),
+      showHidden: false,
       notifications: DEFAULT_NOTIFICATION_SETTINGS,
       sortBy: 'distance',
       whatsNewLastSeenVersion: '1.2.0',
@@ -121,5 +127,39 @@ describe('serializePrefs / deserializePrefs', () => {
       favorites: [],
     });
     expect(deserializePrefs(oldJson).whatsNewLastSeenVersion).toBeNull();
+  });
+
+  test('round-trippaa hidden ja showHidden', () => {
+    const prefs: StoredPrefs = {
+      userLocation: null,
+      filters: {
+        searchTerm: '',
+        activeTypes: new Set(),
+        activeLevels: new Set(),
+        maxDistanceKm: null,
+        hidePast: true,
+        onlyRegistrationOpen: false,
+      },
+      favorites: new Set(),
+      hidden: new Set(['h1', 'h2']),
+      showHidden: true,
+      notifications: DEFAULT_NOTIFICATION_SETTINGS,
+      sortBy: 'distance',
+      whatsNewLastSeenVersion: null,
+    };
+    const back = deserializePrefs(serializePrefs(prefs));
+    expect(back.hidden).toEqual(new Set(['h1', 'h2']));
+    expect(back.showHidden).toBe(true);
+  });
+
+  test('hidden/showHidden defaultit vanhalle JSONille', () => {
+    const oldJson = JSON.stringify({
+      userLocation: null,
+      filters: { searchTerm: '', activeTypes: [], activeLevels: [] },
+      favorites: [],
+    });
+    const back = deserializePrefs(oldJson);
+    expect(back.hidden).toEqual(new Set());
+    expect(back.showHidden).toBe(false);
   });
 });

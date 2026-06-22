@@ -15,6 +15,9 @@ export function FilterChips() {
   const filters = useStore((s) => s.filters);
   const setFilters = useStore((s) => s.setFilters);
   const userLocation = useStore((s) => s.userLocation);
+  const hiddenCount = useStore((s) => s.hidden.size);
+  const showHidden = useStore((s) => s.showHidden);
+  const setShowHidden = useStore((s) => s.setShowHidden);
   const [expanded, setExpanded] = useState(false);
 
   const activeCount =
@@ -22,7 +25,8 @@ export function FilterChips() {
     (filters.activeLevels?.size ?? 0) +
     (filters.maxDistanceKm != null ? 1 : 0) +
     (filters.hidePast ? 1 : 0) +
-    (filters.onlyRegistrationOpen ? 1 : 0);
+    (filters.onlyRegistrationOpen ? 1 : 0) +
+    (showHidden ? 1 : 0);
 
   function toggleType(type: string) {
     const next = new Set(filters.activeTypes);
@@ -123,6 +127,20 @@ export function FilterChips() {
               </Text>
             </Pressable>
           </View>
+
+          {hiddenCount > 0 && (
+            <View style={styles.toggleRow}>
+              <Text style={styles.label}>Näytä piilotetut ({hiddenCount})</Text>
+              <Pressable
+                onPress={() => setShowHidden(!showHidden)}
+                style={[styles.toggle, showHidden && styles.toggleOn]}
+              >
+                <Text style={[styles.toggleText, showHidden && styles.toggleTextOn]}>
+                  {showHidden ? 'Päällä' : 'Pois'}
+                </Text>
+              </Pressable>
+            </View>
+          )}
         </View>
       )}
     </View>

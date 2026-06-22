@@ -10,19 +10,23 @@ export function FavoritesAgenda() {
   const favorites = useStore((s) => s.favorites);
   const filters = useStore((s) => s.filters);
   const userLocation = useStore((s) => s.userLocation);
+  const hidden = useStore((s) => s.hidden);
 
   const sections = useMemo(() => {
     const withDistance = userLocation ? addDistances(events, userLocation) : events;
     const favoriteEvents = withDistance.filter((e) => favorites.has(e.id));
     const candidates = filterEvents(withDistance, filters).filter(
-      (e) => !favorites.has(e.id) && fitAgainstFavorites(e, favoriteEvents) === 'free',
+      (e) =>
+        !favorites.has(e.id) &&
+        !hidden.has(e.id) &&
+        fitAgainstFavorites(e, favoriteEvents) === 'free',
     );
     return buildAgenda({ favorites: favoriteEvents, candidates }).map((m) => ({
       key: m.key,
       label: m.label,
       data: m.items,
     }));
-  }, [events, favorites, filters, userLocation]);
+  }, [events, favorites, filters, userLocation, hidden]);
 
   return (
     <SectionList

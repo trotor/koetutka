@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Pressable } from 'react-native';
+import { Text, View, StyleSheet, Pressable, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { Event } from '@koetutka/shared';
@@ -17,14 +17,35 @@ export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'confli
   const navigation = useNavigation<Navigation>();
   const isFavorite = useStore((s) => s.favorites.has(event.id));
   const toggleFavorite = useStore((s) => s.toggleFavorite);
+  const isHidden = useStore((s) => s.hidden.has(event.id));
+  const toggleHidden = useStore((s) => s.toggleHidden);
 
   const past = isPast(event);
 
+  const promptHide = () => {
+    if (isHidden) {
+      Alert.alert('Palauta koe näkyviin?', undefined, [
+        { text: 'Peruuta', style: 'cancel' },
+        { text: 'Palauta', onPress: () => toggleHidden(event.id) },
+      ]);
+    } else {
+      Alert.alert(
+        'Piilota koe?',
+        'Koe piilotetaan listalta. Saat sen takaisin Filtterit → "Näytä piilotetut".',
+        [
+          { text: 'Peruuta', style: 'cancel' },
+          { text: 'Piilota', style: 'destructive', onPress: () => toggleHidden(event.id) },
+        ],
+      );
+    }
+  };
+
   return (
-    <View style={[styles.card, past && styles.cardPast]}>
+    <View style={[styles.card, past && styles.cardPast, isHidden && styles.cardHidden]}>
       <Pressable
         style={styles.body}
         onPress={() => navigation.navigate('EventDetail', { id: event.id })}
+        onLongPress={promptHide}
       >
         <View style={styles.titleRow}>
           <Text style={[styles.title, past && styles.titlePast]} numberOfLines={1}>
@@ -43,8 +64,9 @@ export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'confli
             <Text style={[styles.entry, past && styles.entryPast]}>  ·  ilm. {event.entry_date}</Text>
           </Text>
           <View style={styles.badges}>
-            {fit === 'free' && <Text style={styles.fitFree}>Sopii</Text>}
-            {fit === 'conflict' && <Text style={styles.fitConflict}>Päällekkäin</Text>}
+            {isHidden && <Text style={styles.hiddenBadge}>Piilotettu</Text>}
+            {!isHidden && fit === 'free' && <Text style={styles.fitFree}>Sopii</Text>}
+            {!isHidden && fit === 'conflict' && <Text style={styles.fitConflict}>Päällekkäin</Text>}
             {past && <Text style={styles.pastBadge}>Mennyt</Text>}
           </View>
         </View>
@@ -74,6 +96,10 @@ const styles = StyleSheet.create({
   },
   cardPast: {
     backgroundColor: '#f1f1f0',
+    borderLeftColor: '#bbb',
+  },
+  cardHidden: {
+    opacity: 0.55,
     borderLeftColor: '#bbb',
   },
   body: {
@@ -119,6 +145,15 @@ const styles = StyleSheet.create({
   pastBadge: {
     fontSize: 11,
     color: '#777',
+    backgroundColor: '#e0e0e0',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+    overflow: 'hidden',
+  },
+  hiddenBadge: {
+    fontSize: 11,
+    color: '#555',
     backgroundColor: '#e0e0e0',
     paddingHorizontal: 6,
     paddingVertical: 2,

@@ -19,6 +19,8 @@ export default function BrowseScreen() {
   const filters = useStore((s) => s.filters);
   const sortBy = useStore((s) => s.sortBy);
   const favorites = useStore((s) => s.favorites);
+  const hidden = useStore((s) => s.hidden);
+  const showHidden = useStore((s) => s.showHidden);
 
   const [view, setView] = useState<'list' | 'map'>('list');
   const scrollY = useRef(new Animated.Value(0)).current;
@@ -30,9 +32,10 @@ export default function BrowseScreen() {
   const visible = useMemo(() => {
     const withDistance = userLocation ? addDistances(events, userLocation) : events;
     const filtered = filterEvents(withDistance, filters);
+    const afterHidden = showHidden ? filtered : filtered.filter((e) => !hidden.has(e.id));
     const effectiveSort = sortBy === 'distance' && !userLocation ? 'date' : sortBy;
-    return sortEvents(filtered, effectiveSort);
-  }, [events, userLocation, filters, sortBy]);
+    return sortEvents(afterHidden, effectiveSort);
+  }, [events, userLocation, filters, sortBy, hidden, showHidden]);
 
   const favoriteEvents = useMemo(
     () => events.filter((e) => favorites.has(e.id)),

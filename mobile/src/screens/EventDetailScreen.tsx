@@ -13,6 +13,8 @@ export default function EventDetailScreen() {
   const route = useRoute<Route>();
   const { id } = route.params;
   const event = useStore((s) => s.events.find((e) => e.id === id));
+  const isHidden = useStore((s) => s.hidden.has(id));
+  const toggleHidden = useStore((s) => s.toggleHidden);
 
   if (!event) {
     return (
@@ -76,6 +78,14 @@ export default function EventDetailScreen() {
           onPress={() => exportEventICS(event, 'event', useStore.getState().userLocation?.name)}
         >
           <Text style={[styles.buttonText, styles.buttonTextSecondary]}>📤 Jaa ICS-tiedostona</Text>
+        </Pressable>
+        <Pressable
+          style={[styles.button, styles.buttonTertiary]}
+          onPress={() => toggleHidden(id)}
+        >
+          <Text style={[styles.buttonText, styles.buttonTextSecondary]}>
+            {isHidden ? '↩︎ Palauta näkyviin' : '🚫 Piilota koe'}
+          </Text>
         </Pressable>
       </View>
     </ScrollView>

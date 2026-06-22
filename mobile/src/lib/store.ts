@@ -27,6 +27,8 @@ interface State {
   userLocation: UserLocation | null;
   filters: FilterOptions;
   favorites: Set<string>;
+  hidden: Set<string>;
+  showHidden: boolean;
   notifications: NotificationSettings;
   sortBy: SortBy;
   whatsNewLastSeenVersion: string | null;
@@ -42,6 +44,8 @@ interface Actions {
   resetFilters: () => void;
   setSortBy: (next: SortBy) => void;
   toggleFavorite: (id: string) => void;
+  toggleHidden: (id: string) => void;
+  setShowHidden: (show: boolean) => void;
   setNotifications: (next: Partial<NotificationSettings>) => Promise<void>;
   syncNotifications: () => Promise<void>;
   checkWhatsNew: () => Promise<void>;
@@ -63,6 +67,8 @@ function persist(state: State) {
     userLocation: state.userLocation,
     filters: state.filters,
     favorites: state.favorites,
+    hidden: state.hidden,
+    showHidden: state.showHidden,
     notifications: state.notifications,
     sortBy: state.sortBy,
     whatsNewLastSeenVersion: state.whatsNewLastSeenVersion,
@@ -76,6 +82,8 @@ export const useStore = create<State & Actions>((set, get) => ({
   userLocation: null,
   filters: defaultFilters,
   favorites: new Set(),
+  hidden: new Set(),
+  showHidden: false,
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
   sortBy: 'distance',
   whatsNewLastSeenVersion: null,
@@ -88,6 +96,8 @@ export const useStore = create<State & Actions>((set, get) => ({
       userLocation: prefs.userLocation,
       filters: prefs.filters,
       favorites: prefs.favorites,
+      hidden: prefs.hidden,
+      showHidden: prefs.showHidden,
       notifications: prefs.notifications,
       sortBy: prefs.sortBy,
       whatsNewLastSeenVersion: prefs.whatsNewLastSeenVersion,
@@ -134,6 +144,19 @@ export const useStore = create<State & Actions>((set, get) => ({
     set({ favorites });
     persist(get());
     void get().syncNotifications();
+  },
+
+  toggleHidden: (id: string) => {
+    const hidden = new Set(get().hidden);
+    if (hidden.has(id)) hidden.delete(id);
+    else hidden.add(id);
+    set({ hidden });
+    persist(get());
+  },
+
+  setShowHidden: (showHidden: boolean) => {
+    set({ showHidden });
+    persist(get());
   },
 
   setNotifications: async (partial) => {

@@ -11,6 +11,8 @@ export interface StoredPrefs {
   userLocation: UserLocation | null;
   filters: FilterOptions;
   favorites: Set<string>;
+  hidden: Set<string>;
+  showHidden: boolean;
   notifications: NotificationSettings;
   sortBy: SortBy;
   whatsNewLastSeenVersion: string | null;
@@ -27,6 +29,8 @@ const DEFAULTS: StoredPrefs = {
     onlyRegistrationOpen: false,
   },
   favorites: new Set(),
+  hidden: new Set(),
+  showHidden: false,
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
   sortBy: 'distance',
   whatsNewLastSeenVersion: null,
@@ -43,6 +47,8 @@ interface JsonShape {
     onlyRegistrationOpen?: boolean;
   };
   favorites?: string[];
+  hidden?: string[];
+  showHidden?: boolean;
   notifications?: NotificationSettings;
   sortBy?: SortBy;
   whatsNewLastSeenVersion?: string | null;
@@ -60,6 +66,8 @@ export function serializePrefs(prefs: StoredPrefs): string {
       onlyRegistrationOpen: prefs.filters.onlyRegistrationOpen,
     },
     favorites: Array.from(prefs.favorites ?? []),
+    hidden: Array.from(prefs.hidden ?? []),
+    showHidden: prefs.showHidden,
     notifications: prefs.notifications,
     sortBy: prefs.sortBy,
     whatsNewLastSeenVersion: prefs.whatsNewLastSeenVersion,
@@ -82,6 +90,8 @@ export function deserializePrefs(text: string): StoredPrefs {
         onlyRegistrationOpen: parsed.filters?.onlyRegistrationOpen ?? false,
       },
       favorites: new Set(parsed.favorites ?? []),
+      hidden: new Set(parsed.hidden ?? []),
+      showHidden: parsed.showHidden ?? false,
       notifications: {
         ...DEFAULT_NOTIFICATION_SETTINGS,
         ...(parsed.notifications ?? {}),
