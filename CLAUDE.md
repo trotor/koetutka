@@ -22,7 +22,7 @@ python3 -m http.server 8080
 # Then open: http://localhost:8080/
 
 # Deploy to server
-scp index.html styles.css app.js koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
+scp index.html styles.css app.js app-store-badge.svg google-play-badge.png koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ```
 
 ## Architecture
@@ -69,7 +69,7 @@ Push to `master` branch triggers automatic deployment via GitHub Pages.
 Target: `www.muikea.fi/koetutka/`
 
 ```bash
-scp index.html styles.css app.js banner.jpg koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
+scp index.html styles.css app.js banner.jpg app-store-badge.svg google-play-badge.png koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ```
 
 ## Mobile App (React Native)
@@ -122,6 +122,8 @@ cd mobile && npm test && npm run typecheck
 - `styles.css` - Page styles
 - `app.js` - Page logic
 - `banner.jpg` - Header banner image
+- `app-store-badge.svg` - Official "Lataa App Storesta" badge (footer + README)
+- `google-play-badge.png` - Official "Hae sovellus Google Playsta" badge (footer + README)
 - `favicon.ico` - Favicon (multi-size)
 - `favicon-192.png` - Android/PWA icon
 - `apple-touch-icon.png` - iOS home screen icon

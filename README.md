@@ -4,7 +4,13 @@ Interaktiivinen web-sovellus, joka näyttää SNJ:n (Suomen Noutajakoirajärjest
 
 **Live:** [trotor.github.io/koetutka](https://trotor.github.io/koetutka)
 
-**Android-sovellus:** [Google Play](https://play.google.com/store/apps/details?id=com.koetutka)
+**Lataa mobiilisovellus:**
+
+<p>
+  <a href="https://apps.apple.com/fi/app/koetutka/id6779765394"><img src="app-store-badge.svg" alt="Lataa App Storesta" height="44"></a>
+  &nbsp;
+  <a href="https://play.google.com/store/apps/details?id=com.koetutka"><img src="google-play-badge.png" alt="Hae sovellus Google Playsta" height="66"></a>
+</p>
 
 ## Ominaisuudet
 
@@ -96,6 +102,10 @@ MIT
   ilmoittautumisaika himmennetty, jotta päivä erottuu paremmin.
 - **Lajittelu ilman sijaintia**: Etäisyys-valinta ei enää näytä rikkinäiseltä, vaan
   kertoo että sijainti pitää valita ensin.
+
+### v1.9.4 (2026-06-22)
+- Linkit mobiilisovelluksiin: viralliset App Store- ja Google Play -merkit
+  webapp-sivun alatunnisteessa ja README:ssä.
 
 ### v1.9.3 (2026-06-22)
 - Tapahtumapäivä korostuu taulukossa selkeämmin (lihavoitu) ja ilmoittautumisaika

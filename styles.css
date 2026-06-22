@@ -761,6 +761,35 @@
             color: #ccc;
         }
 
+        .app-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 0 auto 16px auto;
+        }
+
+        .app-badges a {
+            display: inline-flex;
+            font-weight: normal;
+        }
+
+        .app-badges img {
+            display: block;
+            width: auto;
+        }
+
+        /* Google's official badge ships with built-in clear-space padding, so it
+           is rendered taller than Apple's so the actual buttons match in height. */
+        .app-badges .badge-appstore { height: 44px; }
+        .app-badges .badge-googleplay { height: 66px; }
+
+        .app-badges a:hover img {
+            opacity: 0.85;
+            text-decoration: none;
+        }
+
         .promo-banner {
             background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);
             padding: 10px 20px;
