@@ -136,7 +136,13 @@ cd mobile && npm test && npm run typecheck
 
 ## Versioning
 
-When making changes to the application, **always update the version number**:
+When making changes to the application, **always update the version number**.
+
+**Whenever a version number is bumped (web or mobile), also add a matching
+release entry to `whatsnew.json`** (newest first in `releases`). It drives the
+in-app "Mitä uutta" view; the mobile app fetches it at runtime from
+`https://trotor.github.io/koetutka/whatsnew.json`, so it ships via the **web
+deploy** (GitHub Pages) — no mobile rebuild needed just to update the notes.
 
 **Web:**
 1. Update `index.html` - Change the version in footer (`<span id="version">vX.X.X</span>`)
