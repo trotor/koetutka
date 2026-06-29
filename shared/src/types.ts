@@ -15,7 +15,26 @@ export interface Person {
 export interface Class {
   class: string;
   date: string;
+  /** Paikkamäärä kyseiseen luokkaan. Voi puuttua tai olla 0 jos ei ilmoitettu. */
+  places?: number;
+  /** Ilmoittautuneiden määrä (tilannekuva datan haetusta hetkestä). */
+  entries?: number;
   [key: string]: unknown;
+}
+
+/** Yhden luokan paikkarivi (listClassPlaces). */
+export interface ClassPlaces {
+  /**
+   * Luokan nimi (esim. "ALO"). Tyhjä merkkijono tarkoittaa kokonaismäärä-riviä
+   * ("Yhteensä"), jota käytetään kun luokkakohtaista erittelyä ei ole.
+   */
+  class: string;
+  places: number;
+  /**
+   * Päiväleima esim. "La 6.6." jos koe on monipäiväinen, muuten null
+   * (yksipäiväisessä kokeessa päivä on sama kuin kokeen päivämäärä).
+   */
+  day: string | null;
 }
 
 /**
@@ -59,6 +78,12 @@ export interface Event {
   cost: Cost;
   cost_member: Cost;
   classes: Class[];
+  /**
+   * Kokeen kokonaispaikkamäärä. Käytetään kun classes-listassa ei ole
+   * per-luokka-paikkoja (esim. alustavat ja WT-kokeet, joissa luokkakohtaiset
+   * määrät voivat vielä muuttua). Voi puuttua.
+   */
+  places?: number;
   /** Lasketaan ajoittain UI:ssa (addDistances). */
   distance?: number | null;
 }

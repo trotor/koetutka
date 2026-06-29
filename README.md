@@ -86,6 +86,21 @@ MIT
 
 ## Versiohistoria
 
+### v1.10.0 (2026-06-29)
+- **Luokat ja paikat kokeen tiedoissa**: kokeen tietonäkymään uusi kortti, joka
+  näyttää paikkamäärän. Kun luokkakohtaiset paikat ovat tiedossa, ne eritellään
+  per luokka, ja monipäiväisissä kokeissa lisäksi päivittäin (esim.
+  "ALO · La 8.8. — 15 paikkaa"), ei summattuna. Kun luokkakohtaista erittelyä ei
+  ole (esim. alustavat ja WT-kokeet), näytetään kokeen kokonaispaikkamäärä
+  ("Yhteensä — N paikkaa"); yksiluokkaisissa luku näkyy suoraan luokan kohdalla.
+- **Datahaku**: `snj_kokeet.py` tallentaa nyt myös kokeen kokonaispaikkamäärän
+  (`places`).
+
+### Mobiili v1.4.0 (2026-06-29)
+- **Luokat ja paikat kokeen tiedoissa**: kokeen tietonäkymä näyttää paikkamäärän
+  per luokka (monipäiväisissä päivittäin eriteltynä), tai kokonaispaikkamäärän
+  kun luokkakohtaista erittelyä ei ole.
+
 ### Mobiili v1.3.0 (2026-06-22)
 - **Suosikkien kalenterinäkymä**: Suosikit-välilehdellä uusi Lista/Kalenteri-valinta.
   Kalenteri näyttää suosikit kuukausittain aikajanalla ja nostaa niiden lomaan

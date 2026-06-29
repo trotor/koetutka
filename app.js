@@ -883,6 +883,7 @@
                 euro: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="10" x2="16" y2="10"></line><line x1="4" y1="14" x2="14" y2="14"></line><path d="M17 6a6 6 0 0 0-6 6c0 3.3 2.7 6 6 6"></path></svg>',
                 info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>',
                 building: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"></path><path d="M5 21V7l8-4v18"></path><path d="M19 21V11l-6-4"></path><path d="M9 9v.01"></path><path d="M9 12v.01"></path><path d="M9 15v.01"></path><path d="M9 18v.01"></path></svg>',
+                list: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>',
                 share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>',
                 close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>'
             };
@@ -934,6 +935,32 @@
                                 </div>
                             </div>
                         </div>`;
+
+            // Luokat ja paikat (per päivä ja per luokka kun saatavilla, muuten
+            // kokeen kokonaispaikkamäärä "Yhteensä"-rivinä)
+            const classPlaces = window.koetutkaShared.listClassPlaces(koe);
+            if (classPlaces.length > 0) {
+                html += `
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                ${icons.list}
+                                <span>Luokat ja paikat</span>
+                            </div>
+                            <div class="info-card-content">`;
+                classPlaces.forEach(cp => {
+                    const unit = cp.places === 1 ? 'paikka' : 'paikkaa';
+                    const name = cp.class || 'Yhteensä';
+                    const label = cp.day ? `${name} · ${cp.day}` : name;
+                    html += `
+                                <div class="info-row">
+                                    <span class="info-row-label">${label}</span>
+                                    <span class="info-row-value">${cp.places} ${unit}</span>
+                                </div>`;
+                });
+                html += `
+                            </div>
+                        </div>`;
+            }
 
             if (koe.organizer) {
                 html += `

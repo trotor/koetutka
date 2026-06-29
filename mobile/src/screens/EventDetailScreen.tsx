@@ -1,7 +1,7 @@
 import { useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
 import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
-import { getCostValue, getOptionalCosts } from '@koetutka/shared';
+import { getCostValue, getOptionalCosts, listClassPlaces } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { exportEventICS } from '@/lib/ics-export';
 import { addEventToCalendar } from '@/lib/calendar-add';
@@ -27,6 +27,7 @@ export default function EventDetailScreen() {
   const cost = getCostValue(event.cost);
   const costMember = getCostValue(event.cost_member);
   const optionalCosts = getOptionalCosts(event.cost);
+  const classPlaces = listClassPlaces(event);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -38,6 +39,18 @@ export default function EventDetailScreen() {
       )}
 
       <InfoRow label="Ilmoittautuminen" value={event.entry_date} />
+      {classPlaces.length > 0 && (
+        <InfoRow
+          label="Luokat ja paikat"
+          value={classPlaces
+            .map((cp) => {
+              const cls = cp.class || 'Yhteensä';
+              const name = cp.day ? `${cls} · ${cp.day}` : cls;
+              return `${name}: ${cp.places} ${cp.places === 1 ? 'paikka' : 'paikkaa'}`;
+            })
+            .join('\n')}
+        />
+      )}
       {event.organizer && <InfoRow label="Järjestäjä" value={event.organizer} />}
       {event.judges.length > 0 && (
         <InfoRow label="Tuomarit" value={event.judges.join(', ')} />

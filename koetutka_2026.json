@@ -31,7 +31,8 @@
     "description": "Ilmoittautumiset sähköpostitse ulla.alhava@gmail.com. Maksu koepaikan varmistuttua.",
     "cost": 0,
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": 12
   },
   {
     "id": "Vp7rHJqV99",
@@ -67,7 +68,8 @@
     "description": "Osallistumismaksu sisältää aamiaisen, välipalan ja ruokailun koepäivän päätteeksi. Ilmoita mahdolliset erityisruokavaliot koesihteerille.",
     "cost": 125,
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "7GasRJbaPM",
@@ -125,7 +127,8 @@
       ],
       "normal": 0
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "MIOINM1SPo",
@@ -171,7 +174,8 @@
         "122": 100
       }
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "_tV7PO0mhm",
@@ -217,7 +221,8 @@
       },
       "normal": 120
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "dJkbTEG949",
@@ -301,7 +306,8 @@
         "date": "2026-03-13T22:00:00.000Z",
         "entries": 64
       }
-    ]
+    ],
+    "places": 67
   },
   {
     "id": "YZlaUzrXnf",
@@ -336,7 +342,8 @@
     "description": "Osallistumisoikeus on rekisteröidyillä noutajilla, joita ei ole palkittu noutajien metsästyskokeissa, kuitenkin niin, että etuoikeus on nuorilla koirilla (NOU1-tulos on sallittu). Osallistumisoikeus on koirilla, jotka ovat maksimissaan 2 vuotta (alaikäraja 9 kk). Ilmoittautumalla kokeeseen hyväksyn, että kokeen järjestämisen vastuuhenkilöt voivat käsitellä ilmoittamiani henkilötietoja ja julkaista niitä tarpeen mukaisesti ja soveltuvin osin kokeen osallistuja- ja tulosluettelossa koepaikalla ja kokeeseen liittyvissä julkaisuissa internetissä tai muissa yhdistyksen medioissa. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
     "cost": 40,
     "cost_member": 30,
-    "classes": []
+    "classes": [],
+    "places": 49
   },
   {
     "id": "XgGcS-KOPY",
@@ -454,7 +461,8 @@
           "ap"
         ]
       }
-    ]
+    ],
+    "places": 100
   },
   {
     "id": "tk-r-xik3l",
@@ -523,7 +531,8 @@
         "state": "invited",
         "class": "ALO"
       }
-    ]
+    ],
+    "places": 60
   },
   {
     "id": "IB9wwxoheD",
@@ -561,7 +570,8 @@
     "description": "Kaikkiin sarjoihin ilmoittaudutaan Pirkanmaan Noutajakoirayhdistyksen nettisivulla olevalla lomakkeella https://www.pirkannuusku.net/nome/pirkan-damit/pirkan-damit-2026/ \n\nMaksu tapahtuu yhdistyksen tilille FI42 5620 0920 7360 62 käyttäen viitenumeroa 10032, pirkandamit @ pirkannuusku.net -sähköpostista voi kysyä tapahtumasta lisää.\n\nSarjat:\n- Yksilökilpailu 38€, osallistuva koira ei saa olla osallistunut rodunomaisten kokeiden (Nome-b, wt) avoimeen luokkaan, ikärajaa ei ole.\n- Kenneljoukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Yhdistysjoukkueet tai muut joukkueet 38€/per koira (koiran ikä alle 22 kk) Koe on tarkoitettu 6.6.2024 jälkeen syntyneille koirille, joka ei ole startannut AVO-luokassa.\n- Koira & lapsi 20€ (lapsi alle 12v.)\n- Veteraanit 8-9v. ja 10v täyttäneet 38€",
     "cost": 38,
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": 0
   },
   {
     "id": "ZoEzlsFXdN",
@@ -602,7 +612,8 @@
     "cost_member": {
       "normal": 11
     },
-    "classes": []
+    "classes": [],
+    "places": 400
   },
   {
     "id": "2hHHLi087d",
@@ -643,7 +654,8 @@
     "cost_member": {
       "normal": 11
     },
-    "classes": []
+    "classes": [],
+    "places": 400
   },
   {
     "id": "FbsDBcoJtd",
@@ -684,7 +696,8 @@
     "cost_member": {
       "normal": 11
     },
-    "classes": []
+    "classes": [],
+    "places": 400
   },
   {
     "id": "D7e_feZI8u",
@@ -725,7 +738,8 @@
     "cost_member": {
       "normal": 11
     },
-    "classes": []
+    "classes": [],
+    "places": 400
   },
   {
     "id": "U1-iVA9wkQ",
@@ -817,7 +831,8 @@
         "state": "invited",
         "members": 0
       }
-    ]
+    ],
+    "places": 49
   },
   {
     "id": "Us3GOKBjVH",
@@ -858,7 +873,8 @@
     "cost_member": {
       "normal": 11
     },
-    "classes": []
+    "classes": [],
+    "places": 400
   },
   {
     "id": "Tmymw9iBHe",
@@ -899,7 +915,8 @@
     "cost_member": {
       "normal": 11
     },
-    "classes": []
+    "classes": [],
+    "places": 400
   },
   {
     "id": "9RQkzAjNZr",
@@ -1037,7 +1054,8 @@
         ],
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 100
   },
   {
     "id": "Pp3C-y-Vik",
@@ -1098,7 +1116,8 @@
         "judge": [],
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "SXH9kesxN_",
@@ -1159,7 +1178,8 @@
         "state": "invited",
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "bkpL41Jyde",
@@ -1238,7 +1258,8 @@
         "judge": [],
         "entries": 32
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "ATZHfV0C0O",
@@ -1302,7 +1323,8 @@
         "date": "2026-04-25T00:00:00.000+03:00",
         "judge": []
       }
-    ]
+    ],
+    "places": 70
   },
   {
     "id": "9D7hTGThMQ",
@@ -1382,7 +1404,8 @@
         ],
         "class": "AVO"
       }
-    ]
+    ],
+    "places": 23
   },
   {
     "id": "NddOmq0ozi",
@@ -1446,7 +1469,8 @@
         "entries": 26,
         "date": "2026-04-26T00:00:00.000+03:00"
       }
-    ]
+    ],
+    "places": 70
   },
   {
     "id": "GLehAc7Klz",
@@ -1480,7 +1504,8 @@
     "cost_member": {
       "normal": 70
     },
-    "classes": []
+    "classes": [],
+    "places": 22
   },
   {
     "id": "HZhwmMJpCm",
@@ -1538,7 +1563,8 @@
         "judge": [],
         "places": 19
       }
-    ]
+    ],
+    "places": 29
   },
   {
     "id": "U4g68_OLbT",
@@ -1597,7 +1623,8 @@
         "entries": 22,
         "state": "invited"
       }
-    ]
+    ],
+    "places": 40
   },
   {
     "id": "vti7eDjv0H",
@@ -1641,7 +1668,8 @@
         "class": "VOI",
         "judge": []
       }
-    ]
+    ],
+    "places": 28
   },
   {
     "id": "1907V2MHSY",
@@ -1700,7 +1728,8 @@
         "entries": 21,
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 40
   },
   {
     "id": "0ecIQ_ZnTb",
@@ -1733,7 +1762,8 @@
     "description": "",
     "cost": 50,
     "cost_member": 35,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "_oW8DAi2h2",
@@ -1829,7 +1859,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 35
   },
   {
     "id": "enqA1YUQs9",
@@ -1885,7 +1916,8 @@
         "class": "VOI",
         "members": 11
       }
-    ]
+    ],
+    "places": 40
   },
   {
     "id": "2GkNt_zYt7",
@@ -1918,7 +1950,8 @@
     "description": "Arkikoe. Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 8
   },
   {
     "id": "q4ZXOOLG84",
@@ -1961,7 +1994,8 @@
       },
       "normal": 45
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "gDp-T4iQeR",
@@ -1994,7 +2028,8 @@
     "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "x7xmxPDf2S",
@@ -2058,7 +2093,8 @@
         "date": "2026-05-16T21:00:00.000Z",
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 120
   },
   {
     "id": "uCwt8nR9lf",
@@ -2107,7 +2143,8 @@
         "members": 12,
         "entries": 19
       }
-    ]
+    ],
+    "places": 30
   },
   {
     "id": "RejQXHSIRV",
@@ -2156,7 +2193,8 @@
         ],
         "places": 15
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "ETUKXs-pU-",
@@ -2203,7 +2241,8 @@
         "state": "invited",
         "date": "2026-05-16T00:00:00.000+03:00"
       }
-    ]
+    ],
+    "places": 10
   },
   {
     "id": "UUu5hS1kLk",
@@ -2242,7 +2281,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 15
   },
   {
     "id": "KWG97H7W9K",
@@ -2291,7 +2331,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "S9eApVyOX_",
@@ -2340,7 +2381,8 @@
         ],
         "state": "invited"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "KXSM-pJcCP",
@@ -2375,7 +2417,8 @@
       "normal": 55
     },
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "rkvT5zvskr",
@@ -2424,7 +2467,8 @@
         "members": 7,
         "class": "ALO"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "hEs3ASMLMr",
@@ -2487,7 +2531,8 @@
         "judge": [],
         "members": 8
       }
-    ]
+    ],
+    "places": 40
   },
   {
     "id": "IazQTYhooh",
@@ -2608,7 +2653,8 @@
           "ip"
         ]
       }
-    ]
+    ],
+    "places": 45
   },
   {
     "id": "RVxnscvb6K",
@@ -2641,7 +2687,8 @@
     "description": "Jäsenyyden on oltava voimassa ennen ilmoittautumisen alkua, jotta pääsee etusijalle.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "movUaPHtsc",
@@ -2690,7 +2737,8 @@
         "members": 10,
         "entries": 16
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "UK0QkdcRqd",
@@ -2739,7 +2787,8 @@
         "class": "ALO",
         "date": "2026-05-23T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "z-JFSxIImS",
@@ -2772,7 +2821,8 @@
     "description": "",
     "cost": 45,
     "cost_member": 35,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "B4G0mGqjh5",
@@ -2809,7 +2859,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "Bue5qvauL6",
@@ -2846,7 +2897,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 8
   },
   {
     "id": "lXiXNlXido",
@@ -2895,7 +2947,8 @@
         "entries": 15,
         "state": "invited"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "4ihrmTZLYL",
@@ -2928,7 +2981,8 @@
     "description": "Ilmoittautumisaika on jatkettu ja päättyy nyt pe 22.5. Alkuperäinen ilmoittautumisaika loppui 17.5. Siihen mennessä kokeeseen ilmoittautuneilla on koepaikka. ",
     "cost": 50,
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "sGFaCKVf17",
@@ -2961,7 +3015,8 @@
     "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
     "cost": 48,
     "cost_member": 42,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "L6y02rN3ni",
@@ -2991,7 +3046,8 @@
     "description": "Etusija kokeeseen järjestäjän kutsumilla koirilla (max 1/3), sekä järjestävän yhdistyksen jäsenillä (jäsenyys voimassa ilmoittautumisajan alkaessa). Jäsenten osallistumismaksu 40 €, muiden 45 €. Koemaksu palautetaan vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Sairastapauksissa maksupalautus lääkärintodistusta vastaan. Käytäntö peruutuksesta ja maksun palautuksesta on sama niin ilmoittautumisaikana kuin sen jälkeenkin. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu.",
     "cost": 45,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "gfcK5iN1gg",
@@ -3029,7 +3085,8 @@
     "cost_member": {
       "normal": 42
     },
-    "classes": []
+    "classes": [],
+    "places": 18
   },
   {
     "id": "ApBoGfm9Yo",
@@ -3066,7 +3123,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "f05XxSTOjh",
@@ -3130,7 +3188,8 @@
         "entries": 29,
         "date": "2026-06-06T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 31
   },
   {
     "id": "tg1gk7pjZk",
@@ -3167,7 +3226,8 @@
     "cost_member": {
       "normal": 50
     },
-    "classes": []
+    "classes": [],
+    "places": 8
   },
   {
     "id": "xCKkbWvzGs",
@@ -3204,7 +3264,8 @@
     "cost_member": {
       "normal": 45
     },
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "tmyJdZju1_",
@@ -3237,7 +3298,8 @@
     "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. \nNarttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "DS4hbLeTX9",
@@ -3301,7 +3363,8 @@
         "places": 25,
         "state": "invited"
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "xp1GOLLh2i",
@@ -3369,7 +3432,8 @@
         "state": "invited",
         "class": "AVO"
       }
-    ]
+    ],
+    "places": 28
   },
   {
     "id": "LATfZTOHkV",
@@ -3421,7 +3485,8 @@
         "cost": 0
       }
     },
-    "classes": []
+    "classes": [],
+    "places": 24
   },
   {
     "id": "XNnIwzbuwm",
@@ -3474,7 +3539,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "z-cc5mFj77",
@@ -3507,7 +3573,8 @@
     "description": "Etusija Suomen sileäkarvaiset noutajat ry jäsenillä, sileäkarvaisilla noutajilla sekä edellämainitun yhdistyksen kokeissa talkoilleilla.",
     "cost": 45,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "jHSQCM8RsZ",
@@ -3556,7 +3623,8 @@
         "members": 13,
         "date": "2026-06-06T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "bn8pKxXLNN",
@@ -3589,7 +3657,8 @@
     "description": "ILMOITTAUTUMISAIKAA jatkettu!\n\nKoiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. \nNarttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "Y13r6xkn6Y",
@@ -3644,7 +3713,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 7
   },
   {
     "id": "VuUQ5bn4Hy",
@@ -3677,7 +3747,8 @@
     "description": "Koe alkaa klo 15.00.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 10
   },
   {
     "id": "wYYRxz56HK",
@@ -3710,7 +3781,8 @@
     "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "G3Rx_dTePc",
@@ -3781,7 +3853,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 23
   },
   {
     "id": "8-18OiQaz_",
@@ -3830,7 +3903,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "SKlngAsDXt",
@@ -3863,7 +3937,8 @@
     "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "oKw1W6TX5s",
@@ -3896,7 +3971,8 @@
     "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. Jäsenten osallistumismaksu 40 €, ei jäsenten 45€. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Tällöin pidätetään maksunpalautuksesta 4 € käsittelykulu.",
     "cost": 45,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "Q1BRHmQDsB",
@@ -3955,7 +4031,8 @@
         "date": "2026-06-12T21:00:00.000Z",
         "state": "invited"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "v-PPfTVDDX",
@@ -4019,7 +4096,8 @@
         "entries": 27,
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 24
   },
   {
     "id": "agWgijs8UL",
@@ -4068,7 +4146,8 @@
         "entries": 22,
         "date": "2026-06-12T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "GTURqOc5EI",
@@ -4139,7 +4218,8 @@
         ],
         "places": 12
       }
-    ]
+    ],
+    "places": 27
   },
   {
     "id": "bmdwwNGlWI",
@@ -4188,7 +4268,8 @@
         "state": "invited",
         "date": "2026-06-13T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 16
   },
   {
     "id": "7IwGELM6kM",
@@ -4247,7 +4328,8 @@
         "places": 15,
         "members": 15
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "iOzlvFKnzR",
@@ -4280,7 +4362,8 @@
     "description": "Vesityöt tehdään sorsalla, hakualueella varikset.\nMikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "zqnR4FWcmo",
@@ -4333,7 +4416,8 @@
         "entries": 25,
         "class": "ALO"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "ivJRF7Go_0",
@@ -4404,7 +4488,8 @@
         "places": 15,
         "date": "2026-06-13T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 30
   },
   {
     "id": "fyity5e_c6",
@@ -4437,7 +4522,8 @@
     "description": "Koe on iltakoe, alkaa klo 15.00. Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilevilla. Maksunpalautuksista pidätetään 4 euron käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta narttukoiran juoksusta. Mikäli yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 10
   },
   {
     "id": "K-2ctyP50d",
@@ -4474,7 +4560,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 8
   },
   {
     "id": "XCsNEQYPD1",
@@ -4527,7 +4614,8 @@
         "places": 15,
         "members": 23
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "Fp8LJjclXU",
@@ -4560,7 +4648,8 @@
     "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 40 €, ei jäsenten 45 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. ",
     "cost": 45,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "UWcCAxfpIi",
@@ -4646,7 +4735,8 @@
         ],
         "state": "invited"
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "54UJN0RSx1",
@@ -4730,7 +4820,8 @@
         "state": "invited",
         "entries": 40
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "gRWvi5ISGU",
@@ -4760,7 +4851,8 @@
     "description": "Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 5 € pankkikulu. Huom: kokeessa hakuruudussa riistana on naakka, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "t2Q9aDg2TG",
@@ -4809,7 +4901,8 @@
         "entries": 17,
         "places": 12
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "VGikLPPJuA",
@@ -4888,7 +4981,8 @@
         "entries": 61,
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 48
   },
   {
     "id": "ALwd0AtZRm",
@@ -4949,7 +5043,8 @@
         "members": 19,
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "5XogaQ28xp",
@@ -5019,7 +5114,8 @@
         ],
         "state": "invited"
       }
-    ]
+    ],
+    "places": 16
   },
   {
     "id": "5K3QDCrt-z",
@@ -5057,22 +5153,23 @@
     "cost_member": 35,
     "classes": [
       {
-        "places": 0,
+        "entries": 32,
         "class": "ALO",
         "judge": [],
         "members": 8,
-        "entries": 30,
+        "places": 0,
         "date": "2026-07-06T21:00:00.000Z"
       },
       {
-        "places": 0,
+        "members": 8,
         "entries": 14,
-        "judge": [],
-        "class": "AVO",
         "date": "2026-07-06T21:00:00.000Z",
-        "members": 8
+        "class": "AVO",
+        "places": 0,
+        "judge": []
       }
-    ]
+    ],
+    "places": 50
   },
   {
     "id": "wPA1TyGCgR",
@@ -5116,7 +5213,8 @@
         "entries": 22,
         "members": 0
       }
-    ]
+    ],
+    "places": 30
   },
   {
     "id": "hJ3Gm7I7cQ",
@@ -5153,7 +5251,8 @@
     "cost_member": {
       "normal": 45
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "WOhqjnQ57j",
@@ -5201,7 +5300,8 @@
         "entries": 17,
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "UPhbEoSz3s",
@@ -5249,7 +5349,8 @@
         "class": "ALO",
         "entries": 24
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "1-g4w1AdKo",
@@ -5297,7 +5398,8 @@
         "class": "VOI",
         "date": "2026-07-10T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "vPc-8wwq4q",
@@ -5350,7 +5452,8 @@
         ],
         "state": "picked"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "0GZ7HbLgdv",
@@ -5414,7 +5517,8 @@
         "class": "ALO",
         "state": "picked"
       }
-    ]
+    ],
+    "places": 30
   },
   {
     "id": "Vn4jYHR6z-",
@@ -5467,7 +5571,8 @@
         "class": "ALO",
         "state": "picked"
       }
-    ]
+    ],
+    "places": 8
   },
   {
     "id": "bKwiJCyQ3S",
@@ -5500,7 +5605,8 @@
     "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. \nNarttukoiran juoksun alkaessa koemaksu palautetaan. ",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "oOxIQk9h4C",
@@ -5548,7 +5654,8 @@
         "members": 13,
         "entries": 23
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "5pXkywjXME",
@@ -5597,7 +5704,8 @@
         "class": "VOI",
         "state": "picked"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "0Kzg6gCRqz",
@@ -5645,7 +5753,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "mrqpTI_iiI",
@@ -5694,7 +5803,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "3-mjEJipXW",
@@ -5728,7 +5838,8 @@
     "description": "Iltakoe, joka alkaa kello 13. Maksunpalautuksista pidätetään 5 € käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Mikäli yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
     "cost": 47,
     "cost_member": 42,
-    "classes": []
+    "classes": [],
+    "places": 24
   },
   {
     "id": "9fx9pfp4qe",
@@ -5737,7 +5848,7 @@
     "date": "18.-19.07.2026",
     "date_sort": "2026-07-18T00:00:00+03:00",
     "end_date_sort": "2026-07-19T23:59:59.999000+03:00",
-    "entry_date": "06.06.-27.06.",
+    "entry_date": "06.06.-12.07.",
     "location": "Pieksämäki",
     "coordinates": [
       62.3016121,
@@ -5765,7 +5876,8 @@
     "cost_member": {
       "normal": 45
     },
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "zQfGEhNvl5",
@@ -5833,7 +5945,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 14
   },
   {
     "id": "IsWo1GqRdb",
@@ -5899,7 +6012,8 @@
         ],
         "date": "2026-07-18T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 24
   },
   {
     "id": "bCgHsFJAc_",
@@ -5994,7 +6108,8 @@
         "places": 14,
         "members": 14
       }
-    ]
+    ],
+    "places": 59
   },
   {
     "id": "kqiUEs2D6o",
@@ -6042,7 +6157,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "77Tvpl6Z1f",
@@ -6105,7 +6221,8 @@
         "class": "VOI",
         "places": 12
       }
-    ]
+    ],
+    "places": 24
   },
   {
     "id": "nAznMMDhLI",
@@ -6157,7 +6274,8 @@
         "entries": 14,
         "date": "2026-07-24T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "Kd8QOHcIXy",
@@ -6223,7 +6341,8 @@
         ],
         "date": "2026-07-25T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 16
   },
   {
     "id": "wxKtVCdAy7",
@@ -6347,7 +6466,8 @@
         "places": 12,
         "members": 2
       }
-    ]
+    ],
+    "places": 84
   },
   {
     "id": "xoAuKA02nU",
@@ -6384,7 +6504,8 @@
     "cost_member": {
       "normal": 47
     },
-    "classes": []
+    "classes": [],
+    "places": 30
   },
   {
     "id": "2CpNLLyaZP",
@@ -6424,7 +6545,8 @@
     "cost_member": {
       "normal": 55
     },
-    "classes": []
+    "classes": [],
+    "places": 100
   },
   {
     "id": "0Ght7pj4fa",
@@ -6457,7 +6579,8 @@
     "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "cK3GBpruwX",
@@ -6466,7 +6589,7 @@
     "date": "01.08.2026",
     "date_sort": "2026-08-01T00:00:00+03:00",
     "end_date_sort": "2026-08-01T00:00:00+03:00",
-    "entry_date": "20.06.-11.07.",
+    "entry_date": "20.06.-19.07.",
     "location": "Kouvola",
     "coordinates": [
       60.8679237,
@@ -6497,7 +6620,8 @@
     "cost_member": {
       "normal": 65
     },
-    "classes": []
+    "classes": [],
+    "places": 100
   },
   {
     "id": "_t1MXHUzne",
@@ -6549,7 +6673,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "o48FcYsAdq",
@@ -6582,7 +6707,8 @@
     "description": "Arkikoe, alkaa iltapäivällä. Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 8
   },
   {
     "id": "1oJd5d8pD1",
@@ -6615,7 +6741,8 @@
     "description": "Iltakoe, joka alkaa iltapäivällä.\n\nMaksunpalautuksista pidätetään 5 € käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Mikäli yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
     "cost": 47,
     "cost_member": 42,
-    "classes": []
+    "classes": [],
+    "places": 12
   },
   {
     "id": "IZIi3JY0rF",
@@ -6648,7 +6775,8 @@
     "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
     "cost": 48,
     "cost_member": 42,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "h-cY_US-jO",
@@ -6747,7 +6875,8 @@
         "members": 0,
         "entries": 0
       }
-    ]
+    ],
+    "places": 56
   },
   {
     "id": "_bakND2s8Q",
@@ -6813,7 +6942,8 @@
         "date": "2026-08-07T21:00:00.000Z",
         "places": 15
       }
-    ]
+    ],
+    "places": 30
   },
   {
     "id": "lxLz9LeWi_",
@@ -6861,7 +6991,8 @@
         ],
         "entries": 1
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "rNjxHmwzjT",
@@ -6913,7 +7044,8 @@
         ],
         "date": "2026-08-07T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "lyfQxX4S4G",
@@ -6959,7 +7091,8 @@
         "places": 12,
         "date": "2026-08-07T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "BIVSB_I4Vj",
@@ -7015,7 +7148,8 @@
         ],
         "date": "2026-08-07T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 24
   },
   {
     "id": "TAst7Qrymb",
@@ -7061,7 +7195,8 @@
         "class": "VOI",
         "places": 14
       }
-    ]
+    ],
+    "places": 14
   },
   {
     "id": "IpUw_k3241",
@@ -7127,7 +7262,8 @@
         "entries": 1,
         "members": 0
       }
-    ]
+    ],
+    "places": 16
   },
   {
     "id": "7lkf4Zi7tJ",
@@ -7175,7 +7311,8 @@
         ],
         "date": "2026-08-08T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "ZqWv6O62Pu",
@@ -7238,7 +7375,8 @@
         ],
         "places": 16
       }
-    ]
+    ],
+    "places": 31
   },
   {
     "id": "kGBXKrKrE8",
@@ -7284,7 +7422,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "n5pRme6nRj",
@@ -7330,7 +7469,8 @@
         ],
         "class": "AVO"
       }
-    ]
+    ],
+    "places": 16
   },
   {
     "id": "rfQoKtA7Y2",
@@ -7368,7 +7508,8 @@
     "cost_member": {
       "normal": 95
     },
-    "classes": []
+    "classes": [],
+    "places": 10
   },
   {
     "id": "gUtNIHnvjt",
@@ -7405,7 +7546,8 @@
     "cost_member": {
       "normal": 45
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "dk158RLxJU",
@@ -7451,7 +7593,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "rfjwYfMugE",
@@ -7496,7 +7639,8 @@
         "judge": [],
         "class": "AVO"
       }
-    ]
+    ],
+    "places": 40
   },
   {
     "id": "Yvi-med09k",
@@ -7542,7 +7686,8 @@
         ],
         "places": 15
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "lY2N3TS1rn",
@@ -7598,7 +7743,8 @@
         "date": "2026-08-15T00:00:00.000+03:00",
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 24
   },
   {
     "id": "kE-jd4AB9y",
@@ -7631,7 +7777,8 @@
     "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. \nNarttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "bA4Q4ti6b1",
@@ -7674,7 +7821,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "5SWy9ZSXe7",
@@ -7732,7 +7880,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 24
   },
   {
     "id": "PxJgE1weqZ",
@@ -7781,7 +7930,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 16
   },
   {
     "id": "8YV5JwN5_-",
@@ -7814,7 +7964,8 @@
     "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "5kWqqC1o2N",
@@ -7849,7 +8000,8 @@
       "normal": 45
     },
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "e-1PcwEiqv",
@@ -7895,7 +8047,8 @@
         ],
         "places": 12
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "4Rs17_Q95P",
@@ -7940,7 +8093,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "SZKtBO5RU2",
@@ -7986,7 +8140,8 @@
         ],
         "places": 15
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "omsNS0gK2y",
@@ -8032,7 +8187,8 @@
         "places": 15,
         "date": "2026-08-15T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "wkCuCx6BtX",
@@ -8077,7 +8233,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "pwcvKWfwR2",
@@ -8110,7 +8267,8 @@
     "description": "Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
     "cost": 50,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "97wxdX0TA8",
@@ -8172,7 +8330,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "7UmM8hKYof",
@@ -8230,7 +8389,8 @@
         "date": "2026-08-29T21:00:00.000Z",
         "places": 40
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "yKQhTNAQn6",
@@ -8269,7 +8429,8 @@
       "breed": {},
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "7F4FOTz0XI",
@@ -8314,7 +8475,8 @@
         ],
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 14
   },
   {
     "id": "_yM9-IwU7B",
@@ -8370,7 +8532,8 @@
         "class": "VOI",
         "judge": []
       }
-    ]
+    ],
+    "places": 48
   },
   {
     "id": "v9BG8fXoRF",
@@ -8403,7 +8566,8 @@
     "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\nHuom: kokeessa hakuruudussa riistana on varis, vesityössä sorsa.",
     "cost": 55,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "Jcmg4QClcN",
@@ -8436,7 +8600,8 @@
     "description": "Huom! Kiharakerho järjestää samassa paikassa myös toisen taipumuskokeen sunnuntaina 6.9.2025.",
     "cost": 50,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "V5Pq8nhEa-",
@@ -8469,7 +8634,8 @@
     "description": "Huom! Kiharakerho järjestää samassa paikassa myös toisen taipumuskokeen lauantaina 5.9.2025.",
     "cost": 50,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "aUBoQnJYUs",
@@ -8517,7 +8683,8 @@
         "members": 0,
         "places": 15
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "9LuxiWMOY0",
@@ -8570,7 +8737,8 @@
         "class": "AVO",
         "date": "2026-09-11T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 28
   },
   {
     "id": "pSGSr3ChkO",
@@ -8607,7 +8775,8 @@
     "cost_member": {
       "normal": 45
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "d4lO-oRp8e",
@@ -8640,7 +8809,8 @@
     "description": "",
     "cost": 50,
     "cost_member": 40,
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "j6JbaXnyx3",
@@ -8690,7 +8860,8 @@
         "places": 12,
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "l7II9ZIowI",
@@ -8737,7 +8908,8 @@
         "places": 14,
         "judge": []
       }
-    ]
+    ],
+    "places": 28
   },
   {
     "id": "X-V45rJLU2",
@@ -8805,7 +8977,8 @@
         "members": 0,
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "U07WYqaCki",
@@ -8842,7 +9015,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "NSkd6Qvhcb",
@@ -8879,7 +9053,8 @@
     "cost_member": {
       "normal": 35
     },
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "sgEgvCN7nZ",
@@ -8913,7 +9088,8 @@
     "description": "",
     "cost": "",
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": null
   },
   {
     "id": "bikzngY96n",
@@ -8959,7 +9135,8 @@
         "places": 15,
         "date": "2026-09-18T21:00:00.000Z"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "WUIDiiwETw",
@@ -9006,7 +9183,8 @@
         "places": 0,
         "date": "2026-09-19T00:00:00.000+03:00"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "Ts80lu7S31",
@@ -9051,7 +9229,8 @@
         ],
         "date": "2026-09-20T00:00:00.000+03:00"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "ayp8ZrnlMU",
@@ -9085,7 +9264,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "I-1VjpAPtN",
@@ -9134,7 +9314,8 @@
         "date": "2026-09-26T00:00:00.000+03:00",
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 12
   },
   {
     "id": "LrTMU442O1",
@@ -9167,7 +9348,8 @@
     "description": "",
     "cost": "",
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "SxFikIUEfq",
@@ -9212,7 +9394,8 @@
         "date": "2026-09-26T00:00:00.000+03:00",
         "class": "ALO"
       }
-    ]
+    ],
+    "places": 15
   },
   {
     "id": "GVzUre9exB",
@@ -9268,7 +9451,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 24
   },
   {
     "id": "FJpsJK89sU",
@@ -9301,7 +9485,8 @@
     "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "wni2Z9SrG8",
@@ -9360,7 +9545,8 @@
         "class": "AVO",
         "date": "2026-09-26T00:00:00.000+03:00"
       }
-    ]
+    ],
+    "places": null
   },
   {
     "id": "AQem2RQsgG",
@@ -9405,7 +9591,8 @@
         "class": "VOI",
         "date": "2026-09-26T00:00:00.000+03:00"
       }
-    ]
+    ],
+    "places": null
   },
   {
     "id": "_b6yzTvk3L",
@@ -9439,7 +9626,8 @@
     "cost_member": {
       "normal": 40
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "bn7tXxN3KD",
@@ -9472,7 +9660,8 @@
     "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilevilla.",
     "cost": 50,
     "cost_member": 45,
-    "classes": []
+    "classes": [],
+    "places": 32
   },
   {
     "id": "Hm1id2h1F7",
@@ -9535,7 +9724,8 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 31
   },
   {
     "id": "0OrMAOqaqA",
@@ -9580,7 +9770,8 @@
         "date": "2026-09-27T00:00:00.000+03:00",
         "class": "AVO"
       }
-    ]
+    ],
+    "places": null
   },
   {
     "id": "rfo1LoSGX6",
@@ -9616,7 +9807,8 @@
       "normal": 0
     },
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": 0
   },
   {
     "id": "Sc6lW4685x",
@@ -9666,7 +9858,8 @@
         "judge": [],
         "date": "2026-10-03T00:00:00.000+03:00"
       }
-    ]
+    ],
+    "places": 40
   },
   {
     "id": "a43BCKKMoH",
@@ -9700,7 +9893,8 @@
     "description": "Noviisikoe alkaa virallisen kokeen päätyttyä.",
     "cost": "",
     "cost_member": "",
-    "classes": []
+    "classes": [],
+    "places": null
   },
   {
     "id": "Mq_SHxLuIR",
@@ -9737,7 +9931,8 @@
     "cost_member": {
       "normal": 35
     },
-    "classes": []
+    "classes": [],
+    "places": 16
   },
   {
     "id": "iN8UZX6Um_",
@@ -9789,7 +9984,8 @@
         "judge": [],
         "class": "VOI"
       }
-    ]
+    ],
+    "places": 80
   },
   {
     "id": "6p2tAdYq9O",
@@ -9856,7 +10052,8 @@
         "class": "VOI",
         "places": 10
       }
-    ]
+    ],
+    "places": 20
   },
   {
     "id": "4FYeaiEMRz",
@@ -9914,7 +10111,8 @@
         "judge": [],
         "class": "ALO"
       }
-    ]
+    ],
+    "places": 0
   },
   {
     "id": "BkA7mzBtzM",
@@ -9959,7 +10157,8 @@
         "class": "VOI",
         "judge": []
       }
-    ]
+    ],
+    "places": 0
   },
   {
     "id": "F5iXiF5Oto",
@@ -9993,7 +10192,8 @@
     "description": "Päijät-Hämeen Noutajakoirayhdistyksen jäsentenvälinen NOVIISI & MESTARUUS kisataan 14.11.2026 Lammilla. \nKisan yhteydessä pidetään yhdistyksen syyskokous. \n\n\nLeikkimieliseen kisaan voi osallistua koiralla, joka on vähintään 9kk vanha ja jonka rokotukset ovat Kennelliiton ohjeiden mukaisesti kunnossa. Koe toteutetaan dameilla.\n\nNoviisiluokkaan saa osallistua koiralla, jolla on korkeintaan ALO2-tulos nomeB/WT-kokeesta. Taipumuskoetulosta ei vaadita.\n\nMestaruus-luokkaan osallistuvalla koiralla tulee olla vähintään ALO1-tulos NomeB/WT-kokeesta.\n\nIlmoittautumiset kisaan 1.11.2026 mennessä SNJ:n koekalenterin kautta. Ilmoita lisätietoja-kohdassa kumpaan luokkaan haluat osallistua.\nOsallistumismaksu 25€/koira (sisältää pientä purtavaa ja kahvin/teen)",
     "cost": 25,
     "cost_member": 25,
-    "classes": []
+    "classes": [],
+    "places": 60
   },
   {
     "id": "X8vGHq_sSF",
@@ -10084,6 +10284,7 @@
           }
         ]
       }
-    ]
+    ],
+    "places": 80
   }
 ]

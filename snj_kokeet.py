@@ -262,7 +262,12 @@ def process_events(events, target_year):
             'description': event.get('description', ''),
             'cost': event.get('cost', ''),
             'cost_member': event.get('costMember', ''),
-            'classes': classes
+            'classes': classes,
+            # Kokeen kokonaispaikkamäärä. Osalla kokeista (esim. alustavat ja
+            # WT-kokeet) ei ole per-luokka-paikkoja classes-listassa, vaan vain
+            # tämä kokonaisluku. UI näyttää sen "Yhteensä"-rivinä kun luokkakohtaista
+            # erittelyä ei ole.
+            'places': event.get('places')
         })
 
     # Tallenna cache
