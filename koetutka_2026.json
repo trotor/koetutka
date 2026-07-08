@@ -5342,19 +5342,19 @@
     "cost_member": 45,
     "classes": [
       {
+        "date": "2026-07-10T21:00:00.000Z",
+        "members": 15,
         "places": 15,
-        "state": "invited",
         "class": "ALO",
-        "members": 16,
-        "entries": 21,
+        "entries": 20,
         "judge": [
           {
-            "name": "Majuri Pasi",
             "id": 850900,
-            "official": true
+            "official": true,
+            "name": "Majuri Pasi"
           }
         ],
-        "date": "2026-07-10T21:00:00.000Z"
+        "state": "invited"
       }
     ],
     "places": 15
@@ -6402,80 +6402,34 @@
     },
     "classes": [
       {
-        "judge": [
-          {
-            "name": "Hietikko Vesa",
-            "id": 584168,
-            "official": true
-          }
-        ],
-        "entries": 18,
-        "places": 15,
         "date": "2026-07-30T21:00:00.000Z",
-        "class": "ALO",
-        "members": 12
-      },
-      {
-        "members": 3,
-        "class": "AVO",
-        "entries": 8,
-        "places": 15,
-        "date": "2026-07-30T21:00:00.000Z",
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "id": 4053791,
-            "official": true
-          }
-        ]
-      },
-      {
-        "members": 3,
-        "date": "2026-07-30T21:00:00.000Z",
-        "places": 12,
-        "class": "VOI",
-        "judge": [
-          {
-            "name": "Oikarinen Jyrki",
-            "id": 4042184,
-            "official": true
-          }
-        ],
-        "entries": 9
-      },
-      {
         "class": "ALO",
         "members": 12,
-        "date": "2026-07-31T21:00:00.000Z",
-        "entries": 18,
-        "places": 15,
         "judge": [
           {
+            "id": 584168,
             "name": "Hietikko Vesa",
-            "official": true,
-            "id": 584168
-          }
-        ]
-      },
-      {
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "id": 4053791,
             "official": true
           }
         ],
-        "date": "2026-07-31T21:00:00.000Z",
-        "class": "AVO",
-        "entries": 8,
-        "members": 3,
-        "places": 15
+        "places": 15,
+        "entries": 18
       },
       {
-        "entries": 9,
-        "date": "2026-07-31T21:00:00.000Z",
-        "places": 12,
-        "class": "VOI",
+        "members": 4,
+        "entries": 10,
+        "places": 15,
+        "class": "AVO",
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "date": "2026-07-30T21:00:00.000Z"
+      },
+      {
         "judge": [
           {
             "id": 4042184,
@@ -6483,7 +6437,53 @@
             "official": true
           }
         ],
+        "places": 12,
+        "class": "VOI",
+        "entries": 11,
+        "date": "2026-07-30T21:00:00.000Z",
         "members": 3
+      },
+      {
+        "members": 12,
+        "class": "ALO",
+        "entries": 18,
+        "judge": [
+          {
+            "official": true,
+            "id": 584168,
+            "name": "Hietikko Vesa"
+          }
+        ],
+        "places": 15,
+        "date": "2026-07-31T21:00:00.000Z"
+      },
+      {
+        "entries": 10,
+        "places": 15,
+        "class": "AVO",
+        "date": "2026-07-31T21:00:00.000Z",
+        "members": 4,
+        "judge": [
+          {
+            "id": 4053791,
+            "official": true,
+            "name": "Puttonen Pasi-Petteri"
+          }
+        ]
+      },
+      {
+        "members": 3,
+        "places": 12,
+        "date": "2026-07-31T21:00:00.000Z",
+        "class": "VOI",
+        "entries": 11,
+        "judge": [
+          {
+            "name": "Oikarinen Jyrki",
+            "official": true,
+            "id": 4042184
+          }
+        ]
       }
     ],
     "places": 84
@@ -6723,7 +6723,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "Arkikoe, alkaa iltapäivällä. Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
+    "description": "Arkikoe, alkaa iltapäivällä. Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta. Vesiriistana sorsa, haku-alueella fasaani.",
     "cost": 50,
     "cost_member": 40,
     "classes": [],
@@ -6934,32 +6934,32 @@
     },
     "classes": [
       {
+        "date": "2026-08-08T21:00:00.000Z",
+        "class": "AVO",
         "judge": [
           {
-            "name": "Lappalainen Mika",
             "id": 882887,
-            "official": true
+            "official": true,
+            "name": "Lappalainen Mika"
           }
         ],
-        "date": "2026-08-08T21:00:00.000Z",
+        "members": 3,
         "entries": 3,
-        "class": "AVO",
-        "places": 15,
-        "members": 3
+        "places": 15
       },
       {
+        "judge": [
+          {
+            "official": true,
+            "name": "Lappalainen Mika",
+            "id": 882887
+          }
+        ],
         "class": "ALO",
         "members": 9,
         "places": 15,
         "date": "2026-08-07T21:00:00.000Z",
-        "entries": 11,
-        "judge": [
-          {
-            "name": "Lappalainen Mika",
-            "official": true,
-            "id": 882887
-          }
-        ]
+        "entries": 12
       }
     ],
     "places": 30
@@ -7264,24 +7264,24 @@
           }
         ],
         "entries": 0,
-        "members": 0,
-        "places": 8,
         "date": "2026-08-08T21:00:00.000Z",
-        "class": "AVO"
+        "places": 8,
+        "class": "AVO",
+        "members": 0
       },
       {
-        "members": 1,
-        "places": 8,
+        "date": "2026-08-08T21:00:00.000Z",
         "judge": [
           {
+            "name": "Silvennoinen Kari",
             "id": 4100231,
-            "official": true,
-            "name": "Silvennoinen Kari"
+            "official": true
           }
         ],
         "class": "VOI",
-        "entries": 5,
-        "date": "2026-08-08T21:00:00.000Z"
+        "entries": 6,
+        "places": 8,
+        "members": 1
       }
     ],
     "places": 16
@@ -7610,17 +7610,17 @@
     "classes": [
       {
         "class": "ALO",
+        "date": "2026-08-14T21:00:00.000Z",
+        "places": 15,
         "judge": [
           {
             "official": true,
-            "id": 697689,
-            "name": "Toskala Mika"
+            "name": "Toskala Mika",
+            "id": 697689
           }
         ],
-        "date": "2026-08-14T21:00:00.000Z",
-        "members": 5,
-        "entries": 6,
-        "places": 15
+        "entries": 7,
+        "members": 6
       }
     ],
     "places": 15
@@ -8303,7 +8303,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta.",
+    "description": "Mikäli ohjaaja peruu kokeeseen ilmoittautumisen, pidätetään koemaksua palautettaessa 3 euron käsittelykulut. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta kiimasta. Vesiriistana sorsa, haku-alueella varis.",
     "cost": 50,
     "cost_member": 40,
     "classes": [],
