@@ -99,20 +99,11 @@
         let hidePastEvents = true; // Piilota menneet tapahtumat oletuksena
         let onlyRegistrationOpen = false; // Näytä vain ne joiden ilmoittautuminen on auki
 
-        // Palauttaa true, jos kokeen ilmoittautuminen on tänään auki.
-        // entry_date on muotoa "PP.KK.-PP.KK."; vuosi päätellään date_sortista.
-        // Vuodenvaihteen yli menevä väli: alku tulkitaan edellisen vuoden puolelle.
-        function isRegistrationOpen(koe, now = new Date()) {
-            const m = koe.entry_date && koe.entry_date.match(/(\d{1,2})\.(\d{1,2})\.-(\d{1,2})\.(\d{1,2})\./);
-            if (!m) return false;
-            const sd = +m[1], sm = +m[2], ed = +m[3], em = +m[4];
-            const eventYear = new Date(koe.date_sort).getFullYear();
-            const dateOnly = (y, mo, d) => new Date(y, mo - 1, d, 12, 0, 0, 0).getTime();
-            const endT = dateOnly(eventYear, em, ed);
-            const startsBeforeEnd = sm < em || (sm === em && sd <= ed);
-            const startT = dateOnly(startsBeforeEnd ? eventYear : eventYear - 1, sm, sd);
-            const todayT = dateOnly(now.getFullYear(), now.getMonth() + 1, now.getDate());
-            return todayT >= startT && todayT <= endT;
+        // isRegistrationOpen siirretty shared/-moduuliin (filters.ts). Wrapper,
+        // koska window.koetutkaShared asetetaan vasta deferred module-scriptissä
+        // tämän classic-scriptin suorituksen jälkeen.
+        function isRegistrationOpen(koe) {
+            return window.koetutkaShared.isRegistrationOpen(koe);
         }
 
         // getCostValue, getOptionalCosts siirretty shared/-moduuliin.
