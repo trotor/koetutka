@@ -1,11 +1,12 @@
 import { useMemo, useRef, useState } from 'react';
 import { Animated, Text, View, StyleSheet, Pressable } from 'react-native';
-import { addDistances, sortEvents } from '@koetutka/shared';
+import { addDistances, sortEvents, isPast } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { EventCard } from '@/components/EventCard';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
 import { SortSelector } from '@/components/SortSelector';
 import { FavoritesAgenda } from '@/components/FavoritesAgenda';
+import { shareFavoritesList } from '@/lib/share-favorites';
 
 export default function FavoritesScreen() {
   const events = useStore((s) => s.events);
@@ -14,13 +15,15 @@ export default function FavoritesScreen() {
   const sortBy = useStore((s) => s.sortBy);
   const scrollY = useRef(new Animated.Value(0)).current;
   const [view, setView] = useState<'list' | 'calendar'>('list');
+  const [showPast, setShowPast] = useState(false);
 
   const items = useMemo(() => {
-    const list = events.filter((e) => favorites.has(e.id));
+    let list = events.filter((e) => favorites.has(e.id));
+    if (!showPast) list = list.filter((e) => !isPast(e));
     const withDistance = userLocation ? addDistances(list, userLocation) : list;
     const effectiveSort = sortBy === 'distance' && !userLocation ? 'date' : sortBy;
     return sortEvents(withDistance, effectiveSort);
-  }, [events, favorites, userLocation, sortBy]);
+  }, [events, favorites, userLocation, sortBy, showPast]);
 
   if (items.length === 0) {
     return (
@@ -62,7 +65,33 @@ export default function FavoritesScreen() {
             keyExtractor={(item) => item.id}
             contentContainerStyle={styles.list}
             renderItem={({ item }) => <EventCard event={item} />}
-            ListHeaderComponent={<Text style={styles.count}>{items.length} suosikkia</Text>}
+            ListHeaderComponent={
+              <View style={styles.headerRow}>
+                <Text style={styles.count}>{items.length} suosikkia</Text>
+                <View style={styles.headerActions}>
+                  <Pressable
+                    onPress={() => setShowPast((v) => !v)}
+                    accessibilityRole="switch"
+                    accessibilityState={{ checked: showPast }}
+                    style={[styles.headerBtn, showPast && styles.headerBtnActive]}
+                  >
+                    <Text style={[styles.headerBtnText, showPast && styles.headerBtnTextActive]}>
+                      Näytä menneet
+                    </Text>
+                  </Pressable>
+                  {items.length > 0 && (
+                    <Pressable
+                      onPress={() => shareFavoritesList(items)}
+                      accessibilityRole="button"
+                      accessibilityLabel="Jaa suosikkilista"
+                      style={styles.headerBtn}
+                    >
+                      <Text style={styles.headerBtnText}>⤴ Jaa lista</Text>
+                    </Pressable>
+                  )}
+                </View>
+              </View>
+            }
             onScroll={Animated.event(
               [{ nativeEvent: { contentOffset: { y: scrollY } } }],
               { useNativeDriver: false },
@@ -80,7 +109,18 @@ export default function FavoritesScreen() {
 const styles = StyleSheet.create({
   wrap: { flex: 1, backgroundColor: '#f8f9fa' },
   list: { padding: 12, backgroundColor: '#f8f9fa' },
-  count: { fontSize: 12, color: '#888', marginBottom: 8, textAlign: 'center' },
+  count: { fontSize: 12, color: '#888' },
+  headerRow: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    marginBottom: 8, gap: 8, flexWrap: 'wrap',
+  },
+  headerActions: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  headerBtn: {
+    paddingHorizontal: 10, paddingVertical: 5, borderRadius: 999, backgroundColor: '#e8f0e6',
+  },
+  headerBtnActive: { backgroundColor: '#2d5a27' },
+  headerBtnText: { fontSize: 12, color: '#1a472a', fontWeight: '600' },
+  headerBtnTextActive: { color: 'white' },
   toggle: {
     flexDirection: 'row', backgroundColor: '#e8f0e6', borderRadius: 999,
     padding: 3, margin: 12, marginBottom: 0,
