@@ -25,7 +25,12 @@ export default function FavoritesScreen() {
     return sortEvents(withDistance, effectiveSort);
   }, [events, favorites, userLocation, sortBy, showPast]);
 
-  if (items.length === 0) {
+  const hasAnyFavorites = useMemo(
+    () => events.some((e) => favorites.has(e.id)),
+    [events, favorites],
+  );
+
+  if (!hasAnyFavorites) {
     return (
       <View style={styles.wrap}>
         <CollapsibleBanner scrollY={scrollY} />
@@ -92,6 +97,11 @@ export default function FavoritesScreen() {
                 </View>
               </View>
             }
+            ListEmptyComponent={
+              <Text style={styles.emptyHint}>
+                Ei tulevia suosikkeja. Laita "Näytä menneet" päälle nähdäksesi menneet kokeet.
+              </Text>
+            }
             onScroll={Animated.event(
               [{ nativeEvent: { contentOffset: { y: scrollY } } }],
               { useNativeDriver: false },
@@ -110,6 +120,7 @@ const styles = StyleSheet.create({
   wrap: { flex: 1, backgroundColor: '#f8f9fa' },
   list: { padding: 12, backgroundColor: '#f8f9fa' },
   count: { fontSize: 12, color: '#888' },
+  emptyHint: { fontSize: 14, color: '#666', textAlign: 'center', paddingVertical: 24, lineHeight: 20 },
   headerRow: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     marginBottom: 8, gap: 8, flexWrap: 'wrap',
