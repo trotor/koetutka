@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { addDistances, filterEvents, isRegistrationOpen } from '../src/filters.js';
+import { addDistances, filterEvents, isRegistrationOpen, isPast } from '../src/filters.js';
 import type { Event, UserLocation } from '../src/types.js';
 
 function makeEvent(overrides: Partial<Event> = {}): Event {
@@ -152,5 +152,32 @@ describe('isRegistrationOpen', () => {
     expect(isRegistrationOpen(e, new Date('2025-12-20'))).toBe(true);
     expect(isRegistrationOpen(e, new Date('2026-01-10'))).toBe(true);
     expect(isRegistrationOpen(e, new Date('2026-01-16'))).toBe(false);
+  });
+});
+
+describe('isPast', () => {
+  const ev = (date_sort: string, end_date_sort: string | null = null): Event =>
+    ({
+      id: 'x', type: 'NOME-B', levels: 'VOI', date: '01.04.2026',
+      date_sort, end_date_sort, entry_date: '01.03.-20.03.', location: 'Kuopio',
+      coordinates: null, name: '', organizer: '', official: { name: '', phone: '', email: '' },
+      secretary: { name: '', phone: '', email: '' }, judges: [], description: '',
+      cost: 0, cost_member: '', classes: [], places: 0,
+    }) as unknown as Event;
+
+  test('mennyt koe on past', () => {
+    expect(isPast(ev('2026-04-01T00:00:00+03:00'), new Date('2026-04-05'))).toBe(true);
+  });
+  test('tuleva koe ei ole past', () => {
+    expect(isPast(ev('2026-04-10T00:00:00+03:00'), new Date('2026-04-05'))).toBe(false);
+  });
+  test('tämänpäiväinen koe ei ole past', () => {
+    expect(isPast(ev('2026-04-05T00:00:00+03:00'), new Date('2026-04-05'))).toBe(false);
+  });
+  test('monipäiväinen: loppupäivä ratkaisee', () => {
+    // Alkaa eilen, loppuu huomenna → ei past.
+    expect(
+      isPast(ev('2026-04-04T00:00:00+03:00', '2026-04-06T00:00:00+03:00'), new Date('2026-04-05')),
+    ).toBe(false);
   });
 });

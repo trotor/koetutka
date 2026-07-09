@@ -73,6 +73,17 @@ export function isRegistrationOpen(event: Event, today: Date = new Date()): bool
   return todayTime >= startTime && todayTime <= endTime;
 }
 
+/**
+ * Palauttaa true, jos koe on jo mennyt: kokeen loppupäivä
+ * (`end_date_sort` tai sen puuttuessa `date_sort`) on ennen `today`-päivää.
+ * Vertailu tehdään ISO-päiväosalla (YYYY-MM-DD).
+ */
+export function isPast(event: Event, today: Date = new Date()): boolean {
+  const todayISO = today.toISOString().split('T')[0];
+  const end = (event.end_date_sort || event.date_sort).split('T')[0];
+  return end < todayISO;
+}
+
 export function filterEvents(
   events: Event[],
   options: FilterOptions,
