@@ -706,6 +706,7 @@
             // Renderöi taulukko (desktop)
             tbody.innerHTML = filteredKokeet.map((koe, index) => {
                 const typeClass = 'type-' + koe.type.replace(/[^a-zA-Z0-9-]/g, '-');
+                const regOpen = isRegistrationOpen(koe);
                 const distanceStr = koe.distance !== null
                     ? `<span class="distance">${koe.distance} km</span>`
                     : `<span class="distance-unknown">-</span>`;
@@ -722,7 +723,7 @@
                         </td>
                         <td><span class="type-badge ${typeClass}">${koe.type}</span></td>
                         <td>${koe.levels}</td>
-                        <td class="entry-date">${koe.entry_date}</td>
+                        <td class="entry-date${regOpen ? ' registration-open' : ''}">${koe.entry_date}${regOpen ? ' <span class="reg-open-badge">Ilmo auki</span>' : ''}</td>
                         <td style="text-align: center; width: 40px;">
                             <button class="btn btn-calendar" onclick="downloadICS(${index}, 'event')" title="Lisää kalenteriin">
                                 <span class="btn-icon">📅</span><span class="btn-text">Kalenteri</span>
@@ -735,6 +736,7 @@
             // Renderöi kortit (desktop + mobiili, eri layout CSS:llä)
             cardsContainer.innerHTML = filteredKokeet.map((koe, index) => {
                 const typeClass = 'type-' + koe.type.replace(/[^a-zA-Z0-9-]/g, '-');
+                const regOpen = isRegistrationOpen(koe);
                 const distanceStr = koe.distance !== null
                     ? `${koe.distance} km`
                     : '-';
@@ -753,8 +755,8 @@
                                     <span class="card-calendar-link">📅 ${koe.date}</span>
                                 </span>
                                 <span class="card-subtitle-item">📍 ${koe.location}</span>
-                                <span class="card-subtitle-item" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
-                                    <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>
+                                <span class="card-subtitle-item${regOpen ? ' registration-open' : ''}" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
+                                    <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>${regOpen ? '<span class="reg-open-badge">Ilmo auki</span>' : ''}
                                 </span>
                                 ${koe.organizer ? `<span class="card-subtitle-item card-organizer">🏢 ${koe.organizer}</span>` : ''}
                             </div>
@@ -774,8 +776,8 @@
                             <span class="share-tooltip">Kopioitu!</span>
                         </button>
                         <div class="card-meta-mobile">
-                            <div class="card-meta-item" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
-                                <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>
+                            <div class="card-meta-item${regOpen ? ' registration-open' : ''}" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
+                                <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>${regOpen ? '<span class="reg-open-badge">Ilmo auki</span>' : ''}
                             </div>
                             ${koe.organizer ? `<div class="card-meta-item">🏢 ${koe.organizer}</div>` : ''}
                         </div>
