@@ -16,7 +16,7 @@ export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'confli
   const toggleHidden = useStore((s) => s.toggleHidden);
 
   const past = isPast(event);
-  const regOpen = !past && isRegistrationOpen(event);
+  const regOpen = !past && !isHidden && isRegistrationOpen(event);
 
   const promptHide = () => {
     if (isHidden) {
