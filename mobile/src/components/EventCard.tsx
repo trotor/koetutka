@@ -2,16 +2,11 @@ import { Text, View, StyleSheet, Pressable, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { Event } from '@koetutka/shared';
+import { isRegistrationOpen, isPast } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import type { RootStackParamList } from '../navigation';
 
 type Navigation = NativeStackNavigationProp<RootStackParamList>;
-
-function isPast(event: Event): boolean {
-  const todayISO = new Date().toISOString().split('T')[0];
-  const eventEnd = (event.end_date_sort || event.date_sort).split('T')[0];
-  return eventEnd < todayISO;
-}
 
 export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'conflict' }) {
   const navigation = useNavigation<Navigation>();
@@ -21,6 +16,7 @@ export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'confli
   const toggleHidden = useStore((s) => s.toggleHidden);
 
   const past = isPast(event);
+  const regOpen = !past && isRegistrationOpen(event);
 
   const promptHide = () => {
     if (isHidden) {
@@ -61,10 +57,11 @@ export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'confli
         <View style={styles.metaRow}>
           <Text style={styles.dateLine} numberOfLines={1}>
             <Text style={[styles.date, past && styles.datePast]}>{event.date}</Text>
-            <Text style={[styles.entry, past && styles.entryPast]}>  ·  ilm. {event.entry_date}</Text>
+            <Text style={[styles.entry, past && styles.entryPast, regOpen && styles.entryOpen]}>  ·  ilm. {event.entry_date}</Text>
           </Text>
           <View style={styles.badges}>
             {isHidden && <Text style={styles.hiddenBadge}>Piilotettu</Text>}
+            {regOpen && <Text style={styles.regOpenBadge}>Ilmo auki</Text>}
             {!isHidden && fit === 'free' && <Text style={styles.fitFree}>Sopii</Text>}
             {!isHidden && fit === 'conflict' && <Text style={styles.fitConflict}>Päällekkäin</Text>}
             {past && <Text style={styles.pastBadge}>Mennyt</Text>}
@@ -133,7 +130,12 @@ const styles = StyleSheet.create({
   datePast: { color: '#999', fontWeight: '600' },
   entry: { fontSize: 12, color: '#999' },
   entryPast: { color: '#bbb' },
+  entryOpen: { color: '#15803d', fontWeight: '700' },
   badges: { flexDirection: 'row', alignItems: 'center', gap: 6, marginLeft: 8 },
+  regOpenBadge: {
+    fontSize: 11, color: '#15803d', backgroundColor: '#dcf0e2',
+    paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, overflow: 'hidden',
+  },
   fitFree: {
     fontSize: 11, color: '#15803d', backgroundColor: '#dcf0e2',
     paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, overflow: 'hidden',
