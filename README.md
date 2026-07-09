@@ -86,6 +86,11 @@ MIT
 
 ## Versiohistoria
 
+### v1.11.0 (2026-07-09)
+- **Ilmoittautuminen auki -korostus**: kun kokeen ilmoittautuminen on
+  parhaillaan auki, ilmoittautumisaika näkyy korostettuna vihreällä ja
+  perässä "Ilmo auki" -merkki (lista + kortit).
+
 ### v1.10.0 (2026-06-29)
 - **Luokat ja paikat kokeen tiedoissa**: kokeen tietonäkymään uusi kortti, joka
   näyttää paikkamäärän. Kun luokkakohtaiset paikat ovat tiedossa, ne eritellään

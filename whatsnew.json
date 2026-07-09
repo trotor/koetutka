@@ -5,6 +5,16 @@
   },
   "releases": [
     {
+      "version": "1.5.0",
+      "date": "2026-07-09",
+      "title": "Ilmoittautuminen auki ja jakaminen",
+      "items": [
+        "Kun kokeen ilmoittautuminen on juuri nyt auki, ilmoittautumisaika näkyy korostettuna vihreällä ja perässä \"Ilmo auki\" -merkki",
+        "Suosikkilistan voi nyt jakaa tiiviinä tekstinä (päivä, koetyyppi, luokka ja paikkakunta) — kätevä kavereille jaettavaksi",
+        "Suosikeissa uusi \"Näytä menneet\" -kytkin; oletuksena näytetään vain tulevat kokeet"
+      ]
+    },
+    {
       "version": "1.4.0",
       "date": "2026-06-29",
       "title": "Luokat ja paikat",
