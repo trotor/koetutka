@@ -5,6 +5,16 @@
   },
   "releases": [
     {
+      "version": "1.6.0",
+      "date": "2026-07-10",
+      "title": "Pyyhkäisytoiminnot",
+      "items": [
+        "Koekorttia voi nyt pyyhkäistä: Selaa-listalla oikealle = suosikki, vasemmalle = piilota",
+        "Suosikit-listalla pyyhkäisy oikealle avaa kalenteriin lisäyksen (koe tai ilmoittautuminen), vasemmalle poistaa suosikeista",
+        "Kalenteriin jo lisätyt näkyvät ✓-merkillä"
+      ]
+    },
+    {
       "version": "1.5.0",
       "date": "2026-07-09",
       "title": "Ilmoittautuminen auki ja jakaminen",
