@@ -76,13 +76,19 @@ export default function EventDetailScreen() {
       <View style={styles.buttonRow}>
         <Pressable
           style={styles.button}
-          onPress={() => addEventToCalendar(event, 'event', useStore.getState().userLocation?.name)}
+          onPress={async () => {
+            const ok = await addEventToCalendar(event, 'event', useStore.getState().userLocation?.name);
+            if (ok) useStore.getState().markCalendarAdded(event.id, 'event');
+          }}
         >
           <Text style={styles.buttonText}>📅 Lisää kalenteriin</Text>
         </Pressable>
         <Pressable
           style={[styles.button, styles.buttonSecondary]}
-          onPress={() => addEventToCalendar(event, 'registration', useStore.getState().userLocation?.name)}
+          onPress={async () => {
+            const ok = await addEventToCalendar(event, 'registration', useStore.getState().userLocation?.name);
+            if (ok) useStore.getState().markCalendarAdded(event.id, 'registration');
+          }}
         >
           <Text style={[styles.buttonText, styles.buttonTextSecondary]}>🔔 Ilmoittautumismuistutus</Text>
         </Pressable>

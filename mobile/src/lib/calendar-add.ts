@@ -24,10 +24,10 @@ export async function addEventToCalendar(
   event: Event,
   type: Type,
   userLocationName?: string,
-): Promise<void> {
+): Promise<boolean> {
   const input = buildCalendarEventInput(event, { type, userLocationName });
   try {
-    await AddCalendarEvent.presentEventCreatingDialog({
+    const result = await AddCalendarEvent.presentEventCreatingDialog({
       title: input.title,
       startDate: input.allDay
         ? toISO(input.startDate, 9)
@@ -39,9 +39,11 @@ export async function addEventToCalendar(
       notes: input.description,
       allDay: input.allDay,
     });
+    // iOS: { action: 'SAVED' | 'CANCELED' }; Android: yleensä { action: 'DONE' }.
+    return (result as { action?: string })?.action !== 'CANCELED';
   } catch (e) {
     const message = e instanceof Error ? e.message : '';
-    if (message.toLowerCase().includes('cancel')) return;
+    if (message.toLowerCase().includes('cancel')) return false;
     if (Platform.OS === 'android') {
       Alert.alert(
         'Kalenterin avaaminen epäonnistui',
@@ -50,5 +52,6 @@ export async function addEventToCalendar(
     } else {
       Alert.alert('Virhe', 'Tapahtuman lisäys epäonnistui.');
     }
+    return false;
   }
 }
