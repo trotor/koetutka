@@ -26,21 +26,20 @@ export function EventCard({
   const toggleFavorite = useStore((s) => s.toggleFavorite);
   const isHidden = useStore((s) => s.hidden.has(event.id));
   const toggleHidden = useStore((s) => s.toggleHidden);
-  const calendarAdded = useStore((s) => s.calendarAdded);
-  const markCalendarAdded = useStore((s) => s.markCalendarAdded);
-  const userLocationName = useStore((s) => s.userLocation?.name);
   const swipeRef = useRef<Swipeable>(null);
 
   const past = isPast(event);
   const regOpen = !past && !isHidden && isRegistrationOpen(event);
 
-  const openCalendarMenu = () =>
+  const openCalendarMenu = () => {
+    const { calendarAdded, markCalendarAdded, userLocation } = useStore.getState();
     presentCalendarMenu(
       event,
       (type: CalendarType) => calendarAdded.has(calendarAddedKey(event.id, type)),
       (type: CalendarType) => markCalendarAdded(event.id, type),
-      userLocationName,
+      userLocation?.name,
     );
+  };
 
   // Vasen reuna = positiivinen; oikea reuna = poistava. Ruutukohtainen.
   const onLeft = () => {
