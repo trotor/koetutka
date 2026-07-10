@@ -1,22 +1,56 @@
+import { useRef } from 'react';
 import { Text, View, StyleSheet, Pressable, Alert } from 'react-native';
+import { Swipeable } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { Event } from '@koetutka/shared';
 import { isRegistrationOpen, isPast } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
+import { presentCalendarMenu } from '@/lib/calendar-menu';
+import { calendarAddedKey, type CalendarType } from '@/lib/calendar-added';
 import type { RootStackParamList } from '../navigation';
 
 type Navigation = NativeStackNavigationProp<RootStackParamList>;
 
-export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'conflict' }) {
+export function EventCard({
+  event,
+  fit,
+  swipeVariant = 'browse',
+}: {
+  event: Event;
+  fit?: 'free' | 'conflict';
+  swipeVariant?: 'browse' | 'favorites';
+}) {
   const navigation = useNavigation<Navigation>();
   const isFavorite = useStore((s) => s.favorites.has(event.id));
   const toggleFavorite = useStore((s) => s.toggleFavorite);
   const isHidden = useStore((s) => s.hidden.has(event.id));
   const toggleHidden = useStore((s) => s.toggleHidden);
+  const calendarAdded = useStore((s) => s.calendarAdded);
+  const markCalendarAdded = useStore((s) => s.markCalendarAdded);
+  const userLocationName = useStore((s) => s.userLocation?.name);
+  const swipeRef = useRef<Swipeable>(null);
 
   const past = isPast(event);
   const regOpen = !past && !isHidden && isRegistrationOpen(event);
+
+  const openCalendarMenu = () =>
+    presentCalendarMenu(
+      event,
+      (type: CalendarType) => calendarAdded.has(calendarAddedKey(event.id, type)),
+      (type: CalendarType) => markCalendarAdded(event.id, type),
+      userLocationName,
+    );
+
+  // Vasen reuna = positiivinen; oikea reuna = poistava. Ruutukohtainen.
+  const onLeft = () => {
+    if (swipeVariant === 'favorites') openCalendarMenu();
+    else toggleFavorite(event.id);
+  };
+  const onRight = () => {
+    if (swipeVariant === 'favorites') toggleFavorite(event.id); // poista suosikeista
+    else toggleHidden(event.id);
+  };
 
   const promptHide = () => {
     if (isHidden) {
@@ -36,49 +70,74 @@ export function EventCard({ event, fit }: { event: Event; fit?: 'free' | 'confli
     }
   };
 
-  return (
-    <View style={[styles.card, past && styles.cardPast, isHidden && styles.cardHidden]}>
-      <Pressable
-        style={styles.body}
-        onPress={() => navigation.navigate('EventDetail', { id: event.id })}
-        onLongPress={promptHide}
-      >
-        <View style={styles.titleRow}>
-          <Text style={[styles.title, past && styles.titlePast]} numberOfLines={1}>
-            {event.type} · {event.levels}
-          </Text>
-          {typeof event.distance === 'number' && (
-            <Text style={[styles.distance, past && styles.distancePast]}>
-              {event.distance} km
-            </Text>
-          )}
-        </View>
-        <Text style={[styles.location, past && styles.locationPast]}>{event.location}</Text>
-        <View style={styles.metaRow}>
-          <Text style={styles.dateLine} numberOfLines={1}>
-            <Text style={[styles.date, past && styles.datePast]}>{event.date}</Text>
-            <Text style={[styles.entry, past && styles.entryPast, regOpen && styles.entryOpen]}>  ·  ilm. {event.entry_date}</Text>
-          </Text>
-          <View style={styles.badges}>
-            {isHidden && <Text style={styles.hiddenBadge}>Piilotettu</Text>}
-            {regOpen && <Text style={styles.regOpenBadge}>Ilmo auki</Text>}
-            {!isHidden && fit === 'free' && <Text style={styles.fitFree}>Sopii</Text>}
-            {!isHidden && fit === 'conflict' && <Text style={styles.fitConflict}>Päällekkäin</Text>}
-            {past && <Text style={styles.pastBadge}>Mennyt</Text>}
-          </View>
-        </View>
-      </Pressable>
-
-      <Pressable
-        style={styles.starOverlay}
-        hitSlop={12}
-        onPress={() => toggleFavorite(event.id)}
-      >
-        <Text style={[styles.star, isFavorite && styles.starActive]}>
-          {isFavorite ? '★' : '☆'}
-        </Text>
-      </Pressable>
+  const leftPanel = () => (
+    <View style={[styles.action, swipeVariant === 'favorites' ? styles.actionCalendar : styles.actionFav]}>
+      <Text style={styles.actionText}>{swipeVariant === 'favorites' ? '📅 Kalenteri' : '★ Suosikki'}</Text>
     </View>
+  );
+  const rightPanel = () => (
+    <View style={[styles.action, styles.actionRight, swipeVariant === 'favorites' ? styles.actionRemove : styles.actionHide]}>
+      <Text style={styles.actionText}>{swipeVariant === 'favorites' ? 'Poista suosikeista' : 'Piilota'}</Text>
+    </View>
+  );
+
+  return (
+    <Swipeable
+      ref={swipeRef}
+      friction={2}
+      leftThreshold={64}
+      rightThreshold={64}
+      renderLeftActions={leftPanel}
+      renderRightActions={rightPanel}
+      onSwipeableOpen={(direction) => {
+        if (direction === 'left') onLeft();
+        else onRight();
+        swipeRef.current?.close();
+      }}
+    >
+      <View style={[styles.card, past && styles.cardPast, isHidden && styles.cardHidden]}>
+        <Pressable
+          style={styles.body}
+          onPress={() => navigation.navigate('EventDetail', { id: event.id })}
+          onLongPress={promptHide}
+        >
+          <View style={styles.titleRow}>
+            <Text style={[styles.title, past && styles.titlePast]} numberOfLines={1}>
+              {event.type} · {event.levels}
+            </Text>
+            {typeof event.distance === 'number' && (
+              <Text style={[styles.distance, past && styles.distancePast]}>
+                {event.distance} km
+              </Text>
+            )}
+          </View>
+          <Text style={[styles.location, past && styles.locationPast]}>{event.location}</Text>
+          <View style={styles.metaRow}>
+            <Text style={styles.dateLine} numberOfLines={1}>
+              <Text style={[styles.date, past && styles.datePast]}>{event.date}</Text>
+              <Text style={[styles.entry, past && styles.entryPast, regOpen && styles.entryOpen]}>  ·  ilm. {event.entry_date}</Text>
+            </Text>
+            <View style={styles.badges}>
+              {isHidden && <Text style={styles.hiddenBadge}>Piilotettu</Text>}
+              {regOpen && <Text style={styles.regOpenBadge}>Ilmo auki</Text>}
+              {!isHidden && fit === 'free' && <Text style={styles.fitFree}>Sopii</Text>}
+              {!isHidden && fit === 'conflict' && <Text style={styles.fitConflict}>Päällekkäin</Text>}
+              {past && <Text style={styles.pastBadge}>Mennyt</Text>}
+            </View>
+          </View>
+        </Pressable>
+
+        <Pressable
+          style={styles.starOverlay}
+          hitSlop={12}
+          onPress={() => toggleFavorite(event.id)}
+        >
+          <Text style={[styles.star, isFavorite && styles.starActive]}>
+            {isFavorite ? '★' : '☆'}
+          </Text>
+        </Pressable>
+      </View>
+    </Swipeable>
   );
 }
 
@@ -162,4 +221,11 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     overflow: 'hidden',
   },
+  action: { justifyContent: 'center', paddingHorizontal: 16, marginBottom: 8, borderRadius: 8 },
+  actionRight: { alignItems: 'flex-end' },
+  actionText: { color: 'white', fontWeight: '700', fontSize: 13 },
+  actionFav: { backgroundColor: '#2d5a27' },
+  actionHide: { backgroundColor: '#9ca3af' },
+  actionCalendar: { backgroundColor: '#1565c0' },
+  actionRemove: { backgroundColor: '#b91c1c' },
 });

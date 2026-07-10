@@ -69,7 +69,7 @@ export default function FavoritesScreen() {
             data={items}
             keyExtractor={(item) => item.id}
             contentContainerStyle={styles.list}
-            renderItem={({ item }) => <EventCard event={item} />}
+            renderItem={({ item }) => <EventCard event={item} swipeVariant="favorites" />}
             ListHeaderComponent={
               <View style={styles.headerRow}>
                 <Text style={styles.count}>{items.length} suosikkia</Text>
