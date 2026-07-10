@@ -2,6 +2,7 @@ import { create } from 'zustand';
 import type { Event, UserLocation, FilterOptions, SortBy } from '@koetutka/shared';
 import { fetchEventsWithFallback } from './data';
 import { loadPrefs, savePrefs } from './preferences';
+import { calendarAddedKey, type CalendarType } from './calendar-added';
 import pkg from '../../package.json';
 import {
   fetchWhatsNew,
@@ -28,6 +29,7 @@ interface State {
   filters: FilterOptions;
   favorites: Set<string>;
   hidden: Set<string>;
+  calendarAdded: Set<string>;
   showHidden: boolean;
   notifications: NotificationSettings;
   sortBy: SortBy;
@@ -45,6 +47,7 @@ interface Actions {
   setSortBy: (next: SortBy) => void;
   toggleFavorite: (id: string) => void;
   toggleHidden: (id: string) => void;
+  markCalendarAdded: (eventId: string, type: CalendarType) => void;
   setShowHidden: (show: boolean) => void;
   setNotifications: (next: Partial<NotificationSettings>) => Promise<void>;
   syncNotifications: () => Promise<void>;
@@ -68,6 +71,7 @@ function persist(state: State) {
     filters: state.filters,
     favorites: state.favorites,
     hidden: state.hidden,
+    calendarAdded: state.calendarAdded,
     showHidden: state.showHidden,
     notifications: state.notifications,
     sortBy: state.sortBy,
@@ -83,6 +87,7 @@ export const useStore = create<State & Actions>((set, get) => ({
   filters: defaultFilters,
   favorites: new Set(),
   hidden: new Set(),
+  calendarAdded: new Set(),
   showHidden: false,
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
   sortBy: 'distance',
@@ -97,6 +102,7 @@ export const useStore = create<State & Actions>((set, get) => ({
       filters: prefs.filters,
       favorites: prefs.favorites,
       hidden: prefs.hidden,
+      calendarAdded: prefs.calendarAdded,
       showHidden: prefs.showHidden,
       notifications: prefs.notifications,
       sortBy: prefs.sortBy,
@@ -151,6 +157,15 @@ export const useStore = create<State & Actions>((set, get) => ({
     if (hidden.has(id)) hidden.delete(id);
     else hidden.add(id);
     set({ hidden });
+    persist(get());
+  },
+
+  markCalendarAdded: (eventId, type) => {
+    const key = calendarAddedKey(eventId, type);
+    if (get().calendarAdded.has(key)) return;
+    const calendarAdded = new Set(get().calendarAdded);
+    calendarAdded.add(key);
+    set({ calendarAdded });
     persist(get());
   },
 

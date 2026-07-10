@@ -16,6 +16,7 @@ describe('serializePrefs / deserializePrefs', () => {
       },
       favorites: new Set(['evt-a', 'evt-b']),
       hidden: new Set(),
+      calendarAdded: new Set(),
       showHidden: false,
       notifications: { enabled: true, daysBefore: 7, hourOfDay: 9 },
       sortBy: 'distance',
@@ -80,6 +81,7 @@ describe('serializePrefs / deserializePrefs', () => {
       },
       favorites: new Set(),
       hidden: new Set(),
+      calendarAdded: new Set(),
       showHidden: false,
       notifications: DEFAULT_NOTIFICATION_SETTINGS,
       sortBy: 'date',
@@ -111,6 +113,7 @@ describe('serializePrefs / deserializePrefs', () => {
       },
       favorites: new Set(),
       hidden: new Set(),
+      calendarAdded: new Set(),
       showHidden: false,
       notifications: DEFAULT_NOTIFICATION_SETTINGS,
       sortBy: 'distance',
@@ -142,6 +145,7 @@ describe('serializePrefs / deserializePrefs', () => {
       },
       favorites: new Set(),
       hidden: new Set(['h1', 'h2']),
+      calendarAdded: new Set(),
       showHidden: true,
       notifications: DEFAULT_NOTIFICATION_SETTINGS,
       sortBy: 'distance',
@@ -161,5 +165,17 @@ describe('serializePrefs / deserializePrefs', () => {
     const back = deserializePrefs(oldJson);
     expect(back.hidden).toEqual(new Set());
     expect(back.showHidden).toBe(false);
+  });
+
+  test('calendarAdded säilyy serialize→deserialize-kierroksessa', () => {
+    const base = deserializePrefs(''); // DEFAULTS
+    const prefs = { ...base, calendarAdded: new Set(['e1:event', 'e2:registration']) };
+    const round = deserializePrefs(serializePrefs(prefs));
+    expect(Array.from(round.calendarAdded).sort()).toEqual(['e1:event', 'e2:registration']);
+  });
+
+  test('vanha data ilman calendarAdded-kenttää → tyhjä set', () => {
+    const round = deserializePrefs('{"userLocation":null,"filters":{}}');
+    expect(round.calendarAdded).toEqual(new Set());
   });
 });

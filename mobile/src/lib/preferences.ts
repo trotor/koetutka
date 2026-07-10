@@ -12,6 +12,7 @@ export interface StoredPrefs {
   filters: FilterOptions;
   favorites: Set<string>;
   hidden: Set<string>;
+  calendarAdded: Set<string>;
   showHidden: boolean;
   notifications: NotificationSettings;
   sortBy: SortBy;
@@ -30,6 +31,7 @@ const DEFAULTS: StoredPrefs = {
   },
   favorites: new Set(),
   hidden: new Set(),
+  calendarAdded: new Set(),
   showHidden: false,
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
   sortBy: 'distance',
@@ -48,6 +50,7 @@ interface JsonShape {
   };
   favorites?: string[];
   hidden?: string[];
+  calendarAdded?: string[];
   showHidden?: boolean;
   notifications?: NotificationSettings;
   sortBy?: SortBy;
@@ -67,6 +70,7 @@ export function serializePrefs(prefs: StoredPrefs): string {
     },
     favorites: Array.from(prefs.favorites ?? []),
     hidden: Array.from(prefs.hidden ?? []),
+    calendarAdded: Array.from(prefs.calendarAdded ?? []),
     showHidden: prefs.showHidden,
     notifications: prefs.notifications,
     sortBy: prefs.sortBy,
@@ -91,6 +95,7 @@ export function deserializePrefs(text: string): StoredPrefs {
       },
       favorites: new Set(parsed.favorites ?? []),
       hidden: new Set(parsed.hidden ?? []),
+      calendarAdded: new Set(parsed.calendarAdded ?? []),
       showHidden: parsed.showHidden ?? false,
       notifications: {
         ...DEFAULT_NOTIFICATION_SETTINGS,
