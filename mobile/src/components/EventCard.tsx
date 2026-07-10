@@ -41,12 +41,12 @@ export function EventCard({
     );
   };
 
-  // Vasen reuna = positiivinen; oikea reuna = poistava. Ruutukohtainen.
-  const onLeft = () => {
+  // Veto vasemmalle (oikea reuna) = positiivinen; veto oikealle (vasen reuna) = poistava.
+  const positiveAction = () => {
     if (swipeVariant === 'favorites') openCalendarMenu();
     else toggleFavorite(event.id);
   };
-  const onRight = () => {
+  const negativeAction = () => {
     if (swipeVariant === 'favorites') toggleFavorite(event.id); // poista suosikeista
     else toggleHidden(event.id);
   };
@@ -69,14 +69,18 @@ export function EventCard({
     }
   };
 
-  const leftPanel = () => (
-    <View style={[styles.action, swipeVariant === 'favorites' ? styles.actionCalendar : styles.actionFav]}>
-      <Text style={styles.actionText}>{swipeVariant === 'favorites' ? '📅 Kalenteri' : '★ Suosikki'}</Text>
+  // Vasen reuna (näkyy vedettäessä oikealle) = poistava, vasempaan reunaan tasattu.
+  const negativePanel = () => (
+    <View style={[styles.action, swipeVariant === 'favorites' ? styles.actionRemove : styles.actionHide]}>
+      <Text style={styles.actionText}>
+        {swipeVariant === 'favorites' ? 'Poista suosikeista' : isHidden ? 'Palauta' : 'Piilota'}
+      </Text>
     </View>
   );
-  const rightPanel = () => (
-    <View style={[styles.action, styles.actionRight, swipeVariant === 'favorites' ? styles.actionRemove : styles.actionHide]}>
-      <Text style={styles.actionText}>{swipeVariant === 'favorites' ? 'Poista suosikeista' : 'Piilota'}</Text>
+  // Oikea reuna (näkyy vedettäessä vasemmalle) = positiivinen, oikeaan reunaan tasattu.
+  const positivePanel = () => (
+    <View style={[styles.action, styles.actionRight, swipeVariant === 'favorites' ? styles.actionCalendar : styles.actionFav]}>
+      <Text style={styles.actionText}>{swipeVariant === 'favorites' ? '📅 Kalenteri' : '★ Suosikki'}</Text>
     </View>
   );
 
@@ -84,13 +88,13 @@ export function EventCard({
     <Swipeable
       ref={swipeRef}
       friction={2}
-      leftThreshold={64}
-      rightThreshold={64}
-      renderLeftActions={leftPanel}
-      renderRightActions={rightPanel}
+      leftThreshold={120}
+      rightThreshold={120}
+      renderLeftActions={negativePanel}
+      renderRightActions={positivePanel}
       onSwipeableOpen={(direction) => {
-        if (direction === 'left') onLeft();
-        else onRight();
+        if (direction === 'left') negativeAction();
+        else positiveAction();
         swipeRef.current?.close();
       }}
     >

@@ -9,8 +9,8 @@
       "date": "2026-07-10",
       "title": "Pyyhkäisytoiminnot",
       "items": [
-        "Koekorttia voi nyt pyyhkäistä: Selaa-listalla oikealle = suosikki, vasemmalle = piilota",
-        "Suosikit-listalla pyyhkäisy oikealle avaa kalenteriin lisäyksen (koe tai ilmoittautuminen), vasemmalle poistaa suosikeista",
+        "Koekorttia voi nyt pyyhkäistä: Selaa-listalla vasemmalle = suosikki, oikealle = piilota",
+        "Suosikit-listalla pyyhkäisy vasemmalle avaa kalenteriin lisäyksen (koe tai ilmoittautuminen), oikealle poistaa suosikeista",
         "Kalenteriin jo lisätyt näkyvät ✓-merkillä"
       ]
     },
