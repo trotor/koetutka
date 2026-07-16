@@ -3,7 +3,12 @@ import type { Event, UserLocation, FilterOptions, SortBy } from '@koetutka/share
 import { fetchEventsWithFallback } from './data';
 import { loadPrefs, savePrefs } from './preferences';
 import { calendarAddedKey, type CalendarType } from './calendar-added';
-import type { ColorKey } from './favorite-colors';
+import {
+  setColorFor,
+  removeColorFor,
+  setLabelFor,
+  type ColorKey,
+} from './favorite-colors';
 import pkg from '../../package.json';
 import {
   fetchWhatsNew,
@@ -49,6 +54,8 @@ interface Actions {
   resetFilters: () => void;
   setSortBy: (next: SortBy) => void;
   toggleFavorite: (id: string) => void;
+  setFavoriteColor: (id: string, key: ColorKey) => void;
+  setColorLabel: (key: ColorKey, label: string) => void;
   toggleHidden: (id: string) => void;
   markCalendarAdded: (eventId: string, type: CalendarType) => void;
   setShowHidden: (show: boolean) => void;
@@ -154,11 +161,30 @@ export const useStore = create<State & Actions>((set, get) => ({
 
   toggleFavorite: (id: string) => {
     const favorites = new Set(get().favorites);
-    if (favorites.has(id)) favorites.delete(id);
-    else favorites.add(id);
-    set({ favorites });
+    let favoriteColors = get().favoriteColors;
+    if (favorites.has(id)) {
+      favorites.delete(id);
+      favoriteColors = removeColorFor(favoriteColors, id); // ei orpoja värejä
+    } else {
+      favorites.add(id);
+    }
+    set({ favorites, favoriteColors });
     persist(get());
     void get().syncNotifications();
+  },
+
+  setFavoriteColor: (id: string, key: ColorKey) => {
+    const favorites = new Set(get().favorites);
+    const wasFavorite = favorites.has(id);
+    if (!wasFavorite) favorites.add(id); // värin valinta implikoi suosikoinnin
+    set({ favorites, favoriteColors: setColorFor(get().favoriteColors, id, key) });
+    persist(get());
+    if (!wasFavorite) void get().syncNotifications();
+  },
+
+  setColorLabel: (key: ColorKey, label: string) => {
+    set({ colorLabels: setLabelFor(get().colorLabels, key, label) });
+    persist(get());
   },
 
   toggleHidden: (id: string) => {
