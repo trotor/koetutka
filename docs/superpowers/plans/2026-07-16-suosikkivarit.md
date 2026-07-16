@@ -601,9 +601,23 @@ describe('setColorLabel', () => {
 Run: `cd mobile && npx vitest run src/lib/tests/store.test.ts`
 Expected: FAIL — `useStore.getState().setFavoriteColor is not a function` (actionia ei ole vielä).
 
-- [ ] **Step 3: Lisää import**
+> **HUOM — osa tästä taskista on jo tehty.** Task 2:n toteutus lisäsi `store.ts`:ään
+> jo **tila-osuuden** typecheckin vuoksi (pakolliset `StoredPrefs`-kentät): State-kentät
+> `favoriteColors`/`colorLabels`, alkutila, `persist()`-johdotus, `initFromStorage`-johdotus,
+> sekä type-only importin `import type { ColorKey } from './favorite-colors';`.
+> **Älä lisää näitä uudelleen** — Steps 3–5 ovat siksi enimmäkseen varmistuksia. Jäljellä
+> oleva varsinainen työ on: laajenna importti (Step 3), lisää **Actions**-tyypit (Step 4),
+> `toggleFavorite`-siivous (Step 6) ja uudet actionit (Step 7) + testi (Step 1).
 
-`mobile/src/lib/store.ts` — lisää `import { calendarAddedKey, type CalendarType } from './calendar-added';` -rivin jälkeen:
+- [ ] **Step 3: Laajenna olemassa oleva import**
+
+`mobile/src/lib/store.ts`:ssä on jo Task 2:n lisäämä type-only importti:
+
+```ts
+import type { ColorKey } from './favorite-colors';
+```
+
+**Korvaa se** value+type-importilla (lisää kolme helperiä, jotka actionit tarvitsevat):
 
 ```ts
 import {
@@ -614,44 +628,23 @@ import {
 } from './favorite-colors';
 ```
 
-- [ ] **Step 4: Lisää tila ja action-tyypit**
+- [ ] **Step 4: Lisää Actions-tyypit (State-kentät ovat jo olemassa)**
 
-`interface State` — lisää `favorites: Set<string>;` -rivin jälkeen:
-
-```ts
-  favoriteColors: Map<string, ColorKey>;
-  colorLabels: Record<string, string>;
-```
-
-`interface Actions` — lisää `toggleFavorite: (id: string) => void;` -rivin jälkeen:
+State-kentät `favoriteColors`/`colorLabels` ovat **jo `interface State`ssa** (Task 2) — älä
+lisää niitä uudelleen. Lisää vain `interface Actions`iin, `toggleFavorite: (id: string) => void;`
+-rivin jälkeen:
 
 ```ts
   setFavoriteColor: (id: string, key: ColorKey) => void;
   setColorLabel: (key: ColorKey, label: string) => void;
 ```
 
-- [ ] **Step 5: Lisää alkutila ja persistointi**
+- [ ] **Step 5: Varmista tilajohdotus (jo tehty Task 2:ssa)**
 
-Store-objektin alkutilaan — lisää `favorites: new Set(),` -rivin jälkeen:
-
-```ts
-  favoriteColors: new Map(),
-  colorLabels: {},
-```
-
-`persist`-funktioon — lisää `favorites: state.favorites,` -rivin jälkeen:
-
-```ts
-    favoriteColors: state.favoriteColors,
-    colorLabels: state.colorLabels,
-```
-
-`initFromStorage`in `set({...})`-kutsuun — lisää `favorites: prefs.favorites,` -rivin jälkeen:
-
-```ts
-      favoriteColors: prefs.favoriteColors,
-      colorLabels: prefs.colorLabels,
-```
+Tarkista silmämääräisesti — **älä lisää uudelleen** — että nämä ovat jo `store.ts`:ssä:
+alkutila `favoriteColors: new Map(), colorLabels: {}`; `persist()` välittää `state.favoriteColors`
+ja `state.colorLabels`; `initFromStorage` asettaa `prefs.favoriteColors` ja `prefs.colorLabels`.
+Jos jokin puuttuu, lisää se — muuten siirry Step 6:een.
 
 - [ ] **Step 6: Siivoa väri kun suosikki poistetaan**
 
