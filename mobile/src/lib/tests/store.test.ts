@@ -14,6 +14,7 @@ vi.mock('../preferences', () => ({
 }));
 
 import { useStore } from '../store';
+import { rescheduleAll } from '../notifications';
 
 beforeEach(() => {
   useStore.setState({ favorites: new Set(), favoriteColors: new Map(), colorLabels: {} });
@@ -38,6 +39,40 @@ describe('setFavoriteColor', () => {
     useStore.getState().setFavoriteColor('e1', 'default');
     expect(useStore.getState().favorites.has('e1')).toBe(true);
     expect(useStore.getState().favoriteColors.has('e1')).toBe(false);
+  });
+});
+
+describe('syncNotifications vain jäsenyyden muuttuessa', () => {
+  beforeEach(() => {
+    useStore.setState({
+      favorites: new Set(),
+      favoriteColors: new Map(),
+      colorLabels: {},
+      events: [],
+      notifications: { enabled: true, daysBefore: 7, hourOfDay: 9 },
+    });
+    vi.mocked(rescheduleAll).mockClear();
+  });
+
+  test('värin asetus ei-suosikille synkkaa ilmoitukset (jäsenyys muuttuu)', () => {
+    useStore.getState().setFavoriteColor('e1', 'red');
+    expect(vi.mocked(rescheduleAll)).toHaveBeenCalledTimes(1);
+  });
+
+  test('värin vaihto olemassa olevalle suosikille ei synkkaa uudelleen', () => {
+    useStore.getState().setFavoriteColor('e1', 'red');
+    expect(vi.mocked(rescheduleAll)).toHaveBeenCalledTimes(1);
+
+    useStore.getState().setFavoriteColor('e1', 'blue');
+    expect(vi.mocked(rescheduleAll)).toHaveBeenCalledTimes(1);
+  });
+
+  test('suosikin poisto synkkaa ilmoitukset uudelleen (jäsenyys muuttuu)', () => {
+    useStore.getState().setFavoriteColor('e1', 'red');
+    expect(vi.mocked(rescheduleAll)).toHaveBeenCalledTimes(1);
+
+    useStore.getState().toggleFavorite('e1');
+    expect(vi.mocked(rescheduleAll)).toHaveBeenCalledTimes(2);
   });
 });
 
