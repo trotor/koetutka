@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Text, View, StyleSheet, Pressable, Alert } from 'react-native';
 import { Swipeable } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
@@ -9,6 +9,9 @@ import { useStore } from '@/lib/store';
 import { presentCalendarMenu } from '@/lib/calendar-menu';
 import { calendarAddedKey, type CalendarType } from '@/lib/calendar-added';
 import type { RootStackParamList } from '../navigation';
+import { FavoriteColorPicker } from '@/components/FavoriteColorPicker';
+import { FavoriteColorLabelsModal } from '@/components/FavoriteColorLabelsModal';
+import { resolveColor, colorKeyFor } from '@/lib/favorite-colors';
 
 type Navigation = NativeStackNavigationProp<RootStackParamList>;
 
@@ -27,6 +30,9 @@ export function EventCard({
   const isHidden = useStore((s) => s.hidden.has(event.id));
   const toggleHidden = useStore((s) => s.toggleHidden);
   const swipeRef = useRef<Swipeable>(null);
+  const colorKey = useStore((s) => colorKeyFor(s.favoriteColors, event.id));
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const [labelsOpen, setLabelsOpen] = useState(false);
 
   const past = isPast(event);
   const regOpen = !past && !isHidden && isRegistrationOpen(event);
@@ -134,11 +140,27 @@ export function EventCard({
           style={styles.starOverlay}
           hitSlop={12}
           onPress={() => toggleFavorite(event.id)}
+          onLongPress={() => setPickerOpen(true)}
+          accessibilityRole="button"
+          accessibilityLabel={isFavorite ? 'Poista suosikeista' : 'Lisää suosikkeihin'}
+          accessibilityHint="Pitkä painallus valitsee suosikin värin"
         >
-          <Text style={[styles.star, isFavorite && styles.starActive]}>
+          <Text style={[styles.star, isFavorite && { color: resolveColor(colorKey) }]}>
             {isFavorite ? '★' : '☆'}
           </Text>
         </Pressable>
+
+        <FavoriteColorPicker
+          eventId={event.id}
+          visible={pickerOpen}
+          onClose={() => setPickerOpen(false)}
+          onRequestLabels={() => {
+            // Suljetaan ensin — sisäkkäiset modaalit ovat iOS:llä epäluotettavia.
+            setPickerOpen(false);
+            setLabelsOpen(true);
+          }}
+        />
+        <FavoriteColorLabelsModal visible={labelsOpen} onClose={() => setLabelsOpen(false)} />
       </View>
     </Swipeable>
   );
@@ -178,7 +200,6 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   star: { fontSize: 24, color: '#bbb' },
-  starActive: { color: '#d97706' },
   titleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   title: { fontSize: 15, fontWeight: '600', color: '#1a472a', flex: 1, marginRight: 8 },
   titlePast: { color: '#777' },
