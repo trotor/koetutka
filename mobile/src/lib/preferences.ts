@@ -4,6 +4,7 @@ import {
   DEFAULT_NOTIFICATION_SETTINGS,
   type NotificationSettings,
 } from './notifications.types';
+import { isColorKey, type ColorKey } from './favorite-colors';
 
 const KEY = 'koetutka:prefs:v1';
 
@@ -17,6 +18,8 @@ export interface StoredPrefs {
   notifications: NotificationSettings;
   sortBy: SortBy;
   whatsNewLastSeenVersion: string | null;
+  favoriteColors: Map<string, ColorKey>;
+  colorLabels: Record<string, string>;
 }
 
 const DEFAULTS: StoredPrefs = {
@@ -36,6 +39,8 @@ const DEFAULTS: StoredPrefs = {
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
   sortBy: 'distance',
   whatsNewLastSeenVersion: null,
+  favoriteColors: new Map(),
+  colorLabels: {},
 };
 
 interface JsonShape {
@@ -55,6 +60,8 @@ interface JsonShape {
   notifications?: NotificationSettings;
   sortBy?: SortBy;
   whatsNewLastSeenVersion?: string | null;
+  favoriteColors?: Record<string, string>;
+  colorLabels?: Record<string, string>;
 }
 
 export function serializePrefs(prefs: StoredPrefs): string {
@@ -75,6 +82,8 @@ export function serializePrefs(prefs: StoredPrefs): string {
     notifications: prefs.notifications,
     sortBy: prefs.sortBy,
     whatsNewLastSeenVersion: prefs.whatsNewLastSeenVersion,
+    favoriteColors: Object.fromEntries(prefs.favoriteColors ?? new Map()),
+    colorLabels: prefs.colorLabels ?? {},
   };
   return JSON.stringify(json);
 }
@@ -103,6 +112,8 @@ export function deserializePrefs(text: string): StoredPrefs {
       },
       sortBy: parsed.sortBy ?? 'distance',
       whatsNewLastSeenVersion: parsed.whatsNewLastSeenVersion ?? null,
+      favoriteColors: parseFavoriteColors(parsed.favoriteColors),
+      colorLabels: parseColorLabels(parsed.colorLabels),
     };
   } catch {
     return DEFAULTS;
@@ -116,4 +127,22 @@ export async function loadPrefs(): Promise<StoredPrefs> {
 
 export async function savePrefs(prefs: StoredPrefs): Promise<void> {
   await AsyncStorage.setItem(KEY, serializePrefs(prefs));
+}
+
+/** Pudottaa merkinnät joiden väriavain ei ole paletissa. */
+function parseFavoriteColors(raw: Record<string, string> | undefined): Map<string, ColorKey> {
+  const map = new Map<string, ColorKey>();
+  for (const [id, key] of Object.entries(raw ?? {})) {
+    if (isColorKey(key)) map.set(id, key);
+  }
+  return map;
+}
+
+/** Pudottaa tuntemattomat avaimet ja tyhjät nimet. */
+function parseColorLabels(raw: Record<string, string> | undefined): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [key, label] of Object.entries(raw ?? {})) {
+    if (isColorKey(key) && typeof label === 'string' && label.trim()) out[key] = label.trim();
+  }
+  return out;
 }

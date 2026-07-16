@@ -3,6 +3,7 @@ import type { Event, UserLocation, FilterOptions, SortBy } from '@koetutka/share
 import { fetchEventsWithFallback } from './data';
 import { loadPrefs, savePrefs } from './preferences';
 import { calendarAddedKey, type CalendarType } from './calendar-added';
+import type { ColorKey } from './favorite-colors';
 import pkg from '../../package.json';
 import {
   fetchWhatsNew,
@@ -34,6 +35,8 @@ interface State {
   notifications: NotificationSettings;
   sortBy: SortBy;
   whatsNewLastSeenVersion: string | null;
+  favoriteColors: Map<string, ColorKey>;
+  colorLabels: Record<string, string>;
   whatsNew: { visible: boolean; content: WhatsNewContent | null; manual: boolean };
   prefsLoaded: boolean;
 }
@@ -76,6 +79,8 @@ function persist(state: State) {
     notifications: state.notifications,
     sortBy: state.sortBy,
     whatsNewLastSeenVersion: state.whatsNewLastSeenVersion,
+    favoriteColors: state.favoriteColors,
+    colorLabels: state.colorLabels,
   });
 }
 
@@ -92,6 +97,8 @@ export const useStore = create<State & Actions>((set, get) => ({
   notifications: DEFAULT_NOTIFICATION_SETTINGS,
   sortBy: 'distance',
   whatsNewLastSeenVersion: null,
+  favoriteColors: new Map(),
+  colorLabels: {},
   whatsNew: { visible: false, content: null, manual: false },
   prefsLoaded: false,
 
@@ -107,6 +114,8 @@ export const useStore = create<State & Actions>((set, get) => ({
       notifications: prefs.notifications,
       sortBy: prefs.sortBy,
       whatsNewLastSeenVersion: prefs.whatsNewLastSeenVersion,
+      favoriteColors: prefs.favoriteColors,
+      colorLabels: prefs.colorLabels,
       prefsLoaded: true,
     });
   },
