@@ -54,7 +54,12 @@ export default function FavoritesScreen() {
   );
 
   const sections = useMemo<{ key: ColorKey | 'all'; data: Event[] }[]>(
-    () => (grouped ? groupByColor(items, favoriteColors) : [{ key: 'all', data: items }]),
+    () =>
+      grouped
+        ? groupByColor(items, favoriteColors)
+        : items.length
+          ? [{ key: 'all', data: items }]
+          : [],
     [grouped, items, favoriteColors],
   );
 
