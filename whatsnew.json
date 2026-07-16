@@ -5,6 +5,16 @@
   },
   "releases": [
     {
+      "version": "1.7.0",
+      "date": "2026-07-16",
+      "title": "Suosikkivärit",
+      "items": [
+        "Suosikille voi antaa värin: paina koekortin tähteä pitkään ja valitse väri",
+        "Värille voi antaa oman merkityksen, esim. \"Ilmoittauduttu\" — nimi näkyy suosikkien selitteessä",
+        "Suosikit-listan voi suodattaa ja ryhmitellä värin mukaan"
+      ]
+    },
+    {
       "version": "1.6.0",
       "date": "2026-07-10",
       "title": "Pyyhkäisytoiminnot",
