@@ -86,6 +86,11 @@ MIT
 
 ## Versiohistoria
 
+### Mobiili v1.7.1 (2026-07-25)
+- **Android 16 (API-taso 36)**: Android-sovellus kohdistetaan nyt API-tasoon 36
+  Google Playn 31.8.2026 voimaan tulevan vaatimuksen mukaisesti. Ei
+  toiminnallisia muutoksia.
+
 ### v1.11.0 (2026-07-09)
 - **Ilmoittautuminen auki -korostus**: kun kokeen ilmoittautuminen on
   parhaillaan auki, ilmoittautumisaika näkyy korostettuna vihreällä ja

@@ -5,6 +5,15 @@
   },
   "releases": [
     {
+      "version": "1.7.1",
+      "date": "2026-07-25",
+      "title": "Android 16 -yhteensopivuus",
+      "items": [
+        "Android-sovellus on nyt käännetty Android 16:lle (API-taso 36) Google Playn vaatimusten mukaisesti",
+        "Ei toiminnallisia muutoksia"
+      ]
+    },
+    {
       "version": "1.7.0",
       "date": "2026-07-16",
       "title": "Suosikkivärit",
