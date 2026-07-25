@@ -6213,9 +6213,7 @@
     },
     "classes": [
       {
-        "state": "invited",
-        "entries": 24,
-        "places": 12,
+        "date": "2026-07-24T21:00:00.000Z",
         "judge": [
           {
             "id": 999999,
@@ -6223,24 +6221,26 @@
             "name": "Tenhunen Juha"
           }
         ],
-        "class": "VOI",
-        "date": "2026-07-24T21:00:00.000Z",
-        "members": 14
+        "members": 14,
+        "places": 12,
+        "entries": 23,
+        "state": "invited",
+        "class": "VOI"
       },
       {
-        "places": 12,
-        "members": 14,
+        "state": "invited",
         "class": "VOI",
-        "entries": 24,
         "judge": [
           {
+            "id": 999999,
             "official": true,
-            "name": "Tenhunen Juha",
-            "id": 999999
+            "name": "Tenhunen Juha"
           }
         ],
+        "places": 12,
+        "members": 14,
         "date": "2026-07-25T21:00:00.000Z",
-        "state": "invited"
+        "entries": 23
       }
     ],
     "places": 24
@@ -6282,8 +6282,8 @@
     },
     "classes": [
       {
-        "date": "2026-07-24T21:00:00.000Z",
         "places": 14,
+        "date": "2026-07-24T21:00:00.000Z",
         "state": "invited",
         "judge": [
           {
@@ -6294,7 +6294,7 @@
         ],
         "class": "VOI",
         "members": 6,
-        "entries": 20
+        "entries": 19
       }
     ],
     "places": 14
@@ -6692,17 +6692,17 @@
       {
         "entries": 20,
         "class": "ALO",
-        "state": "picked",
-        "members": 15,
         "date": "2026-07-31T21:00:00.000Z",
         "places": 15,
         "judge": [
           {
+            "official": true,
             "id": 450758,
-            "name": "Nyman Tobina",
-            "official": true
+            "name": "Nyman Tobina"
           }
-        ]
+        ],
+        "members": 15,
+        "state": "invited"
       }
     ],
     "places": 15
@@ -6947,34 +6947,34 @@
     },
     "classes": [
       {
+        "entries": 15,
         "judge": [
           {
-            "name": "Lappalainen Mika",
             "id": 882887,
+            "name": "Lappalainen Mika",
             "official": true
           }
         ],
-        "places": 15,
-        "class": "AVO",
-        "date": "2026-08-08T21:00:00.000Z",
         "state": "picked",
         "members": 7,
-        "entries": 14
+        "places": 15,
+        "class": "AVO",
+        "date": "2026-08-08T21:00:00.000Z"
       },
       {
-        "class": "ALO",
-        "state": "picked",
         "places": 15,
         "entries": 22,
         "judge": [
           {
-            "official": true,
             "id": 882887,
-            "name": "Lappalainen Mika"
+            "name": "Lappalainen Mika",
+            "official": true
           }
         ],
-        "date": "2026-08-07T21:00:00.000Z",
-        "members": 12
+        "class": "ALO",
+        "members": 12,
+        "state": "picked",
+        "date": "2026-08-07T21:00:00.000Z"
       }
     ],
     "places": 30
@@ -7116,18 +7116,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 6,
+        "date": "2026-08-07T21:00:00.000Z",
         "class": "VOI",
+        "places": 14,
+        "entries": 16,
+        "members": 7,
         "judge": [
           {
             "name": "Hukkanen Tuija",
             "official": true,
             "id": 554006
           }
-        ],
-        "date": "2026-08-07T21:00:00.000Z",
-        "entries": 14,
-        "places": 14
+        ]
       }
     ],
     "places": 14
@@ -7398,21 +7398,23 @@
     },
     "classes": [
       {
-        "members": 19,
-        "entries": 25,
         "class": "ALO",
-        "places": 15,
         "judge": [
           {
-            "name": "Villikka Katja",
             "id": 743744,
-            "official": true
+            "official": true,
+            "name": "Villikka Katja"
           }
         ],
+        "places": 15,
+        "members": 18,
+        "entries": 24,
         "date": "2026-08-08T21:00:00.000Z"
       },
       {
+        "class": "AVO",
         "places": 16,
+        "entries": 13,
         "judge": [
           {
             "name": "Uusimäki Pekka",
@@ -7420,9 +7422,7 @@
             "official": true
           }
         ],
-        "entries": 13,
         "date": "2026-08-08T21:00:00.000Z",
-        "class": "AVO",
         "members": 10
       }
     ],
@@ -7638,9 +7638,9 @@
     "classes": [
       {
         "places": 15,
-        "entries": 21,
-        "members": 16,
+        "entries": 24,
         "date": "2026-08-14T21:00:00.000Z",
+        "class": "ALO",
         "judge": [
           {
             "name": "Toskala Mika",
@@ -7648,7 +7648,7 @@
             "id": 697689
           }
         ],
-        "class": "ALO"
+        "members": 18
       }
     ],
     "places": 15
@@ -7782,23 +7782,23 @@
     "cost_member": 50,
     "classes": [
       {
-        "date": "2026-08-14T21:00:00.000Z",
+        "places": 24,
         "members": 0,
-        "entries": 18,
+        "class": "VOI",
+        "date": "2026-08-14T21:00:00.000Z",
+        "entries": 21,
         "judge": [
           {
             "official": true,
-            "name": "Hiltunen Taru",
-            "id": 736508
+            "id": 736508,
+            "name": "Hiltunen Taru"
           },
           {
+            "name": "Hiltunen Niko",
             "id": 644029,
-            "official": true,
-            "name": "Hiltunen Niko"
+            "official": true
           }
-        ],
-        "class": "VOI",
-        "places": 24
+        ]
       }
     ],
     "places": 24
@@ -7867,18 +7867,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-08-14T21:00:00.000Z",
-        "entries": 24,
-        "members": 16,
-        "class": "ALO",
+        "entries": 26,
         "places": 15,
+        "date": "2026-08-14T21:00:00.000Z",
         "judge": [
           {
             "name": "Tenhunen Juha",
             "id": 999999,
             "official": true
           }
-        ]
+        ],
+        "class": "ALO",
+        "members": 16
       }
     ],
     "places": 15
@@ -7916,32 +7916,32 @@
     "cost_member": 50,
     "classes": [
       {
+        "members": 0,
+        "date": "2026-08-14T21:00:00.000Z",
+        "entries": 16,
         "places": 12,
-        "entries": 15,
-        "class": "VOI",
         "judge": [
           {
-            "name": "Silvennoinen Kari",
-            "official": true,
-            "id": 4100231
-          }
-        ],
-        "members": 0,
-        "date": "2026-08-14T21:00:00.000Z"
-      },
-      {
-        "members": 0,
-        "class": "VOI",
-        "date": "2026-08-15T21:00:00.000Z",
-        "places": 12,
-        "entries": 15,
-        "judge": [
-          {
-            "name": "Silvennoinen Kari",
             "id": 4100231,
+            "name": "Silvennoinen Kari",
             "official": true
           }
-        ]
+        ],
+        "class": "VOI"
+      },
+      {
+        "judge": [
+          {
+            "official": true,
+            "id": 4100231,
+            "name": "Silvennoinen Kari"
+          }
+        ],
+        "date": "2026-08-15T21:00:00.000Z",
+        "entries": 16,
+        "members": 0,
+        "class": "VOI",
+        "places": 12
       }
     ],
     "places": 24
@@ -8102,18 +8102,18 @@
     "cost_member": 45,
     "classes": [
       {
-        "places": 12,
         "date": "2026-08-15T21:00:00.000Z",
-        "entries": 17,
-        "class": "VOI",
-        "members": 12,
+        "entries": 18,
+        "places": 12,
         "judge": [
           {
-            "name": "Toskala Mika",
             "id": 697689,
+            "name": "Toskala Mika",
             "official": true
           }
-        ]
+        ],
+        "class": "VOI",
+        "members": 13
       }
     ],
     "places": 12
@@ -8151,18 +8151,18 @@
     "cost_member": 45,
     "classes": [
       {
+        "class": "ALO",
+        "members": 8,
+        "entries": 18,
         "date": "2026-08-15T21:00:00.000Z",
+        "places": 15,
         "judge": [
           {
-            "id": 644029,
             "official": true,
-            "name": "Hiltunen Niko"
+            "name": "Hiltunen Niko",
+            "id": 644029
           }
-        ],
-        "places": 15,
-        "class": "ALO",
-        "entries": 16,
-        "members": 8
+        ]
       }
     ],
     "places": 15
@@ -8249,7 +8249,10 @@
     "cost_member": 45,
     "classes": [
       {
+        "entries": 11,
+        "class": "AVO",
         "places": 15,
+        "date": "2026-08-15T21:00:00.000Z",
         "judge": [
           {
             "official": true,
@@ -8257,10 +8260,7 @@
             "id": 850900
           }
         ],
-        "entries": 9,
-        "class": "AVO",
-        "date": "2026-08-15T21:00:00.000Z",
-        "members": 6
+        "members": 8
       }
     ],
     "places": 15
@@ -8695,14 +8695,14 @@
       "email": ""
     },
     "secretary": {
-      "name": "Satu Kärki",
+      "name": "Carolina Miettinen",
       "phone": "",
-      "email": "satukarjen@gmail.com"
+      "email": "carolina.miettinen@hotmail.com"
     },
     "judges": [
       "Fontell Kari-Matti"
     ],
-    "description": "Kaakon Kruununperilliset möllinome-b koe. Järjestäjänä Pohjois-Kymenlaakson aluetoimikunta. \nOsallistua saavat 8 kk täyttäneet noutajat, joilla ei ole ALO1 tulosta WT-/B-kokeesta. Taipumuskoetta ei tarvitse olla suoritettuna. Koe arvostellaan virallisilla NOME-B säännöillä. Koe toteutetaan dameilla. Etusijalla ovat Kaakon Noutajakoirayhdistyksen toiminta-alueella asuvat Kaakon jäsenet.\nMikäli ilmoittautujia on paljon, toisena tuomarina toimii Pasi Tikka.",
+    "description": "Osallistua saavat 8 kk täyttäneet noutajat, joilla ei ole ALO1 tulosta WT-/B-kokeesta. Taipumuskoetta ei tarvitse olla suoritettuna. Koe arvostellaan virallisilla NOME-B säännöillä. Koe toteutetaan dameilla. Etusijalla ovat Kaakon Noutajakoirayhdistyksen toiminta-alueella asuvat Kaakon jäsenet.\nMikäli ilmoittautujia on paljon, toisena tuomarina toimii Pasi Tikka. Koemaksu palautetaan koepaikan saaneille vain, mikäli syynä on ilmoittautumisajan päättymisen jälkeen todettu koiran sairaus/loukkaantuminen, ohjaajan äkillinen sairastuminen tai narttukoiralla alkanut kiima.",
     "cost": {
       "normal": 15
     },
