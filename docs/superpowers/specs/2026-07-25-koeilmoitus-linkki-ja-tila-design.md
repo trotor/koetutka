@@ -213,7 +213,9 @@ muut merkit.
 - lähtölistalinkki samalla ehdolla (`hasStartList`)
 - tilamerkki listaan ja modaaliin samalla sanastolla kuin mobiilissa
 - ilmoittautuneiden määrä paikkatietojen yhteyteen
-- yhteystiedot `tel:`/`mailto:`-linkeiksi
+
+Webin yhteystiedot **ovat jo `tel:`/`mailto:`-linkkejä** (`app.js:1027` ja
+`:1034`), eli painettavat yhteystiedot on puhtaasti mobiilin puute.
 - versio `index.html`-footeriin ja `README.md`:n versiohistoriaan
 
 ## Testaus
