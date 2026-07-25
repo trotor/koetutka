@@ -12,7 +12,7 @@
 
 - **Kaikki uudet `Event`-kentät ovat optionaalisia:** `state?`, `entry_start?`, `entry_end?`, `entries?`. Uusi sovellusversio saa vanhaa JSONia ja vanha versio uutta — kumpikaan ei saa rikkoutua.
 - **Sanaa "täynnä" ei käytetä missään.** Ilmoittautuneita on usein moninkertaisesti paikkoihin nähden (64 ilmoittautunutta 12 paikalle) ja osallistujat arvotaan. Muoto on neutraali: `"8 paikkaa · 17 ilmoittautunutta"`.
-- **Tilamerkkiä ei näytetä menneillä kokeilla.** Poikkeus: `cancelled` näytetään aina.
+- **Tilamerkkiä ei näytetä menneillä kokeilla listanäkymissä** (koekortti, webin taulukko ja kortit). Poikkeus: `cancelled` näytetään aina. Kokeen **tietonäkymä** näyttää "Tila"-rivin aina kun tila on tiedossa — siellä ei ole kohinaongelmaa, koska käyttäjä on avannut juuri sen kokeen.
 - **Lähtölistan rajapintaan ei tehdä yhtään verkkokutsua** — ei mobiilista eikä `snj_kokeet.py`:stä. Vain linkki SNJ:n omalle sivulle. Perustelut speksin "Rajattu ulos" -osiossa.
 - **Testien sijainti:** `shared/`-logiikka → `shared/tests/<moduuli>.test.ts`, importit muodossa `../src/<moduuli>.js`. Mobiilin omat libit → `mobile/src/lib/tests/`.
 - **Versio kaikkialla:** `1.12.0`. Android `versionCode 12`, iOS `CURRENT_PROJECT_VERSION 10`.
@@ -916,19 +916,33 @@ Lisää rivin 30 (`const classPlaces = ...`) jälkeen:
 
 ```tsx
   const badge = stateBadge(event);
-  const STATE_HINTS: Record<string, string> = {
-    Alustava: 'Koe ei ole vielä varmistunut.',
-    Peruttu: 'Koe on peruttu.',
-    'Osallistujat valittu': 'Ilmoittautuminen on päättynyt.',
-    'Kutsut lähetetty': 'Ilmoittautuminen on päättynyt.',
-  };
+  const hint = event.state ? STATE_HINTS[event.state] : undefined;
+```
+
+Lisää tiedoston moduulitasolle (komponentin ulkopuolelle, heti `type Route`
+-rivin jälkeen). Selitteet avaimitetaan **tilalla, ei näyttötekstillä** — muuten
+merkin tekstin muuttaminen rikkoisi selitteen hiljaisesti:
+
+```tsx
+const STATE_HINTS: Partial<Record<EventState, string>> = {
+  tentative: 'Koe ei ole vielä varmistunut.',
+  cancelled: 'Koe on peruttu.',
+  picked: 'Ilmoittautuminen on päättynyt.',
+  invited: 'Ilmoittautuminen on päättynyt.',
+};
+```
+
+Lisää `EventState` tyyppi-importtina:
+
+```tsx
+import type { EventState } from '@koetutka/shared';
 ```
 
 Lisää `<InfoRow label="Ilmoittautuminen" ... />` -rivin **eteen** (rivi 41):
 
 ```tsx
       {badge && (
-        <InfoRow label="Tila" value={`${badge.label}\n${STATE_HINTS[badge.label] ?? ''}`.trim()} />
+        <InfoRow label="Tila" value={hint ? `${badge.label}\n${hint}` : badge.label} />
       )}
 ```
 
