@@ -99,8 +99,11 @@ Kolme uutta kenttää output-dictiin (nykyinen dict päättyy `'places'`-riviin,
 `entry_start` / `entry_end` jätetään pois kun parsinta epäonnistuu (sama
 `try/except`-rakenne kuin nykyisillä `entry_*_str`-kentillä).
 
-Sen jälkeen `koetutka_2025.json` ja `koetutka_2026.json` generoidaan uudelleen
-ja deployataan.
+JSONeja **ei tarvitse generoida käsin**: kun `snj_kokeet.py`-muutos on
+masterissa, seuraava vuorokausiajo (08:00 Suomen aikaa) tuottaa uudet kentät
+itsestään. Toteutuksen aikana testaamiseen riittää `workflow_dispatch` tai
+skriptin ajo paikallisesti — mutta uusi sovellusversio ei saa olettaa kenttien
+olevan siellä, ks. yhteensopivuus alla.
 
 **Yhteensopivuus molempiin suuntiin.** Mobiili hakee JSONit ajonaikaisesti
 GitHub Pagesista, joten versiot elävät ristiin:
