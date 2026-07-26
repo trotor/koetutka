@@ -707,6 +707,10 @@
             tbody.innerHTML = filteredKokeet.map((koe, index) => {
                 const typeClass = 'type-' + koe.type.replace(/[^a-zA-Z0-9-]/g, '-');
                 const regOpen = isRegistrationOpen(koe);
+                const badge = window.koetutkaShared.stateBadge(koe);
+                const badgeHtml = badge
+                    ? ` <span class="state-badge state-${badge.tone}">${badge.label}</span>`
+                    : '';
                 const distanceStr = koe.distance !== null
                     ? `<span class="distance">${koe.distance} km</span>`
                     : `<span class="distance-unknown">-</span>`;
@@ -723,7 +727,7 @@
                         </td>
                         <td><span class="type-badge ${typeClass}">${koe.type}</span></td>
                         <td>${koe.levels}</td>
-                        <td class="entry-date${regOpen ? ' registration-open' : ''}">${koe.entry_date}${regOpen ? ' <span class="reg-open-badge">Ilmo auki</span>' : ''}</td>
+                        <td class="entry-date${regOpen ? ' registration-open' : ''}">${koe.entry_date}${regOpen ? ' <span class="reg-open-badge">Ilmo auki</span>' : ''}${badgeHtml}</td>
                         <td style="text-align: center; width: 40px;">
                             <button class="btn btn-calendar" onclick="downloadICS(${index}, 'event')" title="Lisää kalenteriin">
                                 <span class="btn-icon">📅</span><span class="btn-text">Kalenteri</span>
@@ -737,6 +741,10 @@
             cardsContainer.innerHTML = filteredKokeet.map((koe, index) => {
                 const typeClass = 'type-' + koe.type.replace(/[^a-zA-Z0-9-]/g, '-');
                 const regOpen = isRegistrationOpen(koe);
+                const badge = window.koetutkaShared.stateBadge(koe);
+                const badgeHtml = badge
+                    ? ` <span class="state-badge state-${badge.tone}">${badge.label}</span>`
+                    : '';
                 const distanceStr = koe.distance !== null
                     ? `${koe.distance} km`
                     : '-';
@@ -756,7 +764,7 @@
                                 </span>
                                 <span class="card-subtitle-item">📍 ${koe.location}</span>
                                 <span class="card-subtitle-item${regOpen ? ' registration-open' : ''}" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
-                                    <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>${regOpen ? '<span class="reg-open-badge">Ilmo auki</span>' : ''}
+                                    <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>${regOpen ? '<span class="reg-open-badge">Ilmo auki</span>' : ''}${badgeHtml}
                                 </span>
                                 ${koe.organizer ? `<span class="card-subtitle-item card-organizer">🏢 ${koe.organizer}</span>` : ''}
                             </div>
@@ -777,7 +785,7 @@
                         </button>
                         <div class="card-meta-mobile">
                             <div class="card-meta-item${regOpen ? ' registration-open' : ''}" onclick="event.stopPropagation(); downloadICS(${index}, 'registration')" title="Lisää ilmoittautumismuistutus kalenteriin">
-                                <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>${regOpen ? '<span class="reg-open-badge">Ilmo auki</span>' : ''}
+                                <span class="card-calendar-link">✏️ Ilmo: ${koe.entry_date}</span>${regOpen ? '<span class="reg-open-badge">Ilmo auki</span>' : ''}${badgeHtml}
                             </div>
                             ${koe.organizer ? `<div class="card-meta-item">🏢 ${koe.organizer}</div>` : ''}
                         </div>
@@ -941,13 +949,12 @@
                             </div>
                             <div class="info-card-content">`;
                 classPlaces.forEach(cp => {
-                    const unit = cp.places === 1 ? 'paikka' : 'paikkaa';
                     const name = cp.class || 'Yhteensä';
                     const label = cp.day ? `${name} · ${cp.day}` : name;
                     html += `
                                 <div class="info-row">
                                     <span class="info-row-label">${label}</span>
-                                    <span class="info-row-value">${cp.places} ${unit}</span>
+                                    <span class="info-row-value">${window.koetutkaShared.formatClassPlacesRow(cp)}</span>
                                 </div>`;
                 });
                 html += `
@@ -1098,9 +1105,12 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="https://koekalenteri.snj.fi/" target="_blank" rel="noopener" class="btn btn-snj">
-                        Ilmoittaudu SNJ:n koekalenterissa
-                    </a>
+                    <a href="${window.koetutkaShared.snjEventUrl(koe)}" target="_blank" rel="noopener" class="btn btn-snj">
+                        Avaa SNJ:n koekalenterissa
+                    </a>${window.koetutkaShared.hasStartList(koe) ? `
+                    <a href="${window.koetutkaShared.snjStartListUrl(koe)}" target="_blank" rel="noopener" class="btn btn-snj">
+                        Lue lähtölista
+                    </a>` : ''}
                 </div>`;
 
             modalBody.innerHTML = html;

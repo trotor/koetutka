@@ -1281,3 +1281,12 @@ td.entry-date.registration-open {
     white-space: nowrap;
     vertical-align: middle;
 }
+.state-badge {
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+.state-tentative { color: #92400e; background: #fef3c7; }
+.state-cancelled { color: #991b1b; background: #fee2e2; }
+.state-closed { color: #555; background: #e0e0e0; }
