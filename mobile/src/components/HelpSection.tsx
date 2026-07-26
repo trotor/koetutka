@@ -40,6 +40,31 @@ export function HelpSection() {
       </View>
 
       <View style={styles.row}>
+        <View style={styles.lead}><Text style={styles.badgeTentative}>Alustava</Text></View>
+        <Text style={styles.text}>
+          <Text style={styles.bold}>Alustava koe.</Text> Koetta ei ole vielä vahvistettu,
+          joten ajankohta tai paikka voi vielä muuttua.
+        </Text>
+      </View>
+
+      <View style={styles.row}>
+        <View style={styles.lead}><Text style={styles.badgeCancelled}>Peruttu</Text></View>
+        <Text style={styles.text}>
+          <Text style={styles.bold}>Peruttu koe.</Text> Koe on peruttu. Peruttu koe jää
+          näkyviin, jotta huomaat sen myös suosikeistasi.
+        </Text>
+      </View>
+
+      <View style={styles.row}>
+        <View style={styles.lead}><Text style={styles.badgeClosed}>Ilmo ohi</Text></View>
+        <Text style={styles.text}>
+          <Text style={styles.bold}>Ilmoittautuminen ohi.</Text> Merkki "Osallistujat
+          valittu" tai "Kutsut lähetetty" tarkoittaa että ilmoittautuminen on päättynyt.
+          Kun kutsut on lähetetty, kokeen tiedoista pääsee lukemaan lähtölistan.
+        </Text>
+      </View>
+
+      <View style={styles.row}>
         <View style={styles.lead}><Text style={styles.badgePast}>Mennyt</Text></View>
         <Text style={styles.text}>
           <Text style={styles.bold}>Mennyt koe.</Text> Koe on jo pidetty. Menneet on
@@ -70,4 +95,7 @@ const styles = StyleSheet.create({
   badgeConflict: { ...badge, color: '#9a3412', backgroundColor: '#fce8d5' },
   badgeHidden: { ...badge, color: '#555', backgroundColor: '#e0e0e0' },
   badgePast: { ...badge, color: '#777', backgroundColor: '#e0e0e0' },
+  badgeTentative: { ...badge, color: '#92400e', backgroundColor: '#fef3c7' },
+  badgeCancelled: { ...badge, color: '#991b1b', backgroundColor: '#fee2e2' },
+  badgeClosed: { ...badge, color: '#555', backgroundColor: '#e0e0e0' },
 });

@@ -4,6 +4,16 @@
  */
 export type Coordinates = [number, number];
 
+/**
+ * Kokeen tila SNJ:n API:sta.
+ * - `tentative` — alustava, koe ei ole vielä varmistunut
+ * - `confirmed` — vahvistettu (normaalitapaus)
+ * - `picked` — osallistujat valittu, ilmoittautuminen ohi
+ * - `invited` — kutsut lähetetty, ilmoittautuminen ohi
+ * - `cancelled` — peruttu
+ */
+export type EventState = 'tentative' | 'confirmed' | 'picked' | 'invited' | 'cancelled';
+
 /** Yhteyshenkilön tiedot (official, secretary). */
 export interface Person {
   name: string;
@@ -35,6 +45,11 @@ export interface ClassPlaces {
    * (yksipäiväisessä kokeessa päivä on sama kuin kokeen päivämäärä).
    */
   day: string | null;
+  /**
+   * Ilmoittautuneiden määrä tälle riville, jos tiedossa. Tilannekuva datan
+   * hakuhetkestä (päivittyy kerran vuorokaudessa).
+   */
+  entries?: number;
 }
 
 /**
@@ -84,6 +99,14 @@ export interface Event {
    * määrät voivat vielä muuttua). Voi puuttua.
    */
   places?: number;
+  /** Kokeen tila. Puuttuu vanhemmasta JSONista. */
+  state?: EventState;
+  /** Ilmoittautumisen alkupäivä `YYYY-MM-DD`. Puuttuu vanhemmasta JSONista. */
+  entry_start?: string;
+  /** Ilmoittautumisen loppupäivä `YYYY-MM-DD`. Puuttuu vanhemmasta JSONista. */
+  entry_end?: string;
+  /** Ilmoittautuneiden kokonaismäärä. Puuttuu vanhemmasta JSONista. */
+  entries?: number;
   /** Lasketaan ajoittain UI:ssa (addDistances). */
   distance?: number | null;
 }

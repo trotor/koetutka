@@ -86,6 +86,17 @@ MIT
 
 ## Versiohistoria
 
+### v1.12.0 (2026-07-25)
+- **Suora linkki koeilmoitukseen**: kokeen tiedoista pääsee suoraan
+  ilmoittautumaan SNJ:n koekalenterissa, kun ilmoittautuminen on auki
+  (aiemmin linkki vei aina koekalenterin etusivulle)
+- **Lähtölista**: kun kutsut on lähetetty, kokeesta pääsee lähtölistaan
+- **Kokeen tila**: alustava, peruttu, osallistujat valittu ja kutsut lähetetty
+  näkyvät omalla merkillään, ja tila huomioidaan myös "Ilmo auki" -logiikassa
+- **Ilmoittautuneiden määrä** näkyy paikkamäärän vierellä
+- **Mobiili**: painettavat yhteystiedot, ja Android-sovellus kohdistettu
+  Android 16:lle (API-taso 36)
+
 ### v1.11.0 (2026-07-09)
 - **Ilmoittautuminen auki -korostus**: kun kokeen ilmoittautuminen on
   parhaillaan auki, ilmoittautumisaika näkyy korostettuna vihreällä ja

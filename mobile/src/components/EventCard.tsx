@@ -4,7 +4,7 @@ import { Swipeable } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 import type { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import type { Event } from '@koetutka/shared';
-import { isRegistrationOpen, isPast } from '@koetutka/shared';
+import { isRegistrationOpen, isPast, stateBadge, isCancelled } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { presentCalendarMenu } from '@/lib/calendar-menu';
 import { calendarAddedKey, type CalendarType } from '@/lib/calendar-added';
@@ -36,6 +36,12 @@ export function EventCard({
 
   const past = isPast(event);
   const regOpen = !past && !isHidden && isRegistrationOpen(event);
+  const cancelled = isCancelled(event);
+  // Tilamerkkiä ei näytetä menneillä kokeilla — "Mennyt" kertoo saman ja
+  // "Kutsut lähetetty" olisi pelkkää kohinaa. Peruttu näytetään aina, koska
+  // peruttu ja pidetty koe eivät ole sama asia.
+  const badge = !past || cancelled ? stateBadge(event) : null;
+  const dimmed = past || cancelled;
 
   const openCalendarMenu = () => {
     const { calendarAdded, markCalendarAdded, userLocation } = useStore.getState();
@@ -111,23 +117,24 @@ export function EventCard({
           onLongPress={promptHide}
         >
           <View style={styles.titleRow}>
-            <Text style={[styles.title, past && styles.titlePast]} numberOfLines={1}>
+            <Text style={[styles.title, dimmed && styles.titlePast]} numberOfLines={1}>
               {event.type} · {event.levels}
             </Text>
             {typeof event.distance === 'number' && (
-              <Text style={[styles.distance, past && styles.distancePast]}>
+              <Text style={[styles.distance, dimmed && styles.distancePast]}>
                 {event.distance} km
               </Text>
             )}
           </View>
-          <Text style={[styles.location, past && styles.locationPast]}>{event.location}</Text>
+          <Text style={[styles.location, dimmed && styles.locationPast]}>{event.location}</Text>
           <View style={styles.metaRow}>
             <Text style={styles.dateLine} numberOfLines={1}>
-              <Text style={[styles.date, past && styles.datePast]}>{event.date}</Text>
-              <Text style={[styles.entry, past && styles.entryPast, regOpen && styles.entryOpen]}>  ·  ilm. {event.entry_date}</Text>
+              <Text style={[styles.date, dimmed && styles.datePast]}>{event.date}</Text>
+              <Text style={[styles.entry, dimmed && styles.entryPast, regOpen && styles.entryOpen]}>  ·  ilm. {event.entry_date}</Text>
             </Text>
             <View style={styles.badges}>
               {isHidden && <Text style={styles.hiddenBadge}>Piilotettu</Text>}
+              {badge && <Text style={badgeStyleFor(badge.tone)}>{badge.label}</Text>}
               {regOpen && <Text style={styles.regOpenBadge}>Ilmo auki</Text>}
               {!isHidden && fit === 'free' && <Text style={styles.fitFree}>Sopii</Text>}
               {!isHidden && fit === 'conflict' && <Text style={styles.fitConflict}>Päällekkäin</Text>}
@@ -164,6 +171,12 @@ export function EventCard({
       </View>
     </Swipeable>
   );
+}
+
+function badgeStyleFor(tone: 'tentative' | 'cancelled' | 'closed') {
+  if (tone === 'tentative') return styles.stateTentative;
+  if (tone === 'cancelled') return styles.stateCancelled;
+  return styles.stateClosed;
 }
 
 const styles = StyleSheet.create({
@@ -235,6 +248,18 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     borderRadius: 4,
     overflow: 'hidden',
+  },
+  stateTentative: {
+    fontSize: 11, color: '#92400e', backgroundColor: '#fef3c7',
+    paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, overflow: 'hidden',
+  },
+  stateCancelled: {
+    fontSize: 11, color: '#991b1b', backgroundColor: '#fee2e2',
+    paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, overflow: 'hidden',
+  },
+  stateClosed: {
+    fontSize: 11, color: '#555', backgroundColor: '#e0e0e0',
+    paddingHorizontal: 6, paddingVertical: 2, borderRadius: 4, overflow: 'hidden',
   },
   hiddenBadge: {
     fontSize: 11,

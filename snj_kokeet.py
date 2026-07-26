@@ -171,12 +171,14 @@ def process_events(events, target_year):
             entry_start_obj = datetime.fromisoformat(entry_start_date.replace('Z', '+00:00')).astimezone(helsinki)
             entry_start_str = entry_start_obj.strftime('%d.%m.')
         except:
+            entry_start_obj = None
             entry_start_str = ''
 
         try:
             entry_end_obj = datetime.fromisoformat(entry_end_date.replace('Z', '+00:00')).astimezone(helsinki)
             entry_end_str = entry_end_obj.strftime('%d.%m.')
         except:
+            entry_end_obj = None
             entry_end_str = 'N/A'
 
         # Luo ilmoittautumisaikaväli
@@ -267,7 +269,18 @@ def process_events(events, target_year):
             # WT-kokeet) ei ole per-luokka-paikkoja classes-listassa, vaan vain
             # tämä kokonaisluku. UI näyttää sen "Yhteensä"-rivinä kun luokkakohtaista
             # erittelyä ei ole.
-            'places': event.get('places')
+            'places': event.get('places'),
+            # Kokeen tila SNJ:n API:sta: tentative | confirmed | picked |
+            # invited | cancelled. UI näyttää alustavan ja perutun merkkinä, ja
+            # picked/invited tarkoittaa että ilmoittautuminen on ohi.
+            'state': event.get('state'),
+            # Ilmoittautumisajan tarkat päivät. entry_date on esitysmuoto
+            # ("01.04.-14.04.") josta vuosi puuttuu; nämä ovat vertailukelpoiset.
+            'entry_start': entry_start_obj.strftime('%Y-%m-%d') if entry_start_obj else None,
+            'entry_end': entry_end_obj.strftime('%Y-%m-%d') if entry_end_obj else None,
+            # Ilmoittautuneiden kokonaismäärä. Tarvitaan koska osalla kokeista ei
+            # ole luokkaerittelyä lainkaan, jolloin classes[].entries puuttuu.
+            'entries': event.get('entries')
         })
 
     # Tallenna cache
