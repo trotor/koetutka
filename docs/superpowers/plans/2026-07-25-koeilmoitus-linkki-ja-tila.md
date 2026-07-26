@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - **Kaikki uudet `Event`-kentät ovat optionaalisia:** `state?`, `entry_start?`, `entry_end?`, `entries?`. Uusi sovellusversio saa vanhaa JSONia ja vanha versio uutta — kumpikaan ei saa rikkoutua.
-- **Sanaa "täynnä" ei käytetä missään.** Ilmoittautuneita on usein moninkertaisesti paikkoihin nähden (64 ilmoittautunutta 12 paikalle) ja osallistujat arvotaan. Muoto on neutraali: `"8 paikkaa · 17 ilmoittautunutta"`.
+- **Sanaa "täynnä" ei esiinny missään käyttäjälle näkyvässä tekstissä.** Ilmoittautuneita on usein moninkertaisesti paikkoihin nähden (64 ilmoittautunutta 12 paikalle) ja osallistujat arvotaan. Muoto on neutraali: `"8 paikkaa · 17 ilmoittautunutta"`. Sana saa ja pitää esiintyä koodikommentissa joka perustelee tämän säännön, jotta sitä ei myöhemmin "korjata" takaisin.
 - **Tilamerkkiä ei näytetä menneillä kokeilla listanäkymissä** (koekortti, webin taulukko ja kortit). Poikkeus: `cancelled` näytetään aina. Kokeen **tietonäkymä** näyttää "Tila"-rivin aina kun tila on tiedossa — siellä ei ole kohinaongelmaa, koska käyttäjä on avannut juuri sen kokeen.
 - **Lähtölistan rajapintaan ei tehdä yhtään verkkokutsua** — ei mobiilista eikä `snj_kokeet.py`:stä. Vain linkki SNJ:n omalle sivulle. Perustelut speksin "Rajattu ulos" -osiossa.
 - **Testien sijainti:** `shared/`-logiikka → `shared/tests/<moduuli>.test.ts`, importit muodossa `../src/<moduuli>.js`. Mobiilin omat libit → `mobile/src/lib/tests/`.
