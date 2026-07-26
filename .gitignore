@@ -41,3 +41,6 @@ generate_html.py
 
 # Original banner source
 resources/
+
+# xcodebuild-arkistot ja -exportit (CLI-julkaisu)
+build/
