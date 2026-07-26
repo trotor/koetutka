@@ -1350,3 +1350,237 @@ git commit -m "chore: bump 1.12.0 (web + mobiili) + whatsnew"
 2. **Android:** `./gradlew :app:bundleRelease` → lataa AAB Play Consoleen.
 3. **iOS:** Xcode → Product → Archive → App Store Connect → TestFlight → review.
 4. Molemmat kaupat samaan aikaan.
+
+---
+
+### Task 11: Korjaa SNJ-linkki ehdolliseksi (suunnitelmavirheen korjaus)
+
+**Löydös:** selainvarmistus osoitti että `/event/:type/:id` on **ilmoittautumislomake**, ei ilmoitussivu. Se palauttaa `410 Ilmoittautuminen ei ole avoinna` aina kun ilmo ei ole auki. Vain 19/206 kokeesta on ilmo auki kerrallaan, eli Taskien 3/7/9 ehdoton deep link vie useimmiten virhesivulle. Todennettu: `/event/NOU/gUtNIHnvjt` (auki) latautuu; `/event/EPÄVIRALLINEN/dJkbTEG949` (mennyt) ja `/event/NOME-B/_bakND2s8Q` (picked) → 410.
+
+**Files:**
+- Modify: `shared/src/snj.ts`, `shared/tests/snj.test.ts`
+- Modify: `mobile/src/screens/EventDetailScreen.tsx`
+- Modify: `index.html` (silta), `app.js` (modaalin footer)
+
+**Interfaces:**
+- Consumes: `isRegistrationOpen` (`shared/src/filters.ts`), `hasStartList`.
+- Produces:
+  - `snjRegistrationUrl(event)` — **uudelleennimetty** `snjEventUrl`:sta, sama toteutus
+  - `snjCalendarUrl(): string` → `'https://koekalenteri.snj.fi/'`
+  - `SnjLinkKind = 'register' | 'startlist' | 'calendar'`
+  - `snjLink(event, today?): { kind: SnjLinkKind; label: string; url: string }`
+  - `snjEventUrl` **poistuu** — kaikki kutsujat siirtyvät `snjLink`iin.
+
+- [ ] **Step 1: Kirjoita kaatuvat testit**
+
+Korvaa `shared/tests/snj.test.ts`:n `snjEventUrl`-describe nimellä `snjRegistrationUrl` (sama kolme testiä, vain funktion nimi vaihtuu) ja lisää tiedoston loppuun:
+
+```ts
+describe('snjCalendarUrl', () => {
+  test('palauttaa koekalenterin etusivun', () => {
+    expect(snjCalendarUrl()).toBe('https://koekalenteri.snj.fi/');
+  });
+});
+
+describe('snjLink', () => {
+  const OPEN = { entry_start: '2026-07-01', entry_end: '2026-07-31' };
+  const TODAY = new Date('2026-07-15T12:00:00+03:00');
+
+  test('ilmo auki -> ilmoittautumislinkki', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'confirmed', ...OPEN } as never,
+      TODAY,
+    );
+    expect(link).toEqual({
+      kind: 'register',
+      label: 'Ilmoittaudu SNJ:n koekalenterissa',
+      url: 'https://koekalenteri.snj.fi/event/NOU/abc',
+    });
+  });
+
+  test('osallistujat valittu -> lähtölistalinkki', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'picked', ...OPEN } as never,
+      TODAY,
+    );
+    expect(link).toEqual({
+      kind: 'startlist',
+      label: 'Lue lähtölista',
+      url: 'https://koekalenteri.snj.fi/startlist/abc',
+    });
+  });
+
+  test('kutsut lähetetty -> lähtölistalinkki', () => {
+    const link = snjLink({ type: 'NOU', id: 'abc', state: 'invited' } as never, TODAY);
+    expect(link.kind).toBe('startlist');
+  });
+
+  test('ilmo ei vielä auki -> etusivu', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'confirmed', entry_start: '2026-08-01', entry_end: '2026-08-20' } as never,
+      TODAY,
+    );
+    expect(link).toEqual({
+      kind: 'calendar',
+      label: 'Avaa SNJ:n koekalenteri',
+      url: 'https://koekalenteri.snj.fi/',
+    });
+  });
+
+  test('ilmo mennyt ohi eikä lähtölistaa -> etusivu', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'confirmed', entry_start: '2026-06-01', entry_end: '2026-06-20' } as never,
+      TODAY,
+    );
+    expect(link.kind).toBe('calendar');
+  });
+
+  test('peruttu koe -> etusivu, ei koskaan ilmoittautumista', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'cancelled', ...OPEN } as never,
+      TODAY,
+    );
+    expect(link.kind).toBe('calendar');
+  });
+
+  test('tuntematon tila ilman ilmoaikaa -> etusivu', () => {
+    expect(snjLink({ type: 'NOU', id: 'abc' } as never, TODAY).kind).toBe('calendar');
+  });
+});
+```
+
+- [ ] **Step 2: Aja testit ja varmista että ne kaatuvat**
+
+Run: `pnpm test`
+Expected: FAIL — `snjCalendarUrl` / `snjLink` / `snjRegistrationUrl` eivät ole funktioita
+
+- [ ] **Step 3: Toteuta `shared/src/snj.ts`**
+
+Korvaa tiedoston sisältö:
+
+```ts
+import type { Event } from './types.js';
+import { isRegistrationOpen } from './filters.js';
+
+const BASE = 'https://koekalenteri.snj.fi';
+
+/**
+ * Linkki kokeen ilmoittautumiseen SNJ:n koekalenterissa.
+ *
+ * HUOM: reitti `event/:eventType/:id` on ilmoittautumis*lomake*, ei kokeen
+ * ilmoitussivu. Se palauttaa virhesivun `410 Ilmoittautuminen ei ole avoinna`
+ * aina kun ilmoittautuminen ei ole auki, joten tätä ei pidä linkittää
+ * ehdoitta — käytä `snjLink`iä, joka valitsee toimivan kohteen.
+ *
+ * Tyyppi enkoodataan, koska arvoissa on välilyöntejä (`NOME-A SM`) ja
+ * skandeja (`EPÄVIRALLINEN`).
+ */
+export function snjRegistrationUrl(event: Pick<Event, 'type' | 'id'>): string {
+  return `${BASE}/event/${encodeURIComponent(event.type)}/${encodeURIComponent(event.id)}`;
+}
+
+/** Linkki kokeen lähtölistaan SNJ:n koekalenterissa. */
+export function snjStartListUrl(event: Pick<Event, 'id'>): string {
+  return `${BASE}/startlist/${encodeURIComponent(event.id)}`;
+}
+
+/** Koekalenterin etusivu. Fallback kun kokeelle ei ole toimivaa omaa sivua. */
+export function snjCalendarUrl(): string {
+  return `${BASE}/`;
+}
+
+/**
+ * Tosi kun lähtölista on odotettavissa: osallistujat on valittu (`picked`) tai
+ * kutsut lähetetty (`invited`). Tämä on tarkoituksella pelkkä tilapäättely eikä
+ * verkkokutsu — lista voi harvoin puuttua, mikä on hyväksyttävä hinta siitä
+ * ettei mitään ylimääräistä haeta.
+ */
+export function hasStartList(event: Pick<Event, 'state'>): boolean {
+  return event.state === 'picked' || event.state === 'invited';
+}
+
+export type SnjLinkKind = 'register' | 'startlist' | 'calendar';
+
+/**
+ * Valitsee kokeelle sen yhden ulkoisen SNJ-linkin joka oikeasti toimii.
+ *
+ * Haarat ovat toisensa poissulkevia rakenteellisesti: `isRegistrationOpen`
+ * palauttaa epätoden tiloilla `picked`/`invited`/`cancelled`, ja lähtölista on
+ * juuri tiloilla `picked`/`invited`. Valinta on täällä eikä UI:ssa, jotta web
+ * ja mobiili eivät voi eriytyä.
+ */
+export function snjLink(
+  event: Event,
+  today: Date = new Date(),
+): { kind: SnjLinkKind; label: string; url: string } {
+  if (isRegistrationOpen(event, today)) {
+    return {
+      kind: 'register',
+      label: 'Ilmoittaudu SNJ:n koekalenterissa',
+      url: snjRegistrationUrl(event),
+    };
+  }
+  if (hasStartList(event)) {
+    return { kind: 'startlist', label: 'Lue lähtölista', url: snjStartListUrl(event) };
+  }
+  return { kind: 'calendar', label: 'Avaa SNJ:n koekalenteri', url: snjCalendarUrl() };
+}
+```
+
+- [ ] **Step 4: Aja testit**
+
+Run: `pnpm test && pnpm typecheck`
+Expected: PASS
+
+- [ ] **Step 5: Päivitä mobiilin tietonäkymä**
+
+`mobile/src/screens/EventDetailScreen.tsx`: poista `snjEventUrl`, `snjStartListUrl` ja `hasStartList` importeista ja lisää `snjLink`. Laske komponentissa `badge`-rivin viereen:
+
+```tsx
+  const snj = snjLink(event);
+  const SNJ_ICONS: Record<typeof snj.kind, string> = {
+    register: '📝',
+    startlist: '📋',
+    calendar: '🔗',
+  };
+```
+
+Korvaa **molemmat** aiemmat SNJ-napit (nykyinen "Avaa SNJ:n koekalenterissa" ja ehdollinen "Lue lähtölista") tällä yhdellä napilla, nappilistan ensimmäisenä:
+
+```tsx
+        <Pressable style={styles.button} onPress={() => Linking.openURL(snj.url)}>
+          <Text style={styles.buttonText}>{SNJ_ICONS[snj.kind]} {snj.label}</Text>
+        </Pressable>
+```
+
+- [ ] **Step 6: Päivitä webin silta ja modaali**
+
+`index.html`: poista `snjEventUrl`, `snjStartListUrl` ja `hasStartList` sekä importtilistasta että `window.koetutkaShared`-objektista; lisää `snjLink`. Jätä `stateBadge`, `isCancelled` ja `formatClassPlacesRow` paikoilleen.
+
+`app.js`: korvaa modaalin footer:
+
+```js
+                <div class="modal-footer">
+                    <a href="${window.koetutkaShared.snjLink(koe).url}" target="_blank" rel="noopener" class="btn btn-snj">
+                        ${window.koetutkaShared.snjLink(koe).label}
+                    </a>
+                </div>`;
+```
+
+- [ ] **Step 7: Varmista**
+
+```bash
+pnpm build && pnpm test && pnpm typecheck
+cd mobile && npm run typecheck && npm test && cd ..
+node --check app.js
+grep -n 'snjEventUrl' -r shared/src mobile/src app.js index.html || echo "snjEventUrl poistettu kaikkialta: OK"
+```
+
+Odotettu: testit läpi, eikä `snjEventUrl`-osumia missään.
+
+- [ ] **Step 8: Commit**
+
+```bash
+git add shared/src/snj.ts shared/tests/snj.test.ts mobile/src/screens/EventDetailScreen.tsx index.html app.js
+git commit -m "fix: SNJ-linkki valitsee toimivan kohteen tilan mukaan"
+```

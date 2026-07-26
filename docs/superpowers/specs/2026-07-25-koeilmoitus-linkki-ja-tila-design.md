@@ -33,6 +33,23 @@ event/:eventType/:id/:class
 event/:eventType/:id/:class/:date
 ```
 
+**KORJAUS 2026-07-26 (todennettu selaimessa):** tämä reitti ei ole kokeen
+ilmoitussivu vaan **ilmoittautumislomake**, ja se palauttaa virhesivun
+`410 Ilmoittautuminen ei ole avoinna` aina kun ilmoittautuminen ei ole auki.
+Todennus:
+
+| URL | tila | tulos |
+|---|---|---|
+| `/event/NOU/gUtNIHnvjt` | ilmo auki | latautuu oikein |
+| `/event/EPÄVIRALLINEN/dJkbTEG949` | mennyt | 410 |
+| `/event/NOME-B/_bakND2s8Q` | picked | 410 |
+
+Vika ei ole tyypissä (skandit ja välilyönnit enkoodautuvat oikein) vaan tilassa.
+Koska vain 19/206 kokeesta on ilmoittautuminen auki kerrallaan, ehdoton deep
+link viisi kertaa kuudesta vie virhesivulle. Siksi linkki on ehdollinen — ks.
+"Ulkoinen linkki kokeesta" alla. Julkista per-koe-ilmoitussivua **ei ole**;
+koko `/event/`-puu on ilmoittautumista varten.
+
 **Tapahtumatason `state`** on mukana 621/621 tapahtumassa. Arvot ja tulevien
 kokeiden jakauma (25.7.2026 →):
 
@@ -133,6 +150,21 @@ Otsikot: `tentative` → "Alustava", `cancelled` → "Peruttu", `picked` →
 "Osallistujat valittu", `invited` → "Kutsut lähetetty". `confirmed` palauttaa
 `null`, koska normaalitapaus ei tarvitse merkkiä. Puuttuva `state` palauttaa
 `null`.
+
+**Ulkoinen linkki kokeesta.** Koska `/event/`-reitti toimii vain ilmoittautumisen
+ollessa auki, kokeella on **täsmälleen yksi** SNJ-nappi, joka valitsee kolmesta:
+
+| ehto | teksti | kohde |
+|---|---|---|
+| `isRegistrationOpen(event)` | "Ilmoittaudu SNJ:n koekalenterissa" | `/event/{type}/{id}` |
+| `hasStartList(event)` | "Lue lähtölista" | `/startlist/{id}` |
+| muuten | "Avaa SNJ:n koekalenteri" | etusivu |
+
+Ehdot ovat toisensa poissulkevia rakenteellisesti: `isRegistrationOpen` palauttaa
+epätoden tiloilla `picked`/`invited`, jotka ovat juuri ne joilla lähtölista on.
+Valinta tehdään `shared`-paketissa, jotta web ja mobiili eivät voi eriytyä.
+Kolmas haara on sama käyttäytyminen kuin webissä nyt — mutta rehellisesti
+nimettynä, eikä koskaan virhesivulle vievänä.
 
 **Uusi `shared/src/snj.ts`.**
 
