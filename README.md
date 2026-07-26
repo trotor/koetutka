@@ -86,10 +86,10 @@ MIT
 
 ## Versiohistoria
 
-### v1.12.0 (2026-07-25)
-- **Suora linkki koeilmoitukseen**: kokeen tiedoista pääsee suoraan
-  ilmoittautumaan SNJ:n koekalenterissa, kun ilmoittautuminen on auki
-  (aiemmin linkki vei aina koekalenterin etusivulle)
+### v1.12.0 (2026-07-26)
+- **Suora linkki SNJ:hin**: kokeen tiedoista pääsee suoraan ilmoittautumaan
+  SNJ:n koekalenterissa, kun ilmoittautuminen on auki (aiemmin linkki vei aina
+  koekalenterin etusivulle)
 - **Lähtölista**: kun kutsut on lähetetty, kokeesta pääsee lähtölistaan
 - **Kokeen tila**: alustava, peruttu, osallistujat valittu ja kutsut lähetetty
   näkyvät omalla merkillään, ja tila huomioidaan myös "Ilmo auki" -logiikassa
