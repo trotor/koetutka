@@ -90,7 +90,7 @@ MIT
 - **Suora linkki koeilmoitukseen**: kokeen tiedoista pääsee suoraan
   ilmoittautumaan SNJ:n koekalenterissa, kun ilmoittautuminen on auki
   (aiemmin linkki vei aina koekalenterin etusivulle)
-- **Lähtölista**: kun osallistujat on valittu, kokeesta pääsee lähtölistaan
+- **Lähtölista**: kun kutsut on lähetetty, kokeesta pääsee lähtölistaan
 - **Kokeen tila**: alustava, peruttu, osallistujat valittu ja kutsut lähetetty
   näkyvät omalla merkillään, ja tila huomioidaan myös "Ilmo auki" -logiikassa
 - **Ilmoittautuneiden määrä** näkyy paikkamäärän vierellä

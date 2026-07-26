@@ -29,13 +29,13 @@ export function snjCalendarUrl(): string {
 }
 
 /**
- * Tosi kun lähtölista on odotettavissa: osallistujat on valittu (`picked`) tai
- * kutsut lähetetty (`invited`). Tämä on tarkoituksella pelkkä tilapäättely eikä
- * verkkokutsu — lista voi harvoin puuttua, mikä on hyväksyttävä hinta siitä
- * ettei mitään ylimääräistä haeta.
+ * Tosi kun lähtölista on odotettavissa: kutsut on lähetetty (`invited`).
+ * Lähtölista syntyy vasta kun kutsut lähetetään, ei jo silloin kun osallistujat
+ * on valittu (`picked`) — SNJ:n API palauttaa `picked`-tiloille 404:n. Tämä on
+ * tarkoituksella pelkkä tilapäättely eikä verkkokutsu.
  */
 export function hasStartList(event: Pick<Event, 'state'>): boolean {
-  return event.state === 'picked' || event.state === 'invited';
+  return event.state === 'invited';
 }
 
 export type SnjLinkKind = 'register' | 'startlist' | 'calendar';
@@ -45,14 +45,17 @@ export type SnjLinkKind = 'register' | 'startlist' | 'calendar';
  *
  * Haarat ovat toisensa poissulkevia rakenteellisesti: `isRegistrationOpen`
  * palauttaa epätoden tiloilla `picked`/`invited`/`cancelled`, ja lähtölista on
- * juuri tiloilla `picked`/`invited`. Valinta on täällä eikä UI:ssa, jotta web
- * ja mobiili eivät voi eriytyä.
+ * tilassa `invited`. Lisäksi ilmoittautumishaara ohitetaan aina tilassa
+ * `tentative`, vaikka `isRegistrationOpen` palauttaisi totta: SNJ:n
+ * ilmoittautumislomake näyttää alustaville kokeille tyhjän sivun eikä
+ * virhesivua, joten tila havaittaisiin muuten liian myöhään. Valinta on
+ * täällä eikä UI:ssa, jotta web ja mobiili eivät voi eriytyä.
  */
 export function snjLink(
   event: Event,
   today: Date = new Date(),
 ): { kind: SnjLinkKind; label: string; url: string } {
-  if (isRegistrationOpen(event, today)) {
+  if (event.state !== 'tentative' && isRegistrationOpen(event, today)) {
     return {
       kind: 'register',
       label: 'Ilmoittaudu SNJ:n koekalenterissa',

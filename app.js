@@ -1101,12 +1101,13 @@
                         </div>`;
             }
 
+            const snjLink = window.koetutkaShared.snjLink(koe);
             html += `
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="${window.koetutkaShared.snjLink(koe).url}" target="_blank" rel="noopener" class="btn btn-snj">
-                        ${window.koetutkaShared.snjLink(koe).label}
+                    <a href="${snjLink.url}" target="_blank" rel="noopener" class="btn btn-snj">
+                        ${snjLink.label}
                     </a>
                 </div>`;
 

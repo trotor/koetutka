@@ -60,7 +60,7 @@ export function HelpSection() {
         <Text style={styles.text}>
           <Text style={styles.bold}>Ilmoittautuminen ohi.</Text> Merkki "Osallistujat
           valittu" tai "Kutsut lähetetty" tarkoittaa että ilmoittautuminen on päättynyt.
-          Silloin kokeen tiedoista pääsee lukemaan lähtölistan.
+          Kun kutsut on lähetetty, kokeen tiedoista pääsee lukemaan lähtölistan.
         </Text>
       </View>
 

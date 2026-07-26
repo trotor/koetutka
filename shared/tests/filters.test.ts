@@ -166,8 +166,27 @@ describe('isRegistrationOpen', () => {
 
   test('ISO-väli on inklusiivinen molemmista päistä', () => {
     const event = makeEvent({ entry_start: '2026-04-01', entry_end: '2026-04-14' });
-    expect(isRegistrationOpen(event, new Date('2026-04-01T00:30:00+03:00'))).toBe(true);
-    expect(isRegistrationOpen(event, new Date('2026-04-14T23:30:00+03:00'))).toBe(true);
+    expect(isRegistrationOpen(event, new Date(2026, 3, 1, 0, 30))).toBe(true);
+    expect(isRegistrationOpen(event, new Date(2026, 3, 14, 23, 30))).toBe(true);
+  });
+
+  test('viallinen entry_start palaa entry_date-regexiin', () => {
+    // entry_start on tyveltään väärämuotoinen (ei kaksinumeroinen kk/pv), joten
+    // isoDateOnly palauttaa nullin ja logiikka putoaa entry_date-fallbackiin.
+    const event = makeEvent({
+      entry_start: '2026-4-1',
+      entry_end: '2026-04-14',
+      entry_date: '01.04.-14.04.',
+    });
+    expect(isRegistrationOpen(event, new Date('2026-04-07T12:00:00+03:00'))).toBe(true);
+  });
+
+  test('entry_end puuttuu -> palaa entry_date-regexiin', () => {
+    const event = makeEvent({
+      entry_start: '2026-04-01',
+      entry_date: '01.04.-14.04.',
+    });
+    expect(isRegistrationOpen(event, new Date('2026-04-07T12:00:00+03:00'))).toBe(true);
   });
 
   test('ISO-päivät toimivat vuodenvaihteen yli ilman päättelyä', () => {

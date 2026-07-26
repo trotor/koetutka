@@ -30,12 +30,12 @@ describe('snjStartListUrl', () => {
 });
 
 describe('hasStartList', () => {
-  test('tosi kun osallistujat on valittu tai kutsuttu', () => {
-    expect(hasStartList({ state: 'picked' })).toBe(true);
+  test('tosi kun kutsut on lähetetty', () => {
     expect(hasStartList({ state: 'invited' })).toBe(true);
   });
 
-  test('epätosi ennen valintaa ja perutulle', () => {
+  test('epätosi ennen kutsuja, valinnan jälkeenkin, ja perutulle', () => {
+    expect(hasStartList({ state: 'picked' })).toBe(false);
     expect(hasStartList({ state: 'confirmed' })).toBe(false);
     expect(hasStartList({ state: 'tentative' })).toBe(false);
     expect(hasStartList({ state: 'cancelled' })).toBe(false);
@@ -68,9 +68,21 @@ describe('snjLink', () => {
     });
   });
 
-  test('osallistujat valittu -> lähtölistalinkki', () => {
+  test('osallistujat valittu -> ei lähtölistaa vielä, etusivu', () => {
     const link = snjLink(
       { type: 'NOU', id: 'abc', state: 'picked', ...OPEN } as never,
+      TODAY,
+    );
+    expect(link).toEqual({
+      kind: 'calendar',
+      label: 'Avaa SNJ:n koekalenteri',
+      url: 'https://koekalenteri.snj.fi/',
+    });
+  });
+
+  test('kutsut lähetetty -> lähtölistalinkki', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'invited', ...OPEN } as never,
       TODAY,
     );
     expect(link).toEqual({
@@ -80,9 +92,21 @@ describe('snjLink', () => {
     });
   });
 
-  test('kutsut lähetetty -> lähtölistalinkki', () => {
+  test('kutsut lähetetty ilman ilmoaikaa -> lähtölistalinkki', () => {
     const link = snjLink({ type: 'NOU', id: 'abc', state: 'invited' } as never, TODAY);
     expect(link.kind).toBe('startlist');
+  });
+
+  test('alustava koe ilmoaika auki -> ei ilmoittautumislinkkiä, etusivu', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'tentative', ...OPEN } as never,
+      TODAY,
+    );
+    expect(link).toEqual({
+      kind: 'calendar',
+      label: 'Avaa SNJ:n koekalenteri',
+      url: 'https://koekalenteri.snj.fi/',
+    });
   });
 
   test('ilmo ei vielä auki -> etusivu', () => {
