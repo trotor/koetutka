@@ -3,6 +3,7 @@ import {
   getCostValue,
   getOptionalCosts,
   listClassPlaces,
+  formatClassPlacesRow,
 } from '../src/formatters.js';
 import type { Class } from '../src/types.js';
 
@@ -143,5 +144,61 @@ describe('listClassPlaces', () => {
 
   test('ei paikkamäärää lainkaan → tyhjä', () => {
     expect(listClassPlaces(ev([cls({ class: 'AVO', date: SAT })]))).toEqual([]);
+  });
+
+  describe('listClassPlaces – ilmoittautuneet', () => {
+    test('poimii entries per luokka', () => {
+      const rows = listClassPlaces(ev([cls({ class: 'ALO', places: 12, date: SAT, entries: 64 })]));
+      expect(rows).toHaveLength(1);
+      expect(rows[0].entries).toBe(64);
+    });
+
+    test('entries on undefined kun sitä ei ole luokassa', () => {
+      const rows = listClassPlaces(ev([cls({ class: 'ALO', places: 12, date: SAT })]));
+      expect(rows[0].entries).toBeUndefined();
+    });
+
+    test('Yhteensä-rivi käyttää tapahtumatason entries-lukua', () => {
+      const rows = listClassPlaces({
+        classes: [cls({ class: 'ALO', date: SAT }), cls({ class: 'AVO', date: SAT })],
+        places: 60,
+        entries: 41,
+      });
+      expect(rows).toEqual([{ class: '', places: 60, day: null, entries: 41 }]);
+    });
+  });
+
+  describe('formatClassPlacesRow', () => {
+    test('pelkät paikat kun ilmoittautuneita ei tiedetä', () => {
+      expect(formatClassPlacesRow({ class: 'ALO', places: 8, day: null })).toBe('8 paikkaa');
+    });
+
+    test('yksikkömuoto yhdelle paikalle', () => {
+      expect(formatClassPlacesRow({ class: 'ALO', places: 1, day: null })).toBe('1 paikka');
+    });
+
+    test('paikat ja ilmoittautuneet', () => {
+      expect(formatClassPlacesRow({ class: 'ALO', places: 8, day: null, entries: 17 })).toBe(
+        '8 paikkaa · 17 ilmoittautunutta',
+      );
+    });
+
+    test('yksikkömuoto yhdelle ilmoittautuneelle', () => {
+      expect(formatClassPlacesRow({ class: 'ALO', places: 8, day: null, entries: 1 })).toBe(
+        '8 paikkaa · 1 ilmoittautunut',
+      );
+    });
+
+    test('nolla ilmoittautunutta näytetään', () => {
+      expect(formatClassPlacesRow({ class: 'ALO', places: 8, day: null, entries: 0 })).toBe(
+        '8 paikkaa · 0 ilmoittautunutta',
+      );
+    });
+
+    test('ylikysyntää ei kutsuta täydeksi', () => {
+      const row = formatClassPlacesRow({ class: 'ALO', places: 12, day: null, entries: 64 });
+      expect(row).toBe('12 paikkaa · 64 ilmoittautunutta');
+      expect(row).not.toContain('täynnä');
+    });
   });
 });

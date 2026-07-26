@@ -45,6 +45,11 @@ export interface ClassPlaces {
    * (yksipäiväisessä kokeessa päivä on sama kuin kokeen päivämäärä).
    */
   day: string | null;
+  /**
+   * Ilmoittautuneiden määrä tälle riville, jos tiedossa. Tilannekuva datan
+   * hakuhetkestä (päivittyy kerran vuorokaudessa).
+   */
+  entries?: number;
 }
 
 /**

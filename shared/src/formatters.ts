@@ -48,11 +48,11 @@ function pad2(n: number): string {
  * Palauttaa tyhjän taulukon jos paikkamäärää ei ole lainkaan.
  */
 export function listClassPlaces(
-  event: Pick<Event, 'classes' | 'places'> | undefined,
+  event: Pick<Event, 'classes' | 'places' | 'entries'> | undefined,
 ): ClassPlaces[] {
   const classes = event?.classes ?? [];
   // 1. Per-luokka-paikat, eriteltynä per päivä.
-  const rows: { class: string; places: number; dateKey: string; dayLabel: string | null; order: number }[] = [];
+  const rows: { class: string; places: number; entries?: number; dateKey: string; dayLabel: string | null; order: number }[] = [];
   for (let i = 0; i < classes.length; i++) {
     const c = classes[i];
     const name = typeof c.class === 'string' ? c.class.trim() : '';
@@ -68,14 +68,20 @@ export function listClassPlaces(
         dayLabel = `${WEEKDAYS[d.getDay()]} ${d.getDate()}.${d.getMonth() + 1}.`;
       }
     }
-    rows.push({ class: name, places, dateKey, dayLabel, order: i });
+    const entries = typeof c.entries === 'number' && Number.isFinite(c.entries) ? c.entries : undefined;
+    rows.push({ class: name, places, entries, dateKey, dayLabel, order: i });
   }
   if (rows.length > 0) {
     const multiDay = new Set(rows.map((r) => r.dateKey).filter(Boolean)).size > 1;
     rows.sort((a, b) =>
       a.dateKey < b.dateKey ? -1 : a.dateKey > b.dateKey ? 1 : a.order - b.order,
     );
-    return rows.map((r) => ({ class: r.class, places: r.places, day: multiDay ? r.dayLabel : null }));
+    return rows.map((r) => ({
+      class: r.class,
+      places: r.places,
+      day: multiDay ? r.dayLabel : null,
+      ...(r.entries === undefined ? {} : { entries: r.entries }),
+    }));
   }
 
   // 2. Fallback: kokonaispaikkamäärä kun per-luokka-erittelyä ei ole.
@@ -91,5 +97,28 @@ export function listClassPlaces(
   );
   // Yksi luokka → liitetään kokonaismäärä siihen, muuten "Yhteensä"-rivi.
   const label = names.length === 1 ? names[0] : '';
-  return [{ class: label, places: total, day: null }];
+  const totalEntries =
+    typeof event?.entries === 'number' && Number.isFinite(event.entries) ? event.entries : undefined;
+  return [
+    {
+      class: label,
+      places: total,
+      day: null,
+      ...(totalEntries === undefined ? {} : { entries: totalEntries }),
+    },
+  ];
+}
+
+/**
+ * Muotoilee yhden paikkarivin tekstiksi.
+ *
+ * Sanaa "täynnä" ei käytetä: näissä kokeissa ilmoittautuneita on usein
+ * moninkertaisesti paikkoihin nähden ja osallistujat arvotaan, joten "täynnä"
+ * antaisi väärän kuvan siitä ettei myöhässä oleva mahdu.
+ */
+export function formatClassPlacesRow(cp: ClassPlaces): string {
+  const places = `${cp.places} ${cp.places === 1 ? 'paikka' : 'paikkaa'}`;
+  if (cp.entries === undefined) return places;
+  const entries = `${cp.entries} ${cp.entries === 1 ? 'ilmoittautunut' : 'ilmoittautunutta'}`;
+  return `${places} · ${entries}`;
 }
