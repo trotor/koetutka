@@ -32,7 +32,11 @@
     "cost": 0,
     "cost_member": "",
     "classes": [],
-    "places": 12
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2026-01-01",
+    "entry_end": "2026-01-14",
+    "entries": null
   },
   {
     "id": "Vp7rHJqV99",
@@ -69,7 +73,11 @@
     "cost": 125,
     "cost_member": "",
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-01-03",
+    "entry_end": "2026-01-31",
+    "entries": 9
   },
   {
     "id": "7GasRJbaPM",
@@ -128,7 +136,11 @@
       "normal": 0
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-01-03",
+    "entry_end": "2026-01-31",
+    "entries": 23
   },
   {
     "id": "MIOINM1SPo",
@@ -175,7 +187,11 @@
       }
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-01-12",
+    "entry_end": "2026-02-06",
+    "entries": 20
   },
   {
     "id": "_tV7PO0mhm",
@@ -222,7 +238,11 @@
       "normal": 120
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-01-12",
+    "entry_end": "2026-02-06",
+    "entries": 18
   },
   {
     "id": "dJkbTEG949",
@@ -307,7 +327,11 @@
         "entries": 64
       }
     ],
-    "places": 67
+    "places": 67,
+    "state": "invited",
+    "entry_start": "2026-02-02",
+    "entry_end": "2026-03-02",
+    "entries": 64
   },
   {
     "id": "YZlaUzrXnf",
@@ -343,7 +367,11 @@
     "cost": 40,
     "cost_member": 30,
     "classes": [],
-    "places": 49
+    "places": 49,
+    "state": "invited",
+    "entry_start": "2026-02-08",
+    "entry_end": "2026-03-01",
+    "entries": 46
   },
   {
     "id": "XgGcS-KOPY",
@@ -462,7 +490,11 @@
         ]
       }
     ],
-    "places": 100
+    "places": 100,
+    "state": "invited",
+    "entry_start": "2026-02-07",
+    "entry_end": "2026-02-28",
+    "entries": 85
   },
   {
     "id": "tk-r-xik3l",
@@ -532,7 +564,11 @@
         "class": "ALO"
       }
     ],
-    "places": 60
+    "places": 60,
+    "state": "invited",
+    "entry_start": "2026-02-08",
+    "entry_end": "2026-03-01",
+    "entries": 41
   },
   {
     "id": "IB9wwxoheD",
@@ -571,7 +607,11 @@
     "cost": 38,
     "cost_member": "",
     "classes": [],
-    "places": 0
+    "places": 0,
+    "state": "tentative",
+    "entry_start": "2026-02-14",
+    "entry_end": "2026-03-14",
+    "entries": null
   },
   {
     "id": "ZoEzlsFXdN",
@@ -613,7 +653,11 @@
       "normal": 11
     },
     "classes": [],
-    "places": 400
+    "places": 400,
+    "state": "invited",
+    "entry_start": "2026-03-01",
+    "entry_end": "2026-03-27",
+    "entries": 17
   },
   {
     "id": "2hHHLi087d",
@@ -655,7 +699,11 @@
       "normal": 11
     },
     "classes": [],
-    "places": 400
+    "places": 400,
+    "state": "invited",
+    "entry_start": "2026-03-01",
+    "entry_end": "2026-03-27",
+    "entries": 173
   },
   {
     "id": "FbsDBcoJtd",
@@ -697,7 +745,11 @@
       "normal": 11
     },
     "classes": [],
-    "places": 400
+    "places": 400,
+    "state": "invited",
+    "entry_start": "2026-03-01",
+    "entry_end": "2026-03-27",
+    "entries": 123
   },
   {
     "id": "D7e_feZI8u",
@@ -739,7 +791,11 @@
       "normal": 11
     },
     "classes": [],
-    "places": 400
+    "places": 400,
+    "state": "invited",
+    "entry_start": "2026-03-01",
+    "entry_end": "2026-03-27",
+    "entries": 46
   },
   {
     "id": "U1-iVA9wkQ",
@@ -832,7 +888,11 @@
         "members": 0
       }
     ],
-    "places": 49
+    "places": 49,
+    "state": "invited",
+    "entry_start": "2026-03-09",
+    "entry_end": "2026-03-24",
+    "entries": 43
   },
   {
     "id": "Us3GOKBjVH",
@@ -874,7 +934,11 @@
       "normal": 11
     },
     "classes": [],
-    "places": 400
+    "places": 400,
+    "state": "invited",
+    "entry_start": "2026-03-01",
+    "entry_end": "2026-03-27",
+    "entries": 119
   },
   {
     "id": "Tmymw9iBHe",
@@ -916,7 +980,11 @@
       "normal": 11
     },
     "classes": [],
-    "places": 400
+    "places": 400,
+    "state": "invited",
+    "entry_start": "2026-03-01",
+    "entry_end": "2026-03-27",
+    "entries": 74
   },
   {
     "id": "9RQkzAjNZr",
@@ -1055,7 +1123,11 @@
         "class": "VOI"
       }
     ],
-    "places": 100
+    "places": 100,
+    "state": "invited",
+    "entry_start": "2026-02-28",
+    "entry_end": "2026-03-29",
+    "entries": 63
   },
   {
     "id": "Pp3C-y-Vik",
@@ -1117,7 +1189,11 @@
         "class": "VOI"
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "invited",
+    "entry_start": "2026-03-30",
+    "entry_end": "2026-04-12",
+    "entries": 86
   },
   {
     "id": "SXH9kesxN_",
@@ -1179,7 +1255,11 @@
         "class": "VOI"
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "invited",
+    "entry_start": "2026-03-30",
+    "entry_end": "2026-04-12",
+    "entries": 87
   },
   {
     "id": "bkpL41Jyde",
@@ -1259,7 +1339,11 @@
         "entries": 32
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "invited",
+    "entry_start": "2026-03-30",
+    "entry_end": "2026-04-19",
+    "entries": 70
   },
   {
     "id": "ATZHfV0C0O",
@@ -1324,7 +1408,11 @@
         "judge": []
       }
     ],
-    "places": 70
+    "places": 70,
+    "state": "invited",
+    "entry_start": "2026-03-14",
+    "entry_end": "2026-04-04",
+    "entries": 64
   },
   {
     "id": "9D7hTGThMQ",
@@ -1405,7 +1493,11 @@
         "class": "AVO"
       }
     ],
-    "places": 23
+    "places": 23,
+    "state": "invited",
+    "entry_start": "2026-04-13",
+    "entry_end": "2026-04-20",
+    "entries": 19
   },
   {
     "id": "NddOmq0ozi",
@@ -1470,7 +1562,11 @@
         "date": "2026-04-26T00:00:00.000+03:00"
       }
     ],
-    "places": 70
+    "places": 70,
+    "state": "invited",
+    "entry_start": "2026-03-15",
+    "entry_end": "2026-04-05",
+    "entries": 60
   },
   {
     "id": "GLehAc7Klz",
@@ -1505,7 +1601,11 @@
       "normal": 70
     },
     "classes": [],
-    "places": 22
+    "places": 22,
+    "state": "invited",
+    "entry_start": "2026-04-06",
+    "entry_end": "2026-04-12",
+    "entries": 21
   },
   {
     "id": "HZhwmMJpCm",
@@ -1564,7 +1664,11 @@
         "places": 19
       }
     ],
-    "places": 29
+    "places": 29,
+    "state": "invited",
+    "entry_start": "2026-03-30",
+    "entry_end": "2026-04-27",
+    "entries": 26
   },
   {
     "id": "U4g68_OLbT",
@@ -1624,7 +1728,11 @@
         "state": "invited"
       }
     ],
-    "places": 40
+    "places": 40,
+    "state": "invited",
+    "entry_start": "2026-03-22",
+    "entry_end": "2026-04-12",
+    "entries": 38
   },
   {
     "id": "vti7eDjv0H",
@@ -1669,7 +1777,11 @@
         "judge": []
       }
     ],
-    "places": 28
+    "places": 28,
+    "state": "cancelled",
+    "entry_start": "2026-03-22",
+    "entry_end": "2026-04-12",
+    "entries": null
   },
   {
     "id": "1907V2MHSY",
@@ -1729,7 +1841,11 @@
         "class": "VOI"
       }
     ],
-    "places": 40
+    "places": 40,
+    "state": "invited",
+    "entry_start": "2026-03-28",
+    "entry_end": "2026-04-18",
+    "entries": 39
   },
   {
     "id": "0ecIQ_ZnTb",
@@ -1763,7 +1879,11 @@
     "cost": 50,
     "cost_member": 35,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-03-28",
+    "entry_end": "2026-04-19",
+    "entries": 20
   },
   {
     "id": "_oW8DAi2h2",
@@ -1860,7 +1980,11 @@
         ]
       }
     ],
-    "places": 35
+    "places": 35,
+    "state": "invited",
+    "entry_start": "2026-04-01",
+    "entry_end": "2026-05-02",
+    "entries": 38
   },
   {
     "id": "enqA1YUQs9",
@@ -1917,7 +2041,11 @@
         "members": 11
       }
     ],
-    "places": 40
+    "places": 40,
+    "state": "invited",
+    "entry_start": "2026-03-29",
+    "entry_end": "2026-04-22",
+    "entries": 39
   },
   {
     "id": "2GkNt_zYt7",
@@ -1951,7 +2079,11 @@
     "cost": 50,
     "cost_member": 40,
     "classes": [],
-    "places": 8
+    "places": 8,
+    "state": "invited",
+    "entry_start": "2026-04-01",
+    "entry_end": "2026-04-22",
+    "entries": 18
   },
   {
     "id": "q4ZXOOLG84",
@@ -1995,7 +2127,11 @@
       "normal": 45
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-02",
+    "entry_end": "2026-04-23",
+    "entries": 21
   },
   {
     "id": "gDp-T4iQeR",
@@ -2029,7 +2165,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-02",
+    "entry_end": "2026-04-23",
+    "entries": 17
   },
   {
     "id": "x7xmxPDf2S",
@@ -2094,7 +2234,11 @@
         "class": "VOI"
       }
     ],
-    "places": 120
+    "places": 120,
+    "state": "invited",
+    "entry_start": "2026-04-04",
+    "entry_end": "2026-05-09",
+    "entries": 55
   },
   {
     "id": "uCwt8nR9lf",
@@ -2144,7 +2288,11 @@
         "entries": 19
       }
     ],
-    "places": 30
+    "places": 30,
+    "state": "invited",
+    "entry_start": "2026-04-04",
+    "entry_end": "2026-04-25",
+    "entries": 41
   },
   {
     "id": "RejQXHSIRV",
@@ -2194,7 +2342,11 @@
         "places": 15
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-27",
+    "entry_end": "2026-05-10",
+    "entries": 23
   },
   {
     "id": "ETUKXs-pU-",
@@ -2242,7 +2394,11 @@
         "date": "2026-05-16T00:00:00.000+03:00"
       }
     ],
-    "places": 10
+    "places": 10,
+    "state": "invited",
+    "entry_start": "2026-04-04",
+    "entry_end": "2026-04-25",
+    "entries": 12
   },
   {
     "id": "UUu5hS1kLk",
@@ -2282,7 +2438,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-16",
+    "entry_end": "2026-05-07",
+    "entries": 14
   },
   {
     "id": "KWG97H7W9K",
@@ -2332,7 +2492,11 @@
         ]
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-08",
+    "entry_end": "2026-04-25",
+    "entries": 24
   },
   {
     "id": "S9eApVyOX_",
@@ -2382,7 +2546,11 @@
         "state": "invited"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-08",
+    "entry_end": "2026-05-10",
+    "entries": 15
   },
   {
     "id": "KXSM-pJcCP",
@@ -2418,7 +2586,11 @@
     },
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-15",
+    "entry_end": "2026-05-15",
+    "entries": 10
   },
   {
     "id": "rkvT5zvskr",
@@ -2468,7 +2640,11 @@
         "class": "ALO"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-27",
+    "entry_end": "2026-05-10",
+    "entries": 17
   },
   {
     "id": "hEs3ASMLMr",
@@ -2532,7 +2708,11 @@
         "members": 8
       }
     ],
-    "places": 40
+    "places": 40,
+    "state": "invited",
+    "entry_start": "2026-04-04",
+    "entry_end": "2026-04-25",
+    "entries": 44
   },
   {
     "id": "IazQTYhooh",
@@ -2654,7 +2834,11 @@
         ]
       }
     ],
-    "places": 45
+    "places": 45,
+    "state": "invited",
+    "entry_start": "2026-05-06",
+    "entry_end": "2026-05-17",
+    "entries": 32
   },
   {
     "id": "RVxnscvb6K",
@@ -2688,7 +2872,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-18",
+    "entry_end": "2026-05-17",
+    "entries": 16
   },
   {
     "id": "movUaPHtsc",
@@ -2738,7 +2926,11 @@
         "entries": 16
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-11",
+    "entry_end": "2026-05-07",
+    "entries": 16
   },
   {
     "id": "UK0QkdcRqd",
@@ -2788,7 +2980,11 @@
         "date": "2026-05-23T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-19",
+    "entry_end": "2026-05-10",
+    "entries": 17
   },
   {
     "id": "z-JFSxIImS",
@@ -2822,7 +3018,11 @@
     "cost": 45,
     "cost_member": 35,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-12",
+    "entry_end": "2026-05-15",
+    "entries": 17
   },
   {
     "id": "B4G0mGqjh5",
@@ -2860,7 +3060,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-12",
+    "entry_end": "2026-05-03",
+    "entries": 23
   },
   {
     "id": "Bue5qvauL6",
@@ -2898,7 +3102,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 8
+    "places": 8,
+    "state": "invited",
+    "entry_start": "2026-05-04",
+    "entry_end": "2026-05-17",
+    "entries": 12
   },
   {
     "id": "lXiXNlXido",
@@ -2948,7 +3156,11 @@
         "state": "invited"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-19",
+    "entry_end": "2026-05-15",
+    "entries": 15
   },
   {
     "id": "4ihrmTZLYL",
@@ -2982,7 +3194,11 @@
     "cost": 50,
     "cost_member": "",
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-04",
+    "entry_end": "2026-05-22",
+    "entries": 16
   },
   {
     "id": "sGFaCKVf17",
@@ -3016,7 +3232,11 @@
     "cost": 48,
     "cost_member": 42,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-19",
+    "entry_end": "2026-05-15",
+    "entries": 19
   },
   {
     "id": "L6y02rN3ni",
@@ -3047,7 +3267,11 @@
     "cost": 45,
     "cost_member": 40,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-26",
+    "entry_end": "2026-05-24",
+    "entries": 16
   },
   {
     "id": "gfcK5iN1gg",
@@ -3086,7 +3310,11 @@
       "normal": 42
     },
     "classes": [],
-    "places": 18
+    "places": 18,
+    "state": "invited",
+    "entry_start": "2026-04-28",
+    "entry_end": "2026-05-19",
+    "entries": 21
   },
   {
     "id": "ApBoGfm9Yo",
@@ -3124,7 +3352,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-24",
+    "entry_end": "2026-05-15",
+    "entries": 19
   },
   {
     "id": "f05XxSTOjh",
@@ -3189,7 +3421,11 @@
         "date": "2026-06-06T21:00:00.000Z"
       }
     ],
-    "places": 31
+    "places": 31,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-05-24",
+    "entries": 29
   },
   {
     "id": "tg1gk7pjZk",
@@ -3227,7 +3463,11 @@
       "normal": 50
     },
     "classes": [],
-    "places": 8
+    "places": 8,
+    "state": "confirmed",
+    "entry_start": "2026-04-27",
+    "entry_end": "2026-05-16",
+    "entries": 9
   },
   {
     "id": "xCKkbWvzGs",
@@ -3265,7 +3505,11 @@
       "normal": 45
     },
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-05-16",
+    "entries": 31
   },
   {
     "id": "tmyJdZju1_",
@@ -3299,7 +3543,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-05-16",
+    "entries": 14
   },
   {
     "id": "DS4hbLeTX9",
@@ -3364,7 +3612,11 @@
         "state": "invited"
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "invited",
+    "entry_start": "2026-05-01",
+    "entry_end": "2026-05-24",
+    "entries": 78
   },
   {
     "id": "xp1GOLLh2i",
@@ -3433,7 +3685,11 @@
         "class": "AVO"
       }
     ],
-    "places": 28
+    "places": 28,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-05-24",
+    "entries": 26
   },
   {
     "id": "LATfZTOHkV",
@@ -3486,7 +3742,11 @@
       }
     },
     "classes": [],
-    "places": 24
+    "places": 24,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-06-01",
+    "entries": 8
   },
   {
     "id": "XNnIwzbuwm",
@@ -3540,7 +3800,11 @@
         ]
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-05-31",
+    "entries": 14
   },
   {
     "id": "z-cc5mFj77",
@@ -3574,7 +3838,11 @@
     "cost": 45,
     "cost_member": 40,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-26",
+    "entry_end": "2026-05-18",
+    "entries": 17
   },
   {
     "id": "jHSQCM8RsZ",
@@ -3624,7 +3892,11 @@
         "date": "2026-06-06T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-26",
+    "entry_end": "2026-05-26",
+    "entries": 18
   },
   {
     "id": "bn8pKxXLNN",
@@ -3658,7 +3930,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-04-26",
+    "entry_end": "2026-05-19",
+    "entries": 14
   },
   {
     "id": "Y13r6xkn6Y",
@@ -3714,7 +3990,11 @@
         ]
       }
     ],
-    "places": 7
+    "places": 7,
+    "state": "confirmed",
+    "entry_start": "2026-04-27",
+    "entry_end": "2026-05-16",
+    "entries": 3
   },
   {
     "id": "VuUQ5bn4Hy",
@@ -3748,7 +4028,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 10
+    "places": 10,
+    "state": "invited",
+    "entry_start": "2026-05-01",
+    "entry_end": "2026-05-22",
+    "entries": 12
   },
   {
     "id": "wYYRxz56HK",
@@ -3782,7 +4066,11 @@
     "cost": 55,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-18",
+    "entry_end": "2026-05-31",
+    "entries": 17
   },
   {
     "id": "G3Rx_dTePc",
@@ -3854,7 +4142,11 @@
         ]
       }
     ],
-    "places": 23
+    "places": 23,
+    "state": "confirmed",
+    "entry_start": "2026-05-02",
+    "entry_end": "2026-05-23",
+    "entries": 15
   },
   {
     "id": "8-18OiQaz_",
@@ -3904,7 +4196,11 @@
         ]
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-02",
+    "entry_end": "2026-05-23",
+    "entries": 16
   },
   {
     "id": "SKlngAsDXt",
@@ -3938,7 +4234,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-02",
+    "entry_end": "2026-05-26",
+    "entries": 16
   },
   {
     "id": "oKw1W6TX5s",
@@ -3972,7 +4272,11 @@
     "cost": 45,
     "cost_member": 40,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-02",
+    "entry_end": "2026-05-31",
+    "entries": 16
   },
   {
     "id": "Q1BRHmQDsB",
@@ -4032,7 +4336,11 @@
         "state": "invited"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-02",
+    "entry_end": "2026-05-23",
+    "entries": 18
   },
   {
     "id": "v-PPfTVDDX",
@@ -4097,7 +4405,11 @@
         "class": "VOI"
       }
     ],
-    "places": 24
+    "places": 24,
+    "state": "invited",
+    "entry_start": "2026-05-02",
+    "entry_end": "2026-05-23",
+    "entries": 27
   },
   {
     "id": "agWgijs8UL",
@@ -4147,7 +4459,11 @@
         "date": "2026-06-12T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-18",
+    "entry_end": "2026-05-31",
+    "entries": 22
   },
   {
     "id": "GTURqOc5EI",
@@ -4219,7 +4535,11 @@
         "places": 12
       }
     ],
-    "places": 27
+    "places": 27,
+    "state": "invited",
+    "entry_start": "2026-05-09",
+    "entry_end": "2026-05-30",
+    "entries": 38
   },
   {
     "id": "bmdwwNGlWI",
@@ -4269,7 +4589,11 @@
         "date": "2026-06-13T21:00:00.000Z"
       }
     ],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-18",
+    "entry_end": "2026-05-31",
+    "entries": 17
   },
   {
     "id": "7IwGELM6kM",
@@ -4329,7 +4653,11 @@
         "members": 15
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-02",
+    "entry_end": "2026-05-23",
+    "entries": 17
   },
   {
     "id": "iOzlvFKnzR",
@@ -4363,7 +4691,11 @@
     "cost": 50,
     "cost_member": 40,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-03",
+    "entry_end": "2026-05-24",
+    "entries": 16
   },
   {
     "id": "zqnR4FWcmo",
@@ -4417,7 +4749,11 @@
         "class": "ALO"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-18",
+    "entry_end": "2026-05-31",
+    "entries": 25
   },
   {
     "id": "ivJRF7Go_0",
@@ -4489,7 +4825,11 @@
         "date": "2026-06-13T21:00:00.000Z"
       }
     ],
-    "places": 30
+    "places": 30,
+    "state": "invited",
+    "entry_start": "2026-05-09",
+    "entry_end": "2026-05-30",
+    "entries": 29
   },
   {
     "id": "fyity5e_c6",
@@ -4523,7 +4863,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 10
+    "places": 10,
+    "state": "invited",
+    "entry_start": "2026-05-05",
+    "entry_end": "2026-05-26",
+    "entries": 13
   },
   {
     "id": "K-2ctyP50d",
@@ -4561,7 +4905,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 8
+    "places": 8,
+    "state": "invited",
+    "entry_start": "2026-06-07",
+    "entry_end": "2026-06-17",
+    "entries": 7
   },
   {
     "id": "XCsNEQYPD1",
@@ -4615,7 +4963,11 @@
         "members": 23
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-16",
+    "entry_end": "2026-06-06",
+    "entries": 27
   },
   {
     "id": "Fp8LJjclXU",
@@ -4649,7 +5001,11 @@
     "cost": 45,
     "cost_member": 40,
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "invited",
+    "entry_start": "2026-05-25",
+    "entry_end": "2026-06-14",
+    "entries": 32
   },
   {
     "id": "UWcCAxfpIi",
@@ -4736,7 +5092,11 @@
         "state": "invited"
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "invited",
+    "entry_start": "2026-05-16",
+    "entry_end": "2026-06-12",
+    "entries": 35
   },
   {
     "id": "54UJN0RSx1",
@@ -4821,7 +5181,11 @@
         "entries": 40
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "invited",
+    "entry_start": "2026-05-17",
+    "entry_end": "2026-06-07",
+    "entries": 89
   },
   {
     "id": "gRWvi5ISGU",
@@ -4852,7 +5216,11 @@
     "cost": 55,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-06-08",
+    "entry_end": "2026-06-24",
+    "entries": 22
   },
   {
     "id": "t2Q9aDg2TG",
@@ -4902,7 +5270,11 @@
         "places": 12
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "invited",
+    "entry_start": "2026-05-23",
+    "entry_end": "2026-06-13",
+    "entries": 17
   },
   {
     "id": "VGikLPPJuA",
@@ -4984,7 +5356,11 @@
         "date": "2026-07-04T21:00:00.000Z"
       }
     ],
-    "places": 48
+    "places": 48,
+    "state": "invited",
+    "entry_start": "2026-06-01",
+    "entry_end": "2026-06-26",
+    "entries": 58
   },
   {
     "id": "ALwd0AtZRm",
@@ -5046,7 +5422,11 @@
         "date": "2026-07-04T00:00:00.000+03:00"
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "invited",
+    "entry_start": "2026-05-23",
+    "entry_end": "2026-06-21",
+    "entries": 71
   },
   {
     "id": "5XogaQ28xp",
@@ -5117,7 +5497,11 @@
         "entries": 8
       }
     ],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-24",
+    "entry_end": "2026-06-14",
+    "entries": 20
   },
   {
     "id": "5K3QDCrt-z",
@@ -5173,7 +5557,11 @@
         "entries": 21
       }
     ],
-    "places": 50
+    "places": 50,
+    "state": "invited",
+    "entry_start": "2026-05-26",
+    "entry_end": "2026-07-01",
+    "entries": 52
   },
   {
     "id": "wPA1TyGCgR",
@@ -5219,7 +5607,11 @@
         "state": "invited"
       }
     ],
-    "places": 30
+    "places": 30,
+    "state": "invited",
+    "entry_start": "2026-05-26",
+    "entry_end": "2026-07-01",
+    "entries": 22
   },
   {
     "id": "hJ3Gm7I7cQ",
@@ -5257,7 +5649,11 @@
       "normal": 45
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-30",
+    "entry_end": "2026-06-20",
+    "entries": 16
   },
   {
     "id": "WOhqjnQ57j",
@@ -5307,7 +5703,11 @@
         "date": "2026-07-10T21:00:00.000Z"
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "invited",
+    "entry_start": "2026-06-08",
+    "entry_end": "2026-06-28",
+    "entries": 16
   },
   {
     "id": "UPhbEoSz3s",
@@ -5357,7 +5757,11 @@
         "entries": 19
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-06-08",
+    "entry_end": "2026-06-28",
+    "entries": 19
   },
   {
     "id": "1-g4w1AdKo",
@@ -5407,7 +5811,11 @@
         ]
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "invited",
+    "entry_start": "2026-06-15",
+    "entry_end": "2026-06-28",
+    "entries": 14
   },
   {
     "id": "vPc-8wwq4q",
@@ -5461,7 +5869,11 @@
         "state": "invited"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-30",
+    "entry_end": "2026-06-21",
+    "entries": 15
   },
   {
     "id": "0GZ7HbLgdv",
@@ -5526,7 +5938,11 @@
         "members": 24
       }
     ],
-    "places": 30
+    "places": 30,
+    "state": "invited",
+    "entry_start": "2026-05-30",
+    "entry_end": "2026-06-21",
+    "entries": 43
   },
   {
     "id": "Vn4jYHR6z-",
@@ -5580,7 +5996,11 @@
         "class": "ALO"
       }
     ],
-    "places": 8
+    "places": 8,
+    "state": "invited",
+    "entry_start": "2026-05-30",
+    "entry_end": "2026-06-20",
+    "entries": 9
   },
   {
     "id": "bKwiJCyQ3S",
@@ -5614,7 +6034,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-05-30",
+    "entry_end": "2026-06-20",
+    "entries": 18
   },
   {
     "id": "oOxIQk9h4C",
@@ -5664,7 +6088,11 @@
         ]
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "invited",
+    "entry_start": "2026-06-08",
+    "entry_end": "2026-06-28",
+    "entries": 20
   },
   {
     "id": "5pXkywjXME",
@@ -5714,7 +6142,11 @@
         "places": 12
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "invited",
+    "entry_start": "2026-05-31",
+    "entry_end": "2026-06-21",
+    "entries": 14
   },
   {
     "id": "0Kzg6gCRqz",
@@ -5764,7 +6196,11 @@
         "state": "invited"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-06-08",
+    "entry_end": "2026-06-28",
+    "entries": 13
   },
   {
     "id": "mrqpTI_iiI",
@@ -5814,7 +6250,11 @@
         ]
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-05-31",
+    "entry_end": "2026-06-21",
+    "entries": 19
   },
   {
     "id": "3-mjEJipXW",
@@ -5849,7 +6289,11 @@
     "cost": 47,
     "cost_member": 42,
     "classes": [],
-    "places": 24
+    "places": 24,
+    "state": "invited",
+    "entry_start": "2026-06-02",
+    "entry_end": "2026-06-23",
+    "entries": 28
   },
   {
     "id": "9fx9pfp4qe",
@@ -5887,7 +6331,11 @@
       "normal": 45
     },
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "invited",
+    "entry_start": "2026-06-06",
+    "entry_end": "2026-07-05",
+    "entries": 30
   },
   {
     "id": "zQfGEhNvl5",
@@ -5958,7 +6406,11 @@
         "class": "VOI"
       }
     ],
-    "places": 14
+    "places": 14,
+    "state": "invited",
+    "entry_start": "2026-06-06",
+    "entry_end": "2026-06-27",
+    "entries": 20
   },
   {
     "id": "IsWo1GqRdb",
@@ -6027,7 +6479,11 @@
         "state": "invited"
       }
     ],
-    "places": 24
+    "places": 24,
+    "state": "invited",
+    "entry_start": "2026-06-06",
+    "entry_end": "2026-06-27",
+    "entries": 27
   },
   {
     "id": "bCgHsFJAc_",
@@ -6127,7 +6583,11 @@
         "class": "VOI"
       }
     ],
-    "places": 59
+    "places": 59,
+    "state": "invited",
+    "entry_start": "2026-06-06",
+    "entry_end": "2026-06-27",
+    "entries": 77
   },
   {
     "id": "kqiUEs2D6o",
@@ -6177,7 +6637,11 @@
         "date": "2026-07-18T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-06-07",
+    "entry_end": "2026-06-28",
+    "entries": 17
   },
   {
     "id": "77Tvpl6Z1f",
@@ -6243,7 +6707,11 @@
         "entries": 23
       }
     ],
-    "places": 24
+    "places": 24,
+    "state": "invited",
+    "entry_start": "2026-06-13",
+    "entry_end": "2026-07-04",
+    "entries": 23
   },
   {
     "id": "nAznMMDhLI",
@@ -6297,7 +6765,11 @@
         "entries": 19
       }
     ],
-    "places": 14
+    "places": 14,
+    "state": "invited",
+    "entry_start": "2026-06-13",
+    "entry_end": "2026-07-04",
+    "entries": 19
   },
   {
     "id": "Kd8QOHcIXy",
@@ -6336,37 +6808,41 @@
     },
     "classes": [
       {
-        "entries": 9,
-        "judge": [
-          {
-            "official": true,
-            "name": "Tenhunen Matti",
-            "id": 881593
-          }
-        ],
-        "date": "2026-07-25T21:00:00.000Z",
         "state": "invited",
-        "places": 8,
-        "members": 2,
-        "class": "AVO"
-      },
-      {
-        "members": 6,
         "judge": [
           {
-            "id": 881593,
             "name": "Tenhunen Matti",
+            "id": 881593,
             "official": true
           }
         ],
-        "class": "ALO",
-        "entries": 15,
+        "entries": 9,
+        "class": "AVO",
+        "places": 8,
+        "members": 2,
+        "date": "2026-07-25T21:00:00.000Z"
+      },
+      {
+        "members": 6,
         "date": "2026-07-25T21:00:00.000Z",
         "places": 8,
+        "judge": [
+          {
+            "id": 881593,
+            "official": true,
+            "name": "Tenhunen Matti"
+          }
+        ],
+        "class": "ALO",
+        "entries": 14,
         "state": "invited"
       }
     ],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-06-14",
+    "entry_end": "2026-07-05",
+    "entries": 23
   },
   {
     "id": "wxKtVCdAy7",
@@ -6408,96 +6884,100 @@
     "classes": [
       {
         "places": 21,
-        "state": "picked",
-        "class": "ALO",
-        "judge": [
-          {
-            "name": "Hietikko Vesa",
-            "official": true,
-            "id": 584168
-          }
-        ],
+        "state": "invited",
         "entries": 46,
-        "members": 35,
-        "date": "2026-07-30T21:00:00.000Z"
-      },
-      {
-        "entries": 27,
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "id": 4053791,
-            "official": true
-          }
-        ],
-        "class": "AVO",
-        "date": "2026-07-30T21:00:00.000Z",
-        "places": 15,
-        "state": "picked",
-        "members": 14
-      },
-      {
-        "places": 12,
-        "state": "picked",
-        "class": "VOI",
-        "date": "2026-07-30T21:00:00.000Z",
-        "members": 15,
-        "judge": [
-          {
-            "name": "Oikarinen Jyrki",
-            "id": 4042184,
-            "official": true
-          }
-        ],
-        "entries": 32
-      },
-      {
         "class": "ALO",
-        "places": 15,
+        "members": 35,
+        "date": "2026-07-30T21:00:00.000Z",
         "judge": [
           {
             "id": 584168,
-            "official": true,
-            "name": "Hietikko Vesa"
-          }
-        ],
-        "members": 35,
-        "date": "2026-07-31T21:00:00.000Z",
-        "state": "picked",
-        "entries": 46
-      },
-      {
-        "date": "2026-07-31T21:00:00.000Z",
-        "places": 15,
-        "state": "picked",
-        "class": "AVO",
-        "entries": 27,
-        "members": 14,
-        "judge": [
-          {
-            "name": "Puttonen Pasi-Petteri",
-            "id": 4053791,
+            "name": "Hietikko Vesa",
             "official": true
           }
         ]
       },
       {
+        "entries": 27,
+        "class": "AVO",
         "judge": [
           {
-            "id": 4042184,
-            "name": "Oikarinen Jyrki",
-            "official": true
+            "official": true,
+            "name": "Puttonen Pasi-Petteri",
+            "id": 4053791
           }
         ],
-        "places": 12,
+        "places": 15,
+        "state": "invited",
+        "date": "2026-07-30T21:00:00.000Z",
+        "members": 14
+      },
+      {
+        "entries": 32,
+        "date": "2026-07-30T21:00:00.000Z",
+        "members": 15,
+        "judge": [
+          {
+            "official": true,
+            "id": 4042184,
+            "name": "Oikarinen Jyrki"
+          }
+        ],
         "class": "VOI",
+        "state": "invited",
+        "places": 12
+      },
+      {
+        "entries": 46,
+        "class": "ALO",
+        "judge": [
+          {
+            "official": true,
+            "id": 584168,
+            "name": "Hietikko Vesa"
+          }
+        ],
+        "members": 35,
+        "date": "2026-07-31T21:00:00.000Z",
+        "state": "invited",
+        "places": 15
+      },
+      {
+        "state": "invited",
+        "members": 14,
+        "places": 15,
+        "class": "AVO",
+        "entries": 27,
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "date": "2026-07-31T21:00:00.000Z"
+      },
+      {
+        "places": 12,
+        "judge": [
+          {
+            "official": true,
+            "name": "Oikarinen Jyrki",
+            "id": 4042184
+          }
+        ],
         "entries": 32,
         "members": 15,
-        "state": "picked",
-        "date": "2026-07-31T21:00:00.000Z"
+        "date": "2026-07-31T21:00:00.000Z",
+        "class": "VOI",
+        "state": "invited"
       }
     ],
-    "places": 90
+    "places": 90,
+    "state": "invited",
+    "entry_start": "2026-06-21",
+    "entry_end": "2026-07-12",
+    "entries": 105
   },
   {
     "id": "xoAuKA02nU",
@@ -6535,7 +7015,11 @@
       "normal": 47
     },
     "classes": [],
-    "places": 30
+    "places": 30,
+    "state": "invited",
+    "entry_start": "2026-06-21",
+    "entry_end": "2026-07-12",
+    "entries": 28
   },
   {
     "id": "2CpNLLyaZP",
@@ -6576,7 +7060,11 @@
       "normal": 55
     },
     "classes": [],
-    "places": 120
+    "places": 120,
+    "state": "invited",
+    "entry_start": "2026-06-20",
+    "entry_end": "2026-07-19",
+    "entries": 100
   },
   {
     "id": "0Ght7pj4fa",
@@ -6610,7 +7098,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-06-20",
+    "entry_end": "2026-07-11",
+    "entries": 19
   },
   {
     "id": "cK3GBpruwX",
@@ -6651,7 +7143,11 @@
       "normal": 65
     },
     "classes": [],
-    "places": 100
+    "places": 100,
+    "state": "invited",
+    "entry_start": "2026-06-20",
+    "entry_end": "2026-07-19",
+    "entries": 46
   },
   {
     "id": "_t1MXHUzne",
@@ -6705,7 +7201,11 @@
         "state": "invited"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-06-20",
+    "entry_end": "2026-07-11",
+    "entries": 20
   },
   {
     "id": "o48FcYsAdq",
@@ -6739,7 +7239,11 @@
     "cost": 50,
     "cost_member": 40,
     "classes": [],
-    "places": 8
+    "places": 8,
+    "state": "confirmed",
+    "entry_start": "2026-06-24",
+    "entry_end": "2026-07-15",
+    "entries": 15
   },
   {
     "id": "1oJd5d8pD1",
@@ -6774,7 +7278,11 @@
     "cost": 47,
     "cost_member": 42,
     "classes": [],
-    "places": 18
+    "places": 18,
+    "state": "picked",
+    "entry_start": "2026-06-24",
+    "entry_end": "2026-07-15",
+    "entries": 22
   },
   {
     "id": "IZIi3JY0rF",
@@ -6808,7 +7316,11 @@
     "cost": 48,
     "cost_member": 42,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "picked",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-20",
+    "entries": 19
   },
   {
     "id": "h-cY_US-jO",
@@ -6908,7 +7420,11 @@
         "entries": 24
       }
     ],
-    "places": 56
+    "places": 56,
+    "state": "confirmed",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-18",
+    "entries": 54
   },
   {
     "id": "_bakND2s8Q",
@@ -6977,7 +7493,11 @@
         "date": "2026-08-07T21:00:00.000Z"
       }
     ],
-    "places": 30
+    "places": 30,
+    "state": "picked",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-18",
+    "entries": 37
   },
   {
     "id": "lxLz9LeWi_",
@@ -7027,7 +7547,11 @@
         ]
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "picked",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-20",
+    "entries": 18
   },
   {
     "id": "rNjxHmwzjT",
@@ -7081,7 +7605,11 @@
         ]
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "picked",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-22",
+    "entries": 15
   },
   {
     "id": "lyfQxX4S4G",
@@ -7116,21 +7644,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-08-07T21:00:00.000Z",
-        "class": "VOI",
-        "places": 14,
-        "entries": 16,
-        "members": 7,
         "judge": [
           {
             "name": "Hukkanen Tuija",
             "official": true,
             "id": 554006
           }
-        ]
+        ],
+        "places": 14,
+        "date": "2026-08-07T21:00:00.000Z",
+        "class": "VOI",
+        "members": 9,
+        "entries": 19
       }
     ],
-    "places": 14
+    "places": 14,
+    "state": "confirmed",
+    "entry_start": "2026-07-13",
+    "entry_end": "2026-07-26",
+    "entries": 19
   },
   {
     "id": "BIVSB_I4Vj",
@@ -7189,7 +7721,11 @@
         "date": "2026-08-07T21:00:00.000Z"
       }
     ],
-    "places": 24
+    "places": 24,
+    "state": "confirmed",
+    "entry_start": "2026-07-06",
+    "entry_end": "2026-07-18",
+    "entries": 28
   },
   {
     "id": "TAst7Qrymb",
@@ -7239,7 +7775,11 @@
         "places": 14
       }
     ],
-    "places": 14
+    "places": 14,
+    "state": "picked",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-18",
+    "entries": 15
   },
   {
     "id": "IpUw_k3241",
@@ -7308,7 +7848,11 @@
         "class": "VOI"
       }
     ],
-    "places": 16
+    "places": 16,
+    "state": "picked",
+    "entry_start": "2026-06-28",
+    "entry_end": "2026-07-22",
+    "entries": 17
   },
   {
     "id": "7lkf4Zi7tJ",
@@ -7358,7 +7902,11 @@
         "entries": 24
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "picked",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-20",
+    "entries": 24
   },
   {
     "id": "ZqWv6O62Pu",
@@ -7426,7 +7974,11 @@
         "members": 10
       }
     ],
-    "places": 31
+    "places": 31,
+    "state": "confirmed",
+    "entry_start": "2026-07-06",
+    "entry_end": "2026-07-19",
+    "entries": 37
   },
   {
     "id": "kGBXKrKrE8",
@@ -7476,7 +8028,11 @@
         "date": "2026-08-08T21:00:00.000Z"
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "picked",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-20",
+    "entries": 23
   },
   {
     "id": "n5pRme6nRj",
@@ -7525,7 +8081,11 @@
         "date": "2026-08-08T21:00:00.000Z"
       }
     ],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-06-28",
+    "entry_end": "2026-07-26",
+    "entries": 10
   },
   {
     "id": "rfQoKtA7Y2",
@@ -7564,7 +8124,11 @@
       "normal": 95
     },
     "classes": [],
-    "places": 8
+    "places": 8,
+    "state": "confirmed",
+    "entry_start": "2026-07-14",
+    "entry_end": "2026-07-21",
+    "entries": 17
   },
   {
     "id": "gUtNIHnvjt",
@@ -7602,7 +8166,11 @@
       "normal": 45
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-20",
+    "entry_end": "2026-08-03",
+    "entries": 14
   },
   {
     "id": "dk158RLxJU",
@@ -7637,21 +8205,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "places": 15,
-        "entries": 24,
-        "date": "2026-08-14T21:00:00.000Z",
-        "class": "ALO",
+        "entries": 25,
         "judge": [
           {
-            "name": "Toskala Mika",
             "official": true,
+            "name": "Toskala Mika",
             "id": 697689
           }
         ],
-        "members": 18
+        "places": 15,
+        "class": "ALO",
+        "members": 19,
+        "date": "2026-08-14T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-07-04",
+    "entry_end": "2026-07-25",
+    "entries": 25
   },
   {
     "id": "rfjwYfMugE",
@@ -7697,7 +8269,11 @@
         "class": "AVO"
       }
     ],
-    "places": 40
+    "places": 40,
+    "state": "confirmed",
+    "entry_start": "2026-07-27",
+    "entry_end": "2026-08-09",
+    "entries": null
   },
   {
     "id": "Yvi-med09k",
@@ -7732,10 +8308,10 @@
     "cost_member": 45,
     "classes": [
       {
-        "entries": 19,
         "class": "ALO",
-        "date": "2026-08-14T21:00:00.000Z",
-        "members": 14,
+        "entries": 20,
+        "places": 15,
+        "members": 15,
         "judge": [
           {
             "name": "Puttonen Pasi-Petteri",
@@ -7743,10 +8319,14 @@
             "id": 4053791
           }
         ],
-        "places": 15
+        "date": "2026-08-14T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-07-13",
+    "entry_end": "2026-08-02",
+    "entries": 20
   },
   {
     "id": "lY2N3TS1rn",
@@ -7782,26 +8362,30 @@
     "cost_member": 50,
     "classes": [
       {
-        "places": 24,
-        "members": 0,
-        "class": "VOI",
-        "date": "2026-08-14T21:00:00.000Z",
-        "entries": 21,
         "judge": [
           {
             "official": true,
-            "id": 736508,
-            "name": "Hiltunen Taru"
+            "name": "Hiltunen Taru",
+            "id": 736508
           },
           {
+            "official": true,
             "name": "Hiltunen Niko",
-            "id": 644029,
-            "official": true
+            "id": 644029
           }
-        ]
+        ],
+        "members": 0,
+        "entries": 28,
+        "date": "2026-08-14T21:00:00.000Z",
+        "places": 24,
+        "class": "VOI"
       }
     ],
-    "places": 24
+    "places": 24,
+    "state": "confirmed",
+    "entry_start": "2026-07-04",
+    "entry_end": "2026-07-25",
+    "entries": 28
   },
   {
     "id": "kE-jd4AB9y",
@@ -7835,7 +8419,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-04",
+    "entry_end": "2026-07-25",
+    "entries": 20
   },
   {
     "id": "bA4Q4ti6b1",
@@ -7881,7 +8469,11 @@
         "members": 16
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-07-04",
+    "entry_end": "2026-07-25",
+    "entries": 26
   },
   {
     "id": "5SWy9ZSXe7",
@@ -7916,35 +8508,39 @@
     "cost_member": 50,
     "classes": [
       {
-        "members": 0,
         "date": "2026-08-14T21:00:00.000Z",
-        "entries": 16,
         "places": 12,
+        "entries": 19,
+        "class": "VOI",
+        "members": 0,
         "judge": [
           {
             "id": 4100231,
             "name": "Silvennoinen Kari",
             "official": true
           }
-        ],
-        "class": "VOI"
+        ]
       },
       {
-        "judge": [
-          {
-            "official": true,
-            "id": 4100231,
-            "name": "Silvennoinen Kari"
-          }
-        ],
-        "date": "2026-08-15T21:00:00.000Z",
-        "entries": 16,
+        "entries": 19,
+        "places": 12,
         "members": 0,
         "class": "VOI",
-        "places": 12
+        "date": "2026-08-15T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 4100231,
+            "official": true,
+            "name": "Silvennoinen Kari"
+          }
+        ]
       }
     ],
-    "places": 24
+    "places": 24,
+    "state": "confirmed",
+    "entry_start": "2026-07-04",
+    "entry_end": "2026-07-26",
+    "entries": 19
   },
   {
     "id": "PxJgE1weqZ",
@@ -7997,7 +8593,11 @@
         "entries": 2
       }
     ],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-16",
+    "entry_end": "2026-08-02",
+    "entries": 2
   },
   {
     "id": "8YV5JwN5_-",
@@ -8031,7 +8631,11 @@
     "cost": 55,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-27",
+    "entry_end": "2026-08-09",
+    "entries": null
   },
   {
     "id": "5kWqqC1o2N",
@@ -8067,7 +8671,11 @@
     },
     "cost_member": "",
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-05",
+    "entry_end": "2026-07-26",
+    "entries": 16
   },
   {
     "id": "e-1PcwEiqv",
@@ -8102,21 +8710,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "date": "2026-08-15T21:00:00.000Z",
-        "entries": 18,
         "places": 12,
+        "date": "2026-08-15T21:00:00.000Z",
         "judge": [
           {
             "id": 697689,
-            "name": "Toskala Mika",
-            "official": true
+            "official": true,
+            "name": "Toskala Mika"
           }
         ],
-        "class": "VOI",
-        "members": 13
+        "members": 14,
+        "entries": 19,
+        "class": "VOI"
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "confirmed",
+    "entry_start": "2026-07-05",
+    "entry_end": "2026-07-26",
+    "entries": 19
   },
   {
     "id": "4Rs17_Q95P",
@@ -8151,21 +8763,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "class": "ALO",
-        "members": 8,
-        "entries": 18,
+        "entries": 21,
         "date": "2026-08-15T21:00:00.000Z",
-        "places": 15,
         "judge": [
           {
-            "official": true,
             "name": "Hiltunen Niko",
+            "official": true,
             "id": 644029
           }
-        ]
+        ],
+        "members": 9,
+        "places": 15,
+        "class": "ALO"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-07-05",
+    "entry_end": "2026-07-26",
+    "entries": 21
   },
   {
     "id": "SZKtBO5RU2",
@@ -8214,7 +8830,11 @@
         "places": 15
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-07-13",
+    "entry_end": "2026-08-02",
+    "entries": 9
   },
   {
     "id": "omsNS0gK2y",
@@ -8223,7 +8843,7 @@
     "date": "16.08.2026",
     "date_sort": "2026-08-16T00:00:00+03:00",
     "end_date_sort": "2026-08-16T00:00:00+03:00",
-    "entry_date": "05.07.-26.07.",
+    "entry_date": "05.07.-10.08.",
     "location": "Pälkäne",
     "coordinates": [
       61.3371322,
@@ -8249,10 +8869,7 @@
     "cost_member": 45,
     "classes": [
       {
-        "entries": 11,
         "class": "AVO",
-        "places": 15,
-        "date": "2026-08-15T21:00:00.000Z",
         "judge": [
           {
             "official": true,
@@ -8260,10 +8877,17 @@
             "id": 850900
           }
         ],
-        "members": 8
+        "entries": 12,
+        "places": 15,
+        "date": "2026-08-15T21:00:00.000Z",
+        "members": 9
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-07-05",
+    "entry_end": "2026-08-10",
+    "entries": 12
   },
   {
     "id": "wkCuCx6BtX",
@@ -8312,7 +8936,11 @@
         "date": "2026-08-15T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-07-05",
+    "entry_end": "2026-07-26",
+    "entries": 9
   },
   {
     "id": "pwcvKWfwR2",
@@ -8346,7 +8974,11 @@
     "cost": 50,
     "cost_member": 40,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-05",
+    "entry_end": "2026-07-26",
+    "entries": 19
   },
   {
     "id": "97wxdX0TA8",
@@ -8415,7 +9047,11 @@
         "places": 8
       }
     ],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-18",
+    "entry_end": "2026-08-08",
+    "entries": 3
   },
   {
     "id": "7UmM8hKYof",
@@ -8474,7 +9110,11 @@
         "places": 40
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "confirmed",
+    "entry_start": "2026-08-01",
+    "entry_end": "2026-08-21",
+    "entries": null
   },
   {
     "id": "yKQhTNAQn6",
@@ -8514,7 +9154,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-07-27",
+    "entry_end": "2026-08-16",
+    "entries": null
   },
   {
     "id": "7F4FOTz0XI",
@@ -8563,7 +9207,11 @@
         "class": "VOI"
       }
     ],
-    "places": 14
+    "places": 14,
+    "state": "confirmed",
+    "entry_start": "2026-07-19",
+    "entry_end": "2026-08-09",
+    "entries": 2
   },
   {
     "id": "_yM9-IwU7B",
@@ -8601,10 +9249,32 @@
     "cost_member": "",
     "classes": [
       {
-        "groups": [
-          "ap"
+        "date": "2026-09-03T21:00:00.000Z",
+        "entries": 1,
+        "judge": [
+          {
+            "name": "Toskala Mika",
+            "official": true,
+            "id": 697689
+          },
+          {
+            "official": true,
+            "id": 850900,
+            "name": "Majuri Pasi"
+          }
         ],
         "class": "VOI",
+        "members": 0,
+        "places": 24,
+        "groups": [
+          "ap"
+        ]
+      },
+      {
+        "class": "VOI",
+        "date": "2026-09-04T21:00:00.000Z",
+        "entries": 1,
+        "members": 0,
         "judge": [
           {
             "name": "Toskala Mika",
@@ -8613,35 +9283,21 @@
           },
           {
             "official": true,
-            "id": 850900,
-            "name": "Majuri Pasi"
-          }
-        ],
-        "places": 24,
-        "date": "2026-09-03T21:00:00.000Z"
-      },
-      {
-        "judge": [
-          {
-            "official": true,
-            "name": "Toskala Mika",
-            "id": 697689
-          },
-          {
             "name": "Majuri Pasi",
-            "official": true,
             "id": 850900
           }
         ],
         "places": 24,
         "groups": [
           "ap"
-        ],
-        "class": "VOI",
-        "date": "2026-09-04T21:00:00.000Z"
+        ]
       }
     ],
-    "places": 48
+    "places": 48,
+    "state": "confirmed",
+    "entry_start": "2026-07-24",
+    "entry_end": "2026-08-20",
+    "entries": 1
   },
   {
     "id": "v9BG8fXoRF",
@@ -8675,7 +9331,11 @@
     "cost": 55,
     "cost_member": 45,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-08-17",
+    "entry_end": "2026-08-30",
+    "entries": 0
   },
   {
     "id": "s72M4aggIs",
@@ -8711,18 +9371,24 @@
     },
     "classes": [
       {
-        "date": "2026-09-05T00:00:00.000+03:00",
+        "entries": 1,
+        "class": "ALO",
         "judge": [
           {
-            "name": "Fontell Kari-Matti",
             "official": false,
+            "name": "Fontell Kari-Matti",
             "id": -1
           }
         ],
-        "class": "ALO"
+        "members": 1,
+        "date": "2026-09-05T00:00:00.000+03:00"
       }
     ],
-    "places": 20
+    "places": 20,
+    "state": "confirmed",
+    "entry_start": "2026-07-25",
+    "entry_end": "2026-08-15",
+    "entries": 1
   },
   {
     "id": "Jcmg4QClcN",
@@ -8756,7 +9422,11 @@
     "cost": 50,
     "cost_member": 40,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2026-07-25",
+    "entry_end": "2026-08-15",
+    "entries": null
   },
   {
     "id": "V5Pq8nhEa-",
@@ -8790,7 +9460,11 @@
     "cost": 50,
     "cost_member": 40,
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2026-07-26",
+    "entry_end": "2026-08-16",
+    "entries": 0
   },
   {
     "id": "HZKihWaD-m",
@@ -8844,7 +9518,11 @@
         "places": 7
       }
     ],
-    "places": 7
+    "places": 7,
+    "state": "confirmed",
+    "entry_start": "2026-08-17",
+    "entry_end": "2026-08-30",
+    "entries": null
   },
   {
     "id": "sYUuqvW46c",
@@ -8898,7 +9576,11 @@
         "class": "AVO"
       }
     ],
-    "places": 8
+    "places": 8,
+    "state": "confirmed",
+    "entry_start": "2026-08-17",
+    "entry_end": "2026-08-30",
+    "entries": null
   },
   {
     "id": "aUBoQnJYUs",
@@ -8947,7 +9629,11 @@
         "places": 15
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2026-08-01",
+    "entry_end": "2026-08-22",
+    "entries": 0
   },
   {
     "id": "9LuxiWMOY0",
@@ -9001,7 +9687,11 @@
         "date": "2026-09-11T21:00:00.000Z"
       }
     ],
-    "places": 28
+    "places": 28,
+    "state": "confirmed",
+    "entry_start": "2026-08-20",
+    "entry_end": "2026-09-04",
+    "entries": 0
   },
   {
     "id": "pSGSr3ChkO",
@@ -9039,7 +9729,11 @@
       "normal": 45
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "confirmed",
+    "entry_start": "2026-08-01",
+    "entry_end": "2026-08-22",
+    "entries": null
   },
   {
     "id": "d4lO-oRp8e",
@@ -9073,7 +9767,11 @@
     "cost": 50,
     "cost_member": 40,
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "confirmed",
+    "entry_start": "2026-08-01",
+    "entry_end": "2026-08-22",
+    "entries": null
   },
   {
     "id": "j6JbaXnyx3",
@@ -9124,7 +9822,11 @@
         "class": "VOI"
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "confirmed",
+    "entry_start": "2026-08-01",
+    "entry_end": "2026-08-22",
+    "entries": null
   },
   {
     "id": "l7II9ZIowI",
@@ -9172,7 +9874,11 @@
         "judge": []
       }
     ],
-    "places": 28
+    "places": 28,
+    "state": "confirmed",
+    "entry_start": "2026-08-02",
+    "entry_end": "2026-08-23",
+    "entries": null
   },
   {
     "id": "X-V45rJLU2",
@@ -9241,7 +9947,11 @@
         "class": "VOI"
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2026-08-02",
+    "entry_end": "2026-08-23",
+    "entries": 0
   },
   {
     "id": "U07WYqaCki",
@@ -9279,7 +9989,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2026-08-02",
+    "entry_end": "2026-08-23",
+    "entries": null
   },
   {
     "id": "NSkd6Qvhcb",
@@ -9317,7 +10031,11 @@
       "normal": 35
     },
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "confirmed",
+    "entry_start": "2026-08-08",
+    "entry_end": "2026-08-29",
+    "entries": null
   },
   {
     "id": "sgEgvCN7nZ",
@@ -9352,7 +10070,11 @@
     "cost": "",
     "cost_member": "",
     "classes": [],
-    "places": null
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2026-08-08",
+    "entry_end": "2026-08-29",
+    "entries": null
   },
   {
     "id": "bikzngY96n",
@@ -9399,7 +10121,11 @@
         "date": "2026-09-18T21:00:00.000Z"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2026-08-18",
+    "entry_end": "2026-09-08",
+    "entries": null
   },
   {
     "id": "WUIDiiwETw",
@@ -9447,7 +10173,11 @@
         "places": 15
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "confirmed",
+    "entry_start": "2026-08-17",
+    "entry_end": "2026-09-07",
+    "entries": null
   },
   {
     "id": "Ts80lu7S31",
@@ -9493,7 +10223,11 @@
         "date": "2026-09-20T00:00:00.000+03:00"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2026-08-18",
+    "entry_end": "2026-09-08",
+    "entries": 0
   },
   {
     "id": "ayp8ZrnlMU",
@@ -9528,7 +10262,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2026-08-17",
+    "entry_end": "2026-09-07",
+    "entries": null
   },
   {
     "id": "I-1VjpAPtN",
@@ -9579,7 +10317,11 @@
         "class": "VOI"
       }
     ],
-    "places": 12
+    "places": 12,
+    "state": "confirmed",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": null
   },
   {
     "id": "LrTMU442O1",
@@ -9613,7 +10355,11 @@
     "cost": "",
     "cost_member": "",
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "tentative",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": null
   },
   {
     "id": "SxFikIUEfq",
@@ -9659,7 +10405,11 @@
         "class": "ALO"
       }
     ],
-    "places": 15
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": null
   },
   {
     "id": "GVzUre9exB",
@@ -9716,7 +10466,11 @@
         ]
       }
     ],
-    "places": 24
+    "places": 24,
+    "state": "confirmed",
+    "entry_start": "2026-08-17",
+    "entry_end": "2026-09-07",
+    "entries": null
   },
   {
     "id": "FJpsJK89sU",
@@ -9750,7 +10504,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "tentative",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": null
   },
   {
     "id": "wni2Z9SrG8",
@@ -9816,7 +10574,11 @@
         "date": "2026-09-25T21:00:00.000Z"
       }
     ],
-    "places": null
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": null
   },
   {
     "id": "AQem2RQsgG",
@@ -9862,7 +10624,11 @@
         "date": "2026-09-26T00:00:00.000+03:00"
       }
     ],
-    "places": null
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": null
   },
   {
     "id": "_b6yzTvk3L",
@@ -9897,7 +10663,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": null
   },
   {
     "id": "bn7tXxN3KD",
@@ -9931,7 +10701,11 @@
     "cost": 50,
     "cost_member": 45,
     "classes": [],
-    "places": 32
+    "places": 32,
+    "state": "confirmed",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": 0
   },
   {
     "id": "Hm1id2h1F7",
@@ -9995,7 +10769,11 @@
         ]
       }
     ],
-    "places": 31
+    "places": 31,
+    "state": "confirmed",
+    "entry_start": "2026-08-17",
+    "entry_end": "2026-09-07",
+    "entries": null
   },
   {
     "id": "0OrMAOqaqA",
@@ -10041,7 +10819,11 @@
         "class": "AVO"
       }
     ],
-    "places": null
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2026-08-16",
+    "entry_end": "2026-09-06",
+    "entries": null
   },
   {
     "id": "rfo1LoSGX6",
@@ -10078,7 +10860,11 @@
     },
     "cost_member": "",
     "classes": [],
-    "places": 0
+    "places": 0,
+    "state": "tentative",
+    "entry_start": "2026-09-01",
+    "entry_end": "2026-09-19",
+    "entries": null
   },
   {
     "id": "Sc6lW4685x",
@@ -10129,7 +10915,11 @@
         "date": "2026-10-03T00:00:00.000+03:00"
       }
     ],
-    "places": 40
+    "places": 40,
+    "state": "confirmed",
+    "entry_start": "2026-08-31",
+    "entry_end": "2026-09-20",
+    "entries": null
   },
   {
     "id": "a43BCKKMoH",
@@ -10164,7 +10954,11 @@
     "cost": "",
     "cost_member": "",
     "classes": [],
-    "places": null
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2026-09-01",
+    "entry_end": "2026-09-19",
+    "entries": null
   },
   {
     "id": "Mq_SHxLuIR",
@@ -10202,7 +10996,11 @@
       "normal": 35
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2026-08-31",
+    "entry_end": "2026-09-26",
+    "entries": null
   },
   {
     "id": "bnVqltVSUq",
@@ -10246,7 +11044,11 @@
       }
     },
     "classes": [],
-    "places": 16
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2026-09-04",
+    "entry_end": "2026-09-25",
+    "entries": null
   },
   {
     "id": "GdMk7mlzSo",
@@ -10328,7 +11130,11 @@
         ]
       }
     ],
-    "places": 20
+    "places": 20,
+    "state": "confirmed",
+    "entry_start": "2026-09-12",
+    "entry_end": "2026-10-03",
+    "entries": null
   },
   {
     "id": "iN8UZX6Um_",
@@ -10381,7 +11187,11 @@
         "class": "VOI"
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "confirmed",
+    "entry_start": "2026-09-28",
+    "entry_end": "2026-10-11",
+    "entries": null
   },
   {
     "id": "6p2tAdYq9O",
@@ -10449,7 +11259,11 @@
         "places": 10
       }
     ],
-    "places": 20
+    "places": 20,
+    "state": "tentative",
+    "entry_start": "2026-09-13",
+    "entry_end": "2026-10-04",
+    "entries": null
   },
   {
     "id": "4FYeaiEMRz",
@@ -10508,7 +11322,11 @@
         "class": "ALO"
       }
     ],
-    "places": 0
+    "places": 60,
+    "state": "confirmed",
+    "entry_start": "2026-09-19",
+    "entry_end": "2026-10-10",
+    "entries": null
   },
   {
     "id": "BkA7mzBtzM",
@@ -10554,7 +11372,11 @@
         "judge": []
       }
     ],
-    "places": 0
+    "places": 40,
+    "state": "confirmed",
+    "entry_start": "2026-09-20",
+    "entry_end": "2026-10-11",
+    "entries": null
   },
   {
     "id": "F5iXiF5Oto",
@@ -10589,7 +11411,11 @@
     "cost": 25,
     "cost_member": 25,
     "classes": [],
-    "places": 60
+    "places": 60,
+    "state": "confirmed",
+    "entry_start": "2026-10-26",
+    "entry_end": "2026-11-01",
+    "entries": null
   },
   {
     "id": "X8vGHq_sSF",
@@ -10681,6 +11507,10 @@
         ]
       }
     ],
-    "places": 80
+    "places": 80,
+    "state": "confirmed",
+    "entry_start": "2026-10-26",
+    "entry_end": "2026-11-01",
+    "entries": null
   }
 ]
