@@ -1,4 +1,5 @@
 import { haversine } from './distance.js';
+import { registrationClosedByState } from './event-state.js';
 import type { Event, FilterOptions, UserLocation } from './types.js';
 
 /**
@@ -42,12 +43,36 @@ function dateOnly(year: number, month: number, day: number): number {
 /**
  * Palauttaa true, jos kokeen ilmoittautuminen on `today`-päivänä auki.
  *
- * `entry_date` on muotoa "PP.KK.-PP.KK." (esim. "01.04.-14.04."). Vuosi
- * päätellään kokeen `date_sort`-vuodesta. Jos väli menee vuodenvaihteen yli
- * (loppu ennen alkua kalenterissa), alkupäivä tulkitaan edellisen vuoden
- * puolelle. Väli on inklusiivinen molemmista päistä.
+ * Ensisijaisesti käytetään tarkkoja ISO-päiviä `entry_start` ja `entry_end`.
+ * Jos ne puuttuvat (vanhempi JSON), palataan `entry_date`-merkkijonoon muodossa
+ * "PP.KK.-PP.KK." (esim. "01.04.-14.04."), jossa vuosi päätellään kokeen
+ * `date_sort`-vuodesta: jos väli menee vuodenvaihteen yli (loppu ennen alkua
+ * kalenterissa), alkupäivä tulkitaan edellisen vuoden puolelle.
+ *
+ * Kokeen tila ohittaa päivämäärät: kun osallistujat on valittu, kutsut
+ * lähetetty tai koe peruttu, ilmoittautuminen ei ole auki.
+ *
+ * Väli on inklusiivinen molemmista päistä.
  */
 export function isRegistrationOpen(event: Event, today: Date = new Date()): boolean {
+  if (registrationClosedByState(event)) return false;
+
+  const todayTime = dateOnly(
+    today.getFullYear(),
+    today.getMonth() + 1,
+    today.getDate(),
+  );
+
+  // 1. Tarkat ISO-päivät kun ne ovat saatavilla.
+  if (event.entry_start && event.entry_end) {
+    const start = isoDateOnly(event.entry_start);
+    const end = isoDateOnly(event.entry_end);
+    if (start !== null && end !== null) {
+      return todayTime >= start && todayTime <= end;
+    }
+  }
+
+  // 2. Fallback: entry_date-merkkijono, jossa vuosi päätellään.
   const match = event.entry_date?.match(/(\d{1,2})\.(\d{1,2})\.-(\d{1,2})\.(\d{1,2})\./);
   if (!match) return false;
 
@@ -58,19 +83,19 @@ export function isRegistrationOpen(event: Event, today: Date = new Date()): bool
 
   const eventYear = new Date(event.date_sort).getFullYear();
   const endTime = dateOnly(eventYear, endMonth, endDay);
-  // Jos alku on kalenterissa loppua myöhemmin, väli alkoi edellisenä vuonna.
   const startsBeforeEnd =
     startMonth < endMonth || (startMonth === endMonth && startDay <= endDay);
   const startYear = startsBeforeEnd ? eventYear : eventYear - 1;
   const startTime = dateOnly(startYear, startMonth, startDay);
 
-  const todayTime = dateOnly(
-    today.getFullYear(),
-    today.getMonth() + 1,
-    today.getDate(),
-  );
-
   return todayTime >= startTime && todayTime <= endTime;
+}
+
+/** Parsii `YYYY-MM-DD` samaan vertailumuotoon kuin dateOnly, tai null. */
+function isoDateOnly(iso: string): number | null {
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return null;
+  return dateOnly(parseInt(m[1], 10), parseInt(m[2], 10), parseInt(m[3], 10));
 }
 
 /**

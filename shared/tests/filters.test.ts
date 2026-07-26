@@ -153,6 +153,58 @@ describe('isRegistrationOpen', () => {
     expect(isRegistrationOpen(e, new Date('2026-01-10'))).toBe(true);
     expect(isRegistrationOpen(e, new Date('2026-01-16'))).toBe(false);
   });
+
+  test('käyttää ISO-päiviä kun ne ovat saatavilla', () => {
+    const event = makeEvent({
+      entry_date: 'jotain-rikkinäistä',
+      entry_start: '2026-04-01',
+      entry_end: '2026-04-14',
+    });
+    expect(isRegistrationOpen(event, new Date('2026-04-07T12:00:00+03:00'))).toBe(true);
+    expect(isRegistrationOpen(event, new Date('2026-04-15T12:00:00+03:00'))).toBe(false);
+  });
+
+  test('ISO-väli on inklusiivinen molemmista päistä', () => {
+    const event = makeEvent({ entry_start: '2026-04-01', entry_end: '2026-04-14' });
+    expect(isRegistrationOpen(event, new Date('2026-04-01T00:30:00+03:00'))).toBe(true);
+    expect(isRegistrationOpen(event, new Date('2026-04-14T23:30:00+03:00'))).toBe(true);
+  });
+
+  test('ISO-päivät toimivat vuodenvaihteen yli ilman päättelyä', () => {
+    const event = makeEvent({
+      date_sort: '2026-01-20T00:00:00+02:00',
+      entry_date: '20.12.-10.01.',
+      entry_start: '2025-12-20',
+      entry_end: '2026-01-10',
+    });
+    expect(isRegistrationOpen(event, new Date('2025-12-28T12:00:00+02:00'))).toBe(true);
+  });
+
+  test('palaa entry_date-regexiin kun ISO-päivät puuttuvat', () => {
+    const event = makeEvent({ entry_date: '01.04.-14.04.' });
+    expect(isRegistrationOpen(event, new Date('2026-04-07T12:00:00+03:00'))).toBe(true);
+  });
+
+  test('tila sulkee ilmoittautumisen vaikka päivät olisivat avoinna', () => {
+    const event = makeEvent({
+      entry_start: '2026-04-01',
+      entry_end: '2026-04-14',
+      state: 'picked',
+    });
+    expect(isRegistrationOpen(event, new Date('2026-04-07T12:00:00+03:00'))).toBe(false);
+  });
+
+  test('peruttu koe ei ole koskaan avoinna', () => {
+    const event = makeEvent({ entry_date: '01.04.-14.04.', state: 'cancelled' });
+    expect(isRegistrationOpen(event, new Date('2026-04-07T12:00:00+03:00'))).toBe(false);
+  });
+
+  test('tentative ja confirmed eivät estä avoimuutta', () => {
+    for (const state of ['tentative', 'confirmed'] as const) {
+      const event = makeEvent({ entry_start: '2026-04-01', entry_end: '2026-04-14', state });
+      expect(isRegistrationOpen(event, new Date('2026-04-07T12:00:00+03:00'))).toBe(true);
+    }
+  });
 });
 
 describe('isPast', () => {
