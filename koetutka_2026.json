@@ -8869,25 +8869,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "class": "AVO",
+        "places": 15,
+        "entries": 13,
         "judge": [
           {
-            "official": true,
             "name": "Majuri Pasi",
-            "id": 850900
+            "id": 850900,
+            "official": true
           }
         ],
-        "entries": 12,
-        "places": 15,
-        "date": "2026-08-15T21:00:00.000Z",
-        "members": 9
+        "members": 9,
+        "class": "AVO",
+        "date": "2026-08-15T21:00:00.000Z"
       }
     ],
     "places": 15,
     "state": "confirmed",
     "entry_start": "2026-07-05",
     "entry_end": "2026-08-10",
-    "entries": 12
+    "entries": 13
   },
   {
     "id": "wkCuCx6BtX",
