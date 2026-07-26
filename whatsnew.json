@@ -5,12 +5,16 @@
   },
   "releases": [
     {
-      "version": "1.7.1",
+      "version": "1.12.0",
       "date": "2026-07-25",
-      "title": "Android 16 -yhteensopivuus",
+      "title": "Suora linkki koeilmoitukseen ja kokeen tila",
       "items": [
-        "Android-sovellus on nyt käännetty Android 16:lle (API-taso 36) Google Playn vaatimusten mukaisesti",
-        "Ei toiminnallisia muutoksia"
+        "Kokeen tiedoista pääsee suoraan ilmoittautumaan SNJ:n koekalenterissa, kun ilmoittautuminen on auki",
+        "Kun osallistujat on valittu, kokeen tiedoista pääsee lukemaan lähtölistan",
+        "Kokeen tila (alustava, peruttu, osallistujat valittu, kutsut lähetetty) näkyy nyt omalla merkillään, ja se vaikuttaa myös \"Ilmo auki\" -merkkiin",
+        "Ilmoittautuneiden määrä näkyy paikkamäärän vierellä",
+        "Sihteerin ja yhteyshenkilön puhelin ja sähköposti ovat painettavia",
+        "Android-sovellus on käännetty Android 16:lle (API-taso 36)"
       ]
     },
     {

@@ -86,10 +86,16 @@ MIT
 
 ## Versiohistoria
 
-### Mobiili v1.7.1 (2026-07-25)
-- **Android 16 (API-taso 36)**: Android-sovellus kohdistetaan nyt API-tasoon 36
-  Google Playn 31.8.2026 voimaan tulevan vaatimuksen mukaisesti. Ei
-  toiminnallisia muutoksia.
+### v1.12.0 (2026-07-25)
+- **Suora linkki koeilmoitukseen**: kokeen tiedoista pääsee suoraan
+  ilmoittautumaan SNJ:n koekalenterissa, kun ilmoittautuminen on auki
+  (aiemmin linkki vei aina koekalenterin etusivulle)
+- **Lähtölista**: kun osallistujat on valittu, kokeesta pääsee lähtölistaan
+- **Kokeen tila**: alustava, peruttu, osallistujat valittu ja kutsut lähetetty
+  näkyvät omalla merkillään, ja tila huomioidaan myös "Ilmo auki" -logiikassa
+- **Ilmoittautuneiden määrä** näkyy paikkamäärän vierellä
+- **Mobiili**: painettavat yhteystiedot, ja Android-sovellus kohdistettu
+  Android 16:lle (API-taso 36)
 
 ### v1.11.0 (2026-07-09)
 - **Ilmoittautuminen auki -korostus**: kun kokeen ilmoittautuminen on
