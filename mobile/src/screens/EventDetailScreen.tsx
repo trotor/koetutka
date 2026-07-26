@@ -1,13 +1,30 @@
 import { useRoute } from '@react-navigation/native';
 import type { RouteProp } from '@react-navigation/native';
-import { ScrollView, View, Text, StyleSheet, Pressable } from 'react-native';
-import { getCostValue, getOptionalCosts, listClassPlaces } from '@koetutka/shared';
+import { ScrollView, View, Text, StyleSheet, Pressable, Linking } from 'react-native';
+import {
+  getCostValue,
+  getOptionalCosts,
+  listClassPlaces,
+  formatClassPlacesRow,
+  stateBadge,
+  snjEventUrl,
+  snjStartListUrl,
+  hasStartList,
+} from '@koetutka/shared';
+import type { EventState } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 import { exportEventICS } from '@/lib/ics-export';
 import { addEventToCalendar } from '@/lib/calendar-add';
 import type { RootStackParamList } from '../navigation';
 
 type Route = RouteProp<RootStackParamList, 'EventDetail'>;
+
+const STATE_HINTS: Partial<Record<EventState, string>> = {
+  tentative: 'Koe ei ole vielä varmistunut.',
+  cancelled: 'Koe on peruttu.',
+  picked: 'Ilmoittautuminen on päättynyt.',
+  invited: 'Ilmoittautuminen on päättynyt.',
+};
 
 export default function EventDetailScreen() {
   const route = useRoute<Route>();
@@ -28,6 +45,8 @@ export default function EventDetailScreen() {
   const costMember = getCostValue(event.cost_member);
   const optionalCosts = getOptionalCosts(event.cost);
   const classPlaces = listClassPlaces(event);
+  const badge = stateBadge(event);
+  const hint = event.state ? STATE_HINTS[event.state] : undefined;
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -38,6 +57,9 @@ export default function EventDetailScreen() {
         <Text style={styles.distance}>🚗 {event.distance} km</Text>
       )}
 
+      {badge && (
+        <InfoRow label="Tila" value={hint ? `${badge.label}\n${hint}` : badge.label} />
+      )}
       <InfoRow label="Ilmoittautuminen" value={event.entry_date} />
       {classPlaces.length > 0 && (
         <InfoRow
@@ -46,7 +68,7 @@ export default function EventDetailScreen() {
             .map((cp) => {
               const cls = cp.class || 'Yhteensä';
               const name = cp.day ? `${cls} · ${cp.day}` : cls;
-              return `${name}: ${cp.places} ${cp.places === 1 ? 'paikka' : 'paikkaa'}`;
+              return `${name}: ${formatClassPlacesRow(cp)}`;
             })
             .join('\n')}
         />
@@ -56,10 +78,10 @@ export default function EventDetailScreen() {
         <InfoRow label="Tuomarit" value={event.judges.join(', ')} />
       )}
       {event.secretary.name && (
-        <InfoRow label="Sihteeri" value={`${event.secretary.name}${event.secretary.phone ? `\n${event.secretary.phone}` : ''}${event.secretary.email ? `\n${event.secretary.email}` : ''}`} />
+        <ContactRow label="Sihteeri" person={event.secretary} />
       )}
       {event.official.name && (
-        <InfoRow label="Yhteyshenkilö" value={`${event.official.name}${event.official.phone ? `\n${event.official.phone}` : ''}${event.official.email ? `\n${event.official.email}` : ''}`} />
+        <ContactRow label="Yhteyshenkilö" person={event.official} />
       )}
       {cost !== null && <InfoRow label="Maksu" value={`${cost} €`} />}
       {costMember !== null && <InfoRow label="Jäsenmaksu" value={`${costMember} €`} />}
@@ -76,12 +98,28 @@ export default function EventDetailScreen() {
       <View style={styles.buttonRow}>
         <Pressable
           style={styles.button}
+          onPress={() => Linking.openURL(snjEventUrl(event))}
+        >
+          <Text style={styles.buttonText}>🔗 Avaa SNJ:n koekalenterissa</Text>
+        </Pressable>
+        {hasStartList(event) && (
+          <Pressable
+            style={[styles.button, styles.buttonSecondary]}
+            onPress={() => Linking.openURL(snjStartListUrl(event))}
+          >
+            <Text style={[styles.buttonText, styles.buttonTextSecondary]}>
+              📋 Lue lähtölista
+            </Text>
+          </Pressable>
+        )}
+        <Pressable
+          style={[styles.button, styles.buttonSecondary]}
           onPress={async () => {
             const ok = await addEventToCalendar(event, 'event', useStore.getState().userLocation?.name);
             if (ok) useStore.getState().markCalendarAdded(event.id, 'event');
           }}
         >
-          <Text style={styles.buttonText}>📅 Lisää kalenteriin</Text>
+          <Text style={[styles.buttonText, styles.buttonTextSecondary]}>📅 Lisää kalenteriin</Text>
         </Pressable>
         <Pressable
           style={[styles.button, styles.buttonSecondary]}
@@ -120,6 +158,37 @@ function InfoRow({ label, value }: { label: string; value: string }) {
   );
 }
 
+function ContactRow({
+  label,
+  person,
+}: {
+  label: string;
+  person: { name: string; phone: string; email: string };
+}) {
+  return (
+    <View style={styles.row}>
+      <Text style={styles.label}>{label}</Text>
+      <Text style={styles.value}>{person.name}</Text>
+      {!!person.phone && (
+        <Pressable
+          onPress={() => Linking.openURL(`tel:${person.phone.replace(/\s/g, '')}`)}
+          accessibilityRole="link"
+        >
+          <Text style={styles.link}>{person.phone}</Text>
+        </Pressable>
+      )}
+      {!!person.email && (
+        <Pressable
+          onPress={() => Linking.openURL(`mailto:${person.email}`)}
+          accessibilityRole="link"
+        >
+          <Text style={styles.link}>{person.email}</Text>
+        </Pressable>
+      )}
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   container: { padding: 16, backgroundColor: '#f8f9fa' },
   center: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 24 },
@@ -130,6 +199,7 @@ const styles = StyleSheet.create({
   row: { backgroundColor: 'white', padding: 12, marginBottom: 8, borderRadius: 6 },
   label: { fontSize: 12, color: '#888', marginBottom: 2 },
   value: { fontSize: 14, color: '#333' },
+  link: { fontSize: 14, color: '#2d5a27', textDecorationLine: 'underline', marginTop: 4 },
   buttonRow: { marginTop: 12, gap: 8 },
   button: { backgroundColor: '#2d5a27', padding: 14, borderRadius: 8, alignItems: 'center' },
   buttonSecondary: { backgroundColor: 'white', borderWidth: 1, borderColor: '#2d5a27' },
