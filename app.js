@@ -1105,12 +1105,9 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="${window.koetutkaShared.snjEventUrl(koe)}" target="_blank" rel="noopener" class="btn btn-snj">
-                        Avaa SNJ:n koekalenterissa
-                    </a>${window.koetutkaShared.hasStartList(koe) ? `
-                    <a href="${window.koetutkaShared.snjStartListUrl(koe)}" target="_blank" rel="noopener" class="btn btn-snj">
-                        Lue lähtölista
-                    </a>` : ''}
+                    <a href="${window.koetutkaShared.snjLink(koe).url}" target="_blank" rel="noopener" class="btn btn-snj">
+                        ${window.koetutkaShared.snjLink(koe).label}
+                    </a>
                 </div>`;
 
             modalBody.innerHTML = html;

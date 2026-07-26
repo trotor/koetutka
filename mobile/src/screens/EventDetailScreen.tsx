@@ -7,9 +7,7 @@ import {
   listClassPlaces,
   formatClassPlacesRow,
   stateBadge,
-  snjEventUrl,
-  snjStartListUrl,
-  hasStartList,
+  snjLink,
 } from '@koetutka/shared';
 import type { EventState } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
@@ -47,6 +45,12 @@ export default function EventDetailScreen() {
   const classPlaces = listClassPlaces(event);
   const badge = stateBadge(event);
   const hint = event.state ? STATE_HINTS[event.state] : undefined;
+  const snj = snjLink(event);
+  const SNJ_ICONS: Record<typeof snj.kind, string> = {
+    register: '📝',
+    startlist: '📋',
+    calendar: '🔗',
+  };
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -96,22 +100,9 @@ export default function EventDetailScreen() {
       {event.description && <InfoRow label="Kuvaus" value={event.description} />}
 
       <View style={styles.buttonRow}>
-        <Pressable
-          style={styles.button}
-          onPress={() => Linking.openURL(snjEventUrl(event))}
-        >
-          <Text style={styles.buttonText}>🔗 Avaa SNJ:n koekalenterissa</Text>
+        <Pressable style={styles.button} onPress={() => Linking.openURL(snj.url)}>
+          <Text style={styles.buttonText}>{SNJ_ICONS[snj.kind]} {snj.label}</Text>
         </Pressable>
-        {hasStartList(event) && (
-          <Pressable
-            style={[styles.button, styles.buttonSecondary]}
-            onPress={() => Linking.openURL(snjStartListUrl(event))}
-          >
-            <Text style={[styles.buttonText, styles.buttonTextSecondary]}>
-              📋 Lue lähtölista
-            </Text>
-          </Pressable>
-        )}
         <Pressable
           style={[styles.button, styles.buttonSecondary]}
           onPress={async () => {
