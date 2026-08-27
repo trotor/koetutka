@@ -9061,41 +9061,41 @@
     "cost_member": 45,
     "classes": [
       {
-        "class": "ALO",
-        "places": 14,
+        "state": "invited",
+        "members": 7,
         "groups": [
           "ap",
           "ip"
         ],
         "date": "2026-08-28T21:00:00.000Z",
-        "entries": 14,
-        "members": 7,
-        "state": "invited",
+        "class": "ALO",
         "judge": [
           {
-            "official": true,
             "name": "Fontell Ari-Pekka",
-            "id": 842408
+            "id": 842408,
+            "official": true
           }
-        ]
+        ],
+        "places": 14,
+        "entries": 14
       },
       {
-        "groups": [
-          "ip"
-        ],
+        "places": 2,
         "judge": [
           {
-            "name": "Fontell Ari-Pekka",
             "official": true,
-            "id": 842408
+            "id": 842408,
+            "name": "Fontell Ari-Pekka"
           }
         ],
-        "members": 2,
-        "state": "invited",
-        "class": "AVO",
-        "entries": 2,
         "date": "2026-08-28T21:00:00.000Z",
-        "places": 2
+        "entries": 2,
+        "class": "AVO",
+        "state": "invited",
+        "members": 2,
+        "groups": [
+          "ip"
+        ]
       }
     ],
     "places": 16,
@@ -9258,26 +9258,26 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 8,
-        "places": 14,
         "judge": [
           {
             "id": 842408,
-            "official": true,
-            "name": "Fontell Ari-Pekka"
+            "name": "Fontell Ari-Pekka",
+            "official": true
           }
         ],
         "state": "invited",
         "date": "2026-08-29T21:00:00.000Z",
-        "entries": 13,
-        "class": "VOI"
+        "entries": 14,
+        "places": 14,
+        "class": "VOI",
+        "members": 8
       }
     ],
     "places": 14,
     "state": "invited",
     "entry_start": "2026-07-19",
     "entry_end": "2026-08-09",
-    "entries": 13
+    "entries": 14
   },
   {
     "id": "_yM9-IwU7B",
@@ -9419,7 +9419,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-17",
     "entry_end": "2026-08-30",
-    "entries": 13
+    "entries": 16
   },
   {
     "id": "s72M4aggIs",
@@ -9648,14 +9648,14 @@
     },
     "classes": [
       {
-        "entries": 14,
-        "members": 8,
+        "class": "AVO",
+        "places": 8,
+        "entries": 15,
+        "date": "2026-09-05T21:00:00.000Z",
+        "members": 9,
         "groups": [
           "ip"
         ],
-        "places": 8,
-        "class": "AVO",
-        "date": "2026-09-05T21:00:00.000Z",
         "judge": [
           {
             "id": 842408,
@@ -9669,7 +9669,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-17",
     "entry_end": "2026-08-30",
-    "entries": 14
+    "entries": 15
   },
   {
     "id": "aUBoQnJYUs",
@@ -9763,26 +9763,26 @@
     "classes": [
       {
         "members": 1,
-        "entries": 5,
-        "date": "2026-09-11T21:00:00.000Z",
+        "places": 0,
         "judge": [],
-        "class": "VOI",
-        "places": 0
+        "entries": 6,
+        "date": "2026-09-11T21:00:00.000Z",
+        "class": "VOI"
       },
       {
-        "entries": 2,
-        "members": 1,
         "places": 0,
-        "class": "AVO",
+        "members": 1,
         "judge": [],
-        "date": "2026-09-11T21:00:00.000Z"
+        "entries": 2,
+        "date": "2026-09-11T21:00:00.000Z",
+        "class": "AVO"
       }
     ],
     "places": 28,
     "state": "confirmed",
     "entry_start": "2026-08-20",
     "entry_end": "2026-09-04",
-    "entries": 7
+    "entries": 8
   },
   {
     "id": "pSGSr3ChkO",
@@ -9821,10 +9821,10 @@
     },
     "classes": [],
     "places": 16,
-    "state": "confirmed",
+    "state": "picked",
     "entry_start": "2026-08-01",
     "entry_end": "2026-08-22",
-    "entries": 24
+    "entries": 23
   },
   {
     "id": "d4lO-oRp8e",
@@ -10087,11 +10087,11 @@
       "normal": 40
     },
     "classes": [],
-    "places": 16,
-    "state": "confirmed",
+    "places": 17,
+    "state": "picked",
     "entry_start": "2026-08-02",
     "entry_end": "2026-08-23",
-    "entries": 26
+    "entries": 25
   },
   {
     "id": "NSkd6Qvhcb",
@@ -10176,7 +10176,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-09",
     "entry_end": "2026-08-29",
-    "entries": 18
+    "entries": 20
   },
   {
     "id": "bikzngY96n",
@@ -10211,17 +10211,17 @@
     "cost_member": 45,
     "classes": [
       {
+        "class": "ALO",
+        "members": 9,
         "judge": [
           {
+            "official": true,
             "id": 882887,
-            "name": "Lappalainen Mika",
-            "official": true
+            "name": "Lappalainen Mika"
           }
         ],
         "date": "2026-09-18T21:00:00.000Z",
-        "class": "ALO",
-        "entries": 20,
-        "members": 9,
+        "entries": 21,
         "places": 15
       }
     ],
@@ -10229,7 +10229,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-18",
     "entry_end": "2026-09-08",
-    "entries": 20
+    "entries": 21
   },
   {
     "id": "WUIDiiwETw",
@@ -10318,25 +10318,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 1,
-        "entries": 6,
+        "entries": 7,
+        "date": "2026-09-19T21:00:00.000Z",
         "class": "AVO",
+        "members": 1,
         "places": 15,
         "judge": [
           {
+            "id": 882887,
             "official": true,
-            "name": "Lappalainen Mika",
-            "id": 882887
+            "name": "Lappalainen Mika"
           }
-        ],
-        "date": "2026-09-19T21:00:00.000Z"
+        ]
       }
     ],
     "places": 15,
     "state": "confirmed",
     "entry_start": "2026-08-18",
     "entry_end": "2026-09-08",
-    "entries": 6
+    "entries": 7
   },
   {
     "id": "ayp8ZrnlMU",
@@ -10471,7 +10471,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 13
+    "entries": 14
   },
   {
     "id": "SxFikIUEfq",
@@ -10660,7 +10660,7 @@
       "Esa Valkonen",
       "Timo Halme"
     ],
-    "description": "Mölli-WT, järjestää Mäntän Seudun Nuuskut Ry ja Metsästysnoutajat Ry.\n\nKoemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. Osallistujamäärä maks. 40 koirakkoa.",
+    "description": "Mölli-WT, järjestää Mäntän Seudun Nuuskut Ry ja Metsästysnoutajat Ry.\n\nKoemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu. Osallistujamäärä maks. 40 koirakkoa.\n\nNoin päivän puolivälissä on lounastauko, osallistujat voivat ostaa keittolounaan ilmoittautumisen yhteydessä lisäpalveluna.",
     "cost": {
       "normal": 40,
       "optionalAdditionalCosts": [
@@ -10765,24 +10765,24 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2026-09-25T21:00:00.000Z",
         "judge": [
           {
-            "official": true,
             "name": "Särkänlahti Jari",
+            "official": true,
             "id": 4055276
           }
         ],
+        "members": 4,
         "places": 12,
-        "entries": 7,
-        "members": 3
+        "entries": 8,
+        "date": "2026-09-25T21:00:00.000Z"
       }
     ],
     "places": 12,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 7
+    "entries": 8
   },
   {
     "id": "3ZkWaxluqo",
@@ -10942,38 +10942,38 @@
     "classes": [
       {
         "places": 16,
-        "entries": 4,
-        "members": 4,
         "class": "AVO",
         "judge": [
           {
-            "name": "Puttonen Pasi-Petteri",
             "official": true,
-            "id": 4053791
+            "id": 4053791,
+            "name": "Puttonen Pasi-Petteri"
           }
         ],
-        "date": "2026-09-26T21:00:00.000Z"
+        "date": "2026-09-26T21:00:00.000Z",
+        "entries": 5,
+        "members": 5
       },
       {
         "entries": 16,
-        "places": 15,
+        "class": "ALO",
         "judge": [
           {
-            "official": true,
             "id": 999999,
-            "name": "Tenhunen Juha"
+            "name": "Tenhunen Juha",
+            "official": true
           }
         ],
         "members": 10,
         "date": "2026-09-26T21:00:00.000Z",
-        "class": "ALO"
+        "places": 15
       }
     ],
     "places": 31,
     "state": "confirmed",
     "entry_start": "2026-08-17",
     "entry_end": "2026-09-07",
-    "entries": 20
+    "entries": 21
   },
   {
     "id": "0OrMAOqaqA",
