@@ -9142,44 +9142,44 @@
     },
     "classes": [
       {
+        "state": "invited",
+        "entries": 18,
         "members": 9,
+        "class": "ALO",
         "groups": [
           "kp"
         ],
         "places": 22,
-        "entries": 19,
-        "date": "2026-08-28T21:00:00.000Z",
-        "class": "ALO",
-        "state": "invited"
+        "date": "2026-08-28T21:00:00.000Z"
       },
       {
-        "state": "invited",
         "groups": [
           "kp"
         ],
-        "date": "2026-08-28T21:00:00.000Z",
-        "members": 7,
         "places": 18,
-        "entries": 13,
-        "class": "AVO"
+        "class": "AVO",
+        "entries": 12,
+        "date": "2026-08-28T21:00:00.000Z",
+        "state": "invited",
+        "members": 7
       },
       {
-        "date": "2026-08-29T21:00:00.000Z",
+        "members": 17,
         "state": "invited",
-        "members": 18,
+        "places": 40,
+        "entries": 21,
+        "class": "VOI",
+        "date": "2026-08-29T21:00:00.000Z",
         "groups": [
           "kp"
-        ],
-        "entries": 23,
-        "class": "VOI",
-        "places": 40
+        ]
       }
     ],
     "places": 80,
     "state": "invited",
     "entry_start": "2026-08-01",
     "entry_end": "2026-08-22",
-    "entries": 55
+    "entries": 51
   },
   {
     "id": "yKQhTNAQn6",
@@ -9419,7 +9419,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-17",
     "entry_end": "2026-08-30",
-    "entries": 17
+    "entries": 18
   },
   {
     "id": "s72M4aggIs",
@@ -9455,25 +9455,25 @@
     },
     "classes": [
       {
-        "judge": [
-          {
-            "id": -1,
-            "official": false,
-            "name": "Fontell Kari-Matti"
-          }
-        ],
-        "date": "2026-09-05T00:00:00.000+03:00",
-        "entries": 22,
         "members": 16,
         "state": "picked",
-        "class": "ALO"
+        "date": "2026-09-05T00:00:00.000+03:00",
+        "judge": [
+          {
+            "official": false,
+            "name": "Fontell Kari-Matti",
+            "id": -1
+          }
+        ],
+        "class": "ALO",
+        "entries": 21
       }
     ],
     "places": 20,
     "state": "picked",
     "entry_start": "2026-07-25",
     "entry_end": "2026-08-15",
-    "entries": 22
+    "entries": 21
   },
   {
     "id": "Jcmg4QClcN",
@@ -9762,27 +9762,27 @@
     },
     "classes": [
       {
-        "members": 1,
         "places": 0,
-        "judge": [],
-        "date": "2026-09-11T21:00:00.000Z",
-        "class": "VOI",
-        "entries": 6
-      },
-      {
-        "places": 0,
-        "class": "AVO",
         "judge": [],
         "members": 2,
-        "entries": 3,
-        "date": "2026-09-11T21:00:00.000Z"
+        "date": "2026-09-11T21:00:00.000Z",
+        "class": "VOI",
+        "entries": 7
+      },
+      {
+        "date": "2026-09-11T21:00:00.000Z",
+        "judge": [],
+        "places": 0,
+        "class": "AVO",
+        "members": 2,
+        "entries": 3
       }
     ],
     "places": 28,
     "state": "confirmed",
     "entry_start": "2026-08-20",
     "entry_end": "2026-09-04",
-    "entries": 9
+    "entries": 10
   },
   {
     "id": "pSGSr3ChkO",
@@ -9859,10 +9859,10 @@
     "cost_member": 40,
     "classes": [],
     "places": 32,
-    "state": "confirmed",
+    "state": "picked",
     "entry_start": "2026-08-01",
     "entry_end": "2026-08-22",
-    "entries": 40
+    "entries": 39
   },
   {
     "id": "j6JbaXnyx3",
@@ -10133,7 +10133,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-08",
     "entry_end": "2026-08-29",
-    "entries": 17
+    "entries": 19
   },
   {
     "id": "sgEgvCN7nZ",
@@ -10211,25 +10211,25 @@
     "cost_member": 45,
     "classes": [
       {
+        "members": 10,
+        "entries": 22,
         "class": "ALO",
-        "members": 9,
+        "places": 15,
+        "date": "2026-09-18T21:00:00.000Z",
         "judge": [
           {
+            "name": "Lappalainen Mika",
             "official": true,
-            "id": 882887,
-            "name": "Lappalainen Mika"
+            "id": 882887
           }
-        ],
-        "date": "2026-09-18T21:00:00.000Z",
-        "entries": 21,
-        "places": 15
+        ]
       }
     ],
     "places": 15,
     "state": "confirmed",
     "entry_start": "2026-08-18",
     "entry_end": "2026-09-08",
-    "entries": 21
+    "entries": 22
   },
   {
     "id": "WUIDiiwETw",
@@ -10471,7 +10471,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 16
+    "entries": 17
   },
   {
     "id": "SxFikIUEfq",
@@ -10685,26 +10685,27 @@
     },
     "classes": [
       {
-        "entries": 2,
+        "entries": 3,
+        "class": "ALO",
+        "date": "2026-09-25T21:00:00.000Z",
         "judge": [
           {
             "official": false,
-            "id": -1,
-            "name": "Esa Valkonen"
+            "name": "Esa Valkonen",
+            "id": -1
           },
           {
             "name": "Timo Halme",
-            "official": false,
-            "id": -2
+            "id": -2,
+            "official": false
           }
         ],
-        "class": "ALO",
-        "date": "2026-09-25T21:00:00.000Z",
-        "members": 0
+        "members": 1
       },
       {
-        "date": "2026-09-25T21:00:00.000Z",
         "entries": 2,
+        "class": "AVO",
+        "members": 1,
         "judge": [
           {
             "official": false,
@@ -10717,15 +10718,14 @@
             "name": "Timo Halme"
           }
         ],
-        "class": "AVO",
-        "members": 1
+        "date": "2026-09-25T21:00:00.000Z"
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 4
+    "entries": 5
   },
   {
     "id": "AQem2RQsgG",
@@ -11462,6 +11462,80 @@
     "entries": null
   },
   {
+    "id": "6p2tAdYq9O",
+    "type": "NOWT",
+    "levels": "AVO (La), VOI (La)",
+    "date": "24.10.2026",
+    "date_sort": "2026-10-24T00:00:00+03:00",
+    "end_date_sort": "2026-10-24T00:00:00+03:00",
+    "entry_date": "12.09.-03.10.",
+    "location": "Laukaa",
+    "coordinates": [
+      62.416667,
+      25.95
+    ],
+    "name": "Mock Trial",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Timo Halme",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Maija Lappalainen",
+      "phone": "",
+      "email": "nome.maija@gmail.com"
+    },
+    "judges": [
+      "Saarinen Maarit",
+      "Luomanen Timo"
+    ],
+    "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu.Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
+    "cost": {
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "en": "",
+            "fi": "Osallistumismaksu sisältää keittolounaan"
+          },
+          "cost": 18
+        }
+      ],
+      "normal": 63
+    },
+    "cost_member": {
+      "normal": 58,
+      "optionalAdditionalCosts": [
+        {
+          "description": {
+            "fi": "Osallistumismaksu sisältää keittolounaan",
+            "en": ""
+          },
+          "cost": 18
+        }
+      ]
+    },
+    "classes": [
+      {
+        "judge": [],
+        "class": "AVO",
+        "date": "2026-10-24T00:00:00.000+03:00",
+        "places": 10
+      },
+      {
+        "places": 10,
+        "date": "2026-10-24T00:00:00.000+03:00",
+        "judge": [],
+        "class": "VOI"
+      }
+    ],
+    "places": 20,
+    "state": "confirmed",
+    "entry_start": "2026-09-12",
+    "entry_end": "2026-10-03",
+    "entries": null
+  },
+  {
     "id": "qh8E-wtej1",
     "type": "NOME-A",
     "levels": "N/A",
@@ -11498,78 +11572,6 @@
     "state": "tentative",
     "entry_start": "2026-09-13",
     "entry_end": "2026-10-18",
-    "entries": null
-  },
-  {
-    "id": "6p2tAdYq9O",
-    "type": "NOWT",
-    "levels": "AVO (Su), VOI (Su)",
-    "date": "25.10.2026",
-    "date_sort": "2026-10-25T00:00:00+03:00",
-    "end_date_sort": "2026-10-25T00:00:00+03:00",
-    "entry_date": "13.09.-04.10.",
-    "location": "Laukaa",
-    "coordinates": [
-      62.416667,
-      25.95
-    ],
-    "name": "Mock Trial",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Timo Halme",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Maija Lappalainen",
-      "phone": "",
-      "email": "nome.maija@gmail.com"
-    },
-    "judges": [
-      "Siitari Heli",
-      "Luomanen Timo"
-    ],
-    "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu.Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
-    "cost": {
-      "optionalAdditionalCosts": [
-        {
-          "description": {
-            "en": "",
-            "fi": "Osallistumismaksu sisältää keittolounaan"
-          },
-          "cost": 18
-        }
-      ],
-      "normal": 63
-    },
-    "cost_member": {
-      "normal": 58,
-      "optionalAdditionalCosts": [
-        {
-          "description": {
-            "fi": "Osallistumismaksu sisältää keittolounaan",
-            "en": ""
-          },
-          "cost": 18
-        }
-      ]
-    },
-    "classes": [
-      {
-        "places": 10,
-        "class": "AVO",
-        "date": "2026-10-24T21:00:00.000Z"
-      },
-      {
-        "date": "2026-10-24T21:00:00.000Z",
-        "class": "VOI",
-        "places": 10
-      }
-    ],
-    "places": 20,
-    "state": "confirmed",
-    "entry_start": "2026-09-13",
-    "entry_end": "2026-10-04",
     "entries": null
   },
   {
