@@ -109,6 +109,8 @@ jobs:
           cp favicon.ico _site/
           cp favicon-192.png _site/
           cp apple-touch-icon.png _site/
+          cp app-store-badge.svg _site/
+          cp google-play-badge.png _site/
           cp -r shared/dist/* _site/shared/dist/
           # Check if data files exist (should be committed to repo)
           if ls koetutka_*.json 1> /dev/null 2>&1; then
