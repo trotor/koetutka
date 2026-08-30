@@ -5,6 +5,7 @@ export * from './formatters.js';
 export * from './filters.js';
 export * from './event-state.js';
 export * from './snj.js';
+export * from './startlist.js';
 export * from './ics.js';
 export * from './sort.js';
 export * from './overlap.js';

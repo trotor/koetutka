@@ -5,9 +5,12 @@ Etäisyydet lasketaan frontendissä käyttäjän sijainnista
 """
 
 import requests
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime
 from zoneinfo import ZoneInfo
 from geopy.geocoders import Nominatim
+import glob
+import re
 import time
 import json
 import os
@@ -15,6 +18,9 @@ import argparse
 
 # Tiedostopolut
 CACHE_FILE = "coordinates_cache.json"
+STARTLIST_DIR = "startlists"
+
+API_BASE = "https://21e5yv9tnf.execute-api.eu-north-1.amazonaws.com/prod"
 
 def load_cache():
     """Lataa koordinaattien välimuisti"""
@@ -30,8 +36,7 @@ def save_cache(cache):
 
 def get_events():
     """Hae kaikki kokeet API:sta"""
-    url = "https://21e5yv9tnf.execute-api.eu-north-1.amazonaws.com/prod/event/"
-    response = requests.get(url)
+    response = requests.get(f"{API_BASE}/event/")
     response.raise_for_status()
     return response.json()
 
@@ -299,6 +304,139 @@ def process_events(events, target_year):
 
     return results
 
+# --- Lähtölistat -----------------------------------------------------------
+#
+# SNJ:n API tarjoaa julkisen lähtölistan (`/startlist/{id}`), mutta vastaus
+# sallii CORSissa vain koekalenterin oman originin, joten selain ei voi hakea
+# sitä suoraan. Siksi listat haetaan täällä ja julkaistaan karsittuna omalta
+# sivustolta. Karsinta on tietoinen: mukaan vain se mitä lähtölistan lukija
+# tarvitsee (koira, ohjaaja, luokka, ryhmä). Erityisesti sirunumero (rfid),
+# omistaja, kasvattaja ja koiran koko tuloshistoria jätetään pois.
+#
+# Listoja ei committoida repoon vaan ne generoidaan jokaisessa deployssa, jotta
+# SNJ:ssä tehdyt poistot heijastuvat myös meille eikä henkilötieto jää
+# git-historiaan.
+
+# Ryhmän aikakoodit SNJ:n datassa.
+STARTLIST_TIMES = ('ap', 'ip', 'kp')
+
+# Tilat joissa lähtölista voi olla olemassa. `picked` (osallistujat valittu)
+# palauttaa aina 404 — lista syntyy vasta kutsujen myötä. `confirmed` on mukana
+# koska osalla jo pidetyistä kokeista tila ei ole ehtinyt vaihtua `invited`ksi,
+# mutta lista on silti olemassa.
+STARTLIST_STATES = ('invited', 'confirmed')
+
+
+def _startlist_group_date(group):
+    """Ryhmän päivä muodossa YYYY-MM-DD, paikallisena päivänä.
+
+    `group.key` on jo paikallinen (esim. "2026-08-29-kp"), kun taas `group.date`
+    on UTC ja voi osoittaa edelliseen päivään. Käytetään siis ensisijaisesti
+    avainta.
+    """
+    key = group.get('key') or ''
+    m = re.match(r'^(\d{4}-\d{2}-\d{2})', key)
+    if m:
+        return m.group(1)
+    try:
+        dt = datetime.fromisoformat(group['date'].replace('Z', '+00:00'))
+        return dt.astimezone(ZoneInfo('Europe/Helsinki')).strftime('%Y-%m-%d')
+    except (KeyError, AttributeError, ValueError):
+        return ''
+
+
+def trim_startlist(rows):
+    """Karsi lähtölista julkaistavaan muotoon (ks. moduulin kommentti yllä)."""
+    trimmed = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        dog = row.get('dog') or {}
+        group = row.get('group') or {}
+        time_code = group.get('time') or ''
+        trimmed.append({
+            # Luokka puuttuu kokeista joissa niitä ei ole (esim. NOU).
+            'class': row.get('class') or '',
+            'day': _startlist_group_date(group),
+            'time': time_code if time_code in STARTLIST_TIMES else '',
+            'number': group.get('number') if isinstance(group.get('number'), int) else None,
+            'handler': row.get('handler') or '',
+            'dog': dog.get('name') or '',
+            'reg_no': dog.get('regNo') or '',
+            'titles': dog.get('titles') or '',
+        })
+    return trimmed
+
+
+def fetch_startlist(event_id):
+    """Hae yhden kokeen lähtölista. None jos listaa ei ole (404)."""
+    try:
+        response = requests.get(f"{API_BASE}/startlist/{event_id}", timeout=30)
+    except requests.RequestException as e:
+        print(f"  Virhe {event_id}: {e}")
+        return None
+    if response.status_code == 404:
+        return None
+    if not response.ok:
+        print(f"  Virhe {event_id}: HTTP {response.status_code}")
+        return None
+    rows = response.json()
+    if not isinstance(rows, list) or not rows:
+        return None
+    return trim_startlist(rows)
+
+
+def published_event_ids():
+    """Kokeiden id:t julkaistavista koetutka_YYYY.json-tiedostoista."""
+    ids = set()
+    for path in sorted(glob.glob('koetutka_*.json')):
+        with open(path, 'r', encoding='utf-8') as f:
+            for event in json.load(f):
+                if event.get('id'):
+                    ids.add(event['id'])
+    return ids
+
+
+def build_startlists(events):
+    """Hae lähtölistat julkaistuille kokeille ja kirjoita startlists/-hakemistoon."""
+    ids = published_event_ids()
+    if not ids:
+        print("Ei koetutka_YYYY.json-tiedostoja — aja ensin --year")
+        return
+
+    candidates = [
+        e for e in events
+        if e.get('id') in ids and e.get('state') in STARTLIST_STATES
+    ]
+    print(f"Haetaan lähtölistoja {len(candidates)} kokeelle "
+          f"({len(ids)} julkaistua koetta)...")
+
+    os.makedirs(STARTLIST_DIR, exist_ok=True)
+    for stale in glob.glob(os.path.join(STARTLIST_DIR, '*.json')):
+        os.remove(stale)
+
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        lists = list(pool.map(lambda e: (e['id'], fetch_startlist(e['id'])), candidates))
+
+    index = {}
+    for event_id, rows in lists:
+        if not rows:
+            continue
+        with open(os.path.join(STARTLIST_DIR, f'{event_id}.json'), 'w', encoding='utf-8') as f:
+            json.dump(rows, f, ensure_ascii=False, separators=(',', ':'))
+        index[event_id] = len(rows)
+
+    with open(os.path.join(STARTLIST_DIR, 'index.json'), 'w', encoding='utf-8') as f:
+        json.dump({
+            'generated': datetime.now(ZoneInfo('Europe/Helsinki')).isoformat(timespec='seconds'),
+            'events': index,
+        }, f, ensure_ascii=False, separators=(',', ':'))
+
+    total = sum(index.values())
+    print(f"Lähtölistoja {len(index)} kpl, {total} osallistujaa "
+          f"-> {STARTLIST_DIR}/")
+
+
 def save_results(results, target_year):
     """Tallenna tulokset JSON-muotoon"""
     output_file = f"koetutka_{target_year}.json"
@@ -310,7 +448,14 @@ def save_results(results, target_year):
 def main():
     parser = argparse.ArgumentParser(description='Hae SNJ kokeet ja geokoodaa sijainnit')
     parser.add_argument('--year', type=int, default=2026, help='Vuosi (oletus: 2026)')
+    parser.add_argument('--startlists', action='store_true',
+                        help='Hae vain lähtölistat jo julkaistuille kokeille')
     args = parser.parse_args()
+
+    if args.startlists:
+        print("Haetaan SNJ:n lähtölistoja...")
+        build_startlists(get_events())
+        return
 
     print(f"Haetaan SNJ:n koekalenterin dataa vuodelle {args.year}...")
     events = get_events()

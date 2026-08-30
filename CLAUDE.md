@@ -17,12 +17,17 @@ pip install requests geopy
 # Fetch data for a specific year (creates koetutka_YYYY.json)
 python3 snj_kokeet.py --year 2026
 
+# Fetch start lists for the published events (creates startlists/<id>.json)
+python3 snj_kokeet.py --startlists
+
 # Test locally (requires HTTP server due to fetch)
 python3 -m http.server 8080
 # Then open: http://localhost:8080/
 
 # Deploy to server
 scp index.html styles.css app.js app-store-badge.svg google-play-badge.png koetutka_2026.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
+# Start lists (generate first with --startlists)
+scp -r startlists dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ```
 
 ## Architecture
@@ -32,6 +37,12 @@ scp index.html styles.css app.js app-store-badge.svg google-play-badge.png koetu
 - Geocodes locations via Nominatim (results cached in `coordinates_cache.json`)
 - Outputs JSON file with event data and coordinates
 - No distance filtering - all events included
+- `--startlists` fetches participant lists (`/startlist/{id}`) for the events in
+  `koetutka_*.json` and writes them trimmed to `startlists/<id>.json` plus an
+  `index.json` (id → participant count). The trim intentionally drops owner,
+  breeder, microchip id and the dog's result history. Lists are **not** committed:
+  the deploy workflow regenerates them so SNJ-side deletions propagate and no
+  personal data ends up in git history.
 
 **Frontend (index.html + styles.css + app.js):**
 - `index.html` is markup only; styles live in `styles.css` and logic in `app.js`
@@ -44,11 +55,16 @@ scp index.html styles.css app.js app-store-badge.svg google-play-badge.png koetu
 
 **External APIs:**
 - SNJ Events: `https://21e5yv9tnf.execute-api.eu-north-1.amazonaws.com/prod/event/`
+- SNJ Start lists: `.../prod/startlist/{eventId}` — public, but its CORS header
+  only allows `https://koekalenteri.snj.fi`, so browsers cannot call it directly;
+  that is why the lists are mirrored at deploy time
 - Geocoding: Nominatim (rate-limited, results cached)
 - Location search: Nominatim (for user location input)
 
 **Output Files:**
 - `koetutka_YYYY.json` - Event data with coordinates
+- `startlists/<id>.json` + `startlists/index.json` - Start lists (gitignored,
+  regenerated on every deploy)
 - `coordinates_cache.json` - Geocoding cache (persistent)
 - `index.html` - Self-contained interactive page
 
@@ -70,6 +86,7 @@ Target: `www.muikea.fi/koetutka/`
 
 ```bash
 scp index.html styles.css app.js banner.jpg app-store-badge.svg google-play-badge.png koetutka_*.json dino@ronkko.fi:public_html/muikea.fi/koetutka/
+scp -r startlists dino@ronkko.fi:public_html/muikea.fi/koetutka/
 ```
 
 ## Mobile App (React Native)
@@ -131,8 +148,9 @@ cd mobile && npm test && npm run typecheck
 - `koetutka_2026.json` - Next year data
 
 **Development files:**
-- `snj_kokeet.py` - Data fetcher script
+- `snj_kokeet.py` - Data fetcher script (events + start lists)
 - `coordinates_cache.json` - Geocoding cache
+- `startlists/` - Generated start lists (gitignored)
 
 ## Versioning
 

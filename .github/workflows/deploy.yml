@@ -59,8 +59,8 @@ jobs:
       - name: Build shared package
         run: pnpm --filter @koetutka/shared build
 
+      # Tarvitaan aina: myös lähtölistat haetaan Pythonilla jokaisessa deployssa.
       - name: Install dependencies
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || startsWith(github.ref, 'refs/tags/update_data')
         run: |
           pip install requests geopy
 
@@ -97,6 +97,14 @@ jobs:
           git diff --quiet && git diff --staged --quiet || git commit -m "Update trial data"
           git push
 
+      # Lähtölistat haetaan jokaisessa deployssa eikä committoida repoon: näin
+      # SNJ:ssä tehdyt poistot heijastuvat meille eikä henkilötieto jää
+      # git-historiaan. Epäonnistuminen ei kaada deployta — sivu toimii ilman
+      # lähtölistoja, ne vain jäävät silloin näyttämättä.
+      - name: Fetch start lists
+        continue-on-error: true
+        run: python snj_kokeet.py --startlists
+
       - name: Prepare deployment directory
         run: |
           mkdir -p _site/shared/dist
@@ -112,6 +120,12 @@ jobs:
           cp app-store-badge.svg _site/
           cp google-play-badge.png _site/
           cp -r shared/dist/* _site/shared/dist/
+          if [ -d startlists ]; then
+            cp -r startlists _site/
+            echo "Lähtölistoja: $(ls startlists/*.json | wc -l)"
+          else
+            echo "Varoitus: lähtölistoja ei generoitu"
+          fi
           # Check if data files exist (should be committed to repo)
           if ls koetutka_*.json 1> /dev/null 2>&1; then
             cp koetutka_*.json _site/

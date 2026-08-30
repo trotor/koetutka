@@ -23,6 +23,11 @@ node_modules/
 _site/
 shared/dist/
 
+# Lähtölistat: generoidaan deployssa (snj_kokeet.py --startlists), ei committoida
+# — näin SNJ:ssä tehdyt poistot heijastuvat meille eikä henkilötieto jää
+# git-historiaan.
+startlists/
+
 # Brainstorming sessions
 .superpowers/
 

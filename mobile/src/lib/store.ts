@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import type { Event, UserLocation, FilterOptions, SortBy } from '@koetutka/shared';
 import { fetchEventsWithFallback } from './data';
+import { clearStartlistCache } from './startlist';
 import { loadPrefs, savePrefs } from './preferences';
 import { calendarAddedKey, type CalendarType } from './calendar-added';
 import {
@@ -129,6 +130,7 @@ export const useStore = create<State & Actions>((set, get) => ({
 
   loadEvents: async (year: number) => {
     set({ isLoading: true, error: null });
+    clearStartlistCache();
     try {
       const events = await fetchEventsWithFallback(year);
       set({ events, isLoading: false });

@@ -86,6 +86,19 @@ MIT
 
 ## Versiohistoria
 
+### v1.14.0 (2026-08-30)
+- **Lähtölista kokeen tiedoissa**: kokeen tietonäkymä näyttää osallistujat
+  (koira, rekisterinumero, tittelit ja ohjaaja) ryhmiteltynä koepäivään,
+  ryhmäaikaan ja luokkaan — sekä webissä että mobiilissa. Lista on saatavilla
+  kun kutsut on lähetetty, eli käytännössä kaikille jo pidetyille kokeille.
+- **Ei enää kuollutta lähtölistalinkkiä**: "Lue lähtölista" näkyy vain kun lista
+  on oikeasti olemassa. Aiemmin linkki näytettiin kokeen tilan perusteella, ja
+  osalla `invited`-kokeista se vei SNJ:n virhesivulle.
+- **Datahaku**: `snj_kokeet.py --startlists` hakee lähtölistat SNJ:n API:sta ja
+  julkaisee ne karsittuna (`startlists/<id>.json`). Karsinta jättää pois
+  omistajan, kasvattajan, sirunumeron ja koiran tuloshistorian. Listoja ei
+  committoida repoon, vaan ne generoidaan jokaisessa deployssa.
+
 ### v1.13.0 (2026-08-30)
 - **Sovellusvinkki mobiiliselaimessa**: puhelimella (iOS/Android) sivun ylälaidassa
   näkyy vinkki natiivisovelluksesta, ja "Lataa" vie oikeaan kauppaan (App Store /

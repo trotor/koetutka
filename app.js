@@ -1101,18 +1101,135 @@
                         </div>`;
             }
 
+            // Lähtölista ladataan erikseen (startlists/<id>.json), joten tähän
+            // vain paikka jonka renderStartlist() täyttää tai piilottaa.
+            html += `
+                        <div class="info-card" id="startlistCard">
+                            <div class="info-card-header">
+                                ${icons.list}
+                                <span id="startlistTitle">Lähtölista</span>
+                            </div>
+                            <div class="info-card-content" id="startlistContent">
+                                <p class="info-text startlist-loading">Ladataan lähtölistaa...</p>
+                            </div>
+                        </div>`;
+
             const snjLink = window.koetutkaShared.snjLink(koe);
             html += `
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="${snjLink.url}" target="_blank" rel="noopener" class="btn btn-snj">
+                    <a href="${snjLink.url}" target="_blank" rel="noopener" class="btn btn-snj" id="snjLinkBtn">
                         ${snjLink.label}
                     </a>
                 </div>`;
 
             modalBody.innerHTML = html;
             modal.style.display = 'block';
+            renderStartlist(koe);
+        }
+
+        // --- Lähtölista ---------------------------------------------------
+        //
+        // Osallistujat haetaan omalta sivustolta (`startlists/<id>.json`), ei
+        // SNJ:n API:sta: SNJ sallii CORSissa vain koekalenterin originin.
+        // Tiedostot generoi `snj_kokeet.py --startlists` deployn yhteydessä.
+        let startlistIndex = null;
+        const startlistCache = new Map();
+
+        function escapeHtml(value) {
+            return String(value ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        // Indeksi kertoo mille kokeille lista on olemassa. Virhetilanteessa
+        // palautetaan tyhjä indeksi, jolloin lähtölista jää vain pois näkyvistä.
+        async function loadStartlistIndex() {
+            if (startlistIndex) return startlistIndex;
+            try {
+                const response = await fetch('startlists/index.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                startlistIndex = data && data.events ? data.events : {};
+            } catch (e) {
+                console.warn('Lähtölistojen indeksiä ei voitu ladata:', e);
+                startlistIndex = {};
+            }
+            return startlistIndex;
+        }
+
+        async function loadStartlist(eventId) {
+            if (startlistCache.has(eventId)) return startlistCache.get(eventId);
+            const response = await fetch(`startlists/${encodeURIComponent(eventId)}.json`);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const entries = await response.json();
+            startlistCache.set(eventId, entries);
+            return entries;
+        }
+
+        function startlistRowHtml(entry) {
+            const number = entry.number === null || entry.number === undefined ? '' : `${entry.number}.`;
+            const dog = window.koetutkaShared.formatStartlistDog(entry);
+            const regNo = entry.reg_no ? `<span class="startlist-regno">${escapeHtml(entry.reg_no)}</span>` : '';
+            const handler = entry.handler ? `<span class="startlist-handler">ohj. ${escapeHtml(entry.handler)}</span>` : '';
+            return `
+                                <div class="startlist-row">
+                                    <span class="startlist-number">${escapeHtml(number)}</span>
+                                    <span class="startlist-dog">
+                                        <span class="startlist-dog-name">${escapeHtml(dog)}</span>
+                                        ${regNo}
+                                        ${handler}
+                                    </span>
+                                </div>`;
+        }
+
+        // Täyttää modalin lähtölistakortin, tai piilottaa sen kun listaa ei ole.
+        // Samalla korjataan alalaidan SNJ-linkki: ilman tätä "Lue lähtölista"
+        // voisi viedä virhesivulle kokeella jolla listaa ei tosiasiassa ole.
+        async function renderStartlist(koe) {
+            const card = document.getElementById('startlistCard');
+            if (!card) return;
+
+            const index = await loadStartlistIndex();
+            const count = index[koe.id];
+
+            // Modal on voitu jo sulkea tai vaihtaa toiseen kokeeseen.
+            if (!document.body.contains(card)) return;
+
+            const linkBtn = document.getElementById('snjLinkBtn');
+            if (linkBtn) {
+                const link = window.koetutkaShared.snjLink(koe, new Date(), {
+                    startlistAvailable: count !== undefined,
+                });
+                linkBtn.href = link.url;
+                linkBtn.textContent = link.label;
+            }
+
+            if (count === undefined) {
+                card.style.display = 'none';
+                return;
+            }
+
+            const content = document.getElementById('startlistContent');
+            try {
+                const entries = await loadStartlist(koe.id);
+                if (!document.body.contains(card)) return;
+                const groups = window.koetutkaShared.groupStartlist(entries);
+                document.getElementById('startlistTitle').textContent =
+                    `Lähtölista (${entries.length})`;
+                content.innerHTML = groups.map(group => `
+                            <div class="startlist-group">
+                                ${group.label ? `<div class="startlist-group-label">${escapeHtml(group.label)}</div>` : ''}
+                                ${group.entries.map(startlistRowHtml).join('')}
+                            </div>`).join('');
+            } catch (e) {
+                console.warn('Lähtölistaa ei voitu ladata:', e);
+                if (!document.body.contains(card)) return;
+                content.innerHTML = '<p class="info-text">Lähtölistaa ei voitu ladata.</p>';
+            }
         }
 
         // Jaa modalista

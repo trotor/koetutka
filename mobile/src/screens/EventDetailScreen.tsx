@@ -11,6 +11,8 @@ import {
 } from '@koetutka/shared';
 import type { EventState } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
+import { useStartlist } from '@/lib/startlist';
+import { StartlistSection } from '@/components/StartlistSection';
 import { exportEventICS } from '@/lib/ics-export';
 import { addEventToCalendar } from '@/lib/calendar-add';
 import type { RootStackParamList } from '../navigation';
@@ -30,6 +32,7 @@ export default function EventDetailScreen() {
   const event = useStore((s) => s.events.find((e) => e.id === id));
   const isHidden = useStore((s) => s.hidden.has(id));
   const toggleHidden = useStore((s) => s.toggleHidden);
+  const startlist = useStartlist(id);
 
   if (!event) {
     return (
@@ -45,7 +48,12 @@ export default function EventDetailScreen() {
   const classPlaces = listClassPlaces(event);
   const badge = stateBadge(event);
   const hint = event.state ? STATE_HINTS[event.state] : undefined;
-  const snj = snjLink(event);
+  // Kun tiedämme lähtölistan olemassaolon varmasti, se ohittaa tilapäättelyn —
+  // muuten "Lue lähtölista" voisi viedä SNJ:n virhesivulle. Latauksen aikana
+  // (undefined) käytetään tilaan perustuvaa arvausta.
+  const startlistAvailable =
+    startlist.status === 'ready' ? true : startlist.status === 'none' ? false : undefined;
+  const snj = snjLink(event, new Date(), { startlistAvailable });
   const SNJ_ICONS: Record<typeof snj.kind, string> = {
     register: '📝',
     startlist: '📋',
@@ -98,6 +106,7 @@ export default function EventDetailScreen() {
         />
       )}
       {event.description && <InfoRow label="Kuvaus" value={event.description} />}
+      <StartlistSection state={startlist} />
 
       <View style={styles.buttonRow}>
         <Pressable style={styles.button} onPress={() => Linking.openURL(snj.url)}>

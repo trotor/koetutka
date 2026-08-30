@@ -5,6 +5,17 @@
   },
   "releases": [
     {
+      "version": "1.14.0",
+      "date": "2026-08-30",
+      "title": "Lähtölista kokeen tiedoissa",
+      "items": [
+        "Kokeen tiedoista näkee nyt lähtölistan: osallistujat ryhmiteltynä koepäivään, ryhmään ja luokkaan",
+        "Listalla näkyvät koiran nimi, rekisterinumero ja tittelit sekä ohjaajan nimi",
+        "Lähtölista on saatavilla kun kutsut on lähetetty, eli myös jo pidetyistä kokeista",
+        "\"Lue lähtölista\" -linkki näkyy enää silloin kun lista on oikeasti olemassa"
+      ]
+    },
+    {
       "version": "1.13.0",
       "date": "2026-08-30",
       "title": "Sovellusvinkki verkkosivulla",

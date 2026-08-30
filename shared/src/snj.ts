@@ -33,6 +33,12 @@ export function snjCalendarUrl(): string {
  * Lähtölista syntyy vasta kun kutsut lähetetään, ei jo silloin kun osallistujat
  * on valittu (`picked`) — SNJ:n API palauttaa `picked`-tiloille 404:n. Tämä on
  * tarkoituksella pelkkä tilapäättely eikä verkkokutsu.
+ *
+ * HUOM: arvaus vain, eikä aina osu: myös `invited`-kokeelta voi puuttua lista
+ * (SNJ:n sivu näyttää silloin "Jotakin meni pieleen"), ja jo pidetyllä
+ * `confirmed`-kokeella lista voi olla olemassa. Kun todellinen tieto on
+ * käytettävissä (`startlists/index.json`), anna se `snjLink`ille
+ * `startlistAvailable`-optiona tilapäättelyn sijaan.
  */
 export function hasStartList(event: Pick<Event, 'state'>): boolean {
   return event.state === 'invited';
@@ -50,10 +56,15 @@ export type SnjLinkKind = 'register' | 'startlist' | 'calendar';
  * ilmoittautumislomake näyttää alustaville kokeille tyhjän sivun eikä
  * virhesivua, joten tila havaittaisiin muuten liian myöhään. Valinta on
  * täällä eikä UI:ssa, jotta web ja mobiili eivät voi eriytyä.
+ *
+ * `opts.startlistAvailable` ohittaa tilapäättelyn lähtölistasta: anna se kun
+ * `startlists/index.json` kertoo varmasti onko listaa (näin vältetään linkki
+ * SNJ:n virhesivulle).
  */
 export function snjLink(
   event: Event,
   today: Date = new Date(),
+  opts: { startlistAvailable?: boolean } = {},
 ): { kind: SnjLinkKind; label: string; url: string } {
   if (event.state !== 'tentative' && isRegistrationOpen(event, today)) {
     return {
@@ -62,7 +73,8 @@ export function snjLink(
       url: snjRegistrationUrl(event),
     };
   }
-  if (hasStartList(event)) {
+  // Todellinen tieto listan olemassaolosta voittaa tilapäättelyn.
+  if (opts.startlistAvailable ?? hasStartList(event)) {
     return { kind: 'startlist', label: 'Lue lähtölista', url: snjStartListUrl(event) };
   }
   return { kind: 'calendar', label: 'Avaa SNJ:n koekalenteri', url: snjCalendarUrl() };

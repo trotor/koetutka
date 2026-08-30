@@ -140,4 +140,35 @@ describe('snjLink', () => {
   test('tuntematon tila ilman ilmoaikaa -> etusivu', () => {
     expect(snjLink({ type: 'NOU', id: 'abc' } as never, TODAY).kind).toBe('calendar');
   });
+
+  test('startlistAvailable=false ohittaa tilapäättelyn -> etusivu', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'invited' } as never,
+      TODAY,
+      { startlistAvailable: false },
+    );
+    expect(link.kind).toBe('calendar');
+  });
+
+  test('startlistAvailable=true antaa listalinkin myös confirmed-kokeelle', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'confirmed' } as never,
+      TODAY,
+      { startlistAvailable: true },
+    );
+    expect(link).toEqual({
+      kind: 'startlist',
+      label: 'Lue lähtölista',
+      url: 'https://koekalenteri.snj.fi/startlist/abc',
+    });
+  });
+
+  test('startlistAvailable ei ohita avointa ilmoittautumista', () => {
+    const link = snjLink(
+      { type: 'NOU', id: 'abc', state: 'confirmed', ...OPEN } as never,
+      TODAY,
+      { startlistAvailable: true },
+    );
+    expect(link.kind).toBe('register');
+  });
 });
