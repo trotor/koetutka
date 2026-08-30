@@ -1290,3 +1290,65 @@ td.entry-date.registration-open {
 .state-tentative { color: #92400e; background: #fef3c7; }
 .state-cancelled { color: #991b1b; background: #fee2e2; }
 .state-closed { color: #555; background: #e0e0e0; }
+
+/* Sovellusvinkki mobiiliselaimessa (näytetään JS:llä) */
+.app-promo {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+}
+.app-promo.is-visible {
+    display: flex;
+}
+.app-promo-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    background: #fff;
+}
+.app-promo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    min-width: 0;
+    flex: 1;
+}
+.app-promo-text strong {
+    font-size: 0.95em;
+}
+.app-promo-text span {
+    font-size: 0.78em;
+    opacity: 0.85;
+}
+.app-promo-cta {
+    flex-shrink: 0;
+    padding: 8px 14px;
+    background: #fff;
+    color: #1a472a;
+    font-size: 0.85em;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+.app-promo-cta:active {
+    opacity: 0.8;
+}
+.app-promo-close {
+    flex-shrink: 0;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 22px;
+    line-height: 1;
+    padding: 4px 2px;
+    cursor: pointer;
+}
+.app-promo-close:hover {
+    color: #fff;
+}

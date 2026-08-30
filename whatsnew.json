@@ -5,6 +5,15 @@
   },
   "releases": [
     {
+      "version": "1.13.0",
+      "date": "2026-08-30",
+      "title": "Sovellusvinkki verkkosivulla",
+      "items": [
+        "Koetutkan verkkosivu vinkkaa puhelimella selaaville mobiilisovelluksesta ja ohjaa suoraan App Storeen tai Google Playhin",
+        "Vinkin voi sulkea, jolloin se pysyy piilossa 30 vuorokautta"
+      ]
+    },
+    {
       "version": "1.12.0",
       "date": "2026-07-26",
       "title": "Suora linkki SNJ:hin ja kokeen tila",

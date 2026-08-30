@@ -1193,3 +1193,52 @@
         document.getElementById('searchInput').addEventListener('input', sortAndRender);
 
         // Alustus tapahtuu module-scriptissä (window.loadData()) shared-moduulin latauduttua.
+
+        // Sovellusvinkki: mobiiliselaimessa ehdotetaan natiivisovellusta
+        const APP_PROMO_KEY = 'koetutka:appPromoDismissed';
+        const APP_PROMO_SNOOZE_MS = 30 * 24 * 60 * 60 * 1000; // 30 vrk
+        const APP_STORE_URL = 'https://apps.apple.com/fi/app/koetutka/id6779765394';
+        const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.koetutka';
+
+        function appPromoDismissedRecently() {
+            try {
+                const ts = parseInt(localStorage.getItem(APP_PROMO_KEY), 10);
+                return Number.isFinite(ts) && Date.now() - ts < APP_PROMO_SNOOZE_MS;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        function dismissAppPromo() {
+            document.getElementById('appPromo').classList.remove('is-visible');
+            try {
+                localStorage.setItem(APP_PROMO_KEY, String(Date.now()));
+            } catch (e) {
+                // esim. yksityinen selaustila – vinkki palaa seuraavalla latauksella
+            }
+        }
+
+        function initAppPromo() {
+            const promo = document.getElementById('appPromo');
+            if (!promo) return;
+
+            const ua = navigator.userAgent || '';
+            const isIOS = /iPhone|iPad|iPod/.test(ua) ||
+                (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+            const isAndroid = /Android/.test(ua);
+            if (!isIOS && !isAndroid) return;
+
+            // Ei näytetä, jos sivu on jo lisätty kotivalikkoon (PWA) tai vinkki on suljettu
+            const standalone = navigator.standalone === true ||
+                (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches);
+            if (standalone || appPromoDismissedRecently()) return;
+
+            const link = document.getElementById('appPromoLink');
+            link.href = isIOS ? APP_STORE_URL : PLAY_STORE_URL;
+            link.setAttribute('aria-label',
+                isIOS ? 'Lataa Koetutka App Storesta' : 'Hae Koetutka Google Playsta');
+            document.getElementById('appPromoClose').addEventListener('click', dismissAppPromo);
+            promo.classList.add('is-visible');
+        }
+
+        initAppPromo();

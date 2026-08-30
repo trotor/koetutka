@@ -86,6 +86,12 @@ MIT
 
 ## Versiohistoria
 
+### v1.13.0 (2026-08-30)
+- **Sovellusvinkki mobiiliselaimessa**: puhelimella (iOS/Android) sivun ylälaidassa
+  näkyy vinkki natiivisovelluksesta, ja "Lataa" vie oikeaan kauppaan (App Store /
+  Google Play). Vinkin voi sulkea, jolloin se pysyy piilossa 30 vrk, eikä sitä
+  näytetä lainkaan, jos sivu on avattu kotivalikosta (PWA).
+
 ### v1.12.0 (2026-07-26)
 - **Suora linkki SNJ:hin**: kokeen tiedoista pääsee suoraan ilmoittautumaan
   SNJ:n koekalenterissa, kun ilmoittautuminen on auki (aiemmin linkki vei aina
