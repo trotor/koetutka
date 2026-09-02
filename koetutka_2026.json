@@ -9419,7 +9419,7 @@
     "state": "picked",
     "entry_start": "2026-08-17",
     "entry_end": "2026-08-30",
-    "entries": 21
+    "entries": 19
   },
   {
     "id": "s72M4aggIs",
@@ -9455,10 +9455,6 @@
     },
     "classes": [
       {
-        "entries": 19,
-        "state": "invited",
-        "class": "ALO",
-        "date": "2026-09-05T00:00:00.000+03:00",
         "judge": [
           {
             "official": false,
@@ -9466,14 +9462,18 @@
             "id": -1
           }
         ],
-        "members": 14
+        "members": 13,
+        "entries": 18,
+        "class": "ALO",
+        "date": "2026-09-05T00:00:00.000+03:00",
+        "state": "invited"
       }
     ],
     "places": 20,
     "state": "invited",
     "entry_start": "2026-07-25",
     "entry_end": "2026-08-15",
-    "entries": 19
+    "entries": 18
   },
   {
     "id": "Jcmg4QClcN",
@@ -9549,7 +9549,7 @@
     "state": "invited",
     "entry_start": "2026-07-26",
     "entry_end": "2026-08-16",
-    "entries": 18
+    "entries": 17
   },
   {
     "id": "HZKihWaD-m",
@@ -9765,27 +9765,27 @@
     },
     "classes": [
       {
-        "entries": 10,
-        "members": 3,
-        "date": "2026-09-11T21:00:00.000Z",
-        "places": 0,
         "judge": [],
+        "date": "2026-09-11T21:00:00.000Z",
+        "entries": 11,
+        "members": 3,
+        "places": 0,
         "class": "VOI"
       },
       {
-        "class": "AVO",
         "entries": 6,
         "places": 0,
         "judge": [],
+        "date": "2026-09-11T21:00:00.000Z",
         "members": 3,
-        "date": "2026-09-11T21:00:00.000Z"
+        "class": "AVO"
       }
     ],
     "places": 28,
     "state": "confirmed",
     "entry_start": "2026-08-20",
     "entry_end": "2026-09-04",
-    "entries": 16
+    "entries": 17
   },
   {
     "id": "pSGSr3ChkO",
@@ -10416,25 +10416,25 @@
     },
     "classes": [
       {
+        "date": "2026-09-25T21:00:00.000Z",
+        "members": 5,
+        "entries": 10,
+        "class": "VOI",
         "places": 12,
-        "entries": 7,
         "judge": [
           {
             "id": 850900,
             "name": "Majuri Pasi",
             "official": true
           }
-        ],
-        "members": 4,
-        "date": "2026-09-25T21:00:00.000Z",
-        "class": "VOI"
+        ]
       }
     ],
     "places": 12,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 7
+    "entries": 10
   },
   {
     "id": "LrTMU442O1",
@@ -10476,7 +10476,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 22
+    "entries": 23
   },
   {
     "id": "SxFikIUEfq",
@@ -10580,15 +10580,15 @@
             "name": "Tenhunen Juha"
           },
           {
-            "official": true,
+            "id": 4053791,
             "name": "Puttonen Pasi-Petteri",
-            "id": 4053791
+            "official": true
           }
         ],
-        "members": 11,
+        "entries": 16,
         "places": 24,
+        "members": 12,
         "date": "2026-09-25T21:00:00.000Z",
-        "entries": 15,
         "class": "VOI"
       }
     ],
@@ -10596,7 +10596,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-17",
     "entry_end": "2026-09-07",
-    "entries": 15
+    "entries": 16
   },
   {
     "id": "FJpsJK89sU",
@@ -10634,7 +10634,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 18
+    "entries": 19
   },
   {
     "id": "wni2Z9SrG8",
@@ -10692,9 +10692,9 @@
       {
         "judge": [
           {
-            "official": false,
             "name": "Esa Valkonen",
-            "id": -1
+            "id": -1,
+            "official": false
           },
           {
             "official": false,
@@ -10702,35 +10702,35 @@
             "id": -2
           }
         ],
-        "members": 2,
-        "date": "2026-09-25T21:00:00.000Z",
+        "entries": 6,
         "class": "ALO",
-        "entries": 5
+        "members": 3,
+        "date": "2026-09-25T21:00:00.000Z"
       },
       {
-        "members": 1,
-        "class": "AVO",
         "judge": [
           {
-            "official": false,
             "id": -1,
-            "name": "Esa Valkonen"
+            "name": "Esa Valkonen",
+            "official": false
           },
           {
             "name": "Timo Halme",
-            "official": false,
-            "id": -2
+            "id": -2,
+            "official": false
           }
         ],
-        "entries": 2,
-        "date": "2026-09-25T21:00:00.000Z"
+        "class": "AVO",
+        "members": 1,
+        "date": "2026-09-25T21:00:00.000Z",
+        "entries": 2
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 7
+    "entries": 8
   },
   {
     "id": "AQem2RQsgG",
@@ -10769,25 +10769,25 @@
     },
     "classes": [
       {
-        "members": 6,
+        "members": 8,
+        "class": "VOI",
+        "date": "2026-09-25T21:00:00.000Z",
+        "places": 12,
         "judge": [
           {
-            "name": "Särkänlahti Jari",
             "official": true,
-            "id": 4055276
+            "id": 4055276,
+            "name": "Särkänlahti Jari"
           }
         ],
-        "places": 12,
-        "date": "2026-09-25T21:00:00.000Z",
-        "entries": 12,
-        "class": "VOI"
+        "entries": 14
       }
     ],
     "places": 12,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 12
+    "entries": 14
   },
   {
     "id": "3ZkWaxluqo",
@@ -10829,7 +10829,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-22",
     "entry_end": "2026-09-05",
-    "entries": 6
+    "entries": 7
   },
   {
     "id": "_b6yzTvk3L",
@@ -10868,7 +10868,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 14
+    "entries": 15
   },
   {
     "id": "bn7tXxN3KD",
@@ -10947,9 +10947,8 @@
     "classes": [
       {
         "date": "2026-09-26T21:00:00.000Z",
-        "entries": 7,
-        "places": 16,
         "class": "AVO",
+        "members": 6,
         "judge": [
           {
             "official": true,
@@ -10957,28 +10956,29 @@
             "id": 4053791
           }
         ],
-        "members": 6
+        "entries": 7,
+        "places": 16
       },
       {
-        "class": "ALO",
-        "date": "2026-09-26T21:00:00.000Z",
+        "places": 15,
         "judge": [
           {
-            "name": "Tenhunen Juha",
             "official": true,
-            "id": 999999
+            "id": 999999,
+            "name": "Tenhunen Juha"
           }
         ],
-        "entries": 20,
-        "places": 15,
-        "members": 12
+        "members": 13,
+        "class": "ALO",
+        "date": "2026-09-26T21:00:00.000Z",
+        "entries": 21
       }
     ],
     "places": 31,
     "state": "confirmed",
     "entry_start": "2026-08-17",
     "entry_end": "2026-09-07",
-    "entries": 27
+    "entries": 28
   },
   {
     "id": "0OrMAOqaqA",
@@ -11017,25 +11017,25 @@
     },
     "classes": [
       {
-        "entries": 8,
         "date": "2026-09-26T21:00:00.000Z",
-        "members": 2,
-        "class": "AVO",
+        "entries": 9,
+        "members": 3,
         "judge": [
           {
-            "name": "Salonen Susanna",
+            "id": 835312,
             "official": true,
-            "id": 835312
+            "name": "Salonen Susanna"
           }
         ],
-        "places": 15
+        "places": 15,
+        "class": "AVO"
       }
     ],
     "places": 15,
     "state": "confirmed",
     "entry_start": "2026-08-16",
     "entry_end": "2026-09-06",
-    "entries": 8
+    "entries": 9
   },
   {
     "id": "rfo1LoSGX6",
@@ -11076,7 +11076,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-01",
     "entry_end": "2026-09-19",
-    "entries": 2
+    "entries": 5
   },
   {
     "id": "Sc6lW4685x",
@@ -11112,32 +11112,32 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 14,
-        "date": "2026-10-03T00:00:00.000+03:00",
-        "class": "ALO",
+        "entries": 15,
         "members": 5,
-        "judge": []
+        "judge": [],
+        "class": "ALO",
+        "date": "2026-10-03T00:00:00.000+03:00"
       },
       {
         "date": "2026-10-03T00:00:00.000+03:00",
-        "entries": 5,
-        "class": "AVO",
+        "members": 2,
         "judge": [],
-        "members": 2
+        "class": "AVO",
+        "entries": 7
       },
       {
-        "entries": 0,
-        "judge": [],
-        "members": 0,
+        "date": "2026-10-03T00:00:00.000+03:00",
         "class": "VOI",
-        "date": "2026-10-03T00:00:00.000+03:00"
+        "entries": 1,
+        "judge": [],
+        "members": 0
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-08-31",
     "entry_end": "2026-09-20",
-    "entries": 19
+    "entries": 23
   },
   {
     "id": "a43BCKKMoH",
@@ -11178,7 +11178,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-01",
     "entry_end": "2026-09-19",
-    "entries": 1
+    "entries": 9
   },
   {
     "id": "dHM1pVPbGA",
@@ -11540,11 +11540,7 @@
     },
     "classes": [
       {
-        "class": "ALO",
-        "groups": [
-          "ap",
-          "ip"
-        ],
+        "date": "2026-10-09T21:00:00.000Z",
         "judge": [
           {
             "name": "Anu Pesonen",
@@ -11552,34 +11548,36 @@
             "id": -1
           },
           {
-            "name": "Riikka Tahvanainen",
             "id": -2,
+            "name": "Riikka Tahvanainen",
             "official": false
           }
         ],
-        "date": "2026-10-09T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "class": "ALO",
         "places": 0
       },
       {
-        "date": "2026-10-09T21:00:00.000Z",
-        "groups": [
-          "ap",
-          "ip"
-        ],
-        "places": 0,
         "class": "AVO",
+        "places": 0,
         "judge": [
           {
             "id": -1,
-            "official": false,
-            "name": "Anu Pesonen"
+            "name": "Anu Pesonen",
+            "official": false
           },
           {
-            "name": "Riikka Tahvanainen",
             "official": false,
-            "id": -2
+            "id": -2,
+            "name": "Riikka Tahvanainen"
           }
-        ]
+        ],
+        "groups": [
+          "kp"
+        ],
+        "date": "2026-10-09T21:00:00.000Z"
       }
     ],
     "places": 20,
@@ -11870,6 +11868,176 @@
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
     "entries": null
+  },
+  {
+    "id": "3kHAyI19dm",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "07.11.2026",
+    "date_sort": "2026-11-07T00:00:00+02:00",
+    "end_date_sort": "2026-11-07T00:00:00+02:00",
+    "entry_date": "19.10.-25.10.",
+    "location": "Kemiönsaari",
+    "coordinates": [
+      60.1650696,
+      22.7269885
+    ],
+    "name": "Nordic Championship Flatcoated Retrievers NCFCR2026, Individual Event",
+    "organizer": "SUOMEN SILEÄKARVAISET NOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Bernadetta Stenström",
+      "phone": "",
+      "email": "bernadetta.stenstrom@gmail.com"
+    },
+    "judges": [
+      "Särkänlahti Jari"
+    ],
+    "description": "Nordic Championship Flatcoated Retrievers NCFCR2026 will be held at Westankärr Manor on Kimitoön (Kemiönsaari) on November 7–8, 2026. Spectators are also welcome to attend (advance registration required; further details to follow closer to the event).\n\nOn Saturday, November 7, the individual championship will be decided through official A and B tests. Nine dog-and-handler pairs will be selected for the national squad, from which the teams for the team competition will be formed; these same dogs will participate in both the A and B tests. National quotas are set at 3 dogs for the A test and 6 dogs for the B test.\n\nOn Sunday, November 8, the team championship (Nordic Championship Team Event) will take place. The competition will be conducted as an IWT-style dummy test, featuring three-person teams. Each Nordic country has three team slots. Additionally, one team from Estonia has been invited to participate in the tests this year outside of the championship competition.\n\nRegistration is limited only to Flatcoated Retrievers representing national teams. Preregistration is required by email to mikkolaanu@hotmail.com by October 18, 2026. Payment instructions will be provided once the entry is confirmed. Further information about the event is available at https://www.flatti.net/tapahtumat/pohjoismaiden-flattimestaruus-2026/\n\nReserve judge Vesa Turunen.",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 50
+    },
+    "classes": [
+      {
+        "places": 26,
+        "class": "VOI",
+        "date": "2026-11-06T22:00:00.000Z",
+        "judge": [
+          {
+            "id": 4055276,
+            "official": true,
+            "name": "Särkänlahti Jari"
+          }
+        ]
+      }
+    ],
+    "places": 26,
+    "state": "confirmed",
+    "entry_start": "2026-10-19",
+    "entry_end": "2026-10-25",
+    "entries": 0
+  },
+  {
+    "id": "hPWqB4g6bC",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "07.11.2026",
+    "date_sort": "2026-11-07T00:00:00+02:00",
+    "end_date_sort": "2026-11-07T23:59:59.999000+02:00",
+    "entry_date": "19.10.-25.10.",
+    "location": "Kemiönsaari",
+    "coordinates": [
+      60.1650696,
+      22.7269885
+    ],
+    "name": "Nordic Championship Flatcoated Retrievers NCFCR2026, Individual Event",
+    "organizer": "SUOMEN SILEÄKARVAISET NOUTAJAT RY",
+    "official": {
+      "name": "Anu Mikkola",
+      "phone": "0405271631",
+      "email": "mikkolaanu@hotmail.com"
+    },
+    "secretary": {
+      "name": "Bernadetta Stenström",
+      "phone": "",
+      "email": "bernadetta.stenstrom@gmail.com"
+    },
+    "judges": [
+      "Ahola Pauliina",
+      "Sipola Miso"
+    ],
+    "description": "Nordic Championship Flatcoated Retrievers NCFCR2026 will be held at Westankärr Manor on Kimitoön (Kemiönsaari) on November 7–8, 2026. Spectators are also welcome to attend (advance registration required; further details to follow closer to the event).\n\nOn Saturday, November 7, the individual championship will be decided through official A and B tests. Nine dog-and-handler pairs will be selected for the national squad, from which the teams for the team competition will be formed; these same dogs will participate in both the A and B tests. National quotas are set at 3 dogs for the A test and 6 dogs for the B test.\n\nOn Sunday, November 8, the team championship (Nordic Championship Team Event) will take place. The competition will be conducted as an IWT-style dummy test, featuring three-person teams. Each Nordic country has three team slots. Additionally, one team from Estonia has been invited to participate in the tests this year outside of the championship competition.\n\nRegistration is limited only to Flatcoated Retrievers representing national teams. Preregistration is required by email to mikkolaanu@hotmail.com by October 18, 2026. Payment instructions will be provided once the entry is confirmed. Further information about the event is available at https://www.flatti.net/tapahtumat/pohjoismaiden-flattimestaruus-2026/",
+    "cost": {
+      "normal": 100
+    },
+    "cost_member": {
+      "normal": 100
+    },
+    "classes": [],
+    "places": 13,
+    "state": "confirmed",
+    "entry_start": "2026-10-19",
+    "entry_end": "2026-10-25",
+    "entries": null
+  },
+  {
+    "id": "oAH9Fk99PO",
+    "type": "EPÄVIRALLINEN",
+    "levels": "VOI (Su)",
+    "date": "08.11.2026",
+    "date_sort": "2026-11-08T00:00:00+02:00",
+    "end_date_sort": "2026-11-08T00:00:00+02:00",
+    "entry_date": "19.10.-25.10.",
+    "location": "Kemiönsaari",
+    "coordinates": [
+      60.1650696,
+      22.7269885
+    ],
+    "name": "Nordic Championship Flatcoated Retrievers NCFCR2026, Team Event",
+    "organizer": "SUOMEN SILEÄKARVAISET NOUTAJAT RY",
+    "official": {
+      "name": "Anu Mikkola",
+      "phone": "0405271631",
+      "email": "mikkolaanu@hotmail.com"
+    },
+    "secretary": {
+      "name": "Bernadetta Stenström",
+      "phone": "",
+      "email": "bernadetta.stenstrom@gmail.com"
+    },
+    "judges": [
+      "Ahola Pauliina",
+      "Sipola Miso",
+      "Särkänlahti Jari"
+    ],
+    "description": "Nordic Championship Flatcoated Retrievers NCFCR2026 will be held at Westankärr Manor on Kimitoön (Kemiönsaari) on November 7–8, 2026. Spectators are also welcome to attend (advance registration required; further details to follow closer to the event).\n\nOn Saturday, November 7, the individual championship will be decided through official A and B tests. Nine dog-and-handler pairs will be selected for the national squad, from which the teams for the team competition will be formed; these same dogs will participate in both the A and B tests. National quotas are set at 3 dogs for the A test and 6 dogs for the B test.\n\nOn Sunday, November 8, the team championship (Nordic Championship Team Event) will take place. The competition will be conducted as an IWT-style dummy test, featuring three-person teams. Each Nordic country has three team slots. Additionally, one team from Estonia has been invited to participate in the tests this year outside of the championship competition.\n\nRegistration is limited only to Flatcoated Retrievers representing national teams. Preregistration is required by email to mikkolaanu@hotmail.com by October 18, 2026. Payment instructions will be provided once the entry is confirmed. Further information about the event is available at https://www.flatti.net/tapahtumat/pohjoismaiden-flattimestaruus-2026/",
+    "cost": {
+      "normal": 40
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "class": "VOI",
+        "groups": [
+          "kp"
+        ],
+        "members": 0,
+        "places": 39,
+        "judge": [
+          {
+            "id": 751529,
+            "official": true,
+            "name": "Ahola Pauliina"
+          },
+          {
+            "id": 4055276,
+            "name": "Särkänlahti Jari",
+            "official": true
+          },
+          {
+            "id": 825013,
+            "official": true,
+            "name": "Sipola Miso"
+          }
+        ],
+        "entries": 0,
+        "date": "2026-11-07T22:00:00.000Z"
+      }
+    ],
+    "places": 39,
+    "state": "confirmed",
+    "entry_start": "2026-10-19",
+    "entry_end": "2026-10-25",
+    "entries": 0
   },
   {
     "id": "F5iXiF5Oto",
