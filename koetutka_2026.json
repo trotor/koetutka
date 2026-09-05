@@ -9455,25 +9455,25 @@
     },
     "classes": [
       {
-        "state": "invited",
-        "entries": 15,
+        "class": "ALO",
         "judge": [
           {
-            "name": "Fontell Kari-Matti",
             "id": -1,
-            "official": false
+            "official": false,
+            "name": "Fontell Kari-Matti"
           }
         ],
-        "members": 11,
         "date": "2026-09-05T00:00:00.000+03:00",
-        "class": "ALO"
+        "state": "invited",
+        "entries": 14,
+        "members": 11
       }
     ],
     "places": 20,
     "state": "invited",
     "entry_start": "2026-07-25",
     "entry_end": "2026-08-15",
-    "entries": 15
+    "entries": 14
   },
   {
     "id": "Jcmg4QClcN",
@@ -9549,7 +9549,7 @@
     "state": "invited",
     "entry_start": "2026-07-26",
     "entry_end": "2026-08-16",
-    "entries": 17
+    "entries": 16
   },
   {
     "id": "HZKihWaD-m",
@@ -9765,27 +9765,33 @@
     },
     "classes": [
       {
-        "entries": 18,
-        "members": 3,
-        "places": 0,
         "date": "2026-09-11T21:00:00.000Z",
+        "entries": 19,
+        "members": 3,
+        "groups": [
+          "kp"
+        ],
+        "class": "VOI",
         "judge": [],
-        "class": "VOI"
+        "places": 0
       },
       {
-        "entries": 9,
         "date": "2026-09-11T21:00:00.000Z",
-        "places": 0,
-        "members": 3,
         "class": "AVO",
-        "judge": []
+        "entries": 9,
+        "judge": [],
+        "groups": [
+          "kp"
+        ],
+        "members": 3,
+        "places": 0
       }
     ],
     "places": 28,
     "state": "confirmed",
     "entry_start": "2026-08-20",
     "entry_end": "2026-09-04",
-    "entries": 27
+    "entries": 28
   },
   {
     "id": "pSGSr3ChkO",
@@ -9824,10 +9830,10 @@
     },
     "classes": [],
     "places": 16,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-08-01",
     "entry_end": "2026-08-22",
-    "entries": 23
+    "entries": 22
   },
   {
     "id": "d4lO-oRp8e",
@@ -9959,33 +9965,33 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 5,
-        "entries": 9,
-        "date": "2026-09-12T21:00:00.000Z",
-        "places": 14,
         "judge": [],
         "class": "AVO",
-        "groups": [
-          "kp"
-        ]
-      },
-      {
-        "entries": 22,
         "date": "2026-09-12T21:00:00.000Z",
-        "judge": [],
+        "places": 14,
         "groups": [
           "kp"
         ],
-        "class": "VOI",
+        "members": 5,
+        "entries": 9
+      },
+      {
+        "entries": 21,
+        "members": 13,
+        "date": "2026-09-12T21:00:00.000Z",
+        "judge": [],
         "places": 14,
-        "members": 13
+        "groups": [
+          "kp"
+        ],
+        "class": "VOI"
       }
     ],
     "places": 28,
     "state": "confirmed",
     "entry_start": "2026-08-02",
     "entry_end": "2026-09-04",
-    "entries": 31
+    "entries": 30
   },
   {
     "id": "X-V45rJLU2",
@@ -10222,25 +10228,25 @@
     "cost_member": 45,
     "classes": [
       {
-        "members": 13,
-        "class": "ALO",
-        "date": "2026-09-18T21:00:00.000Z",
-        "entries": 26,
+        "entries": 27,
         "places": 15,
         "judge": [
           {
-            "official": true,
             "name": "Lappalainen Mika",
-            "id": 882887
+            "id": 882887,
+            "official": true
           }
-        ]
+        ],
+        "date": "2026-09-18T21:00:00.000Z",
+        "members": 14,
+        "class": "ALO"
       }
     ],
     "places": 15,
     "state": "confirmed",
     "entry_start": "2026-08-18",
     "entry_end": "2026-09-08",
-    "entries": 26
+    "entries": 27
   },
   {
     "id": "WUIDiiwETw",
@@ -10276,25 +10282,25 @@
     },
     "classes": [
       {
+        "entries": 31,
         "date": "2026-09-18T21:00:00.000Z",
+        "members": 6,
         "class": "ALO",
         "places": 15,
         "judge": [
           {
-            "name": "Hukkanen Tuija",
             "id": 554006,
+            "name": "Hukkanen Tuija",
             "official": true
           }
-        ],
-        "members": 6,
-        "entries": 30
+        ]
       }
     ],
     "places": 15,
     "state": "confirmed",
     "entry_start": "2026-08-17",
     "entry_end": "2026-09-07",
-    "entries": 30
+    "entries": 31
   },
   {
     "id": "Ts80lu7S31",
@@ -10423,24 +10429,24 @@
     "classes": [
       {
         "class": "VOI",
-        "places": 12,
-        "members": 6,
         "date": "2026-09-25T21:00:00.000Z",
-        "entries": 11,
+        "entries": 15,
+        "members": 7,
         "judge": [
           {
             "name": "Majuri Pasi",
-            "id": 850900,
-            "official": true
+            "official": true,
+            "id": 850900
           }
-        ]
+        ],
+        "places": 12
       }
     ],
     "places": 12,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 11
+    "entries": 15
   },
   {
     "id": "LrTMU442O1",
@@ -10482,7 +10488,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 25
+    "entries": 27
   },
   {
     "id": "SxFikIUEfq",
@@ -10521,25 +10527,25 @@
     },
     "classes": [
       {
-        "date": "2026-09-25T21:00:00.000Z",
-        "class": "ALO",
-        "entries": 21,
-        "members": 11,
         "places": 15,
+        "class": "ALO",
         "judge": [
           {
-            "official": true,
             "name": "Salonen Susanna",
+            "official": true,
             "id": 835312
           }
-        ]
+        ],
+        "date": "2026-09-25T21:00:00.000Z",
+        "members": 14,
+        "entries": 24
       }
     ],
     "places": 15,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 21
+    "entries": 24
   },
   {
     "id": "GVzUre9exB",
@@ -10611,7 +10617,7 @@
     "date": "26.-27.09.2026",
     "date_sort": "2026-09-26T00:00:00+03:00",
     "end_date_sort": "2026-09-27T23:59:59.999000+03:00",
-    "entry_date": "15.08.-05.09.",
+    "entry_date": "15.08.-18.09.",
     "location": "Laukaa",
     "coordinates": [
       62.416667,
@@ -10639,8 +10645,8 @@
     "places": 32,
     "state": "confirmed",
     "entry_start": "2026-08-15",
-    "entry_end": "2026-09-05",
-    "entries": 20
+    "entry_end": "2026-09-18",
+    "entries": 21
   },
   {
     "id": "wni2Z9SrG8",
@@ -10697,24 +10703,27 @@
     "classes": [
       {
         "members": 4,
-        "entries": 8,
         "date": "2026-09-25T21:00:00.000Z",
         "judge": [
           {
+            "name": "Esa Valkonen",
             "official": false,
-            "id": -1,
-            "name": "Esa Valkonen"
+            "id": -1
           },
           {
+            "id": -2,
             "name": "Timo Halme",
-            "official": false,
-            "id": -2
+            "official": false
           }
         ],
-        "class": "ALO"
+        "class": "ALO",
+        "entries": 9
       },
       {
+        "class": "AVO",
+        "members": 1,
         "date": "2026-09-25T21:00:00.000Z",
+        "entries": 2,
         "judge": [
           {
             "official": false,
@@ -10722,21 +10731,18 @@
             "id": -1
           },
           {
-            "name": "Timo Halme",
             "id": -2,
+            "name": "Timo Halme",
             "official": false
           }
-        ],
-        "members": 1,
-        "class": "AVO",
-        "entries": 2
+        ]
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-12",
-    "entries": 10
+    "entries": 11
   },
   {
     "id": "AQem2RQsgG",
@@ -10775,25 +10781,25 @@
     },
     "classes": [
       {
-        "members": 8,
         "class": "VOI",
+        "members": 9,
         "date": "2026-09-25T21:00:00.000Z",
+        "entries": 17,
         "places": 12,
         "judge": [
           {
-            "official": true,
+            "name": "Särkänlahti Jari",
             "id": 4055276,
-            "name": "Särkänlahti Jari"
+            "official": true
           }
-        ],
-        "entries": 14
+        ]
       }
     ],
     "places": 12,
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 14
+    "entries": 17
   },
   {
     "id": "3ZkWaxluqo",
@@ -10835,7 +10841,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-22",
     "entry_end": "2026-09-05",
-    "entries": 8
+    "entries": 9
   },
   {
     "id": "_b6yzTvk3L",
@@ -11024,16 +11030,16 @@
     "classes": [
       {
         "date": "2026-09-26T21:00:00.000Z",
-        "entries": 9,
-        "members": 3,
+        "entries": 10,
+        "places": 15,
         "judge": [
           {
+            "name": "Salonen Susanna",
             "id": 835312,
-            "official": true,
-            "name": "Salonen Susanna"
+            "official": true
           }
         ],
-        "places": 15,
+        "members": 4,
         "class": "AVO"
       }
     ],
@@ -11041,7 +11047,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-16",
     "entry_end": "2026-09-06",
-    "entries": 9
+    "entries": 10
   },
   {
     "id": "rfo1LoSGX6",
@@ -11119,31 +11125,31 @@
     "classes": [
       {
         "judge": [],
-        "class": "ALO",
-        "date": "2026-10-03T00:00:00.000+03:00",
         "members": 5,
-        "entries": 17
+        "entries": 17,
+        "class": "ALO",
+        "date": "2026-10-03T00:00:00.000+03:00"
       },
       {
         "entries": 7,
-        "members": 2,
-        "judge": [],
         "date": "2026-10-03T00:00:00.000+03:00",
+        "judge": [],
+        "members": 2,
         "class": "AVO"
       },
       {
-        "members": 0,
-        "class": "VOI",
-        "entries": 1,
+        "judge": [],
         "date": "2026-10-03T00:00:00.000+03:00",
-        "judge": []
+        "members": 1,
+        "class": "VOI",
+        "entries": 2
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-08-31",
     "entry_end": "2026-09-20",
-    "entries": 25
+    "entries": 26
   },
   {
     "id": "a43BCKKMoH",
@@ -11184,7 +11190,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-01",
     "entry_end": "2026-09-19",
-    "entries": 11
+    "entries": 12
   },
   {
     "id": "dHM1pVPbGA",
@@ -11246,6 +11252,91 @@
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-20",
     "entries": 0
+  },
+  {
+    "id": "SGopPPNPgG",
+    "type": "KOULUTUS",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "04.10.2026",
+    "date_sort": "2026-10-04T00:00:00+03:00",
+    "end_date_sort": "2026-10-04T00:00:00+03:00",
+    "entry_date": "07.09.-20.09.",
+    "location": "Kontiolahti",
+    "coordinates": [
+      62.766667,
+      29.85
+    ],
+    "name": "Pasi Pöppösen koulutus (ap ALO, ip AVO/VOI)",
+    "organizer": "POHJOIS-KARJALAN NOUTAJAKOIRAYHDIST",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Essi Partti",
+      "phone": "",
+      "email": "essi.pknoutajat@outlook.com"
+    },
+    "judges": [
+      "Pöppönen Pasi"
+    ],
+    "description": "Aamupäivä alokasluokka 6 koirakkoa, iltapäivä avo/voi 6 koirakkoa. HUOM! Ilmoita tasosi viestikenttään ja valitse ap/ip -ryhmä tasosi mukaan.",
+    "cost": {
+      "normal": 65
+    },
+    "cost_member": {
+      "normal": 55
+    },
+    "classes": [
+      {
+        "judge": [
+          {
+            "name": "Pöppönen Pasi",
+            "id": 850149,
+            "official": true
+          }
+        ],
+        "groups": [
+          "ap"
+        ],
+        "date": "2026-10-03T21:00:00.000Z",
+        "class": "ALO"
+      },
+      {
+        "class": "AVO",
+        "groups": [
+          "ip"
+        ],
+        "judge": [
+          {
+            "official": true,
+            "id": 850149,
+            "name": "Pöppönen Pasi"
+          }
+        ],
+        "date": "2026-10-03T21:00:00.000Z"
+      },
+      {
+        "groups": [
+          "ip"
+        ],
+        "date": "2026-10-03T21:00:00.000Z",
+        "judge": [
+          {
+            "official": true,
+            "id": 850149,
+            "name": "Pöppönen Pasi"
+          }
+        ],
+        "class": "VOI"
+      }
+    ],
+    "places": 12,
+    "state": "confirmed",
+    "entry_start": "2026-09-07",
+    "entry_end": "2026-09-20",
+    "entries": null
   },
   {
     "id": "MNEfNE7Ft9",
@@ -11455,7 +11546,7 @@
     },
     "classes": [],
     "places": 16,
-    "state": "tentative",
+    "state": "confirmed",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-27",
     "entries": null
