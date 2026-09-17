@@ -10593,9 +10593,8 @@
     },
     "classes": [
       {
-        "state": "picked",
-        "entries": 26,
-        "places": 24,
+        "date": "2026-09-25T21:00:00.000Z",
+        "class": "VOI",
         "judge": [
           {
             "name": "Tenhunen Juha",
@@ -10603,14 +10602,15 @@
             "official": true
           },
           {
+            "name": "Puttonen Pasi-Petteri",
             "official": true,
-            "id": 4053791,
-            "name": "Puttonen Pasi-Petteri"
+            "id": 4053791
           }
         ],
-        "date": "2026-09-25T21:00:00.000Z",
-        "class": "VOI",
-        "members": 21
+        "members": 21,
+        "places": 24,
+        "state": "picked",
+        "entries": 26
       }
     ],
     "places": 24,
@@ -10655,7 +10655,7 @@
     "state": "confirmed",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-17",
-    "entries": 27
+    "entries": 28
   },
   {
     "id": "wni2Z9SrG8",
@@ -10927,7 +10927,7 @@
     "state": "invited",
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
-    "entries": 36
+    "entries": 35
   },
   {
     "id": "Hm1id2h1F7",
@@ -10936,7 +10936,7 @@
     "date": "27.09.2026",
     "date_sort": "2026-09-27T00:00:00+03:00",
     "end_date_sort": "2026-09-27T00:00:00+03:00",
-    "entry_date": "17.08.-23.09.",
+    "entry_date": "17.08.-15.09.",
     "location": "Raahe",
     "coordinates": [
       64.6845313,
@@ -10958,7 +10958,7 @@
       "Puttonen Pasi-Petteri",
       "Tenhunen Juha"
     ],
-    "description": "Maksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä. \n\nEdit. 8.9.2026: Ilmoittautumisaikaa jatkettu AVO-luokan osalta. Kaikki alkuperäisenä ilmoittautumisaikana ilmoittautuneet AVO-luokan koirakot ovat mukana kokeessa. ALO-luokkaan ei oteta enää ilmoittautumisia. ",
+    "description": "Maksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä. \n\nEdit. 8.9.2026: Ilmoittautumisaikaa jatkettu AVO-luokan osalta. Kaikki alkuperäisenä ilmoittautumisaikana ilmoittautuneet AVO-luokan koirakot ovat mukana kokeessa. ALO-luokkaan ei oteta enää ilmoittautumisia. \n\nEdit. 16.9.2026: Ilmoittautuminen on suljettu, mutta AVO-luokkaan voi vielä ilmoittautua laittamalla viestiä koesihteerille.",
     "cost": {
       "normal": 47
     },
@@ -10998,7 +10998,7 @@
     "places": 31,
     "state": "confirmed",
     "entry_start": "2026-08-17",
-    "entry_end": "2026-09-23",
+    "entry_end": "2026-09-15",
     "entries": 36
   },
   {
@@ -11196,7 +11196,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-21",
-    "entries": 6
+    "entries": 7
   },
   {
     "id": "Sc6lW4685x",
@@ -11232,32 +11232,32 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 7,
-        "entries": 21,
         "judge": [],
         "class": "ALO",
+        "date": "2026-10-03T00:00:00.000+03:00",
+        "members": 7,
+        "entries": 21
+      },
+      {
+        "class": "AVO",
+        "entries": 14,
+        "members": 5,
+        "judge": [],
         "date": "2026-10-03T00:00:00.000+03:00"
       },
       {
+        "entries": 12,
         "date": "2026-10-03T00:00:00.000+03:00",
         "judge": [],
-        "entries": 13,
-        "class": "AVO",
-        "members": 5
-      },
-      {
-        "judge": [],
-        "entries": 9,
-        "members": 5,
         "class": "VOI",
-        "date": "2026-10-03T00:00:00.000+03:00"
+        "members": 7
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-08-31",
     "entry_end": "2026-09-20",
-    "entries": 43
+    "entries": 47
   },
   {
     "id": "a43BCKKMoH",
@@ -11338,19 +11338,19 @@
     "classes": [
       {
         "date": "2026-10-03T21:00:00.000Z",
-        "entries": 21,
+        "entries": 22,
         "class": "ALO",
-        "members": 11,
-        "judge": [
-          {
-            "name": "Fontell Ari-Pekka",
-            "official": true,
-            "id": 842408
-          }
-        ],
+        "members": 12,
         "groups": [
           "ap",
           "ip"
+        ],
+        "judge": [
+          {
+            "id": 842408,
+            "name": "Fontell Ari-Pekka",
+            "official": true
+          }
         ],
         "places": 15
       }
@@ -11359,7 +11359,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-20",
-    "entries": 21
+    "entries": 22
   },
   {
     "id": "SGopPPNPgG",
@@ -11489,20 +11489,20 @@
     },
     "classes": [
       {
-        "groups": [
-          "ap"
-        ],
         "class": "ALO",
         "date": "2026-10-03T21:00:00.000Z",
-        "places": 8,
-        "members": 8,
-        "entries": 10,
+        "members": 10,
         "judge": [
           {
-            "official": true,
             "id": 875766,
+            "official": true,
             "name": "Tuominen Petri"
           }
+        ],
+        "places": 8,
+        "entries": 12,
+        "groups": [
+          "ap"
         ]
       }
     ],
@@ -11510,7 +11510,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-11",
     "entry_end": "2026-09-24",
-    "entries": 10
+    "entries": 12
   },
   {
     "id": "j27XZDTTFs",
@@ -11549,28 +11549,28 @@
     },
     "classes": [
       {
+        "date": "2026-10-03T21:00:00.000Z",
         "judge": [
           {
-            "official": true,
+            "name": "Tuominen Petri",
             "id": 875766,
-            "name": "Tuominen Petri"
+            "official": true
           }
         ],
-        "class": "AVO",
-        "date": "2026-10-03T21:00:00.000Z",
+        "members": 2,
         "groups": [
           "ip"
         ],
-        "members": 1,
-        "places": 7,
-        "entries": 2
+        "entries": 3,
+        "class": "AVO",
+        "places": 7
       }
     ],
     "places": 7,
     "state": "confirmed",
     "entry_start": "2026-09-11",
     "entry_end": "2026-09-24",
-    "entries": 2
+    "entries": 3
   },
   {
     "id": "xZ2G1uonzc",
@@ -11610,16 +11610,16 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2026-10-03T21:00:00.000Z",
-        "members": 8,
-        "entries": 17,
+        "entries": 18,
         "judge": [
           {
-            "id": 882887,
             "name": "Lappalainen Mika",
+            "id": 882887,
             "official": true
           }
         ],
+        "date": "2026-10-03T21:00:00.000Z",
+        "members": 9,
         "places": 12
       }
     ],
@@ -11627,7 +11627,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-11",
     "entry_end": "2026-09-24",
-    "entries": 17
+    "entries": 18
   },
   {
     "id": "Mq_SHxLuIR",
@@ -11669,7 +11669,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-27",
-    "entries": 11
+    "entries": 12
   },
   {
     "id": "bnVqltVSUq",
@@ -11717,7 +11717,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-04",
     "entry_end": "2026-09-25",
-    "entries": 17
+    "entries": 18
   },
   {
     "id": "GdMk7mlzSo",
@@ -11757,12 +11757,9 @@
     },
     "classes": [
       {
-        "places": 0,
-        "class": "ALO",
-        "groups": [
-          "kp"
-        ],
         "members": 3,
+        "date": "2026-10-09T21:00:00.000Z",
+        "entries": 5,
         "judge": [
           {
             "official": false,
@@ -11771,32 +11768,35 @@
           },
           {
             "name": "Riikka Tahvanainen",
-            "official": false,
-            "id": -2
+            "id": -2,
+            "official": false
           }
         ],
-        "entries": 4,
-        "date": "2026-10-09T21:00:00.000Z"
+        "groups": [
+          "kp"
+        ],
+        "places": 0,
+        "class": "ALO"
       },
       {
-        "entries": 0,
-        "class": "AVO",
         "members": 0,
         "places": 0,
         "date": "2026-10-09T21:00:00.000Z",
         "groups": [
           "kp"
         ],
+        "class": "AVO",
+        "entries": 0,
         "judge": [
           {
+            "official": false,
             "id": -1,
-            "name": "Anu Pesonen",
-            "official": false
+            "name": "Anu Pesonen"
           },
           {
+            "id": -2,
             "name": "Riikka Tahvanainen",
-            "official": false,
-            "id": -2
+            "official": false
           }
         ]
       }
@@ -11805,7 +11805,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-12",
     "entry_end": "2026-10-03",
-    "entries": 4
+    "entries": 5
   },
   {
     "id": "iN8UZX6Um_",
@@ -11904,23 +11904,23 @@
     },
     "classes": [
       {
+        "date": "2026-10-23T21:00:00.000Z",
         "groups": [
           "kp"
         ],
-        "judge": [],
+        "members": 0,
+        "entries": 2,
         "places": 10,
         "class": "AVO",
-        "members": 0,
-        "entries": 1,
-        "date": "2026-10-23T21:00:00.000Z"
+        "judge": []
       },
       {
-        "members": 1,
-        "places": 10,
-        "judge": [],
         "date": "2026-10-23T21:00:00.000Z",
         "class": "VOI",
-        "entries": 5,
+        "judge": [],
+        "places": 10,
+        "entries": 6,
+        "members": 1,
         "groups": [
           "kp"
         ]
@@ -11930,7 +11930,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-12",
     "entry_end": "2026-10-03",
-    "entries": 6
+    "entries": 8
   },
   {
     "id": "qh8E-wtej1",
