@@ -11101,27 +11101,27 @@
     "classes": [
       {
         "members": 5,
-        "date": "2026-10-02T21:00:00.000Z",
         "judge": [
           {
-            "name": "Jan -Erik Eriksson ",
             "official": false,
+            "name": "Jan -Erik Eriksson ",
             "foreing": true,
             "country": "AX",
             "id": -2
           }
         ],
+        "state": "invited",
         "class": "ALO",
-        "places": 6,
         "groups": [
           "ip"
         ],
         "entries": 6,
-        "state": "picked"
+        "date": "2026-10-02T21:00:00.000Z",
+        "places": 6
       }
     ],
     "places": 6,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-09-08",
     "entry_end": "2026-09-21",
     "entries": 6
@@ -11201,7 +11201,7 @@
     },
     "classes": [],
     "places": 8,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-21",
     "entries": 6
@@ -11687,7 +11687,7 @@
     "state": "invited",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-27",
-    "entries": 15
+    "entries": 14
   },
   {
     "id": "bnVqltVSUq",
@@ -11861,41 +11861,84 @@
     "cost_member": 40,
     "classes": [
       {
-        "groups": [
-          "kp"
-        ],
-        "entries": 12,
-        "date": "2026-10-16T21:00:00.000Z",
+        "entries": 14,
+        "class": "ALO",
+        "members": 5,
         "judge": [],
-        "members": 4,
-        "class": "ALO"
-      },
-      {
-        "judge": [],
-        "members": 2,
-        "class": "AVO",
-        "entries": 6,
         "date": "2026-10-16T21:00:00.000Z",
         "groups": [
           "kp"
         ]
       },
       {
-        "entries": 6,
-        "class": "VOI",
+        "judge": [],
+        "members": 3,
+        "class": "AVO",
         "date": "2026-10-16T21:00:00.000Z",
         "groups": [
           "kp"
         ],
-        "judge": [],
-        "members": 3
+        "entries": 7
+      },
+      {
+        "class": "VOI",
+        "members": 5,
+        "groups": [
+          "kp"
+        ],
+        "date": "2026-10-16T21:00:00.000Z",
+        "entries": 9,
+        "judge": []
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 24
+    "entries": 30
+  },
+  {
+    "id": "D3IFyEbK3K",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "21.10.2026",
+    "date_sort": "2026-10-21T00:00:00+03:00",
+    "end_date_sort": "2026-10-21T00:00:00+03:00",
+    "entry_date": "05.10.-14.10.",
+    "location": "Urjala",
+    "coordinates": [
+      61.0811504,
+      23.5489697
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Tommi Taponen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Elina Kestilä-Kekkonen",
+      "phone": "",
+      "email": "elina.kestila@gmail.com"
+    },
+    "judges": [
+      "Ahola Pauliina",
+      "Ronkainen Reima"
+    ],
+    "description": "Koetta ei järjestetä kaupallisen jahdin yhteydessä vaan omana jahtina. Sorsakoe.",
+    "cost": {
+      "normal": 125
+    },
+    "cost_member": {
+      "normal": 125
+    },
+    "classes": [],
+    "places": 10,
+    "state": "confirmed",
+    "entry_start": "2026-10-05",
+    "entry_end": "2026-10-14",
+    "entries": null
   },
   {
     "id": "6p2tAdYq9O",
@@ -12006,7 +12049,55 @@
     "state": "confirmed",
     "entry_start": "2026-09-21",
     "entry_end": "2026-10-18",
-    "entries": 32
+    "entries": 33
+  },
+  {
+    "id": "sK51ViatiO",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "29.10.2026",
+    "date_sort": "2026-10-29T00:00:00+02:00",
+    "end_date_sort": "2026-10-29T00:00:00+02:00",
+    "entry_date": "04.10.-18.10.",
+    "location": "Hyvinkää",
+    "coordinates": [
+      60.6311481,
+      24.8603615
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "Jukka Simpura",
+      "phone": "",
+      "email": "jukkasimpura1@gmail.com"
+    },
+    "secretary": {
+      "name": "Ulla Alhava",
+      "phone": "",
+      "email": "ulla.alhava@gmail.com"
+    },
+    "judges": [
+      "Sipola Miso"
+    ],
+    "description": "Osallistumismaksu 120 €, labradorinnoutajat 100 €. Maksetaan koepaikan varmistuttua. ",
+    "cost": {
+      "normal": 120,
+      "breed": {
+        "122": 100
+      }
+    },
+    "cost_member": {
+      "normal": 120,
+      "breed": {
+        "122": 100
+      }
+    },
+    "classes": [],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2026-10-04",
+    "entry_end": "2026-10-18",
+    "entries": null
   },
   {
     "id": "4FYeaiEMRz",
@@ -12043,18 +12134,18 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 7,
+        "judge": [],
+        "members": 4,
         "date": "2026-10-30T22:00:00.000Z",
         "class": "AVO",
-        "members": 4,
-        "judge": []
+        "entries": 7
       },
       {
-        "entries": 14,
-        "date": "2026-10-30T22:00:00.000Z",
-        "class": "VOI",
-        "places": 0,
         "members": 9,
+        "entries": 15,
+        "class": "VOI",
+        "date": "2026-10-30T22:00:00.000Z",
+        "places": 0,
         "judge": [
           {
             "id": 697689,
@@ -12064,10 +12155,10 @@
         ]
       },
       {
-        "judge": [],
         "class": "ALO",
         "members": 8,
-        "entries": 22,
+        "entries": 24,
+        "judge": [],
         "date": "2026-10-30T22:00:00.000Z"
       }
     ],
@@ -12075,7 +12166,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 43
+    "entries": 46
   },
   {
     "id": "BkA7mzBtzM",
@@ -12111,25 +12202,25 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 2,
-        "entries": 4,
         "date": "2026-10-31T22:00:00.000Z",
         "judge": [],
-        "class": "AVO"
+        "class": "AVO",
+        "entries": 6,
+        "members": 3
       },
       {
         "date": "2026-10-31T22:00:00.000Z",
-        "entries": 11,
-        "members": 8,
-        "judge": [],
-        "class": "VOI"
+        "members": 9,
+        "entries": 14,
+        "class": "VOI",
+        "judge": []
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
-    "entries": 15
+    "entries": 20
   },
   {
     "id": "3kHAyI19dm",
