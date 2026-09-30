@@ -10,3 +10,4 @@ export * from './ics.js';
 export * from './sort.js';
 export * from './overlap.js';
 export * from './favorites-share.js';
+export * from './years.js';

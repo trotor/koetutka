@@ -447,7 +447,7 @@ def save_results(results, target_year):
 
 def main():
     parser = argparse.ArgumentParser(description='Hae SNJ kokeet ja geokoodaa sijainnit')
-    parser.add_argument('--year', type=int, default=2026, help='Vuosi (oletus: 2026)')
+    parser.add_argument('--year', type=int, default=datetime.now().year, help='Vuosi (oletus: kuluva vuosi)')
     parser.add_argument('--startlists', action='store_true',
                         help='Hae vain lähtölistat jo julkaistuille kokeille')
     args = parser.parse_args()

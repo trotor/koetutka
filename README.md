@@ -86,6 +86,12 @@ MIT
 
 ## Versiohistoria
 
+### v1.14.1 (2026-09-30)
+- **Kaksi vuotta kerralla**: verkkosivu lataa kuluvan ja seuraavan vuoden
+  kokeet ja yhdistää ne. Aiemmin seuraavan vuoden tiedoston ilmestyminen
+  syksyllä piilotti kuluvan vuoden loppuvuoden kokeet
+- `snj_kokeet.py` hakee oletuksena kuluvan vuoden (ei enää kovakoodattua vuotta)
+
 ### v1.14.0 (2026-08-30)
 - **Lähtölista kokeen tiedoissa**: kokeen tietonäkymä näyttää osallistujat
   (koira, rekisterinumero, tittelit ja ohjaaja) ryhmiteltynä koepäivään,

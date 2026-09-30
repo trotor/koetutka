@@ -1,0 +1,4644 @@
+[
+  {
+    "id": "KtBRvLp4Gg",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La)",
+    "date": "13.03.2027",
+    "date_sort": "2027-03-13T00:00:00+02:00",
+    "end_date_sort": "2027-03-13T00:00:00+02:00",
+    "entry_date": "30.01.-26.02.",
+    "location": "Korpilahti",
+    "coordinates": [
+      62.0431892,
+      25.5801114
+    ],
+    "name": "Talvinome 2026 ",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": "talvinome@gmail.com "
+    },
+    "judges": [
+      " ",
+      "",
+      "",
+      ""
+    ],
+    "description": "Talkoolaisille edullisempi osallistumismaksu! Talkoilu sovittava  ENNEN halvemman maksun käyttöä! Osallistumismaksuun sisältyy lounas.\n\nOsallistumisoikeus alokasluokkaan niillä koirilla, joilla ei virallisissa kokeissa ole osallistumisoikeutta avoimeen luokkaan. Taipumuskoevaatimusta ei ole. \n\nTalvinome on ensisijaisesti yksilökilpailu, joukkuekilpailun joukkueiden koirakot valitaan yksilökilpailuun mukaan mahtuneista koirakoista ja ilmoitetaan kisapaikalla ensimmäisenä vuorossa olevan koirakon toimesta, kokeen toimistossa.\n\nTuomarit:\n",
+    "cost": {
+      "custom": {
+        "cost": 0,
+        "description": {
+          "fi": "Talkoolaisen osallistusmismaksu ",
+          "en": ""
+        }
+      },
+      "normal": 0
+    },
+    "cost_member": {
+      "custom": {
+        "cost": 0,
+        "description": {
+          "fi": "Talkoolaisen osallistusmismaksu ",
+          "en": ""
+        }
+      },
+      "normal": 0
+    },
+    "classes": [
+      {
+        "date": "2027-03-13T00:00:00.000+02:00",
+        "entries": 0,
+        "class": "ALO",
+        "members": 0,
+        "judge": [
+          {
+            "id": -1,
+            "official": false,
+            "name": " "
+          },
+          {
+            "official": false,
+            "name": "",
+            "id": -2
+          },
+          {
+            "id": -3,
+            "official": false,
+            "name": ""
+          },
+          {
+            "official": false,
+            "name": "",
+            "id": -4
+          }
+        ]
+      }
+    ],
+    "places": 67,
+    "state": "tentative",
+    "entry_start": "2027-01-30",
+    "entry_end": "2027-02-26",
+    "entries": 0
+  },
+  {
+    "id": "_DC8wlQ-hL",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "20.03.2027",
+    "date_sort": "2027-03-20T00:00:00+02:00",
+    "end_date_sort": "2027-03-20T00:00:00+02:00",
+    "entry_date": "06.02.-27.02.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "Hankinome",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Epävirallinen dameilla suoritettava rastityyppinen koe. Koiralla ei tarvitse olla luokkaan oikeuttavia tuloksia virallisissa rodunomaisissa kokeissa. \nHUOM! Kokeessa myös luokka ”Veteraanit”, alaikäraja 10 vuotta. Ilmoittautuessa veteraaniluokkaan, ilmoittaudutaan ALO-luokkaan ja kirjataan lisätietoja kohtaan maininta ”osallistuu veteraaniluokkaan”. \nTapahtumassa järjestetään myös joukkuekilpailu: 3 koiraa/joukkue, koirat voivat olla eri luokista. Joukkuekilpailuun ilmoittaudutaan kirjaamalla lisätietoihin joukkueen nimi.\nMuutokset (tuomarit, arvosteluluokat) ovat mahdollisia.\n",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-03-20T00:00:00.000+02:00",
+        "class": "ALO"
+      },
+      {
+        "class": "AVO",
+        "date": "2027-03-20T00:00:00.000+02:00"
+      },
+      {
+        "date": "2027-03-20T00:00:00.000+02:00",
+        "class": "VOI"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-02-06",
+    "entry_end": "2027-02-27",
+    "entries": null
+  },
+  {
+    "id": "jHhHIWonYx",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "03.04.2027",
+    "date_sort": "2027-04-03T00:00:00+03:00",
+    "end_date_sort": "2027-04-03T00:00:00+03:00",
+    "entry_date": "20.02.-13.03.",
+    "location": "Pälkäne",
+    "coordinates": [
+      61.3371322,
+      24.2649422
+    ],
+    "name": "Pirkan Damit",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Kaikkiin sarjoihin ilmoittaudutaan Pirkanmaan Noutajakoirayhdistyksen nettisivuilla olevalla lomakkeella osoitteessa:\n \nMaksu tapahtuu yhdistyksen tilille FI42 5620 0920 7360 62 käyttäen viitenumeroa 10032, pirkandamit@pirkannuusku.net - sähköpostista voi kysyä tapahtumasta. \n \nSarjat: \n-Yksilökilpailu, osallistuva koira ei saa olla osallistunut rodunomaisten kokeiden (nome-b, wt) avoimeen luokkaan, ikärajaa ei ole.\n-Kenneljoukkueet, (koiran ikä alle 22kk), koulutus on tarkoitettu 5.6.2025 jälkeen syntyneille koirille, joka ei ole startannu avoimessa luokassa.\n-Yhdistysjoukkueet tai muut joukkueet (koiran ikä alle 22kk) Koulutus on tarkoitettu 5.6.2025 jälkeen syntyneille koirille, joka ei ole startannut avoimessa luokassa.\n- Koira&Lapsi (lapsi alle 12v). \n- Veteraaniluokat 8-9vuotiaat.\n- Veteraanit 10v täyttäneet.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-02-20",
+    "entry_end": "2027-03-13",
+    "entries": null
+  },
+  {
+    "id": "_QQJ_INBqm",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "24.04.2027",
+    "date_sort": "2027-04-24T00:00:00+03:00",
+    "end_date_sort": "2027-04-24T00:00:00+03:00",
+    "entry_date": "01.04.-16.04.",
+    "location": "Mallusjoki/ Orimattila ",
+    "coordinates": [
+      60.735747,
+      25.6206317
+    ],
+    "name": "",
+    "organizer": "MALLUSJOEN METSÄSTYSSEURA RY",
+    "official": {
+      "name": "Pekka Tuomi",
+      "phone": "050-3778861",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Olkkonen",
+      "phone": "",
+      "email": "happyhunt68@outlook.com"
+    },
+    "judges": [
+      "Väisänen Riitta",
+      "Ahola Pauliina",
+      "Lähteenaro Janne",
+      "Uusimäki Pekka"
+    ],
+    "description": "Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiran alkanut kiima.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 0
+    },
+    "classes": [
+      {
+        "date": "2027-04-24T00:00:00.000+03:00",
+        "class": "ALO",
+        "judge": []
+      },
+      {
+        "class": "AVO",
+        "date": "2027-04-24T00:00:00.000+03:00",
+        "judge": []
+      },
+      {
+        "judge": [],
+        "class": "VOI",
+        "date": "2027-04-24T00:00:00.000+03:00"
+      }
+    ],
+    "places": 80,
+    "state": "confirmed",
+    "entry_start": "2027-04-01",
+    "entry_end": "2027-04-16",
+    "entries": null
+  },
+  {
+    "id": "m1U7x1JVkO",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "24.04.2027",
+    "date_sort": "2027-04-24T00:00:00+03:00",
+    "end_date_sort": "2027-04-24T23:59:59.999000+03:00",
+    "entry_date": "13.03.-03.04.",
+    "location": "Peräseinäjoki",
+    "coordinates": [
+      62.5621248,
+      23.0632748
+    ],
+    "name": "Peräseinäjoen WT",
+    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Särkänlahti Jari",
+      "Saarinen Maarit",
+      "Schön Esa"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "places": 0,
+        "judge": [],
+        "date": "2027-04-24T00:00:00.000+03:00"
+      },
+      {
+        "judge": [],
+        "date": "2027-04-24T00:00:00.000+03:00",
+        "class": "AVO",
+        "places": 0
+      },
+      {
+        "class": "VOI",
+        "judge": [],
+        "places": 0,
+        "date": "2027-04-24T00:00:00.000+03:00"
+      }
+    ],
+    "places": 60,
+    "state": "tentative",
+    "entry_start": "2027-03-13",
+    "entry_end": "2027-04-03",
+    "entries": null
+  },
+  {
+    "id": "ubzk8Opkot",
+    "type": "NOWT",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "25.04.2027",
+    "date_sort": "2027-04-25T00:00:00+03:00",
+    "end_date_sort": "2027-04-25T00:00:00+03:00",
+    "entry_date": "01.04.-16.04.",
+    "location": "Kärkölä",
+    "coordinates": [
+      60.8676567,
+      25.2511393
+    ],
+    "name": "Päijät-Hämeen Noutajakoirayhdistyksen WT-MESTARUUS",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Minna Johansson",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Terhi Lakka",
+      "phone": "",
+      "email": "terhi.lakka@gmail.com"
+    },
+    "judges": [
+      "Torila Mika",
+      "Fontell Ari-Pekka",
+      "Väisänen Riitta",
+      "Tuomi Pekka"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-04-25T00:00:00.000+03:00",
+        "judge": []
+      },
+      {
+        "judge": [],
+        "date": "2027-04-25T00:00:00.000+03:00",
+        "class": "AVO"
+      },
+      {
+        "class": "VOI",
+        "date": "2027-04-25T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": 80,
+    "state": "tentative",
+    "entry_start": "2027-04-01",
+    "entry_end": "2027-04-16",
+    "entries": null
+  },
+  {
+    "id": "dsnpAtSKjG",
+    "type": "NOWT",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "25.04.2027",
+    "date_sort": "2027-04-25T00:00:00+03:00",
+    "end_date_sort": "2027-04-25T00:00:00+03:00",
+    "entry_date": "14.03.-04.04.",
+    "location": "Peräseinäjoki",
+    "coordinates": [
+      62.5621248,
+      23.0632748
+    ],
+    "name": "Peräseinäjoen WT",
+    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Saarinen Maarit",
+      "Särkänlahti Jari",
+      "Schön Esa"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "judge": [],
+        "date": "2027-04-25T00:00:00.000+03:00",
+        "class": "ALO"
+      },
+      {
+        "judge": [],
+        "date": "2027-04-25T00:00:00.000+03:00",
+        "class": "AVO"
+      },
+      {
+        "judge": [],
+        "class": "VOI",
+        "date": "2027-04-25T00:00:00.000+03:00"
+      }
+    ],
+    "places": 60,
+    "state": "tentative",
+    "entry_start": "2027-03-14",
+    "entry_end": "2027-04-04",
+    "entries": null
+  },
+  {
+    "id": "3QPXORfVWA",
+    "type": "NOWT",
+    "levels": "ALO (La, Su), AVO (La, Su), VOI (La, Su)",
+    "date": "01.-02.05.2027",
+    "date_sort": "2027-05-01T00:00:00+03:00",
+    "end_date_sort": "2027-05-02T23:59:59.999000+03:00",
+    "entry_date": "20.03.-10.04.",
+    "location": "Tampere",
+    "coordinates": [
+      61.4977929,
+      23.7616372
+    ],
+    "name": "Metsästysnoutajien WT-mestaruus",
+    "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Maija Grönlund",
+      "phone": "",
+      "email": "maijagronlund@gmail.com"
+    },
+    "judges": [
+      "Lappalainen Mika",
+      "Schön Esa",
+      "Torila Mika",
+      "Pöppönen Pasi"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "groups": [
+          "kp"
+        ],
+        "judge": [],
+        "date": "2027-04-30T21:00:00.000Z",
+        "places": 30
+      },
+      {
+        "class": "AVO",
+        "date": "2027-04-30T21:00:00.000Z",
+        "places": 20,
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      },
+      {
+        "judge": [],
+        "class": "VOI",
+        "places": 30,
+        "groups": [
+          "kp"
+        ],
+        "date": "2027-04-30T21:00:00.000Z"
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "date": "2027-05-01T21:00:00.000Z",
+        "class": "ALO",
+        "places": 30,
+        "judge": []
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "places": 20,
+        "class": "AVO",
+        "judge": [],
+        "date": "2027-05-01T21:00:00.000Z"
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "date": "2027-05-01T21:00:00.000Z",
+        "places": 30,
+        "judge": [],
+        "class": "VOI"
+      }
+    ],
+    "places": 160,
+    "state": "tentative",
+    "entry_start": "2027-03-20",
+    "entry_end": "2027-04-10",
+    "entries": null
+  },
+  {
+    "id": "G5L6UM9vg2",
+    "type": "NOWT",
+    "levels": "ALO (To), AVO (To), VOI (To)",
+    "date": "06.05.2027",
+    "date_sort": "2027-05-06T00:00:00+03:00",
+    "end_date_sort": "2027-05-06T00:00:00+03:00",
+    "entry_date": "25.03.-15.04.",
+    "location": "Tampere",
+    "coordinates": [
+      61.4977929,
+      23.7616372
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Jussi Palomäki",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Susanna Jussila",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Pöppönen Pasi"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-05-06T00:00:00.000+03:00",
+        "judge": []
+      },
+      {
+        "date": "2027-05-06T00:00:00.000+03:00",
+        "judge": [],
+        "class": "AVO"
+      },
+      {
+        "class": "VOI",
+        "date": "2027-05-06T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-03-25",
+    "entry_end": "2027-04-15",
+    "entries": null
+  },
+  {
+    "id": "Vtb9b6A95_",
+    "type": "NOWT",
+    "levels": "ALO (To), AVO (To)",
+    "date": "06.05.2027",
+    "date_sort": "2027-05-06T00:00:00+03:00",
+    "end_date_sort": "2027-05-06T00:00:00+03:00",
+    "entry_date": "25.03.-15.04.",
+    "location": "Kouvola",
+    "coordinates": [
+      60.8679237,
+      26.7041116
+    ],
+    "name": "",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Montonen Mikael",
+      "Uusimäki Pekka",
+      "Väisänen Riitta",
+      "Hirvonen Petteri"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "date": "2027-05-06T00:00:00.000+03:00",
+        "class": "ALO",
+        "judge": []
+      },
+      {
+        "class": "AVO",
+        "judge": [],
+        "date": "2027-05-06T00:00:00.000+03:00"
+      }
+    ],
+    "places": 60,
+    "state": "tentative",
+    "entry_start": "2027-03-25",
+    "entry_end": "2027-04-15",
+    "entries": null
+  },
+  {
+    "id": "uK1_aNwmv2",
+    "type": "NOWT",
+    "levels": "VOI (To)",
+    "date": "06.05.2027",
+    "date_sort": "2027-05-06T00:00:00+03:00",
+    "end_date_sort": "2027-05-06T00:00:00+03:00",
+    "entry_date": "25.03.-15.04.",
+    "location": "Kouvola",
+    "coordinates": [
+      60.8679237,
+      26.7041116
+    ],
+    "name": "NOWT piirinmestaruuskoe",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Montonen Mikael",
+      "Uusimäki Pekka",
+      "Väisänen Riitta",
+      "Hirvonen Petteri"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-05-05T21:00:00.000Z",
+        "class": "VOI",
+        "judge": []
+      }
+    ],
+    "places": 20,
+    "state": "tentative",
+    "entry_start": "2027-03-25",
+    "entry_end": "2027-04-15",
+    "entries": null
+  },
+  {
+    "id": "XiAkC8D7wH",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "06.05.2027",
+    "date_sort": "2027-05-06T00:00:00+03:00",
+    "end_date_sort": "2027-05-06T00:00:00+03:00",
+    "entry_date": "04.04.-25.04.",
+    "location": "Vimpeli",
+    "coordinates": [
+      63.1614796,
+      23.8177693
+    ],
+    "name": "",
+    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Koskiahde Timo"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-04",
+    "entry_end": "2027-04-25",
+    "entries": null
+  },
+  {
+    "id": "B8Rx92jwOW",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "15.05.2027",
+    "date_sort": "2027-05-15T00:00:00+03:00",
+    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "entry_date": "03.04.-24.04.",
+    "location": "Hattula",
+    "coordinates": [
+      61.0631229,
+      24.3669975
+    ],
+    "name": "",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Kestilä-Kekkonen Elina"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-03",
+    "entry_end": "2027-04-24",
+    "entries": null
+  },
+  {
+    "id": "0ERid90Pfq",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La)",
+    "date": "15.05.2027",
+    "date_sort": "2027-05-15T00:00:00+03:00",
+    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "entry_date": "03.04.-24.04.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Lappalainen Mika",
+      "Luomanen Timo"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "class": "ALO",
+        "date": "2027-05-15T00:00:00.000+03:00"
+      },
+      {
+        "judge": [],
+        "class": "AVO",
+        "date": "2027-05-15T00:00:00.000+03:00"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-04-03",
+    "entry_end": "2027-04-24",
+    "entries": null
+  },
+  {
+    "id": "5OC_gC4yPt",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "15.05.2027",
+    "date_sort": "2027-05-15T00:00:00+03:00",
+    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "entry_date": "03.04.-24.04.",
+    "location": "Jämsä",
+    "coordinates": [
+      61.8637802,
+      25.1897493
+    ],
+    "name": "",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Tenhunen Matti"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-05-14T21:00:00.000Z",
+        "judge": [],
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "class": "AVO",
+        "date": "2027-05-14T21:00:00.000Z",
+        "judge": []
+      },
+      {
+        "judge": [],
+        "class": "VOI",
+        "date": "2027-05-14T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ]
+      }
+    ],
+    "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-04-03",
+    "entry_end": "2027-04-24",
+    "entries": null
+  },
+  {
+    "id": "Op5Vs97gJ_",
+    "type": "NOWT",
+    "levels": "VOI (La)",
+    "date": "15.05.2027",
+    "date_sort": "2027-05-15T00:00:00+03:00",
+    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "entry_date": "03.04.-24.04.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "Pohjois-Pohjanmaan kennelpiirin WT- piirinmestaruus",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Lappalainen Mika",
+      "Luomanen Timo"
+    ],
+    "description": "Voittajaluokan koe on Pohjois-Pohjanmaan kennelpiirin mestaruuskoe, johon on etusija Pohjois-Pohjanmaan kennelpiirin alueella asuvilla ja järjestävän yhdistyksen jäsenillä.\n\nMaksunpalautuksista pidätetään 5 € käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Mikäli yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-05-15T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-04-03",
+    "entry_end": "2027-04-24",
+    "entries": null
+  },
+  {
+    "id": "py4uG5BXi2",
+    "type": "NOWT",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "16.05.2027",
+    "date_sort": "2027-05-16T00:00:00+03:00",
+    "end_date_sort": "2027-05-16T00:00:00+03:00",
+    "entry_date": "04.04.-25.04.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Lappalainen Mika",
+      "Luomanen Timo"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-05-16T00:00:00.000+03:00",
+        "judge": [],
+        "class": "ALO"
+      },
+      {
+        "judge": [],
+        "date": "2027-05-16T00:00:00.000+03:00",
+        "class": "AVO"
+      },
+      {
+        "class": "VOI",
+        "date": "2027-05-16T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-04-04",
+    "entry_end": "2027-04-25",
+    "entries": null
+  },
+  {
+    "id": "_OD8oOUwEO",
+    "type": "NOWT SM",
+    "levels": "VOI (La)",
+    "date": "22.05.2027",
+    "date_sort": "2027-05-22T00:00:00+03:00",
+    "end_date_sort": "2027-05-22T00:00:00+03:00",
+    "entry_date": "26.04.-09.05.",
+    "location": "Päijät-Häme",
+    "coordinates": [
+      61.2296902,
+      25.8105246
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Riitta Väisänen",
+      "phone": "",
+      "email": "riitta.vri@gmail.com"
+    },
+    "secretary": {
+      "name": "Minna Helenius",
+      "phone": "044-0282000",
+      "email": "minna.m.helenius@gmail.com"
+    },
+    "judges": [
+      "Ronkainen Reima",
+      "Ahola Pauliina",
+      "Sipola Miso",
+      "Salo Mervi"
+    ],
+    "description": "Kokeeseen ovat oikeutettuja ilmoittautumaan Suomessa rekisteröidyt noutajat, jotka ovat saavuttaneet KVA-WT arvon tai vähintään yhden VOI1-tuloksen WT-kokeessa, joka on saatu kokeen ilmoittautumisajan päättymistä edeltävän 12 kuukauden aikana. Ilmoittautumismaksu sisältää lounaan. Saman ohjaajan toinen koira 50e. Koemaksun palautus: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu. \n",
+    "cost": {
+      "normal": 60,
+      "custom": {
+        "cost": 50,
+        "description": {
+          "fi": "Saman ohjaajan 2. koira",
+          "en": ""
+        }
+      }
+    },
+    "cost_member": {
+      "normal": 0,
+      "custom": {
+        "cost": 0,
+        "description": {
+          "en": "",
+          "fi": "Saman ohjaajan 2. koira"
+        }
+      }
+    },
+    "classes": [
+      {
+        "class": "VOI",
+        "judge": [],
+        "date": "2027-05-22T00:00:00.000+03:00"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-04-26",
+    "entry_end": "2027-05-09",
+    "entries": null
+  },
+  {
+    "id": "aS-WHh3nuh",
+    "type": "NOWT",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "23.05.2027",
+    "date_sort": "2027-05-23T00:00:00+03:00",
+    "end_date_sort": "2027-05-23T00:00:00+03:00",
+    "entry_date": "26.04.-09.05.",
+    "location": "Päijät-Häme",
+    "coordinates": [
+      61.2296902,
+      25.8105246
+    ],
+    "name": "Novascotiannoutajien WT-mestaruus",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Ahola Pauliina",
+      "Ronkainen Reima",
+      "Sipola Miso",
+      "Salo Mervi"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "date": "2027-05-23T00:00:00.000+03:00",
+        "class": "ALO"
+      },
+      {
+        "judge": [],
+        "class": "AVO",
+        "date": "2027-05-23T00:00:00.000+03:00"
+      },
+      {
+        "date": "2027-05-23T00:00:00.000+03:00",
+        "judge": [],
+        "class": "VOI"
+      }
+    ],
+    "places": 80,
+    "state": "tentative",
+    "entry_start": "2027-04-26",
+    "entry_end": "2027-05-09",
+    "entries": null
+  },
+  {
+    "id": "lUt0MwChUu",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "29.05.2027",
+    "date_sort": "2027-05-29T00:00:00+03:00",
+    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "entry_date": "17.04.-08.05.",
+    "location": "Tampere",
+    "coordinates": [
+      61.4977929,
+      23.7616372
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Maria Hästbacka",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tiina Ruuskanen",
+      "phone": "",
+      "email": "tiinaruuskanen@gmail.com"
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "class": "ALO",
+        "date": "2027-05-29T00:00:00.000+03:00"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-04-17",
+    "entry_end": "2027-05-08",
+    "entries": null
+  },
+  {
+    "id": "aNgINmLghs",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "29.05.2027",
+    "date_sort": "2027-05-29T00:00:00+03:00",
+    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "entry_date": "19.04.-10.05.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Katja Virtanen",
+      "phone": "",
+      "email": "k_suojanen@hotmail.com"
+    },
+    "secretary": {
+      "name": "Ida Tallqvist",
+      "phone": "",
+      "email": "olevinaanlabradorit@hotmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/\n",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-19",
+    "entry_end": "2027-05-10",
+    "entries": null
+  },
+  {
+    "id": "LUKxsRuWVe",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "29.05.2027",
+    "date_sort": "2027-05-29T00:00:00+03:00",
+    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "entry_date": "19.04.-10.05.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Virpi Eroma",
+      "phone": "",
+      "email": "virpi@virpieroma.fi"
+    },
+    "secretary": {
+      "name": "Ida Tallqvist",
+      "phone": "",
+      "email": "olevinaanlabradorit@hotmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/\n",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [
+      {
+        "date": "2027-05-29T00:00:00.000+03:00",
+        "class": "ALO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-04-19",
+    "entry_end": "2027-05-10",
+    "entries": null
+  },
+  {
+    "id": "VnFwfyHiEq",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "29.05.2027",
+    "date_sort": "2027-05-29T00:00:00+03:00",
+    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "entry_date": "17.04.-08.05.",
+    "location": "Kaakon toiminta-alue",
+    "coordinates": null,
+    "name": "",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-17",
+    "entry_end": "2027-05-08",
+    "entries": null
+  },
+  {
+    "id": "GoOa3p8VZ_",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "30.05.2027",
+    "date_sort": "2027-05-30T00:00:00+03:00",
+    "end_date_sort": "2027-05-30T00:00:00+03:00",
+    "entry_date": "18.04.-09.05.",
+    "location": "Pori",
+    "coordinates": [
+      61.4866126,
+      21.7972071
+    ],
+    "name": "",
+    "organizer": "PYNTÖSJÄRVEN YMPÄRISTÖN METSÄSTYSSEURA RY",
+    "official": {
+      "name": "Pertti Lehtinen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Minna Aalto-Vainio",
+      "phone": "",
+      "email": "pikkunita@gmail.com"
+    },
+    "judges": [
+      "Salonen Tommy"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 50
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-18",
+    "entry_end": "2027-05-09",
+    "entries": null
+  },
+  {
+    "id": "0wDRfFZy13",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "30.05.2027",
+    "date_sort": "2027-05-30T00:00:00+03:00",
+    "end_date_sort": "2027-05-30T00:00:00+03:00",
+    "entry_date": "18.04.-09.05.",
+    "location": "Tampere",
+    "coordinates": [
+      61.4977929,
+      23.7616372
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Maria Hästbacka",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tiina Ruuskanen",
+      "phone": "",
+      "email": "tiinaruuskanen@gmail.com"
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-05-30T00:00:00.000+03:00",
+        "judge": [],
+        "class": "AVO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-04-18",
+    "entry_end": "2027-05-09",
+    "entries": null
+  },
+  {
+    "id": "i137siZSp_",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "05.-06.06.2027",
+    "date_sort": "2027-06-05T00:00:00+03:00",
+    "end_date_sort": "2027-06-06T23:59:59.999000+03:00",
+    "entry_date": "24.04.-15.05.",
+    "location": "Leppävirta",
+    "coordinates": [
+      62.4917201,
+      27.7880572
+    ],
+    "name": "Leppävirran taipumuskoe",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Ilpo Pöyhönen",
+      "phone": "",
+      "email": "ilpo.poyhonen@yara.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Etusijalla jäsenet ja kutsutut. ",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-04-24",
+    "entry_end": "2027-05-15",
+    "entries": null
+  },
+  {
+    "id": "mKIuJg6JDx",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "06.06.2027",
+    "date_sort": "2027-06-06T00:00:00+03:00",
+    "end_date_sort": "2027-06-06T00:00:00+03:00",
+    "entry_date": "10.05.-23.05.",
+    "location": "Padasjoki",
+    "coordinates": [
+      61.3512901,
+      25.2785646
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Minna Helenius",
+      "phone": "",
+      "email": "minna.m.helenius@gmail.com"
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-06-05T21:00:00.000Z",
+        "judge": []
+      }
+    ],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-10",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
+    "id": "sSuR0GIFPo",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "06.06.2027",
+    "date_sort": "2027-06-06T00:00:00+03:00",
+    "end_date_sort": "2027-06-06T00:00:00+03:00",
+    "entry_date": "10.05.-23.05.",
+    "location": "Padasjoki",
+    "coordinates": [
+      61.3512901,
+      25.2785646
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Minna Helenius",
+      "phone": "",
+      "email": "minna.m.helenius@gmail.com"
+    },
+    "judges": [
+      "Salonen Tommy"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\n",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-10",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
+    "id": "gl0J78zkK1",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "12.-13.06.2027",
+    "date_sort": "2027-06-12T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
+    "entry_date": "01.05.-22.05.",
+    "location": "Kaakon toiminta-alue",
+    "coordinates": null,
+    "name": "Tassun-Cup ",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Silvennoinen Kari"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-06-12T00:00:00.000+03:00",
+        "judge": [],
+        "class": "AVO"
+      }
+    ],
+    "places": 30,
+    "state": "tentative",
+    "entry_start": "2027-05-01",
+    "entry_end": "2027-05-22",
+    "entries": null
+  },
+  {
+    "id": "aPsdVOq6tJ",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "12.06.2027",
+    "date_sort": "2027-06-12T00:00:00+03:00",
+    "end_date_sort": "2027-06-12T00:00:00+03:00",
+    "entry_date": "17.05.-30.05.",
+    "location": "Hämeenkoski",
+    "coordinates": [
+      61.0221269,
+      25.1575102
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Heli Kopra",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Heli Eriksson",
+      "phone": "",
+      "email": "hoksanen@gmail.com"
+    },
+    "judges": [
+      "Kestilä-Kekkonen Elina"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\n",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-17",
+    "entry_end": "2027-05-30",
+    "entries": 0
+  },
+  {
+    "id": "TvJfc4zNcG",
+    "type": "NOME-B",
+    "levels": "ALO (La, Su)",
+    "date": "12.-13.06.2027",
+    "date_sort": "2027-06-12T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
+    "entry_date": "01.05.-22.05.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "NOME-B Nilsiä, Palonurmi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Risto Väätäinen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Merja Taskinen",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "Nome-b ALO-12-13.kesäkuu Palonurmi, Nilsiä -vast. Risto Väätäinen, koesihteeri Merja Taskinen\nEtusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "judge": [
+          {
+            "id": 835312,
+            "name": "Salonen Susanna",
+            "official": true
+          }
+        ],
+        "date": "2027-06-12T00:00:00.000+03:00"
+      },
+      {
+        "class": "ALO",
+        "date": "2027-06-13T00:00:00.000+03:00",
+        "judge": [
+          {
+            "id": 835312,
+            "name": "Salonen Susanna",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-01",
+    "entry_end": "2027-05-22",
+    "entries": null
+  },
+  {
+    "id": "3NRksEvikI",
+    "type": "NOME-B",
+    "levels": "ALO (La, Su), AVO (Su), VOI (La, Su)",
+    "date": "12.-13.06.2027",
+    "date_sort": "2027-06-12T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
+    "entry_date": "01.05.-22.05.",
+    "location": "Ähtäri",
+    "coordinates": [
+      62.5499772,
+      24.0702272
+    ],
+    "name": "",
+    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Reija Lesonen",
+      "phone": "",
+      "email": "reija.lesonen@outlook.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "date": "2027-06-11T21:00:00.000Z",
+        "places": 15,
+        "class": "ALO"
+      },
+      {
+        "class": "VOI",
+        "places": 12,
+        "date": "2027-06-11T21:00:00.000Z",
+        "groups": [
+          "ap",
+          "ip"
+        ]
+      },
+      {
+        "places": 15,
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "class": "ALO",
+        "date": "2027-06-12T21:00:00.000Z"
+      },
+      {
+        "class": "AVO",
+        "date": "2027-06-12T21:00:00.000Z",
+        "places": 8,
+        "groups": [
+          "ip"
+        ]
+      },
+      {
+        "date": "2027-06-12T21:00:00.000Z",
+        "groups": [
+          "ap"
+        ],
+        "class": "VOI",
+        "places": 6
+      }
+    ],
+    "places": 56,
+    "state": "tentative",
+    "entry_start": "2027-05-01",
+    "entry_end": "2027-05-22",
+    "entries": null
+  },
+  {
+    "id": "GUKagYR2UQ",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "12.06.2027",
+    "date_sort": "2027-06-12T00:00:00+03:00",
+    "end_date_sort": "2027-06-12T00:00:00+03:00",
+    "entry_date": "01.05.-22.05.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Sara Tuohimaa",
+      "phone": "",
+      "email": "saramtuohimaa@gmail.com"
+    },
+    "judges": [
+      "Rönty Sanna-Maija"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-01",
+    "entry_end": "2027-05-22",
+    "entries": null
+  },
+  {
+    "id": "YRtTSD_KaU",
+    "type": "NOME-B",
+    "levels": "ALO (Su), AVO (Su)",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "entry_date": "02.05.-23.05.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Turunen Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "class": "ALO",
+        "date": "2027-06-13T00:00:00.000+03:00"
+      },
+      {
+        "judge": [],
+        "class": "AVO",
+        "date": "2027-06-13T00:00:00.000+03:00"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-02",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
+    "id": "YauWzmyXLf",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "entry_date": "17.05.-30.05.",
+    "location": "Hämeenkoski",
+    "coordinates": [
+      61.0221269,
+      25.1575102
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Sanna Nurminen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Minna Helenius",
+      "phone": "",
+      "email": "minna.m.helenius@gmail.com"
+    },
+    "judges": [
+      "Kestilä-Kekkonen Elina"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\n",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-17",
+    "entry_end": "2027-05-30",
+    "entries": 0
+  },
+  {
+    "id": "9_0-430dtk",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "entry_date": "02.05.-23.05.",
+    "location": "Laukaa",
+    "coordinates": [
+      62.416667,
+      25.95
+    ],
+    "name": "",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Mari Paananen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Mäkelä",
+      "phone": "",
+      "email": "makela.mari22@gmail.com"
+    },
+    "judges": [
+      "Hietikko Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-02",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
+    "id": "52Oc3bZjt6",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "entry_date": "02.05.-23.05.",
+    "location": "Kokemäki",
+    "coordinates": [
+      61.2513342,
+      22.3492421
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Johanna Rinta-Kauppila",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Majuri Pasi",
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-06-13T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": []
+      }
+    ],
+    "places": 24,
+    "state": "tentative",
+    "entry_start": "2027-05-02",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
+    "id": "sHnh44Oq4y",
+    "type": "NOWT",
+    "levels": "VOI (La)",
+    "date": "19.06.2027",
+    "date_sort": "2027-06-19T00:00:00+03:00",
+    "end_date_sort": "2027-06-19T00:00:00+03:00",
+    "entry_date": "08.05.-29.05.",
+    "location": "Toivakka",
+    "coordinates": [
+      62.0962173,
+      26.0804935
+    ],
+    "name": "",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Timo Halme",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tiina Saarinen",
+      "phone": "",
+      "email": "tiinajohanna.saarinen@gmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-06-19T00:00:00.000+03:00",
+        "class": "VOI",
+        "groups": [
+          "kp"
+        ]
+      }
+    ],
+    "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-05-08",
+    "entry_end": "2027-05-29",
+    "entries": null
+  },
+  {
+    "id": "m2DeCWv6oc",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "19.06.2027",
+    "date_sort": "2027-06-19T00:00:00+03:00",
+    "end_date_sort": "2027-06-19T00:00:00+03:00",
+    "entry_date": "08.05.-29.05.",
+    "location": "Tuusniemi",
+    "coordinates": [
+      62.8129715,
+      28.473989
+    ],
+    "name": "Nome-B AVO Tuusniemi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Kirsi-Marja Ovaskainen",
+      "phone": "",
+      "email": "ovaskainen.kirsi@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "Etusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-06-19T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-08",
+    "entry_end": "2027-05-29",
+    "entries": null
+  },
+  {
+    "id": "RmAjhN3Q8Q",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "02.07.2027",
+    "date_sort": "2027-07-02T00:00:00+03:00",
+    "end_date_sort": "2027-07-02T00:00:00+03:00",
+    "entry_date": "21.05.-11.06.",
+    "location": "Kemi",
+    "coordinates": [
+      65.7333404,
+      24.5666495
+    ],
+    "name": "",
+    "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Turunen Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-21",
+    "entry_end": "2027-06-11",
+    "entries": null
+  },
+  {
+    "id": "AoXdmNGP5V",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T00:00:00+03:00",
+    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Hämeenlinna",
+    "coordinates": [
+      60.9966192,
+      24.465141
+    ],
+    "name": "",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Salonen Tommy"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
+    "id": "zYFFVth0uF",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T00:00:00+03:00",
+    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Juupajoki",
+    "coordinates": [
+      61.8220488,
+      24.4286815
+    ],
+    "name": "",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Martikainen Maarit"
+    ],
+    "description": "Etusija kokeeseen järjestäjän kutsumilla koirilla (max 1/3), sekä järjestävän yhdistyksen jäsenillä (jäsenyys voimassa ilmoittautumisajan alkaessa).",
+    "cost": {
+      "normal": 0
+    },
+    "cost_member": {
+      "normal": 0
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": 0
+  },
+  {
+    "id": "8-ZNKb-QEY",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T00:00:00+03:00",
+    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Jyväskylän ymp.",
+    "coordinates": [
+      62.3992586,
+      25.6759251
+    ],
+    "name": "",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Tuija Aaltonen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tuija Aaltonen",
+      "phone": "",
+      "email": "tuija.lappiksen@gmail.com"
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-07-03T00:00:00.000+03:00",
+        "class": "ALO",
+        "judge": [
+          {
+            "name": "Toskala Mika",
+            "id": 697689,
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
+    "id": "P8gJt-JiCk",
+    "type": "NOME-B",
+    "levels": "ALO (La), AVO (La)",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T00:00:00+03:00",
+    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Meri-Lappi",
+    "coordinates": [
+      65.7992109,
+      24.5045251
+    ],
+    "name": "",
+    "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Turunen Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "groups": [
+          "ap"
+        ],
+        "date": "2027-07-03T00:00:00.000+03:00",
+        "class": "ALO"
+      },
+      {
+        "date": "2027-07-03T00:00:00.000+03:00",
+        "groups": [
+          "ip"
+        ],
+        "class": "AVO",
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
+    "id": "JftqKLONlp",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "04.07.2027",
+    "date_sort": "2027-07-04T00:00:00+03:00",
+    "end_date_sort": "2027-07-04T00:00:00+03:00",
+    "entry_date": "23.05.-13.06.",
+    "location": "Meri-Lappi",
+    "coordinates": [
+      65.7992109,
+      24.5045251
+    ],
+    "name": "",
+    "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Turunen Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [
+          {
+            "id": 678190,
+            "name": "Turunen Vesa",
+            "official": true
+          }
+        ],
+        "class": "VOI",
+        "date": "2027-07-04T00:00:00.000+03:00"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-23",
+    "entry_end": "2027-06-13",
+    "entries": null
+  },
+  {
+    "id": "EUegDy1sYu",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "10.07.2027",
+    "date_sort": "2027-07-10T00:00:00+03:00",
+    "end_date_sort": "2027-07-10T00:00:00+03:00",
+    "entry_date": "09.06.-30.06.",
+    "location": "Laukaa",
+    "coordinates": [
+      62.416667,
+      25.95
+    ],
+    "name": "Tolleritaipparit",
+    "organizer": "NOVASCOTIANNOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 5 € pankkikulu. ",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-06-09",
+    "entry_end": "2027-06-30",
+    "entries": null
+  },
+  {
+    "id": "JyR7IzWtAf",
+    "type": "NOME-B",
+    "levels": "ALO (La, Su)",
+    "date": "10.-11.07.2027",
+    "date_sort": "2027-07-10T00:00:00+03:00",
+    "end_date_sort": "2027-07-11T23:59:59.999000+03:00",
+    "entry_date": "29.05.-19.06.",
+    "location": "Kaakon toiminta-alue",
+    "coordinates": null,
+    "name": "Cherry´s Cup",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Särkänlahti Jari"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "class": "ALO",
+        "date": "2027-07-10T00:00:00.000+03:00"
+      },
+      {
+        "date": "2027-07-11T00:00:00.000+03:00",
+        "judge": [],
+        "class": "ALO"
+      }
+    ],
+    "places": 30,
+    "state": "tentative",
+    "entry_start": "2027-05-29",
+    "entry_end": "2027-06-19",
+    "entries": null
+  },
+  {
+    "id": "f3dWe-V6xe",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "10.07.2027",
+    "date_sort": "2027-07-10T00:00:00+03:00",
+    "end_date_sort": "2027-07-10T00:00:00+03:00",
+    "entry_date": "29.05.-19.06.",
+    "location": "Jyväskylän Ymp.",
+    "coordinates": null,
+    "name": "AVO-lk",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Maija Lappalainen",
+      "phone": "",
+      "email": "nome.maija@gmail.com"
+    },
+    "secretary": {
+      "name": "Ulla Vahla",
+      "phone": "",
+      "email": "vahla.ulla@gmail.com"
+    },
+    "judges": [
+      "Lappalainen Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-07-10T00:00:00.000+03:00",
+        "judge": [
+          {
+            "id": 882887,
+            "official": true,
+            "name": "Lappalainen Mika"
+          }
+        ],
+        "class": "AVO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-29",
+    "entry_end": "2027-06-19",
+    "entries": null
+  },
+  {
+    "id": "kPztVD0JYo",
+    "type": "NOWT",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "11.07.2027",
+    "date_sort": "2027-07-11T00:00:00+03:00",
+    "end_date_sort": "2027-07-11T00:00:00+03:00",
+    "entry_date": "30.05.-20.06.",
+    "location": "Siilinjärvi",
+    "coordinates": [
+      63.0744197,
+      27.6589448
+    ],
+    "name": "WT Siilinjärvi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Taru Hiltunen",
+      "phone": "",
+      "email": "tabe.hiltunen@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Luomanen Timo",
+      "Siitari Heli"
+    ],
+    "description": "WT 11.7.2027 Kuopio\nKoevastaava Taru Hiltunen\nYt Timo Luomanen, toinen tuomari Heli Siitari\nALO, AVO, VOI, koiria max. 40, ei rajata luokittain.\nEtusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "judge": [],
+        "date": "2027-07-11T00:00:00.000+03:00",
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "class": "AVO",
+        "date": "2027-07-11T00:00:00.000+03:00",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "judge": [],
+        "class": "VOI",
+        "date": "2027-07-11T00:00:00.000+03:00"
+      }
+    ],
+    "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-05-30",
+    "entry_end": "2027-06-20",
+    "entries": null
+  },
+  {
+    "id": "3NM2DqsP2c",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "13.07.2027",
+    "date_sort": "2027-07-13T00:00:00+03:00",
+    "end_date_sort": "2027-07-13T00:00:00+03:00",
+    "entry_date": "01.06.-22.06.",
+    "location": "Virrat",
+    "coordinates": [
+      62.2401004,
+      23.7712375
+    ],
+    "name": "Leiritaipparit",
+    "organizer": "KULTAINEN RENGAS - GOLDEN RING GR RY",
+    "official": {
+      "name": "Maria Hästbacka",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Martikainen Maarit"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-06-01",
+    "entry_end": "2027-06-22",
+    "entries": null
+  },
+  {
+    "id": "MHqUkAkpRU",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "14.07.2027",
+    "date_sort": "2027-07-14T00:00:00+03:00",
+    "end_date_sort": "2027-07-14T00:00:00+03:00",
+    "entry_date": "02.06.-23.06.",
+    "location": "Ylikiiminki",
+    "coordinates": [
+      65.030429,
+      26.1558845
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Taina Lahtinen",
+      "phone": "",
+      "email": "tainalahtinen85@gmail.com"
+    },
+    "judges": [
+      "Tenhonen Tanja"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-06-02",
+    "entry_end": "2027-06-23",
+    "entries": null
+  },
+  {
+    "id": "0sp7Rplx-e",
+    "type": "NOWT",
+    "levels": "ALO (La, Su), AVO (La, Su), VOI (La, Su)",
+    "date": "17.-18.07.2027",
+    "date_sort": "2027-07-17T00:00:00+03:00",
+    "end_date_sort": "2027-07-18T23:59:59.999000+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Kajaani",
+    "coordinates": [
+      64.2247169,
+      27.7337773
+    ],
+    "name": "",
+    "organizer": "KAINUUN NOUTAJAT RY",
+    "official": {
+      "name": "Hanna-Mari Ruuskanen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Hanna-Mari Ruuskanen",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Pöppönen Pasi",
+      "Tuomi Pekka"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "date": "2027-07-17T00:00:00.000+03:00",
+        "judge": [],
+        "class": "ALO"
+      },
+      {
+        "date": "2027-07-17T00:00:00.000+03:00",
+        "class": "AVO",
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "date": "2027-07-17T00:00:00.000+03:00",
+        "judge": []
+      },
+      {
+        "date": "2027-07-18T00:00:00.000+03:00",
+        "judge": [],
+        "class": "ALO"
+      },
+      {
+        "class": "AVO",
+        "date": "2027-07-18T00:00:00.000+03:00",
+        "judge": []
+      },
+      {
+        "judge": [],
+        "class": "VOI",
+        "date": "2027-07-18T00:00:00.000+03:00"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
+    "id": "SWFkkUAmuq",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "17.07.2027",
+    "date_sort": "2027-07-17T00:00:00+03:00",
+    "end_date_sort": "2027-07-17T00:00:00+03:00",
+    "entry_date": "21.06.-04.07.",
+    "location": "Pori",
+    "coordinates": [
+      61.4866126,
+      21.7972071
+    ],
+    "name": "Piirinmestaruuskoe",
+    "organizer": "PYNTÖSJÄRVEN YMPÄRISTÖN METSÄSTYSSEURA RY",
+    "official": {
+      "name": "Olli-Pekka Vainio",
+      "phone": "",
+      "email": "vainio.ollipekka@gmail.com"
+    },
+    "secretary": {
+      "name": "Minna Aalto-Vainio",
+      "phone": "",
+      "email": "pikkunita@gmail.com"
+    },
+    "judges": [
+      "Majuri Pasi"
+    ],
+    "description": "Koe on Satakunnan kennelpiirin piirinmestaruuskoe.\nEtusija Satakunnan kennelpiirin alueella asuvilla VOI-luokan noutajarotuisilla koirilla.",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-07-17T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": [
+          {
+            "id": 850900,
+            "official": true,
+            "name": "Majuri Pasi"
+          }
+        ]
+      }
+    ],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-06-21",
+    "entry_end": "2027-07-04",
+    "entries": null
+  },
+  {
+    "id": "_panSlWnz1",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "17.07.2027",
+    "date_sort": "2027-07-17T00:00:00+03:00",
+    "end_date_sort": "2027-07-17T00:00:00+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "kokkola",
+    "coordinates": [
+      63.8391421,
+      23.1336845
+    ],
+    "name": "",
+    "organizer": "KESKI-POHJANMAAN KOIRAKILTA RY",
+    "official": {
+      "name": "Ida-Maria Lindholm",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tuulia Honkela",
+      "phone": "",
+      "email": "honkela.tuulia@gmail.com"
+    },
+    "judges": [
+      "Purtola Susanna"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
+    "id": "dELdf-qmwV",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La)",
+    "date": "24.07.2027",
+    "date_sort": "2027-07-24T00:00:00+03:00",
+    "end_date_sort": "2027-07-24T00:00:00+03:00",
+    "entry_date": "12.06.-03.07.",
+    "location": "Toivakka",
+    "coordinates": [
+      62.0962173,
+      26.0804935
+    ],
+    "name": "",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Riikka Tahvanainen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tiina Saarinen",
+      "phone": "",
+      "email": "tiinajohanna.saarinen@gmail.com"
+    },
+    "judges": [
+      "Pöppönen Pasi",
+      "Lappalainen Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "groups": [
+          "kp"
+        ],
+        "date": "2027-07-23T21:00:00.000Z",
+        "class": "ALO",
+        "judge": []
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "date": "2027-07-23T21:00:00.000Z",
+        "judge": [],
+        "class": "AVO"
+      }
+    ],
+    "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-06-12",
+    "entry_end": "2027-07-03",
+    "entries": null
+  },
+  {
+    "id": "4tCd7GIQUw",
+    "type": "NOME-B",
+    "levels": "ALO (Su), AVO (La)",
+    "date": "24.-25.07.2027",
+    "date_sort": "2027-07-24T00:00:00+03:00",
+    "end_date_sort": "2027-07-25T23:59:59.999000+03:00",
+    "entry_date": "12.06.-03.07.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "Nome-B AVO (damikoe) ALO, Kuopio",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Jonna Mykkänen",
+      "phone": "",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "secretary": {
+      "name": "Jonna Mykkänen",
+      "phone": "",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Huom! Lauantain AVO koe järjestetään Damikokeena!\nEtusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "date": "2027-07-23T21:00:00.000Z",
+        "class": "AVO"
+      },
+      {
+        "date": "2027-07-24T21:00:00.000Z",
+        "judge": [],
+        "class": "ALO"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-12",
+    "entry_end": "2027-07-03",
+    "entries": null
+  },
+  {
+    "id": "vhmnkgDaeB",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "31.07.2027",
+    "date_sort": "2027-07-31T00:00:00+03:00",
+    "end_date_sort": "2027-07-31T00:00:00+03:00",
+    "entry_date": "19.06.-10.07.",
+    "location": "Mänttä-Vilppula",
+    "coordinates": [
+      62.0826146,
+      24.4504322
+    ],
+    "name": "",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 0
+    },
+    "cost_member": {
+      "normal": 0
+    },
+    "classes": [
+      {
+        "members": 0,
+        "places": 15,
+        "judge": [
+          {
+            "official": true,
+            "id": 697689,
+            "name": "Toskala Mika"
+          }
+        ],
+        "class": "AVO",
+        "entries": 0,
+        "date": "2027-07-31T00:00:00.000+03:00"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-06-19",
+    "entry_end": "2027-07-10",
+    "entries": 0
+  },
+  {
+    "id": "Hd7CoTn-oW",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "31.07.2027",
+    "date_sort": "2027-07-31T00:00:00+03:00",
+    "end_date_sort": "2027-07-31T00:00:00+03:00",
+    "entry_date": "05.07.-18.07.",
+    "location": "Orimattila",
+    "coordinates": [
+      60.805137,
+      25.7333558
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Saara Seppänen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Olkkonen",
+      "phone": "",
+      "email": "happyhunt68@outlook.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "judge": [],
+        "date": "2027-07-31T00:00:00.000+03:00"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-05",
+    "entry_end": "2027-07-18",
+    "entries": null
+  },
+  {
+    "id": "QoQultqHlU",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "31.07.2027",
+    "date_sort": "2027-07-31T00:00:00+03:00",
+    "end_date_sort": "2027-07-31T00:00:00+03:00",
+    "entry_date": "05.07.-18.07.",
+    "location": "Kärkölä",
+    "coordinates": [
+      60.8676567,
+      25.2511393
+    ],
+    "name": "Salpausselän Kennelpiirin piirinmestaruus",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Terhi Lakka",
+      "phone": "",
+      "email": "terhi.lakka@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "Piirinmestaruuskoe. Etusija Salpausselän kennelpiirin alueella asuvilla piirinmestaruudesta kilpailevilla koirakoilla.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2027-07-31T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": []
+      }
+    ],
+    "places": 14,
+    "state": "tentative",
+    "entry_start": "2027-07-05",
+    "entry_end": "2027-07-18",
+    "entries": null
+  },
+  {
+    "id": "bwaa6T5ZK9",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "01.08.2027",
+    "date_sort": "2027-08-01T00:00:00+03:00",
+    "end_date_sort": "2027-08-01T00:00:00+03:00",
+    "entry_date": "20.06.-11.07.",
+    "location": "Mänttä-Vilppula",
+    "coordinates": [
+      62.0826146,
+      24.4504322
+    ],
+    "name": "Piirinmestaruus Pohjois-Häme",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "Etusija kokeeseen Pohjois-Hämeen kennelpiirin alueella asuvilla koirilla, järjestäjän kutsumilla koirilla (max 1/3), sekä järjestävän yhdistyksen jäsenillä (jäsenyys voimassa ilmoittautumisajan alkaessa).",
+    "cost": {
+      "normal": 0
+    },
+    "cost_member": {
+      "normal": 0
+    },
+    "classes": [
+      {
+        "class": "VOI",
+        "entries": 0,
+        "places": 12,
+        "judge": [
+          {
+            "name": "Tenhunen Juha",
+            "id": 999999,
+            "official": true
+          }
+        ],
+        "date": "2027-08-01T00:00:00.000+03:00",
+        "members": 0
+      }
+    ],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-06-20",
+    "entry_end": "2027-07-11",
+    "entries": 0
+  },
+  {
+    "id": "fSSvQZVxqL",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "01.08.2027",
+    "date_sort": "2027-08-01T00:00:00+03:00",
+    "end_date_sort": "2027-08-01T00:00:00+03:00",
+    "entry_date": "05.07.-18.07.",
+    "location": "Kärkölä",
+    "coordinates": [
+      60.8676567,
+      25.2511393
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Terhi Lakka",
+      "phone": "",
+      "email": "terhi.lakka@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-08-01T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": 14,
+    "state": "tentative",
+    "entry_start": "2027-07-05",
+    "entry_end": "2027-07-18",
+    "entries": null
+  },
+  {
+    "id": "JdKnUGPJkH",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "01.08.2027",
+    "date_sort": "2027-08-01T00:00:00+03:00",
+    "end_date_sort": "2027-08-01T00:00:00+03:00",
+    "entry_date": "05.07.-18.07.",
+    "location": "Orimattila",
+    "coordinates": [
+      60.805137,
+      25.7333558
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Johanna Hilden",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Olkkonen",
+      "phone": "",
+      "email": "happyhunt68@outlook.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-08-01T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-07-05",
+    "entry_end": "2027-07-18",
+    "entries": null
+  },
+  {
+    "id": "0Wig9Ogr6E",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "07.08.2027",
+    "date_sort": "2027-08-07T00:00:00+03:00",
+    "end_date_sort": "2027-08-07T00:00:00+03:00",
+    "entry_date": "26.06.-17.07.",
+    "location": "Etelä-Suomi",
+    "coordinates": [
+      60.7373759,
+      25.8143982
+    ],
+    "name": "Labradori Derby",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Maija Lappalainen",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-26",
+    "entry_end": "2027-07-17",
+    "entries": null
+  },
+  {
+    "id": "amBemCDqxU",
+    "type": "NOME-B",
+    "levels": "VOI (La, Su)",
+    "date": "07.-08.08.2027",
+    "date_sort": "2027-08-07T00:00:00+03:00",
+    "end_date_sort": "2027-08-08T23:59:59.999000+03:00",
+    "entry_date": "26.06.-27.07.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "Metsästysnoutajat ry Nome-b Mestaruuskoe",
+    "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Maija Grönlund",
+      "phone": "",
+      "email": "maijagronlund@gmail.com"
+    },
+    "judges": [
+      "Toskala Mika",
+      "Tenhunen Matti"
+    ],
+    "description": "Koe järjestetään Kuopio, Nilsiä, Siilinjärvi suunnalla, paikka vahvistuu myöhemmin.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "VOI",
+        "places": 0,
+        "date": "2027-08-06T21:00:00.000Z",
+        "judge": [
+          {
+            "official": true,
+            "name": "Toskala Mika",
+            "id": 697689
+          },
+          {
+            "id": 881593,
+            "name": "Tenhunen Matti",
+            "official": true
+          }
+        ]
+      },
+      {
+        "class": "VOI",
+        "places": 0,
+        "date": "2027-08-07T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 697689,
+            "name": "Toskala Mika",
+            "official": true
+          },
+          {
+            "id": 881593,
+            "official": true,
+            "name": "Tenhunen Matti"
+          }
+        ]
+      }
+    ],
+    "places": 48,
+    "state": "tentative",
+    "entry_start": "2027-06-26",
+    "entry_end": "2027-07-27",
+    "entries": null
+  },
+  {
+    "id": "9axWwqfe1o",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "07.08.2027",
+    "date_sort": "2027-08-07T00:00:00+03:00",
+    "end_date_sort": "2027-08-07T00:00:00+03:00",
+    "entry_date": "26.06.-17.07.",
+    "location": "Etelä-Suomi",
+    "coordinates": [
+      60.7373759,
+      25.8143982
+    ],
+    "name": "Labradorimestaruus",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-26",
+    "entry_end": "2027-07-17",
+    "entries": null
+  },
+  {
+    "id": "s41ZZ5feuX",
+    "type": "NOME-B",
+    "levels": "VOI (La, Su)",
+    "date": "14.-15.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T23:59:59.999000+03:00",
+    "entry_date": "03.07.-24.07.",
+    "location": "Rautalampi",
+    "coordinates": [
+      62.6206984,
+      26.8384638
+    ],
+    "name": "Yhdistyksen mestaruus Nome-B Rautalampi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Elina Halonen",
+      "phone": "",
+      "email": "elina.halonen1@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Hukkanen Tuija"
+    ],
+    "description": "Etusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-08-14T00:00:00.000+03:00",
+        "judge": [],
+        "class": "VOI"
+      },
+      {
+        "class": "VOI",
+        "date": "2027-08-15T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-07-03",
+    "entry_end": "2027-07-24",
+    "entries": null
+  },
+  {
+    "id": "6T2fIGkYbq",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "14.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "entry_date": "03.07.-24.07.",
+    "location": "Pälkäne",
+    "coordinates": [
+      61.3371322,
+      24.2649422
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Tuominen Petri"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2027-08-14T00:00:00.000+03:00",
+        "class": "AVO",
+        "judge": []
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-03",
+    "entry_end": "2027-07-24",
+    "entries": null
+  },
+  {
+    "id": "TU8lqnf3vO",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "14.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "entry_date": "03.07.-24.07.",
+    "location": "Vehmaa",
+    "coordinates": [
+      60.6866474,
+      21.7152608
+    ],
+    "name": "Taipumuskoe",
+    "organizer": "VAKKA-SUOMEN NOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "Jäsenyyden on oltava voimassa ennen ilmoittautumisen alkua, jotta pääsee etusijalle.",
+    "cost": {
+      "normal": 0
+    },
+    "cost_member": {
+      "normal": 0
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-07-03",
+    "entry_end": "2027-07-24",
+    "entries": 0
+  },
+  {
+    "id": "yXoRoF8hl3",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "14.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "entry_date": "03.07.-24.07.",
+    "location": "Pälkäne",
+    "coordinates": [
+      61.3371322,
+      24.2649422
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Majuri Pasi"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-07-03",
+    "entry_end": "2027-07-24",
+    "entries": null
+  },
+  {
+    "id": "0GCg2Usk70",
+    "type": "NOME-B",
+    "levels": "VOI (La, Su)",
+    "date": "14.-15.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T23:59:59.999000+03:00",
+    "entry_date": "03.07.-24.07.",
+    "location": "Kaakon toiminta-alue",
+    "coordinates": null,
+    "name": "Kymenläänin kennelpiiri ry.n piirinmestaruus ja Karjala-Cup",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "places": 12,
+        "date": "2027-08-13T21:00:00.000Z",
+        "class": "VOI"
+      },
+      {
+        "class": "VOI",
+        "date": "2027-08-14T21:00:00.000Z",
+        "judge": [
+          {
+            "official": true,
+            "id": 4053791,
+            "name": "Puttonen Pasi-Petteri"
+          }
+        ],
+        "places": 12
+      }
+    ],
+    "places": 24,
+    "state": "tentative",
+    "entry_start": "2027-07-03",
+    "entry_end": "2027-07-24",
+    "entries": null
+  },
+  {
+    "id": "q66YcjNhgK",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "14.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "entry_date": "03.07.-24.07.",
+    "location": "Jyväskylän ymp.",
+    "coordinates": [
+      62.3992586,
+      25.6759251
+    ],
+    "name": "Keski-Suomen Kennelpiirin piirinmestaruuskoe",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Mäkelä",
+      "phone": "",
+      "email": "makela.mari22@gmail.com"
+    },
+    "judges": [
+      "Tenhunen Matti",
+      "Hartikainen Jari"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-08-13T21:00:00.000Z",
+        "judge": [
+          {
+            "official": true,
+            "name": "Tenhunen Matti",
+            "id": 881593
+          },
+          {
+            "official": true,
+            "name": "Hartikainen Jari",
+            "id": 696622
+          }
+        ]
+      }
+    ],
+    "places": 24,
+    "state": "tentative",
+    "entry_start": "2027-07-03",
+    "entry_end": "2027-07-24",
+    "entries": null
+  },
+  {
+    "id": "kr7neKyxhe",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "14.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "entry_date": "03.07.-24.07.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Piia Kipinä",
+      "phone": "",
+      "email": "piia.k4@gmail.com"
+    },
+    "judges": [
+      "Uusimäki Pekka"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "VOI",
+        "judge": [
+          {
+            "official": true,
+            "name": "Uusimäki Pekka",
+            "id": 653323
+          }
+        ],
+        "date": "2027-08-14T00:00:00.000+03:00"
+      }
+    ],
+    "places": 24,
+    "state": "tentative",
+    "entry_start": "2027-07-03",
+    "entry_end": "2027-07-24",
+    "entries": null
+  },
+  {
+    "id": "NtZSUFjppv",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La)",
+    "date": "14.08.2027",
+    "date_sort": "2027-08-14T00:00:00+03:00",
+    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "entry_date": "19.07.-01.08.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "WT ALO ja AVO -luokille",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Olkkonen",
+      "phone": "",
+      "email": "happyhunt68@outlook.com"
+    },
+    "judges": [
+      "Torila Mika",
+      "Väisänen Riitta"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-08-14T00:00:00.000+03:00",
+        "judge": []
+      },
+      {
+        "date": "2027-08-14T00:00:00.000+03:00",
+        "class": "AVO",
+        "judge": []
+      }
+    ],
+    "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-07-19",
+    "entry_end": "2027-08-01",
+    "entries": null
+  },
+  {
+    "id": "VAfTI1sOrk",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "15.08.2027",
+    "date_sort": "2027-08-15T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "entry_date": "04.07.-25.07.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-08-15T00:00:00.000+03:00"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-04",
+    "entry_end": "2027-07-25",
+    "entries": null
+  },
+  {
+    "id": "5yzzuKKD-7",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "15.08.2027",
+    "date_sort": "2027-08-15T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "entry_date": "19.07.-01.08.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Heli Kopra",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Olkkonen",
+      "phone": "",
+      "email": "happyhunt68@outlook.com"
+    },
+    "judges": [
+      "Villikka Katja"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\n",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-07-19",
+    "entry_end": "2027-08-01",
+    "entries": 0
+  },
+  {
+    "id": "l-FM7Qmcp1",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "15.08.2027",
+    "date_sort": "2027-08-15T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "entry_date": "04.07.-25.07.",
+    "location": "Pälkäne",
+    "coordinates": [
+      61.3371322,
+      24.2649422
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Tuominen Petri"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-08-15T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-07-04",
+    "entry_end": "2027-07-25",
+    "entries": null
+  },
+  {
+    "id": "RhcalxqKXS",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "15.08.2027",
+    "date_sort": "2027-08-15T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "entry_date": "04.07.-25.07.",
+    "location": "Vehmaa",
+    "coordinates": [
+      60.6866474,
+      21.7152608
+    ],
+    "name": "",
+    "organizer": "VAKKA-SUOMEN NOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "Jäsenyyden on oltava voimassa ennen ilmoittautumisen alkua, jotta pääsee etusijalle.",
+    "cost": {
+      "normal": 0
+    },
+    "cost_member": {
+      "normal": 0
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "entries": 0,
+        "date": "2027-08-15T00:00:00.000+03:00",
+        "members": 0,
+        "places": 15,
+        "judge": [
+          {
+            "name": "Salonen Susanna",
+            "official": true,
+            "id": 835312
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-04",
+    "entry_end": "2027-07-25",
+    "entries": 0
+  },
+  {
+    "id": "G6Wzq4Nzgs",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "15.08.2027",
+    "date_sort": "2027-08-15T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "entry_date": "04.07.-25.07.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Piia Kipinä",
+      "phone": "",
+      "email": "piia.k4@gmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-08-15T00:00:00.000+03:00"
+      }
+    ],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-07-04",
+    "entry_end": "2027-07-25",
+    "entries": null
+  },
+  {
+    "id": "Eogo4NlRaa",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "15.08.2027",
+    "date_sort": "2027-08-15T00:00:00+03:00",
+    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "entry_date": "04.07.-25.07.",
+    "location": "Pälkäne",
+    "coordinates": [
+      61.3371322,
+      24.2649422
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Satu Rivinoja",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-08-15T00:00:00.000+03:00"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-04",
+    "entry_end": "2027-07-25",
+    "entries": null
+  },
+  {
+    "id": "Jfe4t5gYe_",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "28.08.2027",
+    "date_sort": "2027-08-28T00:00:00+03:00",
+    "end_date_sort": "2027-08-28T00:00:00+03:00",
+    "entry_date": "28.07.-18.08.",
+    "location": "Hausjärvi",
+    "coordinates": [
+      60.7788065,
+      24.9735698
+    ],
+    "name": "Tollerinome",
+    "organizer": "NOVASCOTIANNOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla sekä Kanta-Hämeen Noutajakoirayhdistyksen jäsenillä. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 5 € pankkikulu.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [
+          {
+            "name": "Fontell Ari-Pekka",
+            "official": true,
+            "id": 842408
+          }
+        ],
+        "date": "2027-08-28T00:00:00.000+03:00",
+        "class": "ALO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-28",
+    "entry_end": "2027-08-18",
+    "entries": null
+  },
+  {
+    "id": "cNBJyEof3m",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "28.08.2027",
+    "date_sort": "2027-08-28T00:00:00+03:00",
+    "end_date_sort": "2027-08-28T00:00:00+03:00",
+    "entry_date": "19.07.-09.08.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Virpi Eroma",
+      "phone": "",
+      "email": "virpi@virpieroma.fi"
+    },
+    "secretary": {
+      "name": "Ida Tallqvist",
+      "phone": "",
+      "email": "olevinaanlabradorit@hotmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/\n",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [
+      {
+        "date": "2027-08-28T00:00:00.000+03:00",
+        "class": "AVO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-19",
+    "entry_end": "2027-08-09",
+    "entries": null
+  },
+  {
+    "id": "iSxcsfM8rI",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "28.-29.08.2027",
+    "date_sort": "2027-08-28T00:00:00+03:00",
+    "end_date_sort": "2027-08-29T23:59:59.999000+03:00",
+    "entry_date": "17.07.-07.08.",
+    "location": "Laukaa",
+    "coordinates": [
+      62.416667,
+      25.95
+    ],
+    "name": "NOU Laukaa",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Niina Parviainen",
+      "phone": "",
+      "email": "parviainen_niina@outlook.com"
+    },
+    "secretary": {
+      "name": "Annika Kontinaho",
+      "phone": "",
+      "email": "a.kontinaho@gmail.com"
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 32,
+    "state": "tentative",
+    "entry_start": "2027-07-17",
+    "entry_end": "2027-08-07",
+    "entries": null
+  },
+  {
+    "id": "d1v2EIrjQ2",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "28.08.2027",
+    "date_sort": "2027-08-28T00:00:00+03:00",
+    "end_date_sort": "2027-08-28T00:00:00+03:00",
+    "entry_date": "19.07.-09.08.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Maija Sulonen",
+      "phone": "",
+      "email": "maija.sulonen1@gmail.com"
+    },
+    "secretary": {
+      "name": "Ida Tallqvist",
+      "phone": "",
+      "email": "olevinaanlabradorit@hotmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/\n",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-07-19",
+    "entry_end": "2027-08-09",
+    "entries": null
+  },
+  {
+    "id": "LytmIQ3UTw",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "29.08.2027",
+    "date_sort": "2027-08-29T00:00:00+03:00",
+    "end_date_sort": "2027-08-29T00:00:00+03:00",
+    "entry_date": "19.07.-09.08.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Mia Jaakola-Siimes",
+      "phone": "",
+      "email": "mia.lehtinen@gmail.com"
+    },
+    "secretary": {
+      "name": "Ida Tallqvist",
+      "phone": "",
+      "email": "olevinaanlabradorit@hotmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/\n",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [
+      {
+        "date": "2027-08-29T00:00:00.000+03:00",
+        "class": "ALO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-19",
+    "entry_end": "2027-08-09",
+    "entries": null
+  },
+  {
+    "id": "ehRVClkxkK",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "29.08.2027",
+    "date_sort": "2027-08-29T00:00:00+03:00",
+    "end_date_sort": "2027-08-29T00:00:00+03:00",
+    "entry_date": "19.07.-09.08.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Riikka Tetri",
+      "phone": "",
+      "email": "riikka.tetri@gmail.com"
+    },
+    "secretary": {
+      "name": "Ida Tallqvist",
+      "phone": "",
+      "email": "olevinaanlabradorit@hotmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/\n",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 42
+    },
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-08-29T00:00:00.000+03:00"
+      }
+    ],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-07-19",
+    "entry_end": "2027-08-09",
+    "entries": null
+  },
+  {
+    "id": "5ftZBHdY1-",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "29.08.2027",
+    "date_sort": "2027-08-29T00:00:00+03:00",
+    "end_date_sort": "2027-08-29T00:00:00+03:00",
+    "entry_date": "28.07.-18.08.",
+    "location": "Hausjärvi",
+    "coordinates": [
+      60.7788065,
+      24.9735698
+    ],
+    "name": "Tollerinome",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "Koe toteutetaan yhteistyössä Novascotiannoutajat ry:n kanssa. Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla sekä Kanta-Hämeen Noutajakoirayhdistyksen jäsenillä. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 3 € pankkikulu.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-08-29T00:00:00.000+03:00",
+        "class": "AVO",
+        "judge": [
+          {
+            "name": "Fontell Ari-Pekka",
+            "official": true,
+            "id": 842408
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-28",
+    "entry_end": "2027-08-18",
+    "entries": null
+  },
+  {
+    "id": "JMuSSwEXGq",
+    "type": "NOME-B SM",
+    "levels": "VOI (La, Pe)",
+    "date": "03.-04.09.2027",
+    "date_sort": "2027-09-03T00:00:00+03:00",
+    "end_date_sort": "2027-09-04T23:59:59.999000+03:00",
+    "entry_date": "23.07.-13.08.",
+    "location": "Virrat",
+    "coordinates": [
+      62.2401004,
+      23.7712375
+    ],
+    "name": "Virrat Noutajamestaruus NM-27",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Heidi Lamminen",
+      "phone": "",
+      "email": "heidi.s.porola@gmail.com"
+    },
+    "secretary": {
+      "name": "Tiina Ruuskanen",
+      "phone": "",
+      "email": "tiinaruuskanen@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru",
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-09-03T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "date": "2027-09-04T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": 0,
+    "state": "tentative",
+    "entry_start": "2027-07-23",
+    "entry_end": "2027-08-13",
+    "entries": null
+  },
+  {
+    "id": "4RT5rMz7Ih",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "04.09.2027",
+    "date_sort": "2027-09-04T00:00:00+03:00",
+    "end_date_sort": "2027-09-04T00:00:00+03:00",
+    "entry_date": "24.07.-14.08.",
+    "location": "Leppävirta",
+    "coordinates": [
+      62.4917201,
+      27.7880572
+    ],
+    "name": "Taipumuskoe Leppävirta/Varkaus",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Tuija Löppönen",
+      "phone": "",
+      "email": "lopponentuija@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Varis Taija-Leena"
+    ],
+    "description": "Taipumuskoe - alustava.\nEtusijalla jäsenet ja kutsutut.",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-07-24",
+    "entry_end": "2027-08-14",
+    "entries": null
+  },
+  {
+    "id": "a0V1XIJLYc",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "04.-05.09.2027",
+    "date_sort": "2027-09-04T00:00:00+03:00",
+    "end_date_sort": "2027-09-05T23:59:59.999000+03:00",
+    "entry_date": "24.07.-14.08.",
+    "location": "Kaakon toiminta-alueella",
+    "coordinates": null,
+    "name": "",
+    "organizer": "KAAKON NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Nina Torri",
+      "phone": "",
+      "email": "ninatorri@msn.com"
+    },
+    "judges": [
+      "Villikka Katja"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 32,
+    "state": "tentative",
+    "entry_start": "2027-07-24",
+    "entry_end": "2027-08-14",
+    "entries": null
+  },
+  {
+    "id": "UzrAUbmS-t",
+    "type": "NOME-B",
+    "levels": "ALO (La), AVO (La)",
+    "date": "18.09.2027",
+    "date_sort": "2027-09-18T00:00:00+03:00",
+    "end_date_sort": "2027-09-18T00:00:00+03:00",
+    "entry_date": "07.08.-28.08.",
+    "location": "Meri-Lappi",
+    "coordinates": [
+      65.7992109,
+      24.5045251
+    ],
+    "name": "",
+    "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Jonna Alamommo",
+      "phone": "0405924880",
+      "email": "jonna.alamommo@gmail.com"
+    },
+    "judges": [
+      "Oikarinen Jyrki"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "judge": [
+          {
+            "official": true,
+            "id": 4042184,
+            "name": "Oikarinen Jyrki"
+          }
+        ],
+        "date": "2027-09-18T00:00:00.000+03:00",
+        "groups": [
+          "ap"
+        ]
+      },
+      {
+        "class": "AVO",
+        "judge": [
+          {
+            "name": "Oikarinen Jyrki",
+            "official": true,
+            "id": 4042184
+          }
+        ],
+        "groups": [
+          "ip"
+        ],
+        "date": "2027-09-18T00:00:00.000+03:00"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-08-07",
+    "entry_end": "2027-08-28",
+    "entries": null
+  },
+  {
+    "id": "Igr0hkCZW5",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "19.09.2027",
+    "date_sort": "2027-09-19T00:00:00+03:00",
+    "end_date_sort": "2027-09-19T00:00:00+03:00",
+    "entry_date": "08.08.-29.08.",
+    "location": "Meri-Lappi",
+    "coordinates": [
+      65.7992109,
+      24.5045251
+    ],
+    "name": "",
+    "organizer": "LÄNSI-POHJAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Jonna Alamommo",
+      "phone": "0405924880",
+      "email": "jonna.alamommo@gmail.com"
+    },
+    "judges": [
+      "Oikarinen Jyrki"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "date": "2027-09-19T00:00:00.000+03:00",
+        "class": "VOI",
+        "judge": [
+          {
+            "id": 4042184,
+            "official": true,
+            "name": "Oikarinen Jyrki"
+          }
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-08-08",
+    "entry_end": "2027-08-29",
+    "entries": null
+  },
+  {
+    "id": "Rdpae3KHsI",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "25.09.2027",
+    "date_sort": "2027-09-25T00:00:00+03:00",
+    "end_date_sort": "2027-09-25T00:00:00+03:00",
+    "entry_date": "14.08.-04.09.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "Pohjois-Pohjanmaan Piirinmestaruuskoe (VOI)",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Khrystyna Vuokila",
+      "phone": "",
+      "email": "khrystyna.vuokila@gmail.com"
+    },
+    "judges": [
+      "Lappalainen Mika",
+      "Turunen Vesa"
+    ],
+    "description": "Voittajaluokan koe on Pohjois-Pohjanmaan kennelpiirin mestaruuskoe, johon on etusija Pohjois-Pohjanmaan kennelpiirin alueella asuvilla ja järjestävän yhdistyksen jäsenillä.\n\nMaksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä. \n",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-09-25T00:00:00.000+03:00",
+        "judge": []
+      }
+    ],
+    "places": 24,
+    "state": "tentative",
+    "entry_start": "2027-08-14",
+    "entry_end": "2027-09-04",
+    "entries": null
+  },
+  {
+    "id": "2WM_Hr-TEv",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "26.09.2027",
+    "date_sort": "2027-09-26T00:00:00+03:00",
+    "end_date_sort": "2027-09-26T00:00:00+03:00",
+    "entry_date": "15.08.-05.09.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Khrystyna Vuokila",
+      "phone": "",
+      "email": "khrystyna.vuokila@gmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Maksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä. \n",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-09-26T00:00:00.000+03:00",
+        "class": "AVO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-08-15",
+    "entry_end": "2027-09-05",
+    "entries": null
+  },
+  {
+    "id": "SCkQ6v8V8T",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "26.09.2027",
+    "date_sort": "2027-09-26T00:00:00+03:00",
+    "end_date_sort": "2027-09-26T00:00:00+03:00",
+    "entry_date": "15.08.-05.09.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Maksupalautuksista peritään 5€ käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Jos yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä. \n",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "date": "2027-09-26T00:00:00.000+03:00",
+        "class": "ALO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-08-15",
+    "entry_end": "2027-09-05",
+    "entries": null
+  }
+]

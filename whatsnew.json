@@ -5,6 +5,14 @@
   },
   "releases": [
     {
+      "version": "1.14.1",
+      "date": "2026-09-30",
+      "title": "Seuraavan vuoden kokeet mukaan",
+      "items": [
+        "Verkkosivulla näkyvät nyt sekä kuluvan että seuraavan vuoden kokeet: kun SNJ julkaisee ensi vuoden kalenterin syksyllä, loppuvuoden kokeet eivät enää katoa listalta"
+      ]
+    },
+    {
       "version": "1.14.0",
       "date": "2026-08-30",
       "title": "Lähtölista kokeen tiedoissa",

@@ -72,7 +72,14 @@ scp -r startlists dino@ronkko.fi:public_html/muikea.fi/koetutka/
 
 1. Run `python3 snj_kokeet.py --year YYYY` for each needed year
 2. Deploy `index.html`, `styles.css`, `app.js` and `koetutka_YYYY.json` files to server
-3. The frontend automatically tries to load next year's data first, then current year
+3. The web frontend loads **both** the current and next year's file and merges
+   them (`dataYears` + `mergeYearData` in `shared/src/years.ts`); a missing file
+   is skipped. The deploy workflow fetches next year's data automatically from
+   October onwards, so no manual step is needed at the year change.
+4. **Mobile TODO (next mobile release):** `mobile/src/lib/data.ts` still loads
+   only the current year (falling back to the previous one), so next year's
+   trials appear in the app only in January. Switch it to the same
+   `dataYears` + `mergeYearData` approach as the web.
 
 ## Deployment
 

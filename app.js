@@ -294,32 +294,31 @@
         // Lataa data
         async function loadData() {
             try {
-                // Yritä ladata JSON-tiedosto
-                const currentYear = new Date().getFullYear();
-                const nextYear = currentYear + 1;
-
-                // Kokeile ensin seuraavaa vuotta, sitten nykyistä
-                let response;
-                let dataYear;
-
-                try {
-                    response = await fetch(`koetutka_${nextYear}.json`);
-                    if (response.ok) {
-                        dataYear = nextYear;
+                // Ladataan kuluva ja seuraava vuosi ja yhdistetään ne, jotta
+                // syksyllä julkaistu seuraavan vuoden kalenteri ei piilota
+                // kuluvan vuoden loppuvuoden kokeita. Puuttuva tiedosto (esim.
+                // seuraava vuosi ennen SNJ:n julkaisua) jätetään pois.
+                const { dataYears, mergeYearData } = window.koetutkaShared;
+                const years = dataYears();
+                const results = await Promise.all(years.map(async year => {
+                    try {
+                        const response = await fetch(`koetutka_${year}.json`);
+                        return response.ok ? { year, events: await response.json() } : null;
+                    } catch (e) {
+                        return null;
                     }
-                } catch (e) {}
+                }));
+                const loaded = results.filter(Boolean);
 
-                if (!response || !response.ok) {
-                    response = await fetch(`koetutka_${currentYear}.json`);
-                    dataYear = currentYear;
-                }
-
-                if (!response.ok) {
+                if (loaded.length === 0) {
                     throw new Error('Dataa ei voitu ladata');
                 }
 
-                kokeet = await response.json();
-                document.getElementById('updateDate').textContent = `Vuosi ${dataYear}`;
+                kokeet = mergeYearData(loaded.map(r => r.events));
+                const loadedYears = loaded.map(r => r.year);
+                document.getElementById('updateDate').textContent = loadedYears.length > 1
+                    ? `Vuodet ${loadedYears[0]}–${loadedYears[loadedYears.length - 1]}`
+                    : `Vuosi ${loadedYears[0]}`;
 
                 calculateDistances();
                 populateFilters();
