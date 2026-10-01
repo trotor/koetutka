@@ -1,4 +1,4 @@
-import type { Event } from '@koetutka/shared';
+import { dataYears, mergeYearData, type Event } from '@koetutka/shared';
 
 export const BASE_URL = 'https://trotor.github.io/koetutka';
 
@@ -30,4 +30,18 @@ export async function fetchEventsWithFallback(year: number): Promise<Event[]> {
     }
     throw e;
   }
+}
+
+/**
+ * Hakee kuluvan ja seuraavan vuoden kokeet ja yhdistää ne. Seuraavan vuoden
+ * tiedosto ilmestyy syksyllä SNJ:n julkaistua kalenterin; siihen asti (tai jos
+ * sen haku muuten epäonnistuu) näytetään pelkkä kuluva vuosi.
+ */
+export async function fetchUpcomingEvents(today: Date = new Date()): Promise<Event[]> {
+  const [current, next] = dataYears(today);
+  const [currentEvents, nextEvents] = await Promise.all([
+    fetchEventsWithFallback(current),
+    fetchEvents(next).catch((): Event[] => []),
+  ]);
+  return mergeYearData([currentEvents, nextEvents]);
 }

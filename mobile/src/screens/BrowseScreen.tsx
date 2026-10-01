@@ -26,7 +26,7 @@ export default function BrowseScreen() {
   const scrollY = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
-    loadEvents(new Date().getFullYear());
+    loadEvents();
   }, [loadEvents]);
 
   const visible = useMemo(() => {
@@ -54,7 +54,7 @@ export default function BrowseScreen() {
     return (
       <View style={styles.centered}>
         <Text style={styles.error}>Virhe: {error}</Text>
-        <Text style={styles.retryHint} onPress={() => loadEvents(new Date().getFullYear())}>
+        <Text style={styles.retryHint} onPress={() => loadEvents()}>
           Yritä uudelleen
         </Text>
       </View>
@@ -90,7 +90,7 @@ export default function BrowseScreen() {
             </View>
           }
           ListHeaderComponent={<Text style={styles.count}>{visible.length} koetta</Text>}
-          onRefresh={() => loadEvents(new Date().getFullYear())}
+          onRefresh={() => loadEvents()}
           refreshing={isLoading}
           onScroll={Animated.event(
             [{ nativeEvent: { contentOffset: { y: scrollY } } }],

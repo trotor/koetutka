@@ -90,6 +90,8 @@ MIT
 - **Kaksi vuotta kerralla**: verkkosivu lataa kuluvan ja seuraavan vuoden
   kokeet ja yhdistää ne. Aiemmin seuraavan vuoden tiedoston ilmestyminen
   syksyllä piilotti kuluvan vuoden loppuvuoden kokeet
+- **Mobiili**: sovellus lataa samoin kuluvan ja seuraavan vuoden kokeet
+  (aiemmin seuraavan vuoden kokeet näkyivät vasta tammikuussa)
 - `snj_kokeet.py` hakee oletuksena kuluvan vuoden (ei enää kovakoodattua vuotta)
 
 ### v1.14.0 (2026-08-30)

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import type { Event, UserLocation, FilterOptions, SortBy } from '@koetutka/shared';
-import { fetchEventsWithFallback } from './data';
+import { fetchUpcomingEvents } from './data';
 import { clearStartlistCache } from './startlist';
 import { loadPrefs, savePrefs } from './preferences';
 import { calendarAddedKey, type CalendarType } from './calendar-added';
@@ -49,7 +49,7 @@ interface State {
 
 interface Actions {
   initFromStorage: () => Promise<void>;
-  loadEvents: (year: number) => Promise<void>;
+  loadEvents: () => Promise<void>;
   setUserLocation: (location: UserLocation | null) => void;
   setFilters: (filters: Partial<FilterOptions>) => void;
   resetFilters: () => void;
@@ -128,11 +128,11 @@ export const useStore = create<State & Actions>((set, get) => ({
     });
   },
 
-  loadEvents: async (year: number) => {
+  loadEvents: async () => {
     set({ isLoading: true, error: null });
     clearStartlistCache();
     try {
-      const events = await fetchEventsWithFallback(year);
+      const events = await fetchUpcomingEvents();
       set({ events, isLoading: false });
       void get().syncNotifications();
     } catch (e) {
