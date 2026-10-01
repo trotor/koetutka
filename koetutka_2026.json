@@ -11240,27 +11240,27 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
+        "date": "2026-10-03T00:00:00.000+03:00",
         "state": "invited",
         "class": "ALO",
         "entries": 31,
-        "date": "2026-10-03T00:00:00.000+03:00",
+        "judge": [],
         "members": 12
       },
       {
-        "class": "AVO",
         "state": "invited",
         "date": "2026-10-03T00:00:00.000+03:00",
+        "class": "AVO",
         "members": 6,
         "judge": [],
         "entries": 13
       },
       {
-        "judge": [],
-        "date": "2026-10-03T00:00:00.000+03:00",
-        "state": "invited",
         "members": 6,
-        "entries": 11,
+        "state": "invited",
+        "date": "2026-10-03T00:00:00.000+03:00",
+        "judge": [],
+        "entries": 10,
         "class": "VOI"
       }
     ],
@@ -11268,7 +11268,7 @@
     "state": "invited",
     "entry_start": "2026-08-31",
     "entry_end": "2026-09-20",
-    "entries": 55
+    "entries": 54
   },
   {
     "id": "a43BCKKMoH",
@@ -11687,7 +11687,7 @@
     "state": "invited",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-27",
-    "entries": 14
+    "entries": 15
   },
   {
     "id": "bnVqltVSUq",
@@ -11861,9 +11861,9 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 14,
+        "members": 6,
+        "entries": 15,
         "class": "ALO",
-        "members": 5,
         "judge": [],
         "date": "2026-10-16T21:00:00.000Z",
         "groups": [
@@ -11871,31 +11871,31 @@
         ]
       },
       {
-        "judge": [],
-        "members": 3,
-        "class": "AVO",
-        "date": "2026-10-16T21:00:00.000Z",
         "groups": [
           "kp"
         ],
-        "entries": 7
+        "members": 4,
+        "entries": 8,
+        "date": "2026-10-16T21:00:00.000Z",
+        "class": "AVO",
+        "judge": []
       },
       {
-        "class": "VOI",
-        "members": 5,
         "groups": [
           "kp"
         ],
+        "class": "VOI",
+        "judge": [],
+        "members": 6,
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 9,
-        "judge": []
+        "entries": 12
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 30
+    "entries": 35
   },
   {
     "id": "D3IFyEbK3K",
@@ -11966,8 +11966,8 @@
       "email": "nome.maija@gmail.com"
     },
     "judges": [
-      "Saarinen Maarit",
-      "Luomanen Timo"
+      "Luomanen Timo",
+      "Saarinen Maarit"
     ],
     "description": "Koemaksun palautus täysimääräisenä: koiran tai ohjaajan sairaus (lääkärintodistus) tai nartun juoksu.Ohjaajan/omistajan peruessa ilmoittautumisen pidätetään maksupalautuksesta 4€ käsittelykulu.",
     "cost": {
@@ -12049,7 +12049,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-21",
     "entry_end": "2026-10-18",
-    "entries": 33
+    "entries": 36
   },
   {
     "id": "sK51ViatiO",
@@ -12134,39 +12134,39 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
-        "members": 4,
-        "date": "2026-10-30T22:00:00.000Z",
         "class": "AVO",
-        "entries": 7
+        "date": "2026-10-30T22:00:00.000Z",
+        "members": 4,
+        "entries": 7,
+        "judge": []
       },
       {
-        "members": 9,
-        "entries": 15,
+        "entries": 16,
         "class": "VOI",
         "date": "2026-10-30T22:00:00.000Z",
+        "members": 10,
         "places": 0,
         "judge": [
           {
-            "id": 697689,
             "name": "Toskala Mika",
-            "official": true
+            "official": true,
+            "id": 697689
           }
         ]
       },
       {
-        "class": "ALO",
         "members": 8,
-        "entries": 24,
+        "date": "2026-10-30T22:00:00.000Z",
+        "class": "ALO",
         "judge": [],
-        "date": "2026-10-30T22:00:00.000Z"
+        "entries": 24
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 46
+    "entries": 47
   },
   {
     "id": "BkA7mzBtzM",

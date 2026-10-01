@@ -381,6 +381,21 @@
     27.1925862
   ],
   "Kouvola, Enäjärvi": null,
+  "Mustasaari, Panike": null,
+  "Raahe": [
+    64.6845313,
+    24.4816349
+  ],
+  "Padasjoki": [
+    61.3512901,
+    25.2785646
+  ],
+  "Sund,Hulta": null,
+  "Sund, Hulta": null,
+  "Urjala": [
+    61.0811504,
+    23.5489697
+  ],
   "Rautalampi": [
     62.6206984,
     26.8384638
@@ -390,10 +405,6 @@
     25.7333558
   ],
   "Kaakon toiminta-alue": null,
-  "Padasjoki": [
-    61.3512901,
-    25.2785646
-  ],
   "Päijät-Häme": [
     61.2296902,
     25.8105246
@@ -431,16 +442,5 @@
     23.8177693
   ],
   "Kaakon toiminta-alueella": null,
-  "Jyväskylän Ymp.": null,
-  "Mustasaari, Panike": null,
-  "Raahe": [
-    64.6845313,
-    24.4816349
-  ],
-  "Sund,Hulta": null,
-  "Sund, Hulta": null,
-  "Urjala": [
-    61.0811504,
-    23.5489697
-  ]
+  "Jyväskylän Ymp.": null
 }
