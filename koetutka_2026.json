@@ -11732,7 +11732,7 @@
     },
     "classes": [],
     "places": 16,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-09-04",
     "entry_end": "2026-09-25",
     "entries": 20
@@ -11861,41 +11861,41 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 6,
-        "entries": 15,
-        "class": "ALO",
+        "members": 7,
         "judge": [],
         "date": "2026-10-16T21:00:00.000Z",
         "groups": [
           "kp"
-        ]
+        ],
+        "class": "ALO",
+        "entries": 16
       },
       {
+        "judge": [],
         "groups": [
           "kp"
         ],
         "members": 4,
-        "entries": 8,
-        "date": "2026-10-16T21:00:00.000Z",
         "class": "AVO",
-        "judge": []
+        "date": "2026-10-16T21:00:00.000Z",
+        "entries": 9
       },
       {
+        "entries": 15,
+        "judge": [],
         "groups": [
           "kp"
         ],
-        "class": "VOI",
-        "judge": [],
-        "members": 6,
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 12
+        "members": 8,
+        "class": "VOI"
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 35
+    "entries": 40
   },
   {
     "id": "D3IFyEbK3K",
@@ -11980,33 +11980,33 @@
     },
     "classes": [
       {
-        "members": 0,
         "class": "AVO",
-        "date": "2026-10-23T21:00:00.000Z",
         "places": 10,
         "judge": [],
         "entries": 4,
         "groups": [
           "kp"
-        ]
+        ],
+        "date": "2026-10-23T21:00:00.000Z",
+        "members": 0
       },
       {
+        "entries": 19,
+        "class": "VOI",
+        "judge": [],
+        "places": 10,
+        "members": 6,
+        "date": "2026-10-23T21:00:00.000Z",
         "groups": [
           "kp"
-        ],
-        "members": 6,
-        "entries": 18,
-        "places": 10,
-        "class": "VOI",
-        "date": "2026-10-23T21:00:00.000Z",
-        "judge": []
+        ]
       }
     ],
     "places": 20,
     "state": "confirmed",
     "entry_start": "2026-09-12",
     "entry_end": "2026-10-03",
-    "entries": 22
+    "entries": 23
   },
   {
     "id": "qh8E-wtej1",
@@ -12134,39 +12134,39 @@
     "cost_member": 40,
     "classes": [
       {
-        "class": "AVO",
-        "date": "2026-10-30T22:00:00.000Z",
-        "members": 4,
         "entries": 7,
+        "members": 4,
+        "date": "2026-10-30T22:00:00.000Z",
+        "class": "AVO",
         "judge": []
       },
       {
-        "entries": 16,
         "class": "VOI",
-        "date": "2026-10-30T22:00:00.000Z",
-        "members": 10,
-        "places": 0,
         "judge": [
           {
             "name": "Toskala Mika",
             "official": true,
             "id": 697689
           }
-        ]
+        ],
+        "entries": 18,
+        "date": "2026-10-30T22:00:00.000Z",
+        "members": 12,
+        "places": 0
       },
       {
+        "entries": 24,
+        "judge": [],
         "members": 8,
         "date": "2026-10-30T22:00:00.000Z",
-        "class": "ALO",
-        "judge": [],
-        "entries": 24
+        "class": "ALO"
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 47
+    "entries": 49
   },
   {
     "id": "BkA7mzBtzM",
@@ -12202,25 +12202,25 @@
     "cost_member": 40,
     "classes": [
       {
+        "class": "AVO",
         "date": "2026-10-31T22:00:00.000Z",
         "judge": [],
-        "class": "AVO",
         "entries": 6,
         "members": 3
       },
       {
         "date": "2026-10-31T22:00:00.000Z",
-        "members": 9,
-        "entries": 14,
         "class": "VOI",
-        "judge": []
+        "judge": [],
+        "entries": 15,
+        "members": 10
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
-    "entries": 20
+    "entries": 21
   },
   {
     "id": "3kHAyI19dm",
