@@ -11735,7 +11735,7 @@
     "state": "invited",
     "entry_start": "2026-09-04",
     "entry_end": "2026-09-25",
-    "entries": 20
+    "entries": 19
   },
   {
     "id": "GdMk7mlzSo",
@@ -11861,41 +11861,41 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 7,
-        "judge": [],
-        "date": "2026-10-16T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ],
         "class": "ALO",
-        "entries": 16
-      },
-      {
         "judge": [],
         "groups": [
           "kp"
         ],
-        "members": 4,
+        "members": 7,
+        "entries": 16,
+        "date": "2026-10-16T21:00:00.000Z"
+      },
+      {
         "class": "AVO",
-        "date": "2026-10-16T21:00:00.000Z",
-        "entries": 9
-      },
-      {
-        "entries": 15,
+        "entries": 9,
+        "members": 4,
         "judge": [],
         "groups": [
           "kp"
         ],
+        "date": "2026-10-16T21:00:00.000Z"
+      },
+      {
+        "entries": 19,
         "date": "2026-10-16T21:00:00.000Z",
-        "members": 8,
-        "class": "VOI"
+        "members": 9,
+        "class": "VOI",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 40
+    "entries": 44
   },
   {
     "id": "D3IFyEbK3K",
@@ -12049,7 +12049,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-21",
     "entry_end": "2026-10-18",
-    "entries": 36
+    "entries": 38
   },
   {
     "id": "sK51ViatiO",
@@ -12134,39 +12134,39 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 7,
-        "members": 4,
         "date": "2026-10-30T22:00:00.000Z",
+        "judge": [],
         "class": "AVO",
-        "judge": []
+        "members": 6,
+        "entries": 9
       },
       {
-        "class": "VOI",
         "judge": [
           {
             "name": "Toskala Mika",
-            "official": true,
-            "id": 697689
+            "id": 697689,
+            "official": true
           }
         ],
         "entries": 18,
         "date": "2026-10-30T22:00:00.000Z",
+        "places": 0,
         "members": 12,
-        "places": 0
+        "class": "VOI"
       },
       {
         "entries": 24,
+        "class": "ALO",
         "judge": [],
-        "members": 8,
         "date": "2026-10-30T22:00:00.000Z",
-        "class": "ALO"
+        "members": 8
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 49
+    "entries": 51
   },
   {
     "id": "BkA7mzBtzM",

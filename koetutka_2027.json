@@ -835,7 +835,8 @@
       "email": ""
     },
     "judges": [
-      "Tenhunen Matti"
+      "Tenhunen Matti",
+      "Torila Mika"
     ],
     "description": "",
     "cost": "",
@@ -1350,6 +1351,60 @@
     "entries": null
   },
   {
+    "id": "anbe1Gc49p",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "05.06.2027",
+    "date_sort": "2027-06-05T00:00:00+03:00",
+    "end_date_sort": "2027-06-05T00:00:00+03:00",
+    "entry_date": "24.04.-15.05.",
+    "location": "Toivakka",
+    "coordinates": [
+      62.0962173,
+      26.0804935
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "judge": [
+          {
+            "official": true,
+            "id": 4053791,
+            "name": "Puttonen Pasi-Petteri"
+          }
+        ],
+        "class": "VOI",
+        "date": "2027-06-05T00:00:00.000+03:00"
+      }
+    ],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-04-24",
+    "entry_end": "2027-05-15",
+    "entries": null
+  },
+  {
     "id": "i137siZSp_",
     "type": "NOU",
     "levels": "N/A",
@@ -1433,6 +1488,60 @@
     "state": "tentative",
     "entry_start": "2027-05-10",
     "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
+    "id": "EEFuyxIokW",
+    "type": "NOME-B",
+    "levels": "VOI (Su)",
+    "date": "06.06.2027",
+    "date_sort": "2027-06-06T00:00:00+03:00",
+    "end_date_sort": "2027-06-06T00:00:00+03:00",
+    "entry_date": "25.04.-16.05.",
+    "location": "Toivakka",
+    "coordinates": [
+      62.0962173,
+      26.0804935
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Puttonen Pasi-Petteri"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "judge": [
+          {
+            "name": "Puttonen Pasi-Petteri",
+            "official": true,
+            "id": 4053791
+          }
+        ],
+        "class": "VOI",
+        "date": "2027-06-06T00:00:00.000+03:00"
+      }
+    ],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-04-25",
+    "entry_end": "2027-05-16",
     "entries": null
   },
   {
