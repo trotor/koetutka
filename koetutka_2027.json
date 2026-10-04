@@ -177,6 +177,69 @@
     "entries": null
   },
   {
+    "id": "8TQMswCRXW",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "17.04.2027",
+    "date_sort": "2027-04-17T00:00:00+03:00",
+    "end_date_sort": "2027-04-17T00:00:00+03:00",
+    "entry_date": "06.03.-27.03.",
+    "location": "Hausjärvi",
+    "coordinates": [
+      60.7788065,
+      24.9735698
+    ],
+    "name": "",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Salo Mervi"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-04-17T00:00:00.000+03:00",
+        "judge": [],
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "date": "2027-04-17T00:00:00.000+03:00",
+        "groups": [
+          "kp"
+        ],
+        "judge": [],
+        "class": "AVO"
+      },
+      {
+        "judge": [],
+        "class": "VOI",
+        "date": "2027-04-17T00:00:00.000+03:00",
+        "groups": [
+          "kp"
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-03-06",
+    "entry_end": "2027-03-27",
+    "entries": null
+  },
+  {
     "id": "_QQJ_INBqm",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
@@ -1380,10 +1443,16 @@
     ],
     "description": "",
     "cost": {
+      "breed": {
+        "122": 45
+      },
       "normal": 50
     },
     "cost_member": {
-      "normal": 45
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
     },
     "classes": [
       {
@@ -1520,10 +1589,16 @@
     ],
     "description": "",
     "cost": {
+      "breed": {
+        "122": 45
+      },
       "normal": 50
     },
     "cost_member": {
-      "normal": 45
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
     },
     "classes": [
       {
@@ -2518,28 +2593,28 @@
     "date_sort": "2027-07-11T00:00:00+03:00",
     "end_date_sort": "2027-07-11T00:00:00+03:00",
     "entry_date": "30.05.-20.06.",
-    "location": "Siilinjärvi",
+    "location": "Kuopio",
     "coordinates": [
-      63.0744197,
-      27.6589448
+      62.8924641,
+      27.6783597
     ],
-    "name": "WT Siilinjärvi",
+    "name": "",
     "organizer": "SAVON NUUSKUT RY",
     "official": {
       "name": "Taru Hiltunen",
-      "phone": "",
+      "phone": "0503380778",
       "email": "tabe.hiltunen@gmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Silja Hiltunen",
       "phone": "",
-      "email": ""
+      "email": "hiltunensilja@gmail.com"
     },
     "judges": [
       "Luomanen Timo",
       "Siitari Heli"
     ],
-    "description": "WT 11.7.2027 Kuopio\nKoevastaava Taru Hiltunen\nYt Timo Luomanen, toinen tuomari Heli Siitari\nALO, AVO, VOI, koiria max. 40, ei rajata luokittain.\nEtusijalla jäsenet ja kutsutut.",
+    "description": "Etusijalla jäsenet ja kutsutut.",
     "cost": "",
     "cost_member": "",
     "classes": [
@@ -2816,6 +2891,112 @@
     "state": "tentative",
     "entry_start": "2027-06-05",
     "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
+    "id": "Fs0mJIBr6z",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "17.07.2027",
+    "date_sort": "2027-07-17T00:00:00+03:00",
+    "end_date_sort": "2027-07-17T00:00:00+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": {
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
+    },
+    "cost_member": {
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-17T00:00:00.000+03:00"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
+    "id": "HNmTyk9ZoK",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "18.07.2027",
+    "date_sort": "2027-07-18T00:00:00+03:00",
+    "end_date_sort": "2027-07-18T00:00:00+03:00",
+    "entry_date": "06.06.-27.06.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": {
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
+    },
+    "cost_member": {
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
+    },
+    "classes": [
+      {
+        "date": "2027-07-18T00:00:00.000+03:00",
+        "class": "AVO"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-06-06",
+    "entry_end": "2027-06-27",
     "entries": null
   },
   {
