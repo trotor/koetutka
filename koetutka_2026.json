@@ -11687,7 +11687,7 @@
     "state": "invited",
     "entry_start": "2026-09-07",
     "entry_end": "2026-09-27",
-    "entries": 15
+    "entries": 14
   },
   {
     "id": "bnVqltVSUq",
@@ -11775,50 +11775,50 @@
     },
     "classes": [
       {
-        "date": "2026-10-09T21:00:00.000Z",
         "places": 0,
-        "class": "ALO",
-        "groups": [
-          "kp"
-        ],
         "judge": [
           {
-            "official": false,
             "id": -1,
-            "name": "Anu Pesonen"
+            "name": "Anu Pesonen",
+            "official": false
           },
           {
+            "official": false,
             "name": "Riikka Tahvanainen",
-            "id": -2,
-            "official": false
+            "id": -2
           }
         ],
-        "entries": 18,
         "members": 10,
-        "state": "invited"
-      },
-      {
+        "entries": 16,
         "state": "invited",
-        "members": 5,
         "date": "2026-10-09T21:00:00.000Z",
-        "entries": 5,
-        "class": "AVO",
         "groups": [
           "kp"
         ],
+        "class": "ALO"
+      },
+      {
+        "members": 6,
+        "class": "AVO",
         "judge": [
           {
             "name": "Anu Pesonen",
-            "official": false,
-            "id": -1
+            "id": -1,
+            "official": false
           },
           {
-            "name": "Riikka Tahvanainen",
+            "official": false,
             "id": -2,
-            "official": false
+            "name": "Riikka Tahvanainen"
           }
         ],
-        "places": 0
+        "state": "invited",
+        "places": 0,
+        "date": "2026-10-09T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "entries": 7
       }
     ],
     "places": 20,
@@ -11863,41 +11863,41 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
         "class": "ALO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 18,
-        "groups": [
-          "kp"
-        ],
-        "members": 7
-      },
-      {
-        "class": "AVO",
-        "members": 4,
-        "date": "2026-10-16T21:00:00.000Z",
         "groups": [
           "kp"
         ],
         "judge": [],
-        "entries": 11
+        "members": 7,
+        "entries": 20
       },
       {
         "groups": [
           "kp"
         ],
+        "class": "AVO",
+        "entries": 11,
+        "date": "2026-10-16T21:00:00.000Z",
+        "members": 4,
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "groups": [
+          "kp"
+        ],
+        "entries": 23,
         "members": 11,
         "judge": [],
-        "class": "VOI",
-        "date": "2026-10-16T21:00:00.000Z",
-        "entries": 23
+        "date": "2026-10-16T21:00:00.000Z"
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 52
+    "entries": 54
   },
   {
     "id": "D3IFyEbK3K",
@@ -11940,7 +11940,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-05",
     "entry_end": "2026-10-14",
-    "entries": null
+    "entries": 3
   },
   {
     "id": "6p2tAdYq9O",
@@ -12051,7 +12051,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-21",
     "entry_end": "2026-10-18",
-    "entries": 40
+    "entries": 41
   },
   {
     "id": "sK51ViatiO",
@@ -12136,39 +12136,39 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 10,
-        "members": 7,
+        "judge": [],
+        "members": 9,
+        "entries": 14,
         "date": "2026-10-30T22:00:00.000Z",
-        "class": "AVO",
-        "judge": []
+        "class": "AVO"
       },
       {
         "places": 0,
-        "judge": [
-          {
-            "id": 697689,
-            "official": true,
-            "name": "Toskala Mika"
-          }
-        ],
-        "entries": 20,
         "date": "2026-10-30T22:00:00.000Z",
         "class": "VOI",
-        "members": 13
+        "entries": 23,
+        "judge": [
+          {
+            "name": "Toskala Mika",
+            "id": 697689,
+            "official": true
+          }
+        ],
+        "members": 14
       },
       {
+        "class": "ALO",
+        "entries": 25,
         "members": 8,
-        "entries": 24,
-        "date": "2026-10-30T22:00:00.000Z",
         "judge": [],
-        "class": "ALO"
+        "date": "2026-10-30T22:00:00.000Z"
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 54
+    "entries": 62
   },
   {
     "id": "BkA7mzBtzM",
@@ -12205,24 +12205,24 @@
     "classes": [
       {
         "members": 4,
-        "entries": 7,
-        "judge": [],
         "date": "2026-10-31T22:00:00.000Z",
-        "class": "AVO"
+        "judge": [],
+        "class": "AVO",
+        "entries": 8
       },
       {
-        "date": "2026-10-31T22:00:00.000Z",
-        "members": 11,
         "judge": [],
-        "entries": 17,
-        "class": "VOI"
+        "class": "VOI",
+        "date": "2026-10-31T22:00:00.000Z",
+        "entries": 18,
+        "members": 11
       }
     ],
     "places": 40,
     "state": "confirmed",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
-    "entries": 24
+    "entries": 26
   },
   {
     "id": "3kHAyI19dm",
