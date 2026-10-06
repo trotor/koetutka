@@ -334,46 +334,6 @@
     "entries": 64
   },
   {
-    "id": "YZlaUzrXnf",
-    "type": "EPÄVIRALLINEN",
-    "levels": "N/A",
-    "date": "21.03.2026",
-    "date_sort": "2026-03-21T00:00:00+02:00",
-    "end_date_sort": "2026-03-21T00:00:00+02:00",
-    "entry_date": "08.02.-01.03.",
-    "location": "Loppi",
-    "coordinates": [
-      60.7173615,
-      24.4414178
-    ],
-    "name": "Uudenmaan Ohjus",
-    "organizer": "UUDENMAAN NOUTAJAKOIRAYHDISTYS",
-    "official": {
-      "name": "Pekka Lahti",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Emmi Merta",
-      "phone": "",
-      "email": "emmi.merta@umn.fi"
-    },
-    "judges": [
-      "Marko Bergholm",
-      "Noora Lavonen",
-      "Pasi Sauvolainen"
-    ],
-    "description": "Osallistumisoikeus on rekisteröidyillä noutajilla, joita ei ole palkittu noutajien metsästyskokeissa, kuitenkin niin, että etuoikeus on nuorilla koirilla (NOU1-tulos on sallittu). Osallistumisoikeus on koirilla, jotka ovat maksimissaan 2 vuotta (alaikäraja 9 kk). Ilmoittautumalla kokeeseen hyväksyn, että kokeen järjestämisen vastuuhenkilöt voivat käsitellä ilmoittamiani henkilötietoja ja julkaista niitä tarpeen mukaisesti ja soveltuvin osin kokeen osallistuja- ja tulosluettelossa koepaikalla ja kokeeseen liittyvissä julkaisuissa internetissä tai muissa yhdistyksen medioissa. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
-    "cost": 40,
-    "cost_member": 30,
-    "classes": [],
-    "places": 49,
-    "state": "invited",
-    "entry_start": "2026-02-08",
-    "entry_end": "2026-03-01",
-    "entries": 46
-  },
-  {
     "id": "XgGcS-KOPY",
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (La), AVO (La), VOI (La)",
@@ -495,6 +455,46 @@
     "entry_start": "2026-02-07",
     "entry_end": "2026-02-28",
     "entries": 85
+  },
+  {
+    "id": "YZlaUzrXnf",
+    "type": "EPÄVIRALLINEN",
+    "levels": "N/A",
+    "date": "21.03.2026",
+    "date_sort": "2026-03-21T00:00:00+02:00",
+    "end_date_sort": "2026-03-21T00:00:00+02:00",
+    "entry_date": "08.02.-01.03.",
+    "location": "Loppi",
+    "coordinates": [
+      60.7173615,
+      24.4414178
+    ],
+    "name": "Uudenmaan Ohjus",
+    "organizer": "UUDENMAAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Pekka Lahti",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Emmi Merta",
+      "phone": "",
+      "email": "emmi.merta@umn.fi"
+    },
+    "judges": [
+      "Marko Bergholm",
+      "Noora Lavonen",
+      "Pasi Sauvolainen"
+    ],
+    "description": "Osallistumisoikeus on rekisteröidyillä noutajilla, joita ei ole palkittu noutajien metsästyskokeissa, kuitenkin niin, että etuoikeus on nuorilla koirilla (NOU1-tulos on sallittu). Osallistumisoikeus on koirilla, jotka ovat maksimissaan 2 vuotta (alaikäraja 9 kk). Ilmoittautumalla kokeeseen hyväksyn, että kokeen järjestämisen vastuuhenkilöt voivat käsitellä ilmoittamiani henkilötietoja ja julkaista niitä tarpeen mukaisesti ja soveltuvin osin kokeen osallistuja- ja tulosluettelossa koepaikalla ja kokeeseen liittyvissä julkaisuissa internetissä tai muissa yhdistyksen medioissa. Lisätietoja UMN:n tietosuojasta osoitteessa http://www.umn.fi/jasenasiat/tietosuojaseloste/",
+    "cost": 40,
+    "cost_member": 30,
+    "classes": [],
+    "places": 49,
+    "state": "invited",
+    "entry_start": "2026-02-08",
+    "entry_end": "2026-03-01",
+    "entries": 46
   },
   {
     "id": "tk-r-xik3l",
@@ -3359,6 +3359,106 @@
     "entries": 19
   },
   {
+    "id": "xCKkbWvzGs",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "06.-07.06.2026",
+    "date_sort": "2026-06-06T00:00:00+03:00",
+    "end_date_sort": "2026-06-07T00:00:00+03:00",
+    "entry_date": "25.04.-16.05.",
+    "location": "Suonenjoki",
+    "coordinates": [
+      62.6241926,
+      27.1245609
+    ],
+    "name": "Noutajien taipumuskoe",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Elina Halonen",
+      "phone": "0443631749",
+      "email": "elina.halonen1@gmail.com"
+    },
+    "secretary": {
+      "name": "Elina Halonen",
+      "phone": "0443631749",
+      "email": "elina.halonen1@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 32,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-05-16",
+    "entries": 31
+  },
+  {
+    "id": "XNnIwzbuwm",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "06.06.2026",
+    "date_sort": "2026-06-06T00:00:00+03:00",
+    "end_date_sort": "2026-06-06T00:00:00+03:00",
+    "entry_date": "25.04.-31.05.",
+    "location": "Tuusniemi",
+    "coordinates": [
+      62.8129715,
+      28.473989
+    ],
+    "name": "",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Kirsi-Marja Ovaskainen",
+      "phone": "040 518 0207",
+      "email": "ovaskainen.kirsi@gmail.com"
+    },
+    "secretary": {
+      "name": "Kirsi-Marja Ovaskainen",
+      "phone": "040 518 0207",
+      "email": "ovaskainen.kirsi@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "places": 15,
+        "members": 7,
+        "date": "2026-06-05T21:00:00.000Z",
+        "state": "invited",
+        "entries": 14,
+        "class": "AVO",
+        "judge": [
+          {
+            "name": "Hiltunen Taru",
+            "id": 736508,
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-04-25",
+    "entry_end": "2026-05-31",
+    "entries": 14
+  },
+  {
     "id": "f05XxSTOjh",
     "type": "NOME-B",
     "levels": "ALO (La, Su)",
@@ -3468,48 +3568,6 @@
     "entry_start": "2026-04-27",
     "entry_end": "2026-05-16",
     "entries": 9
-  },
-  {
-    "id": "xCKkbWvzGs",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "06.-07.06.2026",
-    "date_sort": "2026-06-06T00:00:00+03:00",
-    "end_date_sort": "2026-06-07T00:00:00+03:00",
-    "entry_date": "25.04.-16.05.",
-    "location": "Suonenjoki",
-    "coordinates": [
-      62.6241926,
-      27.1245609
-    ],
-    "name": "Noutajien taipumuskoe",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Elina Halonen",
-      "phone": "0443631749",
-      "email": "elina.halonen1@gmail.com"
-    },
-    "secretary": {
-      "name": "Elina Halonen",
-      "phone": "0443631749",
-      "email": "elina.halonen1@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Niko"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": {
-      "normal": 45
-    },
-    "classes": [],
-    "places": 32,
-    "state": "invited",
-    "entry_start": "2026-04-25",
-    "entry_end": "2026-05-16",
-    "entries": 31
   },
   {
     "id": "tmyJdZju1_",
@@ -3747,64 +3805,6 @@
     "entry_start": "2026-04-25",
     "entry_end": "2026-06-01",
     "entries": 8
-  },
-  {
-    "id": "XNnIwzbuwm",
-    "type": "NOME-B",
-    "levels": "AVO (La)",
-    "date": "06.06.2026",
-    "date_sort": "2026-06-06T00:00:00+03:00",
-    "end_date_sort": "2026-06-06T00:00:00+03:00",
-    "entry_date": "25.04.-31.05.",
-    "location": "Tuusniemi",
-    "coordinates": [
-      62.8129715,
-      28.473989
-    ],
-    "name": "",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Kirsi-Marja Ovaskainen",
-      "phone": "040 518 0207",
-      "email": "ovaskainen.kirsi@gmail.com"
-    },
-    "secretary": {
-      "name": "Kirsi-Marja Ovaskainen",
-      "phone": "040 518 0207",
-      "email": "ovaskainen.kirsi@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Taru"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": {
-      "normal": 45
-    },
-    "classes": [
-      {
-        "places": 15,
-        "members": 7,
-        "date": "2026-06-05T21:00:00.000Z",
-        "state": "invited",
-        "entries": 14,
-        "class": "AVO",
-        "judge": [
-          {
-            "name": "Hiltunen Taru",
-            "id": 736508,
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": 15,
-    "state": "invited",
-    "entry_start": "2026-04-25",
-    "entry_end": "2026-05-31",
-    "entries": 14
   },
   {
     "id": "z-cc5mFj77",
@@ -4830,6 +4830,50 @@
     "entry_start": "2026-05-09",
     "entry_end": "2026-05-30",
     "entries": 29
+  },
+  {
+    "id": "am-ikJ2jjA",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "14.06.2026",
+    "date_sort": "2026-06-14T00:00:00+03:00",
+    "end_date_sort": "2026-06-14T00:00:00+03:00",
+    "entry_date": "18.05.-31.05.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Johanna Hilden",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Kristiina Tynninen",
+      "phone": "",
+      "email": "kristiina.tynninen@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 3 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": 55,
+    "cost_member": 45,
+    "classes": [
+      {
+        "date": "2026-06-14T00:00:00.000+03:00",
+        "class": "ALO",
+        "judge": []
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2026-05-18",
+    "entry_end": "2026-05-31",
+    "entries": null
   },
   {
     "id": "fyity5e_c6",
@@ -6338,81 +6382,6 @@
     "entries": 30
   },
   {
-    "id": "zQfGEhNvl5",
-    "type": "NOME-B",
-    "levels": "AVO (La), VOI (La)",
-    "date": "18.07.2026",
-    "date_sort": "2026-07-18T00:00:00+03:00",
-    "end_date_sort": "2026-07-18T00:00:00+03:00",
-    "entry_date": "06.06.-27.06.",
-    "location": "Kajaani",
-    "coordinates": [
-      64.2247169,
-      27.7337773
-    ],
-    "name": "",
-    "organizer": "KAINUUN NOUTAJAT RY",
-    "official": {
-      "name": "Saana Ylönen",
-      "phone": "0503818495",
-      "email": "ylonensaana@gmail.com"
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": "koesihteeri@kainuunnoutajat.fi"
-    },
-    "judges": [
-      "Lappalainen Mika"
-    ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilevilla. Maksunpalautuksista pidätetään 4 euron käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta narttukoiran juoksusta. Mikäli yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
-    "cost": 50,
-    "cost_member": 45,
-    "classes": [
-      {
-        "date": "2026-07-17T21:00:00.000Z",
-        "entries": 8,
-        "state": "invited",
-        "groups": [
-          "ap"
-        ],
-        "members": 2,
-        "places": 8,
-        "judge": [
-          {
-            "official": true,
-            "name": "Lappalainen Mika",
-            "id": 882887
-          }
-        ],
-        "class": "AVO"
-      },
-      {
-        "judge": [
-          {
-            "name": "Lappalainen Mika",
-            "id": 882887,
-            "official": true
-          }
-        ],
-        "members": 3,
-        "state": "invited",
-        "groups": [
-          "ip"
-        ],
-        "date": "2026-07-17T21:00:00.000Z",
-        "entries": 12,
-        "places": 6,
-        "class": "VOI"
-      }
-    ],
-    "places": 14,
-    "state": "invited",
-    "entry_start": "2026-06-06",
-    "entry_end": "2026-06-27",
-    "entries": 20
-  },
-  {
     "id": "IsWo1GqRdb",
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
@@ -6588,6 +6557,81 @@
     "entry_start": "2026-06-06",
     "entry_end": "2026-06-27",
     "entries": 77
+  },
+  {
+    "id": "zQfGEhNvl5",
+    "type": "NOME-B",
+    "levels": "AVO (La), VOI (La)",
+    "date": "18.07.2026",
+    "date_sort": "2026-07-18T00:00:00+03:00",
+    "end_date_sort": "2026-07-18T00:00:00+03:00",
+    "entry_date": "06.06.-27.06.",
+    "location": "Kajaani",
+    "coordinates": [
+      64.2247169,
+      27.7337773
+    ],
+    "name": "",
+    "organizer": "KAINUUN NOUTAJAT RY",
+    "official": {
+      "name": "Saana Ylönen",
+      "phone": "0503818495",
+      "email": "ylonensaana@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": "koesihteeri@kainuunnoutajat.fi"
+    },
+    "judges": [
+      "Lappalainen Mika"
+    ],
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilevilla. Maksunpalautuksista pidätetään 4 euron käsittelykulu, jos ohjaaja peruu ilmoittautumisen. Maksu palautetaan vain, jos ohjaaja toimittaa lääkärintodistuksen ohjaajan tai koiran sairastumisesta tai ilmoittaa alkaneesta narttukoiran juoksusta. Mikäli yhdistys peruu ilmoittautumisen (ei mahdu kokeeseen), osallistumismaksu palautetaan täysimääräisenä.",
+    "cost": 50,
+    "cost_member": 45,
+    "classes": [
+      {
+        "date": "2026-07-17T21:00:00.000Z",
+        "entries": 8,
+        "state": "invited",
+        "groups": [
+          "ap"
+        ],
+        "members": 2,
+        "places": 8,
+        "judge": [
+          {
+            "official": true,
+            "name": "Lappalainen Mika",
+            "id": 882887
+          }
+        ],
+        "class": "AVO"
+      },
+      {
+        "judge": [
+          {
+            "name": "Lappalainen Mika",
+            "id": 882887,
+            "official": true
+          }
+        ],
+        "members": 3,
+        "state": "invited",
+        "groups": [
+          "ip"
+        ],
+        "date": "2026-07-17T21:00:00.000Z",
+        "entries": 12,
+        "places": 6,
+        "class": "VOI"
+      }
+    ],
+    "places": 14,
+    "state": "invited",
+    "entry_start": "2026-06-06",
+    "entry_end": "2026-06-27",
+    "entries": 20
   },
   {
     "id": "kqiUEs2D6o",
@@ -7067,6 +7111,64 @@
     "entries": 95
   },
   {
+    "id": "_t1MXHUzne",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "01.08.2026",
+    "date_sort": "2026-08-01T00:00:00+03:00",
+    "end_date_sort": "2026-08-01T00:00:00+03:00",
+    "entry_date": "20.06.-11.07.",
+    "location": "Perniö",
+    "coordinates": [
+      60.2053851,
+      23.1014504
+    ],
+    "name": "",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "Minna Latva",
+      "phone": "0400842998",
+      "email": "majakkasaaren@gmail.com"
+    },
+    "secretary": {
+      "name": "Outi Pensikkala",
+      "phone": "0415049698",
+      "email": "outiannika@hotmail.fi"
+    },
+    "judges": [
+      "Nyman Tobina"
+    ],
+    "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "entries": 20,
+        "class": "ALO",
+        "date": "2026-07-31T21:00:00.000Z",
+        "places": 15,
+        "judge": [
+          {
+            "official": true,
+            "id": 450758,
+            "name": "Nyman Tobina"
+          }
+        ],
+        "members": 15,
+        "state": "invited"
+      }
+    ],
+    "places": 15,
+    "state": "invited",
+    "entry_start": "2026-06-20",
+    "entry_end": "2026-07-11",
+    "entries": 20
+  },
+  {
     "id": "0Ght7pj4fa",
     "type": "NOU",
     "levels": "N/A",
@@ -7150,64 +7252,6 @@
     "entries": 43
   },
   {
-    "id": "_t1MXHUzne",
-    "type": "NOME-B",
-    "levels": "ALO (La)",
-    "date": "01.08.2026",
-    "date_sort": "2026-08-01T00:00:00+03:00",
-    "end_date_sort": "2026-08-01T00:00:00+03:00",
-    "entry_date": "20.06.-11.07.",
-    "location": "Perniö",
-    "coordinates": [
-      60.2053851,
-      23.1014504
-    ],
-    "name": "",
-    "organizer": "AURAN NUUSKUT RY",
-    "official": {
-      "name": "Minna Latva",
-      "phone": "0400842998",
-      "email": "majakkasaaren@gmail.com"
-    },
-    "secretary": {
-      "name": "Outi Pensikkala",
-      "phone": "0415049698",
-      "email": "outiannika@hotmail.fi"
-    },
-    "judges": [
-      "Nyman Tobina"
-    ],
-    "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
-    "cost": {
-      "normal": 50
-    },
-    "cost_member": {
-      "normal": 45
-    },
-    "classes": [
-      {
-        "entries": 20,
-        "class": "ALO",
-        "date": "2026-07-31T21:00:00.000Z",
-        "places": 15,
-        "judge": [
-          {
-            "official": true,
-            "id": 450758,
-            "name": "Nyman Tobina"
-          }
-        ],
-        "members": 15,
-        "state": "invited"
-      }
-    ],
-    "places": 15,
-    "state": "invited",
-    "entry_start": "2026-06-20",
-    "entry_end": "2026-07-11",
-    "entries": 20
-  },
-  {
     "id": "o48FcYsAdq",
     "type": "NOU",
     "levels": "N/A",
@@ -7283,44 +7327,6 @@
     "entry_start": "2026-06-24",
     "entry_end": "2026-07-15",
     "entries": 20
-  },
-  {
-    "id": "IZIi3JY0rF",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "08.08.2026",
-    "date_sort": "2026-08-08T00:00:00+03:00",
-    "end_date_sort": "2026-08-08T00:00:00+03:00",
-    "entry_date": "27.06.-20.07.",
-    "location": "Salo",
-    "coordinates": [
-      60.3879158,
-      23.1248694
-    ],
-    "name": "",
-    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
-    "official": {
-      "name": "Mikko Ahti",
-      "phone": "",
-      "email": "mikko.ahti@kolumbus.fi"
-    },
-    "secretary": {
-      "name": "Ida Tallqvist",
-      "phone": "",
-      "email": "olevinaanlabradorit@hotmail.com"
-    },
-    "judges": [
-      "Fontell Ari-Pekka"
-    ],
-    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
-    "cost": 48,
-    "cost_member": 42,
-    "classes": [],
-    "places": 16,
-    "state": "invited",
-    "entry_start": "2026-06-27",
-    "entry_end": "2026-07-20",
-    "entries": 16
   },
   {
     "id": "h-cY_US-jO",
@@ -7502,6 +7508,44 @@
     "entry_start": "2026-06-27",
     "entry_end": "2026-07-18",
     "entries": 33
+  },
+  {
+    "id": "IZIi3JY0rF",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "08.08.2026",
+    "date_sort": "2026-08-08T00:00:00+03:00",
+    "end_date_sort": "2026-08-08T00:00:00+03:00",
+    "entry_date": "27.06.-20.07.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Mikko Ahti",
+      "phone": "",
+      "email": "mikko.ahti@kolumbus.fi"
+    },
+    "secretary": {
+      "name": "Ida Tallqvist",
+      "phone": "",
+      "email": "olevinaanlabradorit@hotmail.com"
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "https://www.salonseudunnoutajat.fi/nou-nome/nou-nome-kokeet/",
+    "cost": 48,
+    "cost_member": 42,
+    "classes": [],
+    "places": 16,
+    "state": "invited",
+    "entry_start": "2026-06-27",
+    "entry_end": "2026-07-20",
+    "entries": 16
   },
   {
     "id": "lxLz9LeWi_",
@@ -10402,6 +10446,48 @@
     "entries": 16
   },
   {
+    "id": "LrTMU442O1",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "26.-27.09.2026",
+    "date_sort": "2026-09-26T00:00:00+03:00",
+    "end_date_sort": "2026-09-27T23:59:59.999000+03:00",
+    "entry_date": "15.08.-05.09.",
+    "location": "Kemiönsaari",
+    "coordinates": [
+      60.1650696,
+      22.7269885
+    ],
+    "name": "",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "Henriikka Eloluoto",
+      "phone": "044 203 4461",
+      "email": "henriikka.eloluoto@gmail.com"
+    },
+    "secretary": {
+      "name": "Eeva Saario",
+      "phone": "040 757 1234",
+      "email": "eeva.saario@outlook.com"
+    },
+    "judges": [
+      "Martikainen Maarit"
+    ],
+    "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 32,
+    "state": "invited",
+    "entry_start": "2026-08-15",
+    "entry_end": "2026-09-05",
+    "entries": 27
+  },
+  {
     "id": "I-1VjpAPtN",
     "type": "NOME-B",
     "levels": "VOI (La)",
@@ -10455,48 +10541,6 @@
     "entry_start": "2026-08-15",
     "entry_end": "2026-09-05",
     "entries": 12
-  },
-  {
-    "id": "LrTMU442O1",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "26.-27.09.2026",
-    "date_sort": "2026-09-26T00:00:00+03:00",
-    "end_date_sort": "2026-09-27T23:59:59.999000+03:00",
-    "entry_date": "15.08.-05.09.",
-    "location": "Kemiönsaari",
-    "coordinates": [
-      60.1650696,
-      22.7269885
-    ],
-    "name": "",
-    "organizer": "AURAN NUUSKUT RY",
-    "official": {
-      "name": "Henriikka Eloluoto",
-      "phone": "044 203 4461",
-      "email": "henriikka.eloluoto@gmail.com"
-    },
-    "secretary": {
-      "name": "Eeva Saario",
-      "phone": "040 757 1234",
-      "email": "eeva.saario@outlook.com"
-    },
-    "judges": [
-      "Martikainen Maarit"
-    ],
-    "description": "Etusija kokeeseen erikseen kutsutuilla (max 1/3 osallistujista) sekä Auran Nuuskujen jäsenillä. Jäsenyyden oltava voimassa ilmoittautumisen alkaessa. ",
-    "cost": {
-      "normal": 50
-    },
-    "cost_member": {
-      "normal": 45
-    },
-    "classes": [],
-    "places": 32,
-    "state": "invited",
-    "entry_start": "2026-08-15",
-    "entry_end": "2026-09-05",
-    "entries": 27
   },
   {
     "id": "SxFikIUEfq",
@@ -11863,41 +11907,41 @@
     "cost_member": 40,
     "classes": [
       {
+        "date": "2026-10-16T21:00:00.000Z",
+        "members": 8,
+        "entries": 22,
+        "groups": [
+          "kp"
+        ],
         "class": "ALO",
-        "date": "2026-10-16T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ],
-        "judge": [],
-        "members": 7,
-        "entries": 20
-      },
-      {
-        "groups": [
-          "kp"
-        ],
-        "class": "AVO",
-        "entries": 11,
-        "date": "2026-10-16T21:00:00.000Z",
-        "members": 4,
         "judge": []
       },
       {
-        "class": "VOI",
         "groups": [
           "kp"
         ],
-        "entries": 23,
-        "members": 11,
+        "members": 4,
+        "entries": 11,
+        "date": "2026-10-16T21:00:00.000Z",
+        "class": "AVO",
+        "judge": []
+      },
+      {
         "judge": [],
-        "date": "2026-10-16T21:00:00.000Z"
+        "groups": [
+          "kp"
+        ],
+        "date": "2026-10-16T21:00:00.000Z",
+        "members": 13,
+        "class": "VOI",
+        "entries": 25
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 54
+    "entries": 58
   },
   {
     "id": "D3IFyEbK3K",
@@ -11940,7 +11984,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-05",
     "entry_end": "2026-10-14",
-    "entries": 3
+    "entries": 5
   },
   {
     "id": "6p2tAdYq9O",
@@ -12051,7 +12095,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-21",
     "entry_end": "2026-10-18",
-    "entries": 41
+    "entries": 42
   },
   {
     "id": "sK51ViatiO",
@@ -12136,39 +12180,39 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
-        "members": 9,
         "entries": 14,
+        "class": "AVO",
         "date": "2026-10-30T22:00:00.000Z",
-        "class": "AVO"
+        "judge": [],
+        "members": 9
       },
       {
-        "places": 0,
         "date": "2026-10-30T22:00:00.000Z",
+        "places": 0,
         "class": "VOI",
-        "entries": 23,
         "judge": [
           {
-            "name": "Toskala Mika",
             "id": 697689,
+            "name": "Toskala Mika",
             "official": true
           }
         ],
+        "entries": 24,
         "members": 14
       },
       {
-        "class": "ALO",
-        "entries": 25,
-        "members": 8,
+        "entries": 26,
         "judge": [],
-        "date": "2026-10-30T22:00:00.000Z"
+        "date": "2026-10-30T22:00:00.000Z",
+        "class": "ALO",
+        "members": 8
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 62
+    "entries": 64
   },
   {
     "id": "BkA7mzBtzM",
@@ -12204,17 +12248,17 @@
     "cost_member": 40,
     "classes": [
       {
-        "members": 4,
         "date": "2026-10-31T22:00:00.000Z",
-        "judge": [],
         "class": "AVO",
+        "members": 4,
+        "judge": [],
         "entries": 8
       },
       {
-        "judge": [],
         "class": "VOI",
+        "judge": [],
         "date": "2026-10-31T22:00:00.000Z",
-        "entries": 18,
+        "entries": 19,
         "members": 11
       }
     ],
@@ -12222,7 +12266,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
-    "entries": 26
+    "entries": 27
   },
   {
     "id": "3kHAyI19dm",
