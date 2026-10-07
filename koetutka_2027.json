@@ -785,6 +785,70 @@
     "entries": null
   },
   {
+    "id": "5OC_gC4yPt",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "15.05.2027",
+    "date_sort": "2027-05-15T00:00:00+03:00",
+    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "entry_date": "03.04.-24.04.",
+    "location": "Jämsä",
+    "coordinates": [
+      61.8637802,
+      25.1897493
+    ],
+    "name": "",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Tenhunen Matti",
+      "Torila Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-05-14T21:00:00.000Z",
+        "judge": [],
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "groups": [
+          "kp"
+        ],
+        "class": "AVO",
+        "date": "2027-05-14T21:00:00.000Z",
+        "judge": []
+      },
+      {
+        "judge": [],
+        "class": "VOI",
+        "date": "2027-05-14T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ]
+      }
+    ],
+    "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-04-03",
+    "entry_end": "2027-04-24",
+    "entries": null
+  },
+  {
     "id": "B8Rx92jwOW",
     "type": "NOU",
     "levels": "N/A",
@@ -867,70 +931,6 @@
       }
     ],
     "places": null,
-    "state": "tentative",
-    "entry_start": "2027-04-03",
-    "entry_end": "2027-04-24",
-    "entries": null
-  },
-  {
-    "id": "5OC_gC4yPt",
-    "type": "NOWT",
-    "levels": "ALO (La), AVO (La), VOI (La)",
-    "date": "15.05.2027",
-    "date_sort": "2027-05-15T00:00:00+03:00",
-    "end_date_sort": "2027-05-15T00:00:00+03:00",
-    "entry_date": "03.04.-24.04.",
-    "location": "Jämsä",
-    "coordinates": [
-      61.8637802,
-      25.1897493
-    ],
-    "name": "",
-    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Tenhunen Matti",
-      "Torila Mika"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "ALO",
-        "date": "2027-05-14T21:00:00.000Z",
-        "judge": [],
-        "groups": [
-          "kp"
-        ]
-      },
-      {
-        "groups": [
-          "kp"
-        ],
-        "class": "AVO",
-        "date": "2027-05-14T21:00:00.000Z",
-        "judge": []
-      },
-      {
-        "judge": [],
-        "class": "VOI",
-        "date": "2027-05-14T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ]
-      }
-    ],
-    "places": 40,
     "state": "tentative",
     "entry_start": "2027-04-03",
     "entry_end": "2027-04-24",
@@ -1034,6 +1034,48 @@
     "state": "tentative",
     "entry_start": "2027-04-04",
     "entry_end": "2027-04-25",
+    "entries": null
+  },
+  {
+    "id": "PVw49JE0Fj",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "16.05.2027",
+    "date_sort": "2027-05-16T00:00:00+03:00",
+    "end_date_sort": "2027-05-16T00:00:00+03:00",
+    "entry_date": "11.04.-02.05.",
+    "location": "Tampere",
+    "coordinates": [
+      61.4977929,
+      23.7616372
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Sanna Pietikäinen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Jasmin Ahonen",
+      "phone": "",
+      "email": "jasmin.ahonen@gmail.com"
+    },
+    "judges": [
+      "Martikainen Maarit"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 60
+    },
+    "cost_member": {
+      "normal": 50
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-11",
+    "entry_end": "2027-05-02",
     "entries": null
   },
   {
@@ -1802,88 +1844,6 @@
     "entries": null
   },
   {
-    "id": "3NRksEvikI",
-    "type": "NOME-B",
-    "levels": "ALO (La, Su), AVO (Su), VOI (La, Su)",
-    "date": "12.-13.06.2027",
-    "date_sort": "2027-06-12T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
-    "entry_date": "01.05.-22.05.",
-    "location": "Ähtäri",
-    "coordinates": [
-      62.5499772,
-      24.0702272
-    ],
-    "name": "",
-    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "Reija Lesonen",
-      "phone": "",
-      "email": "reija.lesonen@outlook.com"
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      ""
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "groups": [
-          "ap",
-          "ip"
-        ],
-        "date": "2027-06-11T21:00:00.000Z",
-        "places": 15,
-        "class": "ALO"
-      },
-      {
-        "class": "VOI",
-        "places": 12,
-        "date": "2027-06-11T21:00:00.000Z",
-        "groups": [
-          "ap",
-          "ip"
-        ]
-      },
-      {
-        "places": 15,
-        "groups": [
-          "ap",
-          "ip"
-        ],
-        "class": "ALO",
-        "date": "2027-06-12T21:00:00.000Z"
-      },
-      {
-        "class": "AVO",
-        "date": "2027-06-12T21:00:00.000Z",
-        "places": 8,
-        "groups": [
-          "ip"
-        ]
-      },
-      {
-        "date": "2027-06-12T21:00:00.000Z",
-        "groups": [
-          "ap"
-        ],
-        "class": "VOI",
-        "places": 6
-      }
-    ],
-    "places": 56,
-    "state": "tentative",
-    "entry_start": "2027-05-01",
-    "entry_end": "2027-05-22",
-    "entries": null
-  },
-  {
     "id": "GUKagYR2UQ",
     "type": "NOU",
     "levels": "N/A",
@@ -2132,6 +2092,88 @@
       }
     ],
     "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-05-08",
+    "entry_end": "2027-05-29",
+    "entries": null
+  },
+  {
+    "id": "3NRksEvikI",
+    "type": "NOME-B",
+    "levels": "ALO (La, Su), AVO (Su), VOI (La, Su)",
+    "date": "19.-20.06.2027",
+    "date_sort": "2027-06-19T00:00:00+03:00",
+    "end_date_sort": "2027-06-20T00:00:00+03:00",
+    "entry_date": "08.05.-29.05.",
+    "location": "Ähtäri",
+    "coordinates": [
+      62.5499772,
+      24.0702272
+    ],
+    "name": "",
+    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Reija Lesonen",
+      "phone": "",
+      "email": "reija.lesonen@outlook.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "places": 15,
+        "date": "2027-06-19T00:00:00.000+03:00",
+        "groups": [
+          "ap",
+          "ip"
+        ]
+      },
+      {
+        "places": 12,
+        "date": "2027-06-19T00:00:00.000+03:00",
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "class": "VOI"
+      },
+      {
+        "date": "2027-06-20T00:00:00.000+03:00",
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "places": 15,
+        "class": "ALO"
+      },
+      {
+        "class": "AVO",
+        "groups": [
+          "ip"
+        ],
+        "places": 8,
+        "date": "2027-06-20T00:00:00.000+03:00"
+      },
+      {
+        "groups": [
+          "ap"
+        ],
+        "places": 6,
+        "class": "VOI",
+        "date": "2027-06-20T00:00:00.000+03:00"
+      }
+    ],
+    "places": 56,
     "state": "tentative",
     "entry_start": "2027-05-08",
     "entry_end": "2027-05-29",
@@ -2726,6 +2768,96 @@
     "entries": null
   },
   {
+    "id": "NF97QKAy1L",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "14.07.2027",
+    "date_sort": "2027-07-14T00:00:00+03:00",
+    "end_date_sort": "2027-07-14T00:00:00+03:00",
+    "entry_date": "09.06.-30.06.",
+    "location": "Tampere",
+    "coordinates": [
+      61.4977929,
+      23.7616372
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Jaana Tala",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Jaana Tala",
+      "phone": "",
+      "email": "jaana.h.tala@gmail.com"
+    },
+    "judges": [
+      "Kestilä-Kekkonen Elina"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 60
+    },
+    "cost_member": {
+      "normal": 50
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-06-09",
+    "entry_end": "2027-06-30",
+    "entries": null
+  },
+  {
+    "id": "BUlulPAw3-",
+    "type": "NOME-B",
+    "levels": "ALO (To)",
+    "date": "15.07.2027",
+    "date_sort": "2027-07-15T00:00:00+03:00",
+    "end_date_sort": "2027-07-15T00:00:00+03:00",
+    "entry_date": "10.06.-01.07.",
+    "location": "Tampere",
+    "coordinates": [
+      61.4977929,
+      23.7616372
+    ],
+    "name": "",
+    "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Annukka Näsinlinna",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Minna Sirén",
+      "phone": "",
+      "email": "minnamaria25@gmail.com"
+    },
+    "judges": [
+      "Lappalainen Mika"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 60
+    },
+    "cost_member": {
+      "normal": 50
+    },
+    "classes": [
+      {
+        "judge": [],
+        "class": "ALO",
+        "date": "2027-07-15T00:00:00.000+03:00"
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-06-10",
+    "entry_end": "2027-07-01",
+    "entries": null
+  },
+  {
     "id": "0sp7Rplx-e",
     "type": "NOWT",
     "levels": "ALO (La, Su), AVO (La, Su), VOI (La, Su)",
@@ -3217,18 +3349,18 @@
     },
     "classes": [
       {
-        "members": 0,
         "places": 15,
+        "class": "AVO",
+        "members": 0,
+        "date": "2027-07-30T21:00:00.000Z",
         "judge": [
           {
+            "name": "Toskala Mika",
             "official": true,
-            "id": 697689,
-            "name": "Toskala Mika"
+            "id": 697689
           }
         ],
-        "class": "AVO",
-        "entries": 0,
-        "date": "2027-07-31T00:00:00.000+03:00"
+        "entries": 0
       }
     ],
     "places": 15,
@@ -3370,18 +3502,18 @@
     },
     "classes": [
       {
-        "class": "VOI",
-        "entries": 0,
+        "members": 0,
         "places": 12,
+        "entries": 0,
+        "class": "VOI",
         "judge": [
           {
-            "name": "Tenhunen Juha",
             "id": 999999,
+            "name": "Tenhunen Juha",
             "official": true
           }
         ],
-        "date": "2027-08-01T00:00:00.000+03:00",
-        "members": 0
+        "date": "2027-07-31T21:00:00.000Z"
       }
     ],
     "places": 12,
