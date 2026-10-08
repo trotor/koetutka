@@ -3619,6 +3619,56 @@
     "entries": null
   },
   {
+    "id": "xOOUZE8nh0",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "07.08.2027",
+    "date_sort": "2027-08-07T00:00:00+03:00",
+    "end_date_sort": "2027-08-07T00:00:00+03:00",
+    "entry_date": "26.06.-17.07.",
+    "location": "Rovaniemi",
+    "coordinates": [
+      66.5025657,
+      25.73122
+    ],
+    "name": "",
+    "organizer": "LAPIN NUUSKUT R.Y.",
+    "official": {
+      "name": "Jenna Pirttinen",
+      "phone": "",
+      "email": "nometmk.lapinnuuskut@gmail.com"
+    },
+    "secretary": {
+      "name": "Eeva Ervasti",
+      "phone": "",
+      "email": "nometmk.lapinnuuskut@gmail.com"
+    },
+    "judges": [
+      "Oikarinen Jyrki"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-08-07T00:00:00.000+03:00",
+        "judge": [
+          {
+            "id": 4042184,
+            "name": "Oikarinen Jyrki",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-26",
+    "entry_end": "2027-07-17",
+    "entries": null
+  },
+  {
     "id": "0Wig9Ogr6E",
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
@@ -3833,6 +3883,73 @@
     "state": "tentative",
     "entry_start": "2027-06-26",
     "entry_end": "2027-07-17",
+    "entries": null
+  },
+  {
+    "id": "LDFLorJjIN",
+    "type": "NOME-B",
+    "levels": "AVO (Su), VOI (Su)",
+    "date": "08.08.2027",
+    "date_sort": "2027-08-08T00:00:00+03:00",
+    "end_date_sort": "2027-08-08T00:00:00+03:00",
+    "entry_date": "27.06.-18.07.",
+    "location": "Rovaniemi",
+    "coordinates": [
+      66.5025657,
+      25.73122
+    ],
+    "name": "",
+    "organizer": "LAPIN NUUSKUT R.Y.",
+    "official": {
+      "name": "Kaisa Haverinen",
+      "phone": "",
+      "email": "nometmk.lapinnuuskut@gmail.com"
+    },
+    "secretary": {
+      "name": "Eeva Ervasti",
+      "phone": "",
+      "email": "nometmk.lapinnuuskut@gmail.com"
+    },
+    "judges": [
+      "Oikarinen Jyrki"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-08-08T00:00:00.000+03:00",
+        "groups": [
+          "ap"
+        ],
+        "judge": [
+          {
+            "id": 4042184,
+            "name": "Oikarinen Jyrki",
+            "official": true
+          }
+        ]
+      },
+      {
+        "class": "VOI",
+        "date": "2027-08-08T00:00:00.000+03:00",
+        "groups": [
+          "ip"
+        ],
+        "judge": [
+          {
+            "id": 4042184,
+            "name": "Oikarinen Jyrki",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-27",
+    "entry_end": "2027-07-18",
     "entries": null
   },
   {

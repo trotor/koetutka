@@ -11779,7 +11779,7 @@
     "state": "invited",
     "entry_start": "2026-09-04",
     "entry_end": "2026-09-25",
-    "entries": 18
+    "entries": 16
   },
   {
     "id": "GdMk7mlzSo",
@@ -11907,41 +11907,41 @@
     "cost_member": 40,
     "classes": [
       {
-        "judge": [],
-        "class": "ALO",
-        "entries": 23,
-        "members": 9,
         "groups": [
           "kp"
         ],
-        "date": "2026-10-16T21:00:00.000Z"
+        "date": "2026-10-16T21:00:00.000Z",
+        "entries": 24,
+        "class": "ALO",
+        "judge": [],
+        "members": 9
       },
       {
         "date": "2026-10-16T21:00:00.000Z",
+        "members": 4,
+        "judge": [],
+        "entries": 13,
+        "class": "AVO",
         "groups": [
           "kp"
-        ],
-        "entries": 12,
-        "members": 4,
-        "class": "AVO",
-        "judge": []
+        ]
       },
       {
         "members": 13,
-        "groups": [
-          "kp"
-        ],
+        "judge": [],
+        "entries": 27,
         "class": "VOI",
         "date": "2026-10-16T21:00:00.000Z",
-        "judge": [],
-        "entries": 26
+        "groups": [
+          "kp"
+        ]
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 61
+    "entries": 64
   },
   {
     "id": "D3IFyEbK3K",
@@ -12183,16 +12183,15 @@
     "classes": [
       {
         "date": "2026-10-30T22:00:00.000Z",
-        "members": 9,
+        "entries": 14,
         "class": "AVO",
-        "judge": [],
-        "entries": 14
+        "members": 9,
+        "judge": []
       },
       {
         "members": 16,
         "class": "VOI",
         "date": "2026-10-30T22:00:00.000Z",
-        "entries": 26,
         "judge": [
           {
             "official": true,
@@ -12200,21 +12199,22 @@
             "name": "Toskala Mika"
           }
         ],
-        "places": 0
+        "places": 0,
+        "entries": 27
       },
       {
-        "entries": 27,
-        "members": 8,
+        "class": "ALO",
         "date": "2026-10-30T22:00:00.000Z",
+        "members": 7,
         "judge": [],
-        "class": "ALO"
+        "entries": 28
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 67
+    "entries": 69
   },
   {
     "id": "BkA7mzBtzM",
@@ -12250,16 +12250,16 @@
     "cost_member": 40,
     "classes": [
       {
-        "entries": 8,
-        "members": 4,
-        "date": "2026-10-31T22:00:00.000Z",
         "class": "AVO",
-        "judge": []
+        "date": "2026-10-31T22:00:00.000Z",
+        "entries": 8,
+        "judge": [],
+        "members": 4
       },
       {
-        "entries": 20,
         "class": "VOI",
         "date": "2026-10-31T22:00:00.000Z",
+        "entries": 22,
         "judge": [],
         "members": 11
       }
@@ -12268,7 +12268,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
-    "entries": 28
+    "entries": 30
   },
   {
     "id": "3kHAyI19dm",
@@ -12468,8 +12468,8 @@
     "judges": [
       "Kerolain Filimonova",
       "Konsta Niiranen",
-      "Sonja Eskelin",
-      "Marjaana Kousa"
+      "Marjaana Kousa",
+      "Tiina Mursula"
     ],
     "description": "Päijät-Hämeen Noutajakoirayhdistyksen jäsentenvälinen NOVIISI & MESTARUUS kisataan 14.11.2026 Lammilla. \nKisan yhteydessä pidetään yhdistyksen syyskokous. \n\n\nLeikkimieliseen kisaan voi osallistua koiralla, joka on vähintään 9kk vanha ja jonka rokotukset ovat Kennelliiton ohjeiden mukaisesti kunnossa. Koe toteutetaan dameilla.\n\nNoviisiluokkaan saa osallistua koiralla, jolla on korkeintaan ALO2-tulos nomeB/WT-kokeesta. Taipumuskoetulosta ei vaadita.\n\nMestaruus-luokkaan osallistuvalla koiralla tulee olla vähintään ALO1-tulos NomeB/WT-kokeesta.\n\nIlmoittautumiset kisaan 1.11.2026 mennessä SNJ:n koekalenterin kautta. Ilmoita lisätietoja-kohdassa kumpaan luokkaan haluat osallistua.\nOsallistumismaksu 25€/koira (sisältää pientä purtavaa ja kahvin/teen)",
     "cost": 25,
