@@ -1882,6 +1882,56 @@
     "entries": null
   },
   {
+    "id": "bA-QzIjNC_",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "entry_date": "02.05.-23.05.",
+    "location": "Hämeenlinna",
+    "coordinates": [
+      60.9966192,
+      24.465141
+    ],
+    "name": "",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Särkänlahti Jari"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-06-13T00:00:00.000+03:00",
+        "judge": [
+          {
+            "id": 4055276,
+            "name": "Särkänlahti Jari",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-02",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
     "id": "YRtTSD_KaU",
     "type": "NOME-B",
     "levels": "ALO (Su), AVO (Su)",
@@ -2262,6 +2312,56 @@
     "entries": null
   },
   {
+    "id": "8-ZNKb-QEY",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T00:00:00+03:00",
+    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Jyväskylän ymp.",
+    "coordinates": [
+      62.3992586,
+      25.6759251
+    ],
+    "name": "ALO-lk",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Tuija Aaltonen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Anu Pesonen",
+      "phone": "",
+      "email": "anu-pesonen@hotmail.com"
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-02T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 697689,
+            "name": "Toskala Mika",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
     "id": "AoXdmNGP5V",
     "type": "NOU",
     "levels": "N/A",
@@ -2340,56 +2440,6 @@
     "entry_start": "2027-05-22",
     "entry_end": "2027-06-12",
     "entries": 0
-  },
-  {
-    "id": "8-ZNKb-QEY",
-    "type": "NOME-B",
-    "levels": "ALO (La)",
-    "date": "03.07.2027",
-    "date_sort": "2027-07-03T00:00:00+03:00",
-    "end_date_sort": "2027-07-03T00:00:00+03:00",
-    "entry_date": "22.05.-12.06.",
-    "location": "Jyväskylän ymp.",
-    "coordinates": [
-      62.3992586,
-      25.6759251
-    ],
-    "name": "",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Tuija Aaltonen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Tuija Aaltonen",
-      "phone": "",
-      "email": "tuija.lappiksen@gmail.com"
-    },
-    "judges": [
-      "Toskala Mika"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "date": "2027-07-03T00:00:00.000+03:00",
-        "class": "ALO",
-        "judge": [
-          {
-            "name": "Toskala Mika",
-            "id": 697689,
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": 15,
-    "state": "tentative",
-    "entry_start": "2027-05-22",
-    "entry_end": "2027-06-12",
-    "entries": null
   },
   {
     "id": "P8gJt-JiCk",
@@ -5018,7 +5068,7 @@
     "date": "03.-04.09.2027",
     "date_sort": "2027-09-03T00:00:00+03:00",
     "end_date_sort": "2027-09-04T23:59:59.999000+03:00",
-    "entry_date": "23.07.-13.08.",
+    "entry_date": "23.07.-17.08.",
     "location": "Virrat",
     "coordinates": [
       62.2401004,
@@ -5045,20 +5095,22 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-09-03T00:00:00.000+03:00",
         "class": "VOI",
-        "judge": []
+        "date": "2027-09-02T21:00:00.000Z",
+        "judge": [],
+        "places": 0
       },
       {
         "class": "VOI",
-        "date": "2027-09-04T00:00:00.000+03:00",
-        "judge": []
+        "date": "2027-09-03T21:00:00.000Z",
+        "judge": [],
+        "places": 0
       }
     ],
-    "places": 0,
+    "places": 48,
     "state": "tentative",
     "entry_start": "2027-07-23",
-    "entry_end": "2027-08-13",
+    "entry_end": "2027-08-17",
     "entries": null
   },
   {

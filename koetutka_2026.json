@@ -11819,49 +11819,49 @@
     },
     "classes": [
       {
-        "state": "invited",
-        "places": 0,
         "class": "ALO",
+        "date": "2026-10-09T21:00:00.000Z",
+        "entries": 15,
         "groups": [
           "kp"
         ],
         "judge": [
           {
             "id": -1,
-            "official": false,
-            "name": "Anu Pesonen"
+            "name": "Anu Pesonen",
+            "official": false
           },
           {
-            "name": "Riikka Tahvanainen",
             "id": -2,
+            "name": "Riikka Tahvanainen",
             "official": false
           }
         ],
-        "date": "2026-10-09T21:00:00.000Z",
         "members": 10,
-        "entries": 16
+        "places": 0,
+        "state": "invited"
       },
       {
+        "class": "AVO",
+        "date": "2026-10-09T21:00:00.000Z",
+        "entries": 6,
         "groups": [
           "kp"
         ],
         "judge": [
           {
-            "official": false,
             "id": -1,
-            "name": "Anu Pesonen"
+            "name": "Anu Pesonen",
+            "official": false
           },
           {
-            "official": false,
             "id": -2,
-            "name": "Riikka Tahvanainen"
+            "name": "Riikka Tahvanainen",
+            "official": false
           }
         ],
+        "members": 5,
         "places": 0,
-        "entries": 7,
-        "class": "AVO",
-        "date": "2026-10-09T21:00:00.000Z",
-        "members": 6,
         "state": "invited"
       }
     ],
@@ -11869,7 +11869,7 @@
     "state": "invited",
     "entry_start": "2026-09-12",
     "entry_end": "2026-10-03",
-    "entries": 23
+    "entries": 21
   },
   {
     "id": "iN8UZX6Um_",
@@ -11907,41 +11907,41 @@
     "cost_member": 40,
     "classes": [
       {
+        "class": "ALO",
+        "date": "2026-10-16T21:00:00.000Z",
+        "entries": 27,
         "groups": [
           "kp"
         ],
-        "date": "2026-10-16T21:00:00.000Z",
-        "entries": 24,
-        "class": "ALO",
         "judge": [],
-        "members": 9
+        "members": 10
       },
       {
-        "date": "2026-10-16T21:00:00.000Z",
-        "members": 4,
-        "judge": [],
-        "entries": 13,
         "class": "AVO",
+        "date": "2026-10-16T21:00:00.000Z",
+        "entries": 13,
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": [],
+        "members": 4
       },
       {
-        "members": 13,
-        "judge": [],
-        "entries": 27,
         "class": "VOI",
         "date": "2026-10-16T21:00:00.000Z",
+        "entries": 27,
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": [],
+        "members": 13
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 64
+    "entries": 67
   },
   {
     "id": "D3IFyEbK3K",
@@ -11984,7 +11984,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-05",
     "entry_end": "2026-10-14",
-    "entries": 9
+    "entries": 10
   },
   {
     "id": "6p2tAdYq9O",
@@ -12097,7 +12097,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-21",
     "entry_end": "2026-10-18",
-    "entries": 43
+    "entries": 42
   },
   {
     "id": "sK51ViatiO",
@@ -12125,7 +12125,8 @@
       "email": "ulla.alhava@gmail.com"
     },
     "judges": [
-      "Sipola Miso"
+      "Sipola Miso",
+      "Luomanen Timo"
     ],
     "description": "Osallistumismaksu 120 €, labradorinnoutajat 100 €. Maksetaan koepaikan varmistuttua. \nYhteistyössä Hyvinkään Palopuron Metsästysyhdistys ry:n kanssa.",
     "cost": {
@@ -12142,10 +12143,10 @@
     },
     "classes": [],
     "places": 12,
-    "state": "tentative",
+    "state": "confirmed",
     "entry_start": "2026-10-04",
     "entry_end": "2026-10-18",
-    "entries": null
+    "entries": 6
   },
   {
     "id": "4FYeaiEMRz",
@@ -12182,39 +12183,39 @@
     "cost_member": 40,
     "classes": [
       {
-        "date": "2026-10-30T22:00:00.000Z",
-        "entries": 14,
         "class": "AVO",
-        "members": 9,
-        "judge": []
+        "date": "2026-10-30T22:00:00.000Z",
+        "entries": 15,
+        "judge": [],
+        "members": 9
       },
       {
-        "members": 16,
         "class": "VOI",
         "date": "2026-10-30T22:00:00.000Z",
+        "entries": 28,
         "judge": [
           {
-            "official": true,
             "id": 697689,
-            "name": "Toskala Mika"
+            "name": "Toskala Mika",
+            "official": true
           }
         ],
-        "places": 0,
-        "entries": 27
+        "members": 17,
+        "places": 0
       },
       {
         "class": "ALO",
         "date": "2026-10-30T22:00:00.000Z",
-        "members": 7,
+        "entries": 31,
         "judge": [],
-        "entries": 28
+        "members": 8
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 69
+    "entries": 74
   },
   {
     "id": "BkA7mzBtzM",
