@@ -2908,6 +2908,60 @@
     "entries": null
   },
   {
+    "id": "Fs0mJIBr6z",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "17.07.2027",
+    "date_sort": "2027-07-17T00:00:00+03:00",
+    "end_date_sort": "2027-07-17T00:00:00+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Särkänlahti Jari"
+    ],
+    "description": "",
+    "cost": {
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
+    },
+    "cost_member": {
+      "breed": {
+        "122": 45
+      },
+      "normal": 50
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-16T21:00:00.000Z",
+        "judge": []
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
     "id": "0sp7Rplx-e",
     "type": "NOWT",
     "levels": "ALO (La, Su), AVO (La, Su), VOI (La, Su)",
@@ -3076,59 +3130,6 @@
     "entries": null
   },
   {
-    "id": "Fs0mJIBr6z",
-    "type": "NOME-B",
-    "levels": "ALO (La)",
-    "date": "17.07.2027",
-    "date_sort": "2027-07-17T00:00:00+03:00",
-    "end_date_sort": "2027-07-17T00:00:00+03:00",
-    "entry_date": "05.06.-26.06.",
-    "location": "Heinola",
-    "coordinates": [
-      61.2027188,
-      26.031371
-    ],
-    "name": "",
-    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      ""
-    ],
-    "description": "",
-    "cost": {
-      "breed": {
-        "122": 45
-      },
-      "normal": 50
-    },
-    "cost_member": {
-      "breed": {
-        "122": 45
-      },
-      "normal": 50
-    },
-    "classes": [
-      {
-        "class": "ALO",
-        "date": "2027-07-17T00:00:00.000+03:00"
-      }
-    ],
-    "places": 15,
-    "state": "tentative",
-    "entry_start": "2027-06-05",
-    "entry_end": "2027-06-26",
-    "entries": null
-  },
-  {
     "id": "HNmTyk9ZoK",
     "type": "NOME-B",
     "levels": "AVO (Su)",
@@ -3154,7 +3155,7 @@
       "email": ""
     },
     "judges": [
-      ""
+      "Särkänlahti Jari"
     ],
     "description": "",
     "cost": {
@@ -3171,8 +3172,9 @@
     },
     "classes": [
       {
-        "date": "2027-07-18T00:00:00.000+03:00",
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-07-17T21:00:00.000Z",
+        "judge": []
       }
     ],
     "places": 15,
