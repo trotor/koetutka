@@ -11909,17 +11909,17 @@
       {
         "class": "ALO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 28,
+        "entries": 32,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 11
+        "members": 12
       },
       {
         "class": "AVO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 14,
+        "entries": 16,
         "groups": [
           "kp"
         ],
@@ -11929,19 +11929,19 @@
       {
         "class": "VOI",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 26,
+        "entries": 30,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 12
+        "members": 13
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 68
+    "entries": 78
   },
   {
     "id": "D3IFyEbK3K",
@@ -11984,7 +11984,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-05",
     "entry_end": "2026-10-14",
-    "entries": 10
+    "entries": 11
   },
   {
     "id": "6p2tAdYq9O",
@@ -12146,7 +12146,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-04",
     "entry_end": "2026-10-18",
-    "entries": 7
+    "entries": 11
   },
   {
     "id": "4FYeaiEMRz",
@@ -12185,14 +12185,14 @@
       {
         "class": "AVO",
         "date": "2026-10-30T22:00:00.000Z",
-        "entries": 16,
+        "entries": 18,
         "judge": [],
-        "members": 9
+        "members": 11
       },
       {
         "class": "VOI",
         "date": "2026-10-30T22:00:00.000Z",
-        "entries": 32,
+        "entries": 36,
         "judge": [
           {
             "id": 697689,
@@ -12200,22 +12200,22 @@
             "official": true
           }
         ],
-        "members": 19,
+        "members": 20,
         "places": 0
       },
       {
         "class": "ALO",
         "date": "2026-10-30T22:00:00.000Z",
-        "entries": 36,
+        "entries": 41,
         "judge": [],
-        "members": 10
+        "members": 12
       }
     ],
     "places": 60,
     "state": "confirmed",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
-    "entries": 84
+    "entries": 95
   },
   {
     "id": "BkA7mzBtzM",
@@ -12253,14 +12253,14 @@
       {
         "class": "AVO",
         "date": "2026-10-31T22:00:00.000Z",
-        "entries": 12,
+        "entries": 13,
         "judge": [],
-        "members": 5
+        "members": 6
       },
       {
         "class": "VOI",
         "date": "2026-10-31T22:00:00.000Z",
-        "entries": 24,
+        "entries": 26,
         "judge": [],
         "members": 12
       }
@@ -12269,7 +12269,7 @@
     "state": "confirmed",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
-    "entries": 36
+    "entries": 39
   },
   {
     "id": "3kHAyI19dm",
