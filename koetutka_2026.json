@@ -11909,39 +11909,39 @@
       {
         "class": "ALO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 32,
+        "entries": 37,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 12
+        "members": 15
       },
       {
         "class": "AVO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 16,
+        "entries": 18,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 4
+        "members": 5
       },
       {
         "class": "VOI",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 30,
+        "entries": 34,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 13
+        "members": 14
       }
     ],
     "places": 80,
     "state": "confirmed",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 78
+    "entries": 89
   },
   {
     "id": "D3IFyEbK3K",
@@ -11984,7 +11984,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-05",
     "entry_end": "2026-10-14",
-    "entries": 11
+    "entries": 13
   },
   {
     "id": "6p2tAdYq9O",
@@ -12146,7 +12146,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-04",
     "entry_end": "2026-10-18",
-    "entries": 11
+    "entries": 15
   },
   {
     "id": "4FYeaiEMRz",
@@ -12253,23 +12253,29 @@
       {
         "class": "AVO",
         "date": "2026-10-31T22:00:00.000Z",
-        "entries": 13,
+        "entries": 14,
+        "groups": [
+          "kp"
+        ],
         "judge": [],
-        "members": 6
+        "members": 7
       },
       {
         "class": "VOI",
         "date": "2026-10-31T22:00:00.000Z",
-        "entries": 26,
+        "entries": 27,
+        "groups": [
+          "kp"
+        ],
         "judge": [],
         "members": 12
       }
     ],
-    "places": 40,
+    "places": 30,
     "state": "confirmed",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
-    "entries": 39
+    "entries": 41
   },
   {
     "id": "3kHAyI19dm",
