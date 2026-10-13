@@ -11909,12 +11909,13 @@
       {
         "class": "ALO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 37,
+        "entries": 36,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 15
+        "members": 14,
+        "state": "picked"
       },
       {
         "class": "AVO",
@@ -11924,24 +11925,26 @@
           "kp"
         ],
         "judge": [],
-        "members": 5
+        "members": 5,
+        "state": "picked"
       },
       {
         "class": "VOI",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 34,
+        "entries": 33,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 14
+        "members": 14,
+        "state": "picked"
       }
     ],
     "places": 80,
-    "state": "confirmed",
+    "state": "picked",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 89
+    "entries": 87
   },
   {
     "id": "D3IFyEbK3K",
@@ -11984,7 +11987,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-05",
     "entry_end": "2026-10-14",
-    "entries": 13
+    "entries": 14
   },
   {
     "id": "6p2tAdYq9O",
@@ -12146,7 +12149,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-04",
     "entry_end": "2026-10-18",
-    "entries": 15
+    "entries": 16
   },
   {
     "id": "4FYeaiEMRz",
@@ -12284,7 +12287,7 @@
     "date": "07.11.2026",
     "date_sort": "2026-11-07T00:00:00+02:00",
     "end_date_sort": "2026-11-07T00:00:00+02:00",
-    "entry_date": "19.10.-25.10.",
+    "entry_date": "13.10.-25.10.",
     "location": "Kemiönsaari",
     "coordinates": [
       60.1650696,
@@ -12328,7 +12331,7 @@
     ],
     "places": 26,
     "state": "confirmed",
-    "entry_start": "2026-10-19",
+    "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
     "entries": 0
   },
@@ -12339,7 +12342,7 @@
     "date": "07.11.2026",
     "date_sort": "2026-11-07T00:00:00+02:00",
     "end_date_sort": "2026-11-07T23:59:59.999000+02:00",
-    "entry_date": "19.10.-25.10.",
+    "entry_date": "13.10.-25.10.",
     "location": "Kemiönsaari",
     "coordinates": [
       60.1650696,
@@ -12371,9 +12374,9 @@
     "classes": [],
     "places": 13,
     "state": "confirmed",
-    "entry_start": "2026-10-19",
+    "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
-    "entries": null
+    "entries": 2
   },
   {
     "id": "oAH9Fk99PO",
@@ -12382,7 +12385,7 @@
     "date": "08.11.2026",
     "date_sort": "2026-11-08T00:00:00+02:00",
     "end_date_sort": "2026-11-08T00:00:00+02:00",
-    "entry_date": "19.10.-25.10.",
+    "entry_date": "13.10.-25.10.",
     "location": "Kemiönsaari",
     "coordinates": [
       60.1650696,
@@ -12414,12 +12417,16 @@
     },
     "classes": [
       {
+        "class": "VOI",
         "date": "2026-11-07T22:00:00.000Z",
-        "places": 39,
+        "entries": 1,
+        "groups": [
+          "kp"
+        ],
         "judge": [
           {
-            "name": "Ahola Pauliina",
             "id": 751529,
+            "name": "Ahola Pauliina",
             "official": true
           },
           {
@@ -12428,24 +12435,20 @@
             "official": true
           },
           {
+            "id": 825013,
             "name": "Sipola Miso",
-            "official": true,
-            "id": 825013
+            "official": true
           }
         ],
         "members": 0,
-        "groups": [
-          "kp"
-        ],
-        "class": "VOI",
-        "entries": 0
+        "places": 39
       }
     ],
     "places": 39,
     "state": "confirmed",
-    "entry_start": "2026-10-19",
+    "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
-    "entries": 0
+    "entries": 1
   },
   {
     "id": "F5iXiF5Oto",

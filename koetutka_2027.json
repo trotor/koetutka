@@ -1882,6 +1882,44 @@
     "entries": null
   },
   {
+    "id": "9_0-430dtk",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "entry_date": "02.05.-23.05.",
+    "location": "Laukaa",
+    "coordinates": [
+      62.416667,
+      25.95
+    ],
+    "name": "",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Mäkelä",
+      "phone": "",
+      "email": "makela.mari22@gmail.com"
+    },
+    "judges": [
+      "Hietikko Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-02",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
     "id": "bA-QzIjNC_",
     "type": "NOME-B",
     "levels": "ALO (Su)",
@@ -2017,44 +2055,6 @@
     "entry_start": "2027-05-17",
     "entry_end": "2027-05-30",
     "entries": 0
-  },
-  {
-    "id": "9_0-430dtk",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "13.06.2027",
-    "date_sort": "2027-06-13T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T00:00:00+03:00",
-    "entry_date": "02.05.-23.05.",
-    "location": "Laukaa",
-    "coordinates": [
-      62.416667,
-      25.95
-    ],
-    "name": "",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Mari Paananen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Mari Mäkelä",
-      "phone": "",
-      "email": "makela.mari22@gmail.com"
-    },
-    "judges": [
-      "Hietikko Vesa"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [],
-    "places": 16,
-    "state": "tentative",
-    "entry_start": "2027-05-02",
-    "entry_end": "2027-05-23",
-    "entries": null
   },
   {
     "id": "52Oc3bZjt6",
@@ -5203,6 +5203,44 @@
     "entries": null
   },
   {
+    "id": "pkyRt5Th3j",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "11.09.2027",
+    "date_sort": "2027-09-11T00:00:00+03:00",
+    "end_date_sort": "2027-09-11T00:00:00+03:00",
+    "entry_date": "01.08.-22.08.",
+    "location": "Uusikaarlepyy",
+    "coordinates": [
+      63.5222473,
+      22.5284347
+    ],
+    "name": "",
+    "organizer": "JAKOBSTADSNEJDENS KENNELFÖRENING RF",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Anna Björklund",
+      "phone": "0456506161",
+      "email": "noutajakoirajaosto@gmail.com"
+    },
+    "judges": [
+      "Purtola Susanna"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-08-01",
+    "entry_end": "2027-08-22",
+    "entries": null
+  },
+  {
     "id": "UzrAUbmS-t",
     "type": "NOME-B",
     "levels": "ALO (La), AVO (La)",
@@ -5325,6 +5363,67 @@
     "state": "tentative",
     "entry_start": "2027-08-08",
     "entry_end": "2027-08-29",
+    "entries": null
+  },
+  {
+    "id": "YwGJlA3m_e",
+    "type": "NOME-B",
+    "levels": "ALO (La), AVO (La)",
+    "date": "25.09.2027",
+    "date_sort": "2027-09-25T00:00:00+03:00",
+    "end_date_sort": "2027-09-25T00:00:00+03:00",
+    "entry_date": "14.08.-04.09.",
+    "location": "Uusikaarlepyy",
+    "coordinates": [
+      63.5222473,
+      22.5284347
+    ],
+    "name": "",
+    "organizer": "JAKOBSTADSNEJDENS KENNELFÖRENING RF",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Anna Björklund",
+      "phone": "0456506161",
+      "email": "noutajajakoirajaosto@gmail.com"
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-09-24T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 697689,
+            "name": "Toskala Mika",
+            "official": true
+          }
+        ]
+      },
+      {
+        "class": "AVO",
+        "date": "2027-09-24T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 697689,
+            "name": "Toskala Mika",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-08-14",
+    "entry_end": "2027-09-04",
     "entries": null
   },
   {
