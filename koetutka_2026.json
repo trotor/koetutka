@@ -11909,24 +11909,24 @@
       {
         "class": "ALO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 36,
+        "entries": 34,
         "groups": [
           "kp"
         ],
         "judge": [],
         "members": 14,
-        "state": "picked"
+        "state": "invited"
       },
       {
         "class": "AVO",
         "date": "2026-10-16T21:00:00.000Z",
-        "entries": 18,
+        "entries": 17,
         "groups": [
           "kp"
         ],
         "judge": [],
-        "members": 5,
-        "state": "picked"
+        "members": 4,
+        "state": "invited"
       },
       {
         "class": "VOI",
@@ -11937,14 +11937,14 @@
         ],
         "judge": [],
         "members": 14,
-        "state": "picked"
+        "state": "invited"
       }
     ],
     "places": 80,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-09-28",
     "entry_end": "2026-10-11",
-    "entries": 87
+    "entries": 84
   },
   {
     "id": "D3IFyEbK3K",
@@ -12317,23 +12317,25 @@
     },
     "classes": [
       {
+        "class": "VOI",
+        "date": "2026-11-06T22:00:00.000Z",
+        "entries": 1,
         "judge": [
           {
-            "official": true,
+            "id": 4055276,
             "name": "Särkänlahti Jari",
-            "id": 4055276
+            "official": true
           }
         ],
-        "date": "2026-11-06T22:00:00.000Z",
-        "places": 26,
-        "class": "VOI"
+        "members": 0,
+        "places": 26
       }
     ],
     "places": 26,
     "state": "confirmed",
     "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
-    "entries": 0
+    "entries": 1
   },
   {
     "id": "hPWqB4g6bC",
