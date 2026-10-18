@@ -1704,6 +1704,67 @@
     "entries": null
   },
   {
+    "id": "TvJfc4zNcG",
+    "type": "NOME-B",
+    "levels": "ALO (La, Su)",
+    "date": "12.-13.06.2027",
+    "date_sort": "2027-06-12T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
+    "entry_date": "01.05.-22.05.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "NOME-B Nilsiä, Palonurmi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Risto Väätäinen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Merja Taskinen",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "Nome-b ALO-12-13.kesäkuu Palonurmi, Nilsiä -vast. Risto Väätäinen, koesihteeri Merja Taskinen\nEtusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-06-11T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 835312,
+            "name": "Salonen Susanna",
+            "official": true
+          }
+        ]
+      },
+      {
+        "class": "ALO",
+        "date": "2027-06-12T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 835312,
+            "name": "Salonen Susanna",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-01",
+    "entry_end": "2027-05-22",
+    "entries": null
+  },
+  {
     "id": "gl0J78zkK1",
     "type": "NOME-B",
     "levels": "AVO (La)",
@@ -1781,67 +1842,6 @@
     "entry_start": "2027-05-17",
     "entry_end": "2027-05-30",
     "entries": 0
-  },
-  {
-    "id": "TvJfc4zNcG",
-    "type": "NOME-B",
-    "levels": "ALO (La, Su)",
-    "date": "12.-13.06.2027",
-    "date_sort": "2027-06-12T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
-    "entry_date": "01.05.-22.05.",
-    "location": "Kuopio",
-    "coordinates": [
-      62.8924641,
-      27.6783597
-    ],
-    "name": "NOME-B Nilsiä, Palonurmi",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Risto Väätäinen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Merja Taskinen",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Salonen Susanna"
-    ],
-    "description": "Nome-b ALO-12-13.kesäkuu Palonurmi, Nilsiä -vast. Risto Väätäinen, koesihteeri Merja Taskinen\nEtusijalla jäsenet ja kutsutut.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "ALO",
-        "judge": [
-          {
-            "id": 835312,
-            "name": "Salonen Susanna",
-            "official": true
-          }
-        ],
-        "date": "2027-06-12T00:00:00.000+03:00"
-      },
-      {
-        "class": "ALO",
-        "date": "2027-06-13T00:00:00.000+03:00",
-        "judge": [
-          {
-            "id": 835312,
-            "name": "Salonen Susanna",
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": null,
-    "state": "tentative",
-    "entry_start": "2027-05-01",
-    "entry_end": "2027-05-22",
-    "entries": null
   },
   {
     "id": "GUKagYR2UQ",
@@ -2102,6 +2102,50 @@
     "entries": null
   },
   {
+    "id": "m2DeCWv6oc",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "19.06.2027",
+    "date_sort": "2027-06-19T00:00:00+03:00",
+    "end_date_sort": "2027-06-19T00:00:00+03:00",
+    "entry_date": "08.05.-29.05.",
+    "location": "Tuusniemi",
+    "coordinates": [
+      62.8129715,
+      28.473989
+    ],
+    "name": "Nome-B AVO Tuusniemi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Kirsi-Marja Ovaskainen",
+      "phone": "",
+      "email": "ovaskainen.kirsi@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "Etusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-06-18T21:00:00.000Z",
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-08",
+    "entry_end": "2027-05-29",
+    "entries": null
+  },
+  {
     "id": "sHnh44Oq4y",
     "type": "NOWT",
     "levels": "VOI (La)",
@@ -2224,50 +2268,6 @@
       }
     ],
     "places": 56,
-    "state": "tentative",
-    "entry_start": "2027-05-08",
-    "entry_end": "2027-05-29",
-    "entries": null
-  },
-  {
-    "id": "m2DeCWv6oc",
-    "type": "NOME-B",
-    "levels": "AVO (La)",
-    "date": "19.06.2027",
-    "date_sort": "2027-06-19T00:00:00+03:00",
-    "end_date_sort": "2027-06-19T00:00:00+03:00",
-    "entry_date": "08.05.-29.05.",
-    "location": "Tuusniemi",
-    "coordinates": [
-      62.8129715,
-      28.473989
-    ],
-    "name": "Nome-B AVO Tuusniemi",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Kirsi-Marja Ovaskainen",
-      "phone": "",
-      "email": "ovaskainen.kirsi@gmail.com"
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Hiltunen Niko"
-    ],
-    "description": "Etusijalla jäsenet ja kutsutut.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "AVO",
-        "date": "2027-06-19T00:00:00.000+03:00",
-        "judge": []
-      }
-    ],
-    "places": null,
     "state": "tentative",
     "entry_start": "2027-05-08",
     "entry_end": "2027-05-29",
@@ -2712,27 +2712,27 @@
     "classes": [
       {
         "class": "ALO",
-        "judge": [],
-        "date": "2027-07-11T00:00:00.000+03:00",
-        "groups": [
-          "kp"
-        ]
-      },
-      {
-        "class": "AVO",
-        "date": "2027-07-11T00:00:00.000+03:00",
+        "date": "2027-07-10T21:00:00.000Z",
         "groups": [
           "kp"
         ],
         "judge": []
       },
       {
+        "class": "AVO",
+        "date": "2027-07-10T21:00:00.000Z",
         "groups": [
           "kp"
         ],
-        "judge": [],
+        "judge": []
+      },
+      {
         "class": "VOI",
-        "date": "2027-07-11T00:00:00.000+03:00"
+        "date": "2027-07-10T21:00:00.000Z",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
       }
     ],
     "places": 40,
@@ -3241,6 +3241,55 @@
     "entries": 0
   },
   {
+    "id": "4tCd7GIQUw",
+    "type": "NOME-B",
+    "levels": "ALO (Su), AVO (La)",
+    "date": "24.-25.07.2027",
+    "date_sort": "2027-07-24T00:00:00+03:00",
+    "end_date_sort": "2027-07-25T23:59:59.999000+03:00",
+    "entry_date": "12.06.-03.07.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "Nome-B AVO (damikoe) ALO, Kuopio",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Jonna Mykkänen",
+      "phone": "",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "secretary": {
+      "name": "Jonna Mykkänen",
+      "phone": "",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Huom! Lauantain AVO koe järjestetään Damikokeena!\nEtusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "judge": [],
+        "date": "2027-07-23T21:00:00.000Z",
+        "class": "AVO"
+      },
+      {
+        "date": "2027-07-24T21:00:00.000Z",
+        "judge": [],
+        "class": "ALO"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-12",
+    "entry_end": "2027-07-03",
+    "entries": null
+  },
+  {
     "id": "dELdf-qmwV",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La)",
@@ -3291,55 +3340,6 @@
       }
     ],
     "places": 40,
-    "state": "tentative",
-    "entry_start": "2027-06-12",
-    "entry_end": "2027-07-03",
-    "entries": null
-  },
-  {
-    "id": "4tCd7GIQUw",
-    "type": "NOME-B",
-    "levels": "ALO (Su), AVO (La)",
-    "date": "24.-25.07.2027",
-    "date_sort": "2027-07-24T00:00:00+03:00",
-    "end_date_sort": "2027-07-25T23:59:59.999000+03:00",
-    "entry_date": "12.06.-03.07.",
-    "location": "Kuopio",
-    "coordinates": [
-      62.8924641,
-      27.6783597
-    ],
-    "name": "Nome-B AVO (damikoe) ALO, Kuopio",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Jonna Mykkänen",
-      "phone": "",
-      "email": "mykkanenjonna84@gmail.com"
-    },
-    "secretary": {
-      "name": "Jonna Mykkänen",
-      "phone": "",
-      "email": "mykkanenjonna84@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Taru"
-    ],
-    "description": "Huom! Lauantain AVO koe järjestetään Damikokeena!\nEtusijalla jäsenet ja kutsutut.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "judge": [],
-        "date": "2027-07-23T21:00:00.000Z",
-        "class": "AVO"
-      },
-      {
-        "date": "2027-07-24T21:00:00.000Z",
-        "judge": [],
-        "class": "ALO"
-      }
-    ],
-    "places": null,
     "state": "tentative",
     "entry_start": "2027-06-12",
     "entry_end": "2027-07-03",
