@@ -5,6 +5,18 @@
   },
   "releases": [
     {
+      "version": "1.15.1",
+      "date": "2026-10-20",
+      "title": "Vuoden 2027 kokeet ovat täällä",
+      "items": [
+        "Keltainen vuosinauha otsikossa kertoo, kun seuraavan vuoden kokeet on julkaistu",
+        "Uusi vuosisuodatin: rajaa lista kuluvan tai seuraavan vuoden kokeisiin",
+        "Sovellus näyttää nyt myös seuraavan vuoden kokeet heti, kun SNJ julkaisee kalenterin",
+        "Kokeen tiedoista näkee lähtölistan, kun osallistujat on kutsuttu",
+        "Android-sovellus on nyt optimoitu ja aiempaa kevyempi"
+      ]
+    },
+    {
       "version": "1.15.0",
       "date": "2026-10-20",
       "title": "Vuoden 2027 kokeet ovat täällä",

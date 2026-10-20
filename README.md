@@ -86,6 +86,12 @@ MIT
 
 ## Versiohistoria
 
+### v1.15.1 (2026-10-20)
+- **Android**: R8-optimointi ja obfuskointi päälle release-buildeissa
+  (`enableProguardInReleaseBuilds = true`). Google Play varoitti, että
+  DEX-koodin obfuskointiaste oli vain 2 %
+- Versiot linjattu 1.15.1:een kaikilla alustoilla (Android versionCode 15)
+
 ### v1.15.0 (2026-10-20)
 - **Vuosinauha**: keltainen vinottainen nauha otsikon kulmassa kertoo, että
   seuraavan vuoden kokeet on julkaistu (näkyy kun seuraavan vuoden kokeita on
