@@ -52,6 +52,17 @@ target 'Koetutka' do
     # setup and does not call install_modules_dependencies, so it misses the
     # ReactCodegen header path and can't find <RNShareSpec/RNShareSpec.h>
     # under RN 0.77 + new architecture. Add the path back for its target.
+    # Xcode 27 rejects iOS deployment targets below 15.0. A few pods (e.g.
+    # RNCAsyncStorage's resource bundle) still declare 13.4; lift them to the
+    # RN 0.77 minimum.
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 15.1
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.1'
+        end
+      end
+    end
+
     installer.pods_project.targets.each do |target|
       next unless target.name == 'RNShare'
       target.build_configurations.each do |config|
