@@ -1,6 +1,6 @@
 {
   "name": "@koetutka/mobile",
-  "version": "1.14.1",
+  "version": "1.15.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",

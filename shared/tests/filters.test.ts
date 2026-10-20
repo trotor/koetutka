@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { addDistances, filterEvents, isRegistrationOpen, isPast } from '../src/filters.js';
+import { addDistances, eventYears, filterEvents, isRegistrationOpen, isPast } from '../src/filters.js';
 import type { Event, UserLocation } from '../src/types.js';
 
 function makeEvent(overrides: Partial<Event> = {}): Event {
@@ -250,5 +250,30 @@ describe('isPast', () => {
     expect(
       isPast(ev('2026-04-04T00:00:00+03:00', '2026-04-06T00:00:00+03:00'), new Date('2026-04-05')),
     ).toBe(false);
+  });
+});
+
+describe('filterEvents: activeYears', () => {
+  const y26 = makeEvent({ id: 'a', date_sort: '2026-11-01T00:00:00+02:00' });
+  const y27 = makeEvent({ id: 'b', date_sort: '2027-03-13T00:00:00+02:00' });
+
+  test('tyhjä vuosijoukko näyttää kaikki vuodet', () => {
+    expect(filterEvents([y26, y27], { activeYears: new Set() }).map((e) => e.id)).toEqual(['a', 'b']);
+  });
+
+  test('rajaa valittuihin vuosiin kokeen alkupäivän mukaan', () => {
+    expect(filterEvents([y26, y27], { activeYears: new Set([2027]) }).map((e) => e.id)).toEqual(['b']);
+    expect(filterEvents([y26, y27], { activeYears: new Set([2026, 2027]) }).map((e) => e.id)).toEqual(['a', 'b']);
+  });
+});
+
+describe('eventYears', () => {
+  test('palauttaa kokeiden vuodet nousevasti ilman duplikaatteja', () => {
+    const events = [
+      makeEvent({ date_sort: '2027-03-13T00:00:00+02:00' }),
+      makeEvent({ date_sort: '2026-11-01T00:00:00+02:00' }),
+      makeEvent({ date_sort: '2027-05-01T00:00:00+03:00' }),
+    ];
+    expect(eventYears(events)).toEqual([2026, 2027]);
   });
 });

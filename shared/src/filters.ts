@@ -31,6 +31,7 @@ export function addDistances(
  * - searchTerm: case-insensitive match locationiin, typeen, levelsiin, nimeen, organizeriin
  * - activeTypes: jos asetettu, vain mainitut tyypit
  * - activeLevels: jos asetettu, levels-merkkijonon pitää sisältää joku tasoista
+ * - activeYears: jos asetettu, kokeen alkupäivän vuoden pitää olla joukossa
  * - maxDistanceKm: jos asetettu ja eventillä on distance, pitää olla ≤ tämä
  * - hidePast: jos true, pudottaa eventit joiden end_date_sort (tai date_sort) on
  *   ennen `today`-päivää
@@ -109,6 +110,16 @@ export function isPast(event: Event, today: Date = new Date()): boolean {
   return end < todayISO;
 }
 
+/** Kokeen vuosi alkupäivän (`date_sort`) mukaan. */
+export function eventYear(event: Event): number {
+  return parseInt(event.date_sort.slice(0, 4), 10);
+}
+
+/** Kokeissa esiintyvät vuodet nousevassa järjestyksessä (vuosisuodattimen vaihtoehdot). */
+export function eventYears(events: Event[]): number[] {
+  return [...new Set(events.map(eventYear))].filter((y) => !Number.isNaN(y)).sort((a, b) => a - b);
+}
+
 export function filterEvents(
   events: Event[],
   options: FilterOptions,
@@ -149,6 +160,10 @@ export function filterEvents(
         event.levels.includes(lvl),
       );
       if (!hasAny) return false;
+    }
+
+    if (options.activeYears && options.activeYears.size > 0) {
+      if (!options.activeYears.has(eventYear(event))) return false;
     }
 
     if (

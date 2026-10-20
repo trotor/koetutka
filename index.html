@@ -14,6 +14,7 @@
         <header>
             <h1>Koetutka</h1>
             <p>Noutajakokeet lähellä sinua</p>
+            <div class="year-ribbon" id="yearRibbon" hidden></div>
         </header>
 
         <div class="app-promo" id="appPromo" role="complementary" aria-label="Koetutka-sovellus">
@@ -112,6 +113,11 @@
                 <label>Taso:</label>
                 <div class="pill-container" id="levelPills"></div>
             </div>
+
+            <div class="filter-row" id="yearFilterRow" hidden>
+                <label>Vuosi:</label>
+                <div class="pill-container" id="yearPills"></div>
+            </div>
         </div>
 
         <div class="table-container">
@@ -177,7 +183,7 @@
                 <span class="footer-separator">|</span>
                 <a href="https://github.com/trotor/koetutka" target="_blank" rel="noopener">GitHub</a>
                 <span class="footer-separator">|</span>
-                <span id="version">v1.14.1</span>
+                <span id="version">v1.15.0</span>
             </p>
         </footer>
     </div>
@@ -200,6 +206,8 @@
             formatStartlistDog,
             dataYears,
             mergeYearData,
+            newDataYear,
+            eventYears,
         } from './shared/dist/index.js';
 
         // Expose shared logic to the classic script below (which can't use import).
@@ -220,6 +228,8 @@
             formatStartlistDog,
             dataYears,
             mergeYearData,
+            newDataYear,
+            eventYears,
         };
 
         // Modules are deferred, so this runs after the classic script has defined

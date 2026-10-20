@@ -28,3 +28,15 @@ export function mergeYearData(lists: Event[][]): Event[] {
     (a.date_sort || '').localeCompare(b.date_sort || ''),
   );
 }
+
+/**
+ * Seuraava vuosi, jos sen kokeita on jo ladattu (SNJ julkaisee kalenterin
+ * syksyllä), muuten null. Käytetään otsikon vuosinauhaan, joka kertoo
+ * käyttäjälle uuden vuoden kokeiden tulleen. Vuoden vaihtuessa nauha poistuu
+ * itsestään, kunnes taas seuraavan vuoden data ilmestyy.
+ */
+export function newDataYear(events: Event[], today: Date = new Date()): number | null {
+  const next = today.getFullYear() + 1;
+  const prefix = `${next}-`;
+  return events.some((e) => e.date_sort?.startsWith(prefix)) ? next : null;
+}

@@ -123,6 +123,8 @@ export interface FilterOptions {
   searchTerm?: string;
   activeTypes?: Set<string>;
   activeLevels?: Set<string>;
+  /** Jos asetettu, vain kokeet joiden alkupäivä osuu johonkin näistä vuosista. */
+  activeYears?: Set<number>;
   maxDistanceKm?: number | null;
   hidePast?: boolean;
   /** Jos true, näytetään vain kokeet joiden ilmoittautuminen on parhaillaan auki. */

@@ -86,6 +86,14 @@ MIT
 
 ## Versiohistoria
 
+### v1.15.0 (2026-10-20)
+- **Vuosinauha**: keltainen vinottainen nauha otsikon kulmassa kertoo, että
+  seuraavan vuoden kokeet on julkaistu (näkyy kun seuraavan vuoden kokeita on
+  ladattu; poistuu itsestään vuodenvaihteessa). Sama verkkosivulla ja sovelluksessa
+- **Vuosisuodatin**: kokeet voi rajata vuoden mukaan, kun dataa on useammalta
+  vuodelta (shared: `eventYears`, `FilterOptions.activeYears`)
+- Kaikki alustat versioon 1.15.0 (iOS build 12, Android versionCode 14)
+
 ### v1.14.1 (2026-09-30)
 - **Kaksi vuotta kerralla**: verkkosivu lataa kuluvan ja seuraavan vuoden
   kokeet ja yhdistää ne. Aiemmin seuraavan vuoden tiedoston ilmestyminen

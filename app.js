@@ -96,6 +96,7 @@
         let currentSort = { column: 'distance', ascending: true };
         let activeTypes = new Set(); // Aktiiviset lajit (kaikki oletuksena)
         let activeLevels = new Set(); // Aktiiviset tasot (kaikki oletuksena)
+        let activeYears = new Set(); // Aktiiviset vuodet (kaikki oletuksena)
         let hidePastEvents = true; // Piilota menneet tapahtumat oletuksena
         let onlyRegistrationOpen = false; // Näytä vain ne joiden ilmoittautuminen on auki
 
@@ -298,7 +299,7 @@
                 // syksyllä julkaistu seuraavan vuoden kalenteri ei piilota
                 // kuluvan vuoden loppuvuoden kokeita. Puuttuva tiedosto (esim.
                 // seuraava vuosi ennen SNJ:n julkaisua) jätetään pois.
-                const { dataYears, mergeYearData } = window.koetutkaShared;
+                const { dataYears, mergeYearData, newDataYear } = window.koetutkaShared;
                 const years = dataYears();
                 const results = await Promise.all(years.map(async year => {
                     try {
@@ -319,6 +320,16 @@
                 document.getElementById('updateDate').textContent = loadedYears.length > 1
                     ? `Vuodet ${loadedYears[0]}–${loadedYears[loadedYears.length - 1]}`
                     : `Vuosi ${loadedYears[0]}`;
+
+                // Keltainen vuosinauha otsikossa kertoo, että seuraavan vuoden
+                // kokeet ovat tulleet.
+                const ribbonYear = newDataYear(kokeet);
+                const ribbon = document.getElementById('yearRibbon');
+                if (ribbonYear) {
+                    ribbon.textContent = ribbonYear;
+                    ribbon.setAttribute('aria-label', `Vuoden ${ribbonYear} kokeet julkaistu`);
+                    ribbon.hidden = false;
+                }
 
                 calculateDistances();
                 populateFilters();
@@ -374,6 +385,20 @@
                 pill.onclick = () => toggleLevelPill(level);
                 levelPillsContainer.appendChild(pill);
             });
+
+            // Luo vuosipillerit, kun dataa on useammalta vuodelta (syksyllä
+            // kuluva ja seuraava vuosi)
+            const years = window.koetutkaShared.eventYears(kokeet);
+            const yearPillsContainer = document.getElementById('yearPills');
+            years.forEach(year => {
+                const pill = document.createElement('div');
+                pill.className = 'pill';
+                pill.dataset.year = year;
+                pill.innerHTML = `<span class="pill-label">${year}</span> <span class="pill-count"></span>`;
+                pill.onclick = () => toggleYearPill(year);
+                yearPillsContainer.appendChild(pill);
+            });
+            document.getElementById('yearFilterRow').hidden = years.length < 2;
         }
 
         // Päivitä pillien lukumäärät
@@ -381,6 +406,7 @@
             // Laske tyyppimäärät (huomioi vain tasosuodatus)
             const typeCounts = {};
             const levelCounts = { 'ALO': 0, 'AVO': 0, 'VOI': 0 };
+            const yearCounts = {};
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
 
             const today = new Date().toISOString().split('T')[0];
@@ -404,7 +430,6 @@
 
                 if (!matchesSearch) return;
 
-                // Tyyppimäärät (suodatettu tasoilla)
                 let matchesLevel = activeLevels.size === 0;
                 if (!matchesLevel) {
                     for (const level of activeLevels) {
@@ -414,18 +439,27 @@
                         }
                     }
                 }
-                if (matchesLevel) {
+                const matchesType = activeTypes.size === 0 || activeTypes.has(koe.type);
+                const year = koeYear(koe);
+                const matchesYear = activeYears.size === 0 || activeYears.has(year);
+
+                // Tyyppimäärät (suodatettu tasoilla ja vuosilla)
+                if (matchesLevel && matchesYear) {
                     typeCounts[koe.type] = (typeCounts[koe.type] || 0) + 1;
                 }
 
-                // Tasomäärät (suodatettu tyypeillä)
-                const matchesType = activeTypes.size === 0 || activeTypes.has(koe.type);
-                if (matchesType) {
+                // Tasomäärät (suodatettu tyypeillä ja vuosilla)
+                if (matchesType && matchesYear) {
                     ['ALO', 'AVO', 'VOI'].forEach(level => {
                         if (koe.levels.includes(level)) {
                             levelCounts[level]++;
                         }
                     });
+                }
+
+                // Vuosimäärät (suodatettu tyypeillä ja tasoilla)
+                if (matchesType && matchesLevel) {
+                    yearCounts[year] = (yearCounts[year] || 0) + 1;
                 }
             });
 
@@ -442,6 +476,14 @@
             document.querySelectorAll('#levelPills .pill').forEach(pill => {
                 const level = pill.dataset.level;
                 const count = levelCounts[level] || 0;
+                const countEl = pill.querySelector('.pill-count');
+                countEl.textContent = count > 0 ? `(${count})` : '(0)';
+                countEl.style.opacity = count > 0 ? '1' : '0.5';
+            });
+
+            // Päivitä vuosipillit
+            document.querySelectorAll('#yearPills .pill').forEach(pill => {
+                const count = yearCounts[pill.dataset.year] || 0;
                 const countEl = pill.querySelector('.pill-count');
                 countEl.textContent = count > 0 ? `(${count})` : '(0)';
                 countEl.style.opacity = count > 0 ? '1' : '0.5';
@@ -472,6 +514,26 @@
                 pill.classList.remove('active');
             } else {
                 activeLevels.add(level);
+                pill.classList.add('active');
+            }
+
+            sortAndRender();
+        }
+
+        // Kokeen vuosi alkupäivän mukaan
+        function koeYear(koe) {
+            return parseInt((koe.date_sort || '').slice(0, 4), 10);
+        }
+
+        // Vaihda vuosipillerin tilaa
+        function toggleYearPill(year) {
+            const pill = document.querySelector(`#yearPills .pill[data-year="${year}"]`);
+
+            if (activeYears.has(year)) {
+                activeYears.delete(year);
+                pill.classList.remove('active');
+            } else {
+                activeYears.add(year);
                 pill.classList.add('active');
             }
 
@@ -616,7 +678,9 @@
                     }
                 }
 
-                return matchesSearch && matchesType && matchesLevel;
+                const matchesYear = activeYears.size === 0 || activeYears.has(koeYear(koe));
+
+                return matchesSearch && matchesType && matchesLevel && matchesYear;
             });
 
             // Järjestä

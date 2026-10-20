@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { View, Text, Pressable, ScrollView, StyleSheet } from 'react-native';
+import { eventYears } from '@koetutka/shared';
 import { useStore } from '@/lib/store';
 
 const TYPES = ['NOME-B', 'NOU', 'NOWT', 'NOME-A'];
@@ -18,11 +19,17 @@ export function FilterChips() {
   const hiddenCount = useStore((s) => s.hidden.size);
   const showHidden = useStore((s) => s.showHidden);
   const setShowHidden = useStore((s) => s.setShowHidden);
+  const events = useStore((s) => s.events);
+  // Vuosisuodatin näytetään vain kun dataa on useammalta vuodelta (syksyllä
+  // kuluva ja seuraava vuosi). Valintaa ei tallenneta, ettei vanha vuosi jää
+  // vuodenvaihteen yli suodattamaan listaa tyhjäksi.
+  const years = useMemo(() => eventYears(events), [events]);
   const [expanded, setExpanded] = useState(false);
 
   const activeCount =
     (filters.activeTypes?.size ?? 0) +
     (filters.activeLevels?.size ?? 0) +
+    (filters.activeYears?.size ?? 0) +
     (filters.maxDistanceKm != null ? 1 : 0) +
     (filters.hidePast ? 1 : 0) +
     (filters.onlyRegistrationOpen ? 1 : 0) +
@@ -38,6 +45,12 @@ export function FilterChips() {
     const next = new Set(filters.activeLevels);
     if (next.has(level)) next.delete(level); else next.add(level);
     setFilters({ activeLevels: next });
+  }
+
+  function toggleYear(year: number) {
+    const next = new Set(filters.activeYears);
+    if (next.has(year)) next.delete(year); else next.add(year);
+    setFilters({ activeYears: next });
   }
 
   return (
@@ -84,6 +97,25 @@ export function FilterChips() {
               </Pressable>
             ))}
           </ScrollView>
+
+          {years.length > 1 && (
+            <>
+              <Text style={styles.label}>Vuosi</Text>
+              <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.row}>
+                {years.map((y) => (
+                  <Pressable
+                    key={y}
+                    onPress={() => toggleYear(y)}
+                    style={[styles.chip, filters.activeYears?.has(y) && styles.chipActive]}
+                  >
+                    <Text style={[styles.chipText, filters.activeYears?.has(y) && styles.chipTextActive]}>
+                      {y}
+                    </Text>
+                  </Pressable>
+                ))}
+              </ScrollView>
+            </>
+          )}
 
           {userLocation && (
             <>

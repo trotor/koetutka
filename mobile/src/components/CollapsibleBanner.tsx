@@ -1,5 +1,7 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { Animated, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { newDataYear } from '@koetutka/shared';
+import { useStore } from '@/lib/store';
 
 const banner = require('../../assets/banner.jpg');
 const BANNER_ASPECT = 1536 / 270;
@@ -12,6 +14,8 @@ interface Props {
 
 export function CollapsibleBanner({ scrollY, forceCollapsed = false }: Props) {
   const { width } = useWindowDimensions();
+  const events = useStore((s) => s.events);
+  const ribbonYear = useMemo(() => newDataYear(events), [events]);
   const fullHeight = Math.round(width / BANNER_ASPECT);
   const distance = fullHeight - COLLAPSED_HEIGHT;
 
@@ -65,6 +69,15 @@ export function CollapsibleBanner({ scrollY, forceCollapsed = false }: Props) {
       >
         <Text style={styles.compactTitle}>Koetutka</Text>
       </Animated.View>
+      {ribbonYear != null && (
+        <View
+          style={styles.ribbon}
+          pointerEvents="none"
+          accessibilityLabel={`Vuoden ${ribbonYear} kokeet julkaistu`}
+        >
+          <Text style={styles.ribbonText}>{ribbonYear}</Text>
+        </View>
+      )}
     </Animated.View>
   );
 }
@@ -94,5 +107,28 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: '700',
+  },
+  // Vinottainen keltainen vuosinauha oikeassa yläkulmassa. Mahtuu myös
+  // kutistettuun 56 px palkkiin, joten se näkyy koko ajan.
+  ribbon: {
+    position: 'absolute',
+    top: 10,
+    right: -30,
+    width: 110,
+    paddingVertical: 2,
+    backgroundColor: '#f5c518',
+    transform: [{ rotate: '45deg' }],
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.35,
+    shadowRadius: 3,
+    shadowOffset: { width: 0, height: 1 },
+    elevation: 4,
+  },
+  ribbonText: {
+    color: '#1a3d16',
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 1,
   },
 });

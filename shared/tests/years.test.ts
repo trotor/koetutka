@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { dataYears, mergeYearData } from '../src/years.js';
+import { dataYears, mergeYearData, newDataYear } from '../src/years.js';
 import type { Event } from '../src/types.js';
 
 function makeEvent(id: string | undefined, dateSort: string): Event {
@@ -61,5 +61,24 @@ describe('mergeYearData', () => {
   test('tyhjät listat', () => {
     expect(mergeYearData([])).toEqual([]);
     expect(mergeYearData([[], []])).toEqual([]);
+  });
+});
+
+describe('newDataYear', () => {
+  const today = new Date(2026, 9, 20);
+
+  test('palauttaa seuraavan vuoden, kun sen kokeita on ladattu', () => {
+    const events = [makeEvent('a', '2026-11-01T00:00:00+02:00'), makeEvent('b', '2027-03-13T00:00:00+02:00')];
+    expect(newDataYear(events, today)).toBe(2027);
+  });
+
+  test('null, kun seuraavan vuoden kokeita ei ole', () => {
+    expect(newDataYear([makeEvent('a', '2026-11-01T00:00:00+02:00')], today)).toBeNull();
+    expect(newDataYear([], today)).toBeNull();
+  });
+
+  test('vuodenvaihteen jälkeen kuluvan vuoden kokeet eivät enää ole uusia', () => {
+    const events = [makeEvent('b', '2027-03-13T00:00:00+02:00')];
+    expect(newDataYear(events, new Date(2027, 0, 1))).toBeNull();
   });
 });
