@@ -1,5 +1,45 @@
 [
   {
+    "id": "bqTqc5P0id",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "13.02.2027",
+    "date_sort": "2027-02-13T00:00:00+02:00",
+    "end_date_sort": "2027-02-13T00:00:00+02:00",
+    "entry_date": "11.01.-31.01.",
+    "location": "Salo",
+    "coordinates": [
+      60.3879158,
+      23.1248694
+    ],
+    "name": "",
+    "organizer": "SALON SEUDUN NOUTAJAT R.Y.",
+    "official": {
+      "name": "Petteri Hirvonen",
+      "phone": "0503568019",
+      "email": "hirvonen.petteri@gmail.com"
+    },
+    "secretary": {
+      "name": "Nina Lindholm",
+      "phone": "0405027095",
+      "email": "nina.lindholm@saunalahti.fi"
+    },
+    "judges": [
+      "Sarkkinen Tomi"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 120
+    },
+    "cost_member": "",
+    "classes": [],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-01-11",
+    "entry_end": "2027-01-31",
+    "entries": null
+  },
+  {
     "id": "KtBRvLp4Gg",
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (La)",
@@ -4569,12 +4609,12 @@
     "name": "",
     "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "",
+      "name": "Pirjo Kelloperä",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Maarit Martikainen",
       "phone": "",
       "email": ""
     },
@@ -4583,10 +4623,10 @@
     ],
     "description": "",
     "cost": {
-      "normal": 50
+      "normal": 55
     },
     "cost_member": {
-      "normal": 45
+      "normal": 50
     },
     "classes": [
       {
