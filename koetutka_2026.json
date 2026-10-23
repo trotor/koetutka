@@ -12043,7 +12043,7 @@
       {
         "class": "VOI",
         "date": "2026-10-23T21:00:00.000Z",
-        "entries": 20,
+        "entries": 19,
         "groups": [
           "kp"
         ],
@@ -12057,7 +12057,7 @@
     "state": "invited",
     "entry_start": "2026-09-12",
     "entry_end": "2026-10-03",
-    "entries": 26
+    "entries": 25
   },
   {
     "id": "qh8E-wtej1",

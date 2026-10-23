@@ -1199,14 +1199,14 @@
     "name": "Novascotiannoutajien WT-mestaruus",
     "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
     "official": {
-      "name": "",
+      "name": "Riitta Väisänen",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Minna Helenius",
       "phone": "",
-      "email": ""
+      "email": "minna.m.helenius@gmail.com"
     },
     "judges": [
       "Ahola Pauliina",
@@ -1219,19 +1219,19 @@
     "cost_member": "",
     "classes": [
       {
-        "judge": [],
-        "date": "2027-05-23T00:00:00.000+03:00",
-        "class": "ALO"
+        "class": "ALO",
+        "date": "2027-05-22T21:00:00.000Z",
+        "judge": []
       },
       {
-        "judge": [],
         "class": "AVO",
-        "date": "2027-05-23T00:00:00.000+03:00"
+        "date": "2027-05-22T21:00:00.000Z",
+        "judge": []
       },
       {
-        "date": "2027-05-23T00:00:00.000+03:00",
-        "judge": [],
-        "class": "VOI"
+        "class": "VOI",
+        "date": "2027-05-22T21:00:00.000Z",
+        "judge": []
       }
     ],
     "places": 80,
@@ -1937,7 +1937,7 @@
     "name": "",
     "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
     "official": {
-      "name": "",
+      "name": "Asta Muilu",
       "phone": "",
       "email": ""
     },
