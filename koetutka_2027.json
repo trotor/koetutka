@@ -229,22 +229,25 @@
       60.7788065,
       24.9735698
     ],
-    "name": "",
+    "name": "Working Test, Hausjärvi",
     "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "",
+      "name": "Heidi Savander",
       "phone": "",
-      "email": ""
+      "email": "heidi.savander@gmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Anu Sinkkonen",
       "phone": "",
-      "email": ""
+      "email": "anu.sinkkonen@gmail.com"
     },
     "judges": [
-      "Salo Mervi"
+      "Salo Mervi",
+      "Torila Mika",
+      "Vitikka Minja",
+      "Väisänen Riitta"
     ],
-    "description": "",
+    "description": "Hausjärven Niklandiassa kahvila-ravintola josta voi ostaa lounaan sekä kahvilatuotteita. Tiedustele edullista mökkimajoitusta suoraan Niklandiasta!",
     "cost": "",
     "cost_member": "",
     "classes": [
@@ -273,7 +276,7 @@
         ]
       }
     ],
-    "places": null,
+    "places": 80,
     "state": "tentative",
     "entry_start": "2027-03-06",
     "entry_end": "2027-03-27",

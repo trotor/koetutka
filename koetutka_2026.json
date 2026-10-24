@@ -12100,7 +12100,7 @@
     "state": "invited",
     "entry_start": "2026-09-21",
     "entry_end": "2026-10-18",
-    "entries": 42
+    "entries": 39
   },
   {
     "id": "sK51ViatiO",
@@ -12426,7 +12426,7 @@
       {
         "class": "VOI",
         "date": "2026-11-07T22:00:00.000Z",
-        "entries": 19,
+        "entries": 20,
         "groups": [
           "kp"
         ],
@@ -12455,7 +12455,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
-    "entries": 19
+    "entries": 20
   },
   {
     "id": "F5iXiF5Oto",
