@@ -1925,6 +1925,56 @@
     "entries": null
   },
   {
+    "id": "bA-QzIjNC_",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T00:00:00+03:00",
+    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "entry_date": "02.05.-23.05.",
+    "location": "Hämeenlinna",
+    "coordinates": [
+      60.9966192,
+      24.465141
+    ],
+    "name": "",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Marjaana Kousa",
+      "phone": "0407516435",
+      "email": "marjaana.kousa@gmail.com"
+    },
+    "secretary": {
+      "name": "Tanja Porttikallio",
+      "phone": "0407066768",
+      "email": "tanja.porttikallio@gmail.com"
+    },
+    "judges": [
+      "Särkänlahti Jari"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-06-12T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 4055276,
+            "name": "Särkänlahti Jari",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-02",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
     "id": "9_0-430dtk",
     "type": "NOU",
     "levels": "N/A",
@@ -1957,56 +2007,6 @@
     "cost_member": "",
     "classes": [],
     "places": 16,
-    "state": "tentative",
-    "entry_start": "2027-05-02",
-    "entry_end": "2027-05-23",
-    "entries": null
-  },
-  {
-    "id": "bA-QzIjNC_",
-    "type": "NOME-B",
-    "levels": "ALO (Su)",
-    "date": "13.06.2027",
-    "date_sort": "2027-06-13T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T00:00:00+03:00",
-    "entry_date": "02.05.-23.05.",
-    "location": "Hämeenlinna",
-    "coordinates": [
-      60.9966192,
-      24.465141
-    ],
-    "name": "",
-    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Särkänlahti Jari"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "ALO",
-        "date": "2027-06-13T00:00:00.000+03:00",
-        "judge": [
-          {
-            "id": 4055276,
-            "name": "Särkänlahti Jari",
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": 15,
     "state": "tentative",
     "entry_start": "2027-05-02",
     "entry_end": "2027-05-23",
@@ -2355,6 +2355,44 @@
     "entries": null
   },
   {
+    "id": "AoXdmNGP5V",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T00:00:00+03:00",
+    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Hämeenlinna",
+    "coordinates": [
+      60.9966192,
+      24.465141
+    ],
+    "name": "",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Noora Lavonen",
+      "phone": "0503396132",
+      "email": "noora.lavonen@gmail.com"
+    },
+    "secretary": {
+      "name": "Tiina Asovaara",
+      "phone": "0407066768",
+      "email": "asovaara@icloud.com"
+    },
+    "judges": [
+      "Salonen Tommy"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
     "id": "8-ZNKb-QEY",
     "type": "NOME-B",
     "levels": "ALO (La)",
@@ -2399,44 +2437,6 @@
       }
     ],
     "places": 15,
-    "state": "tentative",
-    "entry_start": "2027-05-22",
-    "entry_end": "2027-06-12",
-    "entries": null
-  },
-  {
-    "id": "AoXdmNGP5V",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "03.07.2027",
-    "date_sort": "2027-07-03T00:00:00+03:00",
-    "end_date_sort": "2027-07-03T00:00:00+03:00",
-    "entry_date": "22.05.-12.06.",
-    "location": "Hämeenlinna",
-    "coordinates": [
-      60.9966192,
-      24.465141
-    ],
-    "name": "",
-    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Salonen Tommy"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [],
-    "places": 16,
     "state": "tentative",
     "entry_start": "2027-05-22",
     "entry_end": "2027-06-12",
@@ -4971,6 +4971,56 @@
     "entries": null
   },
   {
+    "id": "5ftZBHdY1-",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "29.08.2027",
+    "date_sort": "2027-08-29T00:00:00+03:00",
+    "end_date_sort": "2027-08-29T00:00:00+03:00",
+    "entry_date": "28.07.-18.08.",
+    "location": "Hausjärvi",
+    "coordinates": [
+      60.7788065,
+      24.9735698
+    ],
+    "name": "Tollerinome",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Maija Mäkinen",
+      "phone": "040 765 0719",
+      "email": "maija.h.makinen@gmail.com"
+    },
+    "secretary": {
+      "name": "Marja-Terttu Keränen",
+      "phone": "0407564059",
+      "email": "malla_keranen@hotmail.com"
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "Koe toteutetaan yhteistyössä Novascotiannoutajat ry:n kanssa. Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla sekä Kanta-Hämeen Noutajakoirayhdistyksen jäsenillä. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 3 € pankkikulu.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-08-28T21:00:00.000Z",
+        "judge": [
+          {
+            "id": 842408,
+            "name": "Fontell Ari-Pekka",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-28",
+    "entry_end": "2027-08-18",
+    "entries": null
+  },
+  {
     "id": "LytmIQ3UTw",
     "type": "NOME-B",
     "levels": "ALO (Su)",
@@ -5064,56 +5114,6 @@
     "state": "tentative",
     "entry_start": "2027-07-19",
     "entry_end": "2027-08-09",
-    "entries": null
-  },
-  {
-    "id": "5ftZBHdY1-",
-    "type": "NOME-B",
-    "levels": "AVO (Su)",
-    "date": "29.08.2027",
-    "date_sort": "2027-08-29T00:00:00+03:00",
-    "end_date_sort": "2027-08-29T00:00:00+03:00",
-    "entry_date": "28.07.-18.08.",
-    "location": "Hausjärvi",
-    "coordinates": [
-      60.7788065,
-      24.9735698
-    ],
-    "name": "Tollerinome",
-    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Fontell Ari-Pekka"
-    ],
-    "description": "Koe toteutetaan yhteistyössä Novascotiannoutajat ry:n kanssa. Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla sekä Kanta-Hämeen Noutajakoirayhdistyksen jäsenillä. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 3 € pankkikulu.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "date": "2027-08-29T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": [
-          {
-            "name": "Fontell Ari-Pekka",
-            "official": true,
-            "id": 842408
-          }
-        ]
-      }
-    ],
-    "places": 15,
-    "state": "tentative",
-    "entry_start": "2027-07-28",
-    "entry_end": "2027-08-18",
     "entries": null
   },
   {
