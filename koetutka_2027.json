@@ -1244,6 +1244,44 @@
     "entries": null
   },
   {
+    "id": "yTacWW2ECq",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "23.05.2027",
+    "date_sort": "2027-05-23T00:00:00+03:00",
+    "end_date_sort": "2027-05-23T00:00:00+03:00",
+    "entry_date": "11.04.-02.05.",
+    "location": "Pöytyä",
+    "coordinates": [
+      60.7409756,
+      22.6282676
+    ],
+    "name": "",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Montonen Mikael"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-11",
+    "entry_end": "2027-05-02",
+    "entries": null
+  },
+  {
     "id": "lUt0MwChUu",
     "type": "NOME-B",
     "levels": "ALO (La)",
@@ -3383,6 +3421,56 @@
       }
     ],
     "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-06-12",
+    "entry_end": "2027-07-03",
+    "entries": null
+  },
+  {
+    "id": "oA_54yhTY9",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "24.07.2027",
+    "date_sort": "2027-07-24T00:00:00+03:00",
+    "end_date_sort": "2027-07-24T00:00:00+03:00",
+    "entry_date": "12.06.-03.07.",
+    "location": "Uusikaupunki",
+    "coordinates": [
+      60.8016507,
+      21.4086143
+    ],
+    "name": "",
+    "organizer": "AURAN NUUSKUT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Särkänlahti Jari"
+    ],
+    "description": "Koe on Varsinais-Suomen vuoden 2026 NOME-B Piirinmestaruuskoe. Kokeeseen etusijalla ovat NOME-B piirinmestaruuskokeen sääntöjen mukaisesti piirinmestaruudesta kilpailevat koirakot, sen jälkeen yhdistyksen jäsenet ja/tai kutsutut koirakot. ",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-07-24T00:00:00.000+03:00",
+        "judge": [
+          {
+            "id": 4055276,
+            "name": "Särkänlahti Jari",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 0,
     "state": "tentative",
     "entry_start": "2027-06-12",
     "entry_end": "2027-07-03",
