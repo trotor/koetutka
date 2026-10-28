@@ -12191,7 +12191,7 @@
         "entries": 17,
         "judge": [],
         "members": 10,
-        "state": "picked"
+        "state": "invited"
       },
       {
         "class": "VOI",
@@ -12206,7 +12206,7 @@
         ],
         "members": 18,
         "places": 0,
-        "state": "picked"
+        "state": "invited"
       },
       {
         "class": "ALO",
@@ -12214,11 +12214,11 @@
         "entries": 38,
         "judge": [],
         "members": 11,
-        "state": "picked"
+        "state": "invited"
       }
     ],
     "places": 60,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-09-19",
     "entry_end": "2026-10-10",
     "entries": 88
@@ -12265,7 +12265,7 @@
         ],
         "judge": [],
         "members": 7,
-        "state": "picked"
+        "state": "invited"
       },
       {
         "class": "VOI",
@@ -12276,11 +12276,11 @@
         ],
         "judge": [],
         "members": 12,
-        "state": "picked"
+        "state": "invited"
       }
     ],
     "places": 30,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-09-20",
     "entry_end": "2026-10-11",
     "entries": 41
@@ -12349,7 +12349,7 @@
     "date": "07.11.2026",
     "date_sort": "2026-11-07T00:00:00+02:00",
     "end_date_sort": "2026-11-07T23:59:59.999000+02:00",
-    "entry_date": "13.10.-25.10.",
+    "entry_date": "13.10.-01.11.",
     "location": "Kemiönsaari",
     "coordinates": [
       60.1650696,
@@ -12371,7 +12371,7 @@
       "Ahola Pauliina",
       "Sipola Miso"
     ],
-    "description": "Nordic Championship Flatcoated Retrievers NCFCR2026 will be held at Westankärr Manor on Kimitoön (Kemiönsaari) on November 7–8, 2026. Spectators are also welcome to attend (advance registration required; further details to follow closer to the event).\n\nOn Saturday, November 7, the individual championship will be decided through official A and B tests. Nine dog-and-handler pairs will be selected for the national squad, from which the teams for the team competition will be formed; these same dogs will participate in both the A and B tests. National quotas are set at 3 dogs for the A test and 6 dogs for the B test.\n\nOn Sunday, November 8, the team championship (Nordic Championship Team Event) will take place. The competition will be conducted as an IWT-style dummy test, featuring three-person teams. Each Nordic country has three team slots. Additionally, one team from Estonia has been invited to participate in the tests this year outside of the championship competition.\n\nRegistration is limited only to Flatcoated Retrievers representing national teams. Preregistration is required by email to mikkolaanu@hotmail.com by October 18, 2026. Payment instructions will be provided once the entry is confirmed. Further information about the event is available at https://www.flatti.net/tapahtumat/pohjoismaiden-flattimestaruus-2026/",
+    "description": "ILMOITTAUTUMINEN AVATTU MYÖS MESTARUUDEN ULKOPUOLISILLE SILEÄKARVAISILLE NOUTAJILLE / REGISTRATION IS NOW OPEN TO FLATCOATED RETRIVERS OUTSIDE THE CHAMPIONSHIP. \n\nNordic Championship Flatcoated Retrievers NCFCR2026 will be held at Westankärr Manor on Kimitoön (Kemiönsaari) on November 7–8, 2026. Spectators are also welcome to attend (advance registration required; further details to follow closer to the event).\n\nOn Saturday, November 7, the individual championship will be decided through official A and B tests. Nine dog-and-handler pairs will be selected for the national squad, from which the teams for the team competition will be formed; these same dogs will participate in both the A and B tests. National quotas are set at 3 dogs for the A test and 6 dogs for the B test.\n\nOn Sunday, November 8, the team championship (Nordic Championship Team Event) will take place. The competition will be conducted as an IWT-style dummy test, featuring three-person teams. Each Nordic country has three team slots. Additionally, one team from Estonia has been invited to participate in the tests this year outside of the championship competition.\n\nRegistration is limited only to Flatcoated Retrievers representing national teams. Preregistration is required by email to mikkolaanu@hotmail.com by October 18, 2026. Payment instructions will be provided once the entry is confirmed. Further information about the event is available at https://www.flatti.net/tapahtumat/pohjoismaiden-flattimestaruus-2026/",
     "cost": {
       "normal": 100
     },
@@ -12379,10 +12379,10 @@
       "normal": 100
     },
     "classes": [],
-    "places": 13,
+    "places": 12,
     "state": "confirmed",
     "entry_start": "2026-10-13",
-    "entry_end": "2026-10-25",
+    "entry_end": "2026-11-01",
     "entries": 8
   },
   {
@@ -12478,9 +12478,9 @@
       "email": ""
     },
     "secretary": {
-      "name": "Minna Helenius",
+      "name": "Sanna Nurminen",
       "phone": "",
-      "email": "minna.m.helenius@gmail.com"
+      "email": "sanna.nurminen@me.com"
     },
     "judges": [
       "Kerolain Filimonova",
@@ -12496,7 +12496,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 9
+    "entries": 11
   },
   {
     "id": "X8vGHq_sSF",
@@ -12536,7 +12536,7 @@
       {
         "class": "ALO",
         "date": "2026-11-14T22:00:00.000Z",
-        "entries": 23,
+        "entries": 24,
         "judge": [
           {
             "id": 554687,
@@ -12559,7 +12559,7 @@
             "official": false
           }
         ],
-        "members": 8,
+        "members": 9,
         "places": 0
       },
       {
@@ -12596,6 +12596,6 @@
     "state": "confirmed",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 27
+    "entries": 28
   }
 ]
