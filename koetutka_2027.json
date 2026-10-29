@@ -3516,13 +3516,7 @@
         "class": "VOI",
         "date": "2027-07-25T00:00:00.000+03:00",
         "entries": 0,
-        "judge": [
-          {
-            "id": 999999,
-            "name": "Tenhunen Juha",
-            "official": true
-          }
-        ],
+        "judge": [],
         "members": 0,
         "places": 12
       }
@@ -3743,11 +3737,6 @@
         "date": "2027-07-31T00:00:00.000+03:00",
         "judge": [
           {
-            "id": 697689,
-            "name": "Toskala Mika",
-            "official": true
-          },
-          {
             "id": 881593,
             "name": "Tenhunen Matti",
             "official": true
@@ -3764,11 +3753,6 @@
         "class": "VOI",
         "date": "2027-08-01T00:00:00.000+03:00",
         "judge": [
-          {
-            "id": 697689,
-            "name": "Toskala Mika",
-            "official": true
-          },
           {
             "id": 881593,
             "name": "Tenhunen Matti",
