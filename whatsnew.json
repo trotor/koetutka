@@ -5,6 +5,14 @@
   },
   "releases": [
     {
+      "version": "1.15.2",
+      "date": "2026-10-29",
+      "title": "Korjaus iOS 27:lle",
+      "items": [
+        "Korjattu iPhone-sovelluksen kaatuminen heti käynnistyksessä iOS 27:ssä"
+      ]
+    },
+    {
       "version": "1.15.1",
       "date": "2026-10-20",
       "title": "Vuoden 2027 kokeet ovat täällä",

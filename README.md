@@ -86,6 +86,13 @@ MIT
 
 ## Versiohistoria
 
+### v1.15.2 (2026-10-29)
+- **iOS**: korjattu kaatuminen käynnistyksessä iOS 27:ssä. Xcode 27:llä
+  käännetty sovellus vaatii UIScene-elinkaaren; ikkuna luodaan nyt
+  `SceneDelegate`ssa (`AppDelegate.mm`) ja `Info.plist`issä on
+  `UIApplicationSceneManifest`
+- Versiot linjattu 1.15.2:een kaikilla alustoilla (iOS build 13)
+
 ### v1.15.1 (2026-10-20)
 - **Android**: R8-optimointi ja obfuskointi päälle release-buildeissa
   (`enableProguardInReleaseBuilds = true`). Google Play varoitti, että
