@@ -25,7 +25,8 @@
       "email": "nina.lindholm@saunalahti.fi"
     },
     "judges": [
-      "Sarkkinen Tomi"
+      "Sarkkinen Tomi",
+      "Anna Londré"
     ],
     "description": "",
     "cost": {
@@ -280,6 +281,61 @@
     "state": "tentative",
     "entry_start": "2027-03-06",
     "entry_end": "2027-03-27",
+    "entries": null
+  },
+  {
+    "id": "ybfJSe4gFW",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "17.04.2027",
+    "date_sort": "2027-04-17T00:00:00+03:00",
+    "end_date_sort": "2027-04-17T23:59:59.999000+03:00",
+    "entry_date": "06.03.-02.04.",
+    "location": "Raasepori",
+    "coordinates": [
+      59.9285263,
+      23.5219234
+    ],
+    "name": "Uudenmaan sydänkevään WT lauantai (alustava)",
+    "organizer": "UUDENMAAN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": {
+      "normal": 60
+    },
+    "cost_member": {
+      "normal": 50
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-04-17T00:00:00.000+03:00"
+      },
+      {
+        "class": "AVO",
+        "date": "2027-04-17T00:00:00.000+03:00"
+      },
+      {
+        "class": "VOI",
+        "date": "2027-04-17T00:00:00.000+03:00"
+      }
+    ],
+    "places": 75,
+    "state": "tentative",
+    "entry_start": "2027-03-06",
+    "entry_end": "2027-04-02",
     "entries": null
   },
   {
