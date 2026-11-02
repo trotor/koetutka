@@ -12318,7 +12318,7 @@
       {
         "class": "VOI",
         "date": "2026-11-06T22:00:00.000Z",
-        "entries": 13,
+        "entries": 11,
         "judge": [
           {
             "id": 4055276,
@@ -12334,7 +12334,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
-    "entries": 13
+    "entries": 11
   },
   {
     "id": "hPWqB4g6bC",
@@ -12377,7 +12377,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-13",
     "entry_end": "2026-11-01",
-    "entries": 8
+    "entries": 10
   },
   {
     "id": "oAH9Fk99PO",
@@ -12490,7 +12490,7 @@
     "state": "confirmed",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 23
+    "entries": 35
   },
   {
     "id": "X8vGHq_sSF",
@@ -12530,7 +12530,7 @@
       {
         "class": "ALO",
         "date": "2026-11-14T22:00:00.000Z",
-        "entries": 31,
+        "entries": 36,
         "judge": [
           {
             "id": 554687,
@@ -12553,13 +12553,13 @@
             "official": false
           }
         ],
-        "members": 13,
+        "members": 17,
         "places": 0
       },
       {
         "class": "AVO",
         "date": "2026-11-14T22:00:00.000Z",
-        "entries": 8,
+        "entries": 12,
         "judge": [
           {
             "id": 554687,
@@ -12582,7 +12582,7 @@
             "official": false
           }
         ],
-        "members": 4,
+        "members": 8,
         "places": 0
       }
     ],
@@ -12590,6 +12590,6 @@
     "state": "confirmed",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 39
+    "entries": 48
   }
 ]
