@@ -4,8 +4,8 @@
     "type": "NOME-A",
     "levels": "N/A",
     "date": "13.02.2027",
-    "date_sort": "2027-02-13T00:00:00+02:00",
-    "end_date_sort": "2027-02-13T00:00:00+02:00",
+    "date_sort": "2027-02-13T02:00:00+02:00",
+    "end_date_sort": "2027-02-13T02:00:00+02:00",
     "entry_date": "11.01.-31.01.",
     "location": "Salo",
     "coordinates": [
@@ -41,12 +41,105 @@
     "entries": null
   },
   {
+    "id": "7MJRZNlnFh",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "20.02.2027",
+    "date_sort": "2027-02-20T02:00:00+02:00",
+    "end_date_sort": "2027-02-20T02:00:00+02:00",
+    "entry_date": "18.01.-05.02.",
+    "location": "Janakala",
+    "coordinates": null,
+    "name": "NOME-A Janakkala",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "Petri Kuosmanen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Ulla Alhava",
+      "phone": "",
+      "email": "ulla.alhava@gmail.com"
+    },
+    "judges": [
+      "Sipola Miso"
+    ],
+    "description": "",
+    "cost": {
+      "breed": {
+        "122": 100
+      },
+      "normal": 120
+    },
+    "cost_member": {
+      "breed": {
+        "122": 0
+      },
+      "normal": 0
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-01-18",
+    "entry_end": "2027-02-05",
+    "entries": null
+  },
+  {
+    "id": "MPLGJchphC",
+    "type": "NOME-A",
+    "levels": "N/A",
+    "date": "21.02.2027",
+    "date_sort": "2027-02-21T02:00:00+02:00",
+    "end_date_sort": "2027-02-21T02:00:00+02:00",
+    "entry_date": "18.01.-05.02.",
+    "location": "Janakkala",
+    "coordinates": [
+      60.9063816,
+      24.6186447
+    ],
+    "name": "NOME-A Janakkala",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "Petri Kuosmanen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Ulla Alhava",
+      "phone": "",
+      "email": "ulla.alhava@gmail.com"
+    },
+    "judges": [
+      "Sipola Miso"
+    ],
+    "description": "",
+    "cost": {
+      "breed": {
+        "122": 100
+      },
+      "normal": 120
+    },
+    "cost_member": {
+      "breed": {
+        "122": 0
+      },
+      "normal": 0
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-01-18",
+    "entry_end": "2027-02-05",
+    "entries": null
+  },
+  {
     "id": "KtBRvLp4Gg",
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (La)",
     "date": "13.03.2027",
-    "date_sort": "2027-03-13T00:00:00+02:00",
-    "end_date_sort": "2027-03-13T00:00:00+02:00",
+    "date_sort": "2027-03-13T02:00:00+02:00",
+    "end_date_sort": "2027-03-13T02:00:00+02:00",
     "entry_date": "30.01.-26.02.",
     "location": "Korpilahti",
     "coordinates": [
@@ -95,7 +188,7 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-03-12T22:00:00.000Z",
+        "date": "2027-03-13",
         "entries": 0,
         "judge": [
           {
@@ -133,8 +226,8 @@
     "type": "EPÄVIRALLINEN",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "20.03.2027",
-    "date_sort": "2027-03-20T00:00:00+02:00",
-    "end_date_sort": "2027-03-20T00:00:00+02:00",
+    "date_sort": "2027-03-20T02:00:00+02:00",
+    "end_date_sort": "2027-03-20T02:00:00+02:00",
     "entry_date": "06.02.-27.02.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -161,16 +254,16 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-03-20T00:00:00.000+02:00",
-        "class": "ALO"
+        "class": "ALO",
+        "date": "2027-03-20"
       },
       {
         "class": "AVO",
-        "date": "2027-03-20T00:00:00.000+02:00"
+        "date": "2027-03-20"
       },
       {
-        "date": "2027-03-20T00:00:00.000+02:00",
-        "class": "VOI"
+        "class": "VOI",
+        "date": "2027-03-20"
       }
     ],
     "places": null,
@@ -184,8 +277,8 @@
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "03.04.2027",
-    "date_sort": "2027-04-03T00:00:00+03:00",
-    "end_date_sort": "2027-04-03T00:00:00+03:00",
+    "date_sort": "2027-04-03T03:00:00+03:00",
+    "end_date_sort": "2027-04-03T03:00:00+03:00",
     "entry_date": "20.02.-13.03.",
     "location": "Pälkäne",
     "coordinates": [
@@ -222,8 +315,8 @@
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "17.04.2027",
-    "date_sort": "2027-04-17T00:00:00+03:00",
-    "end_date_sort": "2027-04-17T00:00:00+03:00",
+    "date_sort": "2027-04-17T03:00:00+03:00",
+    "end_date_sort": "2027-04-17T03:00:00+03:00",
     "entry_date": "06.03.-27.03.",
     "location": "Hausjärvi",
     "coordinates": [
@@ -254,27 +347,27 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-04-17T00:00:00.000+03:00",
-        "judge": [],
-        "groups": [
-          "kp"
-        ]
-      },
-      {
-        "date": "2027-04-17T00:00:00.000+03:00",
+        "date": "2027-04-17",
         "groups": [
           "kp"
         ],
-        "judge": [],
-        "class": "AVO"
+        "judge": []
       },
       {
-        "judge": [],
-        "class": "VOI",
-        "date": "2027-04-17T00:00:00.000+03:00",
+        "class": "AVO",
+        "date": "2027-04-17",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "date": "2027-04-17",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
       }
     ],
     "places": 80,
@@ -288,8 +381,8 @@
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "17.04.2027",
-    "date_sort": "2027-04-17T00:00:00+03:00",
-    "end_date_sort": "2027-04-17T23:59:59.999000+03:00",
+    "date_sort": "2027-04-17T03:00:00+03:00",
+    "end_date_sort": "2027-04-17T03:00:00+03:00",
     "entry_date": "06.03.-02.04.",
     "location": "Raasepori",
     "coordinates": [
@@ -321,15 +414,15 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-04-17T00:00:00.000+03:00"
+        "date": "2027-04-17"
       },
       {
         "class": "AVO",
-        "date": "2027-04-17T00:00:00.000+03:00"
+        "date": "2027-04-17"
       },
       {
         "class": "VOI",
-        "date": "2027-04-17T00:00:00.000+03:00"
+        "date": "2027-04-17"
       }
     ],
     "places": 75,
@@ -343,8 +436,8 @@
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "24.04.2027",
-    "date_sort": "2027-04-24T00:00:00+03:00",
-    "end_date_sort": "2027-04-24T00:00:00+03:00",
+    "date_sort": "2027-04-24T03:00:00+03:00",
+    "end_date_sort": "2027-04-24T03:00:00+03:00",
     "entry_date": "01.04.-16.04.",
     "location": "Mallusjoki/ Orimattila ",
     "coordinates": [
@@ -378,28 +471,28 @@
     },
     "classes": [
       {
-        "judge": [],
-        "date": "2027-04-23T21:00:00.000Z",
         "class": "ALO",
+        "date": "2027-04-24",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
       },
       {
         "class": "AVO",
-        "date": "2027-04-23T21:00:00.000Z",
-        "judge": [],
+        "date": "2027-04-24",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
       },
       {
-        "judge": [],
         "class": "VOI",
-        "date": "2027-04-23T21:00:00.000Z",
+        "date": "2027-04-24",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
       }
     ],
     "places": 80,
@@ -413,8 +506,8 @@
     "type": "NOWT",
     "levels": "ALO (La), AVO (La), VOI (La)",
     "date": "24.04.2027",
-    "date_sort": "2027-04-24T00:00:00+03:00",
-    "end_date_sort": "2027-04-24T23:59:59.999000+03:00",
+    "date_sort": "2027-04-24T03:00:00+03:00",
+    "end_date_sort": "2027-04-24T03:00:00+03:00",
     "entry_date": "13.03.-03.04.",
     "location": "Peräseinäjoki",
     "coordinates": [
@@ -448,21 +541,21 @@
     "classes": [
       {
         "class": "ALO",
-        "places": 0,
+        "date": "2027-04-24",
         "judge": [],
-        "date": "2027-04-24T00:00:00.000+03:00"
+        "places": 0
       },
       {
-        "judge": [],
-        "date": "2027-04-24T00:00:00.000+03:00",
         "class": "AVO",
+        "date": "2027-04-24",
+        "judge": [],
         "places": 0
       },
       {
         "class": "VOI",
+        "date": "2027-04-24",
         "judge": [],
-        "places": 0,
-        "date": "2027-04-24T00:00:00.000+03:00"
+        "places": 0
       }
     ],
     "places": 60,
@@ -476,8 +569,8 @@
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "25.04.2027",
-    "date_sort": "2027-04-25T00:00:00+03:00",
-    "end_date_sort": "2027-04-25T00:00:00+03:00",
+    "date_sort": "2027-04-25T03:00:00+03:00",
+    "end_date_sort": "2027-04-25T03:00:00+03:00",
     "entry_date": "01.04.-16.04.",
     "location": "Kärkölä",
     "coordinates": [
@@ -512,17 +605,17 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-04-25T00:00:00.000+03:00",
+        "date": "2027-04-25",
         "judge": []
       },
       {
-        "judge": [],
-        "date": "2027-04-25T00:00:00.000+03:00",
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-04-25",
+        "judge": []
       },
       {
         "class": "VOI",
-        "date": "2027-04-25T00:00:00.000+03:00",
+        "date": "2027-04-25",
         "judge": []
       }
     ],
@@ -537,8 +630,8 @@
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "25.04.2027",
-    "date_sort": "2027-04-25T00:00:00+03:00",
-    "end_date_sort": "2027-04-25T00:00:00+03:00",
+    "date_sort": "2027-04-25T03:00:00+03:00",
+    "end_date_sort": "2027-04-25T03:00:00+03:00",
     "entry_date": "14.03.-04.04.",
     "location": "Peräseinäjoki",
     "coordinates": [
@@ -571,19 +664,19 @@
     },
     "classes": [
       {
-        "judge": [],
-        "date": "2027-04-25T00:00:00.000+03:00",
-        "class": "ALO"
+        "class": "ALO",
+        "date": "2027-04-25",
+        "judge": []
       },
       {
-        "judge": [],
-        "date": "2027-04-25T00:00:00.000+03:00",
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-04-25",
+        "judge": []
       },
       {
-        "judge": [],
         "class": "VOI",
-        "date": "2027-04-25T00:00:00.000+03:00"
+        "date": "2027-04-25",
+        "judge": []
       }
     ],
     "places": 60,
@@ -597,8 +690,8 @@
     "type": "NOWT",
     "levels": "ALO (La, Su), AVO (La, Su), VOI (La, Su)",
     "date": "01.-02.05.2027",
-    "date_sort": "2027-05-01T00:00:00+03:00",
-    "end_date_sort": "2027-05-02T23:59:59.999000+03:00",
+    "date_sort": "2027-05-01T03:00:00+03:00",
+    "end_date_sort": "2027-05-02T03:00:00+03:00",
     "entry_date": "20.03.-10.04.",
     "location": "Tampere",
     "coordinates": [
@@ -629,57 +722,57 @@
     "classes": [
       {
         "class": "ALO",
+        "date": "2027-05-01",
         "groups": [
           "kp"
         ],
         "judge": [],
-        "date": "2027-04-30T21:00:00.000Z",
         "places": 30
       },
       {
         "class": "AVO",
-        "date": "2027-04-30T21:00:00.000Z",
-        "places": 20,
+        "date": "2027-05-01",
         "groups": [
           "kp"
         ],
-        "judge": []
+        "judge": [],
+        "places": 20
       },
       {
-        "judge": [],
         "class": "VOI",
-        "places": 30,
+        "date": "2027-05-01",
         "groups": [
           "kp"
         ],
-        "date": "2027-04-30T21:00:00.000Z"
+        "judge": [],
+        "places": 30
       },
       {
-        "groups": [
-          "kp"
-        ],
-        "date": "2027-05-01T21:00:00.000Z",
         "class": "ALO",
-        "places": 30,
-        "judge": []
-      },
-      {
+        "date": "2027-05-02",
         "groups": [
           "kp"
         ],
-        "places": 20,
+        "judge": [],
+        "places": 30
+      },
+      {
         "class": "AVO",
-        "judge": [],
-        "date": "2027-05-01T21:00:00.000Z"
-      },
-      {
+        "date": "2027-05-02",
         "groups": [
           "kp"
         ],
-        "date": "2027-05-01T21:00:00.000Z",
-        "places": 30,
         "judge": [],
-        "class": "VOI"
+        "places": 20
+      },
+      {
+        "class": "VOI",
+        "date": "2027-05-02",
+        "groups": [
+          "kp"
+        ],
+        "judge": [],
+        "places": 30
       }
     ],
     "places": 160,
@@ -689,50 +782,12 @@
     "entries": null
   },
   {
-    "id": "XiAkC8D7wH",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "06.05.2027",
-    "date_sort": "2027-05-06T00:00:00+03:00",
-    "end_date_sort": "2027-05-06T00:00:00+03:00",
-    "entry_date": "04.04.-25.04.",
-    "location": "Vimpeli",
-    "coordinates": [
-      63.1614796,
-      23.8177693
-    ],
-    "name": "",
-    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Koskiahde Timo"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [],
-    "places": 16,
-    "state": "tentative",
-    "entry_start": "2027-04-04",
-    "entry_end": "2027-04-25",
-    "entries": null
-  },
-  {
     "id": "G5L6UM9vg2",
     "type": "NOWT",
     "levels": "ALO (To), AVO (To), VOI (To)",
     "date": "06.05.2027",
-    "date_sort": "2027-05-06T00:00:00+03:00",
-    "end_date_sort": "2027-05-06T00:00:00+03:00",
+    "date_sort": "2027-05-06T03:00:00+03:00",
+    "end_date_sort": "2027-05-06T03:00:00+03:00",
     "entry_date": "25.03.-15.04.",
     "location": "Tampere",
     "coordinates": [
@@ -760,17 +815,17 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-05-06T00:00:00.000+03:00",
+        "date": "2027-05-06",
         "judge": []
       },
       {
-        "date": "2027-05-06T00:00:00.000+03:00",
-        "judge": [],
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-05-06",
+        "judge": []
       },
       {
         "class": "VOI",
-        "date": "2027-05-06T00:00:00.000+03:00",
+        "date": "2027-05-06",
         "judge": []
       }
     ],
@@ -785,8 +840,8 @@
     "type": "NOWT",
     "levels": "ALO (To), AVO (To)",
     "date": "06.05.2027",
-    "date_sort": "2027-05-06T00:00:00+03:00",
-    "end_date_sort": "2027-05-06T00:00:00+03:00",
+    "date_sort": "2027-05-06T03:00:00+03:00",
+    "end_date_sort": "2027-05-06T03:00:00+03:00",
     "entry_date": "25.03.-15.04.",
     "location": "Kouvola",
     "coordinates": [
@@ -820,14 +875,14 @@
     },
     "classes": [
       {
-        "date": "2027-05-06T00:00:00.000+03:00",
         "class": "ALO",
+        "date": "2027-05-06",
         "judge": []
       },
       {
         "class": "AVO",
-        "judge": [],
-        "date": "2027-05-06T00:00:00.000+03:00"
+        "date": "2027-05-06",
+        "judge": []
       }
     ],
     "places": 60,
@@ -841,8 +896,8 @@
     "type": "NOWT",
     "levels": "VOI (To)",
     "date": "06.05.2027",
-    "date_sort": "2027-05-06T00:00:00+03:00",
-    "end_date_sort": "2027-05-06T00:00:00+03:00",
+    "date_sort": "2027-05-06T03:00:00+03:00",
+    "end_date_sort": "2027-05-06T03:00:00+03:00",
     "entry_date": "25.03.-15.04.",
     "location": "Kouvola",
     "coordinates": [
@@ -872,8 +927,8 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-05-05T21:00:00.000Z",
         "class": "VOI",
+        "date": "2027-05-06",
         "judge": []
       }
     ],
@@ -884,20 +939,20 @@
     "entries": null
   },
   {
-    "id": "5OC_gC4yPt",
-    "type": "NOWT",
-    "levels": "ALO (La), AVO (La), VOI (La)",
-    "date": "15.05.2027",
-    "date_sort": "2027-05-15T00:00:00+03:00",
-    "end_date_sort": "2027-05-15T00:00:00+03:00",
-    "entry_date": "03.04.-24.04.",
-    "location": "Jämsä",
+    "id": "XiAkC8D7wH",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "06.05.2027",
+    "date_sort": "2027-05-06T03:00:00+03:00",
+    "end_date_sort": "2027-05-06T03:00:00+03:00",
+    "entry_date": "04.04.-25.04.",
+    "location": "Vimpeli",
     "coordinates": [
-      61.8637802,
-      25.1897493
+      63.1614796,
+      23.8177693
     ],
     "name": "",
-    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "organizer": "LAKEUDEN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
       "name": "",
       "phone": "",
@@ -909,42 +964,16 @@
       "email": ""
     },
     "judges": [
-      "Tenhunen Matti",
-      "Torila Mika"
+      "Koskiahde Timo"
     ],
     "description": "",
     "cost": "",
     "cost_member": "",
-    "classes": [
-      {
-        "class": "ALO",
-        "date": "2027-05-14T21:00:00.000Z",
-        "judge": [],
-        "groups": [
-          "kp"
-        ]
-      },
-      {
-        "groups": [
-          "kp"
-        ],
-        "class": "AVO",
-        "date": "2027-05-14T21:00:00.000Z",
-        "judge": []
-      },
-      {
-        "judge": [],
-        "class": "VOI",
-        "date": "2027-05-14T21:00:00.000Z",
-        "groups": [
-          "kp"
-        ]
-      }
-    ],
-    "places": 40,
+    "classes": [],
+    "places": 16,
     "state": "tentative",
-    "entry_start": "2027-04-03",
-    "entry_end": "2027-04-24",
+    "entry_start": "2027-04-04",
+    "entry_end": "2027-04-25",
     "entries": null
   },
   {
@@ -952,8 +981,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "15.05.2027",
-    "date_sort": "2027-05-15T00:00:00+03:00",
-    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "date_sort": "2027-05-15T03:00:00+03:00",
+    "end_date_sort": "2027-05-15T03:00:00+03:00",
     "entry_date": "03.04.-24.04.",
     "location": "Hattula",
     "coordinates": [
@@ -990,8 +1019,8 @@
     "type": "NOWT",
     "levels": "ALO (La), AVO (La)",
     "date": "15.05.2027",
-    "date_sort": "2027-05-15T00:00:00+03:00",
-    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "date_sort": "2027-05-15T03:00:00+03:00",
+    "end_date_sort": "2027-05-15T03:00:00+03:00",
     "entry_date": "03.04.-24.04.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -1019,17 +1048,81 @@
     "cost_member": "",
     "classes": [
       {
-        "judge": [],
         "class": "ALO",
-        "date": "2027-05-15T00:00:00.000+03:00"
+        "date": "2027-05-15",
+        "judge": []
       },
       {
-        "judge": [],
         "class": "AVO",
-        "date": "2027-05-15T00:00:00.000+03:00"
+        "date": "2027-05-15",
+        "judge": []
       }
     ],
     "places": null,
+    "state": "tentative",
+    "entry_start": "2027-04-03",
+    "entry_end": "2027-04-24",
+    "entries": null
+  },
+  {
+    "id": "5OC_gC4yPt",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "15.05.2027",
+    "date_sort": "2027-05-15T03:00:00+03:00",
+    "end_date_sort": "2027-05-15T03:00:00+03:00",
+    "entry_date": "03.04.-24.04.",
+    "location": "Jämsä",
+    "coordinates": [
+      61.8637802,
+      25.1897493
+    ],
+    "name": "",
+    "organizer": "MÄNTÄN SEUDUN NUUSKUT R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Tenhunen Matti",
+      "Torila Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-05-15",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      },
+      {
+        "class": "AVO",
+        "date": "2027-05-15",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "date": "2027-05-15",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      }
+    ],
+    "places": 40,
     "state": "tentative",
     "entry_start": "2027-04-03",
     "entry_end": "2027-04-24",
@@ -1040,8 +1133,8 @@
     "type": "NOWT",
     "levels": "VOI (La)",
     "date": "15.05.2027",
-    "date_sort": "2027-05-15T00:00:00+03:00",
-    "end_date_sort": "2027-05-15T00:00:00+03:00",
+    "date_sort": "2027-05-15T03:00:00+03:00",
+    "end_date_sort": "2027-05-15T03:00:00+03:00",
     "entry_date": "03.04.-24.04.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -1069,8 +1162,8 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-05-15T00:00:00.000+03:00",
         "class": "VOI",
+        "date": "2027-05-15",
         "judge": []
       }
     ],
@@ -1085,8 +1178,8 @@
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "16.05.2027",
-    "date_sort": "2027-05-16T00:00:00+03:00",
-    "end_date_sort": "2027-05-16T00:00:00+03:00",
+    "date_sort": "2027-05-16T03:00:00+03:00",
+    "end_date_sort": "2027-05-16T03:00:00+03:00",
     "entry_date": "04.04.-25.04.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -1114,18 +1207,18 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-05-16T00:00:00.000+03:00",
-        "judge": [],
-        "class": "ALO"
+        "class": "ALO",
+        "date": "2027-05-16",
+        "judge": []
       },
       {
-        "judge": [],
-        "date": "2027-05-16T00:00:00.000+03:00",
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-05-16",
+        "judge": []
       },
       {
         "class": "VOI",
-        "date": "2027-05-16T00:00:00.000+03:00",
+        "date": "2027-05-16",
         "judge": []
       }
     ],
@@ -1140,8 +1233,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "16.05.2027",
-    "date_sort": "2027-05-16T00:00:00+03:00",
-    "end_date_sort": "2027-05-16T00:00:00+03:00",
+    "date_sort": "2027-05-16T03:00:00+03:00",
+    "end_date_sort": "2027-05-16T03:00:00+03:00",
     "entry_date": "11.04.-02.05.",
     "location": "Tampere",
     "coordinates": [
@@ -1182,8 +1275,8 @@
     "type": "NOWT SM",
     "levels": "VOI (La)",
     "date": "22.05.2027",
-    "date_sort": "2027-05-22T00:00:00+03:00",
-    "end_date_sort": "2027-05-22T00:00:00+03:00",
+    "date_sort": "2027-05-22T03:00:00+03:00",
+    "end_date_sort": "2027-05-22T03:00:00+03:00",
     "entry_date": "26.04.-09.05.",
     "location": "Päijät-Häme",
     "coordinates": [
@@ -1232,8 +1325,8 @@
     "classes": [
       {
         "class": "VOI",
-        "judge": [],
-        "date": "2027-05-22T00:00:00.000+03:00"
+        "date": "2027-05-22",
+        "judge": []
       }
     ],
     "places": null,
@@ -1247,8 +1340,8 @@
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "23.05.2027",
-    "date_sort": "2027-05-23T00:00:00+03:00",
-    "end_date_sort": "2027-05-23T00:00:00+03:00",
+    "date_sort": "2027-05-23T03:00:00+03:00",
+    "end_date_sort": "2027-05-23T03:00:00+03:00",
     "entry_date": "26.04.-09.05.",
     "location": "Päijät-Häme",
     "coordinates": [
@@ -1279,17 +1372,17 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-05-22T21:00:00.000Z",
+        "date": "2027-05-23",
         "judge": []
       },
       {
         "class": "AVO",
-        "date": "2027-05-22T21:00:00.000Z",
+        "date": "2027-05-23",
         "judge": []
       },
       {
         "class": "VOI",
-        "date": "2027-05-22T21:00:00.000Z",
+        "date": "2027-05-23",
         "judge": []
       }
     ],
@@ -1304,8 +1397,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "23.05.2027",
-    "date_sort": "2027-05-23T00:00:00+03:00",
-    "end_date_sort": "2027-05-23T00:00:00+03:00",
+    "date_sort": "2027-05-23T03:00:00+03:00",
+    "end_date_sort": "2027-05-23T03:00:00+03:00",
     "entry_date": "11.04.-02.05.",
     "location": "Pöytyä",
     "coordinates": [
@@ -1342,8 +1435,8 @@
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "29.05.2027",
-    "date_sort": "2027-05-29T00:00:00+03:00",
-    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "date_sort": "2027-05-29T03:00:00+03:00",
+    "end_date_sort": "2027-05-29T03:00:00+03:00",
     "entry_date": "17.04.-08.05.",
     "location": "Tampere",
     "coordinates": [
@@ -1370,9 +1463,9 @@
     "cost_member": "",
     "classes": [
       {
-        "judge": [],
         "class": "ALO",
-        "date": "2027-05-29T00:00:00.000+03:00"
+        "date": "2027-05-29",
+        "judge": []
       }
     ],
     "places": 15,
@@ -1386,8 +1479,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "29.05.2027",
-    "date_sort": "2027-05-29T00:00:00+03:00",
-    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "date_sort": "2027-05-29T03:00:00+03:00",
+    "end_date_sort": "2027-05-29T03:00:00+03:00",
     "entry_date": "19.04.-10.05.",
     "location": "Salo",
     "coordinates": [
@@ -1428,8 +1521,8 @@
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "29.05.2027",
-    "date_sort": "2027-05-29T00:00:00+03:00",
-    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "date_sort": "2027-05-29T03:00:00+03:00",
+    "end_date_sort": "2027-05-29T03:00:00+03:00",
     "entry_date": "19.04.-10.05.",
     "location": "Salo",
     "coordinates": [
@@ -1460,8 +1553,8 @@
     },
     "classes": [
       {
-        "date": "2027-05-28T21:00:00.000Z",
         "class": "ALO",
+        "date": "2027-05-29",
         "judge": []
       }
     ],
@@ -1476,8 +1569,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "29.05.2027",
-    "date_sort": "2027-05-29T00:00:00+03:00",
-    "end_date_sort": "2027-05-29T00:00:00+03:00",
+    "date_sort": "2027-05-29T03:00:00+03:00",
+    "end_date_sort": "2027-05-29T03:00:00+03:00",
     "entry_date": "17.04.-08.05.",
     "location": "Kaakon toiminta-alue",
     "coordinates": null,
@@ -1511,8 +1604,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "30.05.2027",
-    "date_sort": "2027-05-30T00:00:00+03:00",
-    "end_date_sort": "2027-05-30T00:00:00+03:00",
+    "date_sort": "2027-05-30T03:00:00+03:00",
+    "end_date_sort": "2027-05-30T03:00:00+03:00",
     "entry_date": "18.04.-09.05.",
     "location": "Pori",
     "coordinates": [
@@ -1553,8 +1646,8 @@
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "30.05.2027",
-    "date_sort": "2027-05-30T00:00:00+03:00",
-    "end_date_sort": "2027-05-30T00:00:00+03:00",
+    "date_sort": "2027-05-30T03:00:00+03:00",
+    "end_date_sort": "2027-05-30T03:00:00+03:00",
     "entry_date": "18.04.-09.05.",
     "location": "Tampere",
     "coordinates": [
@@ -1581,9 +1674,9 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-05-30T00:00:00.000+03:00",
-        "judge": [],
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-05-30",
+        "judge": []
       }
     ],
     "places": 15,
@@ -1597,8 +1690,8 @@
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "05.06.2027",
-    "date_sort": "2027-06-05T00:00:00+03:00",
-    "end_date_sort": "2027-06-05T00:00:00+03:00",
+    "date_sort": "2027-06-05T03:00:00+03:00",
+    "end_date_sort": "2027-06-05T03:00:00+03:00",
     "entry_date": "24.04.-15.05.",
     "location": "Toivakka",
     "coordinates": [
@@ -1635,15 +1728,15 @@
     },
     "classes": [
       {
+        "class": "VOI",
+        "date": "2027-06-05",
         "judge": [
           {
-            "official": true,
             "id": 4053791,
-            "name": "Puttonen Pasi-Petteri"
+            "name": "Puttonen Pasi-Petteri",
+            "official": true
           }
-        ],
-        "class": "VOI",
-        "date": "2027-06-05T00:00:00.000+03:00"
+        ]
       }
     ],
     "places": 12,
@@ -1657,8 +1750,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "05.-06.06.2027",
-    "date_sort": "2027-06-05T00:00:00+03:00",
-    "end_date_sort": "2027-06-06T23:59:59.999000+03:00",
+    "date_sort": "2027-06-05T03:00:00+03:00",
+    "end_date_sort": "2027-06-06T03:00:00+03:00",
     "entry_date": "24.04.-15.05.",
     "location": "Leppävirta",
     "coordinates": [
@@ -1695,8 +1788,8 @@
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "06.06.2027",
-    "date_sort": "2027-06-06T00:00:00+03:00",
-    "end_date_sort": "2027-06-06T00:00:00+03:00",
+    "date_sort": "2027-06-06T03:00:00+03:00",
+    "end_date_sort": "2027-06-06T03:00:00+03:00",
     "entry_date": "10.05.-23.05.",
     "location": "Padasjoki",
     "coordinates": [
@@ -1728,52 +1821,10 @@
     "classes": [
       {
         "class": "AVO",
-        "date": "2027-06-05T21:00:00.000Z",
+        "date": "2027-06-06",
         "judge": []
       }
     ],
-    "places": 16,
-    "state": "tentative",
-    "entry_start": "2027-05-10",
-    "entry_end": "2027-05-23",
-    "entries": null
-  },
-  {
-    "id": "sSuR0GIFPo",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "06.06.2027",
-    "date_sort": "2027-06-06T00:00:00+03:00",
-    "end_date_sort": "2027-06-06T00:00:00+03:00",
-    "entry_date": "10.05.-23.05.",
-    "location": "Padasjoki",
-    "coordinates": [
-      61.3512901,
-      25.2785646
-    ],
-    "name": "",
-    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Minna Helenius",
-      "phone": "",
-      "email": "minna.m.helenius@gmail.com"
-    },
-    "judges": [
-      "Salonen Tommy"
-    ],
-    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\n",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": {
-      "normal": 45
-    },
-    "classes": [],
     "places": 16,
     "state": "tentative",
     "entry_start": "2027-05-10",
@@ -1785,8 +1836,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "06.06.2027",
-    "date_sort": "2027-06-06T00:00:00+03:00",
-    "end_date_sort": "2027-06-06T00:00:00+03:00",
+    "date_sort": "2027-06-06T03:00:00+03:00",
+    "end_date_sort": "2027-06-06T03:00:00+03:00",
     "entry_date": "25.04.-16.05.",
     "location": "Toivakka",
     "coordinates": [
@@ -1823,15 +1874,15 @@
     },
     "classes": [
       {
+        "class": "VOI",
+        "date": "2027-06-06",
         "judge": [
           {
+            "id": 4053791,
             "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
+            "official": true
           }
-        ],
-        "class": "VOI",
-        "date": "2027-06-06T00:00:00.000+03:00"
+        ]
       }
     ],
     "places": 12,
@@ -1841,64 +1892,45 @@
     "entries": null
   },
   {
-    "id": "TvJfc4zNcG",
-    "type": "NOME-B",
-    "levels": "ALO (La, Su)",
-    "date": "12.-13.06.2027",
-    "date_sort": "2027-06-12T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
-    "entry_date": "01.05.-22.05.",
-    "location": "Kuopio",
+    "id": "sSuR0GIFPo",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "06.06.2027",
+    "date_sort": "2027-06-06T03:00:00+03:00",
+    "end_date_sort": "2027-06-06T03:00:00+03:00",
+    "entry_date": "10.05.-23.05.",
+    "location": "Padasjoki",
     "coordinates": [
-      62.8924641,
-      27.6783597
+      61.3512901,
+      25.2785646
     ],
-    "name": "NOME-B Nilsiä, Palonurmi",
-    "organizer": "SAVON NUUSKUT RY",
+    "name": "",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
     "official": {
-      "name": "Risto Väätäinen",
+      "name": "",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "Merja Taskinen",
+      "name": "Minna Helenius",
       "phone": "",
-      "email": ""
+      "email": "minna.m.helenius@gmail.com"
     },
     "judges": [
-      "Salonen Susanna"
+      "Salonen Tommy"
     ],
-    "description": "Nome-b ALO-12-13.kesäkuu Palonurmi, Nilsiä -vast. Risto Väätäinen, koesihteeri Merja Taskinen\nEtusijalla jäsenet ja kutsutut.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "ALO",
-        "date": "2027-06-11T21:00:00.000Z",
-        "judge": [
-          {
-            "id": 835312,
-            "name": "Salonen Susanna",
-            "official": true
-          }
-        ]
-      },
-      {
-        "class": "ALO",
-        "date": "2027-06-12T21:00:00.000Z",
-        "judge": [
-          {
-            "id": 835312,
-            "name": "Salonen Susanna",
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": null,
+    "description": "Etusija Päijät-Hämeen Noutajakoirayhdistyksen jäsenillä edellemainittujen kokeissa talkoilleilla (koe anotaan \"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenyys oltava voimassa ilmoittautumisajan alkaessa.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.\n\n",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 16,
     "state": "tentative",
-    "entry_start": "2027-05-01",
-    "entry_end": "2027-05-22",
+    "entry_start": "2027-05-10",
+    "entry_end": "2027-05-23",
     "entries": null
   },
   {
@@ -1906,8 +1938,8 @@
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "12.-13.06.2027",
-    "date_sort": "2027-06-12T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T23:59:59.999000+03:00",
+    "date_sort": "2027-06-12T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
     "entry_date": "01.05.-22.05.",
     "location": "Kaakon toiminta-alue",
     "coordinates": null,
@@ -1931,9 +1963,9 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-06-12T00:00:00.000+03:00",
-        "judge": [],
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-06-12",
+        "judge": []
       }
     ],
     "places": 30,
@@ -1947,8 +1979,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "12.06.2027",
-    "date_sort": "2027-06-12T00:00:00+03:00",
-    "end_date_sort": "2027-06-12T00:00:00+03:00",
+    "date_sort": "2027-06-12T03:00:00+03:00",
+    "end_date_sort": "2027-06-12T03:00:00+03:00",
     "entry_date": "17.05.-30.05.",
     "location": "Hämeenkoski",
     "coordinates": [
@@ -1981,12 +2013,73 @@
     "entries": 0
   },
   {
+    "id": "TvJfc4zNcG",
+    "type": "NOME-B",
+    "levels": "ALO (La, Su)",
+    "date": "12.-13.06.2027",
+    "date_sort": "2027-06-12T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
+    "entry_date": "01.05.-22.05.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "NOME-B Nilsiä, Palonurmi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Risto Väätäinen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Merja Taskinen",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Salonen Susanna"
+    ],
+    "description": "Nome-b ALO-12-13.kesäkuu Palonurmi, Nilsiä -vast. Risto Väätäinen, koesihteeri Merja Taskinen\nEtusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-06-12",
+        "judge": [
+          {
+            "id": 835312,
+            "name": "Salonen Susanna",
+            "official": true
+          }
+        ]
+      },
+      {
+        "class": "ALO",
+        "date": "2027-06-13",
+        "judge": [
+          {
+            "id": 835312,
+            "name": "Salonen Susanna",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-01",
+    "entry_end": "2027-05-22",
+    "entries": null
+  },
+  {
     "id": "GUKagYR2UQ",
     "type": "NOU",
     "levels": "N/A",
     "date": "12.06.2027",
-    "date_sort": "2027-06-12T00:00:00+03:00",
-    "end_date_sort": "2027-06-12T00:00:00+03:00",
+    "date_sort": "2027-06-12T03:00:00+03:00",
+    "end_date_sort": "2027-06-12T03:00:00+03:00",
     "entry_date": "01.05.-22.05.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -2023,8 +2116,8 @@
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "13.06.2027",
-    "date_sort": "2027-06-13T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "date_sort": "2027-06-13T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
     "entry_date": "02.05.-23.05.",
     "location": "Hämeenlinna",
     "coordinates": [
@@ -2052,7 +2145,7 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-06-12T21:00:00.000Z",
+        "date": "2027-06-13",
         "judge": [
           {
             "id": 4055276,
@@ -2069,50 +2162,12 @@
     "entries": null
   },
   {
-    "id": "9_0-430dtk",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "13.06.2027",
-    "date_sort": "2027-06-13T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T00:00:00+03:00",
-    "entry_date": "02.05.-23.05.",
-    "location": "Laukaa",
-    "coordinates": [
-      62.416667,
-      25.95
-    ],
-    "name": "",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Asta Muilu",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Mari Mäkelä",
-      "phone": "",
-      "email": "makela.mari22@gmail.com"
-    },
-    "judges": [
-      "Hietikko Vesa"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [],
-    "places": 16,
-    "state": "tentative",
-    "entry_start": "2027-05-02",
-    "entry_end": "2027-05-23",
-    "entries": null
-  },
-  {
     "id": "YRtTSD_KaU",
     "type": "NOME-B",
     "levels": "ALO (Su), AVO (Su)",
     "date": "13.06.2027",
-    "date_sort": "2027-06-13T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "date_sort": "2027-06-13T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
     "entry_date": "02.05.-23.05.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -2139,14 +2194,14 @@
     "cost_member": "",
     "classes": [
       {
-        "judge": [],
         "class": "ALO",
-        "date": "2027-06-13T00:00:00.000+03:00"
+        "date": "2027-06-13",
+        "judge": []
       },
       {
-        "judge": [],
         "class": "AVO",
-        "date": "2027-06-13T00:00:00.000+03:00"
+        "date": "2027-06-13",
+        "judge": []
       }
     ],
     "places": null,
@@ -2160,8 +2215,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "13.06.2027",
-    "date_sort": "2027-06-13T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "date_sort": "2027-06-13T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
     "entry_date": "17.05.-30.05.",
     "location": "Hämeenkoski",
     "coordinates": [
@@ -2194,12 +2249,50 @@
     "entries": 0
   },
   {
+    "id": "9_0-430dtk",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "13.06.2027",
+    "date_sort": "2027-06-13T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
+    "entry_date": "02.05.-23.05.",
+    "location": "Laukaa",
+    "coordinates": [
+      62.416667,
+      25.95
+    ],
+    "name": "",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Asta Muilu",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Mari Mäkelä",
+      "phone": "",
+      "email": "makela.mari22@gmail.com"
+    },
+    "judges": [
+      "Hietikko Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-05-02",
+    "entry_end": "2027-05-23",
+    "entries": null
+  },
+  {
     "id": "52Oc3bZjt6",
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "13.06.2027",
-    "date_sort": "2027-06-13T00:00:00+03:00",
-    "end_date_sort": "2027-06-13T00:00:00+03:00",
+    "date_sort": "2027-06-13T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
     "entry_date": "02.05.-23.05.",
     "location": "Kokemäki",
     "coordinates": [
@@ -2227,8 +2320,8 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-06-13T00:00:00.000+03:00",
         "class": "VOI",
+        "date": "2027-06-13",
         "judge": []
       }
     ],
@@ -2239,56 +2332,12 @@
     "entries": null
   },
   {
-    "id": "m2DeCWv6oc",
-    "type": "NOME-B",
-    "levels": "AVO (La)",
-    "date": "19.06.2027",
-    "date_sort": "2027-06-19T00:00:00+03:00",
-    "end_date_sort": "2027-06-19T00:00:00+03:00",
-    "entry_date": "08.05.-29.05.",
-    "location": "Tuusniemi",
-    "coordinates": [
-      62.8129715,
-      28.473989
-    ],
-    "name": "Nome-B AVO Tuusniemi",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Kirsi-Marja Ovaskainen",
-      "phone": "",
-      "email": "ovaskainen.kirsi@gmail.com"
-    },
-    "secretary": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Hiltunen Niko"
-    ],
-    "description": "Etusijalla jäsenet ja kutsutut.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "AVO",
-        "date": "2027-06-18T21:00:00.000Z",
-        "judge": []
-      }
-    ],
-    "places": null,
-    "state": "tentative",
-    "entry_start": "2027-05-08",
-    "entry_end": "2027-05-29",
-    "entries": null
-  },
-  {
     "id": "sHnh44Oq4y",
     "type": "NOWT",
     "levels": "VOI (La)",
     "date": "19.06.2027",
-    "date_sort": "2027-06-19T00:00:00+03:00",
-    "end_date_sort": "2027-06-19T00:00:00+03:00",
+    "date_sort": "2027-06-19T03:00:00+03:00",
+    "end_date_sort": "2027-06-19T03:00:00+03:00",
     "entry_date": "08.05.-29.05.",
     "location": "Toivakka",
     "coordinates": [
@@ -2315,8 +2364,8 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-06-19T00:00:00.000+03:00",
         "class": "VOI",
+        "date": "2027-06-19",
         "groups": [
           "kp"
         ]
@@ -2333,8 +2382,8 @@
     "type": "NOME-B",
     "levels": "ALO (La, Su), AVO (Su), VOI (La, Su)",
     "date": "19.-20.06.2027",
-    "date_sort": "2027-06-19T00:00:00+03:00",
-    "end_date_sort": "2027-06-20T00:00:00+03:00",
+    "date_sort": "2027-06-19T03:00:00+03:00",
+    "end_date_sort": "2027-06-20T03:00:00+03:00",
     "entry_date": "08.05.-29.05.",
     "location": "Ähtäri",
     "coordinates": [
@@ -2362,49 +2411,93 @@
     "classes": [
       {
         "class": "ALO",
-        "places": 15,
-        "date": "2027-06-19T00:00:00.000+03:00",
-        "groups": [
-          "ap",
-          "ip"
-        ]
-      },
-      {
-        "places": 12,
-        "date": "2027-06-19T00:00:00.000+03:00",
+        "date": "2027-06-19",
         "groups": [
           "ap",
           "ip"
         ],
-        "class": "VOI"
+        "places": 15
       },
       {
-        "date": "2027-06-20T00:00:00.000+03:00",
+        "class": "VOI",
+        "date": "2027-06-19",
         "groups": [
           "ap",
           "ip"
         ],
-        "places": 15,
-        "class": "ALO"
+        "places": 12
+      },
+      {
+        "class": "ALO",
+        "date": "2027-06-20",
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "places": 15
       },
       {
         "class": "AVO",
+        "date": "2027-06-20",
         "groups": [
           "ip"
         ],
-        "places": 8,
-        "date": "2027-06-20T00:00:00.000+03:00"
+        "places": 8
       },
       {
+        "class": "VOI",
+        "date": "2027-06-20",
         "groups": [
           "ap"
         ],
-        "places": 6,
-        "class": "VOI",
-        "date": "2027-06-20T00:00:00.000+03:00"
+        "places": 6
       }
     ],
     "places": 56,
+    "state": "tentative",
+    "entry_start": "2027-05-08",
+    "entry_end": "2027-05-29",
+    "entries": null
+  },
+  {
+    "id": "m2DeCWv6oc",
+    "type": "NOME-B",
+    "levels": "AVO (La)",
+    "date": "19.06.2027",
+    "date_sort": "2027-06-19T03:00:00+03:00",
+    "end_date_sort": "2027-06-19T03:00:00+03:00",
+    "entry_date": "08.05.-29.05.",
+    "location": "Tuusniemi",
+    "coordinates": [
+      62.8129715,
+      28.473989
+    ],
+    "name": "Nome-B AVO Tuusniemi",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Kirsi-Marja Ovaskainen",
+      "phone": "",
+      "email": "ovaskainen.kirsi@gmail.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "Etusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-06-19",
+        "judge": []
+      }
+    ],
+    "places": null,
     "state": "tentative",
     "entry_start": "2027-05-08",
     "entry_end": "2027-05-29",
@@ -2415,8 +2508,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "02.07.2027",
-    "date_sort": "2027-07-02T00:00:00+03:00",
-    "end_date_sort": "2027-07-02T00:00:00+03:00",
+    "date_sort": "2027-07-02T03:00:00+03:00",
+    "end_date_sort": "2027-07-02T03:00:00+03:00",
     "entry_date": "21.05.-11.06.",
     "location": "Kemi",
     "coordinates": [
@@ -2453,8 +2546,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "03.07.2027",
-    "date_sort": "2027-07-03T00:00:00+03:00",
-    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "date_sort": "2027-07-03T03:00:00+03:00",
+    "end_date_sort": "2027-07-03T03:00:00+03:00",
     "entry_date": "22.05.-12.06.",
     "location": "Hämeenlinna",
     "coordinates": [
@@ -2470,7 +2563,7 @@
     },
     "secretary": {
       "name": "Tiina Asovaara",
-      "phone": "0407066768",
+      "phone": "0407617995",
       "email": "asovaara@icloud.com"
     },
     "judges": [
@@ -2487,62 +2580,12 @@
     "entries": null
   },
   {
-    "id": "8-ZNKb-QEY",
-    "type": "NOME-B",
-    "levels": "ALO (La)",
-    "date": "03.07.2027",
-    "date_sort": "2027-07-03T00:00:00+03:00",
-    "end_date_sort": "2027-07-03T00:00:00+03:00",
-    "entry_date": "22.05.-12.06.",
-    "location": "Jyväskylän ymp.",
-    "coordinates": [
-      62.3992586,
-      25.6759251
-    ],
-    "name": "ALO-lk",
-    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
-    "official": {
-      "name": "Tuija Aaltonen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Anu Pesonen",
-      "phone": "",
-      "email": "anu-pesonen@hotmail.com"
-    },
-    "judges": [
-      "Toskala Mika"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "ALO",
-        "date": "2027-07-02T21:00:00.000Z",
-        "judge": [
-          {
-            "id": 697689,
-            "name": "Toskala Mika",
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": 15,
-    "state": "tentative",
-    "entry_start": "2027-05-22",
-    "entry_end": "2027-06-12",
-    "entries": null
-  },
-  {
     "id": "zYFFVth0uF",
     "type": "NOU",
     "levels": "N/A",
     "date": "03.07.2027",
-    "date_sort": "2027-07-03T00:00:00+03:00",
-    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "date_sort": "2027-07-03T03:00:00+03:00",
+    "end_date_sort": "2027-07-03T03:00:00+03:00",
     "entry_date": "22.05.-12.06.",
     "location": "Juupajoki",
     "coordinates": [
@@ -2579,12 +2622,62 @@
     "entries": 0
   },
   {
+    "id": "8-ZNKb-QEY",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T03:00:00+03:00",
+    "end_date_sort": "2027-07-03T03:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Jyväskylän ymp.",
+    "coordinates": [
+      62.3992586,
+      25.6759251
+    ],
+    "name": "ALO-lk",
+    "organizer": "KESKI-SUOMEN NOUTAJAKOIRAYHDISTYS RY.",
+    "official": {
+      "name": "Tuija Aaltonen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Anu Pesonen",
+      "phone": "",
+      "email": "anu-pesonen@hotmail.com"
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-03",
+        "judge": [
+          {
+            "id": 697689,
+            "name": "Toskala Mika",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
     "id": "P8gJt-JiCk",
     "type": "NOME-B",
     "levels": "ALO (La), AVO (La)",
     "date": "03.07.2027",
-    "date_sort": "2027-07-03T00:00:00+03:00",
-    "end_date_sort": "2027-07-03T00:00:00+03:00",
+    "date_sort": "2027-07-03T03:00:00+03:00",
+    "end_date_sort": "2027-07-03T03:00:00+03:00",
     "entry_date": "22.05.-12.06.",
     "location": "Meri-Lappi",
     "coordinates": [
@@ -2611,19 +2704,19 @@
     "cost_member": "",
     "classes": [
       {
-        "judge": [],
+        "class": "ALO",
+        "date": "2027-07-03",
         "groups": [
           "ap"
         ],
-        "date": "2027-07-03T00:00:00.000+03:00",
-        "class": "ALO"
+        "judge": []
       },
       {
-        "date": "2027-07-03T00:00:00.000+03:00",
+        "class": "AVO",
+        "date": "2027-07-03",
         "groups": [
           "ip"
         ],
-        "class": "AVO",
         "judge": []
       }
     ],
@@ -2638,8 +2731,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "04.07.2027",
-    "date_sort": "2027-07-04T00:00:00+03:00",
-    "end_date_sort": "2027-07-04T00:00:00+03:00",
+    "date_sort": "2027-07-04T03:00:00+03:00",
+    "end_date_sort": "2027-07-04T03:00:00+03:00",
     "entry_date": "23.05.-13.06.",
     "location": "Meri-Lappi",
     "coordinates": [
@@ -2666,15 +2759,15 @@
     "cost_member": "",
     "classes": [
       {
+        "class": "VOI",
+        "date": "2027-07-04",
         "judge": [
           {
             "id": 678190,
             "name": "Turunen Vesa",
             "official": true
           }
-        ],
-        "class": "VOI",
-        "date": "2027-07-04T00:00:00.000+03:00"
+        ]
       }
     ],
     "places": null,
@@ -2688,8 +2781,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "10.07.2027",
-    "date_sort": "2027-07-10T00:00:00+03:00",
-    "end_date_sort": "2027-07-10T00:00:00+03:00",
+    "date_sort": "2027-07-10T03:00:00+03:00",
+    "end_date_sort": "2027-07-10T03:00:00+03:00",
     "entry_date": "09.06.-30.06.",
     "location": "Laukaa",
     "coordinates": [
@@ -2726,8 +2819,8 @@
     "type": "NOME-B",
     "levels": "ALO (La, Su)",
     "date": "10.-11.07.2027",
-    "date_sort": "2027-07-10T00:00:00+03:00",
-    "end_date_sort": "2027-07-11T23:59:59.999000+03:00",
+    "date_sort": "2027-07-10T03:00:00+03:00",
+    "end_date_sort": "2027-07-11T03:00:00+03:00",
     "entry_date": "29.05.-19.06.",
     "location": "Kaakon toiminta-alue",
     "coordinates": null,
@@ -2751,14 +2844,14 @@
     "cost_member": "",
     "classes": [
       {
-        "judge": [],
         "class": "ALO",
-        "date": "2027-07-10T00:00:00.000+03:00"
+        "date": "2027-07-10",
+        "judge": []
       },
       {
-        "date": "2027-07-11T00:00:00.000+03:00",
-        "judge": [],
-        "class": "ALO"
+        "class": "ALO",
+        "date": "2027-07-11",
+        "judge": []
       }
     ],
     "places": 30,
@@ -2772,8 +2865,8 @@
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "10.07.2027",
-    "date_sort": "2027-07-10T00:00:00+03:00",
-    "end_date_sort": "2027-07-10T00:00:00+03:00",
+    "date_sort": "2027-07-10T03:00:00+03:00",
+    "end_date_sort": "2027-07-10T03:00:00+03:00",
     "entry_date": "29.05.-19.06.",
     "location": "Jyväskylän Ymp.",
     "coordinates": null,
@@ -2797,15 +2890,15 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-07-10T00:00:00.000+03:00",
+        "class": "AVO",
+        "date": "2027-07-10",
         "judge": [
           {
             "id": 882887,
-            "official": true,
-            "name": "Lappalainen Mika"
+            "name": "Lappalainen Mika",
+            "official": true
           }
-        ],
-        "class": "AVO"
+        ]
       }
     ],
     "places": 15,
@@ -2819,8 +2912,8 @@
     "type": "NOWT",
     "levels": "ALO (Su), AVO (Su), VOI (Su)",
     "date": "11.07.2027",
-    "date_sort": "2027-07-11T00:00:00+03:00",
-    "end_date_sort": "2027-07-11T00:00:00+03:00",
+    "date_sort": "2027-07-11T03:00:00+03:00",
+    "end_date_sort": "2027-07-11T03:00:00+03:00",
     "entry_date": "30.05.-20.06.",
     "location": "Kuopio",
     "coordinates": [
@@ -2849,7 +2942,7 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-07-10T21:00:00.000Z",
+        "date": "2027-07-11",
         "groups": [
           "kp"
         ],
@@ -2857,7 +2950,7 @@
       },
       {
         "class": "AVO",
-        "date": "2027-07-10T21:00:00.000Z",
+        "date": "2027-07-11",
         "groups": [
           "kp"
         ],
@@ -2865,7 +2958,7 @@
       },
       {
         "class": "VOI",
-        "date": "2027-07-10T21:00:00.000Z",
+        "date": "2027-07-11",
         "groups": [
           "kp"
         ],
@@ -2883,8 +2976,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "13.07.2027",
-    "date_sort": "2027-07-13T00:00:00+03:00",
-    "end_date_sort": "2027-07-13T00:00:00+03:00",
+    "date_sort": "2027-07-13T03:00:00+03:00",
+    "end_date_sort": "2027-07-13T03:00:00+03:00",
     "entry_date": "01.06.-22.06.",
     "location": "Virrat",
     "coordinates": [
@@ -2921,8 +3014,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "14.07.2027",
-    "date_sort": "2027-07-14T00:00:00+03:00",
-    "end_date_sort": "2027-07-14T00:00:00+03:00",
+    "date_sort": "2027-07-14T03:00:00+03:00",
+    "end_date_sort": "2027-07-14T03:00:00+03:00",
     "entry_date": "02.06.-23.06.",
     "location": "Ylikiiminki",
     "coordinates": [
@@ -2959,8 +3052,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "14.07.2027",
-    "date_sort": "2027-07-14T00:00:00+03:00",
-    "end_date_sort": "2027-07-14T00:00:00+03:00",
+    "date_sort": "2027-07-14T03:00:00+03:00",
+    "end_date_sort": "2027-07-14T03:00:00+03:00",
     "entry_date": "09.06.-30.06.",
     "location": "Tampere",
     "coordinates": [
@@ -3001,8 +3094,8 @@
     "type": "NOME-B",
     "levels": "ALO (To)",
     "date": "15.07.2027",
-    "date_sort": "2027-07-15T00:00:00+03:00",
-    "end_date_sort": "2027-07-15T00:00:00+03:00",
+    "date_sort": "2027-07-15T03:00:00+03:00",
+    "end_date_sort": "2027-07-15T03:00:00+03:00",
     "entry_date": "10.06.-01.07.",
     "location": "Tampere",
     "coordinates": [
@@ -3033,9 +3126,9 @@
     },
     "classes": [
       {
-        "judge": [],
         "class": "ALO",
-        "date": "2027-07-15T00:00:00.000+03:00"
+        "date": "2027-07-15",
+        "judge": []
       }
     ],
     "places": 15,
@@ -3045,12 +3138,180 @@
     "entries": null
   },
   {
+    "id": "0sp7Rplx-e",
+    "type": "NOWT",
+    "levels": "ALO (La, Su), AVO (La, Su), VOI (La, Su)",
+    "date": "17.-18.07.2027",
+    "date_sort": "2027-07-17T03:00:00+03:00",
+    "end_date_sort": "2027-07-18T03:00:00+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Kajaani",
+    "coordinates": [
+      64.2247169,
+      27.7337773
+    ],
+    "name": "",
+    "organizer": "KAINUUN NOUTAJAT RY",
+    "official": {
+      "name": "Hanna-Mari Ruuskanen",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Hanna-Mari Ruuskanen",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Pöppönen Pasi",
+      "Tuomi Pekka"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-17",
+        "judge": []
+      },
+      {
+        "class": "AVO",
+        "date": "2027-07-17",
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "date": "2027-07-17",
+        "judge": []
+      },
+      {
+        "class": "ALO",
+        "date": "2027-07-18",
+        "judge": []
+      },
+      {
+        "class": "AVO",
+        "date": "2027-07-18",
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "date": "2027-07-18",
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
+    "id": "SWFkkUAmuq",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "17.07.2027",
+    "date_sort": "2027-07-17T03:00:00+03:00",
+    "end_date_sort": "2027-07-17T03:00:00+03:00",
+    "entry_date": "21.06.-04.07.",
+    "location": "Pori",
+    "coordinates": [
+      61.4866126,
+      21.7972071
+    ],
+    "name": "Piirinmestaruuskoe",
+    "organizer": "PYNTÖSJÄRVEN YMPÄRISTÖN METSÄSTYSSEURA RY",
+    "official": {
+      "name": "Olli-Pekka Vainio",
+      "phone": "",
+      "email": "vainio.ollipekka@gmail.com"
+    },
+    "secretary": {
+      "name": "Minna Aalto-Vainio",
+      "phone": "",
+      "email": "pikkunita@gmail.com"
+    },
+    "judges": [
+      "Majuri Pasi"
+    ],
+    "description": "Koe on Satakunnan kennelpiirin piirinmestaruuskoe.\nEtusija Satakunnan kennelpiirin alueella asuvilla VOI-luokan noutajarotuisilla koirilla.",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-07-17",
+        "judge": [
+          {
+            "id": 850900,
+            "name": "Majuri Pasi",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-06-21",
+    "entry_end": "2027-07-04",
+    "entries": null
+  },
+  {
+    "id": "_panSlWnz1",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "17.07.2027",
+    "date_sort": "2027-07-17T03:00:00+03:00",
+    "end_date_sort": "2027-07-17T03:00:00+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "kokkola",
+    "coordinates": [
+      63.8391421,
+      23.1336845
+    ],
+    "name": "",
+    "organizer": "KESKI-POHJANMAAN KOIRAKILTA RY",
+    "official": {
+      "name": "Ida-Maria Lindholm",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Tuulia Honkela",
+      "phone": "",
+      "email": "honkela.tuulia@gmail.com"
+    },
+    "judges": [
+      "Purtola Susanna"
+    ],
+    "description": "",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
     "id": "Fs0mJIBr6z",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "17.07.2027",
-    "date_sort": "2027-07-17T00:00:00+03:00",
-    "end_date_sort": "2027-07-17T00:00:00+03:00",
+    "date_sort": "2027-07-17T03:00:00+03:00",
+    "end_date_sort": "2027-07-17T03:00:00+03:00",
     "entry_date": "05.06.-26.06.",
     "location": "Heinola",
     "coordinates": [
@@ -3088,7 +3349,7 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-07-16T21:00:00.000Z",
+        "date": "2027-07-17",
         "judge": []
       }
     ],
@@ -3099,180 +3360,12 @@
     "entries": null
   },
   {
-    "id": "0sp7Rplx-e",
-    "type": "NOWT",
-    "levels": "ALO (La, Su), AVO (La, Su), VOI (La, Su)",
-    "date": "17.-18.07.2027",
-    "date_sort": "2027-07-17T00:00:00+03:00",
-    "end_date_sort": "2027-07-18T23:59:59.999000+03:00",
-    "entry_date": "05.06.-26.06.",
-    "location": "Kajaani",
-    "coordinates": [
-      64.2247169,
-      27.7337773
-    ],
-    "name": "",
-    "organizer": "KAINUUN NOUTAJAT RY",
-    "official": {
-      "name": "Hanna-Mari Ruuskanen",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Hanna-Mari Ruuskanen",
-      "phone": "",
-      "email": ""
-    },
-    "judges": [
-      "Pöppönen Pasi",
-      "Tuomi Pekka"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 45
-    },
-    "cost_member": {
-      "normal": 40
-    },
-    "classes": [
-      {
-        "date": "2027-07-17T00:00:00.000+03:00",
-        "judge": [],
-        "class": "ALO"
-      },
-      {
-        "date": "2027-07-17T00:00:00.000+03:00",
-        "class": "AVO",
-        "judge": []
-      },
-      {
-        "class": "VOI",
-        "date": "2027-07-17T00:00:00.000+03:00",
-        "judge": []
-      },
-      {
-        "date": "2027-07-18T00:00:00.000+03:00",
-        "judge": [],
-        "class": "ALO"
-      },
-      {
-        "class": "AVO",
-        "date": "2027-07-18T00:00:00.000+03:00",
-        "judge": []
-      },
-      {
-        "judge": [],
-        "class": "VOI",
-        "date": "2027-07-18T00:00:00.000+03:00"
-      }
-    ],
-    "places": null,
-    "state": "tentative",
-    "entry_start": "2027-06-05",
-    "entry_end": "2027-06-26",
-    "entries": null
-  },
-  {
-    "id": "SWFkkUAmuq",
-    "type": "NOME-B",
-    "levels": "VOI (La)",
-    "date": "17.07.2027",
-    "date_sort": "2027-07-17T00:00:00+03:00",
-    "end_date_sort": "2027-07-17T00:00:00+03:00",
-    "entry_date": "21.06.-04.07.",
-    "location": "Pori",
-    "coordinates": [
-      61.4866126,
-      21.7972071
-    ],
-    "name": "Piirinmestaruuskoe",
-    "organizer": "PYNTÖSJÄRVEN YMPÄRISTÖN METSÄSTYSSEURA RY",
-    "official": {
-      "name": "Olli-Pekka Vainio",
-      "phone": "",
-      "email": "vainio.ollipekka@gmail.com"
-    },
-    "secretary": {
-      "name": "Minna Aalto-Vainio",
-      "phone": "",
-      "email": "pikkunita@gmail.com"
-    },
-    "judges": [
-      "Majuri Pasi"
-    ],
-    "description": "Koe on Satakunnan kennelpiirin piirinmestaruuskoe.\nEtusija Satakunnan kennelpiirin alueella asuvilla VOI-luokan noutajarotuisilla koirilla.",
-    "cost": {
-      "normal": 50
-    },
-    "cost_member": "",
-    "classes": [
-      {
-        "date": "2027-07-17T00:00:00.000+03:00",
-        "class": "VOI",
-        "judge": [
-          {
-            "id": 850900,
-            "official": true,
-            "name": "Majuri Pasi"
-          }
-        ]
-      }
-    ],
-    "places": 12,
-    "state": "tentative",
-    "entry_start": "2027-06-21",
-    "entry_end": "2027-07-04",
-    "entries": null
-  },
-  {
-    "id": "_panSlWnz1",
-    "type": "NOU",
-    "levels": "N/A",
-    "date": "17.07.2027",
-    "date_sort": "2027-07-17T00:00:00+03:00",
-    "end_date_sort": "2027-07-17T00:00:00+03:00",
-    "entry_date": "05.06.-26.06.",
-    "location": "kokkola",
-    "coordinates": [
-      63.8391421,
-      23.1336845
-    ],
-    "name": "",
-    "organizer": "KESKI-POHJANMAAN KOIRAKILTA RY",
-    "official": {
-      "name": "Ida-Maria Lindholm",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Tuulia Honkela",
-      "phone": "",
-      "email": "honkela.tuulia@gmail.com"
-    },
-    "judges": [
-      "Purtola Susanna"
-    ],
-    "description": "",
-    "cost": {
-      "normal": 45
-    },
-    "cost_member": {
-      "normal": 45
-    },
-    "classes": [],
-    "places": 16,
-    "state": "tentative",
-    "entry_start": "2027-06-05",
-    "entry_end": "2027-06-26",
-    "entries": null
-  },
-  {
     "id": "HNmTyk9ZoK",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "18.07.2027",
-    "date_sort": "2027-07-18T00:00:00+03:00",
-    "end_date_sort": "2027-07-18T00:00:00+03:00",
+    "date_sort": "2027-07-18T03:00:00+03:00",
+    "end_date_sort": "2027-07-18T03:00:00+03:00",
     "entry_date": "06.06.-27.06.",
     "location": "Heinola",
     "coordinates": [
@@ -3310,7 +3403,7 @@
     "classes": [
       {
         "class": "AVO",
-        "date": "2027-07-17T21:00:00.000Z",
+        "date": "2027-07-18",
         "judge": []
       }
     ],
@@ -3325,8 +3418,8 @@
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "24.07.2027",
-    "date_sort": "2027-07-24T00:00:00+03:00",
-    "end_date_sort": "2027-07-24T23:59:59.999000+03:00",
+    "date_sort": "2027-07-24T03:00:00+03:00",
+    "end_date_sort": "2027-07-24T03:00:00+03:00",
     "entry_date": "12.06.-03.07.",
     "location": "Mänttä-Vilppula",
     "coordinates": [
@@ -3358,7 +3451,7 @@
     "classes": [
       {
         "class": "AVO",
-        "date": "2027-07-23T21:00:00.000Z",
+        "date": "2027-07-24",
         "entries": 0,
         "judge": [
           {
@@ -3378,61 +3471,12 @@
     "entries": 0
   },
   {
-    "id": "4tCd7GIQUw",
-    "type": "NOME-B",
-    "levels": "ALO (Su), AVO (La)",
-    "date": "24.-25.07.2027",
-    "date_sort": "2027-07-24T00:00:00+03:00",
-    "end_date_sort": "2027-07-25T23:59:59.999000+03:00",
-    "entry_date": "12.06.-03.07.",
-    "location": "Kuopio",
-    "coordinates": [
-      62.8924641,
-      27.6783597
-    ],
-    "name": "Nome-B AVO (damikoe) ALO, Kuopio",
-    "organizer": "SAVON NUUSKUT RY",
-    "official": {
-      "name": "Jonna Mykkänen",
-      "phone": "",
-      "email": "mykkanenjonna84@gmail.com"
-    },
-    "secretary": {
-      "name": "Jonna Mykkänen",
-      "phone": "",
-      "email": "mykkanenjonna84@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Taru"
-    ],
-    "description": "Huom! Lauantain AVO koe järjestetään Damikokeena!\nEtusijalla jäsenet ja kutsutut.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "judge": [],
-        "date": "2027-07-23T21:00:00.000Z",
-        "class": "AVO"
-      },
-      {
-        "date": "2027-07-24T21:00:00.000Z",
-        "judge": [],
-        "class": "ALO"
-      }
-    ],
-    "places": null,
-    "state": "tentative",
-    "entry_start": "2027-06-12",
-    "entry_end": "2027-07-03",
-    "entries": null
-  },
-  {
     "id": "dELdf-qmwV",
     "type": "NOWT",
     "levels": "ALO (La), AVO (La)",
     "date": "24.07.2027",
-    "date_sort": "2027-07-24T00:00:00+03:00",
-    "end_date_sort": "2027-07-24T00:00:00+03:00",
+    "date_sort": "2027-07-24T03:00:00+03:00",
+    "end_date_sort": "2027-07-24T03:00:00+03:00",
     "entry_date": "12.06.-03.07.",
     "location": "Toivakka",
     "coordinates": [
@@ -3460,23 +3504,72 @@
     "cost_member": "",
     "classes": [
       {
+        "class": "ALO",
+        "date": "2027-07-24",
         "groups": [
           "kp"
         ],
-        "date": "2027-07-23T21:00:00.000Z",
-        "class": "ALO",
         "judge": []
       },
       {
+        "class": "AVO",
+        "date": "2027-07-24",
         "groups": [
           "kp"
         ],
-        "date": "2027-07-23T21:00:00.000Z",
-        "judge": [],
-        "class": "AVO"
+        "judge": []
       }
     ],
     "places": 40,
+    "state": "tentative",
+    "entry_start": "2027-06-12",
+    "entry_end": "2027-07-03",
+    "entries": null
+  },
+  {
+    "id": "4tCd7GIQUw",
+    "type": "NOME-B",
+    "levels": "ALO (Su), AVO (La)",
+    "date": "24.-25.07.2027",
+    "date_sort": "2027-07-24T03:00:00+03:00",
+    "end_date_sort": "2027-07-25T03:00:00+03:00",
+    "entry_date": "12.06.-03.07.",
+    "location": "Kuopio",
+    "coordinates": [
+      62.8924641,
+      27.6783597
+    ],
+    "name": "Nome-B AVO (damikoe) ALO, Kuopio",
+    "organizer": "SAVON NUUSKUT RY",
+    "official": {
+      "name": "Jonna Mykkänen",
+      "phone": "",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "secretary": {
+      "name": "Jonna Mykkänen",
+      "phone": "",
+      "email": "mykkanenjonna84@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Taru"
+    ],
+    "description": "Huom! Lauantain AVO koe järjestetään Damikokeena!\nEtusijalla jäsenet ja kutsutut.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-07-24",
+        "judge": []
+      },
+      {
+        "class": "ALO",
+        "date": "2027-07-25",
+        "judge": []
+      }
+    ],
+    "places": null,
     "state": "tentative",
     "entry_start": "2027-06-12",
     "entry_end": "2027-07-03",
@@ -3487,8 +3580,8 @@
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "24.07.2027",
-    "date_sort": "2027-07-24T00:00:00+03:00",
-    "end_date_sort": "2027-07-24T00:00:00+03:00",
+    "date_sort": "2027-07-24T03:00:00+03:00",
+    "end_date_sort": "2027-07-24T03:00:00+03:00",
     "entry_date": "12.06.-03.07.",
     "location": "Uusikaupunki",
     "coordinates": [
@@ -3516,7 +3609,7 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-07-24T00:00:00.000+03:00",
+        "date": "2027-07-24",
         "judge": [
           {
             "id": 4055276,
@@ -3537,8 +3630,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "25.07.2027",
-    "date_sort": "2027-07-25T00:00:00+03:00",
-    "end_date_sort": "2027-07-25T00:00:00+03:00",
+    "date_sort": "2027-07-25T03:00:00+03:00",
+    "end_date_sort": "2027-07-25T03:00:00+03:00",
     "entry_date": "13.06.-04.07.",
     "location": "Mänttä-Vilppula",
     "coordinates": [
@@ -3570,7 +3663,7 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-07-25T00:00:00.000+03:00",
+        "date": "2027-07-25",
         "entries": 0,
         "judge": [],
         "members": 0,
@@ -3588,8 +3681,8 @@
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "30.-01.08.2027",
-    "date_sort": "2027-07-30T00:00:00+03:00",
-    "end_date_sort": "2027-08-01T23:59:59.999000+03:00",
+    "date_sort": "2027-07-30T03:00:00+03:00",
+    "end_date_sort": "2027-08-01T03:00:00+03:00",
     "entry_date": "18.06.-09.07.",
     "location": "Raasepori",
     "coordinates": [
@@ -3626,8 +3719,8 @@
     "type": "NOME-B",
     "levels": "N/A",
     "date": "30.-01.08.2027",
-    "date_sort": "2027-07-30T00:00:00+03:00",
-    "end_date_sort": "2027-08-01T23:59:59.999000+03:00",
+    "date_sort": "2027-07-30T03:00:00+03:00",
+    "end_date_sort": "2027-08-01T03:00:00+03:00",
     "entry_date": "18.06.-09.07.",
     "location": "Raasepori",
     "coordinates": [
@@ -3660,60 +3753,12 @@
     "entries": null
   },
   {
-    "id": "QoQultqHlU",
-    "type": "NOME-B",
-    "levels": "VOI (La)",
-    "date": "31.07.2027",
-    "date_sort": "2027-07-31T00:00:00+03:00",
-    "end_date_sort": "2027-07-31T00:00:00+03:00",
-    "entry_date": "05.07.-18.07.",
-    "location": "Kärkölä",
-    "coordinates": [
-      60.8676567,
-      25.2511393
-    ],
-    "name": "Salpausselän Kennelpiirin piirinmestaruus",
-    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
-    "official": {
-      "name": "Minna Johansson",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Terhi Lakka",
-      "phone": "",
-      "email": "terhi.lakka@gmail.com"
-    },
-    "judges": [
-      "Hiltunen Niko"
-    ],
-    "description": "Piirinmestaruuskoe. Etusija Salpausselän kennelpiirin alueella asuvilla piirinmestaruudesta kilpailevilla koirakoilla.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
-    "cost": {
-      "normal": 55
-    },
-    "cost_member": {
-      "normal": 45
-    },
-    "classes": [
-      {
-        "class": "VOI",
-        "date": "2027-07-30T21:00:00.000Z",
-        "judge": []
-      }
-    ],
-    "places": 14,
-    "state": "tentative",
-    "entry_start": "2027-07-05",
-    "entry_end": "2027-07-18",
-    "entries": null
-  },
-  {
     "id": "Hd7CoTn-oW",
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "31.07.2027",
-    "date_sort": "2027-07-31T00:00:00+03:00",
-    "end_date_sort": "2027-07-31T00:00:00+03:00",
+    "date_sort": "2027-07-31T03:00:00+03:00",
+    "end_date_sort": "2027-07-31T03:00:00+03:00",
     "entry_date": "05.07.-18.07.",
     "location": "Orimattila",
     "coordinates": [
@@ -3745,11 +3790,59 @@
     "classes": [
       {
         "class": "ALO",
-        "judge": [],
-        "date": "2027-07-31T00:00:00.000+03:00"
+        "date": "2027-07-31",
+        "judge": []
       }
     ],
     "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-05",
+    "entry_end": "2027-07-18",
+    "entries": null
+  },
+  {
+    "id": "QoQultqHlU",
+    "type": "NOME-B",
+    "levels": "VOI (La)",
+    "date": "31.07.2027",
+    "date_sort": "2027-07-31T03:00:00+03:00",
+    "end_date_sort": "2027-07-31T03:00:00+03:00",
+    "entry_date": "05.07.-18.07.",
+    "location": "Kärkölä",
+    "coordinates": [
+      60.8676567,
+      25.2511393
+    ],
+    "name": "Salpausselän Kennelpiirin piirinmestaruus",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "Minna Johansson",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Terhi Lakka",
+      "phone": "",
+      "email": "terhi.lakka@gmail.com"
+    },
+    "judges": [
+      "Hiltunen Niko"
+    ],
+    "description": "Piirinmestaruuskoe. Etusija Salpausselän kennelpiirin alueella asuvilla piirinmestaruudesta kilpailevilla koirakoilla.\n\nKoemaksu maksetaan vasta koepaikan varmistuttua. Maksu on maksettava 2 vrk:n kuluessa koekutsun vastaanottamisesta. Tämän jälkeen maksamaton koepaikka luovutetaan seuraavalle jonossa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima.",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "VOI",
+        "date": "2027-07-31",
+        "judge": []
+      }
+    ],
+    "places": 14,
     "state": "tentative",
     "entry_start": "2027-07-05",
     "entry_end": "2027-07-18",
@@ -3760,8 +3853,8 @@
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "31.-01.08.2027",
-    "date_sort": "2027-07-31T00:00:00+03:00",
-    "end_date_sort": "2027-08-01T00:00:00+03:00",
+    "date_sort": "2027-07-31T03:00:00+03:00",
+    "end_date_sort": "2027-08-01T03:00:00+03:00",
     "entry_date": "19.06.-27.07.",
     "location": "Kuopio",
     "coordinates": [
@@ -3790,7 +3883,7 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-07-31T00:00:00.000+03:00",
+        "date": "2027-07-31",
         "judge": [
           {
             "id": 881593,
@@ -3807,7 +3900,7 @@
       },
       {
         "class": "VOI",
-        "date": "2027-08-01T00:00:00.000+03:00",
+        "date": "2027-08-01",
         "judge": [
           {
             "id": 881593,
@@ -3834,8 +3927,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "01.08.2027",
-    "date_sort": "2027-08-01T00:00:00+03:00",
-    "end_date_sort": "2027-08-01T00:00:00+03:00",
+    "date_sort": "2027-08-01T03:00:00+03:00",
+    "end_date_sort": "2027-08-01T03:00:00+03:00",
     "entry_date": "05.07.-18.07.",
     "location": "Kärkölä",
     "coordinates": [
@@ -3867,7 +3960,7 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-07-31T21:00:00.000Z",
+        "date": "2027-08-01",
         "judge": []
       }
     ],
@@ -3882,8 +3975,8 @@
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "01.08.2027",
-    "date_sort": "2027-08-01T00:00:00+03:00",
-    "end_date_sort": "2027-08-01T00:00:00+03:00",
+    "date_sort": "2027-08-01T03:00:00+03:00",
+    "end_date_sort": "2027-08-01T03:00:00+03:00",
     "entry_date": "05.07.-18.07.",
     "location": "Orimattila",
     "coordinates": [
@@ -3915,7 +4008,7 @@
     "classes": [
       {
         "class": "AVO",
-        "date": "2027-08-01T00:00:00.000+03:00",
+        "date": "2027-08-01",
         "judge": []
       }
     ],
@@ -3930,8 +4023,8 @@
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "07.08.2027",
-    "date_sort": "2027-08-07T00:00:00+03:00",
-    "end_date_sort": "2027-08-07T00:00:00+03:00",
+    "date_sort": "2027-08-07T03:00:00+03:00",
+    "end_date_sort": "2027-08-07T03:00:00+03:00",
     "entry_date": "26.06.-17.07.",
     "location": "Rovaniemi",
     "coordinates": [
@@ -3959,7 +4052,7 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-08-07T00:00:00.000+03:00",
+        "date": "2027-08-07",
         "judge": [
           {
             "id": 4042184,
@@ -3980,8 +4073,8 @@
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "07.-08.08.2027",
-    "date_sort": "2027-08-07T00:00:00+03:00",
-    "end_date_sort": "2027-08-08T23:59:59.999000+03:00",
+    "date_sort": "2027-08-07T03:00:00+03:00",
+    "end_date_sort": "2027-08-08T03:00:00+03:00",
     "entry_date": "26.06.-17.07.",
     "location": "Etelä-Suomi",
     "coordinates": [
@@ -4018,8 +4111,8 @@
     "type": "NOME-B",
     "levels": "ALO (La), AVO (La)",
     "date": "07.08.2027",
-    "date_sort": "2027-08-07T00:00:00+03:00",
-    "end_date_sort": "2027-08-07T00:00:00+03:00",
+    "date_sort": "2027-08-07T03:00:00+03:00",
+    "end_date_sort": "2027-08-07T03:00:00+03:00",
     "entry_date": "26.06.-17.07.",
     "location": "Ullava",
     "coordinates": [
@@ -4046,30 +4139,30 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-08-07T00:00:00.000+03:00",
         "class": "ALO",
-        "judge": [
-          {
-            "official": true,
-            "name": "Turunen Vesa",
-            "id": 678190
-          }
-        ],
+        "date": "2027-08-07",
         "groups": [
           "ap"
+        ],
+        "judge": [
+          {
+            "id": 678190,
+            "name": "Turunen Vesa",
+            "official": true
+          }
         ]
       },
       {
+        "class": "AVO",
+        "date": "2027-08-07",
         "groups": [
           "ip"
         ],
-        "date": "2027-08-07T00:00:00.000+03:00",
-        "class": "AVO",
         "judge": [
           {
+            "id": 678190,
             "name": "Turunen Vesa",
-            "official": true,
-            "id": 678190
+            "official": true
           }
         ]
       }
@@ -4085,8 +4178,8 @@
     "type": "EPÄVIRALLINEN",
     "levels": "N/A",
     "date": "07.-08.08.2027",
-    "date_sort": "2027-08-07T00:00:00+03:00",
-    "end_date_sort": "2027-08-08T23:59:59.999000+03:00",
+    "date_sort": "2027-08-07T03:00:00+03:00",
+    "end_date_sort": "2027-08-08T03:00:00+03:00",
     "entry_date": "26.06.-17.07.",
     "location": "Etelä-Suomi",
     "coordinates": [
@@ -4123,8 +4216,8 @@
     "type": "NOME-B",
     "levels": "AVO (Su), VOI (Su)",
     "date": "08.08.2027",
-    "date_sort": "2027-08-08T00:00:00+03:00",
-    "end_date_sort": "2027-08-08T00:00:00+03:00",
+    "date_sort": "2027-08-08T03:00:00+03:00",
+    "end_date_sort": "2027-08-08T03:00:00+03:00",
     "entry_date": "27.06.-18.07.",
     "location": "Rovaniemi",
     "coordinates": [
@@ -4152,7 +4245,7 @@
     "classes": [
       {
         "class": "AVO",
-        "date": "2027-08-08T00:00:00.000+03:00",
+        "date": "2027-08-08",
         "groups": [
           "ap"
         ],
@@ -4166,7 +4259,7 @@
       },
       {
         "class": "VOI",
-        "date": "2027-08-08T00:00:00.000+03:00",
+        "date": "2027-08-08",
         "groups": [
           "ip"
         ],
@@ -4190,8 +4283,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "08.08.2027",
-    "date_sort": "2027-08-08T00:00:00+03:00",
-    "end_date_sort": "2027-08-08T00:00:00+03:00",
+    "date_sort": "2027-08-08T03:00:00+03:00",
+    "end_date_sort": "2027-08-08T03:00:00+03:00",
     "entry_date": "27.06.-18.07.",
     "location": "Ullava",
     "coordinates": [
@@ -4218,15 +4311,15 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-08-08T00:00:00.000+03:00",
+        "class": "VOI",
+        "date": "2027-08-08",
         "judge": [
           {
+            "id": 678190,
             "name": "Turunen Vesa",
-            "official": true,
-            "id": 678190
+            "official": true
           }
-        ],
-        "class": "VOI"
+        ]
       }
     ],
     "places": null,
@@ -4240,8 +4333,8 @@
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "14.-15.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T23:59:59.999000+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "03.07.-24.07.",
     "location": "Rautalampi",
     "coordinates": [
@@ -4268,13 +4361,13 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-08-14T00:00:00.000+03:00",
-        "judge": [],
-        "class": "VOI"
+        "class": "VOI",
+        "date": "2027-08-14",
+        "judge": []
       },
       {
         "class": "VOI",
-        "date": "2027-08-15T00:00:00.000+03:00",
+        "date": "2027-08-15",
         "judge": []
       }
     ],
@@ -4289,8 +4382,8 @@
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "14.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-14T03:00:00+03:00",
     "entry_date": "03.07.-24.07.",
     "location": "Pälkäne",
     "coordinates": [
@@ -4321,8 +4414,8 @@
     },
     "classes": [
       {
-        "date": "2027-08-14T00:00:00.000+03:00",
         "class": "AVO",
+        "date": "2027-08-14",
         "judge": []
       }
     ],
@@ -4337,8 +4430,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "14.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-14T03:00:00+03:00",
     "entry_date": "03.07.-24.07.",
     "location": "Vehmaa",
     "coordinates": [
@@ -4379,8 +4472,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "14.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-14T03:00:00+03:00",
     "entry_date": "03.07.-24.07.",
     "location": "Pälkäne",
     "coordinates": [
@@ -4421,8 +4514,8 @@
     "type": "NOME-B",
     "levels": "VOI (La, Su)",
     "date": "14.-15.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T23:59:59.999000+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "03.07.-24.07.",
     "location": "Kaakon toiminta-alue",
     "coordinates": null,
@@ -4446,25 +4539,25 @@
     "cost_member": "",
     "classes": [
       {
+        "class": "VOI",
+        "date": "2027-08-14",
         "judge": [
           {
+            "id": 4053791,
             "name": "Puttonen Pasi-Petteri",
-            "official": true,
-            "id": 4053791
+            "official": true
           }
         ],
-        "places": 12,
-        "date": "2027-08-13T21:00:00.000Z",
-        "class": "VOI"
+        "places": 12
       },
       {
         "class": "VOI",
-        "date": "2027-08-14T21:00:00.000Z",
+        "date": "2027-08-15",
         "judge": [
           {
-            "official": true,
             "id": 4053791,
-            "name": "Puttonen Pasi-Petteri"
+            "name": "Puttonen Pasi-Petteri",
+            "official": true
           }
         ],
         "places": 12
@@ -4481,8 +4574,8 @@
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "14.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-14T03:00:00+03:00",
     "entry_date": "03.07.-24.07.",
     "location": "Jyväskylän ymp.",
     "coordinates": [
@@ -4511,17 +4604,17 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-08-13T21:00:00.000Z",
+        "date": "2027-08-14",
         "judge": [
           {
-            "official": true,
+            "id": 881593,
             "name": "Tenhunen Matti",
-            "id": 881593
+            "official": true
           },
           {
-            "official": true,
+            "id": 696622,
             "name": "Hartikainen Jari",
-            "id": 696622
+            "official": true
           }
         ]
       }
@@ -4537,8 +4630,8 @@
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "14.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-14T03:00:00+03:00",
     "entry_date": "03.07.-24.07.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -4567,19 +4660,19 @@
     "classes": [
       {
         "class": "VOI",
+        "date": "2027-08-14",
         "judge": [
           {
-            "official": true,
+            "id": 653323,
             "name": "Uusimäki Pekka",
-            "id": 653323
+            "official": true
           },
           {
+            "id": 842408,
             "name": "Fontell Ari-Pekka",
-            "official": true,
-            "id": 842408
+            "official": true
           }
-        ],
-        "date": "2027-08-13T21:00:00.000Z"
+        ]
       }
     ],
     "places": 24,
@@ -4593,8 +4686,8 @@
     "type": "NOWT",
     "levels": "ALO (La), AVO (La)",
     "date": "14.08.2027",
-    "date_sort": "2027-08-14T00:00:00+03:00",
-    "end_date_sort": "2027-08-14T00:00:00+03:00",
+    "date_sort": "2027-08-14T03:00:00+03:00",
+    "end_date_sort": "2027-08-14T03:00:00+03:00",
     "entry_date": "19.07.-01.08.",
     "location": "Heinola",
     "coordinates": [
@@ -4627,12 +4720,12 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-08-14T00:00:00.000+03:00",
+        "date": "2027-08-14",
         "judge": []
       },
       {
-        "date": "2027-08-14T00:00:00.000+03:00",
         "class": "AVO",
+        "date": "2027-08-14",
         "judge": []
       }
     ],
@@ -4647,8 +4740,8 @@
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "15.08.2027",
-    "date_sort": "2027-08-15T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "date_sort": "2027-08-15T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "04.07.-25.07.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -4676,7 +4769,7 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-08-14T21:00:00.000Z",
+        "date": "2027-08-15",
         "judge": []
       }
     ],
@@ -4691,8 +4784,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "15.08.2027",
-    "date_sort": "2027-08-15T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "date_sort": "2027-08-15T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "19.07.-01.08.",
     "location": "Heinola",
     "coordinates": [
@@ -4729,8 +4822,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "15.08.2027",
-    "date_sort": "2027-08-15T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "date_sort": "2027-08-15T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "04.07.-25.07.",
     "location": "Pälkäne",
     "coordinates": [
@@ -4762,7 +4855,7 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-08-15T00:00:00.000+03:00",
+        "date": "2027-08-15",
         "judge": []
       }
     ],
@@ -4777,8 +4870,8 @@
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "15.08.2027",
-    "date_sort": "2027-08-15T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "date_sort": "2027-08-15T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "04.07.-25.07.",
     "location": "Vehmaa",
     "coordinates": [
@@ -4810,17 +4903,17 @@
     "classes": [
       {
         "class": "ALO",
+        "date": "2027-08-15",
         "entries": 0,
-        "date": "2027-08-15T00:00:00.000+03:00",
-        "members": 0,
-        "places": 15,
         "judge": [
           {
+            "id": 835312,
             "name": "Salonen Susanna",
-            "official": true,
-            "id": 835312
+            "official": true
           }
-        ]
+        ],
+        "members": 0,
+        "places": 15
       }
     ],
     "places": 15,
@@ -4834,8 +4927,8 @@
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "15.08.2027",
-    "date_sort": "2027-08-15T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "date_sort": "2027-08-15T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "04.07.-25.07.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -4862,8 +4955,8 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-08-14T21:00:00.000Z",
         "class": "AVO",
+        "date": "2027-08-15",
         "judge": []
       }
     ],
@@ -4878,8 +4971,8 @@
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "15.08.2027",
-    "date_sort": "2027-08-15T00:00:00+03:00",
-    "end_date_sort": "2027-08-15T00:00:00+03:00",
+    "date_sort": "2027-08-15T03:00:00+03:00",
+    "end_date_sort": "2027-08-15T03:00:00+03:00",
     "entry_date": "04.07.-25.07.",
     "location": "Pälkäne",
     "coordinates": [
@@ -4911,7 +5004,7 @@
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-08-15T00:00:00.000+03:00"
+        "date": "2027-08-15"
       }
     ],
     "places": 15,
@@ -4925,8 +5018,8 @@
     "type": "NOME-B",
     "levels": "ALO (La)",
     "date": "28.08.2027",
-    "date_sort": "2027-08-28T00:00:00+03:00",
-    "end_date_sort": "2027-08-28T00:00:00+03:00",
+    "date_sort": "2027-08-28T03:00:00+03:00",
+    "end_date_sort": "2027-08-28T03:00:00+03:00",
     "entry_date": "28.07.-18.08.",
     "location": "Hausjärvi",
     "coordinates": [
@@ -4953,15 +5046,15 @@
     "cost_member": "",
     "classes": [
       {
+        "class": "ALO",
+        "date": "2027-08-28",
         "judge": [
           {
+            "id": 842408,
             "name": "Fontell Ari-Pekka",
-            "official": true,
-            "id": 842408
+            "official": true
           }
-        ],
-        "date": "2027-08-28T00:00:00.000+03:00",
-        "class": "ALO"
+        ]
       }
     ],
     "places": 15,
@@ -4975,8 +5068,8 @@
     "type": "NOME-B",
     "levels": "AVO (La)",
     "date": "28.08.2027",
-    "date_sort": "2027-08-28T00:00:00+03:00",
-    "end_date_sort": "2027-08-28T00:00:00+03:00",
+    "date_sort": "2027-08-28T03:00:00+03:00",
+    "end_date_sort": "2027-08-28T03:00:00+03:00",
     "entry_date": "19.07.-09.08.",
     "location": "Salo",
     "coordinates": [
@@ -5007,9 +5100,9 @@
     },
     "classes": [
       {
-        "date": "2027-08-27T21:00:00.000Z",
-        "judge": [],
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-08-28",
+        "judge": []
       }
     ],
     "places": 15,
@@ -5023,8 +5116,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "28.-29.08.2027",
-    "date_sort": "2027-08-28T00:00:00+03:00",
-    "end_date_sort": "2027-08-29T23:59:59.999000+03:00",
+    "date_sort": "2027-08-28T03:00:00+03:00",
+    "end_date_sort": "2027-08-29T03:00:00+03:00",
     "entry_date": "17.07.-07.08.",
     "location": "Laukaa",
     "coordinates": [
@@ -5061,8 +5154,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "28.08.2027",
-    "date_sort": "2027-08-28T00:00:00+03:00",
-    "end_date_sort": "2027-08-28T00:00:00+03:00",
+    "date_sort": "2027-08-28T03:00:00+03:00",
+    "end_date_sort": "2027-08-28T03:00:00+03:00",
     "entry_date": "19.07.-09.08.",
     "location": "Salo",
     "coordinates": [
@@ -5099,62 +5192,12 @@
     "entries": null
   },
   {
-    "id": "5ftZBHdY1-",
-    "type": "NOME-B",
-    "levels": "AVO (Su)",
-    "date": "29.08.2027",
-    "date_sort": "2027-08-29T00:00:00+03:00",
-    "end_date_sort": "2027-08-29T00:00:00+03:00",
-    "entry_date": "28.07.-18.08.",
-    "location": "Hausjärvi",
-    "coordinates": [
-      60.7788065,
-      24.9735698
-    ],
-    "name": "Tollerinome",
-    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
-    "official": {
-      "name": "Maija Mäkinen",
-      "phone": "040 765 0719",
-      "email": "maija.h.makinen@gmail.com"
-    },
-    "secretary": {
-      "name": "Marja-Terttu Keränen",
-      "phone": "0407564059",
-      "email": "malla_keranen@hotmail.com"
-    },
-    "judges": [
-      "Fontell Ari-Pekka"
-    ],
-    "description": "Koe toteutetaan yhteistyössä Novascotiannoutajat ry:n kanssa. Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla sekä Kanta-Hämeen Noutajakoirayhdistyksen jäsenillä. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 3 € pankkikulu.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "AVO",
-        "date": "2027-08-28T21:00:00.000Z",
-        "judge": [
-          {
-            "id": 842408,
-            "name": "Fontell Ari-Pekka",
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": 15,
-    "state": "tentative",
-    "entry_start": "2027-07-28",
-    "entry_end": "2027-08-18",
-    "entries": null
-  },
-  {
     "id": "LytmIQ3UTw",
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "29.08.2027",
-    "date_sort": "2027-08-29T00:00:00+03:00",
-    "end_date_sort": "2027-08-29T00:00:00+03:00",
+    "date_sort": "2027-08-29T03:00:00+03:00",
+    "end_date_sort": "2027-08-29T03:00:00+03:00",
     "entry_date": "19.07.-09.08.",
     "location": "Salo",
     "coordinates": [
@@ -5186,8 +5229,8 @@
     "classes": [
       {
         "class": "ALO",
-        "judge": [],
-        "date": "2027-08-28T21:00:00.000Z"
+        "date": "2027-08-29",
+        "judge": []
       }
     ],
     "places": 15,
@@ -5201,8 +5244,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "29.08.2027",
-    "date_sort": "2027-08-29T00:00:00+03:00",
-    "end_date_sort": "2027-08-29T00:00:00+03:00",
+    "date_sort": "2027-08-29T03:00:00+03:00",
+    "end_date_sort": "2027-08-29T03:00:00+03:00",
     "entry_date": "19.07.-09.08.",
     "location": "Salo",
     "coordinates": [
@@ -5233,9 +5276,9 @@
     },
     "classes": [
       {
-        "judge": [],
-        "date": "2027-08-28T21:00:00.000Z",
-        "class": "VOI"
+        "class": "VOI",
+        "date": "2027-08-29",
+        "judge": []
       }
     ],
     "places": 12,
@@ -5245,12 +5288,62 @@
     "entries": null
   },
   {
+    "id": "5ftZBHdY1-",
+    "type": "NOME-B",
+    "levels": "AVO (Su)",
+    "date": "29.08.2027",
+    "date_sort": "2027-08-29T03:00:00+03:00",
+    "end_date_sort": "2027-08-29T03:00:00+03:00",
+    "entry_date": "28.07.-18.08.",
+    "location": "Hausjärvi",
+    "coordinates": [
+      60.7788065,
+      24.9735698
+    ],
+    "name": "Tollerinome",
+    "organizer": "KANTA-HÄMEEN NOUTAJAKOIRAYHDISTYS RY",
+    "official": {
+      "name": "Maija Mäkinen",
+      "phone": "040 765 0719",
+      "email": "maija.h.makinen@gmail.com"
+    },
+    "secretary": {
+      "name": "Marja-Terttu Keränen",
+      "phone": "0407564059",
+      "email": "malla_keranen@hotmail.com"
+    },
+    "judges": [
+      "Fontell Ari-Pekka"
+    ],
+    "description": "Koe toteutetaan yhteistyössä Novascotiannoutajat ry:n kanssa. Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla sekä Kanta-Hämeen Noutajakoirayhdistyksen jäsenillä. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 3 € pankkikulu.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "AVO",
+        "date": "2027-08-29",
+        "judge": [
+          {
+            "id": 842408,
+            "name": "Fontell Ari-Pekka",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-07-28",
+    "entry_end": "2027-08-18",
+    "entries": null
+  },
+  {
     "id": "JMuSSwEXGq",
     "type": "NOME-B SM",
     "levels": "VOI (La, Pe)",
     "date": "03.-04.09.2027",
-    "date_sort": "2027-09-03T00:00:00+03:00",
-    "end_date_sort": "2027-09-04T23:59:59.999000+03:00",
+    "date_sort": "2027-09-03T03:00:00+03:00",
+    "end_date_sort": "2027-09-04T03:00:00+03:00",
     "entry_date": "23.07.-17.08.",
     "location": "Virrat",
     "coordinates": [
@@ -5279,13 +5372,13 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-09-02T21:00:00.000Z",
+        "date": "2027-09-03",
         "judge": [],
         "places": 0
       },
       {
         "class": "VOI",
-        "date": "2027-09-03T21:00:00.000Z",
+        "date": "2027-09-04",
         "judge": [],
         "places": 0
       }
@@ -5301,8 +5394,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "04.09.2027",
-    "date_sort": "2027-09-04T00:00:00+03:00",
-    "end_date_sort": "2027-09-04T00:00:00+03:00",
+    "date_sort": "2027-09-04T03:00:00+03:00",
+    "end_date_sort": "2027-09-04T03:00:00+03:00",
     "entry_date": "24.07.-14.08.",
     "location": "Leppävirta",
     "coordinates": [
@@ -5343,8 +5436,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "04.-05.09.2027",
-    "date_sort": "2027-09-04T00:00:00+03:00",
-    "end_date_sort": "2027-09-05T23:59:59.999000+03:00",
+    "date_sort": "2027-09-04T03:00:00+03:00",
+    "end_date_sort": "2027-09-05T03:00:00+03:00",
     "entry_date": "24.07.-14.08.",
     "location": "Kaakon toiminta-alueella",
     "coordinates": null,
@@ -5378,8 +5471,8 @@
     "type": "NOU",
     "levels": "N/A",
     "date": "11.09.2027",
-    "date_sort": "2027-09-11T00:00:00+03:00",
-    "end_date_sort": "2027-09-11T00:00:00+03:00",
+    "date_sort": "2027-09-11T03:00:00+03:00",
+    "end_date_sort": "2027-09-11T03:00:00+03:00",
     "entry_date": "01.08.-22.08.",
     "location": "Uusikaarlepyy",
     "coordinates": [
@@ -5416,8 +5509,8 @@
     "type": "NOME-B",
     "levels": "ALO (La), AVO (La)",
     "date": "18.09.2027",
-    "date_sort": "2027-09-18T00:00:00+03:00",
-    "end_date_sort": "2027-09-18T00:00:00+03:00",
+    "date_sort": "2027-09-18T03:00:00+03:00",
+    "end_date_sort": "2027-09-18T03:00:00+03:00",
     "entry_date": "07.08.-28.08.",
     "location": "Meri-Lappi",
     "coordinates": [
@@ -5449,31 +5542,31 @@
     "classes": [
       {
         "class": "ALO",
-        "judge": [
-          {
-            "official": true,
-            "id": 4042184,
-            "name": "Oikarinen Jyrki"
-          }
-        ],
-        "date": "2027-09-18T00:00:00.000+03:00",
+        "date": "2027-09-18",
         "groups": [
           "ap"
+        ],
+        "judge": [
+          {
+            "id": 4042184,
+            "name": "Oikarinen Jyrki",
+            "official": true
+          }
         ]
       },
       {
         "class": "AVO",
-        "judge": [
-          {
-            "name": "Oikarinen Jyrki",
-            "official": true,
-            "id": 4042184
-          }
-        ],
+        "date": "2027-09-18",
         "groups": [
           "ip"
         ],
-        "date": "2027-09-18T00:00:00.000+03:00"
+        "judge": [
+          {
+            "id": 4042184,
+            "name": "Oikarinen Jyrki",
+            "official": true
+          }
+        ]
       }
     ],
     "places": null,
@@ -5487,8 +5580,8 @@
     "type": "NOME-B",
     "levels": "VOI (Su)",
     "date": "19.09.2027",
-    "date_sort": "2027-09-19T00:00:00+03:00",
-    "end_date_sort": "2027-09-19T00:00:00+03:00",
+    "date_sort": "2027-09-19T03:00:00+03:00",
+    "end_date_sort": "2027-09-19T03:00:00+03:00",
     "entry_date": "08.08.-29.08.",
     "location": "Meri-Lappi",
     "coordinates": [
@@ -5519,13 +5612,13 @@
     },
     "classes": [
       {
-        "date": "2027-09-19T00:00:00.000+03:00",
         "class": "VOI",
+        "date": "2027-09-19",
         "judge": [
           {
             "id": 4042184,
-            "official": true,
-            "name": "Oikarinen Jyrki"
+            "name": "Oikarinen Jyrki",
+            "official": true
           }
         ]
       }
@@ -5537,73 +5630,12 @@
     "entries": null
   },
   {
-    "id": "YwGJlA3m_e",
-    "type": "NOME-B",
-    "levels": "ALO (La), AVO (La)",
-    "date": "25.09.2027",
-    "date_sort": "2027-09-25T00:00:00+03:00",
-    "end_date_sort": "2027-09-25T00:00:00+03:00",
-    "entry_date": "14.08.-04.09.",
-    "location": "Uusikaarlepyy",
-    "coordinates": [
-      63.5222473,
-      22.5284347
-    ],
-    "name": "",
-    "organizer": "JAKOBSTADSNEJDENS KENNELFÖRENING RF",
-    "official": {
-      "name": "",
-      "phone": "",
-      "email": ""
-    },
-    "secretary": {
-      "name": "Anna Björklund",
-      "phone": "0456506161",
-      "email": "noutajajakoirajaosto@gmail.com"
-    },
-    "judges": [
-      "Toskala Mika"
-    ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "ALO",
-        "date": "2027-09-24T21:00:00.000Z",
-        "judge": [
-          {
-            "id": 697689,
-            "name": "Toskala Mika",
-            "official": true
-          }
-        ]
-      },
-      {
-        "class": "AVO",
-        "date": "2027-09-24T21:00:00.000Z",
-        "judge": [
-          {
-            "id": 697689,
-            "name": "Toskala Mika",
-            "official": true
-          }
-        ]
-      }
-    ],
-    "places": 15,
-    "state": "tentative",
-    "entry_start": "2027-08-14",
-    "entry_end": "2027-09-04",
-    "entries": null
-  },
-  {
     "id": "7UbwaOVd94",
     "type": "NOWT",
     "levels": "VOI (La)",
     "date": "25.09.2027",
-    "date_sort": "2027-09-25T00:00:00+03:00",
-    "end_date_sort": "2027-09-25T00:00:00+03:00",
+    "date_sort": "2027-09-25T03:00:00+03:00",
+    "end_date_sort": "2027-09-25T03:00:00+03:00",
     "entry_date": "14.08.-04.09.",
     "location": "Kouvola",
     "coordinates": [
@@ -5636,11 +5668,11 @@
     "classes": [
       {
         "class": "VOI",
-        "judge": [],
+        "date": "2027-09-25",
         "groups": [
           "kp"
         ],
-        "date": "2027-09-25T00:00:00.000+03:00"
+        "judge": []
       }
     ],
     "places": 16,
@@ -5654,8 +5686,8 @@
     "type": "NOWT",
     "levels": "VOI (La)",
     "date": "25.09.2027",
-    "date_sort": "2027-09-25T00:00:00+03:00",
-    "end_date_sort": "2027-09-25T00:00:00+03:00",
+    "date_sort": "2027-09-25T03:00:00+03:00",
+    "end_date_sort": "2027-09-25T03:00:00+03:00",
     "entry_date": "14.08.-04.09.",
     "location": "Kouvola",
     "coordinates": [
@@ -5687,12 +5719,12 @@
     },
     "classes": [
       {
-        "judge": [],
-        "date": "2027-09-25T00:00:00.000+03:00",
+        "class": "VOI",
+        "date": "2027-09-25",
         "groups": [
           "kp"
         ],
-        "class": "VOI"
+        "judge": []
       }
     ],
     "places": 16,
@@ -5706,8 +5738,8 @@
     "type": "NOME-B",
     "levels": "VOI (La)",
     "date": "25.09.2027",
-    "date_sort": "2027-09-25T00:00:00+03:00",
-    "end_date_sort": "2027-09-25T00:00:00+03:00",
+    "date_sort": "2027-09-25T03:00:00+03:00",
+    "end_date_sort": "2027-09-25T03:00:00+03:00",
     "entry_date": "14.08.-04.09.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -5736,7 +5768,7 @@
     "classes": [
       {
         "class": "VOI",
-        "date": "2027-09-25T00:00:00.000+03:00",
+        "date": "2027-09-25",
         "judge": []
       }
     ],
@@ -5747,12 +5779,73 @@
     "entries": null
   },
   {
+    "id": "YwGJlA3m_e",
+    "type": "NOME-B",
+    "levels": "ALO (La), AVO (La)",
+    "date": "25.09.2027",
+    "date_sort": "2027-09-25T03:00:00+03:00",
+    "end_date_sort": "2027-09-25T03:00:00+03:00",
+    "entry_date": "14.08.-04.09.",
+    "location": "Uusikaarlepyy",
+    "coordinates": [
+      63.5222473,
+      22.5284347
+    ],
+    "name": "",
+    "organizer": "JAKOBSTADSNEJDENS KENNELFÖRENING RF",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Anna Björklund",
+      "phone": "0456506161",
+      "email": "noutajajakoirajaosto@gmail.com"
+    },
+    "judges": [
+      "Toskala Mika"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-09-25",
+        "judge": [
+          {
+            "id": 697689,
+            "name": "Toskala Mika",
+            "official": true
+          }
+        ]
+      },
+      {
+        "class": "AVO",
+        "date": "2027-09-25",
+        "judge": [
+          {
+            "id": 697689,
+            "name": "Toskala Mika",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-08-14",
+    "entry_end": "2027-09-04",
+    "entries": null
+  },
+  {
     "id": "2WM_Hr-TEv",
     "type": "NOME-B",
     "levels": "AVO (Su)",
     "date": "26.09.2027",
-    "date_sort": "2027-09-26T00:00:00+03:00",
-    "end_date_sort": "2027-09-26T00:00:00+03:00",
+    "date_sort": "2027-09-26T03:00:00+03:00",
+    "end_date_sort": "2027-09-26T03:00:00+03:00",
     "entry_date": "15.08.-05.09.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -5779,8 +5872,8 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-09-26T00:00:00.000+03:00",
-        "class": "AVO"
+        "class": "AVO",
+        "date": "2027-09-26"
       }
     ],
     "places": 15,
@@ -5794,8 +5887,8 @@
     "type": "NOME-B",
     "levels": "ALO (Su)",
     "date": "26.09.2027",
-    "date_sort": "2027-09-26T00:00:00+03:00",
-    "end_date_sort": "2027-09-26T00:00:00+03:00",
+    "date_sort": "2027-09-26T03:00:00+03:00",
+    "end_date_sort": "2027-09-26T03:00:00+03:00",
     "entry_date": "15.08.-05.09.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -5822,8 +5915,8 @@
     "cost_member": "",
     "classes": [
       {
-        "date": "2027-09-26T00:00:00.000+03:00",
-        "class": "ALO"
+        "class": "ALO",
+        "date": "2027-09-26"
       }
     ],
     "places": 15,
