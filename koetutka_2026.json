@@ -12434,8 +12434,6 @@
     },
     "judges": [
       "Kerolain Filimonova",
-      "Konsta Niiranen",
-      "Marjaana Kousa",
       "Tiina Mursula"
     ],
     "description": "Päijät-Hämeen Noutajakoirayhdistyksen jäsentenvälinen NOVIISI & MESTARUUS kisataan 14.11.2026 Lammilla. \nKisan yhteydessä pidetään yhdistyksen syyskokous. \n\n\nLeikkimieliseen kisaan voi osallistua koiralla, joka on vähintään 9kk vanha ja jonka rokotukset ovat Kennelliiton ohjeiden mukaisesti kunnossa. Koe toteutetaan dameilla.\n\nNoviisiluokkaan saa osallistua koiralla, jolla on korkeintaan ALO2-tulos nomeB/WT-kokeesta. Taipumuskoetulosta ei vaadita.\n\nMestaruus-luokkaan osallistuvalla koiralla tulee olla vähintään ALO1-tulos NomeB/WT-kokeesta.\n\nIlmoittautumiset kisaan 1.11.2026 mennessä SNJ:n koekalenterin kautta. Ilmoita lisätietoja-kohdassa kumpaan luokkaan haluat osallistua.\nOsallistumismaksu 25€/koira (sisältää pientä purtavaa ja kahvin/teen)",
@@ -12486,7 +12484,7 @@
       {
         "class": "ALO",
         "date": "2026-11-15",
-        "entries": 36,
+        "entries": 37,
         "judge": [
           {
             "id": 554687,
@@ -12515,7 +12513,7 @@
       {
         "class": "AVO",
         "date": "2026-11-15",
-        "entries": 12,
+        "entries": 13,
         "judge": [
           {
             "id": 554687,
@@ -12546,6 +12544,6 @@
     "state": "confirmed",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 48
+    "entries": 50
   }
 ]

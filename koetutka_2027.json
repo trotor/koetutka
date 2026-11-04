@@ -2727,6 +2727,66 @@
     "entries": null
   },
   {
+    "id": "WC7425aYXq",
+    "type": "NOWT",
+    "levels": "ALO (Su), AVO (Su), VOI (Su)",
+    "date": "04.07.2027",
+    "date_sort": "2027-07-04T03:00:00+03:00",
+    "end_date_sort": "2027-07-04T03:00:00+03:00",
+    "entry_date": "23.05.-13.06.",
+    "location": "Jyväskylä",
+    "coordinates": [
+      62.241672,
+      25.7495806
+    ],
+    "name": "Flattien WT-mestaruus",
+    "organizer": "SUOMEN SILEÄKARVAISET NOUTAJAT RY",
+    "official": {
+      "name": "Niina Parviainen",
+      "phone": "0405473493",
+      "email": "parviainen_niina@outlook.com"
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-04",
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "class": "AVO",
+        "date": "2027-07-04",
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "class": "VOI",
+        "date": "2027-07-04",
+        "groups": [
+          "kp"
+        ]
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-23",
+    "entry_end": "2027-06-13",
+    "entries": null
+  },
+  {
     "id": "JftqKLONlp",
     "type": "NOME-B",
     "levels": "VOI (Su)",
