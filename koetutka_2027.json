@@ -2852,21 +2852,25 @@
     "name": "Tolleritaipparit",
     "organizer": "NOVASCOTIANNOUTAJAT RY",
     "official": {
-      "name": "",
+      "name": "Susanna Tyrväinen",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Maija Mäkinen",
       "phone": "",
-      "email": ""
+      "email": "koetolleri@gmail.com"
     },
     "judges": [
       "Toskala Mika"
     ],
     "description": "Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 5 € pankkikulu. ",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
     "classes": [],
     "places": 16,
     "state": "tentative",
@@ -5089,21 +5093,25 @@
     "name": "Tollerinome",
     "organizer": "NOVASCOTIANNOUTAJAT RY",
     "official": {
-      "name": "",
+      "name": "Malla Keränen",
       "phone": "",
-      "email": ""
+      "email": "koetolleri@gmail.com"
     },
     "secretary": {
-      "name": "",
+      "name": "Maija Mäkinen",
       "phone": "",
-      "email": ""
+      "email": "koetolleri@gmail.com"
     },
     "judges": [
       "Fontell Ari-Pekka"
     ],
     "description": "Etusija Novascotiannoutajat ry:n jäsenten omistamilla novascotiannoutajilla, jäsenillä ja yhdistyksen kokeissa talkoilleilla sekä Kanta-Hämeen Noutajakoirayhdistyksen jäsenillä. Jäsenyys oltava voimassa ilmoittautumisajan alkaessa. Koemaksu palautetaan koepaikan saaneille (arvonnasta tai varasijalta) vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Maksupalautuksesta vähennetään 5 € pankkikulu.",
-    "cost": "",
-    "cost_member": "",
+    "cost": {
+      "normal": 55
+    },
+    "cost_member": {
+      "normal": 45
+    },
     "classes": [
       {
         "class": "ALO",
