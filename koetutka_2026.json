@@ -12441,10 +12441,10 @@
     "cost_member": 25,
     "classes": [],
     "places": 60,
-    "state": "confirmed",
+    "state": "picked",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 33
+    "entries": 34
   },
   {
     "id": "X8vGHq_sSF",
@@ -12484,7 +12484,7 @@
       {
         "class": "ALO",
         "date": "2026-11-15",
-        "entries": 37,
+        "entries": 35,
         "judge": [
           {
             "id": 554687,
@@ -12507,13 +12507,14 @@
             "official": false
           }
         ],
-        "members": 17,
-        "places": 0
+        "members": 15,
+        "places": 0,
+        "state": "picked"
       },
       {
         "class": "AVO",
         "date": "2026-11-15",
-        "entries": 13,
+        "entries": 15,
         "judge": [
           {
             "id": 554687,
@@ -12536,14 +12537,152 @@
             "official": false
           }
         ],
-        "members": 8,
-        "places": 0
+        "members": 10,
+        "places": 0,
+        "state": "picked"
       }
     ],
     "places": 80,
-    "state": "confirmed",
+    "state": "picked",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
     "entries": 50
+  },
+  {
+    "id": "hdY9lhI92G",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "12.12.2026",
+    "date_sort": "2026-12-12T02:00:00+02:00",
+    "end_date_sort": "2026-12-12T02:00:00+02:00",
+    "entry_date": "05.11.-04.12.",
+    "location": "Orimattila",
+    "coordinates": [
+      60.805137,
+      25.7333558
+    ],
+    "name": "IWT TUKI MÖLLI-WT",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Krista Leinonen",
+      "phone": "",
+      "email": "krista1.leinonen@gmail.com"
+    },
+    "judges": [
+      "Väisänen Riitta",
+      "Hirvonen Petteri",
+      "Torila Mika",
+      "Kataja Jari"
+    ],
+    "description": "Koe on IWT-joukkueen tukikoe. Koe käydään WT-säännöillä ja luokat järjestetään dameilla. Taipumuskoevaatimusta ei ole. Ilmoittautuminen on sitova. Maksu vasta koepaikan varmistuttua. Koesihteeri laittaa mukaan mahtuneille maksutiedot ja koekutsun sähköpostilla. Koe alkaa klo 9.00 ja kaikki luokat aloittavat samaan aikaan.",
+    "cost": {
+      "normal": 40
+    },
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2026-12-12",
+        "entries": 6,
+        "groups": [
+          "kp"
+        ],
+        "judge": [
+          {
+            "id": 554687,
+            "name": "Väisänen Riitta",
+            "official": true
+          },
+          {
+            "id": 4246553,
+            "name": "Hirvonen Petteri",
+            "official": true
+          },
+          {
+            "id": 350200,
+            "name": "Torila Mika",
+            "official": true
+          },
+          {
+            "id": -1,
+            "name": "Kataja Jari",
+            "official": false
+          }
+        ],
+        "members": 0
+      },
+      {
+        "class": "AVO",
+        "date": "2026-12-12",
+        "entries": 2,
+        "groups": [
+          "kp"
+        ],
+        "judge": [
+          {
+            "id": 554687,
+            "name": "Väisänen Riitta",
+            "official": true
+          },
+          {
+            "id": 4246553,
+            "name": "Hirvonen Petteri",
+            "official": true
+          },
+          {
+            "id": 350200,
+            "name": "Torila Mika",
+            "official": true
+          },
+          {
+            "id": -1,
+            "name": "Kataja Jari",
+            "official": false
+          }
+        ],
+        "members": 0
+      },
+      {
+        "class": "VOI",
+        "date": "2026-12-12",
+        "entries": 0,
+        "groups": [
+          "kp"
+        ],
+        "judge": [
+          {
+            "id": 554687,
+            "name": "Väisänen Riitta",
+            "official": true
+          },
+          {
+            "id": 4246553,
+            "name": "Hirvonen Petteri",
+            "official": true
+          },
+          {
+            "id": 350200,
+            "name": "Torila Mika",
+            "official": true
+          },
+          {
+            "id": -1,
+            "name": "Kataja Jari",
+            "official": false
+          }
+        ],
+        "members": 0
+      }
+    ],
+    "places": 60,
+    "state": "confirmed",
+    "entry_start": "2026-11-05",
+    "entry_end": "2026-12-04",
+    "entries": 8
   }
 ]
