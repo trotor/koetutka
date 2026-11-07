@@ -12261,9 +12261,10 @@
       "email": "bernadetta.stenstrom@gmail.com"
     },
     "judges": [
-      "Särkänlahti Jari"
+      "Särkänlahti Jari",
+      "Turunen Vesa"
     ],
-    "description": "Nordic Championship Flatcoated Retrievers NCFCR2026 will be held at Westankärr Manor on Kimitoön (Kemiönsaari) on November 7–8, 2026. Spectators are also welcome to attend (advance registration required; further details to follow closer to the event).\n\nOn Saturday, November 7, the individual championship will be decided through official A and B tests. Nine dog-and-handler pairs will be selected for the national squad, from which the teams for the team competition will be formed; these same dogs will participate in both the A and B tests. National quotas are set at 3 dogs for the A test and 6 dogs for the B test.\n\nOn Sunday, November 8, the team championship (Nordic Championship Team Event) will take place. The competition will be conducted as an IWT-style dummy test, featuring three-person teams. Each Nordic country has three team slots. Additionally, one team from Estonia has been invited to participate in the tests this year outside of the championship competition.\n\nRegistration is limited only to Flatcoated Retrievers representing national teams. Preregistration is required by email to mikkolaanu@hotmail.com by October 18, 2026. Payment instructions will be provided once the entry is confirmed. Further information about the event is available at https://www.flatti.net/tapahtumat/pohjoismaiden-flattimestaruus-2026/\n\nReserve judge Vesa Turunen.",
+    "description": "Nordic Championship Flatcoated Retrievers NCFCR2026 will be held at Westankärr Manor on Kimitoön (Kemiönsaari) on November 7–8, 2026. Spectators are also welcome to attend (advance registration required; further details to follow closer to the event).\n\nOn Saturday, November 7, the individual championship will be decided through official A and B tests. Nine dog-and-handler pairs will be selected for the national squad, from which the teams for the team competition will be formed; these same dogs will participate in both the A and B tests. National quotas are set at 3 dogs for the A test and 6 dogs for the B test.\n\nOn Sunday, November 8, the team championship (Nordic Championship Team Event) will take place. The competition will be conducted as an IWT-style dummy test, featuring three-person teams. Each Nordic country has three team slots. Additionally, one team from Estonia has been invited to participate in the tests this year outside of the championship competition.\n\nRegistration is limited only to Flatcoated Retrievers representing national teams. Preregistration is required by email to mikkolaanu@hotmail.com by October 18, 2026. Payment instructions will be provided once the entry is confirmed. Further information about the event is available at https://www.flatti.net/tapahtumat/pohjoismaiden-flattimestaruus-2026/",
     "cost": {
       "normal": 50
     },
@@ -12280,14 +12281,20 @@
             "id": 4055276,
             "name": "Särkänlahti Jari",
             "official": true
+          },
+          {
+            "id": 678190,
+            "name": "Turunen Vesa",
+            "official": true
           }
         ],
         "members": 0,
-        "places": 26
+        "places": 26,
+        "state": "invited"
       }
     ],
     "places": 26,
-    "state": "confirmed",
+    "state": "invited",
     "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
     "entries": 11
@@ -12330,7 +12337,7 @@
     },
     "classes": [],
     "places": 12,
-    "state": "confirmed",
+    "state": "invited",
     "entry_start": "2026-10-13",
     "entry_end": "2026-11-01",
     "entries": 9
@@ -12434,7 +12441,8 @@
     },
     "judges": [
       "Kerolain Filimonova",
-      "Tiina Mursula"
+      "Tiina Mursula",
+      "Marjaana Kousa"
     ],
     "description": "Päijät-Hämeen Noutajakoirayhdistyksen jäsentenvälinen NOVIISI & MESTARUUS kisataan 14.11.2026 Lammilla. \nKisan yhteydessä pidetään yhdistyksen syyskokous. \n\n\nLeikkimieliseen kisaan voi osallistua koiralla, joka on vähintään 9kk vanha ja jonka rokotukset ovat Kennelliiton ohjeiden mukaisesti kunnossa. Koe toteutetaan dameilla.\n\nNoviisiluokkaan saa osallistua koiralla, jolla on korkeintaan ALO2-tulos nomeB/WT-kokeesta. Taipumuskoetulosta ei vaadita.\n\nMestaruus-luokkaan osallistuvalla koiralla tulee olla vähintään ALO1-tulos NomeB/WT-kokeesta.\n\nIlmoittautumiset kisaan 1.11.2026 mennessä SNJ:n koekalenterin kautta. Ilmoita lisätietoja-kohdassa kumpaan luokkaan haluat osallistua.\nOsallistumismaksu 25€/koira (sisältää pientä purtavaa ja kahvin/teen)",
     "cost": 25,
@@ -12514,7 +12522,7 @@
       {
         "class": "AVO",
         "date": "2026-11-15",
-        "entries": 15,
+        "entries": 16,
         "judge": [
           {
             "id": 554687,
@@ -12546,7 +12554,7 @@
     "state": "picked",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 50
+    "entries": 51
   },
   {
     "id": "hdY9lhI92G",
@@ -12588,7 +12596,7 @@
       {
         "class": "ALO",
         "date": "2026-12-12",
-        "entries": 6,
+        "entries": 9,
         "groups": [
           "kp"
         ],
@@ -12683,6 +12691,6 @@
     "state": "confirmed",
     "entry_start": "2026-11-05",
     "entry_end": "2026-12-04",
-    "entries": 8
+    "entries": 11
   }
 ]
