@@ -12405,11 +12405,12 @@
           }
         ],
         "members": 0,
-        "places": 39
+        "places": 39,
+        "state": "invited"
       }
     ],
     "places": 39,
-    "state": "confirmed",
+    "state": "invited",
     "entry_start": "2026-10-13",
     "entry_end": "2026-10-25",
     "entries": 20
@@ -12596,7 +12597,7 @@
       {
         "class": "ALO",
         "date": "2026-12-12",
-        "entries": 9,
+        "entries": 10,
         "groups": [
           "kp"
         ],
@@ -12627,7 +12628,7 @@
       {
         "class": "AVO",
         "date": "2026-12-12",
-        "entries": 2,
+        "entries": 4,
         "groups": [
           "kp"
         ],
@@ -12691,6 +12692,6 @@
     "state": "confirmed",
     "entry_start": "2026-11-05",
     "entry_end": "2026-12-04",
-    "entries": 11
+    "entries": 14
   }
 ]
