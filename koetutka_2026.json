@@ -12450,7 +12450,7 @@
     "cost_member": 25,
     "classes": [],
     "places": 60,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
     "entries": 34
@@ -12493,7 +12493,7 @@
       {
         "class": "ALO",
         "date": "2026-11-15",
-        "entries": 35,
+        "entries": 36,
         "judge": [
           {
             "id": 554687,
@@ -12518,12 +12518,12 @@
         ],
         "members": 15,
         "places": 0,
-        "state": "picked"
+        "state": "invited"
       },
       {
         "class": "AVO",
         "date": "2026-11-15",
-        "entries": 16,
+        "entries": 15,
         "judge": [
           {
             "id": 554687,
@@ -12546,13 +12546,13 @@
             "official": false
           }
         ],
-        "members": 10,
+        "members": 9,
         "places": 0,
-        "state": "picked"
+        "state": "invited"
       }
     ],
     "places": 80,
-    "state": "picked",
+    "state": "invited",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
     "entries": 51
@@ -12597,7 +12597,7 @@
       {
         "class": "ALO",
         "date": "2026-12-12",
-        "entries": 10,
+        "entries": 12,
         "groups": [
           "kp"
         ],
@@ -12692,6 +12692,6 @@
     "state": "confirmed",
     "entry_start": "2026-11-05",
     "entry_end": "2026-12-04",
-    "entries": 14
+    "entries": 16
   }
 ]

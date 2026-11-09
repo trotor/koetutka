@@ -804,32 +804,43 @@
     "secretary": {
       "name": "Susanna Jussila",
       "phone": "",
-      "email": ""
+      "email": "sussu.jussila@gmail.com"
     },
     "judges": [
-      "Pöppönen Pasi"
+      "Pöppönen Pasi",
+      "Tenhunen Matti"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
     "classes": [
       {
         "class": "ALO",
         "date": "2027-05-06",
-        "judge": []
+        "groups": [],
+        "judge": [],
+        "places": 0
       },
       {
         "class": "AVO",
         "date": "2027-05-06",
-        "judge": []
+        "groups": [],
+        "judge": [],
+        "places": 0
       },
       {
         "class": "VOI",
         "date": "2027-05-06",
-        "judge": []
+        "groups": [],
+        "judge": [],
+        "places": 0
       }
     ],
-    "places": null,
+    "places": 40,
     "state": "tentative",
     "entry_start": "2027-03-25",
     "entry_end": "2027-04-15",
@@ -1256,7 +1267,7 @@
     "judges": [
       "Martikainen Maarit"
     ],
-    "description": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": {
       "normal": 60
     },
@@ -1458,9 +1469,13 @@
     "judges": [
       "Salonen Susanna"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
+    "cost": {
+      "normal": 60
+    },
+    "cost_member": {
+      "normal": 50
+    },
     "classes": [
       {
         "class": "ALO",
@@ -1669,9 +1684,13 @@
     "judges": [
       "Salonen Susanna"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
+    "cost": {
+      "normal": 60
+    },
+    "cost_member": {
+      "normal": 50
+    },
     "classes": [
       {
         "class": "AVO",
@@ -2299,25 +2318,29 @@
       61.2513342,
       22.3492421
     ],
-    "name": "",
+    "name": "Pirkan Mestaruus",
     "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "",
+      "name": "Mirva Kausiala",
       "phone": "",
       "email": ""
     },
     "secretary": {
       "name": "Johanna Rinta-Kauppila",
       "phone": "",
-      "email": ""
+      "email": "nylander.johanna@gmail.com"
     },
     "judges": [
       "Majuri Pasi",
       "Toskala Mika"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
+    "cost": {
+      "normal": 60
+    },
+    "cost_member": {
+      "normal": 50
+    },
     "classes": [
       {
         "class": "VOI",
@@ -3139,7 +3162,7 @@
     "judges": [
       "Kestilä-Kekkonen Elina"
     ],
-    "description": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": {
       "normal": 60
     },
@@ -3181,7 +3204,7 @@
     "judges": [
       "Lappalainen Mika"
     ],
-    "description": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": {
       "normal": 60
     },
@@ -4457,24 +4480,24 @@
     "name": "",
     "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "",
+      "name": "Maarit Martikainen",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Ilona Tuomioja",
       "phone": "",
-      "email": ""
+      "email": "tuuniilona@hotmail.fi"
     },
     "judges": [
       "Tuominen Petri"
     ],
-    "description": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": {
-      "normal": 50
+      "normal": 60
     },
     "cost_member": {
-      "normal": 45
+      "normal": 50
     },
     "classes": [
       {
@@ -4547,24 +4570,24 @@
     "name": "",
     "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "",
+      "name": "Anu Sinkkonen",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Ilona Tuomioja",
       "phone": "",
-      "email": ""
+      "email": "tuuniilona@hotmail.fi"
     },
     "judges": [
       "Majuri Pasi"
     ],
-    "description": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": {
-      "normal": 50
+      "normal": 60
     },
     "cost_member": {
-      "normal": 45
+      "normal": 50
     },
     "classes": [],
     "places": 16,
@@ -4902,16 +4925,16 @@
       "email": ""
     },
     "secretary": {
-      "name": "Maarit Martikainen",
+      "name": "Ilona Tuomioja",
       "phone": "",
-      "email": ""
+      "email": "tuuniilona@hotmail.fi"
     },
     "judges": [
       "Tuominen Petri"
     ],
-    "description": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": {
-      "normal": 55
+      "normal": 60
     },
     "cost_member": {
       "normal": 50
@@ -5046,29 +5069,30 @@
     "name": "",
     "organizer": "PIRKANMAAN NOUTAJAKOIRAYHDISTYS RY",
     "official": {
-      "name": "Satu Rivinoja",
+      "name": "Tommi Taponen",
       "phone": "",
       "email": ""
     },
     "secretary": {
-      "name": "",
+      "name": "Ilona Tuomioja",
       "phone": "",
-      "email": ""
+      "email": "tuuniilona@hotmail.fi"
     },
     "judges": [
-      ""
+      "Tenhunen Juha"
     ],
-    "description": "",
+    "description": "Koiran tai omistajan sairastuessa osallistumismaksu palautetaan lääkärintodistusta vastaan. Narttukoiran juoksun alkaessa koemaksu palautetaan.",
     "cost": {
-      "normal": 50
+      "normal": 60
     },
     "cost_member": {
-      "normal": 45
+      "normal": 50
     },
     "classes": [
       {
         "class": "ALO",
-        "date": "2027-08-15"
+        "date": "2027-08-15",
+        "judge": []
       }
     ],
     "places": 15,
