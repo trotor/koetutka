@@ -2093,6 +2093,74 @@
     "entries": null
   },
   {
+    "id": "8SPcT6LuBR",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "12.06.2027",
+    "date_sort": "2027-06-12T03:00:00+03:00",
+    "end_date_sort": "2027-06-12T03:00:00+03:00",
+    "entry_date": "17.05.-31.05.",
+    "location": "Tohmajärvi",
+    "coordinates": [
+      62.2385044,
+      30.4741519
+    ],
+    "name": "KARJALAN ERÄMESSUJEN alueella järjestettävä koe",
+    "organizer": "POHJOIS-KARJALAN NOUTAJAKOIRAYHDIST",
+    "official": {
+      "name": "Sari Koivula",
+      "phone": "",
+      "email": "sari66pitkanen@gmail.com"
+    },
+    "secretary": {
+      "name": "Suvi Sorsa",
+      "phone": "",
+      "email": "careliahunters@gmail.com"
+    },
+    "judges": [
+      "Ronkainen Reima",
+      "Torila Mika"
+    ],
+    "description": "Koe järjestetään Karjalan Erämessujen ympärisössä! Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 40 €, ei jäsenten 45 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-06-12",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      },
+      {
+        "class": "AVO",
+        "date": "2027-06-12",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      },
+      {
+        "class": "VOI",
+        "date": "2027-06-12",
+        "groups": [
+          "kp"
+        ],
+        "judge": []
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-05-17",
+    "entry_end": "2027-05-31",
+    "entries": null
+  },
+  {
     "id": "GUKagYR2UQ",
     "type": "NOU",
     "levels": "N/A",
@@ -2687,6 +2755,60 @@
     "entries": 0
   },
   {
+    "id": "Pmo0DzPXB4",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T03:00:00+03:00",
+    "end_date_sort": "2027-07-03T03:00:00+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Liperi",
+    "coordinates": [
+      62.5314503,
+      29.3872024
+    ],
+    "name": "",
+    "organizer": "POHJOIS-KARJALAN NOUTAJAKOIRAYHDIST",
+    "official": {
+      "name": "Riikka Roju",
+      "phone": "",
+      "email": "riikka.roju@gmail.com"
+    },
+    "secretary": {
+      "name": "Essi Partti",
+      "phone": "",
+      "email": "essi.pknoutajat@outlook.com"
+    },
+    "judges": [
+      "Tenhunen Matti"
+    ],
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu.",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-03",
+        "judge": [
+          {
+            "id": 881593,
+            "name": "Tenhunen Matti",
+            "official": true
+          }
+        ]
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
+    "entries": null
+  },
+  {
     "id": "8-ZNKb-QEY",
     "type": "NOME-B",
     "levels": "ALO (La)",
@@ -2734,50 +2856,6 @@
     "state": "tentative",
     "entry_start": "2027-05-22",
     "entry_end": "2027-06-12",
-    "entries": null
-  },
-  {
-    "id": "_HRsWIKmCH",
-    "type": "NOME-B",
-    "levels": "VOI (La)",
-    "date": "03.-04.07.2027",
-    "date_sort": "2027-07-03T03:00:00+03:00",
-    "end_date_sort": "2027-07-04T03:00:00+03:00",
-    "entry_date": "05.06.-26.06.",
-    "location": "Liperi",
-    "coordinates": [
-      62.5314503,
-      29.3872024
-    ],
-    "name": "",
-    "organizer": "POHJOIS-KARJALAN NOUTAJAKOIRAYHDIST",
-    "official": {
-      "name": "Henna Tuononen",
-      "phone": "",
-      "email": "hennatuononen1@gmail.com"
-    },
-    "secretary": {
-      "name": "Essi Partti",
-      "phone": "",
-      "email": "essi.pknoutajat@outlook.com"
-    },
-    "judges": [
-      "Hartikainen Jari"
-    ],
-    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu.",
-    "cost": "",
-    "cost_member": "",
-    "classes": [
-      {
-        "class": "VOI",
-        "date": "2027-07-03",
-        "judge": []
-      }
-    ],
-    "places": 12,
-    "state": "tentative",
-    "entry_start": "2027-06-05",
-    "entry_end": "2027-06-26",
     "entries": null
   },
   {
@@ -2833,6 +2911,54 @@
     "state": "tentative",
     "entry_start": "2027-05-22",
     "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
+    "id": "U3HwsZUDHv",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "04.07.2027",
+    "date_sort": "2027-07-04T03:00:00+03:00",
+    "end_date_sort": "2027-07-04T03:00:00+03:00",
+    "entry_date": "05.06.-26.06.",
+    "location": "Liperi",
+    "coordinates": [
+      62.5314503,
+      29.3872024
+    ],
+    "name": "",
+    "organizer": "POHJOIS-KARJALAN NOUTAJAKOIRAYHDIST",
+    "official": {
+      "name": "Sari Koivula",
+      "phone": "",
+      "email": "sari66pitkanen@gmail.com"
+    },
+    "secretary": {
+      "name": "Essi Partti",
+      "phone": "",
+      "email": "essi.pknoutajat@outlook.com"
+    },
+    "judges": [
+      "Tenhunen Matti"
+    ],
+    "description": "Etusija järjestävän yhdistyksen jäsenillä sekä yhdistyksen kokeissa talkoilleilla. (\"etusijalla järjestäjän kutsumat koirat\". Näitä voi olla 1/3 kokeen osallistujista.) Jäsenten osallistumismaksu 45 €, ei jäsenten 50 €. Koemaksu palautetaan koepaikan saaneille vain Kennelliiton sääntöjen määräämästä syystä. Tällaisia syitä ovat koiran sairaus, ohjaajan sairaus tai narttukoiralla alkanut kiima. Ohjaajan/omistajan peruessa ilmoittautumisen, pidätetään maksunpalautuksesta 4 € käsittelykulu.",
+    "cost": {
+      "normal": 50
+    },
+    "cost_member": {
+      "normal": 45
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-04",
+        "judge": []
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-06-05",
+    "entry_end": "2027-06-26",
     "entries": null
   },
   {
