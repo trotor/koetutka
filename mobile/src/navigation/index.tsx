@@ -1,24 +1,32 @@
 import { Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import {
+  NavigationContainer,
+  createNavigationContainerRef,
+  type NavigatorScreenParams,
+} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import BrowseScreen from '../screens/BrowseScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import EventDetailScreen from '../screens/EventDetailScreen';
+import { runScreenshotScene } from '../dev/screenshot-scene';
+
+export type FavoritesView = 'list' | 'month' | 'agenda';
 
 export type RootStackParamList = {
-  Tabs: undefined;
+  Tabs: NavigatorScreenParams<TabsParamList> | undefined;
   EventDetail: { id: string };
 };
 
 export type TabsParamList = {
-  Browse: undefined;
-  Favorites: undefined;
+  Browse: { view?: 'list' | 'map' } | undefined;
+  Favorites: { view?: FavoritesView } | undefined;
   Settings: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
+export const navigationRef = createNavigationContainerRef<RootStackParamList>();
 const Tab = createBottomTabNavigator<TabsParamList>();
 
 const GREEN = '#2d5a27';
@@ -59,7 +67,12 @@ function Tabs() {
 
 export default function RootNavigator() {
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      ref={navigationRef}
+      onReady={() => {
+        if (__DEV__) runScreenshotScene(navigationRef);
+      }}
+    >
       <Stack.Navigator>
         <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }} />
         <Stack.Screen

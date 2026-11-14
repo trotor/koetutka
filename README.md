@@ -86,6 +86,16 @@ MIT
 
 ## Versiohistoria
 
+### v1.16.0 (2026-11-14)
+- **Mobiili**: Suosikit-välilehdelle Kuukausi-näkymä (seinäkalenteri). Koko
+  kuukausi ruudukkona maanantaista alkaen, suosikit suosikkivärein; päivän
+  napautus listaa sen kokeet, koekortti avaa tiedot. Logiikka
+  `shared/src/month-grid.ts`
+- Entinen Kalenteri-näkymä nimetty Aikajanaksi
+- **iOS**: otsikkobanneri huomioi turva-alueen (kello ei enää peitä otsikkoa)
+- Kauppatekstit ja -kuvat päivitetty
+- Versiot 1.16.0 kaikilla alustoilla (iOS build 14, Android versionCode 16)
+
 ### v1.15.2 (2026-10-29)
 - **iOS**: korjattu kaatuminen käynnistyksessä iOS 27:ssä. Xcode 27:llä
   käännetty sovellus vaatii UIScene-elinkaaren; ikkuna luodaan nyt

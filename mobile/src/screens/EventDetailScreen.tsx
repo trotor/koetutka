@@ -61,7 +61,7 @@ export default function EventDetailScreen() {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ScrollView contentContainerStyle={styles.container} contentInsetAdjustmentBehavior="automatic">
       <Text style={styles.heading}>{event.type} · {event.levels}</Text>
       <Text style={styles.location}>📍 {event.location}</Text>
       <Text style={styles.date}>📅 {event.date}</Text>
