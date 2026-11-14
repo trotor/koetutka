@@ -113,9 +113,9 @@ def main():
         compose(ROOT / 'screenshots-ios' / f'{name}.png', ROOT / 'marketing' / 'ios' / f'{name}.png',
                 (1320, 2868), title, subtitle, new, phone_w=1140, phone_top=540 if not new else 600,
                 title_y=150 if not new else 110)
+        # Play kieltää kuvissa aikasidonnaiset sanat ("uutta"), joten ei merkkiä.
         compose(ROOT / 'screenshots' / f'{name}.png', ROOT / 'marketing' / 'android' / f'{name}.png',
-                (1080, 2100), title, subtitle, new, phone_w=900, phone_top=440 if not new else 490,
-                title_y=110 if not new else 80)
+                (1080, 2100), title, subtitle, False, phone_w=900, phone_top=440, title_y=110)
 
 
 if __name__ == '__main__':
