@@ -3,7 +3,7 @@
 
     python3 mobile/store/push-listing.py ios  [--live] [--screenshots]
     python3 mobile/store/push-listing.py play [--live] [--screenshots] [--no-listing]
-        [--aab=PATH --mapping=PATH --track=internal|production --version-name=X.Y.Z]
+        [--aab=PATH --mapping=PATH | --version-code=N] [--track=internal|production --version-name=X.Y.Z]
 
 Ilman --live vain tulostaa, mitä muuttuisi. Avaimet tulevat repon ulkopuolelta:
 - iOS: `source ~/code/appstoreconnect.env` (ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_PATH)
@@ -145,21 +145,24 @@ def play():
     edits = build('androidpublisher', 'v3', credentials=creds, cache_discovery=False).edits()
     edit = edits.insert(packageName=PACKAGE, body={}).execute()['id']
     try:
-        if 'aab' in OPTS:
+        if 'aab' in OPTS or 'version-code' in OPTS:
             track = OPTS.get('track', 'internal')
-            print(f"  ~ bundle {OPTS['aab']} → {track}")
-            if LIVE:
+            print(f"  ~ {OPTS.get('aab') or 'versionCode ' + OPTS['version-code']} → {track}")
+            if LIVE and 'version-code' in OPTS:
+                code = int(OPTS['version-code'])  # jo ladattu bundle, esim. sisäiseltä raidalta
+            elif LIVE:
                 code = edits.bundles().upload(
                     packageName=PACKAGE, editId=edit,
                     media_body=MediaFileUpload(OPTS['aab'], mimetype='application/octet-stream', resumable=True),
                 ).execute()['versionCode']
                 print(f'    versionCode {code}')
-                if 'mapping' in OPTS:
+                if 'mapping' in OPTS and 'aab' in OPTS:
                     edits.deobfuscationfiles().upload(
                         packageName=PACKAGE, editId=edit, apkVersionCode=code, deobfuscationFileType='proguard',
                         media_body=MediaFileUpload(OPTS['mapping'], mimetype='application/octet-stream', resumable=True),
                     ).execute()
                     print('    mapping.txt ladattu')
+            if LIVE:
                 edits.tracks().update(packageName=PACKAGE, editId=edit, track=track, body={
                     'track': track,
                     'releases': [{
@@ -167,6 +170,7 @@ def play():
                         'releaseNotes': [{'language': 'fi-FI', 'text': LISTING['whatsNew']['android']}],
                     }],
                 }).execute()
+                print(f'    raita {track}: versionCode {code} completed')
         if NO_LISTING:
             raise _SkipListing
         cur = edits.listings().get(packageName=PACKAGE, editId=edit, language='fi-FI').execute()
