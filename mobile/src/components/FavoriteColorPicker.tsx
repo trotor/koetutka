@@ -22,6 +22,8 @@ export function FavoriteColorPicker({
   const current = useStore((s) => colorKeyFor(s.favoriteColors, eventId));
   const colorLabels = useStore((s) => s.colorLabels);
   const setFavoriteColor = useStore((s) => s.setFavoriteColor);
+  const isFavorite = useStore((s) => s.favorites.has(eventId));
+  const toggleFavorite = useStore((s) => s.toggleFavorite);
 
   const pick = (key: ColorKey) => {
     setFavoriteColor(eventId, key);
@@ -60,9 +62,24 @@ export function FavoriteColorPicker({
               );
             })}
           </View>
-          <Pressable onPress={onRequestLabels} accessibilityRole="button" style={styles.linkBtn}>
-            <Text style={styles.link}>Nimeä värit</Text>
-          </Pressable>
+          <View style={styles.footer}>
+            <Pressable onPress={onRequestLabels} accessibilityRole="button" hitSlop={8}>
+              <Text style={styles.link}>Nimeä värit</Text>
+            </Pressable>
+            {isFavorite && (
+              <Pressable
+                onPress={() => {
+                  toggleFavorite(eventId);
+                  onClose();
+                }}
+                accessibilityRole="button"
+                style={styles.removeBtn}
+                hitSlop={6}
+              >
+                <Text style={styles.removeText}>Poista suosikeista</Text>
+              </Pressable>
+            )}
+          </View>
         </Pressable>
       </Pressable>
     </Modal>
@@ -83,6 +100,13 @@ const styles = StyleSheet.create({
   dot: { width: 32, height: 32, borderRadius: 16, borderWidth: 2, borderColor: 'transparent' },
   dotSelected: { borderColor: '#1a472a' },
   swatchLabel: { fontSize: 10, color: '#555', textAlign: 'center' },
-  linkBtn: { marginTop: 16, alignSelf: 'flex-start' },
+  footer: {
+    marginTop: 16, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12,
+  },
+  removeBtn: {
+    paddingHorizontal: 12, paddingVertical: 7, borderRadius: 999,
+    borderWidth: 1, borderColor: '#dc2626',
+  },
+  removeText: { fontSize: 13, color: '#dc2626', fontWeight: '600' },
   link: { fontSize: 13, color: '#1565c0', fontWeight: '600' },
 });

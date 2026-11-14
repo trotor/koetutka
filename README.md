@@ -92,9 +92,11 @@ MIT
   napautus listaa sen kokeet, koekortti avaa tiedot. Logiikka
   `shared/src/month-grid.ts`
 - Entinen Kalenteri-näkymä nimetty Aikajanaksi
+- Suosikin tähden napautus avaa värivalitsimen, jossa "Poista suosikeista";
+  ennen yksi napautus poisti suosikin
 - **iOS**: otsikkobanneri huomioi turva-alueen (kello ei enää peitä otsikkoa)
 - Kauppatekstit ja -kuvat päivitetty
-- Versiot 1.16.0 kaikilla alustoilla (iOS build 14, Android versionCode 16)
+- Versiot 1.16.0 kaikilla alustoilla (iOS build 15, Android versionCode 17)
 
 ### v1.15.2 (2026-10-29)
 - **iOS**: korjattu kaatuminen käynnistyksessä iOS 27:ssä. Xcode 27:llä

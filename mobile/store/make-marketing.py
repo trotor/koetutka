@@ -30,6 +30,27 @@ SHOTS = [
 ]
 
 
+# Henkilönimet ja yhteystiedot peitetään kuvista (raakakuvan koordinaatit):
+# korvataan harmailla "tekstiviivoilla", jotta rivi näyttää yhä sisällöltä.
+MASKS = {
+    ('ios', '05-detail'): [(80, 1606, 950, 1664)],      # Tuomarit
+    ('android', '05-detail'): [(66, 1408, 810, 1464)],  # Tuomarit
+}
+
+
+def redact(img, boxes):
+    d = ImageDraw.Draw(img)
+    for x0, y0, x1, y1 in boxes:
+        d.rectangle([x0, y0, x1, y1], fill='white')
+        h = (y1 - y0) * 0.5
+        cy = (y0 + y1) / 2
+        x = x0 + 4
+        for w in (0.28, 0.32, 0.22):
+            seg = (x1 - x0) * w
+            d.rounded_rectangle([x, cy - h / 2, x + seg, cy + h / 2], radius=h / 2, fill=(222, 226, 222))
+            x += seg + (x1 - x0) * 0.04
+
+
 def gradient(size):
     w, h = size
     img = Image.new('RGB', size)
@@ -48,7 +69,7 @@ def rounded_mask(size, radius, bottom=True):
     return mask
 
 
-def compose(raw: Path, out: Path, canvas, title, subtitle, new, phone_w, phone_top, title_y):
+def compose(raw: Path, out: Path, canvas, title, subtitle, new, phone_w, phone_top, title_y, masks=()):
     W, H = canvas
     img = gradient(canvas)
     d = ImageDraw.Draw(img)
@@ -85,6 +106,7 @@ def compose(raw: Path, out: Path, canvas, title, subtitle, new, phone_w, phone_t
 
     # Puhelin: kuvakaappaus pyöristetyllä kehyksellä, valuu alareunan yli.
     shot = Image.open(raw).convert('RGB')
+    redact(shot, masks)
     bezel = round(22 * s)
     inner_w = phone_w - 2 * bezel
     inner_h = round(shot.height * inner_w / shot.width)
@@ -112,10 +134,11 @@ def main():
     for name, title, subtitle, new in SHOTS:
         compose(ROOT / 'screenshots-ios' / f'{name}.png', ROOT / 'marketing' / 'ios' / f'{name}.png',
                 (1320, 2868), title, subtitle, new, phone_w=1140, phone_top=540 if not new else 600,
-                title_y=150 if not new else 110)
+                title_y=150 if not new else 110, masks=MASKS.get(('ios', name), ()))
         # Play kieltää kuvissa aikasidonnaiset sanat ("uutta"), joten ei merkkiä.
         compose(ROOT / 'screenshots' / f'{name}.png', ROOT / 'marketing' / 'android' / f'{name}.png',
-                (1080, 2100), title, subtitle, False, phone_w=900, phone_top=440, title_y=110)
+                (1080, 2100), title, subtitle, False, phone_w=900, phone_top=440, title_y=110,
+                masks=MASKS.get(('android', name), ()))
 
 
 if __name__ == '__main__':

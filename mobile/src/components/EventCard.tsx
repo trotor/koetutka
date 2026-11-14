@@ -146,11 +146,13 @@ export function EventCard({
         <Pressable
           style={styles.starOverlay}
           hitSlop={12}
-          onPress={() => toggleFavorite(event.id)}
+          // Suosikin tähti avaa värivalitsimen, josta myös poistetaan: yksi
+          // napautus ei saa pudottaa koetta suosikeista vahingossa.
+          onPress={() => (isFavorite ? setPickerOpen(true) : toggleFavorite(event.id))}
           onLongPress={() => setPickerOpen(true)}
           accessibilityRole="button"
-          accessibilityLabel={isFavorite ? 'Poista suosikeista' : 'Lisää suosikkeihin'}
-          accessibilityHint="Pitkä painallus valitsee suosikin värin"
+          accessibilityLabel={isFavorite ? 'Suosikki: vaihda väri tai poista' : 'Lisää suosikkeihin'}
+          accessibilityHint={isFavorite ? undefined : 'Pitkä painallus valitsee suosikin värin'}
         >
           <Text style={[styles.star, isFavorite && { color: resolveColor(colorKey) }]}>
             {isFavorite ? '★' : '☆'}

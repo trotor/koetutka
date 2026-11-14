@@ -10,7 +10,7 @@ export function HelpSection() {
         <View style={styles.lead}><Text style={styles.star}>★</Text></View>
         <Text style={styles.text}>
           <Text style={styles.bold}>Suosikki.</Text> Napauta tähteä kortin oikeassa
-          yläkulmassa. Suosikit löytyvät Suosikit-välilehdeltä listana, kuukausikalenterina tai aikajanana.
+          yläkulmassa. Suosikin tähden napautus avaa värivalinnan, josta suosikin voi myös poistaa. Suosikit löytyvät Suosikit-välilehdeltä listana, kuukausikalenterina tai aikajanana.
         </Text>
       </View>
 
