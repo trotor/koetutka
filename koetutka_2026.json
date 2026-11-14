@@ -12453,7 +12453,7 @@
     "state": "invited",
     "entry_start": "2026-10-26",
     "entry_end": "2026-11-01",
-    "entries": 33
+    "entries": 32
   },
   {
     "id": "X8vGHq_sSF",
@@ -12597,7 +12597,7 @@
       {
         "class": "ALO",
         "date": "2026-12-12",
-        "entries": 16,
+        "entries": 17,
         "groups": [
           "kp"
         ],
@@ -12692,6 +12692,6 @@
     "state": "confirmed",
     "entry_start": "2026-11-05",
     "entry_end": "2026-12-04",
-    "entries": 23
+    "entries": 24
   }
 ]

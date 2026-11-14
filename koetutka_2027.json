@@ -1851,6 +1851,44 @@
     "entries": null
   },
   {
+    "id": "arST6vsc7V",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "06.06.2027",
+    "date_sort": "2027-06-06T03:00:00+03:00",
+    "end_date_sort": "2027-06-06T03:00:00+03:00",
+    "entry_date": "25.04.-16.05.",
+    "location": "Kokemäki",
+    "coordinates": [
+      61.2513342,
+      22.3492421
+    ],
+    "name": "",
+    "organizer": "METSÄSTYSNOUTAJAT RY  JAKTRETRIEVERS RF",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Sirpa Lastunen-Turppa",
+      "phone": "",
+      "email": "sirpa.lastunen-turppa@kopteri.net"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-04-25",
+    "entry_end": "2027-05-16",
+    "entries": null
+  },
+  {
     "id": "EEFuyxIokW",
     "type": "NOME-B",
     "levels": "VOI (Su)",
