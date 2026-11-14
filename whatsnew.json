@@ -5,6 +5,17 @@
   },
   "releases": [
     {
+      "version": "1.16.0",
+      "date": "2026-11-14",
+      "title": "Suosikit kuukausikalenterina",
+      "items": [
+        "Suosikit-välilehdellä uusi Kuukausi-näkymä: koko kuukauden päivät kerralla kuin seinäkalenterissa, suosikkikokeet merkittyinä omilla väreillään",
+        "Napauta päivää, niin sen kokeet näkyvät kalenterin alla; koekortista aukeavat kokeen tiedot",
+        "Aiempi suosikkien Kalenteri-näkymä on nyt nimeltään Aikajana",
+        "iPhonessa otsikkokuva ei enää jää kellon ja tilarivin alle"
+      ]
+    },
+    {
       "version": "1.15.2",
       "date": "2026-10-29",
       "title": "Korjaus iOS 27:lle",

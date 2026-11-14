@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef } from 'react';
 import { Animated, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { newDataYear } from '@koetutka/shared';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useStore } from '@/lib/store';
 
 const banner = require('../../assets/banner.jpg');
@@ -14,6 +15,9 @@ interface Props {
 
 export function CollapsibleBanner({ scrollY, forceCollapsed = false }: Props) {
   const { width } = useWindowDimensions();
+  // Banneri piirtyy iOS:llä tilarivin alle: kuvan otsikko ei saa jäädä kellon
+  // ja Dynamic Islandin taakse, joten kuva siirretään turva-alueen alapuolelle.
+  const { top: insetTop } = useSafeAreaInsets();
   const events = useStore((s) => s.events);
   const ribbonYear = useMemo(() => newDataYear(events), [events]);
   const fullHeight = Math.round(width / BANNER_ASPECT);
@@ -40,7 +44,7 @@ export function CollapsibleBanner({ scrollY, forceCollapsed = false }: Props) {
 
   const containerHeight = progress.interpolate({
     inputRange: [0, 1],
-    outputRange: [fullHeight, COLLAPSED_HEIGHT],
+    outputRange: [insetTop + fullHeight, insetTop + COLLAPSED_HEIGHT],
     extrapolate: 'clamp',
   });
 
@@ -60,18 +64,18 @@ export function CollapsibleBanner({ scrollY, forceCollapsed = false }: Props) {
     <Animated.View style={[styles.container, { height: containerHeight }]}>
       <Animated.Image
         source={banner}
-        style={[styles.banner, { height: fullHeight, opacity: imageOpacity }]}
+        style={[styles.banner, { top: insetTop, height: fullHeight, opacity: imageOpacity }]}
         resizeMode="cover"
       />
       <Animated.View
-        style={[styles.compactBar, { opacity: titleOpacity, height: COLLAPSED_HEIGHT }]}
+        style={[styles.compactBar, { top: insetTop, opacity: titleOpacity, height: COLLAPSED_HEIGHT }]}
         pointerEvents="none"
       >
         <Text style={styles.compactTitle}>Koetutka</Text>
       </Animated.View>
       {ribbonYear != null && (
         <View
-          style={styles.ribbon}
+          style={[styles.ribbon, { top: insetTop + 10 }]}
           pointerEvents="none"
           accessibilityLabel={`Vuoden ${ribbonYear} kokeet julkaistu`}
         >

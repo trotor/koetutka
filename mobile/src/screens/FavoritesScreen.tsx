@@ -1,4 +1,5 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { useRoute, type RouteProp } from '@react-navigation/native';
 import { Animated, Text, View, StyleSheet, Pressable } from 'react-native';
 import type { Event } from '@koetutka/shared';
 import { addDistances, sortEvents, isPast } from '@koetutka/shared';
@@ -7,6 +8,7 @@ import { EventCard } from '@/components/EventCard';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
 import { SortSelector } from '@/components/SortSelector';
 import { FavoritesAgenda } from '@/components/FavoritesAgenda';
+import { FavoritesMonth } from '@/components/FavoritesMonth';
 import { FavoriteColorLegend } from '@/components/FavoriteColorLegend';
 import { FavoriteColorLabelsModal } from '@/components/FavoriteColorLabelsModal';
 import {
@@ -18,6 +20,7 @@ import {
   type ColorKey,
 } from '@/lib/favorite-colors';
 import { shareFavoritesList } from '@/lib/share-favorites';
+import type { FavoritesView, TabsParamList } from '../navigation';
 
 export default function FavoritesScreen() {
   const events = useStore((s) => s.events);
@@ -25,7 +28,15 @@ export default function FavoritesScreen() {
   const userLocation = useStore((s) => s.userLocation);
   const sortBy = useStore((s) => s.sortBy);
   const scrollY = useRef(new Animated.Value(0)).current;
-  const [view, setView] = useState<'list' | 'calendar'>('list');
+  const route = useRoute<RouteProp<TabsParamList, 'Favorites'>>();
+  const [view, setView] = useState<FavoritesView>(route.params?.view ?? 'list');
+  useEffect(() => {
+    if (route.params?.view) setView(route.params.view);
+  }, [route.params?.view]);
+  // Näkymää vaihtaessa uusi näkymä alkaa ylhäältä, joten banneri avautuu.
+  useEffect(() => {
+    scrollY.setValue(0);
+  }, [view, scrollY]);
   const [showPast, setShowPast] = useState(false);
   const favoriteColors = useStore((s) => s.favoriteColors);
   const colorLabels = useStore((s) => s.colorLabels);
@@ -93,10 +104,16 @@ export default function FavoritesScreen() {
           <Text style={[styles.toggleText, view === 'list' && styles.toggleTextActive]}>📋 Lista</Text>
         </Pressable>
         <Pressable
-          onPress={() => setView('calendar')}
-          style={[styles.toggleBtn, view === 'calendar' && styles.toggleBtnActive]}
+          onPress={() => setView('month')}
+          style={[styles.toggleBtn, view === 'month' && styles.toggleBtnActive]}
         >
-          <Text style={[styles.toggleText, view === 'calendar' && styles.toggleTextActive]}>📅 Kalenteri</Text>
+          <Text style={[styles.toggleText, view === 'month' && styles.toggleTextActive]}>🗓 Kuukausi</Text>
+        </Pressable>
+        <Pressable
+          onPress={() => setView('agenda')}
+          style={[styles.toggleBtn, view === 'agenda' && styles.toggleBtnActive]}
+        >
+          <Text style={[styles.toggleText, view === 'agenda' && styles.toggleTextActive]}>📅 Aikajana</Text>
         </Pressable>
       </View>
 
@@ -173,6 +190,8 @@ export default function FavoritesScreen() {
             scrollEventThrottle={16}
           />
         </>
+      ) : view === 'month' ? (
+        <FavoritesMonth scrollY={scrollY} />
       ) : (
         <FavoritesAgenda />
       )}

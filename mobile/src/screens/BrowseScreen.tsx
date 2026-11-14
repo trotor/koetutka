@@ -9,6 +9,8 @@ import { ListMapToggle } from '@/components/ListMapToggle';
 import { EventMap } from '@/components/EventMap';
 import { CollapsibleBanner } from '@/components/CollapsibleBanner';
 import { SearchBar } from '@/components/SearchBar';
+import { useRoute, type RouteProp } from '@react-navigation/native';
+import type { TabsParamList } from '../navigation';
 
 export default function BrowseScreen() {
   const events = useStore((s) => s.events);
@@ -22,7 +24,11 @@ export default function BrowseScreen() {
   const hidden = useStore((s) => s.hidden);
   const showHidden = useStore((s) => s.showHidden);
 
-  const [view, setView] = useState<'list' | 'map'>('list');
+  const route = useRoute<RouteProp<TabsParamList, 'Browse'>>();
+  const [view, setView] = useState<'list' | 'map'>(route.params?.view ?? 'list');
+  useEffect(() => {
+    if (route.params?.view) setView(route.params.view);
+  }, [route.params?.view]);
   const scrollY = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
