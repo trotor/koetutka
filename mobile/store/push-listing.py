@@ -2,7 +2,8 @@
 """Vie kauppatekstit (listing.fi.json) ja markkinointikuvat kauppoihin.
 
     python3 mobile/store/push-listing.py ios  [--live] [--screenshots]
-    python3 mobile/store/push-listing.py play [--live] [--screenshots]
+    python3 mobile/store/push-listing.py play [--live] [--screenshots] [--no-listing]
+        [--aab=PATH --mapping=PATH --track=internal|production --version-name=X.Y.Z]
 
 Ilman --live vain tulostaa, mitä muuttuisi. Avaimet tulevat repon ulkopuolelta:
 - iOS: `source ~/code/appstoreconnect.env` (ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_PATH)
@@ -10,8 +11,8 @@ Ilman --live vain tulostaa, mitä muuttuisi. Avaimet tulevat repon ulkopuolelta:
 
 iOS: kaikki tekstit ja kuvat menevät muokattavaan versioon
 (PREPARE_FOR_SUBMISSION), joten luo versio ensin.
-Play: tekstit ja kuvat päivitetään omassa editissään; commit lähettää ne
-Googlen tarkistukseen.
+Play: tekstit, kuvat ja (--aab) bundle samassa editissä, jotta listaus ja build
+menevät tarkistukseen yhdessä. Julkaisutiedot whatsNew.android.
 """
 import hashlib
 import json
@@ -26,6 +27,8 @@ APP_ID = '6779765394'
 PACKAGE = 'com.koetutka'
 LIVE = '--live' in sys.argv
 SHOTS = '--screenshots' in sys.argv
+NO_LISTING = '--no-listing' in sys.argv
+OPTS = dict(a[2:].split('=', 1) for a in sys.argv if a.startswith('--') and '=' in a)
 
 
 def show(label, old, new):
@@ -128,6 +131,10 @@ def asc():
 
 
 # ---------------------------------------------------------------- Google Play
+class _SkipListing(Exception):
+    pass
+
+
 def play():
     from google.oauth2 import service_account
     from googleapiclient.discovery import build
@@ -138,6 +145,30 @@ def play():
     edits = build('androidpublisher', 'v3', credentials=creds, cache_discovery=False).edits()
     edit = edits.insert(packageName=PACKAGE, body={}).execute()['id']
     try:
+        if 'aab' in OPTS:
+            track = OPTS.get('track', 'internal')
+            print(f"  ~ bundle {OPTS['aab']} → {track}")
+            if LIVE:
+                code = edits.bundles().upload(
+                    packageName=PACKAGE, editId=edit,
+                    media_body=MediaFileUpload(OPTS['aab'], mimetype='application/octet-stream', resumable=True),
+                ).execute()['versionCode']
+                print(f'    versionCode {code}')
+                if 'mapping' in OPTS:
+                    edits.deobfuscationfiles().upload(
+                        packageName=PACKAGE, editId=edit, apkVersionCode=code, deobfuscationFileType='proguard',
+                        media_body=MediaFileUpload(OPTS['mapping'], mimetype='application/octet-stream', resumable=True),
+                    ).execute()
+                    print('    mapping.txt ladattu')
+                edits.tracks().update(packageName=PACKAGE, editId=edit, track=track, body={
+                    'track': track,
+                    'releases': [{
+                        'name': OPTS.get('version-name', str(code)), 'versionCodes': [str(code)], 'status': 'completed',
+                        'releaseNotes': [{'language': 'fi-FI', 'text': LISTING['whatsNew']['android']}],
+                    }],
+                }).execute()
+        if NO_LISTING:
+            raise _SkipListing
         cur = edits.listings().get(packageName=PACKAGE, editId=edit, language='fi-FI').execute()
         show('shortDescription', cur.get('shortDescription'), LISTING['playShortDescription'])
         show('fullDescription', cur.get('fullDescription'), LISTING['description'])
@@ -156,6 +187,12 @@ def play():
                                           imageType='phoneScreenshots',
                                           media_body=MediaFileUpload(str(f), mimetype='image/png')).execute()
                     print(f'    ladattu {f.name}')
+    except _SkipListing:
+        print('  listaus ohitetaan (--no-listing)')
+    except BaseException:
+        edits.delete(packageName=PACKAGE, editId=edit).execute()
+        raise
+    try:
         if LIVE:
             edits.commit(packageName=PACKAGE, editId=edit).execute()
             print('  commit tehty')
