@@ -2070,6 +2070,50 @@
     "entries": 0
   },
   {
+    "id": "pceTAW8Npf",
+    "type": "NOME-B",
+    "levels": "ALO (La)",
+    "date": "12.06.2027",
+    "date_sort": "2027-06-12T03:00:00+03:00",
+    "end_date_sort": "2027-06-12T03:00:00+03:00",
+    "entry_date": "01.05.-22.05.",
+    "location": "Oulun ymp",
+    "coordinates": [
+      65.0593277,
+      25.4673577
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Turunen Vesa"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-06-12",
+        "judge": []
+      }
+    ],
+    "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-01",
+    "entry_end": "2027-05-22",
+    "entries": null
+  },
+  {
     "id": "TvJfc4zNcG",
     "type": "NOME-B",
     "levels": "ALO (La, Su)",
@@ -2202,9 +2246,9 @@
     "id": "GUKagYR2UQ",
     "type": "NOU",
     "levels": "N/A",
-    "date": "12.06.2027",
+    "date": "12.-13.06.2027",
     "date_sort": "2027-06-12T03:00:00+03:00",
-    "end_date_sort": "2027-06-12T03:00:00+03:00",
+    "end_date_sort": "2027-06-13T03:00:00+03:00",
     "entry_date": "01.05.-22.05.",
     "location": "Oulun ymp",
     "coordinates": [
@@ -2230,7 +2274,7 @@
     "cost": "",
     "cost_member": "",
     "classes": [],
-    "places": null,
+    "places": 32,
     "state": "tentative",
     "entry_start": "2027-05-01",
     "entry_end": "2027-05-22",
@@ -2289,7 +2333,7 @@
   {
     "id": "YRtTSD_KaU",
     "type": "NOME-B",
-    "levels": "ALO (Su), AVO (Su)",
+    "levels": "AVO (Su)",
     "date": "13.06.2027",
     "date_sort": "2027-06-13T03:00:00+03:00",
     "end_date_sort": "2027-06-13T03:00:00+03:00",
@@ -2319,17 +2363,12 @@
     "cost_member": "",
     "classes": [
       {
-        "class": "ALO",
-        "date": "2027-06-13",
-        "judge": []
-      },
-      {
         "class": "AVO",
         "date": "2027-06-13",
         "judge": []
       }
     ],
-    "places": null,
+    "places": 16,
     "state": "tentative",
     "entry_start": "2027-05-02",
     "entry_end": "2027-05-23",
