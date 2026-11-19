@@ -988,6 +988,44 @@
     "entries": null
   },
   {
+    "id": "0PRS0UdQSr",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "06.05.2027",
+    "date_sort": "2027-05-06T03:00:00+03:00",
+    "end_date_sort": "2027-05-06T03:00:00+03:00",
+    "entry_date": "25.03.-15.04.",
+    "location": "Kouvola",
+    "coordinates": [
+      60.8679237,
+      26.7041116
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Ulla Alhava",
+      "phone": "",
+      "email": "ulla.alhava@gmail.com"
+    },
+    "judges": [
+      "Puttonen Pasi"
+    ],
+    "description": "",
+    "cost": 45,
+    "cost_member": 40,
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-03-25",
+    "entry_end": "2027-04-15",
+    "entries": 0
+  },
+  {
     "id": "B8Rx92jwOW",
     "type": "NOU",
     "levels": "N/A",
@@ -5532,6 +5570,91 @@
     "state": "tentative",
     "entry_start": "2027-07-04",
     "entry_end": "2027-07-25",
+    "entries": null
+  },
+  {
+    "id": "QlViHxKwEg",
+    "type": "NOME-B",
+    "levels": "ALO (La), AVO (Su), VOI (Su)",
+    "date": "28.-29.08.2027",
+    "date_sort": "2027-08-28T03:00:00+03:00",
+    "end_date_sort": "2027-08-29T03:00:00+03:00",
+    "entry_date": "17.07.-07.08.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": "Kiharamestauus",
+    "organizer": "KIHARAKERHO-CURLYKLUBBEN R.Y.",
+    "official": {
+      "name": "Tuula Vestala",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Johanna Ruohonen",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Villikka Katja"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-08-28",
+        "groups": [
+          "ap",
+          "ip"
+        ],
+        "judge": [
+          {
+            "id": 743744,
+            "name": "Villikka Katja",
+            "official": true
+          }
+        ],
+        "places": 15
+      },
+      {
+        "class": "AVO",
+        "date": "2027-08-29",
+        "groups": [
+          "ap"
+        ],
+        "judge": [
+          {
+            "id": 743744,
+            "name": "Villikka Katja",
+            "official": true
+          }
+        ],
+        "places": 8
+      },
+      {
+        "class": "VOI",
+        "date": "2027-08-29",
+        "groups": [
+          "ip"
+        ],
+        "judge": [
+          {
+            "id": 743744,
+            "name": "Villikka Katja",
+            "official": true
+          }
+        ],
+        "places": 4
+      }
+    ],
+    "places": 27,
+    "state": "tentative",
+    "entry_start": "2027-07-17",
+    "entry_end": "2027-08-07",
     "entries": null
   },
   {
