@@ -2563,7 +2563,8 @@
       "email": "tiinajohanna.saarinen@gmail.com"
     },
     "judges": [
-      ""
+      "Ahola Pauliina",
+      "Lähteenaro Janne"
     ],
     "description": "",
     "cost": "",
@@ -2574,7 +2575,8 @@
         "date": "2027-06-19",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
       }
     ],
     "places": 40,
@@ -2968,6 +2970,66 @@
       }
     ],
     "places": 15,
+    "state": "tentative",
+    "entry_start": "2027-05-22",
+    "entry_end": "2027-06-12",
+    "entries": null
+  },
+  {
+    "id": "usUQ212Ced",
+    "type": "NOWT",
+    "levels": "ALO (La), AVO (La), VOI (La)",
+    "date": "03.07.2027",
+    "date_sort": "2027-07-03T03:00:00+03:00",
+    "end_date_sort": "2027-07-03T03:00:00+03:00",
+    "entry_date": "22.05.-12.06.",
+    "location": "Kouvola",
+    "coordinates": [
+      60.8679237,
+      26.7041116
+    ],
+    "name": "",
+    "organizer": "LABRADORINNOUTAJAKERHO R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-07-03",
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "class": "AVO",
+        "date": "2027-07-03",
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "class": "VOI",
+        "date": "2027-07-03",
+        "groups": [
+          "kp"
+        ]
+      }
+    ],
+    "places": null,
     "state": "tentative",
     "entry_start": "2027-05-22",
     "entry_end": "2027-06-12",
@@ -4433,6 +4495,44 @@
     "state": "tentative",
     "entry_start": "2027-07-05",
     "entry_end": "2027-07-18",
+    "entries": null
+  },
+  {
+    "id": "GtGZOxBe1x",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "04.08.2027",
+    "date_sort": "2027-08-04T03:00:00+03:00",
+    "end_date_sort": "2027-08-04T03:00:00+03:00",
+    "entry_date": "23.06.-14.07.",
+    "location": "Hailuoto",
+    "coordinates": [
+      65.0137795,
+      24.7292318
+    ],
+    "name": "",
+    "organizer": "OULUN SEUDUN NOUTAJAKOIRAYHD. R.Y.",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Sihvonen Tapio"
+    ],
+    "description": "",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 12,
+    "state": "tentative",
+    "entry_start": "2027-06-23",
+    "entry_end": "2027-07-14",
     "entries": null
   },
   {
