@@ -3001,7 +3001,10 @@
       "email": ""
     },
     "judges": [
-      ""
+      "Lähteenaro Janne",
+      "Sipola Miso",
+      "Torila Mika",
+      "Schön Esa"
     ],
     "description": "",
     "cost": "",
@@ -3012,24 +3015,27 @@
         "date": "2027-07-03",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
       },
       {
         "class": "AVO",
         "date": "2027-07-03",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
       },
       {
         "class": "VOI",
         "date": "2027-07-03",
         "groups": [
           "kp"
-        ]
+        ],
+        "judge": []
       }
     ],
-    "places": null,
+    "places": 80,
     "state": "tentative",
     "entry_start": "2027-05-22",
     "entry_end": "2027-06-12",
@@ -4399,6 +4405,87 @@
     "state": "tentative",
     "entry_start": "2027-06-19",
     "entry_end": "2027-07-27",
+    "entries": null
+  },
+  {
+    "id": "gzHROggIj5",
+    "type": "NOU",
+    "levels": "N/A",
+    "date": "31.07.2027",
+    "date_sort": "2027-07-31T03:00:00+03:00",
+    "end_date_sort": "2027-07-31T03:00:00+03:00",
+    "entry_date": "19.06.-10.07.",
+    "location": "Laihia",
+    "coordinates": [
+      62.9761064,
+      22.0122155
+    ],
+    "name": "",
+    "organizer": "MERENKURKUN NOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      "Hietikko Vesa"
+    ],
+    "description": "Koe järjestetään yhteistyössä Laihian Eränkävijoiden kanssa, etusija molempien yhdistysten jäsenillä.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [],
+    "places": 16,
+    "state": "tentative",
+    "entry_start": "2027-06-19",
+    "entry_end": "2027-07-10",
+    "entries": null
+  },
+  {
+    "id": "u8J88O45NB",
+    "type": "NOME-B",
+    "levels": "ALO (Su)",
+    "date": "01.08.2027",
+    "date_sort": "2027-08-01T03:00:00+03:00",
+    "end_date_sort": "2027-08-01T03:00:00+03:00",
+    "entry_date": "20.06.-11.07.",
+    "location": "Laihia",
+    "coordinates": [
+      62.9761064,
+      22.0122155
+    ],
+    "name": "",
+    "organizer": "MERENKURKUN NOUTAJAT RY",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Koe järjestetään yhteistyössä Laihian Eränkävijoiden kanssa, etusija molempien yhdistysten jäsenillä.",
+    "cost": "",
+    "cost_member": "",
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-08-01"
+      }
+    ],
+    "places": null,
+    "state": "tentative",
+    "entry_start": "2027-06-20",
+    "entry_end": "2027-07-11",
     "entries": null
   },
   {
