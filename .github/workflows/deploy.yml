@@ -112,6 +112,7 @@ jobs:
           cp styles.css _site/
           cp app.js _site/
           cp whatsnew.json _site/
+          cp llms.txt _site/
           cp privacy.html _site/
           cp banner.jpg _site/
           cp favicon.ico _site/
