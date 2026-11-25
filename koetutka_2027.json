@@ -3006,9 +3006,13 @@
       "Torila Mika",
       "Schön Esa"
     ],
-    "description": "",
-    "cost": "",
-    "cost_member": "",
+    "description": "Koe järjestetään yhteistyössä Anjalan Metsästysyhdisty ry kanssa.",
+    "cost": {
+      "normal": 45
+    },
+    "cost_member": {
+      "normal": 40
+    },
     "classes": [
       {
         "class": "ALO",
