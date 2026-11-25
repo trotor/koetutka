@@ -1,0 +1,54 @@
+# Koetutka
+
+> Koetutka is a free web app and iOS/Android app that lists the retriever trials (noutajakokeet) in the official trial calendar of SNJ (Suomen Noutajakoirajärjestö, the Finnish Retriever Club) and sorts them by distance from a location the user picks. Users can filter by trial type and class, see entry periods, places and start lists, and export trials to a calendar (.ics).
+
+The site is static (GitHub Pages). All trial data comes from SNJ's koekalenteri; Koetutka fetches it daily, geocodes each trial's locality, and publishes it as public JSON files (one per year, CORS `*`). Distances are not stored: the app computes great-circle (Haversine) distance from the user's location in the browser, so an agent answering "trials near Tampere next month" should load the JSON, filter by date and compute distances from `coordinates` itself. Registration happens in SNJ's koekalenteri, not in Koetutka. The UI is in Finnish.
+
+## Data (machine-readable)
+
+- [Trials 2026](https://trotor.github.io/koetutka/koetutka_2026.json): JSON array of trial objects for the year 2026
+- [Trials 2027](https://trotor.github.io/koetutka/koetutka_2027.json): next year's trials, published once SNJ opens the next year's calendar (usually in autumn)
+
+URL pattern: `https://trotor.github.io/koetutka/koetutka_<YYYY>.json`. The app loads the current and the next year and merges them by `id`. The current year is refreshed daily at 06:00 UTC; from October onwards the next year is refreshed too. A missing next-year file (404) simply means it is not published yet.
+
+Fields of each trial object:
+
+- `id`: SNJ event id (string)
+- `type`: trial type code as used by SNJ, e.g. `NOME-B`, `NOME-A`, `NOU`, `NOWT`, `EPÄVIRALLINEN`, `KOULUTUS`, also with an ` SM` suffix (`NOME-A SM`, `NOWT SM`)
+- `levels`: classes with weekdays as text, e.g. `"ALO (La), AVO (La), VOI (La)"`; classes are ALO, AVO and VOI; `"N/A"` when none
+- `date`: start date as `DD.MM.YYYY`
+- `date_sort`, `end_date_sort`: start and end as ISO 8601 timestamps in Helsinki time; use the date part only
+- `location`: locality as written by the organiser (free text)
+- `coordinates`: `[lat, lon]` geocoded from `location` via Nominatim (locality-level, not the exact venue), or `null` when geocoding failed
+- `name`, `organizer`, `description` (Finnish free text)
+- `official`, `secretary`: contact persons `{name, phone, email}`; `judges`: list of names
+- `cost`, `cost_member`: number (EUR), an object such as `{"normal": 40, "optionalAdditionalCosts": [...]}`, or a string
+- `classes`: per-class list `{class, date (YYYY-MM-DD), places?, entries?, ...}`
+- `places`: total places; `entries`: total entries at fetch time
+- `state`: `tentative` (not yet confirmed), `confirmed`, `picked` (participants selected, registration closed), `invited` (invitations sent, registration closed), `cancelled`
+- `entry_start`, `entry_end`: registration period as `YYYY-MM-DD`; `entry_date` is the same as display text
+
+## Web app
+
+- [Koetutka](https://trotor.github.io/koetutka/): the interactive list and filters
+- Link to a single trial: `https://trotor.github.io/koetutka/#<id>` opens the app with that trial's details
+
+## Mobile apps
+
+- [Koetutka on the App Store](https://apps.apple.com/fi/app/koetutka/id6779765394): iOS app (publisher Inetor Oy)
+- [Koetutka on Google Play](https://play.google.com/store/apps/details?id=com.koetutka): Android app, package `com.koetutka`
+
+## Data source
+
+- [SNJ koekalenteri](https://koekalenteri.snj.fi/): the official calendar of retriever trials in Finland and the place where entries are made. Koetutka mirrors its event data; for anything authoritative (cancellations, entries) check the koekalenteri. Prefer Koetutka's JSON files over calling SNJ's backend directly.
+
+## Source code
+
+- [trotor/koetutka on GitHub](https://github.com/trotor/koetutka): MIT-licensed source of the web app, the React Native app and the data fetcher (`snj_kokeet.py`)
+
+## Optional
+
+- [Trials 2025](https://trotor.github.io/koetutka/koetutka_2025.json): previous year, still served but no longer refreshed
+- [Start list index](https://trotor.github.io/koetutka/startlists/index.json): `{generated, events: {<id>: participant count}}` for trials whose start list is published; the per-trial lists (dog, registration number, handler) are what the app's detail view shows
+- [What's new](https://trotor.github.io/koetutka/whatsnew.json): release notes shown in the apps (Finnish)
+- [Privacy policy](https://trotor.github.io/koetutka/privacy.html): tietosuojaseloste (Finnish)
