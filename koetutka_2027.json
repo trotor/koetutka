@@ -6801,5 +6801,62 @@
     "entry_start": "2027-08-15",
     "entry_end": "2027-09-05",
     "entries": null
+  },
+  {
+    "id": "fVh1yLF2Hh",
+    "type": "EPÄVIRALLINEN",
+    "levels": "ALO (La), AVO (La)",
+    "date": "13.11.2027",
+    "date_sort": "2027-11-13T02:00:00+02:00",
+    "end_date_sort": "2027-11-13T02:00:00+02:00",
+    "entry_date": "18.10.-01.11.",
+    "location": "Heinola",
+    "coordinates": [
+      61.2027188,
+      26.031371
+    ],
+    "name": " Jäsentenvälinen Noviisi & Mestaruus",
+    "organizer": "PÄIJÄT-HÄMEEN NOUTAJAKOIRAYHDISTYS",
+    "official": {
+      "name": "",
+      "phone": "",
+      "email": ""
+    },
+    "secretary": {
+      "name": "Minna Helenius",
+      "phone": "",
+      "email": "minna.m.helenius@gmail.com"
+    },
+    "judges": [
+      ""
+    ],
+    "description": "Päijät-Hämeen Noutajakoirayhdistyksen jäsentenvälinen NOVIISI & MESTARUUS kisataan 13.11.2027 Heinolassa. \nKisan yhteydessä pidetään yhdistyksen syyskokous. \n\n\nLeikkimieliseen kisaan voi osallistua koiralla, joka on vähintään 9kk vanha ja jonka rokotukset ovat Kennelliiton ohjeiden mukaisesti kunnossa. Koe toteutetaan dameilla.\n\nNoviisiluokkaan saa osallistua koiralla, jolla on korkeintaan ALO2-tulos nomeB/WT-kokeesta. Taipumuskoetulosta ei vaadita. Ilmoittauduthan noviisiluokkaan tulevalla koiralla ALO-luokkaan.\n\nMestaruus-luokkaan osallistuvalla koiralla tulee olla vähintään ALO1-tulos NomeB/WT-kokeesta. Ilmoittauduthan mestaruusluokkaan tulevalla koiralla AVO-luokkaan.\n\nIlmoittautumiset kisaan 1.11.2027 mennessä SNJ:n koekalenterin kautta. Ilmoita lisätietoja-kohdassa kumpaan luokkaan haluat osallistua.\nOsallistumismaksu 25€/koira (sisältää pientä purtavaa ja kahvin/teen)",
+    "cost": {
+      "normal": 25
+    },
+    "cost_member": {
+      "normal": 25
+    },
+    "classes": [
+      {
+        "class": "ALO",
+        "date": "2027-11-13",
+        "groups": [
+          "kp"
+        ]
+      },
+      {
+        "class": "AVO",
+        "date": "2027-11-13",
+        "groups": [
+          "kp"
+        ]
+      }
+    ],
+    "places": 60,
+    "state": "tentative",
+    "entry_start": "2027-10-18",
+    "entry_end": "2027-11-01",
+    "entries": null
   }
 ]
